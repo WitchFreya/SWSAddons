@@ -1,0 +1,12 @@
+name = "SWS Addons"
+author = "Maid"
+prefix = "sws"
+mainprefix = "z"
+
+[properties]
+author = "Maid"
+url = "https://github.com/WitchFreya/SWSAddons"
+
+# https://brettmayson.github.io/HEMTT/commands/launch.html#configuration
+[hemtt.launch.default]
+#executable = "/mnt/c/Program Files (x86)/Steam/steamapps/common/Arma 3/arma3/arma3_x64.exe"
