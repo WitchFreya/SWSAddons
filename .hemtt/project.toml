@@ -7,6 +7,21 @@ mainprefix = "z"
 author = "Maid"
 url = "https://github.com/WitchFreya/SWSAddons"
 
-# https://brettmayson.github.io/HEMTT/commands/launch.html#configuration
 [hemtt.launch.default]
-#executable = "/mnt/c/Program Files (x86)/Steam/steamapps/common/Arma 3/arma3/arma3_x64.exe"
+workshop = [
+    "463939057", # ace
+    "450814997", # cba_a3
+    "2522638637", # ace arsenal extended
+    "769440155", # OPTRE
+    "1267657613", # optre ace compat
+    "1572627279", # optre first contact
+    "1572642262", # optre first contact ace compat
+    "1659590037", # Fireteam Zulu
+    "2888477598", # 1st MEU aux
+    "2016312756", # opcan
+    "1779063631", # zeus enhanced
+    "2018593688" # zen ace compat
+]
+
+[hemtt.release]
+archive = false
