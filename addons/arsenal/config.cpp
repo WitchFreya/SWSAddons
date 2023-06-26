@@ -1,59 +1,61 @@
 #define QUOTE(var1) #var1
 #define TEXTURE(var1) QUOTE(\z\sws\addons\arsenal\assets\textures\var1)
 
-// TODO: multiple selection options
-// class XtdGearModels
-// {
-//     class CustomBase
-//     {
-//         label = "Custom";
-//         icon = "\sws_main\assets\icon_sws.paa";
-//         changeingame = 0;
-//         values[] = {};
+class XtdGearModels
+{
+    class CfgWeapons
+    {
+        class SWS_Operative_Armor
+        {
+            label = "[SWS] Armor";
+            icon = "\sws_main\assets\icon_sws.paa";
+            options[] = {"Operative"};
 
-//         class Tiger
-//         {
-//             label = "Tiger";
-//             image = "\sws_main\assets\icon_sws.paa";
-//         };
-//     };
-//     class CfgWeapons
-//     {
-//         class SWS_Armor
-//         {
-//             options[] = {
-//                 "custom"};
+            class Operative
+            {
+                label = "Operative";
+                values[] = {"Tiger", "Egg", "Polaris"};
+                class Tiger
+                {
+                    label = "Tiger";
+                    description = "Tiger's Armor";
+                };
 
-//             class custom : CustomBase
-//             {
-//                 values[] = {"Tiger"};
-//             };
-//         };
-//     };
+                class Egg
+                {
+                    label = "Egg";
+                    description = "Egg's Armor";
+                };
 
-//     class Conventional
-//     {
-//         class Custom : CustomBase
-//         {
-//         };
-//     };
-// };
+                class Polaris
+                {
+                    label = "Polaris";
+                    description = "Polaris' Armor";
+                };
+            };
+        };
+    };
+};
 
-// /**
-//  *  Include all variants of this armor in a single item.
-//  */
-// class XtdGearInfos
-// {
-//     class CfgWeapons
-//     {
-//         class SWS_Tiger
-//         {
-//             Model = "SWS_Armor";
-//             Custom = "Base";
-//             Variant = "Demolitions";
-//         };
-//     };
-// };
+#define GEAR_INFO(name)                \
+    class SWS_Vest_##name              \
+    {                                  \
+        model = "SWS_Operative_Armor"; \
+        Operative = #name;             \
+    }
+
+/**
+ *  Include all variants of this armor in a single item.
+ */
+class XtdGearInfos
+{
+    class CfgWeapons
+    {
+        GEAR_INFO(Tiger);
+        GEAR_INFO(Egg);
+        GEAR_INFO(Polaris);
+    };
+};
 
 class CfgPatches
 {
@@ -64,8 +66,11 @@ class CfgPatches
             "SWS_Main"};
         requiredVersion = 0.1;
         weapons[] = {
-            "SWS_Vest_Tiger", "SWS_Helmet_Tiger", "SWS_Vest_Egg",
-            "SWS_Helmet_Egg", "SWS_Vest_Tiger"};
+            "SWS_Helmet_Tiger",
+            "SWS_Helmet_Egg",
+            "SWS_Vest_Tiger",
+            "SWS_Vest_Egg",
+            "SWS_Vest_Polaris"};
         units[] = {};
     };
 };
