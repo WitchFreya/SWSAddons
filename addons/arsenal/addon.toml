@@ -1,0 +1,11 @@
+[binarize]
+enabled = true
+
+[preprocess]
+enabled = true
+exclude = []
+
+[files]
+exclude = [
+    "cfgWeapons/*"
+]
