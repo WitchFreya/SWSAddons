@@ -15,7 +15,7 @@ class SWS_Helmet_Tiger : OPTRE_UNSC_CH252D_Helmet
     };
 };
 
-class SWS_Vest_Tiger : OPTRE_UNSC_M52D_Armor_Demolitions
+class SWS_Vest_Tiger : SWS_Base_Armor
 {
     dlc = "sws";
     author = "Tiger";
