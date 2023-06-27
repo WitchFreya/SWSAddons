@@ -1,4 +1,4 @@
-#define BASE_PATH sws\addons\arsenal
+#define BASE_PATH \z\sws\addons\arsenal
 #define ASSETS BASE_PATH\assets
 #define TEXTURE(file) QUOTE(ASSETS\textures\file)
 #define QUOTE(var) #var
