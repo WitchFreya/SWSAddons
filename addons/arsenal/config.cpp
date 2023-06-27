@@ -45,6 +45,33 @@ class XtdGearModels
 {
     class CfgWeapons
     {
+        class SWS_Operative_Helmet
+        {
+            label = "[SWS] Helmet";
+            icon = "\sws_main\assets\icon_sws.paa";
+            options[] = {"Operative"};
+            class Operative
+            {
+                values[] = {"Tiger", "Egg", "Polaris"};
+
+                class Tiger
+                {
+                    label = "Tiger";
+                    description = "Tiger's Helmet";
+                };
+                class Egg
+                {
+                    label = "Egg";
+                    description = "Egg's Helmet";
+                };
+                class Polaris
+                {
+                    label = "Polaris";
+                    description = "Polaris's Helmet";
+                };
+            };
+        };
+
         class SWS_Operative_Armor
         {
             label = "[SWS] Armor";
@@ -114,6 +141,22 @@ class XtdGearInfos
         GEAR_INFO(Tiger);
         GEAR_INFO(Egg);
         GEAR_INFO(Polaris);
+
+        class SWS_Helmet_Tiger
+        {
+            model = "SWS_Operative_Helmet";
+            Operative = "Tiger";
+        };
+        class SWS_Helmet_Egg
+        {
+            model = "SWS_Operative_Helmet";
+            Operative = "Egg";
+        };
+        class SWS_Helmet_Polaris
+        {
+            model = "SWS_Operative_Helmet";
+            Operative = "Polaris";
+        };
     };
 };
 
