@@ -1,22 +1,15 @@
-class SWS_Vest_Polaris : SWS_Base_Armor
+class SWS_Helmet_Polaris : SWS_Helmet_Base
 {
-    dlc = "sws";
-    author = "Tiger";
-    displayName = "[SWS] Polaris' Armor";
+    displayName = "[SWS] Polaris's Helmet";
     hiddenSelectionsTextures[] = {
-        "11th_stb_gear\_textures\misc\Armor\V\vest_odst_co.paa",
-        "11th_stb_gear\_textures\misc\Armor\A\armor_odst_co.paa",
-        "11th_stb_gear\_textures\11th\Hades_L\Hades_1-1_Legs.paa",
-        "optre_unsc_units\army\data\ghillie_desert_co.paa",
-        TEXTURE(armor_polaris.paa)};
-
-    class ItemInfo : ItemInfo
-    {
-        hiddenSelectionsTextures[] = {
-            "11th_stb_gear\_textures\misc\Armor\V\vest_odst_co.paa",
-            "11th_stb_gear\_textures\misc\Armor\A\armor_odst_co.paa",
-            "11th_stb_gear\_textures\11th\Hades_L\Hades_1-1_Legs.paa",
-            "optre_unsc_units\army\data\ghillie_desert_co.paa",
-            TEXTURE(armor_polaris.paa)};
-    };
+        TEXTURE(helmet_Polaris_co.paa),
+        TEXTURE(visr_pink.paa),
+        "optre_unsc_units\army\data\soft_packs_co.paa"};
 };
+
+VEST(Polaris,
+     TEXTURE(vest_rifleman_co.paa),
+     TEXTURE(armor_rifleman_co.paa),
+     TEXTURE(legs_rifleman_co.paa),
+     "optre_unsc_units\army\data\ghillie_desert_co.paa",
+     TEXTURE(odst_addons_polaris_co.paa));

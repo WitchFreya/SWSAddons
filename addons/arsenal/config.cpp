@@ -1,5 +1,8 @@
-#define QUOTE(var1) #var1
-#define TEXTURE(var1) QUOTE(\z\sws\addons\arsenal\assets\textures\var1)
+#define QUOTE(var) #var
+#define BASE_PATH \z\sws\addons\arsenal
+#define ASSETS BASE_PATH\assets
+#define TEXTURE(file) QUOTE(ASSETS\textures\file)
+#define MATERIAL(file) QUOTE(ASSETS\materials\file)
 
 class XtdGearModels
 {
@@ -9,12 +12,17 @@ class XtdGearModels
         {
             label = "[SWS] Armor";
             icon = "\sws_main\assets\icon_sws.paa";
-            options[] = {"Operative"};
+            options[] = {"Operative", "Variant"};
 
             class Operative
             {
                 label = "Operative";
-                values[] = {"Tiger", "Egg", "Polaris"};
+                values[] = {"Rifleman", "Tiger", "Egg", "Polaris"};
+                class Rifleman
+                {
+                    label = "Rifleman";
+                    description = "Basic Rifleman Armor";
+                };
                 class Tiger
                 {
                     label = "Tiger";
@@ -33,15 +41,69 @@ class XtdGearModels
                     description = "Polaris' Armor";
                 };
             };
+
+            class Variant
+            {
+                label = "Variant";
+                values[] = {
+                    "Standard",
+                    "Demolitions",
+                    "Sniper",
+                    "Light",
+                    "Scout",
+                    "Rifleman",
+                    "Marksman",
+                };
+
+#define VARIANT(Type)                            \
+    class Type                                   \
+    {                                            \
+        label = QUOTE(Type);                     \
+        description = QUOTE(Type Configuration); \
+    }
+
+                VARIANT(Standard);
+                VARIANT(Demolitions);
+                VARIANT(Sniper);
+                VARIANT(Light);
+                VARIANT(Scout);
+                VARIANT(Rifleman);
+                VARIANT(Marksman);
+            };
         };
     };
 };
 
-#define GEAR_INFO(name)                \
-    class SWS_Vest_##name              \
-    {                                  \
-        model = "SWS_Operative_Armor"; \
-        Operative = #name;             \
+#define GEAR_INFO(name)                                   \
+    class SWS_Vest_##name                                 \
+    {                                                     \
+        model = "SWS_Operative_Armor";                    \
+        Operative = #name;                                \
+        Variant = "Standard";                             \
+    };                                                    \
+    class SWS_Vest_##name##_Demolitions : SWS_Vest_##name \
+    {                                                     \
+        Variant = "Demolitions";                          \
+    };                                                    \
+    class SWS_Vest_##name##_Sniper : SWS_Vest_##name      \
+    {                                                     \
+        Variant = "Sniper";                               \
+    };                                                    \
+    class SWS_Vest_##name##_Light : SWS_Vest_##name       \
+    {                                                     \
+        Variant = "Light";                                \
+    };                                                    \
+    class SWS_Vest_##name##_Scout : SWS_Vest_##name       \
+    {                                                     \
+        Variant = "Scout";                                \
+    };                                                    \
+    class SWS_Vest_##name##_Rifleman : SWS_Vest_##name    \
+    {                                                     \
+        Variant = "Rifleman";                             \
+    };                                                    \
+    class SWS_Vest_##name##_Marksman : SWS_Vest_##name    \
+    {                                                     \
+        Variant = "Marksman";                             \
     }
 
 /**
@@ -51,6 +113,7 @@ class XtdGearInfos
 {
     class CfgWeapons
     {
+        GEAR_INFO(Rifleman);
         GEAR_INFO(Tiger);
         GEAR_INFO(Egg);
         GEAR_INFO(Polaris);
@@ -63,11 +126,15 @@ class CfgPatches
     {
         author = "Maid";
         requiredAddons[] = {
+            "OPTRE_UNSC_Units",
             "SWS_Main"};
         requiredVersion = 0.1;
         weapons[] = {
+            "SWS_Helmet_Base",
+            "SWS_Vest_Base",
             "SWS_Helmet_Tiger",
             "SWS_Helmet_Egg",
+            "SWS_Helmet_Polaris",
             "SWS_Vest_Tiger",
             "SWS_Vest_Egg",
             "SWS_Vest_Polaris"};
@@ -85,9 +152,8 @@ class CfgGlasses
     class LM_OPCAN_DES_Shemagh;
     class SWS_Shemagh_Pink : LM_OPCAN_DES_Shemagh
     {
-        author = "Tiger";
         displayname = "[SWS] Shemagh (Pink)";
         hiddenSelectionsTextures[] = {
-            TEXTURE(Shemagh_pink.paa)};
+            TEXTURE(shemagh_pink_co.paa)};
     };
 };
