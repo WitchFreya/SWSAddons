@@ -1,4 +1,4 @@
-#define DISPLAY_NAME(name) QUOTE([SWS] name's Armor)
+#define VEST_DISPLAY_NAME(name) QUOTE([SWS] name's Armor)
 
 class SWS_Vest_Base : OPTRE_UNSC_M52D_Armor
 {
@@ -10,9 +10,6 @@ class SWS_Vest_Base : OPTRE_UNSC_M52D_Armor
 
     /** Armor Level is meaningless anyway... */
     descriptionShort = "Armor Level: ODST";
-    model = "\OPTRE_UNSC_Units\Army\armor.p3d";
-    /** What appears in the inventory menu/arsenal. */
-    picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 
     hiddenSelectionsMaterials[] =
         {
@@ -27,10 +24,8 @@ class SWS_Vest_Base : OPTRE_UNSC_M52D_Armor
     {                                                                 \
         scope = 2;                                                    \
         scopeCurator = 2;                                             \
-        scopearsenal = 2;                                             \
-                                                                      \
-        displayName = DISPLAY_NAME(name);                             \
-                                                                      \
+        scopeArsenal = 2;                                             \
+        displayName = VEST_DISPLAY_NAME(name);                        \
         hiddenSelectionsTextures[] = {                                \
             texVest,                                                  \
             texArmor,                                                 \

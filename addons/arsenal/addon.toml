@@ -1,7 +1,7 @@
 [binarize]
-enabled = false
+enabled = true
 
 [preprocess]
-enabled = false
+enabled = true
 exclude = []
 
