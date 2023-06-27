@@ -1,4 +1,4 @@
-#define BASE_PATH \z\sws\addons\arsenal
+#define BASE_PATH sws\addons\arsenal
 #define ASSETS BASE_PATH\assets
 #define TEXTURE(file) QUOTE(ASSETS\textures\file)
 #define QUOTE(var) #var
@@ -9,7 +9,7 @@
         description = QUOTE(Type Configuration); \
     }
 
-#define GEAR_INFO(name)                                   \
+#define VEST_GEAR_INFO(name)                              \
     class SWS_Vest_##name                                 \
     {                                                     \
         model = "SWS_Operative_Armor";                    \
@@ -41,6 +41,22 @@
         Variant = "Marksman";                             \
     }
 
+#define HELMET_GEAR_INFO(name)                       \
+    class SWS_Helmet_##name                          \
+    {                                                \
+        model = "SWS_Operative_Helmet";              \
+        operative = QUOTE(name);                     \
+        polarization = "Polarized";                  \
+    };                                               \
+    class SWS_Helmet_##name##_dp : SWS_Helmet_##name \
+    {                                                \
+        polarization = "Depolarized";                \
+    }
+
+#define GEAR_INFO(name)     \
+    HELMET_GEAR_INFO(name); \
+    VEST_GEAR_INFO(name)
+
 class XtdGearModels
 {
     class CfgWeapons
@@ -49,7 +65,7 @@ class XtdGearModels
         {
             label = "[SWS] Helmet";
             icon = "\sws_main\assets\icon_sws.paa";
-            options[] = {"Operative"};
+            options[] = {"Operative", "Polarization"};
             class Operative
             {
                 values[] = {"Tiger", "Egg", "Polaris"};
@@ -68,6 +84,23 @@ class XtdGearModels
                 {
                     label = "Polaris";
                     description = "Polaris's Helmet";
+                };
+            };
+
+            class Polarization
+            {
+                values[] = {"Polarized", "Depolarized"};
+
+                class Polarized
+                {
+                    label = "Polarized";
+                    description = "Your visor will be opaque, toggled by the HUD key.";
+                };
+
+                class Depolarized
+                {
+                    label = "Depolarized";
+                    description = "Your visor will be translucent, toggled by the HUD key.";
                 };
             };
         };
@@ -141,22 +174,6 @@ class XtdGearInfos
         GEAR_INFO(Tiger);
         GEAR_INFO(Egg);
         GEAR_INFO(Polaris);
-
-        class SWS_Helmet_Tiger
-        {
-            model = "SWS_Operative_Helmet";
-            Operative = "Tiger";
-        };
-        class SWS_Helmet_Egg
-        {
-            model = "SWS_Operative_Helmet";
-            Operative = "Egg";
-        };
-        class SWS_Helmet_Polaris
-        {
-            model = "SWS_Operative_Helmet";
-            Operative = "Polaris";
-        };
     };
 };
 
