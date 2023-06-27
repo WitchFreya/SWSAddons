@@ -1,17 +1,26 @@
 #define QUOTE(var) #var
-#define BASE_PATH \z\sws\addons\arsenal
+#define BASE_PATH sws\addons\arsenal
 #define ASSETS BASE_PATH\assets
 #define TEXTURE(file) QUOTE(ASSETS\textures\file)
 #define MATERIAL(file) QUOTE(ASSETS\materials\file)
 
 #define VEST_CLASS(name) SWS_Vest_##name
-#define VEST_CLASSES(name) QUOTE(VEST_CLASS(name)),               \
-                           QUOTE(VEST_CLASS(name)##_Demolitions), \
-                           QUOTE(VEST_CLASS(name)##_Sniper),      \
-                           QUOTE(VEST_CLASS(name)##_Light),       \
-                           QUOTE(VEST_CLASS(name)##_Scout),       \
-                           QUOTE(VEST_CLASS(name)##_Rifleman),    \
-                           QUOTE(VEST_CLASS(name)##_Marksman)
+#define VEST_CLASSES(name)                     \
+    QUOTE(VEST_CLASS(name)),                   \
+        QUOTE(VEST_CLASS(name)##_Demolitions), \
+        QUOTE(VEST_CLASS(name)##_Sniper),      \
+        QUOTE(VEST_CLASS(name)##_Light),       \
+        QUOTE(VEST_CLASS(name)##_Scout),       \
+        QUOTE(VEST_CLASS(name)##_Rifleman),    \
+        QUOTE(VEST_CLASS(name)##_Marksman)
+
+#define HELMET_CLASS(name) SWS_Helmet_##name
+#define HELMET_CLASSES(name) QUOTE(HELMET_CLASS(name)), \
+                             QUOTE(HELMET_CLASS(name)##_dp)
+
+#define CLASSES(name)     \
+    HELMET_CLASSES(name), \
+        VEST_CLASSES(name)
 
 class CfgPatches
 {
@@ -19,19 +28,15 @@ class CfgPatches
     {
         addonRootClass = "SWS_Arsenal";
         author = "Maid";
-        requiredAddons = {
+        requiredAddons[] = {
             "SWS_Arsenal"};
         requiredVersion = 0.1;
         units[] = {};
         weapons[] = {
-            "SWS_Helmet_Base",
-            "SWS_Helmet_Tiger",
-            "SWS_Helmet_Egg",
-            "SWS_Helmet_Polaris",
-            VEST_CLASSES(Rifleman),
-            VEST_CLASSES(Polaris),
-            VEST_CLASSES(Egg),
-            VEST_CLASSES(Tiger)};
+            CLASSES(Base),
+            CLASSES(Tiger),
+            CLASSES(Egg),
+            CLASSES(Polaris)};
     };
 };
 
