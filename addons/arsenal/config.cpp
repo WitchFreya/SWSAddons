@@ -1,8 +1,45 @@
-#define QUOTE(var) #var
 #define BASE_PATH \z\sws\addons\arsenal
 #define ASSETS BASE_PATH\assets
 #define TEXTURE(file) QUOTE(ASSETS\textures\file)
-#define MATERIAL(file) QUOTE(ASSETS\materials\file)
+#define QUOTE(var) #var
+#define VARIANT(Type)                            \
+    class Type                                   \
+    {                                            \
+        label = QUOTE(Type);                     \
+        description = QUOTE(Type Configuration); \
+    }
+
+#define GEAR_INFO(name)                                   \
+    class SWS_Vest_##name                                 \
+    {                                                     \
+        model = "SWS_Operative_Armor";                    \
+        Operative = #name;                                \
+        Variant = "Standard";                             \
+    };                                                    \
+    class SWS_Vest_##name##_Demolitions : SWS_Vest_##name \
+    {                                                     \
+        Variant = "Demolitions";                          \
+    };                                                    \
+    class SWS_Vest_##name##_Sniper : SWS_Vest_##name      \
+    {                                                     \
+        Variant = "Sniper";                               \
+    };                                                    \
+    class SWS_Vest_##name##_Light : SWS_Vest_##name       \
+    {                                                     \
+        Variant = "Light";                                \
+    };                                                    \
+    class SWS_Vest_##name##_Scout : SWS_Vest_##name       \
+    {                                                     \
+        Variant = "Scout";                                \
+    };                                                    \
+    class SWS_Vest_##name##_Rifleman : SWS_Vest_##name    \
+    {                                                     \
+        Variant = "Rifleman";                             \
+    };                                                    \
+    class SWS_Vest_##name##_Marksman : SWS_Vest_##name    \
+    {                                                     \
+        Variant = "Marksman";                             \
+    }
 
 class XtdGearModels
 {
@@ -52,15 +89,7 @@ class XtdGearModels
                     "Light",
                     "Scout",
                     "Rifleman",
-                    "Marksman",
-                };
-
-#define VARIANT(Type)                            \
-    class Type                                   \
-    {                                            \
-        label = QUOTE(Type);                     \
-        description = QUOTE(Type Configuration); \
-    }
+                    "Marksman"};
 
                 VARIANT(Standard);
                 VARIANT(Demolitions);
@@ -73,38 +102,6 @@ class XtdGearModels
         };
     };
 };
-
-#define GEAR_INFO(name)                                   \
-    class SWS_Vest_##name                                 \
-    {                                                     \
-        model = "SWS_Operative_Armor";                    \
-        Operative = #name;                                \
-        Variant = "Standard";                             \
-    };                                                    \
-    class SWS_Vest_##name##_Demolitions : SWS_Vest_##name \
-    {                                                     \
-        Variant = "Demolitions";                          \
-    };                                                    \
-    class SWS_Vest_##name##_Sniper : SWS_Vest_##name      \
-    {                                                     \
-        Variant = "Sniper";                               \
-    };                                                    \
-    class SWS_Vest_##name##_Light : SWS_Vest_##name       \
-    {                                                     \
-        Variant = "Light";                                \
-    };                                                    \
-    class SWS_Vest_##name##_Scout : SWS_Vest_##name       \
-    {                                                     \
-        Variant = "Scout";                                \
-    };                                                    \
-    class SWS_Vest_##name##_Rifleman : SWS_Vest_##name    \
-    {                                                     \
-        Variant = "Rifleman";                             \
-    };                                                    \
-    class SWS_Vest_##name##_Marksman : SWS_Vest_##name    \
-    {                                                     \
-        Variant = "Marksman";                             \
-    }
 
 /**
  *  Include all variants of this armor in a single item.
@@ -129,22 +126,9 @@ class CfgPatches
             "OPTRE_UNSC_Units",
             "SWS_Main"};
         requiredVersion = 0.1;
-        weapons[] = {
-            "SWS_Helmet_Base",
-            "SWS_Vest_Base",
-            "SWS_Helmet_Tiger",
-            "SWS_Helmet_Egg",
-            "SWS_Helmet_Polaris",
-            "SWS_Vest_Tiger",
-            "SWS_Vest_Egg",
-            "SWS_Vest_Polaris"};
+        weapons[] = {};
         units[] = {};
     };
-};
-
-class CfgWeapons
-{
-#include "cfgWeapons\_cfg.h"
 };
 
 class CfgGlasses
