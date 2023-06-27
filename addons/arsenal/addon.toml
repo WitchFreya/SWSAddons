@@ -1,11 +1,11 @@
 [binarize]
-enabled = false
+enabled = true
 
 [preprocess]
-enabled = false
+enabled = true
 exclude = []
 
-# [files]
-# exclude = [
-#     "*.h"
-# ]
+[files]
+exclude = [
+    "*.h"
+]
