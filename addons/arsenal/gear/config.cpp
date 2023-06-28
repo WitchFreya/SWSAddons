@@ -41,6 +41,7 @@ class CfgPatches
             CLASSES(Tiger),
             CLASSES(Egg),
             CLASSES(Polaris),
+            VEST_CLASSES(Demon),
             HELMET_CLASSES(Maid)};
     };
 };
@@ -56,4 +57,5 @@ class CfgWeapons
 #include "polaris.hpp"
 #include "egg.hpp"
 #include "maid.hpp"
+#include "demon.hpp"
 };
