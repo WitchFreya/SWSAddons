@@ -18,9 +18,11 @@
     QUOTE(SWS_Helmet_##name), \
         QUOTE(SWS_Helmet_##name##_dp)
 
-#define HELMET_CLASSES(name) \
-    HELMET_CLASS(name),      \
-        HELMET_CLASS(name##_Collar)
+#define HELMET_CLASSES(name)          \
+    HELMET_CLASS(name),               \
+        HELMET_CLASS(name##_Collar),  \
+        HELMET_CLASS(name##_Ghillie), \
+        HELMET_CLASS(name##_Collar_Ghillie)
 
 #define CLASSES(name)     \
     HELMET_CLASSES(name), \

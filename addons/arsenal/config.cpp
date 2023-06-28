@@ -41,25 +41,56 @@
         Variant = "Marksman";                             \
     }
 
-#define HELMET_GEAR_INFO(name)                                       \
-    class SWS_Helmet_##name                                          \
-    {                                                                \
-        model = "SWS_Operative_Helmet";                              \
-        operative = QUOTE(name);                                     \
-        polarization = "Yes";                                        \
-        collar = "No";                                               \
-    };                                                               \
-    class SWS_Helmet_##name##_dp : SWS_Helmet_##name                 \
-    {                                                                \
-        polarization = "No";                                         \
-    };                                                               \
-    class SWS_Helmet_##name##_Collar : SWS_Helmet_##name             \
-    {                                                                \
-        collar = "Yes";                                              \
-    };                                                               \
-    class SWS_Helmet_##name##_Collar_dp : SWS_Helmet_##name##_Collar \
-    {                                                                \
-        polarization = "No";                                         \
+#define HELMET_GEAR_INFO(name)                                      \
+    class SWS_Helmet_##name                                         \
+    {                                                               \
+        model = "SWS_Operative_Helmet";                             \
+        operative = QUOTE(name);                                    \
+        polarization = "Yes";                                       \
+        collar = "No";                                              \
+        ghillie = "No";                                             \
+    };                                                              \
+    class SWS_Helmet_##name##_dp : SWS_Helmet_##name                \
+    {                                                               \
+        polarization = "No";                                        \
+        collar = "No";                                              \
+        ghillie = "No";                                             \
+    };                                                              \
+    class SWS_Helmet_##name##_Collar : SWS_Helmet_##name            \
+    {                                                               \
+        polarization = "Yes";                                       \
+        collar = "Yes";                                             \
+        ghillie = "No";                                             \
+    };                                                              \
+    class SWS_Helmet_##name##_Collar_dp : SWS_Helmet_##name         \
+    {                                                               \
+        polarization = "No";                                        \
+        collar = "Yes";                                             \
+        ghillie = "No";                                             \
+    };                                                              \
+    class SWS_Helmet_##name##_Ghillie : SWS_Helmet_##name           \
+    {                                                               \
+        polarization = "Yes";                                       \
+        collar = "No";                                              \
+        ghillie = "Yes";                                            \
+    };                                                              \
+    class SWS_Helmet_##name##_Ghillie_dp : SWS_Helmet_##name        \
+    {                                                               \
+        polarization = "No";                                        \
+        collar = "No";                                              \
+        ghillie = "Yes";                                            \
+    };                                                              \
+    class SWS_Helmet_##name##_Collar_Ghillie : SWS_Helmet_##name    \
+    {                                                               \
+        polarization = "Yes";                                       \
+        collar = "Yes";                                             \
+        ghillie = "Yes";                                            \
+    };                                                              \
+    class SWS_Helmet_##name##_Collar_Ghillie_dp : SWS_Helmet_##name \
+    {                                                               \
+        polarization = "No";                                        \
+        collar = "Yes";                                             \
+        ghillie = "Yes";                                            \
     }
 
 #define GEAR_INFO(name)     \
@@ -74,7 +105,7 @@ class XtdGearModels
         {
             label = "[SWS] Helmet";
             icon = "\sws_main\assets\icon_sws.paa";
-            options[] = {"Operative", "Polarization", "Collar"};
+            options[] = {"Operative", "Polarization", "Collar", "Ghillie"};
             class Operative
             {
 
@@ -140,6 +171,23 @@ class XtdGearModels
                 {
                     label = "No";
                     description = "Exclude a vacuum collar";
+                };
+            };
+
+            class Ghillie
+            {
+                label = "Ghillie";
+                values[] = {"Yes", "No"};
+
+                class Yes
+                {
+                    label = "Yes";
+                    description = "Ghillie me.";
+                };
+                class No
+                {
+                    label = "No";
+                    description = "Ghillie is lame.";
                 };
             };
         };

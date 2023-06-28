@@ -18,5 +18,7 @@
     author = QUOTE(AUTHOR); \
     SCOPE(varScope)
 
+#define WITH(a,b) a, b
+
 #define COMMON_H 1
 #endif
