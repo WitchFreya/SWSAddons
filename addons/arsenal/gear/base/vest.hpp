@@ -11,12 +11,11 @@ class SWS_Vest_Base : OPTRE_UNSC_M52D_Armor
     /** Armor Level is meaningless anyway... */
     descriptionShort = "Armor Level: ODST";
 
-    hiddenSelectionsMaterials[] =
-        {
-            MATERIAL(Vest.rvmat),
-            MATERIAL(Armor.rvmat),
-            MATERIAL(Legs.rvmat),
-            MATERIAL(ODST.rvmat)};
+    hiddenSelectionsMaterials[] = {
+        MATERIAL(Vest.rvmat),
+        MATERIAL(Armor.rvmat),
+        MATERIAL(Legs.rvmat),
+        MATERIAL(ODST.rvmat)};
 };
 
 #define VEST(name, texVest, texArmor, texLegs, texGhillie, texAddons) \

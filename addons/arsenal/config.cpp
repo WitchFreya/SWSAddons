@@ -41,16 +41,25 @@
         Variant = "Marksman";                             \
     }
 
-#define HELMET_GEAR_INFO(name)                       \
-    class SWS_Helmet_##name                          \
-    {                                                \
-        model = "SWS_Operative_Helmet";              \
-        operative = QUOTE(name);                     \
-        polarization = "Polarized";                  \
-    };                                               \
-    class SWS_Helmet_##name##_dp : SWS_Helmet_##name \
-    {                                                \
-        polarization = "Depolarized";                \
+#define HELMET_GEAR_INFO(name)                                       \
+    class SWS_Helmet_##name                                          \
+    {                                                                \
+        model = "SWS_Operative_Helmet";                              \
+        operative = QUOTE(name);                                     \
+        polarization = "Yes";                                        \
+        collar = "No";                                               \
+    };                                                               \
+    class SWS_Helmet_##name##_dp : SWS_Helmet_##name                 \
+    {                                                                \
+        polarization = "No";                                         \
+    };                                                               \
+    class SWS_Helmet_##name##_Collar : SWS_Helmet_##name             \
+    {                                                                \
+        collar = "Yes";                                              \
+    };                                                               \
+    class SWS_Helmet_##name##_Collar_dp : SWS_Helmet_##name##_Collar \
+    {                                                                \
+        polarization = "No";                                         \
     }
 
 #define GEAR_INFO(name)     \
@@ -65,10 +74,11 @@ class XtdGearModels
         {
             label = "[SWS] Helmet";
             icon = "\sws_main\assets\icon_sws.paa";
-            options[] = {"Operative", "Polarization"};
+            options[] = {"Operative", "Polarization", "Collar"};
             class Operative
             {
-                values[] = {"Tiger", "Egg", "Polaris"};
+
+                values[] = {"Tiger", "Egg", "Polaris", "Maid"};
 
                 class Tiger
                 {
@@ -85,22 +95,45 @@ class XtdGearModels
                     label = "Polaris";
                     description = "Polaris's Helmet";
                 };
+                class Maid
+                {
+                    label = "Maid";
+                    description = "Maid's Helmet";
+                };
             };
 
             class Polarization
             {
-                values[] = {"Polarized", "Depolarized"};
+                values[] = {"Yes", "No"};
 
-                class Polarized
+                class Yes
                 {
-                    label = "Polarized";
+                    label = "Yes";
                     description = "Your visor will be opaque, toggled by the HUD key.";
                 };
 
-                class Depolarized
+                class No
                 {
-                    label = "Depolarized";
+                    label = "No";
                     description = "Your visor will be translucent, toggled by the HUD key.";
+                };
+            };
+
+            class Collar
+            {
+                label = "Vacuum Collar";
+                values[] = {"Yes", "No"};
+
+                class Yes
+                {
+                    label = "Yes";
+                    description = "Include a vacuum collar.";
+                };
+
+                class No
+                {
+                    label = "No";
+                    description = "Exclude a vacuum collar";
                 };
             };
         };
@@ -174,6 +207,7 @@ class XtdGearInfos
         GEAR_INFO(Tiger);
         GEAR_INFO(Egg);
         GEAR_INFO(Polaris);
+        HELMET_GEAR_INFO(Maid);
     };
 };
 

@@ -7,5 +7,5 @@ exclude = []
 
 [files]
 exclude = [
-    "*.h"
+    "*.hpp"
 ]
