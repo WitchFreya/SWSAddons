@@ -9,6 +9,11 @@
         "camo4",               \
         "H_Ghillie"
 
+#define HELMET_SELECTIONS_BASE_DP \
+    "camo",\
+    "camo2",\
+    "H_Ghillie"
+
 #define HELMET_SELECTIONS_COLLARLESS \
     HELMET_SELECTIONS_BASE,          \
         "H_VacCollar",               \
@@ -67,7 +72,7 @@ class SWS_Helmet_Base_dp : OPTRE_UNSC_CH252D_Helmet_dp
         hiddenSelectionsTextures[] = {texHelmet, TEXTURE(visr_clr.paa)};          \
     }
 
-#define HELMET_VARIANT(name, variant, varHiddenSelections)            \
+#define HELMET_VARIANT(name, variant, varHiddenSelections, varHiddenSelectionsDp)            \
     class SWS_Helmet_##name##_##variant : SWS_Helmet_##name           \
     {                                                                 \
         class ItemInfo : ItemInfo                                     \
@@ -79,10 +84,10 @@ class SWS_Helmet_Base_dp : OPTRE_UNSC_CH252D_Helmet_dp
     {                                                                 \
         class ItemInfo : ItemInfo                                     \
         {                                                             \
-            hiddenSelections[] = {varHiddenSelections};               \
+            hiddenSelections[] = {varHiddenSelectionsDp};               \
         };                                                            \
     }
 
 #define HELMET(name,texHelmet,texVisor,texGhillie,texPacks)  \
     HELMET_BASE(name,texHelmet,texVisor,texGhillie,texPacks); \
-    HELMET_VARIANT(name,Collar,HELMET_SELECTIONS_BASE)
+    HELMET_VARIANT(name,Collar,HELMET_SELECTIONS_BASE, HELMET_SELECTIONS_BASE_DP)
