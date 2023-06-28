@@ -1,5 +1,4 @@
 #include "..\dependencies\common.hpp"
-#define WITH(a, b) a, b
 #define VEST_DISPLAY_NAME(name) displayName = QUOTE([SWS] name's Vest)
 
 #define VEST_SELECTIONS_BASE "camo",  \
