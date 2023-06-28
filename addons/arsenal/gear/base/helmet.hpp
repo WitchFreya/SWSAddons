@@ -1,6 +1,6 @@
 #include "..\dependencies\common.hpp"
 
-#define HELMET_DISPLAY_NAME(name) displayName = "[SWS] name's Helmet"
+#define HELMET_DISPLAY_NAME(name) displayName = QUOTE([SWS] name's Helmet)
 
 #define HELMET_SELECTIONS_BASE \
     "camo",                    \
