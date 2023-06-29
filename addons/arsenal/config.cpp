@@ -258,8 +258,6 @@ class CfgPatches
     {
         author = "Maid";
         requiredAddons[] = {
-            "OPTRE_UNSC_Units",
-            // "LM_OPCAN", // TODO: Figure out how to require opcan
             "SWS_Main"};
         requiredVersion = 0.1;
         weapons[] = {};
