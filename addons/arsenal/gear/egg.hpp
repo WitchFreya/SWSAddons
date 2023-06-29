@@ -6,6 +6,6 @@ HELMET(Egg, TEXTURE(helmet_egg_co.paa),
 VEST(Egg,
      TEXTURE(vest_rifleman_co.paa),
      TEXTURE(armor_rifleman_co.paa),
-     TEXTURE(legs_rifleman_co.paa),
+     TEXTURE(legs_egg_co.paa),
      "optre_unsc_units\army\data\ghillie_desert_co.paa",
      TEXTURE(odst_addons_egg_co.paa));
