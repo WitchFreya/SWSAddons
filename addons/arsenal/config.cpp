@@ -89,7 +89,7 @@ class XtdGearModels
             class Operative
             {
 
-                values[] = {"Tiger", "Egg", "Polaris", "Demon", "Maid"};
+                values[] = {"Tiger", "Egg", "Polaris", "Demon", "Maid", "Rabbit", "Butler"};
 
                 class Tiger
                 {
@@ -116,6 +116,16 @@ class XtdGearModels
                 {
                     label = "Demon";
                     description = "Demon's Helmet";
+                };
+                class Rabbit
+                {
+                    label = "Rabbit";
+                    description = "Rabbit's Helmet";
+                };
+                class Butler
+                {
+                    label = "Butler";
+                    description = "Butler's Helmet";
                 };
             };
 
@@ -181,7 +191,7 @@ class XtdGearModels
             class Operative
             {
                 label = "Operative";
-                values[] = {"Rifleman", "Tiger", "Egg", "Polaris", "Demon"};
+                values[] = {"Rifleman", "Tiger", "Egg", "Polaris", "Demon", "Rabbit", "Butler"};
                 class Rifleman
                 {
                     label = "Rifleman";
@@ -209,6 +219,16 @@ class XtdGearModels
                 {
                     label = "Demon";
                     description = "Demon's Armor";
+                };
+                class Rabbit
+                {
+                    label = "Rabbit";
+                    description = "Rabbit's Armor";
+                };
+                class Butler
+                {
+                    label = "Butler";
+                    description = "Butler's Armor";
                 };
             };
 
@@ -265,7 +285,9 @@ class XtdGearInfos
         GEAR_INFO(Egg);
         GEAR_INFO(Polaris);
         GEAR_INFO(Maid);
-        VEST_GEAR_INFO(Demon);
+        GEAR_INFO(Rabbit);
+        GEAR_INFO(Butler);
+        GEAR_INFO(Demon);
     };
 };
 
