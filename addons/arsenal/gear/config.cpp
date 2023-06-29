@@ -1,8 +1,7 @@
-#define QUOTE(var) #var
-#define BASE_PATH \z\sws\addons\arsenal
-#define ASSETS BASE_PATH\assets
-#define TEXTURE(file) QUOTE(ASSETS\textures\file)
-#define MATERIAL(file) QUOTE(ASSETS\materials\file)
+#include "dependencies\common.hpp"
+#include "dependencies\arma.hpp"
+#include "dependencies\optre.hpp"
+#include "dependencies\opcan.hpp"
 
 #define VEST_CLASS(name) QUOTE(SWS_Vest_##name)
 #define VEST_CLASSES(name)                      \
@@ -35,10 +34,6 @@
     HELMET_CLASSES(name), \
         VEST_CLASSES(name)
 
-#include "dependencies\arma.hpp"
-#include "dependencies\optre.hpp"
-#include "dependencies\opcan.hpp"
-
 class CfgPatches
 {
     class SWS_Arsenal_Gear
@@ -46,6 +41,8 @@ class CfgPatches
         addonRootClass = "SWS_Arsenal";
         author = "Maid";
         requiredAddons[] = {
+            "OPTRE_UNSC_Units",
+            "LM_OPCAN_UNSC",
             "SWS_Arsenal"};
         requiredVersion = 0.1;
         units[] = {};
@@ -78,4 +75,47 @@ class CfgWeapons
 class CfgGlasses
 {
 #include "pink_shemagh.hpp"
+};
+
+class XtdGearModels
+{
+    class CfgGlasses
+    {
+        class SWS_Shemagh
+        {
+            label = "[SWS] Shemagh";
+            author = "Maid";
+            options[] = {"Color", "Variant"};
+
+            class Color
+            {
+                label = "Color";
+                values[] = {"Pink"};
+
+                class Pink
+                {
+                    label = "Pink";
+                    description = "A pink shemagh.";
+                };
+            };
+
+            class Variant
+            {
+                label = "Variant";
+                values[] = {"Up", "Down"};
+
+                class Up
+                {
+                    label = "Up";
+                    description = "Hide my nose and mouth too.";
+                };
+
+                class Down
+                {
+                    label = "Down";
+                    description = "Just keep my neck warm.";
+                };
+            };
+        };
+    };
 };
