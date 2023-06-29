@@ -35,6 +35,10 @@
     HELMET_CLASSES(name), \
         VEST_CLASSES(name)
 
+#include "dependencies\arma.hpp"
+#include "dependencies\optre.hpp"
+#include "dependencies\opcan.hpp"
+
 class CfgPatches
 {
     class SWS_Arsenal_Gear
@@ -46,29 +50,32 @@ class CfgPatches
         requiredVersion = 0.1;
         units[] = {};
         weapons[] = {
-            CLASSES(Rifleman),
-            CLASSES(Tiger),
-            CLASSES(Egg),
-            CLASSES(Polaris),
-            CLASSES(Demon),
             CLASSES(Butler),
+            CLASSES(Demon),
+            CLASSES(Egg),
+            CLASSES(Maid),
+            CLASSES(Polaris),
             CLASSES(Rabbit),
-            CLASSES(Maid)};
+            CLASSES(Rifleman),
+            CLASSES(Tiger)};
     };
 };
 
 class CfgWeapons
 {
-#include "dependencies\arma.hpp"
-#include "dependencies\optre.hpp"
 #include "base\helmet.hpp"
 #include "base\vest.hpp"
 #include "rifleman.hpp"
-#include "tiger.hpp"
-#include "polaris.hpp"
-#include "egg.hpp"
-#include "maid.hpp"
-#include "demon.hpp"
-#include "butler.hpp"
-#include "rabbit.hpp"
+#include "operatives\butler.hpp"
+#include "operatives\demon.hpp"
+#include "operatives\egg.hpp"
+#include "operatives\maid.hpp"
+#include "operatives\polaris.hpp"
+#include "operatives\rabbit.hpp"
+#include "operatives\tiger.hpp"
+};
+
+class CfgGlasses
+{
+#include "pink_shemagh.hpp"
 };

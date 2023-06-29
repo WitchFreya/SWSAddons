@@ -16,11 +16,7 @@ workshop = [
     "1267657613", # optre ace compat
     "1572627279", # optre first contact
     "1572642262", # optre first contact ace compat
-    "1659590037", # Fireteam Zulu
-    "2888477598", # 1st MEU aux
-    "2016312756", # opcan
-    "1779063631", # zeus enhanced
-    "2018593688" # zen ace compat
+    "2016312756" # opcan
 ]
 
 [hemtt.release]

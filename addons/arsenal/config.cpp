@@ -77,6 +77,26 @@
     HELMET_GEAR_INFO(name); \
     VEST_GEAR_INFO(name)
 
+#define OPERATIVES \
+    "Rifleman" \
+    , "Butler" \
+    , "Demon" \
+    , "Egg" \
+    , "Maid"\
+    , "Polaris" \
+    , "Rabbit" \
+    , "Tiger" \
+
+#define XTDGEARMODEL_OPERATIVE(operative,type) \
+    class operative \
+    {\
+        label = QUOTE(operative); \
+        description = QUOTE(operative's type); \
+    }
+
+#define XTDGEARMODEL_OPERATIVE_HELMET(operative) XTDGEARMODEL_OPERATIVE(operative,Helmet)
+#define XTDGEARMODEL_OPERATIVE_VEST(operative) XTDGEARMODEL_OPERATIVE(operative,Armor)
+
 class XtdGearModels
 {
     class CfgWeapons
@@ -88,45 +108,16 @@ class XtdGearModels
             options[] = {"Operative", "Polarization", "Collar", "Ghillie"};
             class Operative
             {
-
-                values[] = {"Tiger", "Egg", "Polaris", "Demon", "Maid", "Rabbit", "Butler"};
-
-                class Tiger
-                {
-                    label = "Tiger";
-                    description = "Tiger's Helmet";
-                };
-                class Egg
-                {
-                    label = "Egg";
-                    description = "Egg's Helmet";
-                };
-                class Polaris
-                {
-                    label = "Polaris";
-                    description = "Polaris's Helmet";
-                };
-                class Maid
-                {
-                    label = "Maid";
-                    description = "Maid's Helmet";
-                };
-
-                class Demon
-                {
-                    label = "Demon";
-                    description = "Demon's Helmet";
-                };
-                class Rabbit
-                {
-                    label = "Rabbit";
-                    description = "Rabbit's Helmet";
-                };
-                class Butler
-                {
-                    label = "Butler";
-                    description = "Butler's Helmet";
-                };
+                label = "Operative";
+                values[] = {OPERATIVES};
+                XTDGEARMODEL_OPERATIVE_HELMET(Rifleman);
+                XTDGEARMODEL_OPERATIVE_HELMET(Butler);
+                XTDGEARMODEL_OPERATIVE_HELMET(Demon);
+                XTDGEARMODEL_OPERATIVE_HELMET(Egg);
+                XTDGEARMODEL_OPERATIVE_HELMET(Maid);
+                XTDGEARMODEL_OPERATIVE_HELMET(Polaris);
+                XTDGEARMODEL_OPERATIVE_HELMET(Rabbit);
+                XTDGEARMODEL_OPERATIVE_HELMET(Tiger);
             };
 
             class Polarization
@@ -191,45 +182,15 @@ class XtdGearModels
             class Operative
             {
                 label = "Operative";
-                values[] = {"Rifleman", "Tiger", "Egg", "Polaris", "Demon", "Rabbit", "Butler"};
-                class Rifleman
-                {
-                    label = "Rifleman";
-                    description = "Basic Rifleman Armor";
-                };
-                class Tiger
-                {
-                    label = "Tiger";
-                    description = "Tiger's Armor";
-                };
-
-                class Egg
-                {
-                    label = "Egg";
-                    description = "Egg's Armor";
-                };
-
-                class Polaris
-                {
-                    label = "Polaris";
-                    description = "Polaris' Armor";
-                };
-
-                class Demon
-                {
-                    label = "Demon";
-                    description = "Demon's Armor";
-                };
-                class Rabbit
-                {
-                    label = "Rabbit";
-                    description = "Rabbit's Armor";
-                };
-                class Butler
-                {
-                    label = "Butler";
-                    description = "Butler's Armor";
-                };
+                values[] = {OPERATIVES};
+                XTDGEARMODEL_OPERATIVE_VEST(Rifleman);
+                XTDGEARMODEL_OPERATIVE_VEST(Butler);
+                XTDGEARMODEL_OPERATIVE_VEST(Demon);
+                XTDGEARMODEL_OPERATIVE_VEST(Egg);
+                XTDGEARMODEL_OPERATIVE_VEST(Maid);
+                XTDGEARMODEL_OPERATIVE_VEST(Polaris);
+                XTDGEARMODEL_OPERATIVE_VEST(Rabbit);
+                XTDGEARMODEL_OPERATIVE_VEST(Tiger);
             };
 
             class Variant
@@ -281,13 +242,13 @@ class XtdGearInfos
     class CfgWeapons
     {
         GEAR_INFO(Rifleman);
-        GEAR_INFO(Tiger);
-        GEAR_INFO(Egg);
-        GEAR_INFO(Polaris);
-        GEAR_INFO(Maid);
-        GEAR_INFO(Rabbit);
         GEAR_INFO(Butler);
         GEAR_INFO(Demon);
+        GEAR_INFO(Egg);
+        GEAR_INFO(Maid);
+        GEAR_INFO(Polaris);
+        GEAR_INFO(Rabbit);
+        GEAR_INFO(Tiger);
     };
 };
 
@@ -298,20 +259,10 @@ class CfgPatches
         author = "Maid";
         requiredAddons[] = {
             "OPTRE_UNSC_Units",
+            // "LM_OPCAN", // TODO: Figure out how to require opcan
             "SWS_Main"};
         requiredVersion = 0.1;
         weapons[] = {};
         units[] = {};
-    };
-};
-
-class CfgGlasses
-{
-    class LM_OPCAN_DES_Shemagh;
-    class SWS_Shemagh_Pink : LM_OPCAN_DES_Shemagh
-    {
-        displayname = "[SWS] Shemagh (Pink)";
-        hiddenSelectionsTextures[] = {
-            TEXTURE(shemagh_pink_co.paa)};
     };
 };
