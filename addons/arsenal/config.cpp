@@ -9,89 +9,69 @@
         description = QUOTE(Type Configuration); \
     }
 
-#define VEST_GEAR_INFO(name)                              \
-    class SWS_Vest_##name                                 \
-    {                                                     \
-        model = "SWS_Operative_Armor";                    \
-        Operative = #name;                                \
-        Variant = "Standard";                             \
-    };                                                    \
-    class SWS_Vest_##name##_Demolitions : SWS_Vest_##name \
-    {                                                     \
-        Variant = "Demolitions";                          \
-    };                                                    \
-    class SWS_Vest_##name##_Sniper : SWS_Vest_##name      \
-    {                                                     \
-        Variant = "Sniper";                               \
-    };                                                    \
-    class SWS_Vest_##name##_Light : SWS_Vest_##name       \
-    {                                                     \
-        Variant = "Light";                                \
-    };                                                    \
-    class SWS_Vest_##name##_Scout : SWS_Vest_##name       \
-    {                                                     \
-        Variant = "Scout";                                \
-    };                                                    \
-    class SWS_Vest_##name##_Rifleman : SWS_Vest_##name    \
-    {                                                     \
-        Variant = "Rifleman";                             \
-    };                                                    \
-    class SWS_Vest_##name##_Marksman : SWS_Vest_##name    \
-    {                                                     \
-        Variant = "Marksman";                             \
+#define VEST_GEAR_INFO_ONE(name, varVariant)                                        \
+    class SWS_Vest_##name##_##varVariant : SWS_Vest_##name                          \
+    {                                                                               \
+        model = "SWS_Operative_Armor";                                              \
+        Operative = QUOTE(name);                                                    \
+        Variant = QUOTE(varVariant);                                                \
+        Ghillie = "No";                                                             \
+    };                                                                              \
+    class SWS_Vest_##name##_##varVariant##_Ghillie : SWS_Vest_##name##_##varVariant \
+    {                                                                               \
+        Ghillie = "Yes";                                                            \
     }
 
-#define HELMET_GEAR_INFO(name)                                      \
-    class SWS_Helmet_##name                                         \
-    {                                                               \
-        model = "SWS_Operative_Helmet";                             \
-        operative = QUOTE(name);                                    \
-        polarization = "Yes";                                       \
-        collar = "No";                                              \
-        ghillie = "No";                                             \
-    };                                                              \
-    class SWS_Helmet_##name##_dp : SWS_Helmet_##name                \
-    {                                                               \
-        polarization = "No";                                        \
-        collar = "No";                                              \
-        ghillie = "No";                                             \
-    };                                                              \
-    class SWS_Helmet_##name##_Collar : SWS_Helmet_##name            \
-    {                                                               \
-        polarization = "Yes";                                       \
-        collar = "Yes";                                             \
-        ghillie = "No";                                             \
-    };                                                              \
-    class SWS_Helmet_##name##_Collar_dp : SWS_Helmet_##name         \
-    {                                                               \
-        polarization = "No";                                        \
-        collar = "Yes";                                             \
-        ghillie = "No";                                             \
-    };                                                              \
-    class SWS_Helmet_##name##_Ghillie : SWS_Helmet_##name           \
-    {                                                               \
-        polarization = "Yes";                                       \
-        collar = "No";                                              \
-        ghillie = "Yes";                                            \
-    };                                                              \
-    class SWS_Helmet_##name##_Ghillie_dp : SWS_Helmet_##name        \
-    {                                                               \
-        polarization = "No";                                        \
-        collar = "No";                                              \
-        ghillie = "Yes";                                            \
-    };                                                              \
-    class SWS_Helmet_##name##_Collar_Ghillie : SWS_Helmet_##name    \
-    {                                                               \
-        polarization = "Yes";                                       \
-        collar = "Yes";                                             \
-        ghillie = "Yes";                                            \
-    };                                                              \
-    class SWS_Helmet_##name##_Collar_Ghillie_dp : SWS_Helmet_##name \
-    {                                                               \
-        polarization = "No";                                        \
-        collar = "Yes";                                             \
-        ghillie = "Yes";                                            \
+#define VEST_GEAR_INFO(name)                          \
+    class SWS_Vest_##name                             \
+    {                                                 \
+        model = "SWS_Operative_Armor";                \
+        Operative = QUOTE(name);                      \
+        Variant = "Standard";                         \
+        Ghillie = "No";                               \
+    };                                                \
+    class SWS_Vest_##name##_Ghillie : SWS_Vest_##name \
+    {                                                 \
+        Ghillie = "Yes";                              \
+    };                                                \
+    VEST_GEAR_INFO_ONE(name,Demolitions);            \
+    VEST_GEAR_INFO_ONE(name,Sniper);                 \
+    VEST_GEAR_INFO_ONE(name,Light);                  \
+    VEST_GEAR_INFO_ONE(name,Scout);                  \
+    VEST_GEAR_INFO_ONE(name,Rifleman);               \
+    VEST_GEAR_INFO_ONE(name,Marksman)
+
+#define HELMET_GEAR_INFO_BASE(name)                  \
+    class SWS_Helmet_##name                          \
+    {                                                \
+        model = "SWS_Operative_Helmet";              \
+        operative = QUOTE(name);                     \
+        polarization = "Yes";                        \
+        collar = "No";                               \
+        ghillie = "No";                              \
+    };                                               \
+    class SWS_Helmet_##name##_dp : SWS_Helmet_##name \
+    {                                                \
+        polarization = "No";                         \
     }
+
+#define HELMET_GEAR_INFO_VARIANT(name, variant, varCollar, varGhillie)       \
+    class SWS_Helmet_##name##_##variant : SWS_Helmet_##name                  \
+    {                                                                        \
+        polarization = "Yes";                                                \
+        collar = QUOTE(varCollar);                                           \
+        ghillie = QUOTE(varGhillie);                                         \
+    };                                                                       \
+    class SWS_Helmet_##name##_##variant##_dp : SWS_Helmet_##name##_##variant \
+    {                                                                        \
+        polarization = "No";                                                 \
+    }
+
+#define HELMET_GEAR_INFO(name)                                \
+    HELMET_GEAR_INFO_BASE(name);                              \
+    HELMET_GEAR_INFO_VARIANT(name,Collar, Yes, No);          \
+    HELMET_GEAR_INFO_VARIANT(name,Collar_Ghillie, Yes, Yes); \
+    HELMET_GEAR_INFO_VARIANT(name,Ghillie, No, Yes)
 
 #define GEAR_INFO(name)     \
     HELMET_GEAR_INFO(name); \
@@ -196,7 +176,7 @@ class XtdGearModels
         {
             label = "[SWS] Armor";
             icon = "\sws_main\assets\icon_sws.paa";
-            options[] = {"Operative", "Variant"};
+            options[] = {"Operative", "Variant", "Ghillie"};
 
             class Operative
             {
@@ -252,6 +232,23 @@ class XtdGearModels
                 VARIANT(Rifleman);
                 VARIANT(Marksman);
             };
+
+            class Ghillie
+            {
+                label = "Ghillie";
+                values[] = {"Yes", "No"};
+
+                class Yes
+                {
+                    label = "Yes";
+                    description = "Ghillie me.";
+                };
+                class No
+                {
+                    label = "No";
+                    description = "Ghillie is lame.";
+                };
+            };
         };
     };
 };
@@ -267,7 +264,7 @@ class XtdGearInfos
         GEAR_INFO(Tiger);
         GEAR_INFO(Egg);
         GEAR_INFO(Polaris);
-        HELMET_GEAR_INFO(Maid);
+        GEAR_INFO(Maid);
         VEST_GEAR_INFO(Demon);
     };
 };
