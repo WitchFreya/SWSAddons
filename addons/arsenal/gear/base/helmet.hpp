@@ -32,7 +32,7 @@ class SWS_Helmet_Base : OPTRE_UNSC_CH252D_Helmet_Base
 
     class ItemInfo : ItemInfo
     {
-        hiddenSelections[] = { HELMET_SELECTIONS_BASE, "H_Ghillie", HELMET_SELECTIONS_COLLAR};
+        hiddenSelections[] = {HELMET_SELECTIONS_BASE, "H_Ghillie", HELMET_SELECTIONS_COLLAR};
     };
 };
 
@@ -85,12 +85,12 @@ class SWS_Helmet_Base_dp : OPTRE_UNSC_CH252D_Helmet_dp
         };                                                                        \
     }
 
-#define HELMET(name, texHelmet, texVisor, texGhillie, texPacks)                                   \
-    HELMET_BASE(name, texHelmet, texVisor, texGhillie, texPacks);                                 \
-    HELMET_VARIANT(name,Collar,                                                                  \
-                   WITH(HELMET_SELECTIONS_BASE, WITH("H_Ghillie", HELMET_SELECTIONS_COLLAR)),     \
-                   WITH(HELMET_SELECTIONS_BASE_DP, WITH("H_Ghillie", HELMET_SELECTIONS_COLLAR))); \
-    HELMET_VARIANT(name,Ghillie,                                                                 \
-                   WITH(HELMET_SELECTIONS_BASE, HELMET_SELECTIONS_COLLAR),                        \
-                   WITH(HELMET_SELECTIONS_BASE_DP, HELMET_SELECTIONS_COLLAR));                    \
+#define HELMET(name, texHelmet, texVisor, texGhillie, texPacks)                \
+    HELMET_BASE(name, texHelmet, texVisor, texGhillie, texPacks);              \
+    HELMET_VARIANT(name,Collar,                                               \
+                   WITH(HELMET_SELECTIONS_BASE, "H_Ghillie"),                  \
+                   WITH(HELMET_SELECTIONS_BASE_DP, "H_Ghillie"));              \
+    HELMET_VARIANT(name,Ghillie,                                              \
+                   WITH(HELMET_SELECTIONS_BASE, HELMET_SELECTIONS_COLLAR),     \
+                   WITH(HELMET_SELECTIONS_BASE_DP, HELMET_SELECTIONS_COLLAR)); \
     HELMET_VARIANT(name,Collar_Ghillie, HELMET_SELECTIONS_BASE, HELMET_SELECTIONS_BASE_DP)

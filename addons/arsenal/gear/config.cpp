@@ -5,14 +5,21 @@
 #define MATERIAL(file) QUOTE(ASSETS\materials\file)
 
 #define VEST_CLASS(name) QUOTE(SWS_Vest_##name)
-#define VEST_CLASSES(name)              \
-    VEST_CLASS(name),                   \
-        VEST_CLASS(name##_Demolitions), \
-        VEST_CLASS(name##_Sniper),      \
-        VEST_CLASS(name##_Light),       \
-        VEST_CLASS(name##_Scout),       \
-        VEST_CLASS(name##_Rifleman),    \
-        VEST_CLASS(name##_Marksman)
+#define VEST_CLASSES(name)                      \
+    VEST_CLASS(name),                           \
+        VEST_CLASS(name##_Demolitions),         \
+        VEST_CLASS(name##_Sniper),              \
+        VEST_CLASS(name##_Light),               \
+        VEST_CLASS(name##_Scout),               \
+        VEST_CLASS(name##_Rifleman),            \
+        VEST_CLASS(name##_Marksman),            \
+        VEST_CLASS(name##_Ghillie),             \
+        VEST_CLASS(name##_Demolitions_Ghillie), \
+        VEST_CLASS(name##_Sniper_Ghillie),      \
+        VEST_CLASS(name##_Light_Ghillie),       \
+        VEST_CLASS(name##_Scout_Ghillie),       \
+        VEST_CLASS(name##_Rifleman_Ghillie),    \
+        VEST_CLASS(name##_Marksman_Ghillie)
 
 #define HELMET_CLASS(name)    \
     QUOTE(SWS_Helmet_##name), \
@@ -44,7 +51,7 @@ class CfgPatches
             CLASSES(Egg),
             CLASSES(Polaris),
             VEST_CLASSES(Demon),
-            HELMET_CLASSES(Maid)};
+            CLASSES(Maid)};
     };
 };
 
