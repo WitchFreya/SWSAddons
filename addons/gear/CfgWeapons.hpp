@@ -9,5 +9,6 @@ class CfgWeapons
 #include "operatives\maid.hpp"
 #include "operatives\polaris.hpp"
 #include "operatives\rabbit.hpp"
+#include "operatives\sawbones.hpp"
 #include "operatives\tiger.hpp"
 };
