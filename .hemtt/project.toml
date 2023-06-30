@@ -1,7 +1,7 @@
 name = "SWS Addons"
 author = "Maid"
 prefix = "sws"
-mainprefix = "z"
+mainprefix = "x"
 
 [properties]
 author = "Maid"
@@ -16,7 +16,9 @@ workshop = [
     "1267657613", # optre ace compat
     "1572627279", # optre first contact
     "1572642262", # optre first contact ace compat
-    "2016312756" # opcan
+    "2016312756", # opcan
+    "1659590037", # fireteam zulu - required by 19th
+    "2047587607" # 19th fleet armor mod
 ]
 
 [hemtt.release]

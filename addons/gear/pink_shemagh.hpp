@@ -1,5 +1,3 @@
-#include "dependencies\common.hpp"
-
 class SWS_Shemagh_Pink : LM_OPCAN_DES_Shemagh
 {
     ITEM_META(2);

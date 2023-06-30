@@ -1,7 +1,6 @@
-#define BASE_PATH \z\sws\addons\arsenal
-#define ASSETS BASE_PATH\assets
-#define TEXTURE(file) QUOTE(ASSETS\textures\file)
-#define QUOTE(var) #var
+#include "script_component.hpp"
+
+#define TEXTURE(file) QPATHTOF(assets\textures\file)
 #define VARIANT(Type)                            \
     class Type                                   \
     {                                            \
@@ -34,12 +33,12 @@
     {                                                 \
         Ghillie = "Yes";                              \
     };                                                \
-    VEST_GEAR_INFO_ONE(name,Demolitions);            \
-    VEST_GEAR_INFO_ONE(name,Sniper);                 \
-    VEST_GEAR_INFO_ONE(name,Light);                  \
-    VEST_GEAR_INFO_ONE(name,Scout);                  \
-    VEST_GEAR_INFO_ONE(name,Rifleman);               \
-    VEST_GEAR_INFO_ONE(name,Marksman)
+    VEST_GEAR_INFO_ONE(name, Demolitions);            \
+    VEST_GEAR_INFO_ONE(name, Sniper);                 \
+    VEST_GEAR_INFO_ONE(name, Light);                  \
+    VEST_GEAR_INFO_ONE(name, Scout);                  \
+    VEST_GEAR_INFO_ONE(name, Rifleman);               \
+    VEST_GEAR_INFO_ONE(name, Marksman)
 
 #define HELMET_GEAR_INFO_BASE(name)                  \
     class SWS_Helmet_##name                          \
@@ -69,33 +68,26 @@
 
 #define HELMET_GEAR_INFO(name)                                \
     HELMET_GEAR_INFO_BASE(name);                              \
-    HELMET_GEAR_INFO_VARIANT(name,Collar, Yes, No);          \
-    HELMET_GEAR_INFO_VARIANT(name,Collar_Ghillie, Yes, Yes); \
-    HELMET_GEAR_INFO_VARIANT(name,Ghillie, No, Yes)
+    HELMET_GEAR_INFO_VARIANT(name, Collar, Yes, No);          \
+    HELMET_GEAR_INFO_VARIANT(name, Collar_Ghillie, Yes, Yes); \
+    HELMET_GEAR_INFO_VARIANT(name, Ghillie, No, Yes)
 
 #define GEAR_INFO(name)     \
     HELMET_GEAR_INFO(name); \
     VEST_GEAR_INFO(name)
 
 #define OPERATIVES \
-    "Rifleman" \
-    , "Butler" \
-    , "Demon" \
-    , "Egg" \
-    , "Maid"\
-    , "Polaris" \
-    , "Rabbit" \
-    , "Tiger" \
+    "Rifleman", "Butler", "Demon", "Egg", "Maid", "Polaris", "Rabbit", "Tiger"
 
-#define XTDGEARMODEL_OPERATIVE(operative,type) \
-    class operative \
-    {\
-        label = QUOTE(operative); \
+#define XTDGEARMODEL_OPERATIVE(operative, type) \
+    class operative                             \
+    {                                           \
+        label = QUOTE(operative);               \
         description = QUOTE(operative's type); \
     }
 
-#define XTDGEARMODEL_OPERATIVE_HELMET(operative) XTDGEARMODEL_OPERATIVE(operative,Helmet)
-#define XTDGEARMODEL_OPERATIVE_VEST(operative) XTDGEARMODEL_OPERATIVE(operative,Armor)
+#define XTDGEARMODEL_OPERATIVE_HELMET(operative) XTDGEARMODEL_OPERATIVE(operative, Helmet)
+#define XTDGEARMODEL_OPERATIVE_VEST(operative) XTDGEARMODEL_OPERATIVE(operative, Armor)
 
 class XtdGearModels
 {
@@ -254,13 +246,14 @@ class XtdGearInfos
 
 class CfgPatches
 {
-    class SWS_Arsenal
+    class ADDON
     {
-        author = "Maid";
-        requiredAddons[] = {
-            "SWS_Main"};
-        requiredVersion = 0.1;
-        weapons[] = {};
+        name = QUOTE(COMPONENT);
         units[] = {};
+        weapons[] = {};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons = {"SWS_Main"};
+        author = QUOTE(AUTHOR);
+        VERSION_CONFIG;
     };
 };
