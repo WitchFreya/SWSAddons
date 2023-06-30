@@ -40,7 +40,6 @@ class CfgPatches
     class ADDON
     {
         name = QUOTE(COMPONENT);
-
         units[] = {};
         weapons[] = {
             CLASSES(Butler),
@@ -61,64 +60,5 @@ class CfgPatches
     };
 };
 
-class CfgWeapons
-{
-#include "base\helmet.hpp"
-#include "base\vest.hpp"
-#include "rifleman.hpp"
-#include "operatives\butler.hpp"
-#include "operatives\demon.hpp"
-#include "operatives\egg.hpp"
-#include "operatives\maid.hpp"
-#include "operatives\polaris.hpp"
-#include "operatives\rabbit.hpp"
-#include "operatives\tiger.hpp"
-};
-
-class CfgGlasses
-{
-#include "pink_shemagh.hpp"
-};
-
-class XtdGearModels
-{
-    class CfgGlasses
-    {
-        class SWS_Shemagh
-        {
-            label = "[SWS] Shemagh";
-            author = "Maid";
-            options[] = {"Color", "Variant"};
-
-            class Color
-            {
-                label = "Color";
-                values[] = {"Pink"};
-
-                class Pink
-                {
-                    label = "Pink";
-                    description = "A pink shemagh.";
-                };
-            };
-
-            class Variant
-            {
-                label = "Variant";
-                values[] = {"Up", "Down"};
-
-                class Up
-                {
-                    label = "Up";
-                    description = "Hide my nose and mouth too.";
-                };
-
-                class Down
-                {
-                    label = "Down";
-                    description = "Just keep my neck warm.";
-                };
-            };
-        };
-    };
-};
+#include "CfgWeapons.hpp"
+#include "CfgGlasses.hpp"
