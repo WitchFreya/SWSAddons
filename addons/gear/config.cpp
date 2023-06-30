@@ -49,6 +49,7 @@ class CfgPatches
             CLASSES(Polaris),
             CLASSES(Rabbit),
             CLASSES(Rifleman),
+            CLASSES(Sawbones),
             CLASSES(Tiger)};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
