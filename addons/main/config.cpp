@@ -1,11 +1,17 @@
+#include "script_component.hpp"
+
 class CfgPatches
 {
-    class SWS_Main
+    class ADDON
     {
-        author = "Maid";
-        requiredAddons[] = {};
-        requiredVersion = 0.1;
-        weapons[] = {};
+        name = QUOTE(COMPONENT);
         units[] = {};
+        weapons[] = {};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {};
+        author = QUOTE(AUTHOR);
+        VERSION_CONFIG;
     };
 };
+
+VERSIONING

@@ -1,4 +1,5 @@
-#include "dependencies\common.hpp"
+#include "script_component.hpp"
+
 #include "dependencies\arma.hpp"
 #include "dependencies\optre.hpp"
 #include "dependencies\opcan.hpp"
@@ -36,15 +37,10 @@
 
 class CfgPatches
 {
-    class SWS_Arsenal_Gear
+    class ADDON
     {
-        addonRootClass = "SWS_Arsenal";
-        author = "Maid";
-        requiredAddons[] = {
-            "OPTRE_UNSC_Units",
-            "LM_OPCAN_UNSC",
-            "SWS_Arsenal"};
-        requiredVersion = 0.1;
+        name = QUOTE(COMPONENT);
+
         units[] = {};
         weapons[] = {
             CLASSES(Butler),
@@ -55,6 +51,13 @@ class CfgPatches
             CLASSES(Rabbit),
             CLASSES(Rifleman),
             CLASSES(Tiger)};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {
+            "OPTRE_UNSC_Units",
+            "LM_OPCAN_UNSC",
+            "SWS_Arsenal"};
+        author = QUOTE(AUTHOR);
+        VERSION_CONFIG;
     };
 };
 
