@@ -15,4 +15,4 @@ overviewPicture = ICON;
 overviewText = "Addons for SWS unit content.";
 overviewFootnote = "<br/><br/><t color='#999999'>This content is under the APL-SA License.</t>";
 description = "Addons for SWS unit content.";
-dir = "@sws"
+dir = "@sws";
