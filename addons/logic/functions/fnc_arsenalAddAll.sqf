@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [LOGIC, [crate, box], true] call SWS_fnc_arsenalAddAll
+ * [LOGIC, [crate, box], true] call SWS_logic_fnc_arsenalAddAll
  *
  * Public: No
  */
