@@ -1,5 +1,62 @@
 #define VEST_DISPLAY_NAME(name) displayName = QUOTE([SWS] name's Vest)
 
+/*
+All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With-Pictures
+    "camo",
+    "camo2",
+    "camo3",
+    "camo4",
+    "camo5",
+    "A_base",
+    "A_ChestArmor",
+    "A_Ghillie",
+    "A_KneesMarLeft",
+    "A_KneesMarRight",
+    "A_KneesLeft",
+    "A_KneesRight",
+    "A_ODST",
+    "A_ShinArmorLeft",
+    "A_ShinArmorRight",
+    "A_TacPad",
+    "A_ThighArmorLeft",
+    "A_ThighArmorRight",
+    "AP_AR",
+    "AP_BR",
+    "AP_Canteen",
+    "AP_Frag",
+    "AP_GL",
+    "AP_MGThigh",
+    "AP_Pack",
+    "AP_Pistol",
+    "AP_Rounds",
+    "AP_SG",
+    "AP_SMG",
+    "AP_Smoke",
+    "AP_Sniper",
+    "AP_Thigh",
+    "APO_AR",
+    "APO_BR",
+    "APO_Knife",
+    "APO_SMG",
+    "APO_Sniper",
+    "AS_BaseLeft",
+    "AS_BaseRight",
+    "AS_LargeLeft",
+    "AS_LargeRight",
+    "AS_MediumLeft",
+    "AS_MediumRight",
+    "AS_ODSTCQBLeft",
+    "AS_ODSTCQBRight",
+    "AS_ODSTLeft",
+    "AS_ODSTRight",
+    "AS_ODSTSniperLeft",
+    "AS_ODSTSniperRight",
+    "AS_SmallLeft",
+    "AS_SmallRight",
+    "CustomKit_Scorch"
+ */
+
+
 #define VEST_SELECTIONS_BASE "camo",  \
                              "camo2", \
                              "camo3", \
@@ -15,7 +72,6 @@
 
 #define VEST_SELECTIONS_STANDARD VEST_SELECTIONS_BASE,   \
                                  VEST_SELECTIONS_MARINE, \
-                                 "A_TacPad",             \
                                  "AS_LargeLeft",         \
                                  "AS_LargeRight",        \
                                  "AS_MediumLeft",        \
@@ -51,7 +107,6 @@
 
 #define VEST_SELECTIONS_DEMOLITIONS VEST_SELECTIONS_BASE,   \
                                     VEST_SELECTIONS_MARINE, \
-                                    "A_TacPad",             \
                                     "AS_ODSTLeft",          \
                                     "AS_ODSTCQBRight",      \
                                     "AS_ODSTSniperLeft",    \
@@ -80,7 +135,6 @@
 
 #define VEST_SELECTIONS_SNIPER VEST_SELECTIONS_BASE,   \
                                VEST_SELECTIONS_MARINE, \
-                               "A_TacPad",             \
                                "AS_ODSTLeft",          \
                                "AS_ODSTRight",         \
                                "AS_ODSTCQBLeft",       \
@@ -137,7 +191,6 @@
                               "CustomKit_Scorch"
 
 #define VEST_SELECTIONS_SCOUT VEST_SELECTIONS_BASE, VEST_SELECTIONS_MARINE, \
-                              "A_TacPad",                                   \
                               "AS_ODSTCQBLeft",                             \
                               "AS_ODSTCQBRight",                            \
                               "AS_ODSTSniperLeft",                          \
@@ -164,7 +217,6 @@
                               "CustomKit_Scorch"
 
 #define VEST_SELECTIONS_RIFLEMAN VEST_SELECTIONS_BASE, VEST_SELECTIONS_MARINE, \
-                                 "A_TacPad",                                   \
                                  "AS_ODSTCQBLeft",                             \
                                  "AS_ODSTCQBRight",                            \
                                  "AS_ODSTSniperLeft",                          \
@@ -191,7 +243,6 @@
                                  "CustomKit_Scorch"
 
 #define VEST_SELECTIONS_MARKSMAN VEST_SELECTIONS_BASE, VEST_SELECTIONS_MARINE, \
-                                 "A_TacPad",                                   \
                                  "AS_ODSTCQBLeft",                             \
                                  "AS_ODSTCQBRight",                            \
                                  "AS_ODSTSniperLeft",                          \
