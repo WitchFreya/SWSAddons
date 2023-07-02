@@ -4,8 +4,3 @@ enabled = true
 [preprocess]
 enabled = true
 exclude = []
-
-[files]
-exclude = [
-    "*.hpp"
-]
