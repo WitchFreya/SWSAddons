@@ -21,8 +21,9 @@ params ["_logic", "_units", "_activated"];
 
 if (!_activated || !local _logic || count _units == 0) exitWith {0};
 
-private _swsConfigItems = "getText (_x >> 'dlc') == 'sws'" configClasses (configFile >> "CfgWeapons");
-private _swsItemClasses = _swsConfigItems apply { configName _x };
+private _swsItems = "getText (_x >> 'dlc') == 'sws'" configClasses (configFile >> "CfgWeapons");
+_swsItems append ("getText (_x >> 'dlc') == 'sws'" configClasses (configFile >> "CfgGlasses"));
+private _swsItemClasses = _swsItems apply { configName _x };
 
 _units apply { [_x, _swsItemClasses, true] call ACE_arsenal_fnc_addVirtualItems };
 
