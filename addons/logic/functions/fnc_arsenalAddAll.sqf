@@ -9,12 +9,12 @@
  * 2: Activated <BOOL>
  *
  * Return Value:
- * None
+ * true on success
  *
  * Example:
  * [LOGIC, [crate, box], true] call SWS_logic_fnc_arsenalAddAll
  *
- * Public: No
+ * Public: Yes
  */
 
 params ["_logic", "_units", "_activated"];
