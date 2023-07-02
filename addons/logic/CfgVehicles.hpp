@@ -6,7 +6,7 @@ class CfgVehicles
 
     class SWS_Module_ArsenalAutoAdd: ACE_Module {
         scope = 2;
-        displayName = "ACE Arsenal Autoadd";
+        displayName = "ACE Arsenal Autoadd (Beta)";
         category = "SWS_Modules";
         function = QFUNC(arsenalAddAll);
         functionPriority = 10;
