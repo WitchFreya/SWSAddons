@@ -4,24 +4,22 @@
  * Adds all SWS items to any synchronized ACE arsenals at mission start.
  *
  * Arguments:
- * 0: Logic <LOGIC>
- * 1: Units <ARRAY>
- * 2: Activated <BOOL>
+ * 0: Units <ARRAY>
  *
  * Return Value:
  * true on success
  *
  * Example:
- * [LOGIC, [crate, box], true] call SWS_logic_fnc_arsenalAddAll
+ * [[crate, box]] call SWS_logic_fnc_arsenalAddAll
  *
  * Public: Yes
  */
 
-params ["_logic", "_units", "_activated"];
+params ["_units"];
 
-TRACE_3("arsenalAddAll vars",_logic,_units,_activated);
+TRACE_1("arsenalAddAll vars",_units);
 
-if (!_activated || !local _logic || count _units == 0) exitWith {0};
+if (count _units == 0) exitWith {0};
 
 private _filterToSwsItems = "getText (_x >> 'dlc') == 'sws'";
 private _relevantConfigs = ["CfgWeapons", "CfgGlasses"];
