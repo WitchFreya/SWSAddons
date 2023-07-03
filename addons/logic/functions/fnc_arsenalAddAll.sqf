@@ -19,12 +19,19 @@
 
 params ["_logic", "_units", "_activated"];
 
+TRACE_3("arsenalAddAll vars",_logic,_units,_activated);
+
 if (!_activated || !local _logic || count _units == 0) exitWith {0};
 
-private _swsItems = "getText (_x >> 'dlc') == 'sws'" configClasses (configFile >> "CfgWeapons");
-_swsItems append ("getText (_x >> 'dlc') == 'sws'" configClasses (configFile >> "CfgGlasses"));
-private _swsItemClasses = _swsItems apply { configName _x };
+private _filterToSwsItems = "getText (_x >> 'dlc') == 'sws'";
+private _relevantConfigs = ["CfgWeapons", "CfgGlasses"];
+private _swsItems = flatten (_relevantConfigs apply { _filterToSwsItems configClasses (configFile >> _x) });
+private _itemsInScope = _swsItems select { getNumber (_x >> 'scopeArsenal') > 0 } apply { configName _x };
 
-_units apply { [_x, _swsItemClasses, true] call ACE_arsenal_fnc_addVirtualItems };
+TRACE_1("arsenalAddAll Items",_itemsInScope);
+
+{ [_x, _itemsInScope, true] call ACE_arsenal_fnc_addVirtualItems } forEach _units;
+
+INFO("arsenalAddAll Complete");
 
 true;
