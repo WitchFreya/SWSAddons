@@ -1,6 +1,14 @@
 #define VEST_DISPLAY_NAME(name) displayName = QUOTE([SWS] name's Vest)
 
 /*
+OneOf:
+    L/RShoulders  - AS_[Large,Medium,ODSTCQB,ODST,Sniper,Small]L/R
+    Forearm       - A_TacPad,None
+    LeftHip       - AP_Canteen, AP_Smoke
+    L/RKnees      - A_[Knees,KneesMar]L/R
+    AmmoAbs       - AP_[AR,BR,SMG,Sniper],APO_[AR,BR,Sniper],CustomKit_Scorch
+    AmmoPecs      - APO_SMG,AP_SG
+
 All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With-Pictures
     "camo",
     "camo2",

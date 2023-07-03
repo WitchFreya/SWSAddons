@@ -8,7 +8,7 @@ class CfgVehicles
         scope = 2;
         displayName = "ACE Arsenal Autoadd (Beta)";
         category = "SWS_Modules";
-        function = QFUNC(arsenalAddAll);
+        function = QFUNC(moduleArsenalAddAll);
         functionPriority = 10;
         isGlobal = 0;
         isTriggerActivated = 0;

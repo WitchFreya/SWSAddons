@@ -1,1 +1,2 @@
+PREP(moduleArsenalAddAll);
 PREP(arsenalAddAll);
