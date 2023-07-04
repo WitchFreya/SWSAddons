@@ -8,7 +8,7 @@ class CfgPatches
         units[] = {"SWS_ModuleArsenalAutoadd"};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"SWS_Main", "SWS_Arsenal"};
+        requiredAddons[] = {"SWS_Main", "SWS_Gear"};
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };

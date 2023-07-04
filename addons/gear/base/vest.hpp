@@ -317,7 +317,7 @@ class SWS_Vest_Base : OPTRE_UNSC_M52D_Armor
     {                                                             \
         class ItemInfo : ItemInfo                                 \
         {                                                         \
-            hiddenSelections[] = {WITH(selections, "A_Ghillie")}; \
+            hiddenSelections[] = {ARR_2(selections, "A_Ghillie")}; \
         };                                                        \
     };                                                            \
     class SWS_Vest_##name##_##variant##_Ghillie : SWS_Vest_##name \

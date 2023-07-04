@@ -55,7 +55,7 @@ class CfgPatches
         requiredAddons[] = {
             "OPTRE_UNSC_Units",
             "LM_OPCAN_UNSC",
-            "SWS_Arsenal"};
+            "SWS_Main"};
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };
@@ -63,3 +63,5 @@ class CfgPatches
 
 #include "CfgWeapons.hpp"
 #include "CfgGlasses.hpp"
+#include "XtdGearModels.hpp"
+#include "XtdGearInfos.hpp"
