@@ -1,1 +1,1 @@
-class PointerSlot;
+class WeaponSlotsInfo;
