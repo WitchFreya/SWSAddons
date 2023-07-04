@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 
 #include "CfgWeapons.hpp"
+#include "XtdGearModels.hpp"
 
 class CfgPatches
 {
