@@ -1,5 +1,6 @@
 #include "script_component.hpp"
 
+#include "CfgAmmo.hpp"
 #include "CfgMagazines.hpp"
 #include "CfgWeapons.hpp"
 #include "XtdGearModels.hpp"
@@ -10,9 +11,11 @@ class CfgPatches
     {
         name = QUOTE(COMPONENT);
         units[] = {};
-        weapons[] = { WEAPON_CLASSES };
+        weapons[] = { CLASSES_AMMO };
+        magazines[] = { CLASSES_MAGAZINE };
+        ammo[] = { CLASSES_AMMO };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"LM_OPCAN_WEP_RES", "SWS_Main"};
+        requiredAddons[] = { "LM_OPCAN_WEP_RES", "OPTRE_ACE_Compat", "SWS_Main" };
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };
