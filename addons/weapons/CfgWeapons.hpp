@@ -17,13 +17,6 @@ class CfgWeapons {
             model = QWEAPON(AR0M37);
             underbarrel = "None";
         };
-
-        class WeaponSlotsInfo: WeaponSlotsInfo {
-            class PointerSlot;
-            class PointerSlot : PointerSlot {
-                compatibleItems[] += {"ace_acc_pointer_green"};
-            };
-        };
     };
     class WEAPON(AR0M37_GL): LM_OPCAN_AR0M37_GL {
         WEAPON_META(AR0M37_GL,2);
