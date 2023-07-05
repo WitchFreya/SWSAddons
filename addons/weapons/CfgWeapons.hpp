@@ -5,10 +5,11 @@
     QWEAPON(SM247)
 
 class CfgWeapons {
-    class Dmns_M247_GPMG;
     class LM_OPCAN_AR0M37;
     class LM_OPCAN_AR0M37_GL;
     class LM_OPCAN_AR0M37_SHT;
+    class Dmns_M247_GPMG;
+    class 19th_br_55_gl;
 
     class WEAPON(AR0M37): LM_OPCAN_AR0M37 {
         WEAPON_META(AR0M37,2);
