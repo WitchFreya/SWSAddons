@@ -7,7 +7,7 @@ class CfgMagazines {
     class DMNS_400Rnd_762x51_Mag_GPMG_Tracer;
 
     class MAGAZINE(100Rnd_762x51_Mag): DMNS_100Rnd_762x51_Mag_GPMG {
-        dlc = "sws";
+        ITEM_META(2);
         // model="\OPTRE_Weapons\MG\M247_Mag_Proxy.p3d";
 		// modelSpecial="\OPTRE_Weapons\MG\M247_Mag_Proxy.p3d";
 		// modelSpecialIsProxy=1;
@@ -21,7 +21,7 @@ class CfgMagazines {
 		// };
     };
     class MAGAZINE(100Rnd_762x51_Mag_Tracer): DMNS_100Rnd_762x51_Mag_GPMG_Tracer {
-        dlc = "sws";
+        ITEM_META(2);
         // model="\OPTRE_Weapons\MG\M247_Mag_Proxy.p3d";
 		// modelSpecial="\OPTRE_Weapons\MG\M247_Mag_Proxy.p3d";
 		// modelSpecialIsProxy=1;
@@ -35,7 +35,7 @@ class CfgMagazines {
 		// };
     };
     class MAGAZINE(200Rnd_762x51_Mag): DMNS_200Rnd_762x51_Mag_GPMG {
-        dlc = "sws";
+        ITEM_META(2);
         // model="\OPTRE_Weapons\MG\M247_Mag_Proxy.p3d";
 		// modelSpecial="\OPTRE_Weapons\MG\M247_Mag_Proxy.p3d";
 		// modelSpecialIsProxy=1;
@@ -49,7 +49,7 @@ class CfgMagazines {
 		// };
     };
     class MAGAZINE(200Rnd_762x51_Mag_Tracer): DMNS_200Rnd_762x51_Mag_GPMG_Tracer {
-        dlc = "sws";
+        ITEM_META(2);
         // model="\OPTRE_Weapons\MG\M247_Mag_Proxy.p3d";
 		// modelSpecial="\OPTRE_Weapons\MG\M247_Mag_Proxy.p3d";
 		// modelSpecialIsProxy=1;
@@ -63,7 +63,7 @@ class CfgMagazines {
 		// };
     };
     class MAGAZINE(400Rnd_762x51_Mag): DMNS_400Rnd_762x51_Mag_GPMG {
-        dlc = "sws";
+        ITEM_META(2);
         // model="\OPTRE_Weapons\MG\M247_Mag_Proxy.p3d";
 		// modelSpecial="\OPTRE_Weapons\MG\M247_Mag_Proxy.p3d";
 		// modelSpecialIsProxy=1;
@@ -77,7 +77,7 @@ class CfgMagazines {
 		// };
     };
     class MAGAZINE(400Rnd_762x51_Mag_Tracer): DMNS_400Rnd_762x51_Mag_GPMG_Tracer {
-        dlc = "sws";
+        ITEM_META(2);
         // model="\OPTRE_Weapons\MG\M247_Mag_Proxy.p3d";
 		// modelSpecial="\OPTRE_Weapons\MG\M247_Mag_Proxy.p3d";
 		// modelSpecialIsProxy=1;
