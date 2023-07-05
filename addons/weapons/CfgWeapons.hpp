@@ -5,9 +5,11 @@
     QWEAPON(SM247)
 
 class CfgWeapons {
-    #include "dependencies\arma.hpp"
-    #include "dependencies\opcan.hpp"
-    #include "dependencies\dmns.hpp"
+    class Dmns_M247_GPMG;
+    class LM_OPCAN_AR0M37;
+    class LM_OPCAN_AR0M37_GL;
+    class LM_OPCAN_AR0M37_SHT;
+
     class WEAPON(AR0M37): LM_OPCAN_AR0M37 {
         WEAPON_META(AR0M37,2);
         displayName = NAME(AR-0M37 6.5mm);
@@ -58,5 +60,16 @@ class CfgWeapons {
         //     "\OPTRE_Weapons\MG\data\M247_details_CO.paa",
         //     "\OPTRE_Weapons\MG\data\M247_barrel_sights_CO.paa"
         // };
+        magazines[] = {
+			"SWS_100Rnd_762x51_Mag",
+			"SWS_100Rnd_762x51_Mag_Tracer",
+			"SWS_200Rnd_762x51_Mag",
+			"SWS_200Rnd_762x51_Mag_Tracer",
+			"SWS_400Rnd_762x51_Mag",
+			"SWS_400Rnd_762x51_Mag_Tracer",
+			"OPTRE_32Rnd_762x51_Mag",
+			"OPTRE_32Rnd_762x51_Mag_Tracer",
+			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"
+		};
     };
 };

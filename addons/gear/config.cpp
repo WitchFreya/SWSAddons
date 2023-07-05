@@ -1,9 +1,5 @@
 #include "script_component.hpp"
 
-#include "dependencies\arma.hpp"
-#include "dependencies\optre.hpp"
-#include "dependencies\opcan.hpp"
-
 #define VEST_CLASS(name) QUOTE(SWS_Vest_##name)
 #define VEST_CLASSES(name)                      \
     VEST_CLASS(name),                           \
