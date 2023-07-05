@@ -2,9 +2,12 @@ class CfgVehicles
 {
     class ACE_Module {
         class ModuleDescription;
+        class ArgumentsBaseUnits;
     };
 
     class SWS_Module_ArsenalAutoAdd: ACE_Module {
+        // TODO: icon
+        // icon = "\sws_main\data\icon_sws.paa";
         scope = 2;
         displayName = "ACE Arsenal Autoadd (Beta)";
         category = "SWS_Modules";
@@ -18,6 +21,15 @@ class CfgVehicles
         class ModuleDescription : ModuleDescription {
             description = "Automatically add SWS items to synchronized ACE arsenals.";
             sync[] = {"Anything"};
+        };
+
+        class Arguments: ArgumentsBaseUnits {
+            class Exclude {
+                displayName = "Excluded Items:";
+                description = "A comma-delimited string of class names to exclude from the arsenal.";
+                typeName = "STRING";
+                defaultValue = "";
+            };
         };
     };
 };
