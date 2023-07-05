@@ -1,4 +1,4 @@
-#define WEAPON_CLASSES      \
+#define CLASSES_WEAPON      \
     QWEAPON(AR0M37),        \
     QWEAPON(AR0M37_GL),     \
     QWEAPON(AR0M37_SHT),    \
@@ -40,26 +40,26 @@ class CfgWeapons {
     };
 
     class WEAPON(SM247): Dmns_M247_GPMG {
+        // TODO: Define https://ace3.acemod.org/wiki/framework/advanced-ballistics-framework.html if we ever use Ace's ABM.
         WEAPON_META(SM247,2);
         displayName = NAME(SM247);
-        // TODO: the box mag presently doesn't render like this; make it work
-        // model = "\OPTRE_Weapons\MG\M247.p3d";
-        // hiddenSelections[] = {
-        //     "mainbody1",
-        //     "mainbody2",
-        //     "magazine",
-        //     "stock",
-        //     "details",
-        //     "barrel_sights"
-        // };
-        // hiddenSelectionsTextures[] = {
-        //     "\OPTRE_Weapons\MG\data\M247_mainbody1_CO.paa",
-        //     "\OPTRE_Weapons\MG\data\M247_mainbody2_CO.paa",
-        //     "\OPTRE_Weapons\MG\data\M247_magazine_CO.paa",
-        //     "\OPTRE_Weapons\MG\data\M247_stock_CO.paa",
-        //     "\OPTRE_Weapons\MG\data\M247_details_CO.paa",
-        //     "\OPTRE_Weapons\MG\data\M247_barrel_sights_CO.paa"
-        // };
+        model = "\OPTRE_Weapons\MG\M247.p3d";
+        hiddenSelections[] = {
+            "mainbody1",
+            "mainbody2",
+            "magazine",
+            "stock",
+            "details",
+            "barrel_sights"
+        };
+        hiddenSelectionsTextures[] = {
+            "\OPTRE_Weapons\MG\data\M247_mainbody1_CO.paa",
+            "\OPTRE_Weapons\MG\data\M247_mainbody2_CO.paa",
+            "\OPTRE_Weapons\MG\data\M247_magazine_CO.paa",
+            "\OPTRE_Weapons\MG\data\M247_stock_CO.paa",
+            "\OPTRE_Weapons\MG\data\M247_details_CO.paa",
+            "\OPTRE_Weapons\MG\data\M247_barrel_sights_CO.paa"
+        };
         magazines[] = {
 			QMAGAZINE(100Rnd_762x51_Mag),
             QMAGAZINE(100Rnd_762x51_Mag_Tracer),
@@ -69,7 +69,10 @@ class CfgWeapons {
             QMAGAZINE(400Rnd_762x51_Mag_Tracer),
 			"OPTRE_32Rnd_762x51_Mag",
 			"OPTRE_32Rnd_762x51_Mag_Tracer",
-			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"
+			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_60Rnd_762x51_Mag",
+			"OPTRE_60Rnd_762x51_Mag_Tracer",
+			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow"
 		};
     };
 };
