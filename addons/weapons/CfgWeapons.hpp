@@ -61,12 +61,12 @@ class CfgWeapons {
         //     "\OPTRE_Weapons\MG\data\M247_barrel_sights_CO.paa"
         // };
         magazines[] = {
-			"SWS_100Rnd_762x51_Mag",
-			"SWS_100Rnd_762x51_Mag_Tracer",
-			"SWS_200Rnd_762x51_Mag",
-			"SWS_200Rnd_762x51_Mag_Tracer",
-			"SWS_400Rnd_762x51_Mag",
-			"SWS_400Rnd_762x51_Mag_Tracer",
+			QMAGAZINE(100Rnd_762x51_Mag),
+            QMAGAZINE(100Rnd_762x51_Mag_Tracer),
+            QMAGAZINE(200Rnd_762x51_Mag),
+            QMAGAZINE(200Rnd_762x51_Mag_Tracer),
+            QMAGAZINE(400Rnd_762x51_Mag),
+            QMAGAZINE(400Rnd_762x51_Mag_Tracer),
 			"OPTRE_32Rnd_762x51_Mag",
 			"OPTRE_32Rnd_762x51_Mag_Tracer",
 			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"

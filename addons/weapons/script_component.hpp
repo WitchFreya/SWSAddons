@@ -16,6 +16,7 @@
 #define WEAPON(var0) TRIPLES(SWS,Weapon,var0)
 #define MAGAZINE(var0) TRIPLES(SWS,Magazine,var0)
 #define QWEAPON(var0) QUOTE(WEAPON(var0))
+#define QMAGAZINE(var0) QUOTE(MAGAZINE(var0))
 #define NAME(var0) QUOTE([SWS] var0)
 #define WEAPON_META(var0,scope) \
     ITEM_META(scope);           \
