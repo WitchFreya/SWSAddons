@@ -20,10 +20,14 @@
 
 params["_logic", "_units", "_activated"];
 
+
 if (!_activated || !local _logic) exitWith {0};
 
-TRACE_2("moduleArsenalAddAll vars",_logic,_activated);
 
-[_units] call FUNC(arsenalAddAll);
+TRACE_3("moduleArsenalAddAll vars",_logic,_units,_activated);
+
+private _exclude = _logic getVariable ["Exclude", ""] splitString "," apply { trim _x };
+
+[_units,_exclude] call FUNC(arsenalAddAll);
 
 INFO("moduleArsenalAddAll complete.");

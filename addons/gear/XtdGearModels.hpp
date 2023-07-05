@@ -93,7 +93,7 @@ class XtdGearModels
         class SWS_Operative_Helmet
         {
             label = "[SWS] Helmet";
-            icon = "\sws_main\assets\icon_sws.paa";
+            icon = "\sws_main\data\icon_sws.paa";
             options[] = {"Operative", "Polarization", "Collar", "Ghillie"};
             class Operative
             {
@@ -166,7 +166,7 @@ class XtdGearModels
         class SWS_Operative_Armor
         {
             label = "[SWS] Armor";
-            icon = "\sws_main\assets\icon_sws.paa";
+            icon = "\sws_main\data\icon_sws.paa";
             options[] = {"Operative", "Variant", "Ghillie"};
 
             class Operative

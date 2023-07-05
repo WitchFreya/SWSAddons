@@ -5,6 +5,7 @@
  *
  * Arguments:
  * 0: Units <ARRAY>
+ * 1: Exclude <ARRAY>
  *
  * Return Value:
  * true on success
@@ -15,16 +16,23 @@
  * Public: Yes
  */
 
-params ["_units"];
+params ["_units", "_exclude"];
 
-TRACE_1("arsenalAddAll vars",_units);
+TRACE_2("arsenalAddAll vars",_units,_exclude);
 
 if (count _units == 0) exitWith {0};
 
 private _filterToSwsItems = "getText (_x >> 'dlc') == 'sws'";
 private _relevantConfigs = ["CfgWeapons", "CfgGlasses", "CfgMagazines"];
 private _swsItems = flatten (_relevantConfigs apply { _filterToSwsItems configClasses (configFile >> _x) });
-private _itemsInScope = _swsItems select { getNumber (_x >> 'scopeArsenal') > 0 } apply { configName _x };
+private _itemsInScope = _swsItems
+    select {
+        getNumber (_x >> 'scopeArsenal') > 0
+    } apply {
+        configName _x
+    } select {
+        !(_x in _exclude)
+    };
 
 TRACE_1("arsenalAddAll Items",_itemsInScope);
 
