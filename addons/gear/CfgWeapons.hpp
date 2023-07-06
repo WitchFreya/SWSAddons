@@ -8,6 +8,7 @@ class CfgWeapons
     #include "base\helmet.hpp"
     #include "base\vest.hpp"
 
+    //== OPERATIVES
     C_HELMET(Rifleman,grey);
     C_VEST(Rifleman);
 
@@ -37,4 +38,23 @@ class CfgWeapons
 
     C_HELMET(Tiger,pink);
     C_VEST(Tiger);
+
+    //== COLORS
+    C_HELMET(Blue,silver);
+    C_VEST(Blue);
+
+    C_HELMET(Gold,silver);
+    C_VEST(Gold);
+
+    C_HELMET(Green,silver);
+    C_VEST(Green);
+
+    C_HELMET(Orange,silver);
+    C_VEST(Orange);
+
+    C_HELMET(Purple,silver);
+    C_VEST(Purple);
+
+    C_HELMET(Red,silver);
+    C_VEST(Red);
 };

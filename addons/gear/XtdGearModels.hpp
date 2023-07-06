@@ -92,7 +92,7 @@ class XtdGearModels
     {
         class SWS_Operative_Helmet
         {
-            label = "[SWS] Helmet";
+            label = NAME(Operative Helmets);
             icon = "\sws_main\data\icon_sws.paa";
             options[] = {"Operative", "Polarization", "Collar", "Ghillie"};
             class Operative
@@ -164,9 +164,43 @@ class XtdGearModels
             };
         };
 
+        class SWS_Color_Helmet : SWS_Operative_Helmet {
+            label = NAME(Generic Helmets);
+            options[] = {"Color", "Polarization", "Collar", "Ghillie"};
+            delete Operative;
+            class Color {
+                values[] = {"Blue","Gold","Green","Orange","Purple","Red"};
+
+                class Blue {
+                    label = "Blue";
+                    description = "A generic blue helmet";
+                };
+                class Gold {
+                    label = "Gold";
+                    description = "A generic gold helmet";
+                };
+                class Green {
+                    label = "Green";
+                    description = "A generic green helmet";
+                };
+                class Orange {
+                    label = "Orange";
+                    description = "A generic orange helmet";
+                };
+                class Purple {
+                    label = "Purple";
+                    description = "A generic purple helmet";
+                };
+                class Red {
+                    label = "Red";
+                    description = "A generic red helmet";
+                };
+            };
+        };
+
         class SWS_Operative_Armor
         {
-            label = "[SWS] Armor";
+            label = NAME(Operative Armor);
             icon = "\sws_main\data\icon_sws.paa";
             options[] = {"Operative", "Variant", "Ghillie"};
 
@@ -224,13 +258,46 @@ class XtdGearModels
                 };
             };
         };
+
+        class SWS_Color_Armor : SWS_Operative_Armor {
+            delete Operative;
+            label = NAME(Generic Armor);
+            options[] = {"Color","Variant","Ghillie"};
+            class Color {
+                values[] = {"Blue","Gold","Green","Orange","Purple","Red"};
+                class Blue {
+                    label = "Blue";
+                    description = "A generic blue helmet";
+                };
+                class Gold {
+                    label = "Gold";
+                    description = "A generic gold helmet";
+                };
+                class Green {
+                    label = "Green";
+                    description = "A generic green helmet";
+                };
+                class Orange {
+                    label = "Orange";
+                    description = "A generic orange helmet";
+                };
+                class Purple {
+                    label = "Purple";
+                    description = "A generic purple helmet";
+                };
+                class Red {
+                    label = "Red";
+                    description = "A generic red helmet";
+                };
+            };
+        };
     };
 
     class CfgGlasses
     {
         class SWS_Shemagh
         {
-            label = "[SWS] Shemagh";
+            label = NAME(Shemaghs);
             author = "Maid";
             options[] = {"Color", "Variant"};
 
