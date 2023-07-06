@@ -1,5 +1,3 @@
-#define HELMET_DISPLAY_NAME(name) displayName = QUOTE([SWS] name's Helmet)
-
 #define HELMET_SELECTIONS_BASE \
     "camo",                    \
         "camo2",               \
@@ -14,13 +12,13 @@
     "H_VacCollar",               \
         "H_Neck"
 
-class SWS_Helmet_Base : OPTRE_UNSC_CH252D_Helmet_Base
+class HELMET(Base) : OPTRE_UNSC_CH252D_Helmet_Base
 {
     ITEM_META(0);
 
     descriptionShort = "Armor Level: ODST";
     hiddenSelectionsMaterials[] = {
-        MATERIAL(odsthud.rvmat)};
+        MATERIAL(odsthud)};
 
     hiddenSelectionsTextures[] = {
         "optre_unsc_units\army\data\odst_helmet_co.paa",
@@ -34,13 +32,13 @@ class SWS_Helmet_Base : OPTRE_UNSC_CH252D_Helmet_Base
     };
 };
 
-class SWS_Helmet_Base_dp : OPTRE_UNSC_CH252D_Helmet_dp
+class DOUBLES(HELMET(Base),dp): OPTRE_UNSC_CH252D_Helmet_dp
 {
     ITEM_META(0);
 
     descriptionShort = "Armor Level: ODST";
     hiddenSelectionsMaterials[] = {
-        MATERIAL(odsthud.rvmat)};
+        MATERIAL(odsthud)};
 
     class ItemInfo : ItemInfo
     {
@@ -53,42 +51,50 @@ class SWS_Helmet_Base_dp : OPTRE_UNSC_CH252D_Helmet_dp
     };
 };
 
-#define HELMET_BASE(name, texHelmet, texVisor, texGhillie, texPacks)              \
-    class SWS_Helmet_##name : SWS_Helmet_Base                                     \
-    {                                                                             \
-        SCOPE(2);                                                                 \
-        HELMET_DISPLAY_NAME(name);                                                \
-        hiddenSelectionsTextures[] = {texHelmet, texVisor, texGhillie, texPacks}; \
-    };                                                                            \
-    class SWS_Helmet_##name##_dp : SWS_Helmet_Base_dp                             \
-    {                                                                             \
-        SCOPE(2);                                                                 \
-        HELMET_DISPLAY_NAME(name);                                                \
-        hiddenSelectionsTextures[] = {texHelmet, TEXTURE(visr_clr.paa)};          \
+#define C_HELMET_BASE_DP(varName,texHelmet)
+
+#define C_HELMET_BASE(varName,texHelmet,texRest)                        \
+    class HELMET(varName): HELMET(Base) {                               \
+        SCOPE(2);                                                       \
+        displayName = NAME(name's Helmet);                              \
+        hiddenSelectionsTextures[] = {ARR_2(texHelmet,texRest)};        \
+    };                                                                  \
+    class DOUBLES(HELMET(varName),dp): DOUBLES(HELMET(Base),dp) {       \
+        SCOPE(2);                                                       \
+        displayName = NAME(name's Helmet);                              \
+        hiddenSelectionsTextures[] = {texHelmet,TEXTURE(visr,clr)}; \
     }
 
-#define HELMET_VARIANT(name, variant, varHiddenSelections, varHiddenSelectionsDp) \
-    class SWS_Helmet_##name##_##variant : SWS_Helmet_##name                       \
-    {                                                                             \
-        class ItemInfo : ItemInfo                                                 \
-        {                                                                         \
-            hiddenSelections[] = {varHiddenSelections};                           \
-        };                                                                        \
-    };                                                                            \
-    class SWS_Helmet_##name##_##variant##_dp : SWS_Helmet_##name##_dp             \
-    {                                                                             \
-        class ItemInfo : ItemInfo                                                 \
-        {                                                                         \
-            hiddenSelections[] = {varHiddenSelectionsDp};                         \
-        };                                                                        \
+#define C_HELMET_VARIANT(name,variant,varHiddenSelections,varHiddenSelectionsDp)    \
+    class HELMET(DOUBLES(name,variant)) : HELMET(name)                              \
+    {                                                                               \
+        class ItemInfo : ItemInfo                                                   \
+        {                                                                           \
+            hiddenSelections[] = {varHiddenSelections};                             \
+        };                                                                          \
+    };                                                                              \
+    class HELMET(TRIPLES(name,variant,dp)) : HELMET(DOUBLES(name,dp))               \
+    {                                                                               \
+        class ItemInfo : ItemInfo                                                   \
+        {                                                                           \
+            hiddenSelections[] = {varHiddenSelectionsDp};                           \
+        };                                                                          \
     }
 
-#define HELMET(name,texHelmet,texVisor,texGhillie,texPacks)                \
-    HELMET_BASE(name,texHelmet,texVisor,texGhillie,texPacks);              \
-    HELMET_VARIANT(name,Collar,                                               \
-                   ARR_2(HELMET_SELECTIONS_BASE, "H_Ghillie"),                  \
-                   ARR_2(HELMET_SELECTIONS_BASE_DP, "H_Ghillie"));              \
-    HELMET_VARIANT(name,Ghillie,                                              \
-                   ARR_2(HELMET_SELECTIONS_BASE, HELMET_SELECTIONS_COLLAR),     \
-                   ARR_2(HELMET_SELECTIONS_BASE_DP, HELMET_SELECTIONS_COLLAR)); \
-    HELMET_VARIANT(name,Collar_Ghillie, HELMET_SELECTIONS_BASE, HELMET_SELECTIONS_BASE_DP)
+#define C_HELMET(name,varVisrColor)                                     \
+    C_HELMET_BASE(name,                                                 \
+        TEXTURE(helmet,name),                                           \
+        ARR_3(                                                          \
+            TEXTURE(visr,varVisrColor),                                 \
+            "optre_unsc_units\army\data\ghillie_woodland_co.paa",       \
+            "optre_unsc_units\army\data\soft_packs_co.paa"              \
+        ));                                                             \
+    C_HELMET_VARIANT(name,Collar,                                       \
+        ARR_2(HELMET_SELECTIONS_BASE, "H_Ghillie"),                     \
+        ARR_2(HELMET_SELECTIONS_BASE_DP, "H_Ghillie"));                 \
+    C_HELMET_VARIANT(name,Ghillie,                                      \
+        ARR_2(HELMET_SELECTIONS_BASE, HELMET_SELECTIONS_COLLAR),        \
+        ARR_2(HELMET_SELECTIONS_BASE_DP, HELMET_SELECTIONS_COLLAR));    \
+    C_HELMET_VARIANT(name,Collar_Ghillie,                               \
+        HELMET_SELECTIONS_BASE,                                         \
+        HELMET_SELECTIONS_BASE_DP)

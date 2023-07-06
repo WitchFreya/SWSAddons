@@ -10,8 +10,8 @@
     #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
 #endif
 
-#define MATERIAL(var1) QPATHTOF(data\materials\var1)
-#define TEXTURE(var1) QPATHTOF(data\textures\var1)
+#define MATERIAL(var0) QPATHTOF(data\materials\var0##.rvmat)
+#define TEXTURE(var0,var1) QPATHTOF(TRIPLES(data\textures\var0,var1,co.paa))
 
 #define SCOPE(varScope)      \
     scope = varScope;        \
@@ -22,3 +22,5 @@
     dlc = "sws";            \
     author = QUOTE(AUTHOR); \
     SCOPE(varScope)
+
+#define NAME(var0) QUOTE([SWS] var0)

@@ -1,5 +1,3 @@
-#define VEST_DISPLAY_NAME(name) displayName = QUOTE([SWS] name's Vest)
-
 /*
 OneOf:
     L/RShoulders  - AS_[Large,Medium,ODSTCQB,ODST,Sniper,Small]L/R
@@ -274,7 +272,46 @@ All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With
                                  "APO_Sniper",                                 \
                                  "CustomKit_Scorch"
 
-class SWS_Vest_Base : OPTRE_UNSC_M52D_Armor
+#define C_VEST_GHILLIE(varName,varSelections)                 \
+    class DOUBLES(VEST(varName),Ghillie): VEST(varName) {   \
+        class ItemInfo: ItemInfo {                          \
+            hiddenSelections[] = {varSelections};           \
+        };                                                  \
+    }
+
+#define C_VEST_BASE(varName,varTextures)                          \
+    class VEST(varName) : VEST(Base) {                          \
+        SCOPE(2);                                               \
+        displayName = NAME(varName's Vest);                     \
+        hiddenSelectionsTextures[] = { varTextures };           \
+    };                                                          \
+    C_VEST_GHILLIE(varName,VEST_SELECTIONS_STANDARD)
+
+#define C_VEST_VARIANT(varName,varVariant,selections)                 \
+    class DOUBLES(VEST(varName),varVariant): VEST(varName) {        \
+        class ItemInfo: ItemInfo {                                  \
+            hiddenSelections[] = {ARR_2(selections,"A_Ghillie")};   \
+        };                                                          \
+    };                                                              \
+    C_VEST_GHILLIE(DOUBLES(varName,varVariant),selections)
+
+#define C_VEST(varName)                                     \
+    C_VEST_BASE(varName, ARR_5(                             \
+        TEXTURE(vest,rifleman),                             \
+        TEXTURE(armor,rifleman),                            \
+        TEXTURE(legs,varName),                              \
+        "optre_unsc_units\army\data\ghillie_desert_co.paa", \
+        TEXTURE(odst_addons,varName)                        \
+    ));                                                               \
+    C_VEST_VARIANT(varName,Demolitions,VEST_SELECTIONS_DEMOLITIONS);  \
+    C_VEST_VARIANT(varName,Sniper,VEST_SELECTIONS_SNIPER);            \
+    C_VEST_VARIANT(varName,Light,VEST_SELECTIONS_LIGHT);              \
+    C_VEST_VARIANT(varName,Scout,VEST_SELECTIONS_SCOUT);              \
+    C_VEST_VARIANT(varName,Rifleman,VEST_SELECTIONS_RIFLEMAN);        \
+    C_VEST_VARIANT(varName,Marksman,VEST_SELECTIONS_MARKSMAN)
+
+
+class VEST(Base) : OPTRE_UNSC_M52D_Armor
 {
     ITEM_META(0);
 
@@ -282,57 +319,12 @@ class SWS_Vest_Base : OPTRE_UNSC_M52D_Armor
     descriptionShort = "Armor Level: ODST";
 
     hiddenSelectionsMaterials[] = {
-        MATERIAL(Vest.rvmat),
-        MATERIAL(Armor.rvmat),
-        MATERIAL(Legs.rvmat),
-        MATERIAL(ODST.rvmat)};
+        MATERIAL(Vest),
+        MATERIAL(Armor),
+        MATERIAL(Legs),
+        MATERIAL(ODST)};
+
+    class ItemInfo : ItemInfo {
+        hiddenSelections[] = {VEST_SELECTIONS_STANDARD, "A_Ghillie"};
+    };
 };
-
-#define VEST_BASE(name, texVest, vexArmor, texLegs, texGhillie, texAddons) \
-    class SWS_Vest_##name : SWS_Vest_Base                                  \
-    {                                                                      \
-        SCOPE(2);                                                          \
-        VEST_DISPLAY_NAME(name);                                           \
-        hiddenSelectionsTextures[] = {                                     \
-            texVest,                                                       \
-            texArmor,                                                      \
-            texLegs,                                                       \
-            texGhillie,                                                    \
-            texAddons};                                                    \
-        class ItemInfo : ItemInfo                                          \
-        {                                                                  \
-            hiddenSelections[] = {VEST_SELECTIONS_STANDARD, "A_Ghillie"};               \
-        };                                                                 \
-    };                                                                     \
-    class SWS_Vest_##name##_Ghillie : SWS_Vest_##name                      \
-    {                                                                      \
-        class ItemInfo : ItemInfo                                          \
-        {                                                                  \
-            hiddenSelections[] = {VEST_SELECTIONS_STANDARD};  \
-        };                                                                 \
-    }
-
-#define VEST_VARIANT(name, variant, selections)                   \
-    class SWS_Vest_##name##_##variant : SWS_Vest_##name           \
-    {                                                             \
-        class ItemInfo : ItemInfo                                 \
-        {                                                         \
-            hiddenSelections[] = {ARR_2(selections, "A_Ghillie")}; \
-        };                                                        \
-    };                                                            \
-    class SWS_Vest_##name##_##variant##_Ghillie : SWS_Vest_##name \
-    {                                                             \
-        class ItemInfo : ItemInfo                                 \
-        {                                                         \
-            hiddenSelections[] = {selections};                    \
-        };                                                        \
-    }
-
-#define VEST(name, texVest, texArmor, texLegs, texGhillie, texAddons)   \
-    VEST_BASE(name, texVest, texArmor, texLegs, texGhillie, texAddons); \
-    VEST_VARIANT(name,Demolitions, VEST_SELECTIONS_DEMOLITIONS);       \
-    VEST_VARIANT(name,Sniper, VEST_SELECTIONS_SNIPER);                 \
-    VEST_VARIANT(name,Light, VEST_SELECTIONS_LIGHT);                   \
-    VEST_VARIANT(name,Scout, VEST_SELECTIONS_SCOUT);                   \
-    VEST_VARIANT(name,Rifleman, VEST_SELECTIONS_RIFLEMAN);             \
-    VEST_VARIANT(name,Marksman, VEST_SELECTIONS_MARKSMAN)
