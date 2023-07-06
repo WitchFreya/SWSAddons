@@ -74,6 +74,7 @@ class XtdGearInfos
     class CfgWeapons
     {
         GEAR_INFO(Rifleman);
+        GEAR_INFO(Ashes);
         GEAR_INFO(Butler);
         GEAR_INFO(Demon);
         GEAR_INFO(Egg);
