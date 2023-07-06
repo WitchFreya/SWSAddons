@@ -1,5 +1,7 @@
 #include "script_component.hpp"
 
+#include "CfgFactionClasses.hpp"
+
 class CfgPatches
 {
     class ADDON
@@ -8,7 +10,7 @@ class CfgPatches
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {};
+        requiredAddons[] = {"Extended_EventHandlers", "cba_main"};
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };

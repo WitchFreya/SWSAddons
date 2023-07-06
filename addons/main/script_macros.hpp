@@ -18,9 +18,12 @@
     scopeCurator = varScope; \
     scopeArsenal = varScope
 
-#define ITEM_META(varScope)    \
-    dlc = "sws";            \
-    author = QUOTE(AUTHOR); \
+#define META                \
+    dlc = QUOTE(PREFIX);    \
+    author = QUOTE(AUTHOR)
+
+#define ITEM_META(varScope) \
+    META;                   \
     SCOPE(varScope)
 
 #define NAME(var0) QUOTE([SWS] var0)

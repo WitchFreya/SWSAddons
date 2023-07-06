@@ -2,7 +2,7 @@ class XtdGearModels {
     class CfgWeapons {
         class WEAPON(AR0M37) {
             label = NAME(AR-0M37 6.5mm);
-            icon = "\sws_main\data\icon_sws.paa";
+            icon = "\sws_main\data\icon_sws_ca.paa";
             options[] = {"Underbarrel"};
 
             class Underbarrel {
