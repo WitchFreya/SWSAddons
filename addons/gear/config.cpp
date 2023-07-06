@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 
 #include "CfgWeapons.hpp"
+#include "CfgVehicles.hpp"
 #include "CfgGlasses.hpp"
 #include "XtdGearModels.hpp"
 #include "XtdGearInfos.hpp"
@@ -10,7 +11,7 @@ class CfgPatches
     class ADDON
     {
         name = QUOTE(COMPONENT);
-        units[] = {};
+        units[] = { CLASSES_VEHICLES };
         weapons[] = { CLASSES_WEAPONS };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
