@@ -22,7 +22,7 @@
 
 #define QWEAPONS_FN(var0)   \
     QHELMETS_FN(var0),      \
-    QVESTS_FN(var0)         \
+    QVESTS_FN(var0)
 
 #define CLASSES_WEAPONS \
     QWEAPONS_FN(Rifleman), \
@@ -42,6 +42,10 @@
     QWEAPONS_FN(Purple), \
     QWEAPONS_FN(Red)
 
+#define C_GEAR(varName,varVisorColor)   \
+    C_HELMET(varName,varVisorColor);    \
+    C_VEST(varName)
+
 class CfgWeapons
 {
     class OPTRE_UNSC_M52D_Armor;
@@ -57,10 +61,6 @@ class CfgWeapons
 
     #include "base\helmet.hpp"
     #include "base\vest.hpp"
-
-    #define C_GEAR(varName,varVisorColor)   \
-        C_HELMET(varName,varVisorColor);    \
-        C_VEST(varName)
 
     //== BASE
     C_GEAR(Rifleman,grey);
