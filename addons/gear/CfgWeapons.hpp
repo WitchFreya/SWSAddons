@@ -1,3 +1,47 @@
+#define QHELMET_VARIANTS_POLARIZATION_FN(var0) QHELMET(var0), QHELMET(DOUBLES(var0,dp))
+#define QHELMET_VARIANTS_GHILLIE_FN(var0)  \
+    QHELMET_VARIANTS_POLARIZATION_FN(var0), \
+    QHELMET_VARIANTS_POLARIZATION_FN(DOUBLES(var0,Ghillie))
+#define QHELMET_VARIANTS_COLLAR_FN(var0) \
+    QHELMET_VARIANTS_GHILLIE_FN(var0), \
+    QHELMET_VARIANTS_GHILLIE_FN(DOUBLES(var0,Collar))
+
+#define QHELMETS_FN(var0) QHELMET_VARIANTS_COLLAR_FN(var0)
+
+#define QVEST_VARIANTS_GHILLIE_FN(var0) QVEST(var0), QVEST(DOUBLES(var0,Ghillie))
+#define QVEST_VARIANTS_CONFIGURATION_FN(var0)               \
+    QVEST_VARIANTS_GHILLIE_FN(var0),                        \
+    QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Demolitions)),   \
+    QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Sniper)),        \
+    QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Light)),         \
+    QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Scout)),         \
+    QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Rifleman)),      \
+    QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Marksman))
+
+#define QVESTS_FN(var0) QVEST_VARIANTS_CONFIGURATION_FN(var0)
+
+#define QWEAPONS_FN(var0)   \
+    QHELMETS_FN(var0),      \
+    QVESTS_FN(var0)         \
+
+#define CLASSES_WEAPONS \
+    QWEAPONS_FN(Rifleman), \
+    QWEAPONS_FN(Ashes), \
+    QWEAPONS_FN(Butler), \
+    QWEAPONS_FN(Demon), \
+    QWEAPONS_FN(Egg), \
+    QWEAPONS_FN(Maid), \
+    QWEAPONS_FN(Polaris), \
+    QWEAPONS_FN(Rabbit), \
+    QWEAPONS_FN(Sawbones), \
+    QWEAPONS_FN(Tiger), \
+    QWEAPONS_FN(Blue), \
+    QWEAPONS_FN(Gold), \
+    QWEAPONS_FN(Green), \
+    QWEAPONS_FN(Orange), \
+    QWEAPONS_FN(Purple), \
+    QWEAPONS_FN(Red)
+
 class CfgWeapons
 {
     class ItemInfo;
@@ -8,53 +52,28 @@ class CfgWeapons
     #include "base\helmet.hpp"
     #include "base\vest.hpp"
 
+    #define C_GEAR(varName,varVisorColor)   \
+        C_HELMET(varName,varVisorColor);    \
+        C_VEST(varName)
+
+    //== BASE
+    C_GEAR(Rifleman,grey);
+
     //== OPERATIVES
-    C_HELMET(Rifleman,grey);
-    C_VEST(Rifleman);
-
-    C_HELMET(Ashes,silver);
-    C_VEST(Ashes);
-
-    C_HELMET(Butler,purple);
-    C_VEST(Butler);
-
-    C_HELMET(Demon,purple);
-    C_VEST(Demon);
-
-    C_HELMET(Egg,grey);
-    C_VEST(Egg);
-
-    C_HELMET(Maid,sepia);
-    C_VEST(Maid);
-
-    C_HELMET(Polaris,pink);
-    C_VEST(Polaris);
-
-    C_HELMET(Rabbit,pink);
-    C_VEST(Rabbit);
-
-    C_HELMET(Sawbones,teal);
-    C_VEST(Sawbones);
-
-    C_HELMET(Tiger,pink);
-    C_VEST(Tiger);
+    C_GEAR(Ashes,silver);
+    C_GEAR(Butler,purple);
+    C_GEAR(Demon,purple);
+    C_GEAR(Egg,grey);
+    C_GEAR(Maid,sepia);
+    C_GEAR(Polaris,pink);
+    C_GEAR(Rabbit,pink);
+    C_GEAR(Tiger,pink);
 
     //== COLORS
-    C_HELMET(Blue,silver);
-    C_VEST(Blue);
-
-    C_HELMET(Gold,silver);
-    C_VEST(Gold);
-
-    C_HELMET(Green,silver);
-    C_VEST(Green);
-
-    C_HELMET(Orange,silver);
-    C_VEST(Orange);
-
-    C_HELMET(Purple,silver);
-    C_VEST(Purple);
-
-    C_HELMET(Red,silver);
-    C_VEST(Red);
+    C_GEAR(Blue,silver);
+    C_GEAR(Gold,silver);
+    C_GEAR(Green,silver);
+    C_GEAR(Orange,silver);
+    C_GEAR(Purple,silver);
+    C_GEAR(Red,silver);
 };
