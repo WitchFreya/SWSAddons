@@ -311,7 +311,7 @@ All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With
     C_VEST_VARIANT(varName,Marksman,VEST_SELECTIONS_MARKSMAN)
 
 
-class VEST(Base) : OPTRE_UNSC_M52D_Armor
+class VEST(Base) : SWS_OPTRE_UNSC_M52D_Armor
 {
     ITEM_META(0);
 

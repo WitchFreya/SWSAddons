@@ -12,7 +12,7 @@
     "H_VacCollar",               \
         "H_Neck"
 
-class HELMET(Base) : OPTRE_UNSC_CH252D_Helmet_Base
+class HELMET(Base) : SWS_OPTRE_UNSC_CH252D_Helmet_Base
 {
     ITEM_META(0);
 
@@ -25,6 +25,7 @@ class HELMET(Base) : OPTRE_UNSC_CH252D_Helmet_Base
         "optre_unsc_units\army\data\odst_helmet_visor_co.paa",
         "optre_unsc_units\army\data\ghillie_woodland_co.paa",
         "optre_unsc_units\army\data\soft_packs_co.paa"};
+     hiddenSelections[] = {HELMET_SELECTIONS_BASE, "H_Ghillie", HELMET_SELECTIONS_COLLAR};
 
     class ItemInfo : ItemInfo
     {
@@ -32,22 +33,38 @@ class HELMET(Base) : OPTRE_UNSC_CH252D_Helmet_Base
     };
 };
 
-class DOUBLES(HELMET(Base),dp): OPTRE_UNSC_CH252D_Helmet_dp
+class DOUBLES(HELMET(Base),dp): HELMET(Base)
 {
     ITEM_META(0);
 
     descriptionShort = "Armor Level: ODST";
     hiddenSelectionsMaterials[] = {
         MATERIAL(odsthud)};
-
-    class ItemInfo : ItemInfo
-    {
-        hiddenSelections[] = {
+    model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+    hiddenSelections[] = {
             "camo",
             "camo2",
             "H_Ghillie",
             "H_VacCollar",
             "H_Neck"};
+    hiddenSelectionsTextures[] = {
+        "optre_unsc_units\army\data\odst_helmet_co.paa",
+        TEXTURE(visr,clr)
+    };
+    class ItemInfo : ItemInfo
+    {
+        uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+        hiddenSelections[] = {
+            "camo",
+            "camo2",
+            "H_Ghillie",
+            "H_VacCollar",
+            "H_Neck"
+        };
+        hiddenSelectionsTextures[] = {
+            "optre_unsc_units\army\data\odst_helmet_co.paa",
+            TEXTURE(visr,clr)
+        };
     };
 };
 
@@ -58,16 +75,23 @@ class DOUBLES(HELMET(Base),dp): OPTRE_UNSC_CH252D_Helmet_dp
         SCOPE(2);                                                       \
         displayName = NAME(Helmet (name));                              \
         hiddenSelectionsTextures[] = {ARR_2(texHelmet,texRest)};        \
+        class ItemInfo : ItemInfo {                                     \
+            hiddenSelectionsTextures[] = {ARR_2(texHelmet,texRest)};    \
+        };                                                              \
     };                                                                  \
     class DOUBLES(HELMET(varName),dp): DOUBLES(HELMET(Base),dp) {       \
         SCOPE(2);                                                       \
         displayName = NAME(Helmet (name));                              \
-        hiddenSelectionsTextures[] = {texHelmet,TEXTURE(visr,clr)}; \
+        hiddenSelectionsTextures[] = {texHelmet,TEXTURE(visr,clr)};     \
+        class ItemInfo : ItemInfo {                                     \
+            hiddenSelectionsTextures[] = {texHelmet,TEXTURE(visr,clr)}; \
+        };
     }
 
 #define C_HELMET_VARIANT(name,variant,varHiddenSelections,varHiddenSelectionsDp)    \
     class HELMET(DOUBLES(name,variant)) : HELMET(name)                              \
     {                                                                               \
+        hiddenSelections[] = {varHiddenSelections};                                 \
         class ItemInfo : ItemInfo                                                   \
         {                                                                           \
             hiddenSelections[] = {varHiddenSelections};                             \
@@ -75,6 +99,7 @@ class DOUBLES(HELMET(Base),dp): OPTRE_UNSC_CH252D_Helmet_dp
     };                                                                              \
     class HELMET(TRIPLES(name,variant,dp)) : HELMET(DOUBLES(name,dp))               \
     {                                                                               \
+        hiddenSelections[] = {varHiddenSelections};                                 \
         class ItemInfo : ItemInfo                                                   \
         {                                                                           \
             hiddenSelections[] = {varHiddenSelectionsDp};                           \
