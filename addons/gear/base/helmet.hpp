@@ -56,12 +56,12 @@ class DOUBLES(HELMET(Base),dp): OPTRE_UNSC_CH252D_Helmet_dp
 #define C_HELMET_BASE(varName,texHelmet,texRest)                        \
     class HELMET(varName): HELMET(Base) {                               \
         SCOPE(2);                                                       \
-        displayName = NAME(name's Helmet);                              \
+        displayName = NAME(Helmet (name));                              \
         hiddenSelectionsTextures[] = {ARR_2(texHelmet,texRest)};        \
     };                                                                  \
     class DOUBLES(HELMET(varName),dp): DOUBLES(HELMET(Base),dp) {       \
         SCOPE(2);                                                       \
-        displayName = NAME(name's Helmet);                              \
+        displayName = NAME(Helmet (name));                              \
         hiddenSelectionsTextures[] = {texHelmet,TEXTURE(visr,clr)}; \
     }
 

@@ -279,15 +279,15 @@ All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With
         };                                                  \
     }
 
-#define C_VEST_BASE(varName,varTextures)                          \
+#define C_VEST_BASE(varName,varTextures)                        \
     class VEST(varName) : VEST(Base) {                          \
         SCOPE(2);                                               \
-        displayName = NAME(varName's Vest);                     \
+        displayName = NAME(Vest (varName));                     \
         hiddenSelectionsTextures[] = { varTextures };           \
     };                                                          \
     C_VEST_GHILLIE(varName,VEST_SELECTIONS_STANDARD)
 
-#define C_VEST_VARIANT(varName,varVariant,selections)                 \
+#define C_VEST_VARIANT(varName,varVariant,selections)               \
     class DOUBLES(VEST(varName),varVariant): VEST(varName) {        \
         class ItemInfo: ItemInfo {                                  \
             hiddenSelections[] = {ARR_2(selections,"A_Ghillie")};   \

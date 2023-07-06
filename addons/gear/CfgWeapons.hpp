@@ -11,6 +11,9 @@ class CfgWeapons
     C_HELMET(Rifleman,grey);
     C_VEST(Rifleman);
 
+    C_HELMET(Ashes,silver);
+    C_VEST(Ashes);
+
     C_HELMET(Butler,purple);
     C_VEST(Butler);
 
