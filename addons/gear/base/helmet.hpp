@@ -85,7 +85,7 @@ class DOUBLES(HELMET(Base),dp): HELMET(Base)
         hiddenSelectionsTextures[] = {texHelmet,TEXTURE(visr,clr)};     \
         class ItemInfo : ItemInfo {                                     \
             hiddenSelectionsTextures[] = {texHelmet,TEXTURE(visr,clr)}; \
-        };
+        };                                                              \
     }
 
 #define C_HELMET_VARIANT(name,variant,varHiddenSelections,varHiddenSelectionsDp)    \
