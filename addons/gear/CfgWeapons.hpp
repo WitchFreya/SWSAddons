@@ -7,13 +7,31 @@ class CfgWeapons
 
     #include "base\helmet.hpp"
     #include "base\vest.hpp"
-    #include "rifleman.hpp"
-    #include "operatives\butler.hpp"
-    #include "operatives\demon.hpp"
-    #include "operatives\egg.hpp"
-    #include "operatives\maid.hpp"
-    #include "operatives\polaris.hpp"
-    #include "operatives\rabbit.hpp"
-    #include "operatives\sawbones.hpp"
-    #include "operatives\tiger.hpp"
+
+    C_HELMET(Rifleman,grey);
+    C_VEST(Rifleman);
+
+    C_HELMET(Butler,purple);
+    C_VEST(Butler);
+
+    C_HELMET(Demon,purple);
+    C_VEST(Demon);
+
+    C_HELMET(Egg,grey);
+    C_VEST(Egg);
+
+    C_HELMET(Maid,sepia);
+    C_VEST(Maid);
+
+    C_HELMET(Polaris,pink);
+    C_VEST(Polaris);
+
+    C_HELMET(Rabbit,pink);
+    C_VEST(Rabbit);
+
+    C_HELMET(Sawbones,teal);
+    C_VEST(Sawbones);
+
+    C_HELMET(Tiger,pink);
+    C_VEST(Tiger);
 };

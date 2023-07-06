@@ -12,3 +12,8 @@
 #endif
 
 #include "\x\sws\addons\main\script_macros.hpp"
+
+#define VEST(var0) TRIPLES(SWS,Vest,var0)
+#define QVEST(var0) QUOTE(VEST(var0))
+#define HELMET(var0) TRIPLES(SWS,Helmet,var0)
+#define QHELMET(var0) QUOTE(HELMET(var0))

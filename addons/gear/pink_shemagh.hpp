@@ -3,7 +3,7 @@ class SWS_Shemagh_Pink : LM_OPCAN_DES_Shemagh
     ITEM_META(2);
     displayname = "[SWS] Shemagh (Pink)";
     hiddenSelectionsTextures[] = {
-        TEXTURE(shemagh_pink_co.paa)};
+        TEXTURE(shemagh,pink)};
     class XtdGearInfo
     {
         model = "SWS_Shemagh";
