@@ -1,16 +1,16 @@
-#define HELMET_SELECTIONS_BASE \
-    "camo",                    \
-        "camo2",               \
-        "camo3",               \
-        "camo4"
+#define HELMET_SELECTIONS_BASE  \
+    "camo",                     \
+    "camo2",                    \
+    "camo3",                    \
+    "camo4"
 
 #define HELMET_SELECTIONS_BASE_DP \
     "camo",                       \
-        "camo2"
+    "camo2"
 
 #define HELMET_SELECTIONS_COLLAR \
     "H_VacCollar",               \
-        "H_Neck"
+    "H_Neck"
 
 class HELMET(Base) : SWS_OPTRE_UNSC_CH252D_Helmet_Base
 {

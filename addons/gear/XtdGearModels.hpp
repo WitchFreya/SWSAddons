@@ -230,7 +230,8 @@ class XtdGearModels
                     "Light",
                     "Scout",
                     "Rifleman",
-                    "Marksman"};
+                    "Marksman",
+                    "Lead"};
 
                 VARIANT(Standard);
                 VARIANT(Demolitions);
@@ -239,6 +240,7 @@ class XtdGearModels
                 VARIANT(Scout);
                 VARIANT(Rifleman);
                 VARIANT(Marksman);
+                VARIANT(Lead);
             };
 
             class Ghillie

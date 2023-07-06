@@ -28,7 +28,8 @@
     VEST_GEAR_INFO_ONE(name,varType,Light);                  \
     VEST_GEAR_INFO_ONE(name,varType,Scout);                  \
     VEST_GEAR_INFO_ONE(name,varType,Rifleman);               \
-    VEST_GEAR_INFO_ONE(name,varType,Marksman)
+    VEST_GEAR_INFO_ONE(name,varType,Marksman); \
+    VEST_GEAR_INFO_ONE(name,varType,Lead)
 
 #define HELMET_GEAR_INFO_BASE(name,varType)         \
     class SWS_Helmet_##name                          \

@@ -2,10 +2,14 @@
 OneOf:
     L/RShoulders  - AS_[Large,Medium,ODSTCQB,ODST,Sniper,Small]L/R
     Forearm       - A_TacPad,None
-    LeftHip       - AP_Canteen, AP_Smoke
-    L/RKnees      - A_[Knees,KneesMar]L/R
-    AmmoAbs       - AP_[AR,BR,SMG,Sniper],APO_[AR,BR,Sniper],CustomKit_Scorch
     AmmoPecs      - APO_SMG,AP_SG
+    Chest         - AP_Pack,None
+    AmmoAbs       - AP_[AR,BR,SMG,Sniper],APO_[AR,BR,Sniper],CustomKit_Scorch
+    LowerBack     - CustomKit_Scorch,APO_Knife,
+    LeftHip       - AP_Canteen, AP_Smoke
+    RightHip      - AP_[Pistol,Frag],None
+    L/RKnees      - A_[Knees,KneesMar]L/R
+    L/RShin       - A_ShinArmorL/R
 
 All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With-Pictures
     "camo",
@@ -127,12 +131,10 @@ All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With
                                     "AP_Pack",              \
                                     "AP_Pistol",            \
                                     "AP_Rounds",            \
-                                    "AP_SG",                \
                                     "AP_SMG",               \
                                     "AP_Sniper",            \
                                     "AP_Thigh",             \
                                     "AP_Frag",              \
-                                    "AP_Smoke",             \
                                     "APO_AR",               \
                                     "APO_BR",               \
                                     "APO_SMG",              \
@@ -150,7 +152,6 @@ All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With
                                "AS_SmallRight",        \
                                "AP_AR",                \
                                "AP_BR",                \
-                               "AP_Canteen",           \
                                "AP_GL",                \
                                "AP_Knife",             \
                                "AP_MGThigh",           \
@@ -272,6 +273,39 @@ All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With
                                  "APO_Sniper",                                 \
                                  "CustomKit_Scorch"
 
+#define VEST_SELECTIONS_LEAD VEST_SELECTIONS_BASE, \
+    "A_Ghillie",                \
+    "A_KneesLeft",           \
+    "A_KneesRight",          \
+    "AP_AR",                    \
+    "AP_BR",                    \
+    "AP_Canteen",               \
+    "AP_Frag",                  \
+    "AP_GL",                    \
+    "AP_MGThigh",               \
+    "AP_Pack",                  \
+    "AP_Rounds",                \
+    "AP_SG",                    \
+    "AP_SMG",                   \
+    "AP_Sniper",                \
+    "AP_Thigh",                 \
+    "AP_Knife",                 \
+    "APO_AR",                   \
+    "APO_BR",                   \
+    "APO_SMG",                  \
+    "APO_Sniper",               \
+    "AS_LargeLeft",             \
+    "AS_LargeRight",            \
+    "AS_MediumLeft",            \
+    "AS_MediumRight",           \
+    "AS_ODSTCQBLeft",           \
+    "AS_ODSTCQBRight",          \
+    "AS_ODSTLeft",              \
+    "AS_ODSTRight",             \
+    "AS_ODSTSniperLeft",        \
+    "AS_SmallRight",            \
+    "CustomKit_Scorch"
+
 #define C_VEST_GHILLIE(varName,varSelections)                 \
     class DOUBLES(VEST(varName),Ghillie): VEST(varName) {   \
         class ItemInfo: ItemInfo {                          \
@@ -308,7 +342,8 @@ All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With
     C_VEST_VARIANT(varName,Light,VEST_SELECTIONS_LIGHT);              \
     C_VEST_VARIANT(varName,Scout,VEST_SELECTIONS_SCOUT);              \
     C_VEST_VARIANT(varName,Rifleman,VEST_SELECTIONS_RIFLEMAN);        \
-    C_VEST_VARIANT(varName,Marksman,VEST_SELECTIONS_MARKSMAN)
+    C_VEST_VARIANT(varName,Marksman,VEST_SELECTIONS_MARKSMAN); \
+    C_VEST_VARIANT(varName,Lead,VEST_SELECTIONS_LEAD)
 
 
 class VEST(Base) : SWS_OPTRE_UNSC_M52D_Armor
