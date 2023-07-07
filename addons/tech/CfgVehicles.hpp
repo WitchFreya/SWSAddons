@@ -4,7 +4,8 @@
 class CfgVehicles {
     class DMNS_UAV_01_F;
     class VEHICLE(UAV_MQ94): DMNS_UAV_01_F {
-        ITEM_META(2);
+        META;
+        scope = 2;
         displayName = NAME(MQ-94 Recon);
         faction = "SWS_UNSC";
         class AssembleInfo {
