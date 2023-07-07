@@ -1,5 +1,5 @@
 #define MAINPREFIX x
-#define PREFIX sws
+#define PREFIX SWS
 #define AUTHOR Maid
 
 #include "script_version.hpp"

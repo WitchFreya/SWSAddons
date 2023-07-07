@@ -26,8 +26,10 @@
     META;                   \
     SCOPE(varScope)
 
-#define NAME(var0) QUOTE([SWS] var0)
-#define BAG(var0) TRIPLES(SWS,Pack,var0)
+#define QPREFIX QUOTE(PREFIX)
+
+#define NAME(var0) QUOTE([PREFIX] var0)
+#define BAG(var0) TRIPLES(PREFIX,Pack,var0)
 #define QBAG(var0) QUOTE(BAG(var0))
-#define VEHICLE(var0) TRIPLES(SWS,V,var0)
+#define VEHICLE(var0) TRIPLES(PREFIX,V,var0)
 #define QVEHICLE(var0) QUOTE(VEHICLE(var0))

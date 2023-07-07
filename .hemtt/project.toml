@@ -1,6 +1,6 @@
 name = "SWS Addons"
 author = "Maid"
-prefix = "sws"
+prefix = "SWS"
 mainprefix = "x"
 
 [properties]

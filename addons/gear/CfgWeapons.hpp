@@ -50,12 +50,12 @@
 class CfgWeapons
 {
     class OPTRE_UNSC_M52D_Armor;
-    class SWS_OPTRE_UNSC_M52D_Armor: OPTRE_UNSC_M52D_Armor {
+    class VEST(OPTRE_UNSC_M52D_Armor): OPTRE_UNSC_M52D_Armor {
         ITEM_META(0);
         class ItemInfo;
     };
     class OPTRE_UNSC_CH252D_Helmet_Base;
-    class SWS_OPTRE_UNSC_CH252D_Helmet_Base: OPTRE_UNSC_CH252D_Helmet_Base {
+    class HELMET(OPTRE_UNSC_CH252D_Helmet_Base): OPTRE_UNSC_CH252D_Helmet_Base {
         ITEM_META(0);
         class ItemInfo;
     };

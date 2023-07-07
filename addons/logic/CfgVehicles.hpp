@@ -1,3 +1,6 @@
+#define CLASSES_VEHICLES \
+    QMODULE(ArsenalAutoAdd)
+
 class CfgVehicles
 {
     class ACE_Module {
@@ -5,12 +8,12 @@ class CfgVehicles
         class ArgumentsBaseUnits;
     };
 
-    class SWS_Module_ArsenalAutoAdd: ACE_Module {
+    class MODULE(ArsenalAutoAdd): ACE_Module {
         // TODO: icon
         // icon = "\sws_main\data\icon_sws.paa";
         scope = 2;
         displayName = "ACE Arsenal Autoadd (Beta)";
-        category = "SWS_Modules";
+        category = QUOTE(DOUBLES(PREFIX,Modules));
         function = QFUNC(moduleArsenalAddAll);
         functionPriority = 10;
         isGlobal = 0;
