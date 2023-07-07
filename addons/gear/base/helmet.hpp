@@ -12,10 +12,8 @@
     "H_VacCollar",               \
     "H_Neck"
 
-class HELMET(Base) : SWS_OPTRE_UNSC_CH252D_Helmet_Base
+class HELMET(Base) : HELMET(OPTRE_UNSC_CH252D_Helmet_Base)
 {
-    ITEM_META(0);
-
     descriptionShort = "Armor Level: ODST";
     hiddenSelectionsMaterials[] = {
         MATERIAL(odsthud)};
@@ -35,8 +33,6 @@ class HELMET(Base) : SWS_OPTRE_UNSC_CH252D_Helmet_Base
 
 class DOUBLES(HELMET(Base),dp): HELMET(Base)
 {
-    ITEM_META(0);
-
     descriptionShort = "Armor Level: ODST";
     hiddenSelectionsMaterials[] = {
         MATERIAL(odsthud)};

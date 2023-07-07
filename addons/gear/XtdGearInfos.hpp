@@ -1,66 +1,66 @@
-#define VEST_GEAR_INFO_ONE(name,varType,varVariant)                                        \
-    class SWS_Vest_##name##_##varVariant : SWS_Vest_##name                          \
+#define VEST_GEAR_INFO_ONE(name,varType,varVariant)                                 \
+    class VEST(DOUBLES(name,varVariant)) : VEST(name)                               \
     {                                                                               \
-        model = QUOTE(TRIPLES(SWS,varType,Armor));                                              \
+        model = QUOTE(TRIPLES(PREFIX,varType,Armor));                               \
         Operative = QUOTE(name);                                                    \
         Variant = QUOTE(varVariant);                                                \
         Ghillie = "No";                                                             \
     };                                                                              \
-    class SWS_Vest_##name##_##varVariant##_Ghillie : SWS_Vest_##name##_##varVariant \
+    class VEST(TRIPLES(name,varVariant,Ghillie)) : VEST(DOUBLES(name,varVariant))   \
     {                                                                               \
         Ghillie = "Yes";                                                            \
     }
 
-#define VEST_GEAR_INFO(name,varType)                 \
-    class SWS_Vest_##name                             \
-    {                                                 \
-        model = QUOTE(TRIPLES(SWS,varType,Armor));        \
-        varType = QUOTE(name);                      \
-        Variant = "Standard";                         \
-        Ghillie = "No";                               \
-    };                                                \
-    class SWS_Vest_##name##_Ghillie : SWS_Vest_##name \
-    {                                                 \
-        Ghillie = "Yes";                              \
-    };                                                \
-    VEST_GEAR_INFO_ONE(name,varType,Demolitions);            \
-    VEST_GEAR_INFO_ONE(name,varType,Sniper);                 \
-    VEST_GEAR_INFO_ONE(name,varType,Light);                  \
-    VEST_GEAR_INFO_ONE(name,varType,Scout);                  \
-    VEST_GEAR_INFO_ONE(name,varType,Rifleman);               \
-    VEST_GEAR_INFO_ONE(name,varType,Marksman); \
+#define VEST_GEAR_INFO(name,varType)                    \
+    class VEST(name)                                    \
+    {                                                   \
+        model = QUOTE(TRIPLES(PREFIX,varType,Armor));   \
+        varType = QUOTE(name);                          \
+        Variant = "Standard";                           \
+        Ghillie = "No";                                 \
+    };                                                  \
+    class VEST(DOUBLES(name,Ghillie)) : VEST(name)      \
+    {                                                   \
+        Ghillie = "Yes";                                \
+    };                                                  \
+    VEST_GEAR_INFO_ONE(name,varType,Demolitions);       \
+    VEST_GEAR_INFO_ONE(name,varType,Sniper);            \
+    VEST_GEAR_INFO_ONE(name,varType,Light);             \
+    VEST_GEAR_INFO_ONE(name,varType,Scout);             \
+    VEST_GEAR_INFO_ONE(name,varType,Rifleman);          \
+    VEST_GEAR_INFO_ONE(name,varType,Marksman);          \
     VEST_GEAR_INFO_ONE(name,varType,Lead)
 
-#define HELMET_GEAR_INFO_BASE(name,varType)         \
-    class SWS_Helmet_##name                          \
-    {                                                \
-        model = QUOTE(TRIPLES(SWS,varType,Helmet));     \
-        varType = QUOTE(name);                     \
-        polarization = "Yes";                        \
-        collar = "No";                               \
-        ghillie = "No";                              \
-    };                                               \
-    class SWS_Helmet_##name##_dp : SWS_Helmet_##name \
-    {                                                \
-        polarization = "No";                         \
+#define HELMET_GEAR_INFO_BASE(name,varType)             \
+    class HELMET(name)                                  \
+    {                                                   \
+        model = QUOTE(TRIPLES(PREFIX,varType,Helmet));  \
+        varType = QUOTE(name);                          \
+        polarization = "Yes";                           \
+        collar = "No";                                  \
+        ghillie = "No";                                 \
+    };                                                  \
+    class HELMET(DOUBLES(name,dp)) : HELMET(name)       \
+    {                                                   \
+        polarization = "No";                            \
     }
 
-#define HELMET_GEAR_INFO_VARIANT(name,variant,varCollar,varGhillie)       \
-    class SWS_Helmet_##name##_##variant : SWS_Helmet_##name                  \
-    {                                                                        \
-        polarization = "Yes";                                                \
-        collar = QUOTE(varCollar);                                           \
-        ghillie = QUOTE(varGhillie);                                         \
-    };                                                                       \
-    class SWS_Helmet_##name##_##variant##_dp : SWS_Helmet_##name##_##variant \
-    {                                                                        \
-        polarization = "No";                                                 \
+#define HELMET_GEAR_INFO_VARIANT(name,variant,varCollar,varGhillie)         \
+    class HELMET(DOUBLES(name,variant)) : HELMET(name)                      \
+    {                                                                       \
+        polarization = "Yes";                                               \
+        collar = QUOTE(varCollar);                                          \
+        ghillie = QUOTE(varGhillie);                                        \
+    };                                                                      \
+    class HELMET(TRIPLES(name,variant,dp)) : HELMET(DOUBLES(name,variant))  \
+    {                                                                       \
+        polarization = "No";                                                \
     }
 
-#define HELMET_GEAR_INFO(name,varType)                                \
-    HELMET_GEAR_INFO_BASE(name,varType);                              \
-    HELMET_GEAR_INFO_VARIANT(name,Collar,Yes,No);          \
-    HELMET_GEAR_INFO_VARIANT(name,Collar_Ghillie,Yes,Yes); \
+#define HELMET_GEAR_INFO(name,varType)                      \
+    HELMET_GEAR_INFO_BASE(name,varType);                    \
+    HELMET_GEAR_INFO_VARIANT(name,Collar,Yes,No);           \
+    HELMET_GEAR_INFO_VARIANT(name,Collar_Ghillie,Yes,Yes);  \
     HELMET_GEAR_INFO_VARIANT(name,Ghillie,No,Yes)
 
 #define GEAR_INFO(name,varType)     \

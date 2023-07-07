@@ -1,20 +1,20 @@
-class SWS_Shemagh_Pink : LM_OPCAN_DES_Shemagh
+class TRIPLES(PREFIX,Shemagh,Pink) : LM_OPCAN_DES_Shemagh
 {
     ITEM_META(2);
-    displayname = "[SWS] Shemagh (Pink)";
+    displayname = NAME(Shemagh (Pink));
     hiddenSelectionsTextures[] = {
         TEXTURE(shemagh,pink)};
     class XtdGearInfo
     {
-        model = "SWS_Shemagh";
+        model = QUOTE(DOUBLES(PREFIX,Shemagh));
         color = "Pink";
         variant = "Down";
     };
 };
 
-class SWS_Shemagh_Pink_Up : SWS_Shemagh_Pink
+class DOUBLES(PREFIX,TRIPLES(Shemagh,Pink,Up)) : TRIPLES(PREFIX,Shemagh,Pink)
 {
-    displayName = "[SWS] Shemagh (Pink/Up)";
+    displayName = NAME(Shemagh (Pink/Up));
     model = "LM_OPCAN3.0\BLU\UNSC\G\Shemagh2.p3d";
 
     class XtdGearInfo: XtdGearInfo

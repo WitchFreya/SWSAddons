@@ -5,69 +5,69 @@
         description = QUOTE(Type Configuration); \
     }
 
-#define VEST_GEAR_INFO_ONE(name,varVariant)                                        \
-    class SWS_Vest_##name##_##varVariant : SWS_Vest_##name                          \
+#define VEST_GEAR_INFO_ONE(name,varVariant)                                         \
+    class VEST(DOUBLES(name,varVariant)) : VEST(name)                               \
     {                                                                               \
-        model = "SWS_Operative_Armor";                                              \
+        model = QUOTE(TRIPLES(PREFIX,Operative,Armor));                             \
         Operative = QUOTE(name);                                                    \
         Variant = QUOTE(varVariant);                                                \
         Ghillie = "No";                                                             \
     };                                                                              \
-    class SWS_Vest_##name##_##varVariant##_Ghillie : SWS_Vest_##name##_##varVariant \
+    class VEST(TRIPLES(name,varVariant,Ghillie)) : VEST(DOUBLES(name,varVariant))   \
     {                                                                               \
         Ghillie = "Yes";                                                            \
     }
 
-#define VEST_GEAR_INFO(name)                          \
-    class SWS_Vest_##name                             \
-    {                                                 \
-        model = "SWS_Operative_Armor";                \
-        Operative = QUOTE(name);                      \
-        Variant = "Standard";                         \
-        Ghillie = "No";                               \
-    };                                                \
-    class SWS_Vest_##name##_Ghillie : SWS_Vest_##name \
-    {                                                 \
-        Ghillie = "Yes";                              \
-    };                                                \
-    VEST_GEAR_INFO_ONE(name,Demolitions);            \
-    VEST_GEAR_INFO_ONE(name,Sniper);                 \
-    VEST_GEAR_INFO_ONE(name,Light);                  \
-    VEST_GEAR_INFO_ONE(name,Scout);                  \
-    VEST_GEAR_INFO_ONE(name,Rifleman);               \
+#define VEST_GEAR_INFO(name)                            \
+    class VEST(name)                                    \
+    {                                                   \
+        model = QUOTE(TRIPLES(PREFIX,Operative,Armor)); \
+        Operative = QUOTE(name);                        \
+        Variant = "Standard";                           \
+        Ghillie = "No";                                 \
+    };                                                  \
+    class VEST(DOUBLES(name,Ghillie)) : VEST(name)      \
+    {                                                   \
+        Ghillie = "Yes";                                \
+    };                                                  \
+    VEST_GEAR_INFO_ONE(name,Demolitions);               \
+    VEST_GEAR_INFO_ONE(name,Sniper);                    \
+    VEST_GEAR_INFO_ONE(name,Light);                     \
+    VEST_GEAR_INFO_ONE(name,Scout);                     \
+    VEST_GEAR_INFO_ONE(name,Rifleman);                  \
     VEST_GEAR_INFO_ONE(name,Marksman)
 
-#define HELMET_GEAR_INFO_BASE(name)                  \
-    class SWS_Helmet_##name                          \
-    {                                                \
-        model = "SWS_Operative_Helmet";              \
-        operative = QUOTE(name);                     \
-        polarization = "Yes";                        \
-        collar = "No";                               \
-        ghillie = "No";                              \
-    };                                               \
-    class SWS_Helmet_##name##_dp : SWS_Helmet_##name \
-    {                                                \
-        polarization = "No";                         \
+#define HELMET_GEAR_INFO_BASE(name)                         \
+    class HELMET(name)                                      \
+    {                                                       \
+        model = QUOTE(TRIPLES(PREFIX,Operative,Helmet));    \
+        operative = QUOTE(name);                            \
+        polarization = "Yes";                               \
+        collar = "No";                                      \
+        ghillie = "No";                                     \
+    };                                                      \
+    class HELMET(DOUBLES(name,dp)) : HELMET(name)           \
+    {                                                       \
+        polarization = "No";                                \
     }
 
-#define HELMET_GEAR_INFO_VARIANT(name, variant, varCollar, varGhillie)       \
-    class SWS_Helmet_##name##_##variant : SWS_Helmet_##name                  \
-    {                                                                        \
-        polarization = "Yes";                                                \
-        collar = QUOTE(varCollar);                                           \
-        ghillie = QUOTE(varGhillie);                                         \
-    };                                                                       \
-    class SWS_Helmet_##name##_##variant##_dp : SWS_Helmet_##name##_##variant \
-    {                                                                        \
-        polarization = "No";                                                 \
+#define HELMET_GEAR_INFO_VARIANT(name,variant,varCollar,varGhillie)         \
+    class HELMET(DOUBLES(name,variant)) : HELMET(name)                      \
+    {                                                                       \
+        polarization = "Yes";                                               \
+        collar = QUOTE(varCollar);                                          \
+        ghillie = QUOTE(varGhillie);                                        \
+    };                                                                      \
+    class HELMET(TRIPLES(name,variant,dp)) : HELMET(DOUBLES(name,variant))  \
+    {                                                                       \
+        polarization = "No";                                                \
     }
 
-#define HELMET_GEAR_INFO(name)                                \
-    HELMET_GEAR_INFO_BASE(name);                              \
-    HELMET_GEAR_INFO_VARIANT(name, Collar, Yes, No);          \
-    HELMET_GEAR_INFO_VARIANT(name, Collar_Ghillie, Yes, Yes); \
-    HELMET_GEAR_INFO_VARIANT(name, Ghillie, No, Yes)
+#define HELMET_GEAR_INFO(name)                              \
+    HELMET_GEAR_INFO_BASE(name);                            \
+    HELMET_GEAR_INFO_VARIANT(name,Collar,Yes,No);           \
+    HELMET_GEAR_INFO_VARIANT(name,Collar_Ghillie,Yes,Yes);  \
+    HELMET_GEAR_INFO_VARIANT(name,Ghillie,No,Yes)
 
 #define GEAR_INFO(name)     \
     HELMET_GEAR_INFO(name); \
@@ -76,7 +76,7 @@
 #define OPERATIVES \
     "Rifleman", "Ashes", "Butler", "Demon", "Egg", "Maid", "Polaris", "Rabbit", "Sawbones", "Tiger"
 
-#define XTDGEARMODEL_OPERATIVE(operative, type) \
+#define XTDGEARMODEL_OPERATIVE(operative,type) \
     class operative                             \
     {                                           \
         label = QUOTE(operative);               \
@@ -90,7 +90,7 @@ class XtdGearModels
 {
     class CfgWeapons
     {
-        class SWS_Operative_Helmet
+        class TRIPLES(PREFIX,Operative,Helmet)
         {
             label = NAME(Operative Helmets);
             icon = "\sws_main\data\icon_sws_ca.paa";
@@ -164,7 +164,7 @@ class XtdGearModels
             };
         };
 
-        class SWS_Color_Helmet : SWS_Operative_Helmet {
+        class TRIPLES(PREFIX,Color,Helmet) : TRIPLES(PREFIX,Operative,Helmet) {
             label = NAME(Generic Helmets);
             options[] = {"Color", "Polarization", "Collar", "Ghillie"};
             delete Operative;
@@ -198,7 +198,7 @@ class XtdGearModels
             };
         };
 
-        class SWS_Operative_Armor
+        class TRIPLES(PREFIX,Operative,Armor)
         {
             label = NAME(Operative Armor);
             icon = "\sws_main\data\icon_sws_ca.paa";
@@ -261,7 +261,7 @@ class XtdGearModels
             };
         };
 
-        class SWS_Color_Armor : SWS_Operative_Armor {
+        class TRIPLES(PREFIX,Color,Armor) : TRIPLES(PREFIX,Operative,Armor) {
             delete Operative;
             label = NAME(Generic Armor);
             options[] = {"Color","Variant","Ghillie"};
@@ -297,7 +297,7 @@ class XtdGearModels
 
     class CfgGlasses
     {
-        class SWS_Shemagh
+        class DOUBLES(PREFIX,Shemagh)
         {
             label = NAME(Shemaghs);
             author = "Maid";

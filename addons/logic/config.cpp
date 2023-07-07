@@ -1,11 +1,15 @@
 #include "script_component.hpp"
 
+#include "CfgEventHandlers.hpp"
+#include "CfgFactionClasses.hpp"
+#include "CfgVehicles.hpp"
+
 class CfgPatches
 {
     class ADDON
     {
         name = QUOTE(COMPONENT);
-        units[] = {"SWS_ModuleArsenalAutoadd"};
+        units[] = { CLASSES_VEHICLES };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"SWS_Main", "SWS_Gear"};
@@ -14,6 +18,4 @@ class CfgPatches
     };
 };
 
-#include "CfgEventHandlers.hpp"
-#include "CfgFactionClasses.hpp"
-#include "CfgVehicles.hpp"
+
