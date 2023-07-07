@@ -40,11 +40,14 @@ class CfgMagazines {
         displayNameShort = "7.62x51-T";
         tracersEvery = 1;
         lastRoundsTracer = 100;
+        descriptionShort = "100 Round Tracer Magazine<SM247>7.62x51 Carbine<SM247>";
     };
 
     class MAGAZINE(200Rnd_762x51_Mag): MAGAZINE(100Rnd_762x51_Mag) {
         displayName = QUOTE(NAME_762x51(200));
         mass = 60;
+        count = 200;
+        descriptionShort = "200 Round Magazine<SM247>7.62x51 Carbine<SM247>";
     };
 
     class MAGAZINE(200Rnd_762x51_Mag_Tracer): MAGAZINE(200Rnd_762x51_Mag) {
@@ -52,11 +55,14 @@ class CfgMagazines {
         displayNameShort = "7.62x51-T";
         tracersEvery = 1;
         lastRoundsTracer = 200;
+        descriptionShort = "200 Round Tracer Magazine<SM247>7.62x51 Carbine<SM247>";
     };
 
     class MAGAZINE(400Rnd_762x51_Mag): MAGAZINE(100Rnd_762x51_Mag) {
         displayName = QUOTE(NAME_762x51(400));
         mass = 90;
+        count = 400;
+        descriptionShort = "400 Round Magazine<SM247>7.62x51 Carbine<SM247>";
     };
 
     class MAGAZINE(400Rnd_762x51_Mag_Tracer): MAGAZINE(400Rnd_762x51_Mag) {
@@ -64,6 +70,7 @@ class CfgMagazines {
         displayNameShort = "7.62x51-T";
         tracersEvery = 1;
         lastRoundsTracer = 400;
+        descriptionShort = "400 Round Tracer Magazine<SM247>7.62x51 Carbine<SM247>";
     };
     //= 762x51 END
 };
