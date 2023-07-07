@@ -75,6 +75,7 @@ class CfgWeapons
     C_GEAR(Polaris,pink);
     C_GEAR(Rabbit,pink);
     C_GEAR(Tiger,pink);
+    C_GEAR(Sawbones,teal);
 
     //== COLORS
     C_GEAR(Blue,silver);
