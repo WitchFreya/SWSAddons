@@ -23,7 +23,7 @@ TRACE_2("arsenalAddAll vars",_units,_exclude);
 if (count _units == 0) exitWith {0};
 
 private _filterToSwsItems = "getText (_x >> 'dlc') == 'sws'";
-private _relevantConfigs = ["CfgWeapons", "CfgGlasses", "CfgMagazines"];
+private _relevantConfigs = ["CfgWeapons","CfgGlasses","CfgMagazines","CfgVehicles"];
 private _swsItems = flatten (_relevantConfigs apply { _filterToSwsItems configClasses (configFile >> _x) });
 private _itemsInScope = _swsItems
     select {
