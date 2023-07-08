@@ -5,7 +5,7 @@
     QMAGAZINE(200Rnd_762x51_Mag_Tracer), \
     QMAGAZINE(400Rnd_762x51_Mag), \
     QMAGAZINE(400Rnd_762x51_Mag_Tracer), \
-    QMAGAZINE(M9Sx_HEDP)
+    QMAGAZINE(M9Sx)
 
 class CfgMagazines {
     class HandGrenade;
@@ -78,14 +78,23 @@ class CfgMagazines {
     //= 762x51 END
 
     //= Grenades
-    class MAGAZINE(M9Sx_HEDP): OPTRE_M9_Frag
+    class MAGAZINE(M9Sx): OPTRE_M9_Frag
 	{
         ITEM_META(2);
 		displayName = NAME(M9Sx (HE-DP));
 		mass = 22;
 		typicalSpeed = 10;
-		ammo = QGRENADE(M9Sx_HEDP);
+		ammo = QGRENADE(M9Sx);
 		displayNameShort = "M9Sx (HE-DP)";
 		descriptionshort = "Type: AT Grenade<br />Rounds: 1<br />Used in: Hand";
 	};
+
+    //== Shells
+    class M319_HEDP_Grenade_Shell;
+    class MAGAZINE(TRIPLES(1Rnd,M9Sx,Shell)): M319_HEDP_Grenade_Shell {
+        ITEM_META(2);
+        displayName = NAME(1Rnd M9Sx (HE-DP) Shell);
+        mass = 24;
+		ammo = QGRENADE(TRIPLES(M9Sx,40mm,Shell));
+    };
 };

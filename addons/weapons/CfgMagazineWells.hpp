@@ -3,7 +3,8 @@ class CfgMagazineWells {
         DOUBLES(PREFIX,Magazines)[] = {
             "1Rnd_HE_MEU_shell",
 			"1Rnd_HEDP_MEU_shell",
-            "1Rnd_9Bang_MEU_shell"
+            "1Rnd_9Bang_MEU_shell",
+            QMAGAZINE(TRIPLES(1Rnd,M9Sx,Shell))
         };
     };
 
@@ -11,7 +12,8 @@ class CfgMagazineWells {
         DOUBLES(PREFIX,Magazines)[] = {
             "1Rnd_HE_MEU_shell",
 			"1Rnd_HEDP_MEU_shell",
-            "1Rnd_9Bang_MEU_shell"
+            "1Rnd_9Bang_MEU_shell",
+            QMAGAZINE(TRIPLES(1Rnd,M9Sx,Shell))
         };
     };
 };
