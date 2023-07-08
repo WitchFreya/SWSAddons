@@ -1,5 +1,6 @@
 #define CLASSES_VEHICLES \
-    QBAG(UAV_MQ94)
+    QBAG(VEH_UAV(SMQ94)), \
+    QBAG(VEH_UAV(DOUBLES(SMQ94,Maid)))
 
 class CfgVehicles {
     class DMNS_UAV_01_backpack_F;
@@ -7,7 +8,7 @@ class CfgVehicles {
         class AssembleInfo;
     };
 
-    class BAG(UAV_MQ94): BAG(DMNS_UAV_01_backpack_F_base) {
+    class BAG(VEH_UAV(SMQ94)): BAG(DMNS_UAV_01_backpack_F_base) {
         ITEM_META(2);
         displayName = NAME(ILCS UAV Rucksack [MQ-94]);
         picture = "\OPTRE_weapons\backpacks\icons\rucksack_black";
@@ -18,7 +19,22 @@ class CfgVehicles {
             "V_FZ_Armor\Data\Backpacks\V_ILCS_UAV_CO"
         };
         class AssembleInfo : AssembleInfo {
-            assembleTo = QVEHICLE(UAV_MQ94);
+            assembleTo = QVEHICLE(UAV_SMQ94);
+        };
+        class XtdGearInfo {
+            model = QVEH_UAV(SMQ94);
+            variant = "Default";
+        };
+    };
+
+    class BAG(VEH_UAV(DOUBLES(SMQ94,Maid))): BAG(VEH_UAV(SMQ94)) {
+        displayName = NAME(ILCS UAV Rucksack [MQ-94] - Maid);
+        class AssembleInfo : AssembleInfo {
+            assembleTo = QVEH_UAV(DOUBLES(SMQ94,Maid));
+        };
+
+        class XtdGearInfo : XtdGearInfo {
+            variant = "Maid";
         };
     };
 };

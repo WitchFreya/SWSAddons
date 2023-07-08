@@ -1,16 +1,17 @@
 #define CLASSES_VEHICLE \
-    QVEHICLE(UAV_MQ94)
+    QVEH_UAV(SMQ94), \
+    QVEH_UAV(DOUBLES(SMQ94,Maid))
 
 class UAV_01_base_F;
 class HitPoints;
 class HitHull;
 
 class CfgVehicles {
-    class VEHICLE(UAV_MQ94): UAV_01_base_F {
+    class VEH_UAV(SMQ94): UAV_01_base_F {
         META;
-        _generalMacro = QVEHICLE(UAV_MQ94);
+        _generalMacro = QVEH_UAV(SMQ94);
         scope = 2;
-        displayName = NAME(MQ-94 Recon);
+        displayName = NAME(SMQ-94 Recon);
         faction = "SWS_UNSC";
         fuelCapacity = 100;
         side = 1;
@@ -74,9 +75,22 @@ class CfgVehicles {
             assembleTo = "";
             displayName = "";
             dissasembleTo[] = {
-                QBAG(UAV_MQ94)
+                QBAG(VEH_UAV(SMQ94))
             };
         };
         textureList[] = { "Blufor",	1 };
+    };
+
+    class VEH_UAV(DOUBLES(SMQ94,Maid)): VEH_UAV(SMQ94) {
+        displayName = NAME(SMQ-94 Recon - Maid);
+        hiddenSelectionsTextures[] = {
+			QPATHTOF(data\smq_94_maid_co.paa)
+		};
+
+        class AssembleInfo : AssembleInfo {
+            dissasembleTo[] = {
+                QBAG(VEH_UAV(DOUBLES(SMQ94,Maid)))
+            };
+        };
     };
 };
