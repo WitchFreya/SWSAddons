@@ -78,23 +78,54 @@ class CfgMagazines {
     //= 762x51 END
 
     //= Grenades
-    class MAGAZINE(M9Sx): OPTRE_M9_Frag
-	{
+    class MAGAZINE(M3Sx): OPTRE_M9_Frag {
+        ITEM_META(2);
+        displayName = NAME(M3Sx (Frag));
+        mass = 11;
+        ammo = QGRENADE(M3Sx);
+        displayNameShort = "M3Sx (Frag)";
+        descriptionShort = "Type: Concussion Grenade<br />Rounds: 1<br />Used in: Hand";
+    };
+
+    class MAGAZINE(M9Sx): OPTRE_M9_Frag {
         ITEM_META(2);
 		displayName = NAME(M9Sx (HE-DP));
 		mass = 22;
 		typicalSpeed = 10;
 		ammo = QGRENADE(M9Sx);
 		displayNameShort = "M9Sx (HE-DP)";
-		descriptionshort = "Type: AT Grenade<br />Rounds: 1<br />Used in: Hand";
+		descriptionShort = "Type: AT Grenade<br />Rounds: 1<br />Used in: Hand";
 	};
 
     //== Shells
+    class M319_HE_Grenade_Shell;
     class M319_HEDP_Grenade_Shell;
+
+    class MAGAZINE(TRIPLES(1Rnd,M3Sx,Shell)): M319_HEDP_Grenade_Shell {
+        ITEM_META(2);
+        displayName = NAME(1Rnd M3Sx (Frag) Shell);
+        mass = 12;
+		ammo = QGRENADE(TRIPLES(M3Sx,40mm,Shell));
+        displayNameShort = "M3Sx (Frag)";
+		descriptionShort = "Type: Concussion Grenade<br />Rounds: 1<br />Used in: EGLM, 1GL";
+    };
+
+    class MAGAZINE(TRIPLES(3Rnd,M3Sx,Shell)): M319_HEDP_Grenade_Shell {
+        ITEM_META(2);
+        displayName = NAME(3Rnd M3Sx (Frag) Shell);
+        mass = 26;
+        count = 3;
+		ammo = QGRENADE(TRIPLES(M3Sx,40mm,Shell));
+        displayNameShort = "M3Sx (Frag)";
+		descriptionShort = "Type: Concussion Grenade<br />Rounds: 3<br />Used in: EGLM, 3GL";
+    };
+
     class MAGAZINE(TRIPLES(1Rnd,M9Sx,Shell)): M319_HEDP_Grenade_Shell {
         ITEM_META(2);
         displayName = NAME(1Rnd M9Sx (HE-DP) Shell);
         mass = 24;
 		ammo = QGRENADE(TRIPLES(M9Sx,40mm,Shell));
+        displayNameShort = "M9Sx (HE-DP)";
+		descriptionShort = "Type: AT Grenade<br />Rounds: 1<br />Used in: EGLM, 1GL";
     };
 };
