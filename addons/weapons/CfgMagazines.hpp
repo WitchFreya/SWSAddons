@@ -5,10 +5,11 @@
     QMAGAZINE(200Rnd_762x51_Mag_Tracer), \
     QMAGAZINE(400Rnd_762x51_Mag), \
     QMAGAZINE(400Rnd_762x51_Mag_Tracer), \
-    QMAGAZINE(Pertustum)
+    QMAGAZINE(M9Sx_HEDP)
 
 class CfgMagazines {
     class HandGrenade;
+    class OPTRE_M9_Frag;
     class 150Rnd_762x51_Box;
 
     //= 762x51 START
@@ -77,14 +78,14 @@ class CfgMagazines {
     //= 762x51 END
 
     //= Grenades
-    class MAGAZINE(Pertustum): HandGrenade
+    class MAGAZINE(M9Sx_HEDP): OPTRE_M9_Frag
 	{
         ITEM_META(2);
-		displayName = "HTA Pertustum";
+		displayName = NAME(M9Sx (HE-DP));
 		mass = 22;
 		typicalSpeed = 10;
-		ammo = QGRENADE(Pertustum);
-		displayNameShort = "HTA Pertustum";
+		ammo = QGRENADE(M9Sx_HEDP);
+		displayNameShort = "M9Sx (HE-DP)";
 		descriptionshort = "Type: AT Grenade<br />Rounds: 1<br />Used in: Hand";
 	};
 };
