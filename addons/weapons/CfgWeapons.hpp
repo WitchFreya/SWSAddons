@@ -81,10 +81,24 @@ class CfgWeapons {
 
     class GrenadeLauncher;
     class Throw : GrenadeLauncher {
-        muzzles[] += { QMUZZLE(M9Sx) };
+        muzzles[] += {
+            QMUZZLE(M3Sx),
+            QMUZZLE(M9Sx),
+            QMUZZLE(9Bang),
+            QMUZZLE(DOUBLES(9Bang,NoFuse))
+        };
         class ThrowMuzzle;
+        class MUZZLE(M3Sx): ThrowMuzzle {
+            magazines[] = {QGMAGAZINE(M3Sx)};
+        };
         class MUZZLE(M9Sx): ThrowMuzzle {
-            magazines[] = {QMAGAZINE(M9Sx)};
+            magazines[] = {QGMAGAZINE(M9Sx)};
+        };
+        class MUZZLE(9Bang): ThrowMuzzle {
+            magazines[] = {QGMAGAZINE(9Bang)};
+        };
+        class MUZZLE(DOUBLES(9Bang,NoFuse)): ThrowMuzzle {
+            magazines[] = {QGMAGAZINE(DOUBLES(9Bang,NoFuse))};
         };
     };
 };
