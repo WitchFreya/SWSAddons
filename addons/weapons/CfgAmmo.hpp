@@ -1,9 +1,9 @@
 #define CLASSES_AMMO \
     QAMMO(762x51_Ball), \
     QGRENADE(Frag), \
-    QGRENADE(Pertustum), \
-    QGRENADE(DOUBLES(Pertustum,OnImpact)), \
-    QGRENADE(DOUBLES(Pertustum,OnExp))
+    QGRENADE(M9Sx_HEDP), \
+    QGRENADE(DOUBLES(M9Sx_HEDP,OnImpact)), \
+    QGRENADE(DOUBLES(M9Sx_HEDP,OnExp))
 
 #define MODEL_A3_TRACER_YELLOW \A3\Weapons_f\Data\bullettracer\tracer_yellow
 
@@ -34,13 +34,13 @@ class CfgAmmo {
 		ace_frag_enabled = 1;
     };
 
-    class GRENADE(Pertustum): GrenadeHand {
+    class GRENADE(M9Sx_HEDP): GrenadeHand {
         dlc = QPREFIX;
         hit = 300;
 		timeToLive = 4;
 		indirectHit = 300;
 		indirectHitRange = 2;
-		rhs_submunition = QGRENADE(DOUBLES(Pertustum,OnImpact));
+		rhs_submunition = QGRENADE(DOUBLES(M9Sx_HEDP,OnImpact));
 		rhs_fuseTime[] = {1,1.3,1.8};
 		rhs_selfDestructTime[] = {3.2,3.6,4.2};
 		ace_frag_enabled = 0;
@@ -48,13 +48,13 @@ class CfgAmmo {
 		ace_frag_force = 0;
     };
 
-    class GRENADE(DOUBLES(Pertustum,OnImpact)): GRENADE(Pertustum)
+    class GRENADE(DOUBLES(M9Sx_HEDP,OnImpact)): GRENADE(M9Sx_HEDP)
 	{
         dlc = QPREFIX;
-		rhs_submunition = QGRENADE(DOUBLES(Pertustum,OnExp));
+		rhs_submunition = QGRENADE(DOUBLES(M9Sx_HEDP,OnExp));
 		explosionTime = -1;
 	};
-	class GRENADE(DOUBLES(Pertustum,OnExp)): GRENADE(Pertustum)
+	class GRENADE(DOUBLES(M9Sx_HEDP,OnExp)): GRENADE(M9Sx_HEDP)
 	{
         dlc = QPREFIX;
 		simulation = "shotShell";

@@ -25,4 +25,5 @@
 #define QAMMO(var0) QUOTE(AMMO(var0))
 #define GRENADE(var0) AMMO(DOUBLES(Grenade,var0))
 #define QGRENADE(var0) QUOTE(GRENADE(var0))
-
+#define MUZZLE(var0) TRIPLES(PREFIX,Muzzle,var0)
+#define QMUZZLE(var0) QUOTE(MUZZLE(var0))
