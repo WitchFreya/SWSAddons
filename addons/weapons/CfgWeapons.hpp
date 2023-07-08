@@ -10,6 +10,11 @@ class CfgWeapons {
     class LM_OPCAN_AR0M37_SHT;
     class Dmns_M247_GPMG;
     class 19th_br_55_gl;
+    class WEAPON(Dmns_M247_GPMG): Dmns_M247_GPMG {
+        WEAPON_META(Dmns_M247_GPMG,0);
+        class Single;
+        class FullAuto;
+    };
 
     class WEAPON(AR0M37): LM_OPCAN_AR0M37 {
         WEAPON_META(AR0M37,2);
@@ -40,7 +45,7 @@ class CfgWeapons {
         };
     };
 
-    class WEAPON(SM247): Dmns_M247_GPMG {
+    class WEAPON(SM247): WEAPON(Dmns_M247_GPMG) {
         // TODO: Define https://ace3.acemod.org/wiki/framework/advanced-ballistics-framework.html if we ever use Ace's ABM.
         WEAPON_META(SM247,2);
         displayName = NAME(SM247);
@@ -61,20 +66,28 @@ class CfgWeapons {
             "\OPTRE_Weapons\MG\data\M247_details_CO.paa",
             "\OPTRE_Weapons\MG\data\M247_barrel_sights_CO.paa"
         };
+        magazineWell[] = {
+            "OPTRE_Magwell_MA5B",
+            "OPTRE_Magwell_MA5A"
+        };
         magazines[] = {
 			QMAGAZINE(100Rnd_762x51_Mag),
             QMAGAZINE(100Rnd_762x51_Mag_Tracer),
             QMAGAZINE(200Rnd_762x51_Mag),
             QMAGAZINE(200Rnd_762x51_Mag_Tracer),
             QMAGAZINE(400Rnd_762x51_Mag),
-            QMAGAZINE(400Rnd_762x51_Mag_Tracer),
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag_Tracer",
-			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
-			"OPTRE_60Rnd_762x51_Mag",
-			"OPTRE_60Rnd_762x51_Mag_Tracer",
-			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow"
+            QMAGAZINE(400Rnd_762x51_Mag_Tracer)
 		};
+
+        class Single: Single {
+            dispersion = 0.00064;
+            reloadTime = 0.082;
+        };
+
+        class FullAuto: FullAuto {
+            dispersion = 0.00065;
+            reloadTime = 0.082;
+        };
     };
 
     //== Grenades
