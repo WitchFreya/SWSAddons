@@ -4,9 +4,11 @@
     QMAGAZINE(200Rnd_762x51_Mag), \
     QMAGAZINE(200Rnd_762x51_Mag_Tracer), \
     QMAGAZINE(400Rnd_762x51_Mag), \
-    QMAGAZINE(400Rnd_762x51_Mag_Tracer)
+    QMAGAZINE(400Rnd_762x51_Mag_Tracer), \
+    QMAGAZINE(Pertustum)
 
 class CfgMagazines {
+    class HandGrenade;
     class 150Rnd_762x51_Box;
 
     //= 762x51 START
@@ -73,4 +75,16 @@ class CfgMagazines {
         descriptionShort = "400 Round Tracer Magazine<SM247>7.62x51 Carbine<SM247>";
     };
     //= 762x51 END
+
+    //= Grenades
+    class MAGAZINE(Pertustum): HandGrenade
+	{
+        ITEM_META(2);
+		displayName = "HTA Pertustum";
+		mass = 22;
+		typicalSpeed = 10;
+		ammo = QGRENADE(Pertustum);
+		displayNameShort = "HTA Pertustum";
+		descriptionshort = "Type: AT Grenade<br />Rounds: 1<br />Used in: Hand";
+	};
 };

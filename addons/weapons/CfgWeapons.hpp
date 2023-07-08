@@ -76,4 +76,15 @@ class CfgWeapons {
 			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow"
 		};
     };
+
+    //== Grenades
+
+    class GrenadeLauncher;
+    class Throw : GrenadeLauncher {
+        muzzles[] += { "HTA_Pertustum_Muzzle" };
+        class ThrowMuzzle;
+        class HTA_Pertustum_Muzzle: ThrowMuzzle {
+            magazines[] = {QMAGAZINE(Pertustum)};
+        };
+    };
 };
