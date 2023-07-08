@@ -19,8 +19,7 @@ workshop = [
     "2016312756", # opcan
     "1659590037", # fireteam zulu - required by 19th
     "2047587607", # 19th fleet armor mod
-    "2261045061", # TCGM
-    "2888477598" # 1st MEU
+    "2261045061"  # TCGM
 ]
 
 [hemtt.release]
