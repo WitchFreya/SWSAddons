@@ -81,10 +81,10 @@ class CfgWeapons {
 
     class GrenadeLauncher;
     class Throw : GrenadeLauncher {
-        muzzles[] += { QMUZZLE(M9Sx_HEDP) };
+        muzzles[] += { QMUZZLE(M9Sx) };
         class ThrowMuzzle;
-        class MUZZLE(M9Sx_HEDP): ThrowMuzzle {
-            magazines[] = {QMAGAZINE(M9Sx_HEDP)};
+        class MUZZLE(M9Sx): ThrowMuzzle {
+            magazines[] = {QMAGAZINE(M9Sx)};
         };
     };
 };

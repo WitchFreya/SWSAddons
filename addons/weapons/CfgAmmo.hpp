@@ -1,9 +1,10 @@
 #define CLASSES_AMMO \
     QAMMO(762x51_Ball), \
     QGRENADE(Frag), \
-    QGRENADE(M9Sx_HEDP), \
-    QGRENADE(DOUBLES(M9Sx_HEDP,OnImpact)), \
-    QGRENADE(DOUBLES(M9Sx_HEDP,OnExp))
+    QGRENADE(M9Sx), \
+    QGRENADE(DOUBLES(M9Sx,OnImpact)), \
+    QGRENADE(DOUBLES(M9Sx,OnExp)), \
+    QGRENADE(TRIPLES(M9Sx,40mm,Shell))
 
 #define MODEL_A3_TRACER_YELLOW \A3\Weapons_f\Data\bullettracer\tracer_yellow
 
@@ -13,7 +14,7 @@ class CfgAmmo {
 
     //== Bullets
     class AMMO(762x51_Ball): OPTRE_B_762x51_Ball {
-        dlc = QPREFIX;
+        META;
         hit = 34;
         typicalSpeed = 950;
         caliber = 6.0;
@@ -22,7 +23,7 @@ class CfgAmmo {
 
     //== Grenades
     class GRENADE(Frag): GrenadeHand {
-        dlc = QPREFIX;
+        META;
         hit = 40;
         indirectHit = 40;
         indirectHitRange = 7;
@@ -34,13 +35,13 @@ class CfgAmmo {
 		ace_frag_enabled = 1;
     };
 
-    class GRENADE(M9Sx_HEDP): GrenadeHand {
-        dlc = QPREFIX;
+    class GRENADE(M9Sx): GrenadeHand {
+        META;
         hit = 300;
 		timeToLive = 4;
 		indirectHit = 300;
 		indirectHitRange = 2;
-		rhs_submunition = QGRENADE(DOUBLES(M9Sx_HEDP,OnImpact));
+		rhs_submunition = QGRENADE(DOUBLES(M9Sx,OnImpact));
 		rhs_fuseTime[] = {1,1.3,1.8};
 		rhs_selfDestructTime[] = {3.2,3.6,4.2};
 		ace_frag_enabled = 0;
@@ -48,16 +49,27 @@ class CfgAmmo {
 		ace_frag_force = 0;
     };
 
-    class GRENADE(DOUBLES(M9Sx_HEDP,OnImpact)): GRENADE(M9Sx_HEDP)
+    class GRENADE(DOUBLES(M9Sx,OnImpact)): GRENADE(M9Sx)
 	{
-        dlc = QPREFIX;
-		rhs_submunition = QGRENADE(DOUBLES(M9Sx_HEDP,OnExp));
+        META;
+		rhs_submunition = QGRENADE(DOUBLES(M9Sx,OnExp));
 		explosionTime = -1;
 	};
-	class GRENADE(DOUBLES(M9Sx_HEDP,OnExp)): GRENADE(M9Sx_HEDP)
+
+	class GRENADE(DOUBLES(M9Sx,OnExp)): GRENADE(M9Sx)
 	{
-        dlc = QPREFIX;
+        META;
 		simulation = "shotShell";
 		explosionTime = 0.001;
 	};
+
+    //== Shells
+    class M319_HEDP;
+    class GRENADE(TRIPLES(M9Sx,40mm,Shell)): M319_HEDP {
+        META;
+        hit = 300;
+		indirectHit = 300;
+		indirectHitRange = 2;
+		ace_frag_enabled = 0;
+    };
 };
