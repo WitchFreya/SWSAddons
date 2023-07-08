@@ -2,9 +2,14 @@
     QAMMO(762x51_Ball), \
     QGRENADE(Frag), \
     QGRENADE(M9Sx), \
+    QGRENADE(M3Sx), \
+    QSHELL(M3Sx_40mm), \
     QGRENADE(DOUBLES(M9Sx,OnImpact)), \
     QGRENADE(DOUBLES(M9Sx,OnExp)), \
-    QGRENADE(TRIPLES(M9Sx,40mm,Shell))
+    QSHELL(M9Sx_40mm), \
+    QGRENADE(9Bang), \
+    QGRENADE(DOUBLES(9Bang,NoFuse)), \
+    QSHELL(9Bang)
 
 #define MODEL_A3_TRACER_YELLOW \A3\Weapons_f\Data\bullettracer\tracer_yellow
 
@@ -23,6 +28,7 @@ class CfgAmmo {
 
     //== Grenades
     class OPTRE_G_M9_Frag;
+    class ACE_G_CTS9;
 
     class GRENADE(M3Sx): OPTRE_G_M9_Frag {
         META;
@@ -65,11 +71,26 @@ class CfgAmmo {
 		explosionTime = 0.001;
 	};
 
+	class GRENADE(9Bang): ACE_G_CTS9
+	{
+		explosionTime=1.5;
+		ace_flashbang_Interval=0.050000001;
+	};
+
+    class GRENADE(DOUBLES(9Bang,NoFuse)): GRENADE(9bang)
+	{
+		ace_flashbang_Interval=0.050000001;
+		timeToLive=15;
+		fuseDistance=0;
+		explosionTime=0.5;
+	};
+
     //== Shells
+    class G_40mm_HE;
     class M319_HE;
     class M319_HEDP;
 
-    class GRENADE(TRIPLES(M3Sx,40mm,Shell)): M319_HE {
+    class SHELL(M3Sx_40mm): M319_HE {
         META;
         hit = 40;
 		indirectHit = 40;
@@ -82,11 +103,35 @@ class CfgAmmo {
 		ace_frag_enabled = 1;
     };
 
-    class GRENADE(TRIPLES(M9Sx,40mm,Shell)): M319_HEDP {
+    class SHELL(M9Sx_40mm): M319_HEDP {
         META;
         hit = 300;
 		indirectHit = 300;
 		indirectHitRange = 2;
 		ace_frag_enabled = 0;
+    };
+
+    class SHELL(9Bang): G_40mm_HE {
+        hit = 0;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		visibleFire = 1;
+		audibleFire = 30;
+		visibleFireTime = 3;
+		dangerRadiusHit = -1;
+		suppressionRadiusHit = 20;
+		deflecting = 5;
+		timeToLive = 10;
+		airFriction = -0.001;
+		fuseDistance = 999;
+		ace_frag_enabled = 0;
+		explosionTime = 1.5;
+		typicalSpeed = 50;
+		effectsSmoke = "ACE_M84FlashbangEffect";
+		ace_grenades_flashbang = 1;
+		ace_grenades_flashbangBangs = 9;
+		ace_grenades_flashbangInterval = 0.5;
+		ace_grenades_flashbangIntervalMaxDeviation = 0.1;
+		model = "\z\ace\addons\grenades\models\ACE_CTS_9bang_thrown.p3d";
     };
 };
