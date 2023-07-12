@@ -22,5 +22,21 @@ workshop = [
     "2261045061"  # TCGM
 ]
 
+[hemtt.launch.debug]
+workshop = [
+    "463939057", # ace
+    "450814997", # cba_a3
+    "2522638637", # ace arsenal extended
+    "769440155", # OPTRE
+    "1267657613", # optre ace compat
+    "1572627279", # optre first contact
+    "1572642262", # optre first contact ace compat
+    "2016312756", # opcan
+    "1659590037", # fireteam zulu - required by 19th
+    "2047587607", # 19th fleet armor mod
+    "2261045061",  # TCGM
+    "2369477168" # advanced developer tools
+]
+
 [hemtt.release]
 archive = false
