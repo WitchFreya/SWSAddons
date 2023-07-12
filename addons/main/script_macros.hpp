@@ -28,6 +28,8 @@
 
 #define QPREFIX QUOTE(PREFIX)
 
+#define CLEARANCE(var0) DOUBLES(PREFIX,clearanceLevel) = QUOTE(var0)
+
 #define NAME(var0) QUOTE([PREFIX] var0)
 #define BAG(var0) TRIPLES(PREFIX,Pack,var0)
 #define QBAG(var0) QUOTE(BAG(var0))

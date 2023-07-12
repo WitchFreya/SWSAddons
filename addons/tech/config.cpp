@@ -2,13 +2,15 @@
 
 #include "CfgVehicles.hpp"
 
+#include "CfgWeapons.hpp"
+
 class CfgPatches
 {
     class ADDON
     {
         name = QUOTE(COMPONENT);
         units[] = { CLASSES_VEHICLE };
-        weapons[] = { };
+        weapons[] = { CLASSES_WEAPONS };
         magazines[] = { };
         ammo[] = { };
         requiredVersion = REQUIRED_VERSION;

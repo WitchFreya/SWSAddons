@@ -48,6 +48,7 @@ class CfgWeapons {
     class WEAPON(SM247): WEAPON(Dmns_M247_GPMG) {
         // TODO: Define https://ace3.acemod.org/wiki/framework/advanced-ballistics-framework.html if we ever use Ace's ABM.
         WEAPON_META(SM247,2);
+        CLEARANCE(RESTRICTED/DECEMBER WHITE);
         displayName = NAME(SM247);
         model = "\OPTRE_Weapons\MG\M247.p3d";
         hiddenSelections[] = {
