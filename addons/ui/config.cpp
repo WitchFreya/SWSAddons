@@ -1,5 +1,6 @@
 #include "script_component.hpp"
 
+#include "RscDisplayMain.hpp"
 #include "CfgLoadingScreens.hpp"
 
 class CfgPatches
