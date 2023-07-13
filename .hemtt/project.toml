@@ -86,10 +86,6 @@ workshop = [
     "894678801",
     "925018569"
 ]
-parameters = [
-    "-debug",
-    "-showScriptErrors"
-]
 
 [hemtt.release]
 archive = false
