@@ -33,3 +33,5 @@
 #define QGMAGAZINE(var0) QUOTE(GMAGAZINE(var0))
 #define GSMAGAZINE(var0,var1) GMAGAZINE(TRIPLES(var0,var1,Shell))
 #define QGSMAGAZINE(var0,var1) QUOTE(GSMAGAZINE(var0,var1))
+#define OPTIC(var0) TRIPLES(PREFIX,Optic,var0)
+#define QOPTIC(var0) QUOTE(OPTIC(var0))
