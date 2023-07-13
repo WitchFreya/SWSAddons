@@ -22,5 +22,24 @@ class XtdGearModels {
                 };
             };
         };
+
+        class WEAPON(MA5BSx) {
+            label = NAME(MA5BSx);
+            icon = "\sws_main\data\icon_sws_ca.paa";
+            options[] = {"Underbarrel"};
+
+            class Underbarrel {
+                label = "Underbarrel Attachment";
+                values[] = {"None", "GL"};
+
+                class None {
+                    description = "Standard loadout.";
+                };
+
+                class GL {
+                    description = "Underbarrel grendade launcher.";
+                };
+            };
+        };
     };
 };

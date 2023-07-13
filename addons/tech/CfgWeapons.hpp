@@ -6,7 +6,7 @@ class CfgWeapons {
 
     class TERMINAL(Scarlet): B_UavTerminal {
         ITEM_META(2);
-        CLEARANCE(SECRET/DECEMBER WHITE);
+        CLEARANCE(SECRET/DECWHI);
         _generalMacro = QTERMINAL(Uav);
         displayName = "SCARLET";
         descriptionShort = "System Calibration and Arsenal Retasking Light Engineering Terminal.";
