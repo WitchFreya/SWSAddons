@@ -14,7 +14,7 @@ class RscDisplayMain: RscStandardDisplay {
                 class Campaigns;
                 class GVAR(JoinServer): QuickPlay {
                     idc = -1;
-                    text = "Join SWS Server (Beta)";
+                    text = "Join SWS Server";
                     tooltip = "If this doesn't work, use the Server Browser as normal.";
                     y = "(1 *   1.5) *  (pixelH * pixelGrid * 2) +  (pixelH)";
                     onButtonClick = "connectToServer ['136.32.183.49',2502,'awoo'];";
