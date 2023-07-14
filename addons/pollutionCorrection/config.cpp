@@ -1,5 +1,9 @@
 #include "script_component.hpp"
 
+#include "CfgAmmo.hpp"
+#include "CfgVehicles.hpp"
+#include "CfgWeapons.hpp"
+
 class CfgPatches
 {
     class ADDON
@@ -10,9 +14,10 @@ class CfgPatches
         magazines[] = { };
         ammo[] = { };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { "1st_MEU_patch_main" }; // loads 1st meu so they don't override the title screen
+        requiredAddons[] = { "SWS_Main" };
         author = QUOTE(AUTHOR);
-        skipWhenMissingDependencies = 1;
         VERSION_CONFIG;
     };
 };
+
+

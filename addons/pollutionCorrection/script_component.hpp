@@ -1,4 +1,4 @@
-#define COMPONENT firstMeuCompat
+#define COMPONENT pollutionCorrection
 #include "\x\SWS\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
@@ -7,7 +7,7 @@
 #ifdef DEBUG_ENABLED_INGAME
     #define DEBUG_MODE_FULL
 #endif
-#ifdef DEBUG_SETTINGS_FIRSTMEUCOMPAT
+#ifdef DEBUG_SETTINGS_POLLUTIONCORRECTION
     #define DEBUG_SETTINGS DEBUG_SETTINGS_INGAME
 #endif
 
