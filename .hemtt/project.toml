@@ -23,6 +23,7 @@ workshop = [
     "2888477598", # 1st MEU
     "894678801", # TFAR
     "1797512739", # operation arsenal expansion for OPTRE
+    "2909265898",
     "2369477168" # advanced developer tools
 ]
 
@@ -91,6 +92,11 @@ workshop = [
     "1623498241", # turret enhanced
     "2013446344", # Simple MapTools
     "2369477168" # advanced developer tools
+]
+
+[hemtt.launch.minimal]
+workshop = [
+    "2369477168"
 ]
 
 [hemtt.release]
