@@ -22,6 +22,7 @@ workshop = [
     "2261045061",  # TCGM
     "2888477598", # 1st MEU
     "894678801", # TFAR
+    "1797512739", # operation arsenal expansion for OPTRE
     "2369477168" # advanced developer tools
 ]
 
@@ -31,6 +32,7 @@ workshop = [
     "463939057", # ace
     "1224892496", # gruppe adler trenches
     "1251859358", # Zeus and Eden Interiors
+
     "1267657613", # optre ace compat
     "1572627279", # optre first contact
     "1572642262", # optre first contact ace compat
@@ -64,8 +66,6 @@ workshop = [
     "2794721649", # Advanced Vault System: Remastered
     "2822758266", # Deformer
     "2853202785", # Freefall Fix
-
-    "2909265898", # OPTRE Ordnance Expansion
     "2918542818", # Sci-fi Support Plus
     "333310405", # Enhanced Movement
     "520618345", # Jbad
@@ -83,6 +83,7 @@ workshop = [
     # mods I hate
     "2888477598", # 1st meu
     "1797512739", # operation arsenal expansion for OPTRE
+    "2909265898", # OPTRE Ordnance Expansion
 
     # additional mods
     "2791403093", # Better Inventory
