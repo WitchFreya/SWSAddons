@@ -21,70 +21,71 @@ workshop = [
     "2047587607", # 19th fleet armor mod
     "2261045061",  # TCGM
     "2888477598", # 1st MEU
+    "894678801", # TFAR
     "2369477168" # advanced developer tools
 ]
 
 [hemtt.launch.full]
 workshop = [
-    "1224892496",
-    "1251859358",
-    "1267657613",
-    "1572627279",
-    "1572642262",
-    "1623498241",
-    "1638341685",
-    "1659590037",
-    "1677267612",
-    "1698087958",
-    "1763651451",
-    "1767731032",
-    "1779063631",
-    "1790880882",
-    "1797512739",
-    "1858075458",
-    "1876589191",
-    "1957746437",
-    "2013446344",
-    "2016312756",
-    "2018593688",
-    "2034363662",
-    "2041057379",
-    "2047587607",
-    "2198339170",
-    "2261045061",
-    "2359395889",
-    "2359977960",
-    "2361950567",
-    "2369477168",
-    "2467590475",
-    "2480118782",
-    "2522638637",
-    "2538444208",
-    "2695649037",
-    "2699465073",
-    "2731181579",
-    "2735613231",
-    "2791403093",
-    "2794721649",
-    "2822758266",
-    "2853202785",
-    "2888477598",
-    "2909265898",
-    "2918542818",
-    "2994674040",
-    "333310405",
-    "450814997",
-    "463939057",
-    "520618345",
-    "583496184",
-    "583544987",
-    "623475643",
-    "767380317",
-    "769440155",
-    "837729515",
-    "861133494",
-    "894678801",
-    "925018569"
+    "1224892496", # gruppe adler trenches
+    "1251859358", # Zeus and Eden Interiors
+    "1267657613", # optre ace compat
+    "1572627279", # optre first contact
+    "1572642262", # optre first contact ace compat
+    "1638341685", # dui squad radar
+    "1659590037", # fireteam zulu
+    "1677267612", # ace medical assistant
+    "1698087958", # full halo music pack
+    "1763651451", # optre PLUS+
+    "1767731032", # HEV patch
+    "1779063631", # zeus enhanced
+    "1790880882", # 41st odst/mfr declassified
+    "1797512739", # operation arsenal expansion for OPTRE
+    "1858075458", # LAMBS_Danger
+    "1876589191", # JM's Structures
+    "1957746437", # ADV ACE-CPR
+    "2016312756", # opcan
+    "2018593688", # Zeus Enhanced - ACE3 Compatibility
+    "2034363662", # Enhanced Movement Rework
+    "2047587607", # 19th fleet armor mod
+    "2198339170", # Alternative Running
+    "2261045061", # tcgm
+    "2359395889", # TCGM_Divinities_2.0
+    "2359977960", # ZEPHIK Female Units V2
+    "2361950567", # Operation TREBUCHET Zephik Females Compat
+    "2480118782", # Max Women Soldiers
+    "2522638637", # ace arsenal extended
+    "2538444208", # Simple Grid Designators
+    "2695649037", # Operation TREBUCHET JSRS Compat
+    "2699465073", # Fire Support Plus
+    "2731181579", # Wild Mountains Livonia Veg
+    "2735613231", # Weather Plus
+    "2794721649", # Advanced Vault System: Remastered
+    "2822758266", # Deformer
+    "2853202785", # Freefall Fix
+    "2888477598", # 1st meu
+    "2909265898", # OPTRE Ordnance Expansion
+    "2918542818", # Sci-fi Support Plus
+    "333310405", # Enhanced Movement
+    "450814997", # cba
+    "463939057", # ace
+    "520618345", # Jbad
+    "583496184", # CUP Terrains - Core
+    "583544987", # CUP Terrains - Maps
+    "623475643", # 3den Enhanced
+    "767380317", # Blastcore Edited (standalone version)
+    "769440155", # optre
+    "837729515", # CH View Distance
+    "861133494", # JSRS SOUNDMOD
+    "894678801", # tfar
+    "925018569", # WMO - Walkable Moving Objects
+    "2041057379", # A3 Thermal Improvement
+
+    "2791403093", # Better Inventory
+    "2467590475", # Enhanced Map Ace Version
+    "1623498241", # turret enhanced
+    "2013446344", # Simple MapTools
+    "2369477168" # advanced developer tools
 ]
 
 [hemtt.release]
