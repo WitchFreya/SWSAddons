@@ -39,6 +39,8 @@ class RscDisplayMain: RscStandardDisplay {
         delete Spotlight1;
 		delete Spotlight2;
 		delete Spotlight3;
+        delete SpotlightNext;
+        delete SpotlightPrev;
 		delete BackgroundSpotlightRight;
 		delete BackgroundSpotlightLeft;
 		delete BackgroundSpotlight;
@@ -46,6 +48,13 @@ class RscDisplayMain: RscStandardDisplay {
         class BackgroundBar;
         class GroupSingleplayer: RscControlsGroupNoScrollbars {
             class Controls;
+        };
+
+        class BackgroundCenter : BackgroundBar {
+            shadow = 0;
+            colorText[] = {1,1,1,1};
+            colorBackground[] = {0,0,0,0.5};
+            colorShadow[] = {0,0,0,0.5};
         };
 
         class Logo: RscActivePicture {
@@ -91,7 +100,7 @@ class RscDisplayMain: RscStandardDisplay {
     enableDisplay = 0;
     class controlsBackground {
         delete LoadingPic;
-        class LoadingPic : RscPicture {
+        class Picture : RscPicture {
             idc=1;
             x = "SafeZoneX";
             y = "SafeZoneY";
