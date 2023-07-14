@@ -27,6 +27,8 @@ workshop = [
 
 [hemtt.launch.full]
 workshop = [
+    "450814997", # cba
+    "463939057", # ace
     "1224892496", # gruppe adler trenches
     "1251859358", # Zeus and Eden Interiors
     "1267657613", # optre ace compat
@@ -34,19 +36,18 @@ workshop = [
     "1572642262", # optre first contact ace compat
     "1638341685", # dui squad radar
     "1659590037", # fireteam zulu
+    "1876589191", # JM's Structures
+    "1957746437", # ADV ACE-CPR
+    "2016312756", # opcan
+    "2034363662", # Enhanced Movement Rework
+    "1858075458", # LAMBS_Danger
+    "1779063631", # zeus enhanced
+    "2018593688", # Zeus Enhanced - ACE3 Compatibility
+    "1790880882", # 41st odst/mfr declassified
     "1677267612", # ace medical assistant
     "1698087958", # full halo music pack
     "1763651451", # optre PLUS+
     "1767731032", # HEV patch
-    "1779063631", # zeus enhanced
-    "1790880882", # 41st odst/mfr declassified
-    "1797512739", # operation arsenal expansion for OPTRE
-    "1858075458", # LAMBS_Danger
-    "1876589191", # JM's Structures
-    "1957746437", # ADV ACE-CPR
-    "2016312756", # opcan
-    "2018593688", # Zeus Enhanced - ACE3 Compatibility
-    "2034363662", # Enhanced Movement Rework
     "2047587607", # 19th fleet armor mod
     "2198339170", # Alternative Running
     "2261045061", # tcgm
@@ -63,12 +64,10 @@ workshop = [
     "2794721649", # Advanced Vault System: Remastered
     "2822758266", # Deformer
     "2853202785", # Freefall Fix
-    "2888477598", # 1st meu
+
     "2909265898", # OPTRE Ordnance Expansion
     "2918542818", # Sci-fi Support Plus
     "333310405", # Enhanced Movement
-    "450814997", # cba
-    "463939057", # ace
     "520618345", # Jbad
     "583496184", # CUP Terrains - Core
     "583544987", # CUP Terrains - Maps
@@ -81,6 +80,11 @@ workshop = [
     "925018569", # WMO - Walkable Moving Objects
     "2041057379", # A3 Thermal Improvement
 
+    # mods I hate
+    "2888477598", # 1st meu
+    "1797512739", # operation arsenal expansion for OPTRE
+
+    # additional mods
     "2791403093", # Better Inventory
     "2467590475", # Enhanced Map Ace Version
     "1623498241", # turret enhanced
