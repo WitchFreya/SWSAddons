@@ -27,6 +27,7 @@ workshop = [
 
     # patches
     "1779063631", # zen
+    "2018593688", # Zeus Enhanced - ACE3 Compatibility
     "2909265898", # OPTRE Ordnance Expansion
     "1790880882", # 41st odst/mfr declassified
     "2359395889", # TCGM_Divinities_2.0
