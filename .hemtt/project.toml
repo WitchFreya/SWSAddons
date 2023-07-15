@@ -23,8 +23,16 @@ workshop = [
     "2888477598", # 1st MEU
     "894678801", # TFAR
     "1797512739", # operation arsenal expansion for OPTRE
-    "2909265898",
-    "2369477168" # advanced developer tools
+    "2369477168", # advanced developer tools
+
+    # patches
+    "1779063631", # zen
+    "2909265898", # OPTRE Ordnance Expansion
+    "1790880882", # 41st odst/mfr declassified
+    "2359395889", # TCGM_Divinities_2.0
+    "2480118782", # Max Women Soldiers
+    "2699465073", # Fire Support Plus
+    "520618345" # Jbad
 ]
 
 [hemtt.launch.full]
