@@ -8,7 +8,7 @@ class CfgPatches
     class ADDON
     {
         name = QUOTE(COMPONENT);
-        units[] = { };
+        units[] = { CLASSES_VEHICLES };
         weapons[] = { };
         magazines[] = { };
         ammo[] = { };
