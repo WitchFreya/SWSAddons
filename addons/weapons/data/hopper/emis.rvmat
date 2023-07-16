@@ -1,0 +1,11 @@
+#define _ARMA_
+
+Ambient[] = {1,1,1,1};
+Diffuse[] = {1,1,1,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {19000,586,586,1};
+specular[] = {0,0,0,0};
+specularPower = 100;
+renderFlags[] = {"AddBlend"};
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";

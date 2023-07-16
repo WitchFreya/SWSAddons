@@ -5,7 +5,8 @@
     QWEAPON(SM247), \
     QWEAPON(MA5BSx), \
     QWEAPON(DOUBLES(MA5BSx,GL)), \
-    QOPTIC(Smartlink)
+    QOPTIC(Smartlink), \
+    QWEAPON(DOUBLES(Hopper,Loaded))
 
 class WeaponSlotsInfo;
 class CowsSlot;
@@ -33,6 +34,11 @@ class CfgWeapons {
     };
 
     #include "CfgWeapons\Guns\SM247.inc"
+
+    //== Launchers
+    class launch_MRAWS_green_F;
+
+    #include "CfgWeapons\Guns\Hopper.inc"
 
     //== Optics
     class OPTRE_MA5_Smartlink;
@@ -62,4 +68,8 @@ class CfgWeapons {
             magazines[] = {QGMAGAZINE(DOUBLES(9Bang,NoFuse))};
         };
     };
+};
+
+class CBA_DisposableLaunchers {
+    WEAPON(Hopper)[] = { QWEAPON(DOUBLES(Hopper,Loaded)), QWEAPON(DOUBLES(Hopper,Used)) };
 };

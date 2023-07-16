@@ -9,7 +9,8 @@
     QSHELL(M9Sx_40mm), \
     QGRENADE(9Bang), \
     QGRENADE(DOUBLES(9Bang,NoFuse)), \
-    QSHELL(9Bang)
+    QSHELL(9Bang), \
+    QAMMO(Hopper)
 
 class CfgAmmo {
     //== Bullets
@@ -27,4 +28,9 @@ class CfgAmmo {
     #include "CfgAmmo\M3Sx.inc"
     #include "CfgAmmo\M9Sx.inc"
     #include "CfgAmmo\9Bang.inc"
+
+    //== Rockets
+    class R_MRAAWS_HE_F;
+
+    #include "CfgAmmo\Hopper.inc"
 };
