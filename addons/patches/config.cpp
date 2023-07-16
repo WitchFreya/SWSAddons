@@ -3,6 +3,7 @@
 #include "CfgAmmo.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWorlds.hpp"
+#include "CfgEditorCategories.hpp"
 
 class CfgPatches
 {
