@@ -13,7 +13,8 @@
     QGMAGAZINE(9Bang), \
     QGMAGAZINE(DOUBLES(9Bang,NoFuse)), \
     QGSMAGAZINE(9Bang,1Rnd), \
-    QGSMAGAZINE(9Bang,3Rnd)
+    QGSMAGAZINE(9Bang,3Rnd), \
+    QMAGAZINE(Hopper)
 
 class CfgMagazines {
 
@@ -31,4 +32,9 @@ class CfgMagazines {
     #include "CfgMagazines\M3Sx.inc"
     #include "CfgMagazines\M9Sx.inc"
     #include "CfgMagazines\9Bang.inc"
+
+    // Rockets
+    class MRAWS_HEAT_F;
+
+    #include "CfgMagazines\Hopper.inc"
 };
