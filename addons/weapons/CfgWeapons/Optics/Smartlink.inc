@@ -1,7 +1,7 @@
  class OPTIC(Smartlink): OPTRE_MA5_SmartLink {
     ITEM_META(2);
     CLEARANCE(RESTRICTED/DECWHI);
-    displayName = NAME(Smartlink-Sx);
+    displayName = QNAME(Smartlink-Sx);
 
     model = QPATHTOF(ma5c_smartlink.p3d);
     class ItemInfo: InventoryOpticsItem_Base_F

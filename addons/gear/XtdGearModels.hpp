@@ -92,7 +92,7 @@ class XtdGearModels
     {
         class TRIPLES(PREFIX,Operative,Helmet)
         {
-            label = NAME(Operative Helmets);
+            label = QNAME(Operative Helmets);
             icon = "\sws_main\data\icon_sws_ca.paa";
             options[] = {"Operative", "Polarization", "Collar", "Ghillie"};
             class Operative
@@ -165,7 +165,7 @@ class XtdGearModels
         };
 
         class TRIPLES(PREFIX,Color,Helmet) : TRIPLES(PREFIX,Operative,Helmet) {
-            label = NAME(Generic Helmets);
+            label = QNAME(Generic Helmets);
             options[] = {"Color", "Polarization", "Collar", "Ghillie"};
             delete Operative;
             class Color {
@@ -200,7 +200,7 @@ class XtdGearModels
 
         class TRIPLES(PREFIX,Operative,Armor)
         {
-            label = NAME(Operative Armor);
+            label = QNAME(Operative Armor);
             icon = "\sws_main\data\icon_sws_ca.paa";
             options[] = {"Operative", "Variant", "Ghillie"};
 
@@ -263,7 +263,7 @@ class XtdGearModels
 
         class TRIPLES(PREFIX,Color,Armor) : TRIPLES(PREFIX,Operative,Armor) {
             delete Operative;
-            label = NAME(Generic Armor);
+            label = QNAME(Generic Armor);
             options[] = {"Color","Variant","Ghillie"};
             class Color {
                 values[] = {"Blue","Gold","Green","Orange","Purple","Red"};
@@ -299,7 +299,7 @@ class XtdGearModels
     {
         class DOUBLES(PREFIX,Shemagh)
         {
-            label = NAME(Shemaghs);
+            label = QNAME(Shemaghs);
             author = "Maid";
             options[] = {"Color", "Variant"};
 
@@ -337,7 +337,7 @@ class XtdGearModels
 
     class CfgVehicles {
         class VEH_UAV(SMQ94) {
-            label = NAME(ILCS UAV Rucksack [SMQ-94]);
+            label = QNAME(ILCS UAV Rucksack [SMQ-94]);
             author = QUOTE(AUTHOR);
             options[] = {"Variant"};
 
