@@ -20,7 +20,7 @@ class CfgMagazines {
     //= 762x51 START
     class 150Rnd_762x51_Box;
 
-    #define NAME_762x51(count) count##Rnd 7.62x51 Box Magazine
+    #define NAME_762x51(count) NAME(count##Rnd 7.62x51 Box Magazine)
     class MAGAZINE(100Rnd_762x51_Mag): 150Rnd_762x51_Box {
         CLEARANCE(RESTRICTED/DECWHI);
         ITEM_META(2);
