@@ -10,7 +10,7 @@ class CfgVehicles {
 
     class BAG(VEH_UAV(SMQ94)): BAG(DMNS_UAV_01_backpack_F_base) {
         ITEM_META(2);
-        displayName = NAME(ILCS UAV Rucksack [MQ-94]);
+        displayName = QNAME(ILCS UAV Rucksack [MQ-94]);
         picture = "\OPTRE_weapons\backpacks\icons\rucksack_black";
         model = "\OPTRE_weapons\backpacks\ODST_ruck";
         hiddenSelections[] = { "camo1", "biofoam" };
@@ -28,7 +28,7 @@ class CfgVehicles {
     };
 
     class BAG(VEH_UAV(DOUBLES(SMQ94,Maid))): BAG(VEH_UAV(SMQ94)) {
-        displayName = NAME(ILCS UAV Rucksack [MQ-94] - Maid);
+        displayName = QNAME(ILCS UAV Rucksack [MQ-94] - Maid);
         class AssembleInfo : AssembleInfo {
             assembleTo = QVEH_UAV(DOUBLES(SMQ94,Maid));
         };

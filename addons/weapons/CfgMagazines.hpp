@@ -1,4 +1,4 @@
-#define CLASSES_MAGAZINE \
+#define CLASSES_MAGAZINES \
     QMAGAZINE(100Rnd_762x51_Mag), \
     QMAGAZINE(100Rnd_762x51_Mag_Tracer), \
     QMAGAZINE(200Rnd_762x51_Mag), \
@@ -20,75 +20,7 @@ class CfgMagazines {
     //= 762x51 START
     class 150Rnd_762x51_Box;
 
-    #define NAME_762x51(count) NAME(count##Rnd 7.62x51 Box Magazine)
-    class MAGAZINE(100Rnd_762x51_Mag): 150Rnd_762x51_Box {
-        CLEARANCE(RESTRICTED/DECWHI);
-        ITEM_META(2);
-        model = "\OPTRE_Weapons\MG\M247_Mag_Proxy.p3d";
-		modelSpecial = "\OPTRE_Weapons\MG\M247_Mag_Proxy.p3d";
-		modelSpecialIsProxy = 1;
-        hiddenSelections[] = {
-			"camo1"
-		};
-		hiddenSelectionsTextures[] = {
-			"\optre_weapons\mg\data\m247_magazine_co.paa"
-		};
-
-		displayName = QUOTE(NAME_762x51(100));
-		displayNameShort = "7.62x51";
-		ammo = QAMMO(762x51_Ball);
-		count = 100;
-		initSpeed = 950;
-		picture = "\DMNS\Weapons\Ammo\Data\CM12_AMMO_Icon.paa";
-		descriptionShort = "100 Round Magazine<SM247>7.62x51 Carbine<SM247>";
-		mass = 40;
-		tracersEvery = 0;
-		lastRoundsTracer = 5;
-    };
-
-    class MAGAZINE(100Rnd_762x51_Mag_Tracer): MAGAZINE(100Rnd_762x51_Mag) {
-        CLEARANCE(RESTRICTED/DECWHI);
-        displayName = QUOTE(NAME_762x51(100) (Tracers));
-        displayNameShort = "7.62x51-T";
-        tracersEvery = 1;
-        lastRoundsTracer = 100;
-        descriptionShort = "100 Round Tracer Magazine<SM247>7.62x51 Carbine<SM247>";
-    };
-
-    class MAGAZINE(200Rnd_762x51_Mag): MAGAZINE(100Rnd_762x51_Mag) {
-        CLEARANCE(RESTRICTED/DECWHI);
-        displayName = QUOTE(NAME_762x51(200));
-        mass = 60;
-        count = 200;
-        descriptionShort = "200 Round Magazine<SM247>7.62x51 Carbine<SM247>";
-    };
-
-    class MAGAZINE(200Rnd_762x51_Mag_Tracer): MAGAZINE(200Rnd_762x51_Mag) {
-        CLEARANCE(RESTRICTED/DECWHI);
-        displayName = QUOTE(NAME_762x51(200) (Tracers));
-        displayNameShort = "7.62x51-T";
-        tracersEvery = 1;
-        lastRoundsTracer = 200;
-        descriptionShort = "200 Round Tracer Magazine<SM247>7.62x51 Carbine<SM247>";
-    };
-
-    class MAGAZINE(400Rnd_762x51_Mag): MAGAZINE(100Rnd_762x51_Mag) {
-        CLEARANCE(RESTRICTED/DECWHI);
-        displayName = QUOTE(NAME_762x51(400));
-        mass = 90;
-        count = 400;
-        descriptionShort = "400 Round Magazine<SM247>7.62x51 Carbine<SM247>";
-    };
-
-    class MAGAZINE(400Rnd_762x51_Mag_Tracer): MAGAZINE(400Rnd_762x51_Mag) {
-        CLEARANCE(RESTRICTED/DECWHI);
-        displayName = QUOTE(NAME_762x51(400) (Tracers));
-        displayNameShort = "7.62x51-T";
-        tracersEvery = 1;
-        lastRoundsTracer = 400;
-        descriptionShort = "400 Round Tracer Magazine<SM247>7.62x51 Carbine<SM247>";
-    };
-    //= 762x51 END
+    #include "CfgMagazines\762x51.inc"
 
     //= Grenades
     class ACE_CTS9;
@@ -97,7 +29,7 @@ class CfgMagazines {
     class GMAGAZINE(M3Sx): OPTRE_M9_Frag {
         CLEARANCE(RESTRICTED/DECWHI);
         ITEM_META(2);
-        displayName = NAME(M3Sx (Frag));
+        displayName = QNAME(M3Sx (Frag));
         mass = 11;
         ammo = QGRENADE(M3Sx);
         displayNameShort = "M3Sx (Frag)";
@@ -107,7 +39,7 @@ class CfgMagazines {
     class GMAGAZINE(M9Sx): OPTRE_M9_Frag {
         CLEARANCE(RESTRICTED/DECWHI);
         ITEM_META(2);
-		displayName = NAME(M9Sx (HE-DP));
+		displayName = QNAME(M9Sx (HE-DP));
 		mass = 22;
 		typicalSpeed = 10;
 		ammo = QGRENADE(M9Sx);
@@ -117,16 +49,16 @@ class CfgMagazines {
 
     class GMAGAZINE(9Bang): ACE_CTS9 {
         ITEM_META(2);
-        displayName = NAME(9-Bang (Stun));
-        descriptionShort = NAME(Experimental 9-Bang (Stun));
+        displayName = QNAME(9-Bang (Stun));
+        descriptionShort = QNAME(Experimental 9-Bang (Stun));
         displayNameShort = "S9B";
         ammo = QGRENADE(9Bang);
     };
 
     class GMAGAZINE(DOUBLES(9Bang,NoFuse)): ACE_CTS9 {
         ITEM_META(2);
-        displayName = NAME(9-Bang (Stun/No Fuse));
-        descriptionShort = NAME(Experimental 9-Bang (Stun/No Fuse));
+        displayName = QNAME(9-Bang (Stun/No Fuse));
+        descriptionShort = QNAME(Experimental 9-Bang (Stun/No Fuse));
         displayNameShort = "S9B-NF";
         ammo = QGRENADE(DOUBLES(9Bang,NoFuse));
     };
@@ -138,7 +70,7 @@ class CfgMagazines {
     class GSMAGAZINE(M3Sx,1Rnd): M319_HEDP_Grenade_Shell {
         CLEARANCE(RESTRICTED/DECWHI);
         ITEM_META(2);
-        displayName = NAME(1Rnd M3Sx (Frag) Shell);
+        displayName = QNAME(1Rnd M3Sx (Frag) Shell);
         displayNameShort = "M3Sx (Frag)";
 		descriptionShort = "Type: Concussion Grenade<br />Rounds: 1<br />Used in: EGLM, 1GL";
         mass = 12;
@@ -148,7 +80,7 @@ class CfgMagazines {
     class GSMAGAZINE(M3Sx,3Rnd): M319_HEDP_Grenade_Shell {
         CLEARANCE(RESTRICTED/DECWHI);
         ITEM_META(2);
-        displayName = NAME(3Rnd M3Sx (Frag) Shell);
+        displayName = QNAME(3Rnd M3Sx (Frag) Shell);
         displayNameShort = "M3Sx (Frag)";
 		descriptionShort = "Type: Concussion Grenade<br />Rounds: 3<br />Used in: EGLM, 3GL";
         mass = 26;
@@ -159,7 +91,7 @@ class CfgMagazines {
     class GSMAGAZINE(M9Sx,1Rnd): M319_HEDP_Grenade_Shell {
         CLEARANCE(RESTRICTED/DECWHI);
         ITEM_META(2);
-        displayName = NAME(1Rnd M9Sx (HE-DP) Shell);
+        displayName = QNAME(1Rnd M9Sx (HE-DP) Shell);
         displayNameShort = "M9Sx (HE-DP)";
 		descriptionShort = "Type: AT Grenade<br />Rounds: 1<br />Used in: EGLM, 1GL";
         mass = 24;
@@ -168,7 +100,7 @@ class CfgMagazines {
 
     class GSMAGAZINE(9Bang,1Rnd): M319_HE_Grenade_Shell {
         ITEM_META(2);
-        displayName = NAME(1Rnd 9Bang (Stun) Shell);
+        displayName = QNAME(1Rnd 9Bang (Stun) Shell);
         displayNameShort = "S9B (Stun)";
 		descriptionShort = "Type: Stun Grenade<br />Rounds: 1<br />Used in: EGLM, 1GL";
         initSpeed = 100;
@@ -180,7 +112,7 @@ class CfgMagazines {
 
     class GSMAGAZINE(9Bang,3Rnd): M319_HE_Grenade_Shell {
         ITEM_META(2);
-        displayName = NAME(3Rnd 9Bang (Stun) Shell);
+        displayName = QNAME(3Rnd 9Bang (Stun) Shell);
         displayNameShort = "S9B (Stun)";
 		descriptionShort = "Type: Stun Grenade<br />Rounds: 1<br />Used in: EGLM, 3GL";
         count = 3;

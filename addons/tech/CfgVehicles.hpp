@@ -11,7 +11,7 @@ class CfgVehicles {
         META;
         _generalMacro = QVEH_UAV(SMQ94);
         scope = 2;
-        displayName = NAME(SMQ-94 Recon);
+        displayName = QNAME(SMQ-94 Recon);
         faction = "SWS_UNSC";
         fuelCapacity = 100;
         side = 1;
@@ -82,7 +82,7 @@ class CfgVehicles {
     };
 
     class VEH_UAV(DOUBLES(SMQ94,Maid)): VEH_UAV(SMQ94) {
-        displayName = NAME(SMQ-94 Recon - Maid);
+        displayName = QNAME(SMQ-94 Recon - Maid);
         hiddenSelectionsTextures[] = {
 			QPATHTOF(data\smq_94_maid_co.paa)
 		};

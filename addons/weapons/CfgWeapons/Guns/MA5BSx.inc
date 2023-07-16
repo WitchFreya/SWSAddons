@@ -1,7 +1,7 @@
 class WEAPON(MA5BSx): OPTRE_MA5B {
     WEAPON_META(MA5BSx,2);
     CLEARANCE(RESTRICTED/DECWHI);
-    displayName = NAME(MA5B-Sx);
+    displayName = QNAME(MA5B-Sx);
     descriptionShort = "An experimental variant of the MA5B.";
     hiddenSelectionsTextures[] = {
         "optre_weapons\ar\data\weapon_co.paa",
@@ -32,7 +32,7 @@ class WEAPON(MA5BSx): OPTRE_MA5B {
 class WEAPON(DOUBLES(MA5BSx,GL)): OPTRE_MA5BGL {
     WEAPON_META(DOUBLES(MA5BSx,GL),2);
     CLEARANCE(RESTRICTED/DECWHI);
-    displayName = NAME(MA5B-Sx + M301-Sx UGL);
+    displayName = QNAME(MA5B-Sx + M301-Sx UGL);
     descriptionShort = "An experimental variant of the MA5B.";
     hiddenSelectionsTextures[] = {
         "optre_weapons\ar\data\weapon_co.paa",

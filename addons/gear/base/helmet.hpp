@@ -69,7 +69,7 @@ class DOUBLES(HELMET(Base),dp): HELMET(Base)
 #define C_HELMET_BASE(varName,texHelmet,texRest)                        \
     class HELMET(varName): HELMET(Base) {                               \
         SCOPE(2);                                                       \
-        displayName = NAME(Helmet (name));                              \
+        displayName = QNAME(Helmet (name));                              \
         hiddenSelectionsTextures[] = {ARR_2(texHelmet,texRest)};        \
         class ItemInfo : ItemInfo {                                     \
             hiddenSelectionsTextures[] = {ARR_2(texHelmet,texRest)};    \
@@ -77,7 +77,7 @@ class DOUBLES(HELMET(Base),dp): HELMET(Base)
     };                                                                  \
     class DOUBLES(HELMET(varName),dp): DOUBLES(HELMET(Base),dp) {       \
         SCOPE(2);                                                       \
-        displayName = NAME(Helmet (name));                              \
+        displayName = QNAME(Helmet (name));                              \
         hiddenSelectionsTextures[] = {texHelmet,TEXTURE(visr,clr)};     \
         class ItemInfo : ItemInfo {                                     \
             hiddenSelectionsTextures[] = {texHelmet,TEXTURE(visr,clr)}; \

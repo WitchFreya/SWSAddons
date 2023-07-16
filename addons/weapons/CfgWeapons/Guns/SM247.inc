@@ -1,7 +1,7 @@
 class WEAPON(SM247): Dmns_M247_GPMG {
     WEAPON_META(SM247,2);
     CLEARANCE(RESTRICTED/DECWHI);
-    displayName = NAME(SM247);
+    displayName = QNAME(SM247);
     model = "\OPTRE_Weapons\MG\M247.p3d";
     hiddenSelections[] = {
         "mainbody1",

@@ -14,7 +14,7 @@ class CfgPatches
         name = QUOTE(COMPONENT);
         units[] = {};
         weapons[] = { CLASSES_AMMO };
-        magazines[] = { CLASSES_MAGAZINE };
+        magazines[] = { CLASSES_MAGAZINES };
         ammo[] = { CLASSES_AMMO };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = { "LM_OPCAN_WEP_RES", "OPTRE_ACE_Compat", "SWS_Main" };
