@@ -2,6 +2,7 @@
 
 #include "CfgAmmo.hpp"
 #include "CfgVehicles.hpp"
+#include "CfgWorlds.hpp"
 
 class CfgPatches
 {
