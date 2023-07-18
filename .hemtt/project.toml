@@ -20,7 +20,35 @@ workshop = [
     "1659590037", # fireteam zulu - required by 19th
     "2047587607", # 19th fleet armor mod
     "2261045061",  # TCGM
-    # "2888477598", # 1st MEU
+    "2888477598", # 1st MEU
+    "894678801", # TFAR
+    "1797512739", # operation arsenal expansion for OPTRE
+    "2369477168", # advanced developer tools
+
+    # patches
+    "1779063631", # zen
+    "2018593688", # Zeus Enhanced - ACE3 Compatibility
+    "2909265898", # OPTRE Ordnance Expansion
+    "1790880882", # 41st odst/mfr declassified
+    "2359395889", # TCGM_Divinities_2.0
+    "2480118782", # Max Women Soldiers
+    "2699465073", # Fire Support Plus
+    "520618345" # Jbad
+]
+
+[hemtt.launch.nomeu]
+workshop = [
+    "463939057", # ace
+    "450814997", # cba_a3
+    "2522638637", # ace arsenal extended
+    "769440155", # OPTRE
+    "1267657613", # optre ace compat
+    "1572627279", # optre first contact
+    "1572642262", # optre first contact ace compat
+    "2016312756", # opcan
+    "1659590037", # fireteam zulu - required by 19th
+    "2047587607", # 19th fleet armor mod
+    "2261045061",  # TCGM
     "894678801", # TFAR
     "1797512739", # operation arsenal expansion for OPTRE
     "2369477168", # advanced developer tools
@@ -111,7 +139,7 @@ workshop = [
 [hemtt.release]
 archive = false
 
-[files]
-exclude = [
-    "*.inc"
-]
+# [files]
+# exclude = [
+#     "*.inc"
+# ]

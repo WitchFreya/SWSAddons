@@ -14,7 +14,8 @@
     QGMAGAZINE(DOUBLES(9Bang,NoFuse)), \
     QGSMAGAZINE(9Bang,1Rnd), \
     QGSMAGAZINE(9Bang,3Rnd), \
-    QMAGAZINE(M24RL_D)
+    QMAGAZINE(M24RL_D), \
+    QMAGAZINE(DOUBLES(C7Sx,Sticky))
 
 class CfgMagazines {
 
@@ -28,10 +29,12 @@ class CfgMagazines {
     class OPTRE_M9_Frag;
     class M319_HE_Grenade_Shell;
     class M319_HEDP_Grenade_Shell;
+    class OPTRE_c7_remote_throwable_sticky_mag;
 
     #include "CfgMagazines\M3Sx.inc"
     #include "CfgMagazines\M9Sx.inc"
     #include "CfgMagazines\9Bang.inc"
+    #include "CfgMagazines\C7Sx.inc"
 
     // Rockets
     class MRAWS_HEAT_F;
