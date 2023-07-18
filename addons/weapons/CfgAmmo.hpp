@@ -10,7 +10,7 @@
     QGRENADE(9Bang), \
     QGRENADE(DOUBLES(9Bang,NoFuse)), \
     QSHELL(9Bang), \
-    QAMMO(Hopper)
+    QAMMO(M24RL_D)
 
 class CfgAmmo {
     //== Bullets
@@ -32,5 +32,5 @@ class CfgAmmo {
     //== Rockets
     class R_MRAAWS_HE_F;
 
-    #include "CfgAmmo\Hopper.inc"
+    #include "CfgAmmo\M24RL_D.inc"
 };

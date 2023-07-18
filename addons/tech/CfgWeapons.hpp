@@ -13,5 +13,9 @@ class CfgWeapons {
         model = "\a3\Props_F_Enoch\Military\Equipment\Laptop_03_F.p3d";
         picture = QPATHTOF(data\terminal_scarlet_ca.paa);
         hiddenSelectionsTextures[] = {"a3\Props_F_Enoch\Military\Equipment\data\Laptop_03_black_CO.paa"};
+
+        ACE_explosives_triggerType = "Command";
+        ACE_explosives_range = 1000;
+        ace_explosives_detonator = 1;
     };
 };
