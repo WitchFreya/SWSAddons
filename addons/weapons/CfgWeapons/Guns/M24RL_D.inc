@@ -1,8 +1,9 @@
-#define NAME_M24RLD NAME(M24RL-D-Sx Launcher)
+#define NAME_M24RLD NAME(M24RL-Sx 'Howdy')
 
 class WEAPON(M24RL_D): launch_MRAWS_green_F {
     ITEM_META(1);
-    displayName = QUOTE(NAME_M24RLD (Loaded));
+    CLEARANCE(RESTRICTED/DECWHITE);
+    displayName = QUOTE(NAME_M24RLD);
     baseWeapon = QWEAPON(DOUBLES(M24RL_D,Loaded));
     picture = QPATHTOF(data\icons\m24rl_d_ca.paa);
     pictureWire = QPATHTOF(data\icons\m24rl_d_wire_ca.paa);
@@ -11,6 +12,12 @@ class WEAPON(M24RL_D): launch_MRAWS_green_F {
     magazines[] = { QMAGAZINE(M24RL_D) };
     magazineReloadTime = 0.1;
     reloadMagazineSound[] = {"",1,1};
+    description = "A single-use dumbfire rocket launcher that will make short work of most targets.";
+    descriptionShort = "Disposable dumbfire. 'Howdy' is the last thing they'll hear.";
+
+    // backblast
+    ACE_overpressure_angle = 55;
+    ACE_overpressure_range = 10;
 
     class EventHandlers {
         fired = "_this call CBA_fnc_firedDisposable";
@@ -23,7 +30,7 @@ class WEAPON(M24RL_D): launch_MRAWS_green_F {
 
 class WEAPON(DOUBLES(M24RL_D,Loaded)): WEAPON(M24RL_D) {
     SCOPE(2);
-    displayName = QUOTE(NAME_M24RLD);
+    displayName = QUOTE(NAME_M24RLD (Disposable));
     magazines[] = {"CBA_FakeLauncherMagazine"};
     class WeaponSlotsInfo: WeaponSlotsInfo {
         mass = WEAPON_M24RLD_LOADED_MASS;
