@@ -12,12 +12,12 @@ class CfgPatches
     class ADDON
     {
         name = QUOTE(COMPONENT);
-        units[] = {};
+        units[] = { };
         weapons[] = { CLASSES_AMMO };
         magazines[] = { CLASSES_MAGAZINES };
         ammo[] = { CLASSES_AMMO };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { "LM_OPCAN_WEP_RES", "OPTRE_ACE_Compat", "SWS_Main" };
+        requiredAddons[] = { "OPTRE_FunctionsLibrary_supercombustion", "LM_OPCAN_WEP_RES", "OPTRE_ACE_Compat", "SWS_Main" };
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };

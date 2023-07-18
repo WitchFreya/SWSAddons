@@ -52,7 +52,8 @@ class CfgWeapons {
             QMUZZLE(M3Sx),
             QMUZZLE(M9Sx),
             QMUZZLE(9Bang),
-            QMUZZLE(DOUBLES(9Bang,NoFuse))
+            QMUZZLE(DOUBLES(9Bang,NoFuse)),
+            QMUZZLE(C7Sx)
         };
         class ThrowMuzzle;
         class MUZZLE(M3Sx): ThrowMuzzle {
@@ -66,6 +67,9 @@ class CfgWeapons {
         };
         class MUZZLE(DOUBLES(9Bang,NoFuse)): ThrowMuzzle {
             magazines[] = {QGMAGAZINE(DOUBLES(9Bang,NoFuse))};
+        };
+        class MUZZLE(C7Sx): ThrowMuzzle {
+            magazines[] = {QMAGAZINE(DOUBLES(C7Sx,Sticky))};
         };
     };
 };

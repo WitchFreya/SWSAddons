@@ -36,6 +36,9 @@
 #define OPTIC(var0) TRIPLES(PREFIX,Optic,var0)
 #define QOPTIC(var0) QUOTE(OPTIC(var0))
 
+#define VEHICLE(var0) GVAR(DOUBLES(V,var0))
+#define QVEHICLE(var0) QUOTE(VEHICLE(var0))
+
 #define MAGAZINE_M24RLD_MASS 10
 #define WEAPON_M24RLD_MASS 30
 #define WEAPON_M24RLD_LOADED_MASS 40

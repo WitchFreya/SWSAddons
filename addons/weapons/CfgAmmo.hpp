@@ -10,7 +10,10 @@
     QGRENADE(9Bang), \
     QGRENADE(DOUBLES(9Bang,NoFuse)), \
     QSHELL(9Bang), \
-    QAMMO(M24RL_D)
+    QAMMO(M24RL_D), \
+    QAMMO(DOUBLES(C7Sx,Sticky)), \
+    QAMMO(TRIPLES(C7Sx,Sticky,Explosion))
+
 
 class CfgAmmo {
     //== Bullets
@@ -33,4 +36,10 @@ class CfgAmmo {
     class R_MRAAWS_HE_F;
 
     #include "CfgAmmo\M24RL_D.inc"
+
+    //== Explosives
+    class OPTRE_c7_remote_ammo_thrown_sticky;
+    class OPTRE_sticky_c7_explosion;
+
+    #include "CfgAmmo\C7Sx.inc"
 };
