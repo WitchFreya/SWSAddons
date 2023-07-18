@@ -14,7 +14,7 @@
     QGMAGAZINE(DOUBLES(9Bang,NoFuse)), \
     QGSMAGAZINE(9Bang,1Rnd), \
     QGSMAGAZINE(9Bang,3Rnd), \
-    QMAGAZINE(Hopper)
+    QMAGAZINE(M24RL_D)
 
 class CfgMagazines {
 
@@ -36,5 +36,5 @@ class CfgMagazines {
     // Rockets
     class MRAWS_HEAT_F;
 
-    #include "CfgMagazines\Hopper.inc"
+    #include "CfgMagazines\M24RL_D.inc"
 };

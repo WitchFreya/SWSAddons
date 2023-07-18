@@ -20,7 +20,7 @@ workshop = [
     "1659590037", # fireteam zulu - required by 19th
     "2047587607", # 19th fleet armor mod
     "2261045061",  # TCGM
-    "2888477598", # 1st MEU
+    # "2888477598", # 1st MEU
     "894678801", # TFAR
     "1797512739", # operation arsenal expansion for OPTRE
     "2369477168", # advanced developer tools

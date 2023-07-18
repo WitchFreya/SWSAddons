@@ -6,7 +6,7 @@
     QWEAPON(MA5BSx), \
     QWEAPON(DOUBLES(MA5BSx,GL)), \
     QOPTIC(Smartlink), \
-    QWEAPON(DOUBLES(Hopper,Loaded))
+    QWEAPON(DOUBLES(M24RL_D,Loaded))
 
 class WeaponSlotsInfo;
 class CowsSlot;
@@ -38,7 +38,7 @@ class CfgWeapons {
     //== Launchers
     class launch_MRAWS_green_F;
 
-    #include "CfgWeapons\Guns\Hopper.inc"
+    #include "CfgWeapons\Guns\M24RL_D.inc"
 
     //== Optics
     class OPTRE_MA5_Smartlink;
@@ -71,5 +71,5 @@ class CfgWeapons {
 };
 
 class CBA_DisposableLaunchers {
-    WEAPON(Hopper)[] = { QWEAPON(DOUBLES(Hopper,Loaded)), QWEAPON(DOUBLES(Hopper,Used)) };
+    WEAPON(M24RL_D)[] = { QWEAPON(DOUBLES(M24RL_D,Loaded)), QWEAPON(DOUBLES(M24RL_D,Used)) };
 };
