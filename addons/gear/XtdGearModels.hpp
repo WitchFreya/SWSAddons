@@ -74,7 +74,8 @@
     VEST_GEAR_INFO(name)
 
 #define OPERATIVES \
-    "Rifleman", "Ashes", "Butler", "Demon", "Egg", "Maid", "Polaris", "Rabbit", "Sawbones", "Tiger"
+    "Rifleman", "Ashes", "Butler", "Demon", "Egg", "Maid", "Polaris", "Rabbit", "Sawbones", "Tiger",\
+    "Hurricane", "Roman"
 
 #define XTDGEARMODEL_OPERATIVE(operative,type) \
     class operative                             \
@@ -109,6 +110,8 @@ class XtdGearModels
                 XTDGEARMODEL_OPERATIVE_HELMET(Rabbit);
                 XTDGEARMODEL_OPERATIVE_HELMET(Sawbones);
                 XTDGEARMODEL_OPERATIVE_HELMET(Tiger);
+                XTDGEARMODEL_OPERATIVE_HELMET(Hurricane);
+                XTDGEARMODEL_OPERATIVE_HELMET(Roman);
             };
 
             class Polarization
@@ -218,6 +221,8 @@ class XtdGearModels
                 XTDGEARMODEL_OPERATIVE_VEST(Rabbit);
                 XTDGEARMODEL_OPERATIVE_VEST(Sawbones);
                 XTDGEARMODEL_OPERATIVE_VEST(Tiger);
+                XTDGEARMODEL_OPERATIVE_VEST(Hurricane);
+                XTDGEARMODEL_OPERATIVE_VEST(Roman);
             };
 
             class Variant
