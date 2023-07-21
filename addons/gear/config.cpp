@@ -2,7 +2,6 @@
 
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
-#include "CfgGlasses.hpp"
 #include "XtdGearModels.hpp"
 #include "XtdGearInfos.hpp"
 
