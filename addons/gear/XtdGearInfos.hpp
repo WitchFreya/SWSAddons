@@ -88,6 +88,8 @@ class XtdGearInfos
         C_GEAR_INFO_OP(Rabbit);
         C_GEAR_INFO_OP(Sawbones);
         C_GEAR_INFO_OP(Tiger);
+        C_GEAR_INFO_OP(Hurricane);
+        C_GEAR_INFO_OP(Roman);
 
         //== COLORS
         C_GEAR_INFO_COLOR(Blue);
