@@ -72,7 +72,7 @@ workshop = [
     "1251859358", # Zeus and Eden Interiors
     "3007731986", # SWS Timeless
 
-    "1267657613", # optre ace compat
+"1267657613", # optre ace compat
     "1572627279", # optre first contact
     "1572642262", # optre first contact ace compat
     "1638341685", # dui squad radar
@@ -86,7 +86,6 @@ workshop = [
     "2018593688", # Zeus Enhanced - ACE3 Compatibility
     "1790880882", # 41st odst/mfr declassified
     "1677267612", # ace medical assistant
-    "1698087958", # full halo music pack
     "1763651451", # optre PLUS+
     "1767731032", # HEV patch
     "2047587607", # 19th fleet armor mod
@@ -123,6 +122,12 @@ workshop = [
     "2888477598", # 1st meu
     "1797512739", # operation arsenal expansion for OPTRE
     "2909265898", # OPTRE Ordnance Expansion
+
+    # v2 mods
+    "2617713656", # Halo Music Collection
+    "2969350304", # Ladder Tweak Remastered
+    "1770265310", # No More Aircraft Bouncing
+    "1911374016", # ACE Vehicle Medical
 
     # additional mods
     "2791403093", # Better Inventory
