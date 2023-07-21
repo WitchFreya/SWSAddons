@@ -3,7 +3,7 @@
     CLEARANCE(RESTRICTED/DECWHI);
     displayName = QNAME(Smartlink-Sx);
 
-    model = QPATHTOF(ma5c_smartlink.p3d);
+    model = QPATHTOF(data\ma5c_smartlink.p3d);
     class ItemInfo: InventoryOpticsItem_Base_F
     {
         mass = 1;
