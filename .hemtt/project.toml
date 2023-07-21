@@ -70,6 +70,7 @@ workshop = [
     "463939057", # ace
     "1224892496", # gruppe adler trenches
     "1251859358", # Zeus and Eden Interiors
+    "3007731986", # SWS Timeless
 
     "1267657613", # optre ace compat
     "1572627279", # optre first contact
@@ -131,15 +132,5 @@ workshop = [
     "2369477168" # advanced developer tools
 ]
 
-[hemtt.launch.minimal]
-workshop = [
-    "2369477168"
-]
-
 [hemtt.release]
 archive = false
-
-# [files]
-# exclude = [
-#     "*.inc"
-# ]

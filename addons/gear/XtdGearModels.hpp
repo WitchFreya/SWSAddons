@@ -295,46 +295,6 @@ class XtdGearModels
         };
     };
 
-    class CfgGlasses
-    {
-        class DOUBLES(PREFIX,Shemagh)
-        {
-            label = QNAME(Shemaghs);
-            author = "Maid";
-            options[] = {"Color", "Variant"};
-
-            class Color
-            {
-                label = "Color";
-                values[] = {"Pink"};
-
-                class Pink
-                {
-                    label = "Pink";
-                    description = "A pink shemagh.";
-                };
-            };
-
-            class Variant
-            {
-                label = "Variant";
-                values[] = {"Up", "Down"};
-
-                class Up
-                {
-                    label = "Up";
-                    description = "Hide my nose and mouth too.";
-                };
-
-                class Down
-                {
-                    label = "Down";
-                    description = "Just keep my neck warm.";
-                };
-            };
-        };
-    };
-
     class CfgVehicles {
         class VEH_UAV(SMQ94) {
             label = QNAME(ILCS UAV Rucksack [SMQ-94]);
