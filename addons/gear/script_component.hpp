@@ -13,7 +13,5 @@
 
 #include "\x\SWS\addons\main\script_macros.hpp"
 
-#define HELMET(var0) TRIPLES(PREFIX,Helmet,var0)
-#define QHELMET(var0) QUOTE(HELMET(var0))
 #define VEST(var0) TRIPLES(PREFIX,Vest,var0)
 #define QVEST(var0) QUOTE(VEST(var0))

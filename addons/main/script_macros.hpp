@@ -38,3 +38,5 @@
 #define QVEHICLE(var0) QUOTE(VEHICLE(var0))
 #define VEH_UAV(var0) VEHICLE(DOUBLES(UAV,var0))
 #define QVEH_UAV(var0) QUOTE(VEH_UAV(var0))
+#define HELMET(var0) TRIPLES(PREFIX,Helmet,var0)
+#define QHELMET(var0) QUOTE(HELMET(var0))

@@ -122,7 +122,7 @@ low refresh rate loop [1 sec]
 [] spawn
 {
 	disableSerialization;
-	private _p	= call RHS_fnc_findPlayer;
+	private _p	= missionNamespace getVariable ["BIS_fnc_moduleRemoteControl_Unit",player];
 	private _v	= vehicle _p;
 
 	private _c			= uiNamespace getVariable "MELB_FLIRCtrl";

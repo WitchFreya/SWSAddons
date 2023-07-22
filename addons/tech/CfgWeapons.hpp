@@ -1,9 +1,13 @@
 #define CLASSES_WEAPONS \
-    QTERMINAL(Scarlet)
+    QTERMINAL(Scarlet), \
+    QWEAPON(LaserDesignator), \
+    QWEAPON(DOUBLES(NVG,NeuralLace)), \
+    QWEAPON(TRIPLES(NVG,NeuralLace,Maid))
 
 class CfgWeapons {
     class B_UavTerminal;
     class LaserDesignator_Mounted;
+    class OPTRE_NVG;
 
     class TERMINAL(Scarlet): B_UavTerminal {
         ITEM_META(2);
@@ -33,5 +37,30 @@ class CfgWeapons {
 		midRangeProbab = 0.01;
 		maxRange = 3;
 		maxRangeProbab = 0.01;
+    };
+
+    class WEAPON(DOUBLES(NVG,NeuralLace)): OPTRE_NVG {
+        ITEM_META(2);
+        CLEARANCE(RESTRICTED/DECWHI);
+        displayName = QNAME(Neural Lace);
+        descriptionShort = "Neural implant thermal and NVGs.";
+        modelOptics = "";
+        model = "";
+        visionMode[] = {"Normal","NVG","TI"};
+        thermalMode[] = {6};
+        class ItemInfo {
+            type = 616;
+            uniformmodel = "";
+            modelOff = "";
+            mass = 0;
+        };
+    };
+
+    class WEAPON(TRIPLES(NVG,NeuralLace,Maid)): WEAPON(DOUBLES(NVG,NeuralLace)) {
+        ITEM_META(1);
+        CLEARANCE(SECRET/DECWHI);
+        displayName = QNAME(Neural Lace (Maid));
+        descriptionShort = "ONI-classified neural implant.";
+        thermalMode[] = {0};
     };
 };
