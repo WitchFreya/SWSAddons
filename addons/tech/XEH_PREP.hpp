@@ -1,1 +1,2 @@
 PREP(handleFLIR);
+PREP(loadoutChangeEH);
