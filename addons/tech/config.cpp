@@ -3,6 +3,7 @@
 #include "CfgVehicles.hpp"
 
 #include "CfgWeapons.hpp"
+#include "RscInGameUI.inc"
 
 class CfgPatches
 {
@@ -14,7 +15,7 @@ class CfgPatches
         magazines[] = { };
         ammo[] = { };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { "DMNS_Air_UAV_01", "SWS_Main" };
+        requiredAddons[] = { "DMNS_Air_UAV_01", "SWS_Main", "SWS_Logic" };
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };

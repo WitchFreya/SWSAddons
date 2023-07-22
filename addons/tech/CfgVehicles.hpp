@@ -3,6 +3,8 @@
     QVEH_UAV(DOUBLES(SMQ94,Maid))
 
 class UAV_01_base_F;
+class Turrets;
+class MainTurret;
 class HitPoints;
 class HitHull;
 
@@ -24,10 +26,70 @@ class CfgVehicles {
 		typicalCargo[] = {
 			"B_UAV_AI"
 		};
+        weapons[] = { QWEAPON(LaserDesignator) };
+	    magazines[] = { "LaserBatteries" };
 
         class HitPoints: HitPoints {
             class HitHull : HitHull {
                 armor = 1.1;
+            };
+        };
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret {
+                gunnerOpticsModel = QPATHTOF(data\optics\melb_flir_w2.p3d);
+			    turretInfoType = "Rsc_MELB_Turret_UnitInfo";
+
+                class OpticsIn {
+	                class Wide {
+                        opticsDisplayName = "W";
+                        initAngleX = 0;
+                        minAngleX = -30;
+                        maxAngleX = 30;
+                        initAngleY = 0;
+                        minAngleY = -100;
+                        maxAngleY = 100;
+                        initFov = 0.5;
+                        minFov = 0.5;
+                        maxFov = 0.5;
+                        directionStabilized = 1;
+                        visionMode[] = {"Normal", "NVG", "Ti"};
+                        thermalMode[] = {0, 1};
+                        gunnerOpticsModel = QPATHTOF(data\optics\melb_flir_wf.p3d);
+                    };
+
+                    class Medium : Wide {
+                        opticsDisplayName = "M";
+                        initFov = 0.1;
+                        minFov = 0.1;
+                        maxFov = 0.1;
+                        gunnerOpticsModel = QPATHTOF(data\optics\melb_flir_w.p3d);
+                    };
+
+                    class Narrow : Wide {
+                        opticsDisplayName = "N";
+                        initFov = 0.05;
+                        minFov = 0.05;
+                        maxFov = 0.05;
+                        gunnerOpticsModel = QPATHTOF(data\optics\melb_flir_w2.p3d);
+                    };
+
+                    class UNarrow : Wide {
+                        opticsDisplayName = "U";
+                        initFov = 0.01;
+                        minFov = 0.01;
+                        maxFov = 0.01;
+                        gunnerOpticsModel = QPATHTOF(data\optics\melb_flir_n.p3d);
+                    };
+
+                    class SNarrow : Wide {
+                        opticsDisplayName = "S";
+                        initFov = 0.005;
+                        minFov = 0.005;
+                        maxFov = 0.005;
+                        gunnerOpticsModel = QPATHTOF(data\optics\melb_flir_n2.p3d);
+                    };
+                };
             };
         };
 
