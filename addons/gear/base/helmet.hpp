@@ -34,8 +34,7 @@ class HELMET(Base) : HELMET(OPTRE_UNSC_CH252D_Helmet_Base)
 class DOUBLES(HELMET(Base),dp): HELMET(Base)
 {
     descriptionShort = "Armor Level: ODST";
-    hiddenSelectionsMaterials[] = {
-        MATERIAL(odsthud)};
+    hiddenSelectionsMaterials[] = {MATERIAL(odsthud)};
     model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
     hiddenSelections[] = {
             "camo",
@@ -63,8 +62,6 @@ class DOUBLES(HELMET(Base),dp): HELMET(Base)
         };
     };
 };
-
-#define C_HELMET_BASE_DP(varName,texHelmet)
 
 #define C_HELMET_BASE(varName,texHelmet,texRest)                        \
     class HELMET(varName): HELMET(Base) {                               \

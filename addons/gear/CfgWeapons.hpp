@@ -43,7 +43,9 @@
     QWEAPONS_FN(Green), \
     QWEAPONS_FN(Orange), \
     QWEAPONS_FN(Purple), \
-    QWEAPONS_FN(Red)
+    QWEAPONS_FN(Red), \
+    QHELMET(Maid_Recon), \
+    QHELMET(TRIPLES(Maid,Recon,dp))
 
 #define C_GEAR(varName,varVisorColor)   \
     C_HELMET(varName,varVisorColor);    \
@@ -88,4 +90,6 @@ class CfgWeapons
     C_GEAR(Orange,silver);
     C_GEAR(Purple,silver);
     C_GEAR(Red,silver);
+
+    #include "CfgWeapons\Recon.inc"
 };

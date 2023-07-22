@@ -141,3 +141,6 @@ workshop = [
 
 [hemtt.release]
 archive = false
+
+[files]
+exclude = ["*.inc"]
