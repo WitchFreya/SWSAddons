@@ -3,6 +3,7 @@
 
 class CfgWeapons {
     class B_UavTerminal;
+    class LaserDesignator_Mounted;
 
     class TERMINAL(Scarlet): B_UavTerminal {
         ITEM_META(2);
@@ -17,5 +18,20 @@ class CfgWeapons {
         ACE_explosives_triggerType = "Command";
         ACE_explosives_range = 1000;
         ace_explosives_detonator = 1;
+    };
+
+    class WEAPON(LaserDesignator): LaserDesignator_Mounted {
+        ITEM_META(2);
+        CLEARANCE(SECRET/DECWHI);
+        displayName = QNAME(Laser Designator);
+        cursor = "EmptyCursor";
+		cursorAim = "EmptyCursor";
+		nameSound = "laserdesignator";
+		minRange = 1;
+		minRangeProbab = 0.01;
+		midRange = 2;
+		midRangeProbab = 0.01;
+		maxRange = 3;
+		maxRangeProbab = 0.01;
     };
 };
