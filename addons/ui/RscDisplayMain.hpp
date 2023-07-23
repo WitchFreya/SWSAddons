@@ -5,7 +5,6 @@ class RscActivePicture;
 class RscActiveText;
 
 class RscDisplayMain: RscStandardDisplay {
-    delete RscActivePicture;
     class RscActivePicture {
         access = 0;
         color[] = {1,1,1,0.5};
