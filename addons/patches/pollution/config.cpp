@@ -11,7 +11,7 @@ class CfgPatches
         weapons[] = { };
         magazines[] = { };
         ammo[] = { };
-        requiredAddons[] = { };
+        requiredAddons[] = { "41ST_ODST_FACTIONS" };
         addonRootClass = "SWS_Patches";
     };
 };
