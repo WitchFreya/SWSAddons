@@ -44,7 +44,7 @@ class DOUBLES(HELMET(Base),dp): HELMET(Base)
             "H_Neck"};
     hiddenSelectionsTextures[] = {
         "optre_unsc_units\army\data\odst_helmet_co.paa",
-        TEXTURE(visr,clr)
+        QPATHTOF(data\textures\visr_clr_ca.paa)
     };
     class ItemInfo : ItemInfo
     {
@@ -58,7 +58,7 @@ class DOUBLES(HELMET(Base),dp): HELMET(Base)
         };
         hiddenSelectionsTextures[] = {
             "optre_unsc_units\army\data\odst_helmet_co.paa",
-            TEXTURE(visr,clr)
+            QPATHTOF(data\textures\visr_clr_ca.paa)
         };
     };
 };
