@@ -74,8 +74,8 @@
     VEST_GEAR_INFO(name)
 
 #define OPERATIVES \
-    "Rifleman", "Ashes", "Butler", "Demon", "Egg", "Maid", "Polaris", "Rabbit", "Sawbones", "Tiger",\
-    "Hurricane", "Roman"
+    "Rifleman", "Ashes", "Butler", "Demon", "Egg", "Maid", "Polaris", "Rabbit", "Sawbones", "Tiger", \
+    "Kitty", "Hurricane", "Roman"
 
 #define XTDGEARMODEL_OPERATIVE(operative,type) \
     class operative                             \
@@ -110,6 +110,7 @@ class XtdGearModels
                 XTDGEARMODEL_OPERATIVE_HELMET(Rabbit);
                 XTDGEARMODEL_OPERATIVE_HELMET(Sawbones);
                 XTDGEARMODEL_OPERATIVE_HELMET(Tiger);
+                XTDGEARMODEL_OPERATIVE_HELMET(Kitty);
                 XTDGEARMODEL_OPERATIVE_HELMET(Hurricane);
                 XTDGEARMODEL_OPERATIVE_HELMET(Roman);
             };
@@ -221,6 +222,7 @@ class XtdGearModels
                 XTDGEARMODEL_OPERATIVE_VEST(Rabbit);
                 XTDGEARMODEL_OPERATIVE_VEST(Sawbones);
                 XTDGEARMODEL_OPERATIVE_VEST(Tiger);
+                XTDGEARMODEL_OPERATIVE_VEST(Kitty);
                 XTDGEARMODEL_OPERATIVE_VEST(Hurricane);
                 XTDGEARMODEL_OPERATIVE_VEST(Roman);
             };
