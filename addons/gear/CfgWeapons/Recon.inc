@@ -15,10 +15,7 @@ class HELMET(Maid_Recon): HELMET(Base) {
     };
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\textures\helmet_maid_recon_co.paa),
-        QPATHTOF(data\textures\visr_maid_recon_co.paa),
-        "", // "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-        "",
-        "optre_unsc_units\army\data\soft_packs_co.paa"
+        QPATHTOF(data\textures\visr_maid_recon_co.paa)
     };
     class ItemInfo : ItemInfo {
         uniformModel = "\OPTRE_UNSC_Units\Army\recon_helmet.p3d";
@@ -31,10 +28,7 @@ class HELMET(Maid_Recon): HELMET(Base) {
         };
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\textures\helmet_maid_recon_co.paa),
-            QPATHTOF(data\textures\visr_maid_recon_co.paa),
-            "", // "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-            "",
-            "optre_unsc_units\army\data\soft_packs_co.paa"
+            QPATHTOF(data\textures\visr_maid_recon_co.paa)
         };
     };
 };
