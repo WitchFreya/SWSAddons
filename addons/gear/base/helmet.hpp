@@ -75,9 +75,9 @@ class DOUBLES(HELMET(Base),dp): HELMET(Base)
     class DOUBLES(HELMET(varName),dp): DOUBLES(HELMET(Base),dp) {       \
         SCOPE(2);                                                       \
         displayName = QNAME(Helmet (name));                              \
-        hiddenSelectionsTextures[] = {texHelmet,TEXTURE(visr,clr)};     \
+        hiddenSelectionsTextures[] = {texHelmet,QPATHTOF(data\textures\visr_clr_ca.paa)};     \
         class ItemInfo : ItemInfo {                                     \
-            hiddenSelectionsTextures[] = {texHelmet,TEXTURE(visr,clr)}; \
+            hiddenSelectionsTextures[] = {texHelmet,QPATHTOF(data\textures\visr_clr_ca.paa)}; \
         };                                                              \
     }
 
