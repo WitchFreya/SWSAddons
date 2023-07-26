@@ -30,7 +30,7 @@ class ace_arsenal_loadoutsDisplay {
                     x = BTN_X(4);
                     text = "Migrate";
                     tooltip = "Attempt to migrate invalid loadout to the new version of SWS Addons";
-                    onButtonClick = QUOTE([ARR_2(ctrlParent (_this select 0), _this select 0)] call FUNC(migrateLoadouts));
+                    onButtonClick = QUOTE([ARR_2(ctrlParent (_this select 0), _this select 0)] call FUNC(onClickMigrate));
                 };
 
                  class buttonDelete : buttonSave {
