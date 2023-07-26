@@ -1,1 +1,2 @@
-PREP(migrateLoadouts);
+PREP(migrateLoadout);
+PREP(onClickMigrate);

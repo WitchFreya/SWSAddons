@@ -35,9 +35,9 @@ private _extendedLoadout = switch (ace_arsenal_currentLoadoutsTab) do {
     };
 };
 
-private _verified = [_extendedLoadout] call ace_arsenal_fnc_verifyLoadout;
-TRACE_1("Verified",_verified);
-
-_verified params ["","_nullItemsAmount","_unavailableItemsAmount","_nullItemsList","_unavailableItemsList"];
-
-TRACE_4("Item Breakdown",_nullItemsAmount,_unavailableItemsAmount,_nullItemsList,_unavailableItemsList);
+private _newLoadout = [ace_arsenal_center,_loadoutName] call FUNC(migrateLoadout);
+if (_newLoadout == -1) exitWith {0}; // Not a valid loadout to migrate.
+[ace_arsenal_center, _newLoadout, true] call CBA_fnc_setLoadout;
+ctrlSetText [IDC_textEditBox, _loadoutName + " (Migrated)"];
+private _saveControl = _display displayCtrl IDC_buttonSave;
+[_display,_saveControl] call ace_arsenal_fnc_buttonLoadoutsSave;
