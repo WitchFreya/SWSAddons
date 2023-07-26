@@ -1,0 +1,2 @@
+PREP(migrateLoadout);
+PREP(onClickMigrate);
