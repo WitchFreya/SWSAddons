@@ -36,7 +36,10 @@ private _itemsInScope = _swsItems
 
 TRACE_1("arsenalAddAll Items",_itemsInScope);
 
-{ [_x, _itemsInScope, true] call ACE_arsenal_fnc_addVirtualItems } forEach _units;
+{
+    [_x, [], true] call ACE_arsenal_fnc_initBox;
+    [_x, _itemsInScope, true] call ACE_arsenal_fnc_addVirtualItems;
+} forEach _units;
 
 INFO("arsenalAddAll Complete");
 
