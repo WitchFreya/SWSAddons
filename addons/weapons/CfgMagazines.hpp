@@ -44,7 +44,6 @@ class CfgMagazines {
     #include "CfgMagazines\M24RL_D.inc"
 
     // Shotguns
-
-    class OPTRE_6Rnd_8Gauge_Pellet;
+    class OPTRE_6Rnd_8Gauge_Pellets;
     #include "CfgMagazines\Incendiary.inc"
 };
