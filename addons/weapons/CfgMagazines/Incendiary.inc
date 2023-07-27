@@ -1,7 +1,7 @@
 #define INCENDIARY_NAME(var0) displayName = QNAME(var0##Rnd Dragon's Breath); \
     descriptionShort = QUOTE(var0 Rounds<br>8 Gauge<br>Incendiary)
 
-class MAGAZINE(6Rnd_Shotgun_Incendiary) : OPTRE_6Rnd_8Gauge_Pellet {
+class MAGAZINE(6Rnd_Shotgun_Incendiary) : OPTRE_6Rnd_8Gauge_Pellets {
     ITEM_META(2);
     ammo = QAMMO(8Gauge_Incendiary);
     displayNameShort = "8-Gauge Incendiary";
