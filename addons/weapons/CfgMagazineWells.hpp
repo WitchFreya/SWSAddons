@@ -18,4 +18,17 @@ class CfgMagazineWells {
             QGSMAGAZINE(9Bang,3Rnd)
         };
     };
+
+    class OPTRE_Magwell_M45 {
+        GVAR(Magazines)[] = {
+            QMAGAZINE(6Rnd_Shotgun_Incendiary),
+            QMAGAZINE(12_Rnd_Shotgun_Incendiary)
+        };
+    };
+
+    class UBS_12GA {
+        GVAR(Magazines)[] = {
+            QMAGAZINE(6Rnd_Shotgun_Incendiary)
+        };
+    };
 };

@@ -15,7 +15,9 @@
     QGSMAGAZINE(9Bang,1Rnd), \
     QGSMAGAZINE(9Bang,3Rnd), \
     QMAGAZINE(M24RL_D), \
-    QMAGAZINE(DOUBLES(C7Sx,Sticky))
+    QMAGAZINE(DOUBLES(C7Sx,Sticky)), \
+    QMAGAZINE(6Rnd_Shotgun_Incendiary), \
+    QMAGAZINE(12_Rnd_Shotgun_Incendiary)
 
 class CfgMagazines {
 
@@ -40,4 +42,9 @@ class CfgMagazines {
     class MRAWS_HEAT_F;
 
     #include "CfgMagazines\M24RL_D.inc"
+
+    // Shotguns
+
+    class OPTRE_6Rnd_8Gauge_Pellet;
+    #include "CfgMagazines\Incendiary.inc"
 };
