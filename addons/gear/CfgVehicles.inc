@@ -1,8 +1,13 @@
 #define CLASSES_VEHICLES \
     QBAG(VEH_UAV(SMQ94)), \
-    QBAG(VEH_UAV(DOUBLES(SMQ94,Maid)))
+    QBAG(VEH_UAV(DOUBLES(SMQ94,Maid))), \
+    QVEHICLE(Bag_Hardcase), \
+    QVEHICLE(DOUBLES(Bag_Hardcase,Medical)), \
+    QVEHICLE(DOUBLES(Bag_Hardcase,Sawbones))
 
 class CfgVehicles {
+    class OPTRE_ONI_Researcher_Suitcase;
+
     class DMNS_UAV_01_backpack_F;
     class BAG(DMNS_UAV_01_backpack_F_base): DMNS_UAV_01_backpack_F {
         class AssembleInfo;
@@ -37,4 +42,6 @@ class CfgVehicles {
             variant = "Maid";
         };
     };
+
+    #include "CfgVehicles\Bag_Hardcase.inc"
 };
