@@ -13,8 +13,8 @@
 
 #include "\x\SWS\addons\main\script_macros.hpp"
 
-#define WEAPON_META(var0,scope) \
-    ITEM_META(scope);           \
+#define WEAPON_META(var0,var1) \
+    ITEM_META(var1);           \
     baseweapon = QUOTE(WEAPON(var0))
 
 #define WEAPON(var0) TRIPLES(PREFIX,Weapon,var0)

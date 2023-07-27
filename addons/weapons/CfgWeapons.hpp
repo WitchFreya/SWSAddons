@@ -8,13 +8,6 @@
     QOPTIC(Smartlink), \
     QWEAPON(DOUBLES(M24RL_D,Loaded))
 
-class WeaponSlotsInfo;
-class CowsSlot;
-class InventoryOpticsItem_Base_F;
-class Mode_SemiAuto;
-class Mode_Burst;
-class Mode_FullAuto;
-
 class CfgWeapons {
     //== Rifles
     class LM_OPCAN_AR0M37;
@@ -22,6 +15,7 @@ class CfgWeapons {
     class LM_OPCAN_AR0M37_SHT;
     class OPTRE_MA5B;
     class OPTRE_MA5BGL;
+    class InventoryOpticsItem_Base_F;
 
     #include "CfgWeapons\Guns\AR0M7.inc"
     #include "CfgWeapons\Guns\MA5BSx.inc"
