@@ -1,6 +1,7 @@
 #include "\x\SWS\addons\patches\script_component.hpp"
 
 #include "CfgWeapons.inc"
+#include "CfgVehicles.inc"
 
 class CfgPatches
 {

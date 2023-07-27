@@ -7,9 +7,6 @@ class CBA_Extended_EventHandlers_Base;
     }
 
 class CfgVehicles {
-    class 19_M12_APC_Medical;
-    class 19_M808S;
-
     class AllVehicles;
     class B_APC_Wheeled_01_cannon_F;
     class B_CTRG_Soldier_AR_tna_F;
@@ -109,8 +106,6 @@ class CfgVehicles {
     class Land_CampingChair_V1_F;
     class Land_Jbad_PowLines_Conc2L;
     class MEU_Sentinel_A;
-    class N19_D77HTCI;
-    class N19_D77HTCI_A;
     class O_diver_exp_F;
     class O_diver_F;
     class O_diver_TL_F;
@@ -373,10 +368,7 @@ class CfgVehicles {
     class TCGM_F_Soldier02_RollUp_medic_I : I_medic_F { CBA_PATCH; };
     class TCGM_F_Soldier02_RollUp_repair_I : I_Soldier_repair_F { CBA_PATCH; };
     class TCGM_F_Soldier02_RollUp_exp_I : I_Soldier_exp_F { CBA_PATCH; };
-    class N19_D77HTCI_OCimport_01 : N19_D77HTCI { CBA_PATCH; };
-    class N19_D77HTCI_A_OCimport_01 : N19_D77HTCI_A { CBA_PATCH; };
-    class 19_M808S_OCimport_01 : 19_M808S { CBA_PATCH; };
-    class 19_M12_APC_Medical_OCimport_01 : 19_M12_APC_Medical { CBA_PATCH; };
+
     class DMNS_Shortsword_01_wreck_F : PlaneWreck { CBA_PATCH; };
     class Land_OPTRE_barrel_hydrogen : Items_base_F { CBA_PATCH; };
     class Land_OPTRE_fusion_coil : Items_base_F { CBA_PATCH; };
@@ -405,9 +397,6 @@ class CfgVehicles {
     class MEU_Sentinel_E : MEU_Sentinel_A { CBA_PATCH; };
     class OPTRE_FC_Spectre_AI_Base : B_MBT_01_cannon_F { CBA_PATCH; };
     class OPTRE_FC_Spirit_F : Helicopter_Base_F { CBA_PATCH; };
-
-
-
     class 11_Mortar_base : StaticMortar { CBA_PATCH; };
     class WB_Officer_Parade_F : B_Officer_Parade_F { CBA_PATCH; };
     class WO_Officer_Parade_F : O_Officer_Parade_F { CBA_PATCH; };
