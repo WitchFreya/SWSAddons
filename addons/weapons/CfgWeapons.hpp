@@ -8,6 +8,11 @@
     QOPTIC(Smartlink), \
     QWEAPON(DOUBLES(M24RL_D,Loaded))
 
+class WeaponSlotsInfo;
+class CowsSlot;
+class Single;
+class FullAuto;
+
 class CfgWeapons {
     //== Rifles
     class LM_OPCAN_AR0M37;
@@ -21,11 +26,7 @@ class CfgWeapons {
     #include "CfgWeapons\Guns\MA5BSx.inc"
 
     //== MG
-    class arifle_DMNS_M33_T_Base_F;
-    class Dmns_M247_GPMG : arifle_DMNS_M33_T_Base_F {
-        class Single;
-        class FullAuto;
-    };
+    class Dmns_M247_GPMG;
 
     #include "CfgWeapons\Guns\SM247.inc"
 
