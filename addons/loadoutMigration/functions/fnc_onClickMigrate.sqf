@@ -36,7 +36,7 @@ private _extendedLoadout = switch (ace_arsenal_currentLoadoutsTab) do {
 };
 
 private _newLoadout = [ace_arsenal_center,_loadoutName] call FUNC(migrateLoadout);
-if (_newLoadout == -1) exitWith {0}; // Not a valid loadout to migrate.
+if (typeName _newLoadout == "NUMBER") exitWith {0}; // Not a valid loadout to migrate.
 [ace_arsenal_center, _newLoadout, true] call CBA_fnc_setLoadout;
 ctrlSetText [IDC_textEditBox, _loadoutName + " (Migrated)"];
 private _saveControl = _display displayCtrl IDC_buttonSave;

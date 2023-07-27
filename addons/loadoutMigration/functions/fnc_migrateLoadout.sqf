@@ -31,10 +31,8 @@ private _verified = [_verifiedItems] call ace_arsenal_fnc_verifyLoadout;
 
 private _nullItemsList = _verified select 3;
 
-private _relevantItems = _nullItemsList select { ["sws_", _x, false] call BIS_fnc_inString };
-
-if (count _relevantItems == 0) exitWith {
-    INFO("EXIT: No valid items to migrate.");
+if (count _nullItemsList == 0) exitWith {
+    TRACE_1("EXIT: No valid items to migrate.",_nullItemsList);
     -1
 };
 
@@ -42,13 +40,16 @@ TRACE_1("_relevantItems",_relevantItems);
 
 _items params ["_base", "_cbaExtended"];
 
+private _hasMigrations = false;
+
 private _fnc_migrate = {
-    params ["_itemTree","_itemMap"];
+    params ["_itemTree", "_itemMap"];
 	if (typeName _itemTree == "STRING") exitWith {
 		private _replacement = _itemMap get _itemTree;
 		if (isNil "_replacement") then {
 			_itemTree;
 		} else {
+            _hasMigrations = true;
 			_replacement;
 		};
 	};
@@ -59,4 +60,5 @@ private _fnc_migrate = {
 };
 
 private _migrated = [_base, GVAR(MIGRATIONS)] call _fnc_migrate;
+if !(_hasMigrations) exitWith {0};
 if (isNil "_cbaExtended") then {_migrated} else {[_migrated,_cbaExtended]};
