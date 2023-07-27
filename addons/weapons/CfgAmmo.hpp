@@ -12,7 +12,9 @@
     QSHELL(9Bang), \
     QAMMO(M24RL_D), \
     QAMMO(DOUBLES(C7Sx,Sticky)), \
-    QAMMO(TRIPLES(C7Sx,Sticky,Explosion))
+    QAMMO(TRIPLES(C7Sx,Sticky,Explosion)), \
+    QAMMO(8Gauge_Incendiary), \
+    QAMMO(8Gauge_Incendiary_Submunition)
 
 
 class CfgAmmo {
@@ -42,4 +44,11 @@ class CfgAmmo {
     class OPTRE_sticky_c7_explosion;
 
     #include "CfgAmmo\C7Sx.inc"
+
+    //== Shotgun
+    class B_12Gauge_Pellets_Submunition;
+    class B_12Gauge_Pellets_Submunition_Deploy;
+
+    #include "CfgAmmo\Pellet.inc"
+    #include "CfgAmmo\Incendiary.inc"
 };

@@ -38,7 +38,7 @@ class MAGAZINE(100Rnd_762x51_Mag_Tracer): MAGAZINE(100Rnd_762x51_Mag) {
 
 class MAGAZINE(200Rnd_762x51_Mag): MAGAZINE(100Rnd_762x51_Mag) {
     displayName = QNAME_762x51(200);
-    mass = 60;
+    mass = 70;
     count = 200;
     descriptionShort = "200 Round Magazine<SM247>7.62x51 Carbine<SM247>";
 };
@@ -53,7 +53,7 @@ class MAGAZINE(200Rnd_762x51_Mag_Tracer): MAGAZINE(200Rnd_762x51_Mag) {
 
 class MAGAZINE(400Rnd_762x51_Mag): MAGAZINE(100Rnd_762x51_Mag) {
     displayName = QNAME_762x51(400);
-    mass = 90;
+    mass = 110;
     count = 400;
     descriptionShort = "400 Round Magazine<SM247>7.62x51 Carbine<SM247>";
 };
