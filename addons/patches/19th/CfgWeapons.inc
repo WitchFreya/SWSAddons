@@ -6,6 +6,13 @@ class CfgWeapons {
         class WeaponSlotsInfo;
     };
 
+    class Launcher;
+	class Launcher_Base_F: Launcher
+	{
+		class WeaponSlotsInfo;
+	};
+
+    //== Missing optic from OPTRE update
     class arifle_19th_br_55_gl_Base_F : Rifle_Base_UGL_F {
         class WeaponSlotsInfo : WeaponSlotsInfo {
             class CowsSlot : CowsSlot {
@@ -48,6 +55,19 @@ class CfgWeapons {
 					"19th_br_scope"
 				};
             };
+        };
+    };
+
+    //== Incorrect weight on launcher
+    class DMNS_M96_LAW : Launcher_Base_F {
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 55;
+        };
+    };
+
+    class ACE_DMNS_M96_LAW_used_F : DMNS_M96_LAW {
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 55;
         };
     };
 };
