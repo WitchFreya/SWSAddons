@@ -323,5 +323,7 @@ class XtdGearModels
                 };
             };
         };
+
+        #include "XtdGearModels\Bag_Hardcase.inc"
     };
 };

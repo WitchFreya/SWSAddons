@@ -1,9 +1,9 @@
 #include "script_component.hpp"
 
-#include "CfgWeapons.hpp"
-#include "CfgVehicles.hpp"
-#include "XtdGearModels.hpp"
-#include "XtdGearInfos.hpp"
+#include "CfgWeapons.inc"
+#include "CfgVehicles.inc"
+#include "XtdGearModels.inc"
+#include "XtdGearInfos.inc"
 
 class CfgPatches
 {

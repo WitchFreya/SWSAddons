@@ -42,4 +42,4 @@
 #define QHELMET(var0) QUOTE(HELMET(var0))
 
 
-// #define INCLUDE_MEU
+#define INCLUDE_MEU
