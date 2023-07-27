@@ -1,3 +1,4 @@
+#include "\x\SWS\addons\patches\script_component.hpp"
 #include "CfgVehicles.hpp"
 
 class CfgPatches

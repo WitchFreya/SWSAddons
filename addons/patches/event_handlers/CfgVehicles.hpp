@@ -9,10 +9,7 @@ class CBA_Extended_EventHandlers_Base;
 class CfgVehicles {
     class 19_M12_APC_Medical;
     class 19_M808S;
-    class 1stMEU_pelican_armed;
-    class 1stMEU_pelican_armed_single_seat;
-    class 1stMEU_pelican_unarmed;
-    class 1stMEU_pelican_unarmed_single_seat;
+
     class AllVehicles;
     class B_APC_Wheeled_01_cannon_F;
     class B_CTRG_Soldier_AR_tna_F;
@@ -408,14 +405,9 @@ class CfgVehicles {
     class MEU_Sentinel_E : MEU_Sentinel_A { CBA_PATCH; };
     class OPTRE_FC_Spectre_AI_Base : B_MBT_01_cannon_F { CBA_PATCH; };
     class OPTRE_FC_Spirit_F : Helicopter_Base_F { CBA_PATCH; };
-    class 1stMEU_pelican_armed : OPTRE_Pelican_armed { CBA_PATCH; };
-    class 1stMEU_pelican_armed_mg : 1stMEU_pelican_armed { CBA_PATCH; };
-    class 1stMEU_pelican_armed_single_seat : OPTRE_Pelican_armed { CBA_PATCH; };
-    class 1stMEU_pelican_armed_mg_single_seat : 1stMEU_pelican_armed_single_seat { CBA_PATCH; };
-    class 1stMEU_pelican_unarmed : OPTRE_Pelican_unarmed { CBA_PATCH; };
-    class 1stMEU_pelican_unarmed_mg : 1stMEU_pelican_unarmed { CBA_PATCH; };
-    class 1stMEU_pelican_unarmed_single_seat : OPTRE_Pelican_unarmed { CBA_PATCH; };
-    class 1stMEU_pelican_unarmed_mg_single_seat : 1stMEU_pelican_unarmed_single_seat { CBA_PATCH; };
+
+
+
     class 11_Mortar_base : StaticMortar { CBA_PATCH; };
     class WB_Officer_Parade_F : B_Officer_Parade_F { CBA_PATCH; };
     class WO_Officer_Parade_F : O_Officer_Parade_F { CBA_PATCH; };
@@ -548,4 +540,20 @@ class CfgVehicles {
     class SZ_stool : Land_CampingChair_V1_F { CBA_PATCH; };
     class SZ_Chair : Land_CampingChair_V1_F { CBA_PATCH; };
     class Hogosha_D77HTCI_A : OPTRE_Pelican_armed { CBA_PATCH; };
+
+    #ifdef INCLUDE_MEU
+    class 1stMEU_pelican_armed;
+    class 1stMEU_pelican_armed_single_seat;
+    class 1stMEU_pelican_unarmed;
+    class 1stMEU_pelican_unarmed_single_seat;
+
+    class 1stMEU_pelican_armed : OPTRE_Pelican_armed { CBA_PATCH; };
+    class 1stMEU_pelican_armed_mg : 1stMEU_pelican_armed { CBA_PATCH; };
+    class 1stMEU_pelican_armed_single_seat : OPTRE_Pelican_armed { CBA_PATCH; };
+    class 1stMEU_pelican_armed_mg_single_seat : 1stMEU_pelican_armed_single_seat { CBA_PATCH; };
+    class 1stMEU_pelican_unarmed : OPTRE_Pelican_unarmed { CBA_PATCH; };
+    class 1stMEU_pelican_unarmed_mg : 1stMEU_pelican_unarmed { CBA_PATCH; };
+    class 1stMEU_pelican_unarmed_single_seat : OPTRE_Pelican_unarmed { CBA_PATCH; };
+    class 1stMEU_pelican_unarmed_mg_single_seat : 1stMEU_pelican_unarmed_single_seat { CBA_PATCH; };
+    #endif
 };

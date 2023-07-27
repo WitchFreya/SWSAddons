@@ -1,3 +1,4 @@
+#include "\x\SWS\addons\patches\script_component.hpp"
 #include "CfgAmmo.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"

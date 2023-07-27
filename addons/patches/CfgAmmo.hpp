@@ -1,9 +1,10 @@
 class CfgAmmo {
-    class M_Scalpel_AT;
     class OPTRE_M_Jackknife_LGM;
     class OPTRE_G_M9_Frag;
 
-    // 1st MEU
+
+    #ifdef INCLUDE_MEU
+    class M_Scalpel_AT;
     class Icarus_M_Jackknife_LGM : M_Scalpel_AT {
         delete flightProfiles;
         flightProfiles[]=
@@ -15,6 +16,7 @@ class CfgAmmo {
         class Direct {};
     };
     class MEU_Fury_ammo_thrown: OPTRE_G_M9_Frag {};
+    #endif
 
     // Optre Ordnance Expansion
     class SAG6_Vendetta : OPTRE_M_Jackknife_LGM {

@@ -13,7 +13,12 @@ class CfgPatches
         magazines[] = { };
         ammo[] = { };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { "19th_Fleet_Armor", "1st_MEU_patch_main_loadingScreens" };
+        requiredAddons[] = {
+            "19th_Fleet_Armor"
+            #ifdef INCLUDE_MEU
+            , "1st_MEU_patch_main_loadingScreens"
+            #endif
+        };
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };
