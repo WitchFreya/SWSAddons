@@ -20,7 +20,6 @@ workshop = [
     "1659590037", # fireteam zulu - required by 19th
     "2047587607", # 19th fleet armor mod
     "2261045061", # TCGM
-    "2888477598", # 1st MEU
     "894678801",  # TFAR
     "1797512739", # operation arsenal expansion for OPTRE
     "2369477168", # advanced developer tools
@@ -35,78 +34,6 @@ workshop = [
     "2480118782", # Max Women Soldiers
     "2699465073", # Fire Support Plus
     "520618345",  # Jbad
-]
-
-[hemtt.launch.nomeu]
-workshop = [
-    "450814997",  # cba
-    "463939057",  # ace
-    "1224892496", # gruppe adler trenches
-    "1251859358", # Zeus and Eden Interiors
-    "3007731986", # SWS Timeless
-
-    "1267657613", # optre ace compat
-    "1572627279", # optre first contact
-    "1572642262", # optre first contact ace compat
-    "1638341685", # dui squad radar
-    "1659590037", # fireteam zulu
-    "1876589191", # JM's Structures
-    "1957746437", # ADV ACE-CPR
-    "2016312756", # opcan
-    "2034363662", # Enhanced Movement Rework
-    "1858075458", # LAMBS_Danger
-    "1779063631", # zeus enhanced
-    "2018593688", # Zeus Enhanced - ACE3 Compatibility
-    "1790880882", # 41st odst/mfr declassified
-    "1677267612", # ace medical assistant
-    "1763651451", # optre PLUS+
-    "1767731032", # HEV patch
-    "2047587607", # 19th fleet armor mod
-    "2198339170", # Alternative Running
-    "2261045061", # tcgm
-    "2359395889", # TCGM_Divinities_2.0
-    "2359977960", # ZEPHIK Female Units V2
-    "2361950567", # Operation TREBUCHET Zephik Females Compat
-    "2480118782", # Max Women Soldiers
-    "2522638637", # ace arsenal extended
-    "2538444208", # Simple Grid Designators
-    "2695649037", # Operation TREBUCHET JSRS Compat
-    "2699465073", # Fire Support Plus
-    "2731181579", # Wild Mountains Livonia Veg
-    "2735613231", # Weather Plus
-    "2794721649", # Advanced Vault System: Remastered
-    "2822758266", # Deformer
-    "2853202785", # Freefall Fix
-    "2918542818", # Sci-fi Support Plus
-    "333310405",  # Enhanced Movement
-    "520618345",  # Jbad
-    "583496184",  # CUP Terrains - Core
-    "583544987",  # CUP Terrains - Maps
-    "623475643",  # 3den Enhanced
-    "767380317",  # Blastcore Edited (standalone version)
-    "769440155",  # optre
-    "837729515",  # CH View Distance
-    "861133494",  # JSRS SOUNDMOD
-    "894678801",  # tfar
-    "925018569",  # WMO - Walkable Moving Objects
-    "2041057379", # A3 Thermal Improvement
-
-    # mods I hate
-    "1797512739", # operation arsenal expansion for OPTRE
-    "2909265898", # OPTRE Ordnance Expansion
-
-    # v2 mods
-    "2617713656", # Halo Music Collection
-    "2969350304", # Ladder Tweak Remastered
-    "1770265310", # No More Aircraft Bouncing
-    "1911374016", # ACE Vehicle Medical
-
-    # additional mods
-    "2791403093", # Better Inventory
-    "2467590475", # Enhanced Map Ace Version
-    "1623498241", # turret enhanced
-    "2013446344", # Simple MapTools
-    "2369477168", # advanced developer tools
 ]
 
 [hemtt.launch.full]
@@ -164,7 +91,6 @@ workshop = [
     "2041057379", # A3 Thermal Improvement
 
     # mods I hate
-    "2888477598", # 1st meu
     "1797512739", # operation arsenal expansion for OPTRE
     "2909265898", # OPTRE Ordnance Expansion
 
@@ -173,6 +99,12 @@ workshop = [
     "2969350304", # Ladder Tweak Remastered
     "1770265310", # No More Aircraft Bouncing
     "1911374016", # ACE Vehicle Medical
+
+    # v3 mods
+    "2291129343", # Improved Melee System
+    "2933180786", # WebKnight's OPTRE Expansion
+    "1910457930", # Fapovo Island
+    "1960024802", # PLP All In One
 
     # additional mods
     "2791403093", # Better Inventory
