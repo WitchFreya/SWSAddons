@@ -1,6 +1,11 @@
 #define NAME_M24RLD NAME(M24RL-Sx 'Howdy')
 
-class WEAPON(M24RL_D): launch_MRAWS_green_F {
+class WEAPON(M24RL_D_Base) : launch_MRAWS_green_F {
+    ITEM_META(0);
+    class WeaponSlotsInfo;
+};
+
+class WEAPON(M24RL_D): WEAPON(M24RL_D_Base) {
     ITEM_META(1);
     CLEARANCE(RESTRICTED/DECWHITE);
     displayName = QUOTE(NAME_M24RLD);

@@ -1,4 +1,10 @@
-class WEAPON(SM247): Dmns_M247_GPMG {
+class WEAPON(SM247_Base) : Dmns_M247_GPMG {
+    ITEM_META(0);
+    class Single;
+    class FullAuto;
+};
+
+class WEAPON(SM247): WEAPON(SM247_Base) {
     WEAPON_META(SM247,2);
     CLEARANCE(RESTRICTED/DECWHI);
     displayName = QNAME(SM247);
