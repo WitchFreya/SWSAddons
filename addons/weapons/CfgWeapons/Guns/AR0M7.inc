@@ -1,9 +1,4 @@
-class WEAPON(AR0M37_Base) : LM_OPCAN_AR0M37 {
-    ITEM_META(0);
-    class WeaponSlotsInfo;
-};
-
-class WEAPON(AR0M37): WEAPON(AR0M37_Base) {
+class WEAPON(AR0M37): LM_OPCAN_AR0M37 {
     WEAPON_META(AR0M37,2);
     displayName = QNAME(AR-0M37 6.5mm);
     picture = QPATHTOF(data\icons\msbs65_ca.paa);

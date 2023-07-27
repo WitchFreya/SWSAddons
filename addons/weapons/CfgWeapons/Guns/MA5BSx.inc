@@ -1,10 +1,3 @@
-class WEAPON(MA5BSx_Base) : OPTRE_MA5B {
-    ITEM_META(0);
-    class WeaponSlotsInfo : WeaponSlotsInfo {
-        class CowsSlot;
-    };
-};
-
 class WEAPON(MA5BSx): OPTRE_MA5B {
     WEAPON_META(MA5BSx,2);
     CLEARANCE(RESTRICTED/DECWHI);
@@ -36,14 +29,7 @@ class WEAPON(MA5BSx): OPTRE_MA5B {
     };
 };
 
-class WEAPON(TRIPLES(MA5BSx,GL,Base)) : OPTRE_MA5BGL {
-    ITEM_META(0);
-    class WeaponSlotsInfo : WeaponSlotsInfo {
-        class CowsSlot;
-    };
-};
-
-class WEAPON(DOUBLES(MA5BSx,GL)): WEAPON(TRIPLES(MA5BSx,GL,Base)) {
+class WEAPON(DOUBLES(MA5BSx,GL)): OPTRE_MA5BGL {
     WEAPON_META(DOUBLES(MA5BSx,GL),2);
     CLEARANCE(RESTRICTED/DECWHI);
     displayName = QNAME(MA5B-Sx + M301-Sx UGL);
