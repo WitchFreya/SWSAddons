@@ -49,6 +49,5 @@ class CfgAmmo {
     class B_12Gauge_Pellets_Submunition;
     class B_12Gauge_Pellets_Submunition_Deploy;
 
-    #include "CfgAmmo\Pellet.inc"
     #include "CfgAmmo\Incendiary.inc"
 };
