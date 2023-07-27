@@ -7,14 +7,4 @@ class CfgVehicles {
         icon = "OPTRE_Vehicles_Air\Falcon\Data\icon.paa";
 		picture = "OPTRE_Vehicles_Air\Falcon\Data\icon2.paa";
     };
-
-    #ifdef INCLUDE_MEU
-    class OPTRE_M808B_base;
-    // 1st MEU. It's always 1st MEU. Fucking hell.
-    class OPTRE_M808B_UNSC : OPTRE_M808B_base {
-        class Turrets {
-            delete ACE_SelfActions;
-        };
-    };
-    #endif
 };
