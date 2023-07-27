@@ -10,6 +10,7 @@ class CfgVehicles {
 
     class DMNS_UAV_01_backpack_F;
     class BAG(DMNS_UAV_01_backpack_F_base): DMNS_UAV_01_backpack_F {
+        ITEM_META(0);
         class AssembleInfo;
     };
 
