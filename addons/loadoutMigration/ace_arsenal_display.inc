@@ -1,3 +1,4 @@
+class RscListnBox;
 class ctrlControlsGroupNoScrollbars;
 class ctrlButton;
 
@@ -9,6 +10,10 @@ class ace_arsenal_loadoutsDisplay {
     class controls {
         class centerBox : ctrlControlsGroupNoScrollbars {
             class controls {
+                class contentPanel : RscListnBox {
+                    onLBSelChanged = QUOTE([ARR_3(ctrlParent (_this select 0), _this select 0, _this select 1)] call FUNC(onSelChangedLoadouts));
+                };
+
                 class buttonSave : ctrlButton {
                     w = QUOTE(BTN_W * GRID_W);
                 };
@@ -33,7 +38,7 @@ class ace_arsenal_loadoutsDisplay {
                     onButtonClick = QUOTE([ARR_2(ctrlParent (_this select 0), _this select 0)] call FUNC(onClickMigrate));
                 };
 
-                 class buttonDelete : buttonSave {
+                class buttonDelete : buttonSave {
                     x = BTN_X(5);
                 };
             };
