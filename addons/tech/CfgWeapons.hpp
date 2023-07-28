@@ -13,7 +13,7 @@ class CfgWeapons {
         ITEM_META(2);
         CLEARANCE(SECRET/DECWHI);
         _generalMacro = QTERMINAL(Uav);
-        displayName = "SCARLET";
+        displayName = QNAME(SCARLET);
         descriptionShort = "System Calibration and Arsenal Retasking Light Engineering Terminal.";
         model = "\a3\Props_F_Enoch\Military\Equipment\Laptop_03_F.p3d";
         picture = QPATHTOF(data\terminal_scarlet_ca.paa);
