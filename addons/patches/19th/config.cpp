@@ -5,7 +5,7 @@
 
 class CfgPatches
 {
-    class SWS_Patches_EventHandlers
+    class SWS_Patches_19th
     {
         name = "SWS_Patches_19th";
         units[] = { };
