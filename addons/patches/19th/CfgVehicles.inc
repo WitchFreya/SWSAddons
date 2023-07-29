@@ -1,4 +1,4 @@
-
+class AnimationSources;
 class CBA_Extended_EventHandlers_Base;
 
 #define CBA_PATCH                                                               \
@@ -27,4 +27,54 @@ class CfgVehicles {
     class 19_M12A1_LRV_WHQ_OCimport_01 : 19_M12A1_LRV_WHQ { CBA_PATCH; };
     class 19_M12G1_LRV_WHQ_OCimport_01 : 19_M12G1_LRV_WHQ { CBA_PATCH; };
     class 19_M12_LRV_WHQ_OCimport_01 : 19_M12_LRV_WHQ { CBA_PATCH; };
+
+    class Car_F;
+
+    // The Springbok is missing an animation source specified in the model.cfg
+    class DMNS_M511_Springbok_base : Car_F {
+        class AnimationSources : AnimationSources {
+            class mainmuzzleflashrotation {
+                source = "ammorandom";
+                weapon = "DMNS_M61_Vulcan";
+            };
+            class mainmuzzleflashhide {
+                source = "reload";
+                weapon = "DMNS_M61_Vulcan";
+            };
+            class maingunshake {
+                source = "reload";
+                weapon = "DMNS_M61_Vulcan";
+            };
+            class maingunshake_back {
+                source = "reload";
+                weapon = "DMNS_M61_Vulcan";
+            };
+            class codrivermuzzleflashhide {
+                source = "reload";
+                weapon = "DMNS_M247H_Coax";
+            };
+            class codrivergunshake {
+                source = "reload";
+                weapon = "DMNS_M247H_Coax";
+            };
+            class codrivergunshake_eye {
+                source = "reload";
+                weapon = "DMNS_M247H_Coax";
+            };
+            class codrivergunshake_back {
+                source = "reload";
+                weapon = "DMNS_M247H_Coax";
+            };
+            class codrivergunshake_eye_back {
+                source = "reload";
+                weapon = "DMNS_M247H_Coax";
+            };
+            class codrivermuzzleflashrotation {
+                source = "ammorandom";
+                weapon = "DMNS_M247H_Coax";
+            };
+        };
+    };
 };
+
+#undef CBA_PATCH

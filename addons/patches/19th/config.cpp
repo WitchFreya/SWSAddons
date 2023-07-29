@@ -12,7 +12,7 @@ class CfgPatches
         weapons[] = { };
         magazines[] = { };
         ammo[] = { };
-        requiredAddons[] = { "19th_Weapons_F_BattleRifle" };
+        requiredAddons[] = { "19th_Weapons_F_BattleRifle", "DMNS_Vehicles_M511_Springbok" };
         addonRootClass = "SWS_Patches";
     };
 };
