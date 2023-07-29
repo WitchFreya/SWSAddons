@@ -83,7 +83,7 @@ class CfgWeapons
     C_GEAR(Kitty,kitty);
     C_GEAR(Sawbones,teal);
     C_GEAR(Hurricane,purple);
-    C_GEAR(Roman,purple);
+    C_GEAR(Roman,grey);
 
     //== COLORS
     C_GEAR(Blue,silver);
