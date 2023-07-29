@@ -60,12 +60,22 @@ class CfgWeapons {
 
     //== Incorrect weight on launcher
     class DMNS_M96_LAW : Launcher_Base_F {
+        magazines[] = {"CBA_FakeLauncherMagazine"};
+
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 100;
+        };
+    };
+
+    class ACE_DMNS_M96_LAW_ready_F : DMNS_M96_LAW {
+
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 55;
         };
     };
 
     class ACE_DMNS_M96_LAW_used_F : DMNS_M96_LAW {
+        magazines[] = {"CBA_FakeLauncherMagazine"};
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 55;
         };
