@@ -44,6 +44,7 @@ workshop = [
     "1251859358", # Zeus and Eden Interiors
     "3007731986", # SWS Timeless
 
+    "769440155",  # optre
     "1267657613", # optre ace compat
     "1572627279", # optre first contact
     "1572642262", # optre first contact ace compat
@@ -71,24 +72,28 @@ workshop = [
     "2538444208", # Simple Grid Designators
     "2695649037", # Operation TREBUCHET JSRS Compat
     "2699465073", # Fire Support Plus
-    "2731181579", # Wild Mountains Livonia Veg
-    "2735613231", # Weather Plus
-    "2794721649", # Advanced Vault System: Remastered
-    "2822758266", # Deformer
-    "2853202785", # Freefall Fix
-    "2918542818", # Sci-fi Support Plus
-    "333310405",  # Enhanced Movement
-    "520618345",  # Jbad
-    "583496184",  # CUP Terrains - Core
-    "583544987",  # CUP Terrains - Maps
     "623475643",  # 3den Enhanced
     "767380317",  # Blastcore Edited (standalone version)
-    "769440155",  # optre
     "837729515",  # CH View Distance
     "861133494",  # JSRS SOUNDMOD
     "894678801",  # tfar
     "925018569",  # WMO - Walkable Moving Objects
     "2041057379", # A3 Thermal Improvement
+
+    "2918542818", # Sci-fi Support Plus
+    "333310405",  # Enhanced Movement
+    "520618345",  # Jbad
+    "583544987",  # CUP Terrains - Maps
+
+    "2731181579", # Wild Mountains Livonia Veg
+
+    "2735613231", # Weather Plus
+    "2794721649", # Advanced Vault System: Remastered
+    "2822758266", # Deformer
+    "2853202785", # Freefall Fix
+
+
+    "583496184", # CUP Terrains - Core
 
     # mods I hate
     "1797512739", # operation arsenal expansion for OPTRE
