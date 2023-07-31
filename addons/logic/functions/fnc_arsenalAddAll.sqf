@@ -27,7 +27,7 @@ private _relevantConfigs = ["CfgWeapons","CfgGlasses","CfgMagazines","CfgVehicle
 private _swsItems = flatten (_relevantConfigs apply { _filterToSwsItems configClasses (configFile >> _x) });
 private _itemsInScope = _swsItems
     select {
-        getNumber (_x >> 'scopeArsenal') > 0
+        getNumber (_x >> 'scopeArsenal') == 2
     } apply {
         configName _x
     } select {
