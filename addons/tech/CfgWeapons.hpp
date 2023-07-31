@@ -54,13 +54,21 @@ class CfgWeapons {
             modelOff = "";
             mass = 0;
         };
+
+        class XtdGearInfo {
+            model = QWEAPON(DOUBLES(NVG,NeuralLace));
+            clearance = "ODST";
+        };
     };
 
-    class WEAPON(TRIPLES(NVG,NeuralLace,Maid)): WEAPON(DOUBLES(NVG,NeuralLace)) {
-        ITEM_META(1);
+    class WEAPON(TRIPLES(NVG,NeuralLace,ONI)): WEAPON(DOUBLES(NVG,NeuralLace)) {
+        ITEM_META(2);
         CLEARANCE(SECRET/DECWHI);
-        displayName = QNAME(Neural Lace (Maid));
+        displayName = QNAME(Neural Lace (ONI));
         descriptionShort = "ONI-classified neural implant.";
         thermalMode[] = {0};
+        class XtdGearInfo : XtdGearInfo {
+            clearance = "ONI";
+        };
     };
 };

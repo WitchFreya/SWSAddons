@@ -4,6 +4,7 @@
 #include "CfgEventHandlers.hpp"
 #include "CfgWeapons.hpp"
 #include "RscInGameUI.inc"
+#include "XtdGearModels.inc"
 
 class CfgPatches
 {
