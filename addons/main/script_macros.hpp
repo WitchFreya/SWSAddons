@@ -40,3 +40,5 @@
 #define QVEH_UAV(var0) QUOTE(VEH_UAV(var0))
 #define HELMET(var0) TRIPLES(PREFIX,Helmet,var0)
 #define QHELMET(var0) QUOTE(HELMET(var0))
+#define MODULE(var0) TRIPLES(PREFIX,Module,var0)
+#define QMODULE(var0) QUOTE(MODULE(var0))
