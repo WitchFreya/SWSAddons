@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-#include "ACEX_Fortify_Presets.inc"
+#include "CfgEventHandlers.inc"
 
 class CfgPatches
 {
@@ -8,7 +8,7 @@ class CfgPatches
     {
         name = QUOTE(COMPONENT);
         units[] = { };
-        weapons[] = { };
+        weapons[] = {  };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {};
         author = QUOTE(AUTHOR);
