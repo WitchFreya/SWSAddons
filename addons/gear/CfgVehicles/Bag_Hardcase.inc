@@ -8,7 +8,7 @@ class VEHICLE(DOUBLES(CLASS_BASE,Medical)) : VEHICLE(DOUBLES(CLASS_BASE,Base)) {
     ITEM_META(2);
     displayName = QNAME(Medical Satchel);
     hiddenSelections[] = {"camo"};
-    hiddenSelectionsTextures[] = {QPATHTOF(data\Bag_Hardcase\medical)};
+    hiddenSelectionsTextures[] = {QPATHTOF(data\Bag_Hardcase\medical_co)};
     maximumLoad = 400;
 
     class XtdGearInfo {
@@ -20,12 +20,32 @@ class VEHICLE(DOUBLES(CLASS_BASE,Medical)) : VEHICLE(DOUBLES(CLASS_BASE,Base)) {
 class VEHICLE(DOUBLES(CLASS_BASE,Sawbones)) : VEHICLE(DOUBLES(CLASS_BASE,Medical)) {
     ITEM_META(2);
     displayName = QNAME(Medical Satchel (Sawbones));
-    hiddenSelections[] = {"camo"};
-    hiddenSelectionsTextures[] = {QPATHTOF(data\Bag_Hardcase\sawbones)};
-    maximumLoad = 400;
+    hiddenSelectionsTextures[] = {QPATHTOF(data\Bag_Hardcase\sawbones_co)};
 
     class XtdGearInfo : XtdGearInfo {
         variant = "Sawbones";
+    };
+};
+
+class VEHICLE(DOUBLES(CLASS_BASE,Bait)) : VEHICLE(DOUBLES(CLASS_BASE,Medical)) {
+    ITEM_META(2);
+    displayName = QNAME(Medical Satchel (Bait));
+    hiddenSelectionsTextures[] = {QPATHTOF(data\Bag_Hardcase\bait_co)};
+    SWS_ArsenalHide = 1;
+
+    class XtdGearInfo : XtdGearInfo {
+        variant = "Bait";
+    };
+};
+
+class VEHICLE(DOUBLES(CLASS_BASE,Vertigo)) : VEHICLE(DOUBLES(CLASS_BASE,Medical)) {
+    ITEM_META(2);
+    displayName = QNAME(Medical Satchel (Vertigo));
+    hiddenSelectionsTextures[] = {QPATHTOF(data\Bag_Hardcase\vertigo_co)};
+    SWS_ArsenalHide = 1;
+
+    class XtdGearInfo : XtdGearInfo {
+        variant = "Vertigo";
     };
 };
 
