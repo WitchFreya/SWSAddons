@@ -3,7 +3,9 @@
     QBAG(VEH_UAV(DOUBLES(SMQ94,Maid))), \
     QVEHICLE(Bag_Hardcase), \
     QVEHICLE(DOUBLES(Bag_Hardcase,Medical)), \
-    QVEHICLE(DOUBLES(Bag_Hardcase,Sawbones))
+    QVEHICLE(DOUBLES(Bag_Hardcase,Sawbones)), \
+    QVEHICLE(DOUBLES(Bag_Hardcase,Bait)), \
+    QVEHICLE(DOUBLES(Bag_Hardcase,Vertigo))
 
 class CfgVehicles {
     class OPTRE_ONI_Researcher_Suitcase;
