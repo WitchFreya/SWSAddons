@@ -31,4 +31,15 @@ class CfgMagazineWells {
             QMAGAZINE(6Rnd_Shotgun_Incendiary)
         };
     };
+
+    class OPTRE_Magwell_BR55 {
+        GVAR(Magzines)[] = {
+            // 19th
+            "36Rnd_95x40_br_55",
+            "36Rnd_95x40_ap_br_55",
+            "36Rnd_95x40_jhp_br_55",
+            // OPTRE's tracers
+            "OPTRE_36Rnd_95x40_Mag_Tracer"
+        };
+    };
 };

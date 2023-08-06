@@ -5,6 +5,16 @@ class WEAPON(AR0M37): LM_OPCAN_AR0M37 {
 
     class WeaponSlotsInfo : WeaponSlotsInfo {
         mass = 45;
+
+        class PointerSlot : PointerSlot {
+            compatibleItems[] = {
+                "acc_flashlight",
+                "acc_pointer_IR",
+                "ACE_acc_pointer_red",
+                "ACE_acc_pointer_green_IR",
+                "ACE_acc_pointer_green"
+            };
+        };
     };
 
     class XtdGearInfo {
@@ -21,6 +31,18 @@ class WEAPON(AR0M37_GL): LM_OPCAN_AR0M37_GL {
         model = QWEAPON(AR0M37);
         underbarrel = "GL";
     };
+
+    class WeaponSlotInfo : WeaponSlotInfo {
+        class PointerSlot : PointerSlot {
+            compatibleItems[] = {
+                "acc_flashlight",
+                "acc_pointer_IR",
+                "ACE_acc_pointer_red",
+                "ACE_acc_pointer_green_IR",
+                "ACE_acc_pointer_green"
+            };
+        };
+    };
 };
 
 class WEAPON(AR0M37_SHT): LM_OPCAN_AR0M37_SHT {
@@ -30,5 +52,17 @@ class WEAPON(AR0M37_SHT): LM_OPCAN_AR0M37_SHT {
     class XtdGearInfo {
         model = QWEAPON(AR0M37);
         underbarrel = "SHT";
+    };
+
+     class WeaponSlotInfo : WeaponSlotInfo {
+        class PointerSlot : PointerSlot {
+            compatibleItems[] = {
+                "acc_flashlight",
+                "acc_pointer_IR",
+                "ACE_acc_pointer_red",
+                "ACE_acc_pointer_green_IR",
+                "ACE_acc_pointer_green"
+            };
+        };
     };
 };

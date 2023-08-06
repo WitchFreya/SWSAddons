@@ -41,4 +41,16 @@ class WEAPON(SM247): Dmns_M247_GPMG {
         dispersion = 0.00065;
         reloadTime = 0.082;
     };
+
+    class WeaponSlotsInfo : WeaponSlotsInfo {
+        class PointerSlot : PointerSlot {
+            compatibleItems[] = {
+                "acc_flashlight",
+                "acc_pointer_IR",
+                "ACE_acc_pointer_red",
+                "ACE_acc_pointer_green_IR",
+                "ACE_acc_pointer_green"
+            };
+        };
+    };
 };

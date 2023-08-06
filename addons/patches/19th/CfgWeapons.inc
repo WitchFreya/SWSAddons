@@ -14,6 +14,8 @@ class CfgWeapons {
 
     //== Missing optic from OPTRE update
     class arifle_19th_br_55_gl_Base_F : Rifle_Base_UGL_F {
+        magazineWell[] = {"OPTRE_Magwell_BR55"};
+        cursor = "OPTRE_BR55";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             class CowsSlot : CowsSlot {
                 compatibleitems[] = {
@@ -24,12 +26,49 @@ class CfgWeapons {
 					"OPTRE_M392_Scope",
 					"19th_br_scope"
 				};
+            };
+
+            class PointerSlot : PointerSlot {
+                compatibleItems[] = {
+                    "acc_flashlight",
+                    "acc_pointer_IR",
+                    "ACE_acc_pointer_red",
+                    "ACE_acc_pointer_green_IR",
+                    "ACE_acc_pointer_green"
+                };
             };
         };
     };
 
     class 19th_br_55_gl : arifle_19th_br_55_gl_Base_F {
+        magazineWell[] = {"OPTRE_Magwell_BR55"};
         class WeaponSlotsInfo : WeaponSlotsInfo {
+            class CowsSlot : CowsSlot {
+                compatibleItems[] = {
+					"optic_MRCO",
+					"OPTRE_BR55HB_Scope",
+					"OPTRE_M7_Sight",
+					"OPTRE_BR45_Scope",
+					"OPTRE_M392_Scope",
+					"19th_br_scope"
+				};
+            };
+            class PointerSlot : PointerSlot {
+                compatibleItems[] = {
+                    "acc_flashlight",
+                    "acc_pointer_IR",
+                    "ACE_acc_pointer_red",
+                    "ACE_acc_pointer_green_IR",
+                    "ACE_acc_pointer_green"
+                };
+            };
+        };
+    };
+
+    class 19th_br_55 : 19th_br_55_gl {
+        magazineWell[] = {"OPTRE_Magwell_BR55"};
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 45;
             class CowsSlot : CowsSlot {
                 compatibleitems[] = {
 					"optic_MRCO",
@@ -40,20 +79,14 @@ class CfgWeapons {
 					"19th_br_scope"
 				};
             };
-        };
-    };
-
-    class 19th_br_55 : 19th_br_55_gl {
-        class WeaponSlotsInfo : WeaponSlotsInfo {
-            class CowsSlot : CowsSlot {
-                compatibleitems[] = {
-					"optic_MRCO",
-					"OPTRE_BR55HB_Scope",
-					"OPTRE_M7_Sight",
-					"OPTRE_BR45_Scope",
-					"OPTRE_M392_Scope",
-					"19th_br_scope"
-				};
+            class PointerSlot : PointerSlot {
+                compatibleItems[] = {
+                    "acc_flashlight",
+                    "acc_pointer_IR",
+                    "ACE_acc_pointer_red",
+                    "ACE_acc_pointer_green_IR",
+                    "ACE_acc_pointer_green"
+                };
             };
         };
     };

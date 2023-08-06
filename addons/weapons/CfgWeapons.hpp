@@ -9,6 +9,7 @@
     QWEAPON(DOUBLES(M24RL_D,Loaded))
 
 class WeaponSlotsInfo;
+class MuzzleSlot;
 class CowsSlot;
 class Single;
 class FullAuto;
@@ -21,6 +22,7 @@ class CfgWeapons {
     class OPTRE_MA5B;
     class OPTRE_MA5BGL;
     class InventoryOpticsItem_Base_F;
+    class PointerSlot;
 
     #include "CfgWeapons\Guns\AR0M7.inc"
     #include "CfgWeapons\Guns\MA5BSx.inc"
