@@ -27,22 +27,21 @@ class VEHICLE(DOUBLES(CLASS_BASE,Sawbones)) : VEHICLE(DOUBLES(CLASS_BASE,Medical
     };
 };
 
-class VEHICLE(DOUBLES(CLASS_BASE,Bait)) : VEHICLE(DOUBLES(CLASS_BASE,Medical)) {
-    ITEM_META(2);
-    displayName = QNAME(Medical Satchel (Bait));
-    hiddenSelectionsTextures[] = {QPATHTOF(data\Bag_Hardcase\bait_co)};
-    SWS_ArsenalHide = 1;
+// class VEHICLE(DOUBLES(CLASS_BASE,Bait)) : VEHICLE(DOUBLES(CLASS_BASE,Medical)) {
+//     ITEM_META(2);
+//     displayName = QNAME(Medical Satchel (Bait));
+//     hiddenSelectionsTextures[] = {QPATHTOF(data\Bag_Hardcase\bait_co)};
+//     SWS_ArsenalHide = 1;
 
-    class XtdGearInfo : XtdGearInfo {
-        variant = "Bait";
-    };
-};
+//     class XtdGearInfo : XtdGearInfo {
+//         variant = "Bait";
+//     };
+// };
 
 class VEHICLE(DOUBLES(CLASS_BASE,Vertigo)) : VEHICLE(DOUBLES(CLASS_BASE,Medical)) {
     ITEM_META(2);
     displayName = QNAME(Medical Satchel (Vertigo));
     hiddenSelectionsTextures[] = {QPATHTOF(data\Bag_Hardcase\vertigo_co)};
-    SWS_ArsenalHide = 1;
 
     class XtdGearInfo : XtdGearInfo {
         variant = "Vertigo";
