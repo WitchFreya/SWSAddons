@@ -105,7 +105,6 @@ class CfgVehicles {
     class Jbad_Lamps_base_powerline;
     class Land_CampingChair_V1_F;
     class Land_Jbad_PowLines_Conc2L;
-    class MEU_Sentinel_A;
     class O_diver_exp_F;
     class O_diver_F;
     class O_diver_TL_F;
@@ -390,11 +389,6 @@ class CfgVehicles {
     class OPTRE_FC_AA_Wraith_NOFLAK : OPTRE_FC_AA_Wraith { CBA_PATCH; };
     class OPTRE_FC_AA_Wraith_Needle : OPTRE_FC_Wraith { CBA_PATCH; };
     class OPTRE_FC_Wraith_Tank : OPTRE_FC_Wraith { CBA_PATCH; };
-    class MEU_Squad_pod : OPTRE_HEV { CBA_PATCH; };
-    class MEU_Shadow : B_MBT_01_cannon_F { CBA_PATCH; };
-    class MEU_Sentinel_A : I_UAV_01_F { CBA_PATCH; };
-    class MEU_Sentinel_S : MEU_Sentinel_A { CBA_PATCH; };
-    class MEU_Sentinel_E : MEU_Sentinel_A { CBA_PATCH; };
     class OPTRE_FC_Spectre_AI_Base : B_MBT_01_cannon_F { CBA_PATCH; };
     class OPTRE_FC_Spirit_F : Helicopter_Base_F { CBA_PATCH; };
     class 11_Mortar_base : StaticMortar { CBA_PATCH; };
