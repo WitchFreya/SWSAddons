@@ -21,6 +21,16 @@ class WEAPON(MA5BSx): OPTRE_MA5B {
                 QOPTIC(Smartlink)
             };
         };
+
+        class PointerSlot : PointerSlot {
+            compatibleItems[] = {
+                "acc_flashlight",
+                "acc_pointer_IR",
+                "ACE_acc_pointer_red",
+                "ACE_acc_pointer_green_IR",
+                "ACE_acc_pointer_green"
+            };
+        };
     };
 
     class XtdGearInfo {
@@ -50,6 +60,16 @@ class WEAPON(DOUBLES(MA5BSx,GL)): OPTRE_MA5BGL {
                 "OPTRE_MA5_SmartLink",
                 "OPTRE_MA5C_SmartLink",
                 QOPTIC(Smartlink)
+            };
+        };
+
+        class PointerSlot : PointerSlot {
+            compatibleItems[] = {
+                "acc_flashlight",
+                "acc_pointer_IR",
+                "ACE_acc_pointer_red",
+                "ACE_acc_pointer_green_IR",
+                "ACE_acc_pointer_green"
             };
         };
     };
