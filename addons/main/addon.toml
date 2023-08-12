@@ -3,4 +3,4 @@ enabled = true
 
 [preprocess]
 enabled = true
-exclude = []
+exclude = ["script_mod.hpp"]
