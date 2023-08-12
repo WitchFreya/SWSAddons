@@ -24,11 +24,7 @@ class WEAPON(MA5BSx): OPTRE_MA5B {
 
         class PointerSlot : PointerSlot {
             compatibleItems[] = {
-                "acc_flashlight",
-                "acc_pointer_IR",
-                "ACE_acc_pointer_red",
-                "ACE_acc_pointer_green_IR",
-                "ACE_acc_pointer_green"
+                ATT_POINTER_OPTRE_RAIL
             };
         };
     };
