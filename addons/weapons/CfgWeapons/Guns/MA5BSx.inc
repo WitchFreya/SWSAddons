@@ -2,12 +2,13 @@ class WEAPON(MA5BSx): OPTRE_MA5B {
     WEAPON_META(MA5BSx,2);
     CLEARANCE(RESTRICTED/DECWHI);
     displayName = QNAME(MA5B-Sx);
+    cursor = QWEAPON(MA5BSx);
     descriptionShort = "An experimental variant of the MA5B.";
     hiddenSelectionsTextures[] = {
         "optre_weapons\ar\data\weapon_co.paa",
         "optre_weapons\ar\data\smartlink_co.paa",
         "optre_weapons\ar\data\cover_co.paa",
-        QPATHTOF(data\ma5_reticle.paa)
+        QPATHTOF(data\ma5_reticle_ca.paa)
     };
 
     class WeaponSlotsInfo: WeaponSlotsInfo {
@@ -39,12 +40,13 @@ class WEAPON(DOUBLES(MA5BSx,GL)): OPTRE_MA5BGL {
     WEAPON_META(DOUBLES(MA5BSx,GL),2);
     CLEARANCE(RESTRICTED/DECWHI);
     displayName = QNAME(MA5B-Sx + M301-Sx UGL);
+    cursor = QWEAPON(MA5BSx);
     descriptionShort = "An experimental variant of the MA5B.";
     hiddenSelectionsTextures[] = {
         "optre_weapons\ar\data\weapon_co.paa",
         "optre_weapons\ar\data\smartlink_co.paa",
         "optre_weapons\ar\data\cover_co.paa",
-        QPATHTOF(data\ma5_reticle.paa)
+        QPATHTOF(data\ma5_reticle_ca.paa)
     };
 
     class WeaponSlotsInfo: WeaponSlotsInfo {

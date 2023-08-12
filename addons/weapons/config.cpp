@@ -6,6 +6,7 @@
 #include "CfgWeapons.hpp"
 #include "CfgMagazineWells.hpp"
 #include "XtdGearModels.hpp"
+#include "CfgWeaponCursors.inc"
 
 class CfgPatches
 {
