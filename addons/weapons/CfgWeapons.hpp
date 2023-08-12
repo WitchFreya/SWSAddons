@@ -6,12 +6,14 @@
     QWEAPON(MA5BSx), \
     QWEAPON(DOUBLES(MA5BSx,GL)), \
     QOPTIC(Smartlink), \
-    QWEAPON(DOUBLES(M24RL_D,Loaded))
+    QWEAPON(DOUBLES(M24RL_D,Loaded)), \
+    QWEAPON(WEAPON(SBR55))
 
 class WeaponSlotsInfo;
 class MuzzleSlot;
 class CowsSlot;
 class Single;
+class Burst;
 class FullAuto;
 
 class CfgWeapons {
@@ -23,9 +25,11 @@ class CfgWeapons {
     class OPTRE_MA5BGL;
     class InventoryOpticsItem_Base_F;
     class PointerSlot;
+    class OPTRE_BR55;
 
     #include "CfgWeapons\Guns\AR0M7.inc"
     #include "CfgWeapons\Guns\MA5BSx.inc"
+    #include "CfgWeapons\Guns\SBR55.inc"
 
     //== MG
     class Dmns_M247_GPMG;
