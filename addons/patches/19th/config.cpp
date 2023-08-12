@@ -1,5 +1,7 @@
 #include "\x\SWS\addons\patches\script_component.hpp"
 
+#define ATT_POINTER_OPTRE_RAIL "OPTRE_BMR_Laser", "OPTRE_BMR_Vis_Red_Laser", "OPTRE_BMR_MEQ_Flashlight"
+
 #include "CfgWeapons.inc"
 #include "CfgVehicles.inc"
 
