@@ -35,6 +35,9 @@ workshop = [
     "2480118782", # Max Women Soldiers
     "2699465073", # Fire Support Plus
     "520618345",  # Jbad
+
+    # unnecessary but i want them there
+    "1957746437", # ADV ACE-CPR
 ]
 
 [hemtt.launch.full]

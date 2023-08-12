@@ -32,7 +32,7 @@ class WEAPON(AR0M37_GL): LM_OPCAN_AR0M37_GL {
         underbarrel = "GL";
     };
 
-    class WeaponSlotInfo : WeaponSlotInfo {
+    class WeaponSlotsInfo : WeaponSlotsInfo {
         class PointerSlot : PointerSlot {
             compatibleItems[] = {
                 "acc_flashlight",
@@ -54,7 +54,7 @@ class WEAPON(AR0M37_SHT): LM_OPCAN_AR0M37_SHT {
         underbarrel = "SHT";
     };
 
-     class WeaponSlotInfo : WeaponSlotInfo {
+     class WeaponSlotsInfo : WeaponSlotsInfo {
         class PointerSlot : PointerSlot {
             compatibleItems[] = {
                 "acc_flashlight",
