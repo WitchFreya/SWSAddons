@@ -19,6 +19,14 @@ class CfgMagazineWells {
         };
     };
 
+    class OPTRE_Magwell_MA5B {
+        GVAR(Magazines)[] = {
+            "OPTRE_32Rnd_762x51_Mag",
+            "OPTRE_32Rnd_762x51_Mag_Tracer",
+            "OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"
+        };
+    };
+
     class OPTRE_Magwell_M45 {
         GVAR(Magazines)[] = {
             QMAGAZINE(6Rnd_Shotgun_Incendiary),
@@ -33,7 +41,7 @@ class CfgMagazineWells {
     };
 
     class OPTRE_Magwell_BR55 {
-        GVAR(Magzines)[] = {
+        GVAR(Magazines)[] = {
             // 19th
             "36Rnd_95x40_br_55",
             "36Rnd_95x40_ap_br_55",
