@@ -77,7 +77,7 @@ class RscDisplayMain: RscStandardDisplay {
                     text = "Join SWS Server";
                     tooltip = "If this doesn't work, use the Server Browser as normal.";
                     y = "(1 *   1.5) *  (pixelH * pixelGrid * 2) +  (pixelH)";
-                    onButtonClick = "connectToServer ['136.37.178.26',2502,'awoo'];";
+                    onButtonClick = "connectToServer ['149.56.24.164',14100,'awoo'];";
                     animTextureNormal = QPATHTOF(data\buttonMissionMainMenu_ca.paa);
                     animTextureDisabled = QPATHTOF(data\buttonMissionMainMenu_ca.paa);
                     animTextureOver = QPATHTOF(data\buttonMissionMainMenuHover_ca.paa);
