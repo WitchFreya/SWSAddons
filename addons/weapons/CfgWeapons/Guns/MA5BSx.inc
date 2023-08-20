@@ -34,6 +34,7 @@ class WEAPON(MA5BSx): OPTRE_MA5B {
         model = QWEAPON(MA5BSx);
         underbarrel = "None";
     };
+    class FlashLight {};
 };
 
 class WEAPON(DOUBLES(MA5BSx,GL)): OPTRE_MA5BGL {
