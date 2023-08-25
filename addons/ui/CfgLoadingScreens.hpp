@@ -35,7 +35,7 @@ class RscDisplayLoading {
 
 		class Loading_West1 : LoadingOne {
 			class controls {
-				class LoadingPic {
+				class LoadingPic : RscPicture {
 					idc=1;
 					x = "SafeZoneX";
 					y = "SafeZoneY";
@@ -48,7 +48,7 @@ class RscDisplayLoading {
 
 		class Loading_West2 : LoadingOne {
 			class controls {
-				class LoadingPic {
+				class LoadingPic : RscPicture {
 					idc=1;
 					x = "SafeZoneX";
 					y = "SafeZoneY";
@@ -61,7 +61,7 @@ class RscDisplayLoading {
 
 		class Loading_East1 : LoadingOne {
 			class controls {
-				class LoadingPic {
+				class LoadingPic : RscPicture {
 					idc=1;
 					x = "SafeZoneX";
 					y = "SafeZoneY";
@@ -73,7 +73,7 @@ class RscDisplayLoading {
 		};
 		class Loading_East2 : LoadingOne {
 			class controls {
-				class LoadingPic {
+				class LoadingPic : RscPicture {
 					idc=1;
 					x = "SafeZoneX";
 					y = "SafeZoneY";
