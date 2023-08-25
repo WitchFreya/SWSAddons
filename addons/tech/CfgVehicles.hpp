@@ -21,7 +21,7 @@ class CfgVehicles {
         editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\B_UAV_01_F.jpg";
         crew = "B_UAV_AI";
         hiddenSelectionsTextures[] = {
-			"DMNS\DMNS_Air\MQ_94\data\MQ_94_co.paa"
+			QPATHTOF(data\smq_94_co)
 		};
 		typicalCargo[] = {
 			"B_UAV_AI"
