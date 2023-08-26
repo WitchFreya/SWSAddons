@@ -38,6 +38,7 @@ workshop = [
 
     # unnecessary but i want them there
     "1957746437", # ADV ACE-CPR
+    "620260972",  # ALiVE
 ]
 
 [hemtt.launch.full]
@@ -117,6 +118,11 @@ workshop = [
 
     # v6 mods
     "561177050", # Mission Enhanced Little Bird
+
+    # v7 mods
+    "2515887728", # Crow's EWAR
+    "2993442344", # Death & Hit Reactions
+    "2447965207", # Crow's Zeus Additions
 
     # additional mods
     "2791403093", # Better Inventory
@@ -201,6 +207,14 @@ workshop = [
     "2933180786", # WebKnight's OPTRE Expansion
     "1910457930", # Fapovo Island
     "1960024802", # PLP All In One
+
+    # v6 mods
+    "561177050", # Mission Enhanced Little Bird
+
+    # v7 mods
+    "2515887728", # Crow's EWAR
+    "2993442344", # Death & Hit Reactions
+    "2447965207", # Crow's Zeus Additions
 
     # additional mods
     "2791403093", # Better Inventory
