@@ -1,8 +1,9 @@
 
 class CBA_Extended_EventHandlers_Base;
+class EventHandlers;
 
 #define CBA_PATCH                                                               \
-    class EventHandlers {                                                       \
+    class EventHandlers : EventHandlers {                                                       \
         class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_Base {};   \
     }
 
@@ -244,6 +245,8 @@ class CfgVehicles {
     class TCGM_f_Transparent_Flat_O_soldier;
     class TCGM_f_Transparent_Flat_soldier;
     class VTOL_Base_F;
+    class B_MBT_01_cannon_F;
+    class Land_Device_slingloadable_F;
 
     class VES_M12_APC_Base : OPTRE_M12_FAV_APC { CBA_PATCH; };
     class VES_IFV76_A : B_APC_Wheeled_01_cannon_F { CBA_PATCH; };
@@ -523,4 +526,6 @@ class CfgVehicles {
     class SZ_stool : Land_CampingChair_V1_F { CBA_PATCH; };
     class SZ_Chair : Land_CampingChair_V1_F { CBA_PATCH; };
     class Hogosha_D77HTCI_A : OPTRE_Pelican_armed { CBA_PATCH; };
+    class OPTRE_FC_Locust : B_MBT_01_cannon_F { CBA_PATCH; };
+    class Crows_Emp_Device : Land_Device_slingloadable_F { CBA_PATCH; };
 };
