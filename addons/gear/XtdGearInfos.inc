@@ -25,6 +25,7 @@
     };                                                  \
     VEST_GEAR_INFO_ONE(name,varType,Demolitions);       \
     VEST_GEAR_INFO_ONE(name,varType,Sniper);            \
+    VEST_GEAR_INFO_ONE(name,varType,Copilot);            \
     VEST_GEAR_INFO_ONE(name,varType,Light);             \
     VEST_GEAR_INFO_ONE(name,varType,Scout);             \
     VEST_GEAR_INFO_ONE(name,varType,Rifleman);          \
