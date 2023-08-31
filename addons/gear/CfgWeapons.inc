@@ -13,6 +13,7 @@
     QVEST_VARIANTS_GHILLIE_FN(var0),                        \
     QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Demolitions)),   \
     QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Sniper)),        \
+    QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Copilot)),         \
     QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Light)),         \
     QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Scout)),         \
     QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Rifleman)),      \

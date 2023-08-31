@@ -32,6 +32,7 @@
     };                                                  \
     VEST_GEAR_INFO_ONE(name,Demolitions);               \
     VEST_GEAR_INFO_ONE(name,Sniper);                    \
+    VEST_GEAR_INFO_ONE(name,Copilot);                    \
     VEST_GEAR_INFO_ONE(name,Light);                     \
     VEST_GEAR_INFO_ONE(name,Scout);                     \
     VEST_GEAR_INFO_ONE(name,Rifleman);                  \
@@ -234,6 +235,7 @@ class XtdGearModels
                     "Standard",
                     "Demolitions",
                     "Sniper",
+                    "Copilot",
                     "Light",
                     "Scout",
                     "Rifleman",
@@ -243,6 +245,7 @@ class XtdGearModels
                 VARIANT(Standard);
                 VARIANT(Demolitions);
                 VARIANT(Sniper);
+                VARIANT(Copilot);
                 VARIANT(Light);
                 VARIANT(Scout);
                 VARIANT(Rifleman);
