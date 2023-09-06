@@ -1,0 +1,48 @@
+/*
+    HOW TO USE:
+    1. Go to the Variables.hpp file and replace the values in the top section with your mission values.
+    2. Create your mission and drop everything from this folder inside of it.
+    3. Add any other files you need and #include them below if you need to.
+    4. Verify your mission by doing Play in Multiplayer.
+*/
+
+//== Includes Section
+
+// use this for anything you want to #include into your stuff, such as CfgFunctions
+
+#include "CfgFunctions"
+
+//== Do not touch after this line unless you know what you're doing. See the Variables.hpp file for customizing things about the mission.
+
+#include "Variables.hpp"
+
+author = QAUTHORS;
+onLoadName = QNAME;
+onLoadMission = QDESC;
+briefingName = QUOTE(MISSION_LOCATION - MISSION_NAME);
+overviewText = QDESC;
+loadScreen = SWS_ADDONS_PATH(main\data\icon_sws.paa);
+
+class CfgWorlds
+{
+    class Any
+    {
+        author = QAUTHORS;
+        description = QLOCATION;
+    };
+};
+
+class Header
+{
+    gameType = Zeus;
+    minPlayers = MIN_PLAYERS;
+    maxPlayers = MAX_PLAYERS;
+};
+
+respawnOnStart 	= -1;
+respawn = 3;
+respawnDelay = 5;
+respawnTemplates[] = {"MenuPosition"};
+enableDebugConsole[] = { DEBUG_STEAM_IDS };
+
+#include "CfgFunctions.hpp"
