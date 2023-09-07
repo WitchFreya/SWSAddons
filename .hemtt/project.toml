@@ -28,10 +28,14 @@ workshop = [
     "623475643",  # 3den Enhanced
     "769440155",  # OPTRE
     "894678801",  # TFAR
-    "2018593688", # Zeus Enhanced - ACE3 Compatibility
+    "2018593688", # Zeus Enhanced - ACE3 Compatibilityr
     "583496184",  # CUP Terrains - Core
     "861133494",  # JSRS SOUNDMOD
     "2695649037", # Operation TREBUCHET JSRS Compat
+    "1763651451", # optre PLUS+
+    "333310405",  # Enhanced Movement
+    "2034363662", # Enhanced Movement Rework
+    "561177050",  # Mission Enhanced Little Bird
 
     # patches
     "1779063631", # zen
@@ -44,7 +48,7 @@ workshop = [
 
     # unnecessary but i want them there
     "1957746437", # ADV ACE-CPR
-    "620260972",  # ALiVE
+    # "620260972",  # ALiVE
 ]
 
 [hemtt.launch.full]
