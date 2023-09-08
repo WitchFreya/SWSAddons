@@ -10,7 +10,7 @@
 
 // use this for anything you want to #include into your stuff, such as CfgFunctions
 
-#include "CfgFunctions"
+#include "CfgFunctions.hpp"
 
 //== Do not touch after this line unless you know what you're doing. See the Variables.hpp file for customizing things about the mission.
 
@@ -44,5 +44,3 @@ respawn = 3;
 respawnDelay = 5;
 respawnTemplates[] = {"MenuPosition"};
 enableDebugConsole[] = { DEBUG_STEAM_IDS };
-
-#include "CfgFunctions.hpp"
