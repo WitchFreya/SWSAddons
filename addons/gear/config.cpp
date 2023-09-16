@@ -16,6 +16,8 @@ class CfgPatches
         requiredAddons[] = {
             "OPTRE_UNSC_Units",
             "LM_OPCAN_UNSC",
+            "A3_Air_F_Orange_UAV_06",
+            "A3_Supplies_F_Orange_Bags",
             "SWS_Main"};
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;

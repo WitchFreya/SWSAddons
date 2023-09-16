@@ -15,3 +15,5 @@
 
 #define VEST(var0) TRIPLES(PREFIX,Vest,var0)
 #define QVEST(var0) QUOTE(VEST(var0))
+#define UNIT(var0) TRIPLES(PREFIX,U,var0)
+#define QUNIT(var0) QUOTE(UNIT(var0))
