@@ -44,3 +44,4 @@ respawn = 3;
 respawnDelay = 5;
 respawnTemplates[] = {"MenuPosition"};
 enableDebugConsole[] = { DEBUG_STEAM_IDS };
+disabledAI = 1;
