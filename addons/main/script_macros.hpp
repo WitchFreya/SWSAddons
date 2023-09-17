@@ -29,7 +29,6 @@
 #define QPREFIX QUOTE(PREFIX)
 
 #define CLEARANCE(var0) DOUBLES(PREFIX,clearanceLevel) = QUOTE(var0)
-
 #define NAME(var0) [PREFIX] var0
 #define QNAME(var0) QUOTE(NAME(var0))
 #define BAG(var0) TRIPLES(PREFIX,Pack,var0)
