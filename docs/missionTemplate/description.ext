@@ -39,7 +39,7 @@ class Header
     maxPlayers = MAX_PLAYERS;
 };
 
-respawnOnStart 	= -1;
+respawnOnStart 	= 1;
 respawn = 3;
 respawnDelay = 5;
 respawnTemplates[] = {"MenuPosition"};
