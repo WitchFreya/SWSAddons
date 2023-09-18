@@ -1,9 +1,9 @@
 class XtdGearModels {
     class CfgWeapons {
-        class WEAPON(AR0M37) {
-            label = QNAME(AR-0M37 6.5mm);
+        class WEAPON(Autorifles) {
+            label = QNAME(AR);
             icon = "\sws_main\data\icon_sws_ca.paa";
-            options[] = {"Underbarrel"};
+            options[] = {"Body","Underbarrel"};
 
             class Underbarrel {
                 label = "Underbarrel Attachment";
@@ -19,6 +19,22 @@ class XtdGearModels {
 
                 class SHT {
                     description = "Underbarrel shotgun.";
+                };
+            };
+
+            class Body
+            {
+                label = "Body Configuration";
+                values[] = {"0M37S", "MXS"};
+
+                class 0M37S
+                {
+                    description = "AR-0M37S";
+                };
+
+                class MXS
+                {
+                    description = "ARMXS";
                 };
             };
         };
