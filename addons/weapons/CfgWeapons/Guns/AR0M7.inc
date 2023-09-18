@@ -36,20 +36,22 @@ class WEAPON(AR0M37): LM_OPCAN_AR0M37 {
                 "acc_pointer_IR",
                 "ACE_acc_pointer_red",
                 "ACE_acc_pointer_green_IR",
-                "ACE_acc_pointer_green"
+                "ACE_acc_pointer_green",
+                ATT_POINTER_OPTRE_RAIL_M12
             };
         };
     };
 
     class XtdGearInfo {
-        model = QWEAPON(AR0M37);
+        model = QWEAPON(Autorifles);
         underbarrel = "None";
+        body = "0M37S";
     };
 };
 
 class WEAPON(AR0M37_GL): LM_OPCAN_AR0M37_GL {
     WEAPON_META(AR0M37_GL,2);
-    displayName = QNAME(AR-0M37S GL 6.5mm);
+    displayName = QNAME(AR-0M37S UGL 6.5mm);
     picture = QPATHTOF(data\icons\msbs65_barrel_ca.paa);
     HUD_SETUP;
 
@@ -71,8 +73,9 @@ class WEAPON(AR0M37_GL): LM_OPCAN_AR0M37_GL {
     };
 
     class XtdGearInfo {
-        model = QWEAPON(AR0M37);
+        model = QWEAPON(Autorifles);
         underbarrel = "GL";
+        body = "0M37S";
     };
 
     class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -82,7 +85,8 @@ class WEAPON(AR0M37_GL): LM_OPCAN_AR0M37_GL {
                 "acc_pointer_IR",
                 "ACE_acc_pointer_red",
                 "ACE_acc_pointer_green_IR",
-                "ACE_acc_pointer_green"
+                "ACE_acc_pointer_green",
+                ATT_POINTER_OPTRE_RAIL_M12
             };
         };
     };
@@ -112,8 +116,9 @@ class WEAPON(AR0M37_SHT): LM_OPCAN_AR0M37_SHT {
     };
 
     class XtdGearInfo {
-        model = QWEAPON(AR0M37);
+        model = QWEAPON(Autorifles);
         underbarrel = "SHT";
+        body = "0M37S";
     };
 
      class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -123,7 +128,8 @@ class WEAPON(AR0M37_SHT): LM_OPCAN_AR0M37_SHT {
                 "acc_pointer_IR",
                 "ACE_acc_pointer_red",
                 "ACE_acc_pointer_green_IR",
-                "ACE_acc_pointer_green"
+                "ACE_acc_pointer_green",
+                ATT_POINTER_OPTRE_RAIL_M12
             };
         };
     };

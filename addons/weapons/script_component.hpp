@@ -43,6 +43,7 @@
 #define WEAPON_M24RLD_MASS 30
 #define WEAPON_M24RLD_LOADED_MASS 40
 
+#define ATT_POINTER_OPTRE_RAIL_M12 "OPTRE_M12_Laser", "OPTRE_M12_Flashlight", "OPTRE_M12_Vis_Red_Laser"
 #define ATT_POINTER_OPTRE_RAIL "OPTRE_BMR_Laser", "OPTRE_BMR_Vis_Red_Laser", "OPTRE_BMR_MEQ_Flashlight"
 #define ATT_POINTER_OPTRE_MUZZLE "OPTRE_BMR_Flashlight", "OPTRE_BMR_Flashlight_Laser", "OPTRE_BMR_Flashlight_Vis_Red_Laser"
 #define ATT_POINTER_ACE "acc_pointer_IR", "ACE_acc_pointer_red", "ACE_acc_pointer_green_IR", "ACE_acc_pointer_green"
