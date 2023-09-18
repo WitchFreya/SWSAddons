@@ -172,8 +172,8 @@ All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With
                                VEST_SELECTIONS_MARINE, \
                                "AS_ODSTLeft",          \
                                "AS_ODSTRight",         \
-                               "AS_ODSTCQBLeft",       \
                                "AS_ODSTCQBRight",      \
+                               "AS_ODSTSniperLeft",   \
                                "AS_ODSTSniperRight",   \
                                "AS_SmallLeft",         \
                                "AS_SmallRight",        \
