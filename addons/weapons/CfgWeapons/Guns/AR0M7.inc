@@ -1,7 +1,14 @@
+#define HUD_SETUP \
+  ODST_1 = "OPTRE_ODST_HUD_AmmoCount_AR"; \
+    HUD_BulletInARows = 2; \
+    HUD_TotalPosibleBullet = 60; \
+    pictureWire = "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\AssaultRifle\AR_IRON.paa"
+
 class WEAPON(AR0M37): LM_OPCAN_AR0M37 {
     WEAPON_META(AR0M37,2);
     displayName = QNAME(AR-0M37 6.5mm);
     picture = QPATHTOF(data\icons\msbs65_ca.paa);
+    HUD_SETUP;
 
     class WeaponSlotsInfo : WeaponSlotsInfo {
         mass = 45;
@@ -27,6 +34,8 @@ class WEAPON(AR0M37_GL): LM_OPCAN_AR0M37_GL {
     WEAPON_META(AR0M37_GL,2);
     displayName = QNAME(AR-0M37 GL 6.5mm);
     picture = QPATHTOF(data\icons\msbs65_barrel_ca.paa);
+    HUD_SETUP;
+
     class XtdGearInfo {
         model = QWEAPON(AR0M37);
         underbarrel = "GL";
@@ -49,6 +58,7 @@ class WEAPON(AR0M37_SHT): LM_OPCAN_AR0M37_SHT {
     WEAPON_META(AR0M37_SHT,2);
     displayName = QNAME(AR-0M37 Breacher 6.5mm);
     picture = QPATHTOF(data\icons\msbs65_barrel_ca.paa);
+    HUD_SETUP;
     class XtdGearInfo {
         model = QWEAPON(AR0M37);
         underbarrel = "SHT";
@@ -66,3 +76,5 @@ class WEAPON(AR0M37_SHT): LM_OPCAN_AR0M37_SHT {
         };
     };
 };
+
+#undef HUD_SETUP
