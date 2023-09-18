@@ -17,14 +17,19 @@
     QMAGAZINE(M24RL_D), \
     QMAGAZINE(DOUBLES(C7Sx,Sticky)), \
     QMAGAZINE(6Rnd_Shotgun_Incendiary), \
-    QMAGAZINE(12_Rnd_Shotgun_Incendiary)
+    QMAGAZINE(12_Rnd_Shotgun_Incendiary), \
+    QMAGAZINE(60Rnd_65x39_Caseless_msbs_mag),\
+    QMAGAZINE(60Rnd_65x39_Caseless_msbs_mag_tracers)
 
 class CfgMagazines {
 
     //= Ammo
     class 150Rnd_762x51_Box;
+    class 30Rnd_65x39_caseless_msbs_mag;
 
     #include "CfgMagazines\762x51.inc"
+    #include "CfgMagazines\65x39_Caseless.inc"
+
 
     //= Grenades & Shells
     class ACE_CTS9;
