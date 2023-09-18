@@ -19,7 +19,10 @@
     QMAGAZINE(6Rnd_Shotgun_Incendiary), \
     QMAGAZINE(12_Rnd_Shotgun_Incendiary), \
     QMAGAZINE(60Rnd_65x39_Caseless_msbs_mag),\
-    QMAGAZINE(60Rnd_65x39_Caseless_msbs_mag_tracers)
+    QMAGAZINE(60Rnd_65x39_Caseless_msbs_mag_tracers), \
+    QMAGAZINE(60Rnd_65x39_Caseless_msbs_mag_tracers_blue), \
+    QMAGAZINE(60Rnd_65x39_Caseless_msbs_mag_tracers_green), \
+    QMAGAZINE(60Rnd_65x39_Caseless_msbs_mag_tracers_yellow)
 
 class CfgMagazines {
 
