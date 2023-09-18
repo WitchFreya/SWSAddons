@@ -8,6 +8,9 @@ class WEAPON(SBR55) : OPTRE_BR55 {
     model = "\OPTRE_Weapons\BR\BR";
     cursor = QWEAPON(Smartlink);
 
+    recoil = "recoil_dmr_05";
+    recoilProne = "assaultRifleBase";
+
     class WeaponSlotsInfo : WeaponSlotsInfo {
         mass = 45;
         class PointerSlot : PointerSlot {
@@ -19,6 +22,8 @@ class WEAPON(SBR55) : OPTRE_BR55 {
     };
 
     class Single : Single {
+        recoil = "recoil_single_dmr";
+        recoilProne = "recoil_single_prone_dmr";
         dispersion = 0.0005;
         minRange = 0;
         minRangeProbab = 0.8;
@@ -34,8 +39,8 @@ class WEAPON(SBR55) : OPTRE_BR55 {
         soundBurst = 0;
         burst = 3;
         reloadTime = 0.06;
-        recoil = "recoil_auto_mx";
-        recoilProne = "recoil_auto_prone_mx";
+        recoil = "recoil_auto_dmr";
+        recoilProne = "recoil_auto_prone_dmr";
         dispersion = 0.0005;
         minRange = 1;
         minRangeProbab = 0.8;
