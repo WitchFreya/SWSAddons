@@ -50,4 +50,11 @@ class CfgMagazineWells {
             "OPTRE_36Rnd_95x40_Mag_Tracer"
         };
     };
+
+    class MX_65x39_MSBS {
+        GVAR(Magazines)[] = {
+            QMAGAZINE(60Rnd_65x39_Caseless_msbs_mag),
+            QMAGAZINE(60Rnd_65x39_Caseless_msbs_mag_tracers)
+        };
+    };
 };
