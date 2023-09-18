@@ -20,8 +20,10 @@
 class CfgAmmo {
     //== Bullets
     class OPTRE_B_762x51_Ball;
+    class BulletBase;
 
     #include "CfgAmmo\762x51.inc"
+    #include "CfgAmmo\65x39_Caseless.inc"
 
     //== Grenades & Shells
     class OPTRE_G_M9_Frag;
