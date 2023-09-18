@@ -53,11 +53,21 @@ class CfgMagazineWells {
 
     class MX_65x39_MSBS {
         GVAR(Magazines)[] = {
-            QMAGAZINE(60Rnd_65x39_Caseless_msbs_mag),
-            QMAGAZINE(60Rnd_65x39_Caseless_msbs_mag_tracers),
-            QMAGAZINE(60Rnd_65x39_Caseless_msbs_mag_tracers_blue),
-            QMAGAZINE(60Rnd_65x39_Caseless_msbs_mag_tracers_yellow),
-            QMAGAZINE(60Rnd_65x39_Caseless_msbs_mag_tracers_green)
+            QMAGAZINE(60Rnd_65x39_Caseless_msbs),
+            QMAGAZINE(60Rnd_65x39_Caseless_msbs_tracers),
+            QMAGAZINE(60Rnd_65x39_Caseless_msbs_tracers_blue),
+            QMAGAZINE(60Rnd_65x39_Caseless_msbs_tracers_yellow),
+            QMAGAZINE(60Rnd_65x39_Caseless_msbs_tracers_green)
+        };
+    };
+
+    class MX_65x39 {
+        GVAR(Magazines)[] = {
+            QMAGAZINE(60Rnd_65x39_Caseless),
+            QMAGAZINE(60Rnd_65x39_Caseless_tracers),
+            QMAGAZINE(60Rnd_65x39_Caseless_tracers_yellow),
+            QMAGAZINE(60Rnd_65x39_Caseless_tracers_blue),
+            QMAGAZINE(60Rnd_65x39_Caseless_tracers_green)
         };
     };
 };

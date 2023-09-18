@@ -18,21 +18,26 @@
     QMAGAZINE(DOUBLES(C7Sx,Sticky)), \
     QMAGAZINE(6Rnd_Shotgun_Incendiary), \
     QMAGAZINE(12_Rnd_Shotgun_Incendiary), \
-    QMAGAZINE(60Rnd_65x39_Caseless_msbs_mag),\
-    QMAGAZINE(60Rnd_65x39_Caseless_msbs_mag_tracers), \
-    QMAGAZINE(60Rnd_65x39_Caseless_msbs_mag_tracers_blue), \
-    QMAGAZINE(60Rnd_65x39_Caseless_msbs_mag_tracers_green), \
-    QMAGAZINE(60Rnd_65x39_Caseless_msbs_mag_tracers_yellow)
+    QMAGAZINE(60Rnd_65x39_Caseless_msbs),\
+    QMAGAZINE(60Rnd_65x39_Caseless_msbs_tracers), \
+    QMAGAZINE(60Rnd_65x39_Caseless_msbs_tracers_blue), \
+    QMAGAZINE(60Rnd_65x39_Caseless_msbs_tracers_green), \
+    QMAGAZINE(60Rnd_65x39_Caseless_msbs_tracers_yellow), \
+    QMAGAZINE(60Rnd_65x39_Caseless), \
+    QMAGAZINE(60Rnd_65x39_Caseless_tracers), \
+    QMAGAZINE(60Rnd_65x39_Caseless_tracers_yellow), \
+    QMAGAZINE(60Rnd_65x39_Caseless_tracers_blue), \
+    QMAGAZINE(60Rnd_65x39_Caseless_tracers_green)
 
 class CfgMagazines {
 
     //= Ammo
     class 150Rnd_762x51_Box;
     class 30Rnd_65x39_caseless_msbs_mag;
+    class 30Rnd_65x39_caseless_black_mag;
 
     #include "CfgMagazines\762x51.inc"
     #include "CfgMagazines\65x39_Caseless.inc"
-
 
     //= Grenades & Shells
     class ACE_CTS9;
