@@ -247,6 +247,7 @@ class CfgVehicles {
     class VTOL_Base_F;
     class B_MBT_01_cannon_F;
     class Land_Device_slingloadable_F;
+    class ThingX;
 
     class VES_M12_APC_Base : OPTRE_M12_FAV_APC { CBA_PATCH; };
     class VES_IFV76_A : B_APC_Wheeled_01_cannon_F { CBA_PATCH; };
@@ -528,4 +529,8 @@ class CfgVehicles {
     class Hogosha_D77HTCI_A : OPTRE_Pelican_armed { CBA_PATCH; };
     class OPTRE_FC_Locust : B_MBT_01_cannon_F { CBA_PATCH; };
     class Crows_Emp_Device : Land_Device_slingloadable_F { CBA_PATCH; };
+    class Lantern_01_base_F : ThingX { CBA_PATCH; };
+    class SpaceshipCapsule_01_F : ThingX { CBA_PATCH; };
+    class OPTRE_FC_Spectre_Base : B_MBT_01_cannon_F { CBA_PATCH; };
+    class OPTRE_FC_SAM_Wraith_Needle : OPTRE_FC_Wraith { CBA_PATCH; };
 };

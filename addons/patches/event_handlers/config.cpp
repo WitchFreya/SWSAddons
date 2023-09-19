@@ -10,7 +10,7 @@ class CfgPatches
         weapons[] = { };
         magazines[] = { };
         ammo[] = { };
-        requiredAddons[] = { };
+        requiredAddons[] = { "crowsEW_emp" };
         addonRootClass = "SWS_Patches";
     };
 };
