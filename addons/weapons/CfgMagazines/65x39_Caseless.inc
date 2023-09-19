@@ -47,7 +47,7 @@ class DOUBLES(C_MAG(60),Tracers_Green) : DOUBLES(C_MAG(60),Tracers)
 #define QMAG_NAME(var) QUOTE(MAG_NAME(var))
 #define C_MAG(var) MAGAZINE(var##Rnd_65x39_Caseless)
 
-class C_MAG(60) : 30Rnd_65x39_caseless_black_mag
+class C_MAG(60) : 100Rnd_65x39_caseless_black_mag
 {
     CLEARANCE(RESTRICTED/DECWHI);
     ITEM_META(2);

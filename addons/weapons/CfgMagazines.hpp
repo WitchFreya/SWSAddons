@@ -27,14 +27,20 @@
     QMAGAZINE(60Rnd_65x39_Caseless_tracers), \
     QMAGAZINE(60Rnd_65x39_Caseless_tracers_yellow), \
     QMAGAZINE(60Rnd_65x39_Caseless_tracers_blue), \
-    QMAGAZINE(60Rnd_65x39_Caseless_tracers_green)
+    QMAGAZINE(60Rnd_65x39_Caseless_tracers_green), \
+    QMAGAZINE(3Rnd_FlareSmoke_Blue), \
+    QMAGAZINE(3Rnd_FlareSmoke_Green), \
+    QMAGAZINE(3Rnd_FlareSmoke_Orange), \
+    QMAGAZINE(3Rnd_FlareSmoke_Purple), \
+    QMAGAZINE(3Rnd_FlareSmoke_Red), \
+    QMAGAZINE(3Rnd_FlareSmoke_Yellow)
 
 class CfgMagazines {
 
     //= Ammo
     class 150Rnd_762x51_Box;
     class 30Rnd_65x39_caseless_msbs_mag;
-    class 30Rnd_65x39_caseless_black_mag;
+    class 100Rnd_65x39_caseless_black_mag;
 
     #include "CfgMagazines\762x51.inc"
     #include "CfgMagazines\65x39_Caseless.inc"
@@ -45,11 +51,18 @@ class CfgMagazines {
     class M319_HE_Grenade_Shell;
     class M319_HEDP_Grenade_Shell;
     class OPTRE_c7_remote_throwable_sticky_mag;
+    class OPTRE_signalSmokeB;
+    class OPTRE_signalSmokeG;
+    class OPTRE_signalSmokeO;
+    class OPTRE_signalSmokeP;
+    class OPTRE_signalSmokeR;
+    class OPTRE_signalSmokeY;
 
     #include "CfgMagazines\M3Sx.inc"
     #include "CfgMagazines\M9Sx.inc"
     #include "CfgMagazines\9Bang.inc"
     #include "CfgMagazines\C7Sx.inc"
+    #include "CfgMagazines\UGLSmokeFlares.inc"
 
     // Rockets
     class MRAWS_HEAT_F;

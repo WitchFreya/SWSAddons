@@ -44,7 +44,7 @@ class WEAPON(SM247): Dmns_M247_GPMG {
 
     class WeaponSlotsInfo : WeaponSlotsInfo {
         class PointerSlot : PointerSlot {
-            compatibleItems[] = {};
+            compatibleItems[] = {ATT_POINTER_OPTRE_RAIL_M12};
         };
     };
 };

@@ -4,8 +4,24 @@ class CfgMagazineWells {
             QGSMAGAZINE(M3Sx,1Rnd),
             QGSMAGAZINE(M3Sx,3Rnd),
             QGSMAGAZINE(M9Sx,1Rnd),
-            QGSMAGAZINE(9Bang,1Rnd),
-            QGSMAGAZINE(9Bang,3Rnd)
+            QMAGAZINE(3Rnd_FlareSmoke_Blue),
+            QMAGAZINE(3Rnd_FlareSmoke_Green),
+            QMAGAZINE(3Rnd_FlareSmoke_Orange),
+            QMAGAZINE(3Rnd_FlareSmoke_Purple),
+            QMAGAZINE(3Rnd_FlareSmoke_Red),
+            QMAGAZINE(3Rnd_FlareSmoke_Yellow),
+            "3Rnd_Smoke_Grenade_Shell",
+            "3Rnd_SmokeGreen_Grenade_Shell",
+            "3Rnd_SmokeOrange_Grenade_Shell",
+            "3Rnd_SmokePurple_Grenade_Shell",
+            "3Rnd_SmokeRed_Grenade_Shell",
+            "3Rnd_SmokeYellow_Grenade_Shell",
+            "3Rnd_SmokeBlue_Grenade_Shell",
+            "3Rnd_UGL_FlareGreen_F",
+            "3Rnd_UGL_FlareCIR_F",
+            "3Rnd_UGL_FlareRed_F",
+            "3Rnd_UGL_FlareWhite_F",
+            "3Rnd_UGL_FlareYellow_F",
         };
     };
 
@@ -14,8 +30,24 @@ class CfgMagazineWells {
             QGSMAGAZINE(M3Sx,1Rnd),
             QGSMAGAZINE(M3Sx,3Rnd),
             QGSMAGAZINE(M9Sx,1Rnd),
-            QGSMAGAZINE(9Bang,1Rnd),
-            QGSMAGAZINE(9Bang,3Rnd)
+            QMAGAZINE(3Rnd_FlareSmoke_Blue),
+            QMAGAZINE(3Rnd_FlareSmoke_Green),
+            QMAGAZINE(3Rnd_FlareSmoke_Orange),
+            QMAGAZINE(3Rnd_FlareSmoke_Purple),
+            QMAGAZINE(3Rnd_FlareSmoke_Red),
+            QMAGAZINE(3Rnd_FlareSmoke_Yellow),
+            "3Rnd_Smoke_Grenade_Shell",
+            "3Rnd_SmokeGreen_Grenade_Shell",
+            "3Rnd_SmokeOrange_Grenade_Shell",
+            "3Rnd_SmokePurple_Grenade_Shell",
+            "3Rnd_SmokeRed_Grenade_Shell",
+            "3Rnd_SmokeYellow_Grenade_Shell",
+            "3Rnd_SmokeBlue_Grenade_Shell",
+            "3Rnd_UGL_FlareGreen_F",
+            "3Rnd_UGL_FlareCIR_F",
+            "3Rnd_UGL_FlareRed_F",
+            "3Rnd_UGL_FlareWhite_F",
+            "3Rnd_UGL_FlareYellow_F"
         };
     };
 
