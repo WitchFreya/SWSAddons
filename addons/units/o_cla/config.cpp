@@ -77,7 +77,6 @@ class CfgPatches {
             "A3_Characters_F",
             "DMNS_Units",
             "lambs_danger",
-            "OPTRE_ACE_Compat",
             "aceax_ingame",
             "A3_Sounds_F",
             "A3_Sounds_F_Exp",
