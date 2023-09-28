@@ -18,7 +18,7 @@ class CfgPatches
         magazines[] = { CLASSES_MAGAZINES };
         ammo[] = { CLASSES_AMMO };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { "OPTRE_FunctionsLibrary_supercombustion", "LM_OPCAN_WEP_RES", "SWS_Main" };
+        requiredAddons[] = { "OPTRE_FunctionsLibrary_supercombustion", "LM_OPCAN_WEP_RES", "SWS_Main", "Dmns_Weapons_F_MachineGuns" };
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };
