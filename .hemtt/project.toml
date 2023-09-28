@@ -11,9 +11,7 @@ url = "https://github.com/WitchFreya/SWSAddons"
 
 [hemtt.launch.default]
 workshop = [
-    "1267657613", # optre ace compat
     "1572627279", # optre first contact
-    "1572642262", # optre first contact ace compat
     "1659590037", # fireteam zulu - required by 19th
     "1797512739", # operation arsenal expansion for OPTRE
     "1858075458", # LAMBS_Danger
@@ -55,9 +53,7 @@ workshop = [
 workshop = [
     "1224892496", # gruppe adler trenches
     "1251859358", # Zeus and Eden Interiors
-    "1267657613", # optre ace compat
     "1572627279", # optre first contact
-    "1572642262", # optre first contact ace compat
     "1638341685", # dui squad radar
     "1659590037", # fireteam zulu
     "1677267612", # ace medical assistant
@@ -138,9 +134,7 @@ workshop = [
 workshop = [
     "1224892496", # gruppe adler trenches
     "1251859358", # Zeus and Eden Interiors
-    "1267657613", # optre ace compat
     "1572627279", # optre first contact
-    "1572642262", # optre first contact ace compat
     "1638341685", # dui squad radar
     "1659590037", # fireteam zulu
     "1677267612", # ace medical assistant
