@@ -1,7 +1,8 @@
+#include "script_component.hpp"
 #include "faction.inc"
 
 class CfgPatches {
-    class O_CLA {
+    class SUBADDON {
         units[] = {
             "O_CLA_Rifleman_01",
             "O_CLA_Teamlead_01",
@@ -215,6 +216,8 @@ class CfgPatches {
         };
         author = "Bernard ""Egg"" Teller";
         authors[] = {"Bernard ""Egg"" Teller"};
-        addonRootClass = "SWS_Units";
+        VERSION_CONFIG;
+
+        addonRootClass = QUOTE(ADDON);
     };
 };
