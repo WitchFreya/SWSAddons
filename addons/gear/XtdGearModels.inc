@@ -279,29 +279,4 @@ class XtdGearModels
             };
         };
     };
-
-    class CfgVehicles {
-        class SWS_V_UAV_SMQ94 {
-            label = QNAME(ILCS UAV Rucksack [SMQ-94]);
-            author = QUOTE(AUTHOR);
-            options[] = {"Variant"};
-
-            class Variant {
-                label = "Variant";
-                values[] = {"Default","Maid"};
-
-                class Default {
-                    label = "Default";
-                    description = "Standard SMQ-94 design.";
-                };
-
-                class Maid {
-                    label = "Maid";
-                    description = "Maid's custom SMQ-94 design.";
-                };
-            };
-        };
-
-        #include "XtdGearModels\Bag_Hardcase.inc"
-    };
 };

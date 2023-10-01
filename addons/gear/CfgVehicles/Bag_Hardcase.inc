@@ -21,7 +21,7 @@ class VEHICLE(DOUBLES(CLASS_BASE,Medical)) : VEHICLE(DOUBLES(CLASS_BASE,Base)) {
     maximumLoad = 400;
 
     class XtdGearInfo {
-        model = QVEHICLE(CLASS_BASE);
+        model = "SWS_Bag_Hardcase";
         variant = "Medical";
     };
 };
