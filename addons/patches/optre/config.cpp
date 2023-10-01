@@ -1,17 +1,21 @@
-#include "\x\SWS\addons\patches\script_component.hpp"
+#include "script_component.hpp"
 
 #include "CfgAmmo.inc"
 
 class CfgPatches
 {
-    class SWS_Patches_OPTRE
+    class SUBADDON
     {
-        name = "SWS_Patches_OPTRE";
+        name = COMPONENT_NAME;
         units[] = { };
         weapons[] = { };
         magazines[] = { };
         ammo[] = { };
+        requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = { "OPTRE_Weapons_Charges" };
-        addonRootClass = "SWS_Patches";
+        // skipWhenMissingDependencies = 1; // TODO: enable once deps are enumerated
+        VERSION_CONFIG;
+
+        addonRootClass = QUOTE(ADDON);
     };
 };

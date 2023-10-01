@@ -1,18 +1,22 @@
-#include "\x\SWS\addons\patches\script_component.hpp"
+#include "script_component.hpp"
 #include "CfgAmmo.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 
 class CfgPatches
 {
-    class SWS_Patches_Pollution
+    class SUBADDON
     {
-        name = "SWS_Patches_Pollution";
+        name = COMPONENT_NAME;
         units[] = { };
         weapons[] = { };
         magazines[] = { };
         ammo[] = { };
+        requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = { "41ST_ODST_FACTIONS" };
-        addonRootClass = "SWS_Patches";
+        // skipWhenMissingDependencies = 1; // TODO: enable once deps are enumerated
+        VERSION_CONFIG;
+
+        addonRootClass = QUOTE(ADDON);
     };
 };
