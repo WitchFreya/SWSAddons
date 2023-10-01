@@ -13,5 +13,3 @@
 #endif
 
 #include "\x\SWS\addons\main\script_macros.hpp"
-
-
