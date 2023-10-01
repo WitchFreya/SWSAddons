@@ -1,4 +1,4 @@
-#define QHELMET_VARIANTS_POLARIZATION_FN(var0) QHELMET(var0), QHELMET(DOUBLES(var0,dp))
+#define QHELMET_VARIANTS_POLARIZATION_FN(var0) QUOTE(DOUBLES(SWS_Helmet,var0)), QUOTE(TRIPLES(SWS_Helmet,var0,dp))
 #define QHELMET_VARIANTS_GHILLIE_FN(var0)  \
     QHELMET_VARIANTS_POLARIZATION_FN(var0), \
     QHELMET_VARIANTS_POLARIZATION_FN(DOUBLES(var0,Ghillie))
@@ -47,8 +47,8 @@
     QWEAPONS_FN(Orange), \
     QWEAPONS_FN(Purple), \
     QWEAPONS_FN(Red), \
-    QHELMET(Maid_Recon), \
-    QHELMET(TRIPLES(Maid,Recon,dp))
+    "SWS_Helmet_Maid_Recon", \
+    "SWS_Helmet_Maid_Recon_dp"
 
 #define C_GEAR(varName,varVisorColor)   \
     C_HELMET(varName,varVisorColor);    \
@@ -62,7 +62,7 @@ class CfgWeapons
         class ItemInfo;
     };
     class OPTRE_UNSC_CH252D_Helmet_Base;
-    class HELMET(OPTRE_UNSC_CH252D_Helmet_Base): OPTRE_UNSC_CH252D_Helmet_Base {
+    class SWS_Helmet_OPTRE_UNSC_CH252D_Helmet_Base : OPTRE_UNSC_CH252D_Helmet_Base {
         ITEM_META(0);
         class ItemInfo;
     };

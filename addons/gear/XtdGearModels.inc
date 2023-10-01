@@ -39,27 +39,27 @@
     VEST_GEAR_INFO_ONE(name,Marksman)
 
 #define HELMET_GEAR_INFO_BASE(name)                         \
-    class HELMET(name)                                      \
+    class DOUBLES(SWS_Helmet,name)                                     \
     {                                                       \
-        model = QUOTE(TRIPLES(PREFIX,Operative,Helmet));    \
+        model = "SWS_Operative_Helmet";    \
         operative = QUOTE(name);                            \
         polarization = "Yes";                               \
         collar = "No";                                      \
         ghillie = "No";                                     \
     };                                                      \
-    class HELMET(DOUBLES(name,dp)) : HELMET(name)           \
+    class TRIPLES(SWS_Helmet,name,dp) : DOUBLES(SWS_Helmet,name)           \
     {                                                       \
         polarization = "No";                                \
     }
 
 #define HELMET_GEAR_INFO_VARIANT(name,variant,varCollar,varGhillie)         \
-    class HELMET(DOUBLES(name,variant)) : HELMET(name)                      \
+    class TRIPLES(SWS_Helmet,name,variant) : DOUBLES(SWS_Helmet,name)                      \
     {                                                                       \
         polarization = "Yes";                                               \
         collar = QUOTE(varCollar);                                          \
         ghillie = QUOTE(varGhillie);                                        \
     };                                                                      \
-    class HELMET(TRIPLES(name,variant,dp)) : HELMET(DOUBLES(name,variant))  \
+    class TRIPLES(SWS_Helmet,DOUBLES(name,variant),dp) : TRIPLES(SWS_Helmet,name,variant) \
     {                                                                       \
         polarization = "No";                                                \
     }
