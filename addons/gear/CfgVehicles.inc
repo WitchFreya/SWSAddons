@@ -41,7 +41,7 @@ class CfgVehicles {
             "V_FZ_Armor\Data\Backpacks\V_ILCS_UAV_CO"
         };
         class AssembleInfo : AssembleInfo {
-            assembleTo = QVEHICLE(UAV_SMQ94);
+            assembleTo = "SWS_V_UAV_SMQ94";
         };
         class XtdGearInfo {
             model = "SWS_V_UAV_SMQ94";
