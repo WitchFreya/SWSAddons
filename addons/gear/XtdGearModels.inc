@@ -43,25 +43,15 @@
     {                                                       \
         model = "SWS_Operative_Helmet";    \
         operative = QUOTE(name);                            \
-        polarization = "Yes";                               \
         collar = "No";                                      \
         ghillie = "No";                                     \
-    };                                                      \
-    class TRIPLES(SWS_Helmet,name,dp) : DOUBLES(SWS_Helmet,name)           \
-    {                                                       \
-        polarization = "No";                                \
     }
 
 #define HELMET_GEAR_INFO_VARIANT(name,variant,varCollar,varGhillie)         \
     class TRIPLES(SWS_Helmet,name,variant) : DOUBLES(SWS_Helmet,name)                      \
     {                                                                       \
-        polarization = "Yes";                                               \
         collar = QUOTE(varCollar);                                          \
         ghillie = QUOTE(varGhillie);                                        \
-    };                                                                      \
-    class TRIPLES(SWS_Helmet,DOUBLES(name,variant),dp) : TRIPLES(SWS_Helmet,name,variant) \
-    {                                                                       \
-        polarization = "No";                                                \
     }
 
 #define HELMET_GEAR_INFO(name)                              \
@@ -96,7 +86,7 @@ class XtdGearModels
         {
             label = QNAME(Operative Helmets);
             icon = "\sws_main\data\icon_sws_ca.paa";
-            options[] = {"Operative", "Polarization", "Collar", "Ghillie"};
+            options[] = {"Operative", "Collar", "Ghillie"};
             class Operative
             {
                 label = "Operative";
@@ -115,23 +105,6 @@ class XtdGearModels
                 XTDGEARMODEL_OPERATIVE_HELMET(Kitty);
                 XTDGEARMODEL_OPERATIVE_HELMET(Hurricane);
                 XTDGEARMODEL_OPERATIVE_HELMET(Roman);
-            };
-
-            class Polarization
-            {
-                values[] = {"Yes", "No"};
-
-                class Yes
-                {
-                    label = "Yes";
-                    description = "Your visor will be opaque, toggled by the HUD key.";
-                };
-
-                class No
-                {
-                    label = "No";
-                    description = "Your visor will be translucent, toggled by the HUD key.";
-                };
             };
 
             class Collar
@@ -172,7 +145,7 @@ class XtdGearModels
 
         class TRIPLES(PREFIX,Color,Helmet) : TRIPLES(PREFIX,Operative,Helmet) {
             label = QNAME(Generic Helmets);
-            options[] = {"Color", "Polarization", "Collar", "Ghillie"};
+            options[] = {"Color", "Collar", "Ghillie"};
             delete Operative;
             class Color {
                 values[] = {"Blue","Gold","Green","Orange","Purple","Red"};

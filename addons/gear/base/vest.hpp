@@ -344,7 +344,7 @@ All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With
 
 #define C_VEST_BASE(varName,varTextures)                        \
     class VEST(varName) : VEST(Base) {                          \
-        SCOPE(2);                                               \
+        ITEM_META(2);                                            \
         displayName = QNAME(Vest (varName));                     \
         hiddenSelectionsTextures[] = { varTextures };           \
     };                                                          \

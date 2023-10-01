@@ -33,6 +33,7 @@ class SWS_Helmet_Base : SWS_HELMET_OPTRE_UNSC_CH252D_Helmet_Base
 
 class SWS_Helmet_Base_dp : SWS_Helmet_Base
 {
+    scope = 1;
     model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
     hiddenSelections[] = {HELMET_SELECTIONS_BASE_DP, "H_Ghillie", HELMET_SELECTIONS_COLLAR};
     hiddenSelectionsTextures[] = {
@@ -52,7 +53,7 @@ class SWS_Helmet_Base_dp : SWS_Helmet_Base
 
 #define C_HELMET_BASE(varName,texHelmet,texRest)                        \
     class DOUBLES(SWS_Helmet,varName): SWS_Helmet_Base {                \
-        SCOPE(2);                                                       \
+        ITEM_META(2);                                                       \
         displayName = QNAME(Helmet (name));                             \
         hiddenSelectionsTextures[] = {ARR_2(texHelmet,texRest)};        \
         class ItemInfo : ItemInfo {                                     \
@@ -60,7 +61,7 @@ class SWS_Helmet_Base_dp : SWS_Helmet_Base
         };                                                              \
     };                                                                  \
     class TRIPLES(SWS_Helmet,varName,dp): SWS_Helmet_Base_dp {          \
-        SCOPE(2);                                                       \
+        ITEM_META(1);                                                       \
         displayName = QNAME(Helmet (name));                             \
         hiddenSelectionsTextures[] = {texHelmet,QPATHTOF(data\textures\visr_clr_ca.paa)};     \
         class ItemInfo : ItemInfo {                                     \
