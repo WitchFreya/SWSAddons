@@ -1,4 +1,4 @@
-class WEAPON(SM247): Dmns_M247_GPMG {
+class SWS_Weapon_SM247: Dmns_M247_GPMG {
     WEAPON_META(SM247,2);
     CLEARANCE(RESTRICTED/DECWHI);
     displayName = QNAME(SM247);

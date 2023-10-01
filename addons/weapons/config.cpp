@@ -3,7 +3,7 @@
 #include "CfgEventHandlers.hpp"
 #include "CfgAmmo.hpp"
 #include "CfgMagazines.hpp"
-#include "CfgWeapons.hpp"
+#include "CfgWeapons.inc"
 #include "CfgMagazineWells.hpp"
 #include "XtdGearModels.hpp"
 #include "CfgWeaponCursors.inc"

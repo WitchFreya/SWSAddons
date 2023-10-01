@@ -1,26 +1,36 @@
+#define CLASSES_UNITS \
+    "SWS_U_UAV_Antimine"
+
 #define CLASSES_VEHICLES \
-    QBAG(VEH_UAV(SMQ94)), \
-    QBAG(VEH_UAV(DOUBLES(SMQ94,Maid))), \
-    QBAG(VEH_UAV(Demining)), \
-    QVEH_UAV(Demining), \
-    QUNIT(UAV_Antimine), \
-    QVEHICLE(Bag_Hardcase), \
-    QVEHICLE(DOUBLES(Bag_Hardcase,Medical)), \
-    QVEHICLE(DOUBLES(Bag_Hardcase,Sawbones)), \
-    QVEHICLE(DOUBLES(Bag_Hardcase,Bait)), \
-    QVEHICLE(DOUBLES(Bag_Hardcase,Vertigo))
+    "SWS_Pack_SWS_V_UAV_Demining", \
+    "SWS_Pack_SWS_V_UAV_SMQ94", \
+    "SWS_Pack_SWS_V_UAV_SMQ94_Maid", \
+    "SWS_V_Bag_Hardcase_Base", \
+    "SWS_V_Bag_Hardcase_Blue", \
+    "SWS_V_Bag_Hardcase_Medical", \
+    "SWS_V_Bag_Hardcase_Sawbones", \
+    "SWS_V_Bag_Hardcase_Vertigo", \
+    "SWS_V_UAV_Demining", \
+    "SWS_V_UAV_SMQ94", \
+    "SWS_V_UAV_SMQ94_Maid", \
+    CLASSES_UNITS
+
 
 class AssembleInfo;
 class TextureSources;
+class Turrets;
+class MainTurret;
+class HitPoints;
+class HitHull;
+
 class CfgVehicles {
     class OPTRE_ONI_Researcher_Suitcase;
-
     class DMNS_UAV_01_backpack_F;
-    class BAG(DMNS_UAV_01_backpack_F_base): DMNS_UAV_01_backpack_F {
-        ITEM_META(0);
-    };
+    class UAV_01_base_F;
 
-    class BAG(VEH_UAV(SMQ94)): BAG(DMNS_UAV_01_backpack_F_base) {
+    #include "CfgVehicles\UAV_SMQ94.inc"
+
+    class BAG(VEH_UAV(SMQ94)): DMNS_UAV_01_backpack_F {
         ITEM_META(2);
         displayName = QNAME(ILCS UAV Rucksack [MQ-94]);
         picture = "\OPTRE_weapons\backpacks\icons\rucksack_black";

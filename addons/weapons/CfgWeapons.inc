@@ -1,15 +1,15 @@
 #define CLASSES_WEAPON      \
-    QWEAPON(AR0M37),        \
-    QWEAPON(AR0M37_GL),     \
-    QWEAPON(AR0M37_SHT),    \
-    QWEAPON(SM247), \
-    QWEAPON(MA5BSx), \
-    QWEAPON(DOUBLES(MA5BSx,GL)), \
-    QOPTIC(Smartlink), \
-    QWEAPON(DOUBLES(M24RL_D,Loaded)), \
-    QWEAPON(WEAPON(SBR55)), \
-    WEAPON(ARMXS), \
-    WEAPON(ARMXS_GL)
+    "SWS_Weapon_AR0M37",        \
+    "SWS_Weapon_AR0M37_GL",     \
+    "SWS_Weapon_AR0M37_SHT",    \
+    "SWS_Weapon_SM247", \
+    "SWS_Weapon_MA5BSx", \
+    "SWS_Weapon_MA5BSx_GL", \
+    "SWS_Optic_Smartlink", \
+    "SWS_Weapon_M24RL_D_Loaded", \
+    "SWS_Weapon_SBR55"), \
+    "SWS_Weapon_ARMXS", \
+    "SWS_Weapon_ARMXS_GL"
 
 class WeaponSlotsInfo;
 class MuzzleSlot;
@@ -81,5 +81,5 @@ class CfgWeapons {
 };
 
 class CBA_DisposableLaunchers {
-    WEAPON(M24RL_D)[] = { QWEAPON(DOUBLES(M24RL_D,Loaded)), QWEAPON(DOUBLES(M24RL_D,Used)) };
+    SWS_Weapon_M24RL_D[] = { "SWS_Weapon_M24RL_D_Loaded", "SWS_Weapon_M24RL_D_Used" };
 };
