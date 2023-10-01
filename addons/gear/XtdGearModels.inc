@@ -281,7 +281,7 @@ class XtdGearModels
     };
 
     class CfgVehicles {
-        class VEH_UAV(SMQ94) {
+        class SWS_V_UAV_SMQ94 {
             label = QNAME(ILCS UAV Rucksack [SMQ-94]);
             author = QUOTE(AUTHOR);
             options[] = {"Variant"};

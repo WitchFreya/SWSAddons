@@ -1,4 +1,4 @@
-class VEH_UAV(Demining) : C_IDAP_UAV_06_antimine_F
+class SWS_V_UAV_Demining : C_IDAP_UAV_06_antimine_F
 {
     ITEM_META(2);
     displayName = QNAME(Demining Drone);
@@ -8,11 +8,11 @@ class VEH_UAV(Demining) : C_IDAP_UAV_06_antimine_F
     typicalCargo[] = {QUNIT(UAV_Antimine)};
     class AssembleInfo : AssembleInfo
     {
-        dissasembleTo[] = {QBAG(VEH_UAV(Demining))};
+        dissasembleTo[] = {QBAG(SWS_V_UAV_Demining)};
     };
 };
 
-class BAG(VEH_UAV(Demining)) : C_IDAP_UAV_06_antimine_backpack_F
+class BAG(SWS_V_UAV_Demining) : C_IDAP_UAV_06_antimine_backpack_F
 {
     ITEM_META(2);
     displayName = QNAME(UAV Bag (Demining));
@@ -21,7 +21,7 @@ class BAG(VEH_UAV(Demining)) : C_IDAP_UAV_06_antimine_backpack_F
     class AssembleInfo : AssembleInfo
     {
         displayName = QNAME(UAV Bag (Demining));
-        assembleTo = QVEH_UAV(Demining);
+        assembleTo = "SWS_V_UAV_Demining";
     };
 };
 
