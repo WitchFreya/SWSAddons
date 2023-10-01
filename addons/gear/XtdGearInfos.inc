@@ -37,25 +37,15 @@
     {                                                   \
         model = QUOTE(TRIPLES(PREFIX,varType,Helmet));  \
         varType = QUOTE(name);                          \
-        polarization = "Yes";                           \
         collar = "No";                                  \
         ghillie = "No";                                 \
-    };                                                  \
-    class TRIPLES(SWS_Helmet,name,dp) : DOUBLES(SWS_Helmet,name)      \
-    {                                                   \
-        polarization = "No";                            \
     }
 
 #define HELMET_GEAR_INFO_VARIANT(name,variant,varCollar,varGhillie)         \
     class TRIPLES(SWS_Helmet,name,variant) : DOUBLES(SWS_Helmet,name)          \
     {                                                                       \
-        polarization = "Yes";                                               \
         collar = QUOTE(varCollar);                                          \
         ghillie = QUOTE(varGhillie);                                        \
-    };                                                                      \
-    class TRIPLES(SWS_Helmet,DOUBLES(name,variant),dp) : TRIPLES(SWS_Helmet,name,variant)  \
-    {                                                                       \
-        polarization = "No";                                                \
     }
 
 #define HELMET_GEAR_INFO(name,varType)                      \
