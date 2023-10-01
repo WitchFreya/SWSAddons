@@ -2,8 +2,6 @@
 
 #include "RscDisplayMain.hpp"
 #include "CfgLoadingScreens.hpp"
-#include "XtdGearInfos.inc"
-#include "XtdGearModels.inc"
 
 class CfgPatches
 {
