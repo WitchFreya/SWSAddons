@@ -1,4 +1,5 @@
 class CowsSlot;
+class PointerSlot;
 
 class CfgWeapons {
     class Rifle;
