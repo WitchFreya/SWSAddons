@@ -336,14 +336,14 @@ All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With
     "CustomKit_Scorch"
 
 #define C_VEST_GHILLIE(varName,varSelections)                 \
-    class DOUBLES(VEST(varName),Ghillie): VEST(varName) {   \
+    class SWS_Vest_##varName##_Ghillie: SWS_Vest_##varName {   \
         class ItemInfo: ItemInfo {                          \
             hiddenSelections[] = {varSelections};           \
         };                                                  \
     }
 
 #define C_VEST_BASE(varName,varTextures)                        \
-    class VEST(varName) : VEST(Base) {                          \
+    class SWS_Vest_##varName : SWS_Vest_Base {                          \
         ITEM_META(2);                                            \
         displayName = QNAME(Vest (varName));                     \
         hiddenSelectionsTextures[] = { varTextures };           \
@@ -351,7 +351,8 @@ All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With
     C_VEST_GHILLIE(varName,VEST_SELECTIONS_STANDARD)
 
 #define C_VEST_VARIANT(varName,varVariant,selections)               \
-    class DOUBLES(VEST(varName),varVariant): VEST(varName) {        \
+    class SWS_Vest_##varName##_##varVariant : SWS_Vest_##varName \
+    {        \
         class ItemInfo: ItemInfo {                                  \
             hiddenSelections[] = {ARR_2(selections,"A_Ghillie")};   \
         };                                                          \
@@ -376,7 +377,7 @@ All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With
     C_VEST_VARIANT(varName,Lead,VEST_SELECTIONS_LEAD)
 
 
-class VEST(Base) : VEST(OPTRE_UNSC_M52D_Armor)
+class SWS_Vest_Base : SWS_Vest_OPTRE_UNSC_M52D_Armor
 {
     /** Armor Level is meaningless anyway... */
     descriptionShort = "Armor Level: ODST";

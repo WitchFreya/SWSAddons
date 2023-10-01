@@ -8,7 +8,7 @@
 
 #define QHELMETS_FN(var0) QHELMET_VARIANTS_COLLAR_FN(var0)
 
-#define QVEST_VARIANTS_GHILLIE_FN(var0) QVEST(var0), QVEST(DOUBLES(var0,Ghillie))
+#define QVEST_VARIANTS_GHILLIE_FN(var0) QUOTE(SWS_Vest_##var0), QUOTE(SWS_Vest_##var0##_Ghillie)
 #define QVEST_VARIANTS_CONFIGURATION_FN(var0)               \
     QVEST_VARIANTS_GHILLIE_FN(var0),                        \
     QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Demolitions)),   \
@@ -57,7 +57,7 @@
 class CfgWeapons
 {
     class OPTRE_UNSC_M52D_Armor;
-    class VEST(OPTRE_UNSC_M52D_Armor): OPTRE_UNSC_M52D_Armor {
+    class SWS_Vest_OPTRE_UNSC_M52D_Armor : OPTRE_UNSC_M52D_Armor {
         ITEM_META(0);
         class ItemInfo;
     };

@@ -1,25 +1,25 @@
 #define VEST_GEAR_INFO_ONE(name,varType,varVariant)                                 \
-    class VEST(DOUBLES(name,varVariant)) : VEST(name)                               \
+    class SWS_Vest_##name##_##varVariant : SWS_Vest_##name                             \
     {                                                                               \
-        model = QUOTE(TRIPLES(PREFIX,varType,Armor));                               \
+        model = QUOTE(SWS_##varType##_Armor);                               \
         Operative = QUOTE(name);                                                    \
         Variant = QUOTE(varVariant);                                                \
         Ghillie = "No";                                                             \
     };                                                                              \
-    class VEST(TRIPLES(name,varVariant,Ghillie)) : VEST(DOUBLES(name,varVariant))   \
+    class SWS_Vest_##name##_##varVariant##_Ghillie : SWS_Vest_##name##_##varVariant \
     {                                                                               \
         Ghillie = "Yes";                                                            \
     }
 
 #define VEST_GEAR_INFO(name,varType)                    \
-    class VEST(name)                                    \
+    class SWS_Vest_##name \
     {                                                   \
-        model = QUOTE(TRIPLES(PREFIX,varType,Armor));   \
+        model = QUOTE(SWS_##varType##_Armor);       \
         varType = QUOTE(name);                          \
         Variant = "Standard";                           \
         Ghillie = "No";                                 \
     };                                                  \
-    class VEST(DOUBLES(name,Ghillie)) : VEST(name)      \
+    class SWS_Vest_##name##_Ghillie : SWS_Vest_##name      \
     {                                                   \
         Ghillie = "Yes";                                \
     };                                                  \
