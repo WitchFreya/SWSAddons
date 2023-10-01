@@ -1,4 +1,4 @@
-class HELMET(Maid_Recon): HELMET(Base) {
+class SWS_Helmet_Maid_Recon : SWS_Helmet_Base {
     ITEM_META(2);
     displayName = QNAME(Recon (Maid));
     picture = "\OPTRE_UNSC_Units\army\icons\odst_recon.paa";
@@ -33,7 +33,7 @@ class HELMET(Maid_Recon): HELMET(Base) {
     };
 };
 
-class HELMET(TRIPLES(Maid,Recon,dp)) : DOUBLES(HELMET(Base),dp) {
+class SWS_Helmet_Maid_Recon_dp : SWS_Helmet_Base_dp {
     ITEM_META(1);
     displayName = QNAME(Recon (Maid/Depolarized));
     model = "\OPTRE_UNSC_Units\Army\recon_helmet_dp.p3d";
