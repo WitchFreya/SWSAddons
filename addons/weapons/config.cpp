@@ -5,7 +5,6 @@
 #include "CfgMagazines.hpp"
 #include "CfgWeapons.inc"
 #include "CfgMagazineWells.hpp"
-#include "XtdGearModels.hpp"
 #include "CfgWeaponCursors.inc"
 
 class CfgPatches
@@ -22,7 +21,6 @@ class CfgPatches
             "A3_Weapons_F",
             "A3_Weapons_F_Enoch",
             "EMP_Greystone_PMC",
-
             "ace_arsenal",
             "ace_grenades",
             "OPTRE_ACE_Compat",
