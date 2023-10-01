@@ -6,27 +6,27 @@
     }
 
 #define VEST_GEAR_INFO_ONE(name,varVariant)                                         \
-    class VEST(DOUBLES(name,varVariant)) : VEST(name)                               \
+    class SWS_Vest_##name##_##varVariant : SWS_Vest_##name                            \
     {                                                                               \
         model = QUOTE(TRIPLES(PREFIX,Operative,Armor));                             \
         Operative = QUOTE(name);                                                    \
         Variant = QUOTE(varVariant);                                                \
         Ghillie = "No";                                                             \
     };                                                                              \
-    class VEST(TRIPLES(name,varVariant,Ghillie)) : VEST(DOUBLES(name,varVariant))   \
+    class SWS_Vest_##name##_##varVariant##_Ghillie : SWS_Vest_##name##_##varVariant  \
     {                                                                               \
         Ghillie = "Yes";                                                            \
     }
 
 #define VEST_GEAR_INFO(name)                            \
-    class VEST(name)                                    \
+    class SWS_Vest_##name                                    \
     {                                                   \
         model = QUOTE(TRIPLES(PREFIX,Operative,Armor)); \
         Operative = QUOTE(name);                        \
         Variant = "Standard";                           \
         Ghillie = "No";                                 \
     };                                                  \
-    class VEST(DOUBLES(name,Ghillie)) : VEST(name)      \
+    class SWS_Vest_##name##_Ghillie  : SWS_Vest_##name      \
     {                                                   \
         Ghillie = "Yes";                                \
     };                                                  \
