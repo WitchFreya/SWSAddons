@@ -2,7 +2,6 @@
 
 #include "CfgWeapons.inc"
 #include "CfgVehicles.inc"
-#include "XtdGearModels.inc"
 #include "XtdGearInfos.inc"
 
 class CfgPatches
