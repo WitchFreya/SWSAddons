@@ -2,7 +2,7 @@
 
 class CfgPatches {
     class O_CLA {
-              units[] = {
+        units[] = {
             "O_CLA_Rifleman_01",
             "O_CLA_Teamlead_01",
             "O_CLA_Medic_01",
