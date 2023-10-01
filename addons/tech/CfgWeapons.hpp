@@ -1,8 +1,8 @@
 #define CLASSES_WEAPONS \
     QTERMINAL(Scarlet), \
     "SWS_Weapon_LaserDesignator", \
-    "SWS_Weapon_NVG_NeuralLace", \
-    "SWS_Weapon_NVG_NeuralLace_Maid"
+    "SWS_NVG_NeuralLace", \
+    "SWS_NVG_NeuralLace_Maid"
 
 class CfgWeapons {
     class B_UavTerminal;
@@ -39,7 +39,7 @@ class CfgWeapons {
 		maxRangeProbab = 0.01;
     };
 
-    class SWS_Weapon_NVG_NeuralLace : OPTRE_NVG {
+    class SWS_NVG_NeuralLace : OPTRE_NVG {
         ITEM_META(2);
         CLEARANCE(RESTRICTED/DECWHI);
         displayName = QNAME(Neural Lace);
@@ -61,7 +61,7 @@ class CfgWeapons {
         };
     };
 
-    class SWS_Weapon_NVG_NeuralLace_ONI : SWS_Weapon_NVG_NeuralLace {
+    class SWS_NVG_NeuralLace_ONI : SWS_NVG_NeuralLace {
         ITEM_META(2);
         CLEARANCE(SECRET/DECWHI);
         displayName = QNAME(Neural Lace (ONI));
