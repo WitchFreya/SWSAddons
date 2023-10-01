@@ -1,4 +1,4 @@
-#include "\x\SWS\addons\patches\script_component.hpp"
+#include "script_component.hpp"
 
 #define ATT_POINTER_OPTRE_RAIL "OPTRE_BMR_Laser", "OPTRE_BMR_Vis_Red_Laser", "OPTRE_BMR_MEQ_Flashlight"
 
@@ -7,14 +7,18 @@
 
 class CfgPatches
 {
-    class SWS_Patches_19th
+    class SUBADDON
     {
-        name = "SWS_Patches_19th";
+        name = COMPONENT_NAME;
         units[] = { };
         weapons[] = { };
         magazines[] = { };
         ammo[] = { };
+        requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = { "19th_Weapons_F_BattleRifle", "DMNS_Vehicles_M511_Springbok" };
-        addonRootClass = "SWS_Patches";
+        skipWhenMissingDependencies = 1;
+        VERSION_CONFIG;
+
+        addonRootClass = QUOTE(ADDON);
     };
 };

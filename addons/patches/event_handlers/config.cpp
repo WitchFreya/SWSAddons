@@ -1,16 +1,20 @@
-#include "\x\SWS\addons\patches\script_component.hpp"
+#include "script_component.hpp"
 #include "CfgVehicles.hpp"
 
 class CfgPatches
 {
-    class SWS_Patches_EventHandlers
+    class SUBADDON
     {
-        name = "SWS_Patches_EventHandlers";
+        name = COMPONENT_NAME;
         units[] = { };
         weapons[] = { };
         magazines[] = { };
         ammo[] = { };
+        requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = { "crowsEW_emp" };
-        addonRootClass = "SWS_Patches";
+        // skipWhenMissingDependencies = 1; // TODO: enable once deps are enumerated
+        VERSION_CONFIG;
+
+        addonRootClass = QUOTE(ADDON);
     };
 };
