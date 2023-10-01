@@ -8,3 +8,4 @@ GVAR(MIGRATIONS) = createHashMap;
 
 #include "migrations\v0_1_37.hpp"
 #include "migrations\v0_1_43.hpp"
+#include "migrations\v0_2_0.hpp"
