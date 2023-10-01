@@ -1,4 +1,5 @@
-#define COMPONENT Tech
+#define COMPONENT tech
+#define COMPONENT_BEAUTIFIED Technology
 #include "\x\SWS\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
