@@ -1,6 +1,6 @@
-class VEH_UAV(SMQ94): UAV_01_base_F {
+class SWS_V_UAV_SMQ94 : UAV_01_base_F {
     META;
-    _generalMacro = QVEH_UAV(SMQ94);
+    _generalMacro = "SWS_V_UAV_SMQ94";
     scope = 2;
     displayName = QNAME(SMQ-94 Recon);
     faction = "SWS_UNSC";
@@ -44,7 +44,7 @@ class VEH_UAV(SMQ94): UAV_01_base_F {
                     directionStabilized = 1;
                     visionMode[] = {"Normal", "NVG", "Ti"};
                     thermalMode[] = {0, 1};
-                    gunnerOpticsModel = QPATHTOF(data\optics\melb_flir_wf.p3d);
+                    gunnerOpticsModel = QPATHTOEF(tech,data\optics\melb_flir_wf.p3d);
                 };
 
                 class Medium : Wide {
@@ -52,7 +52,7 @@ class VEH_UAV(SMQ94): UAV_01_base_F {
                     initFov = 0.1;
                     minFov = 0.1;
                     maxFov = 0.1;
-                    gunnerOpticsModel = QPATHTOF(data\optics\melb_flir_w.p3d);
+                    gunnerOpticsModel = QPATHTOEF(tech,data\optics\melb_flir_w.p3d);
                 };
 
                 class Narrow : Wide {
@@ -60,7 +60,7 @@ class VEH_UAV(SMQ94): UAV_01_base_F {
                     initFov = 0.05;
                     minFov = 0.05;
                     maxFov = 0.05;
-                    gunnerOpticsModel = QPATHTOF(data\optics\melb_flir_w2.p3d);
+                    gunnerOpticsModel = QPATHTOEF(tech,data\optics\melb_flir_w2.p3d);
                 };
 
                 class UNarrow : Wide {
@@ -68,7 +68,7 @@ class VEH_UAV(SMQ94): UAV_01_base_F {
                     initFov = 0.01;
                     minFov = 0.01;
                     maxFov = 0.01;
-                    gunnerOpticsModel = QPATHTOF(data\optics\melb_flir_n.p3d);
+                    gunnerOpticsModel = QPATHTOEF(tech,data\optics\melb_flir_n.p3d);
                 };
 
                 class SNarrow : Wide {
@@ -76,7 +76,7 @@ class VEH_UAV(SMQ94): UAV_01_base_F {
                     initFov = 0.005;
                     minFov = 0.005;
                     maxFov = 0.005;
-                    gunnerOpticsModel = QPATHTOF(data\optics\melb_flir_n2.p3d);
+                    gunnerOpticsModel = QPATHTOEF(tech,data\optics\melb_flir_n2.p3d);
                 };
             };
         };
@@ -126,13 +126,13 @@ class VEH_UAV(SMQ94): UAV_01_base_F {
         assembleTo = "";
         displayName = "";
         dissasembleTo[] = {
-            QBAG(VEH_UAV(SMQ94))
+            QBAG(SWS_V_UAV_SMQ94)
         };
     };
     textureList[] = { "Blufor",	1 };
 };
 
-class VEH_UAV(DOUBLES(SMQ94,Maid)): VEH_UAV(SMQ94) {
+class SWS_V_UAV_SMQ94_Maid : SWS_V_UAV_SMQ94 {
     displayName = QNAME(SMQ-94 Recon - Maid);
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\smq_94_maid_co.paa)
@@ -140,7 +140,7 @@ class VEH_UAV(DOUBLES(SMQ94,Maid)): VEH_UAV(SMQ94) {
 
     class AssembleInfo : AssembleInfo {
         dissasembleTo[] = {
-            QBAG(VEH_UAV(DOUBLES(SMQ94,Maid)))
+            QBAG(SWS_V_UAV_SMQ94_Maid)
         };
     };
 };
