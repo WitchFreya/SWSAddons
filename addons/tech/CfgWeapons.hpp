@@ -1,8 +1,8 @@
 #define CLASSES_WEAPONS \
     QTERMINAL(Scarlet), \
-    QWEAPON(LaserDesignator), \
-    QWEAPON(DOUBLES(NVG,NeuralLace)), \
-    QWEAPON(TRIPLES(NVG,NeuralLace,Maid))
+    "SWS_Weapon_LaserDesignator", \
+    "SWS_Weapon_NVG_NeuralLace", \
+    "SWS_Weapon_NVG_NeuralLace_Maid"
 
 class CfgWeapons {
     class B_UavTerminal;
@@ -24,7 +24,7 @@ class CfgWeapons {
         ace_explosives_detonator = 1;
     };
 
-    class WEAPON(LaserDesignator): LaserDesignator_Mounted {
+    class SWS_Weapon_LaserDesignator : LaserDesignator_Mounted {
         ITEM_META(2);
         CLEARANCE(SECRET/DECWHI);
         displayName = QNAME(Laser Designator);
@@ -39,7 +39,7 @@ class CfgWeapons {
 		maxRangeProbab = 0.01;
     };
 
-    class WEAPON(DOUBLES(NVG,NeuralLace)): OPTRE_NVG {
+    class SWS_Weapon_NVG_NeuralLace : OPTRE_NVG {
         ITEM_META(2);
         CLEARANCE(RESTRICTED/DECWHI);
         displayName = QNAME(Neural Lace);
@@ -56,12 +56,12 @@ class CfgWeapons {
         };
 
         class XtdGearInfo {
-            model = QWEAPON(DOUBLES(NVG,NeuralLace));
+            model = "SWS_Weapon_NVG_NeuralLace";
             clearance = "ODST";
         };
     };
 
-    class WEAPON(TRIPLES(NVG,NeuralLace,ONI)): WEAPON(DOUBLES(NVG,NeuralLace)) {
+    class SWS_Weapon_NVG_NeuralLace_ONI : SWS_Weapon_NVG_NeuralLace {
         ITEM_META(2);
         CLEARANCE(SECRET/DECWHI);
         displayName = QNAME(Neural Lace (ONI));

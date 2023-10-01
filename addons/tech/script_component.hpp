@@ -16,5 +16,3 @@
 
 #define TERMINAL(var0) TRIPLES(PREFIX,Term,var0)
 #define QTERMINAL(var0) QUOTE(TERMINAL(var0))
-#define WEAPON(var0) GVAR(DOUBLES(Weapon,var0))
-#define QWEAPON(var0) QUOTE(WEAPON(var0))

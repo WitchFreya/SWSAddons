@@ -1,4 +1,4 @@
- class OPTIC(Smartlink): OPTRE_MA5_SmartLink {
+ class SWS_Optic_Smartlink : OPTRE_MA5_SmartLink {
     ITEM_META(2);
     CLEARANCE(RESTRICTED/DECWHI);
     displayName = QNAME(Smartlink-Sx);
@@ -12,7 +12,7 @@
         modelOptics = "\OPTRE_Weapons\AR\MA5_smartlink.p3d";
         inertia = 0.1;
         class OpticsModes {
-            class OPTIC(Smartlink) {
+            class SWS_Optic_Smartlink {
                 opticsID = 1;
                 useModelOptics = 0;
                 opticsPPEffects[] = { "" };
@@ -29,7 +29,7 @@
                 discreteDistance[] = { 100,200,300,400,500 };
                 discreteDistanceInitIndex = 1;
             };
-            class OPTIC(DOUBLES(Smartlink,Zoom)): OPTIC(Smartlink)	{
+            class SWS_Optic_Smartlink_Zoom : SWS_Optic_Smartlink {
                 opticsID = 2;
                 opticsZoomMin = 0.125;
                 opticsZoomMax=0.125;

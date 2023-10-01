@@ -16,12 +16,10 @@
 
 #define WEAPON_META(var0,var1) \
     ITEM_META(var1);           \
-    baseweapon = QUOTE(WEAPON(var0))
+    baseweapon = QUOTE(DOUBLES(SWS_Weapon,var0))
 
-#define WEAPON(var0) TRIPLES(PREFIX,Weapon,var0)
 #define MAGAZINE(var0) TRIPLES(PREFIX,Magazine,var0)
 #define AMMO(var0) TRIPLES(PREFIX,B,var0)
-#define QWEAPON(var0) QUOTE(WEAPON(var0))
 #define QMAGAZINE(var0) QUOTE(MAGAZINE(var0))
 #define QAMMO(var0) QUOTE(AMMO(var0))
 #define GRENADE(var0) AMMO(DOUBLES(Grenade,var0))
@@ -34,8 +32,6 @@
 #define QGMAGAZINE(var0) QUOTE(GMAGAZINE(var0))
 #define GSMAGAZINE(var0,var1) GMAGAZINE(TRIPLES(var0,var1,Shell))
 #define QGSMAGAZINE(var0,var1) QUOTE(GSMAGAZINE(var0,var1))
-#define OPTIC(var0) TRIPLES(PREFIX,Optic,var0)
-#define QOPTIC(var0) QUOTE(OPTIC(var0))
 
 #define VEHICLE(var0) GVAR(DOUBLES(V,var0))
 #define QVEHICLE(var0) QUOTE(VEHICLE(var0))

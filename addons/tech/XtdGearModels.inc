@@ -1,6 +1,6 @@
 class XtdGearModels {
     class CfgWeapons {
-        class WEAPON(DOUBLES(NVG,NeuralLace)) {
+        class SWS_Weapon_NVG_NeuralLace {
             label = QNAME(NeuralLace Implant);
             author = QUOTE(AUTHOR);
             options[] = {"Clearance"};

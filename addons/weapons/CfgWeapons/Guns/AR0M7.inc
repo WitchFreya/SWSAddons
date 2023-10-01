@@ -4,7 +4,7 @@
     HUD_TotalPosibleBullet = 60; \
     pictureWire = "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\AssaultRifle\AR_IRON.paa"
 
-class WEAPON(AR0M37): LM_OPCAN_AR0M37 {
+class SWS_Weapon_AR0M37 : LM_OPCAN_AR0M37 {
     WEAPON_META(AR0M37,2);
     displayName = QNAME(AR-0M37S 6.5mm);
     picture = QPATHTOF(data\icons\msbs65_ca.paa);
@@ -43,13 +43,13 @@ class WEAPON(AR0M37): LM_OPCAN_AR0M37 {
     };
 
     class XtdGearInfo {
-        model = QWEAPON(Autorifles);
+        model = "SWS_Weapon_Autorifles";
         underbarrel = "None";
         body = "0M37S";
     };
 };
 
-class WEAPON(AR0M37_GL): LM_OPCAN_AR0M37_GL {
+class SWS_Weapon_AR0M37_GL : LM_OPCAN_AR0M37_GL {
     WEAPON_META(AR0M37_GL,2);
     displayName = QNAME(AR-0M37S UGL 6.5mm);
     picture = QPATHTOF(data\icons\msbs65_barrel_ca.paa);
@@ -73,7 +73,7 @@ class WEAPON(AR0M37_GL): LM_OPCAN_AR0M37_GL {
     };
 
     class XtdGearInfo {
-        model = QWEAPON(Autorifles);
+        model = "SWS_Weapon_Autorifles";
         underbarrel = "GL";
         body = "0M37S";
     };
@@ -92,7 +92,7 @@ class WEAPON(AR0M37_GL): LM_OPCAN_AR0M37_GL {
     };
 };
 
-class WEAPON(AR0M37_SHT): LM_OPCAN_AR0M37_SHT {
+class SWS_Weapon_AR0M37_SHT : LM_OPCAN_AR0M37_SHT {
     WEAPON_META(AR0M37_SHT,2);
     displayName = QNAME(AR-0M37S Breacher 6.5mm);
     picture = QPATHTOF(data\icons\msbs65_barrel_ca.paa);
@@ -116,7 +116,7 @@ class WEAPON(AR0M37_SHT): LM_OPCAN_AR0M37_SHT {
     };
 
     class XtdGearInfo {
-        model = QWEAPON(Autorifles);
+        model = "SWS_Weapon_Autorifles";
         underbarrel = "SHT";
         body = "0M37S";
     };

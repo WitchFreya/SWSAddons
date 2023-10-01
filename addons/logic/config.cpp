@@ -13,7 +13,7 @@ class CfgPatches
         units[] = { CLASSES_VEHICLES };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"SWS_Main", "SWS_Gear"};
+        requiredAddons[] = {"SWS_Main" };
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };

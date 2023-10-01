@@ -1,6 +1,6 @@
 class XtdGearModels {
     class CfgWeapons {
-        class WEAPON(Autorifles) {
+        class SWS_Weapon_Autorifles {
             label = QNAME(AR);
             icon = "\sws_main\data\icon_sws_ca.paa";
             options[] = {"Body","Underbarrel"};
@@ -39,7 +39,7 @@ class XtdGearModels {
             };
         };
 
-        class WEAPON(MA5BSx) {
+        class SWS_Weapon_MA5BSx {
             label = QNAME(MA5BSx);
             icon = "\sws_main\data\icon_sws_ca.paa";
             options[] = {"Underbarrel"};

@@ -4,7 +4,7 @@
     HUD_TotalPosibleBullet = 60; \
     pictureWire = "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\AssaultRifle\AR_IRON.paa"
 
-class WEAPON(ARMXS): LM_OPCAN_ARMX
+class SWS_Weapon_ARMXS: LM_OPCAN_ARMX
 {
     WEAPON_META(ARMXS,2);
     displayName = QNAME(ARMXS 6.5mm);
@@ -25,13 +25,13 @@ class WEAPON(ARMXS): LM_OPCAN_ARMX
 
     class XtdGearInfo
     {
-        model = QWEAPON(Autorifles);
+        model = "SWS_Weapon_Autorifles";
         underbarrel = "None";
         body = "MXS";
     };
 };
 
-class WEAPON(ARMXS_GL): LM_OPCAN_ARMX_GL
+class SWS_Weapon_ARMXS_GL : LM_OPCAN_ARMX_GL
 {
     WEAPON_META(ARMXS_GL,2);
     displayName = QNAME(ARMXS UGL 6.5mm);
@@ -52,7 +52,7 @@ class WEAPON(ARMXS_GL): LM_OPCAN_ARMX_GL
 
     class XtdGearInfo
     {
-        model = QWEAPON(Autorifles);
+        model = "SWS_Weapon_Autorifles";
         underbarrel = "GL";
         body = "MXS";
     };
