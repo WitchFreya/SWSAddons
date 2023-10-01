@@ -1,4 +1,5 @@
-#define COMPONENT Gear
+#define COMPONENT gear
+#define COMPONENT_BEAUTIFIED Gear
 #include "\x\SWS\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

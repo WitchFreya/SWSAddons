@@ -1,4 +1,5 @@
-#define COMPONENT Things
+#define COMPONENT things
+#define COMPONENT_BEAUTIFIED Things
 #include "\x\SWS\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

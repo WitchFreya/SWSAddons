@@ -1,4 +1,5 @@
-#define COMPONENT LoadoutMigration
+#define COMPONENT loadoutmigrations
+#define COMPONENT_BEAUTIFIED Loadout Migrations
 #include "\x\SWS\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL

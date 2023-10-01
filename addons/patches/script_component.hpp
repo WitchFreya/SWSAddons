@@ -1,4 +1,5 @@
 #define COMPONENT patches
+#define COMPONENT_BEAUTIFIED Patches
 #include "\x\SWS\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
