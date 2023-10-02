@@ -13,51 +13,6 @@ class XtdGearModels
         class No {};
     };
 
-    class OperativeOption
-    {
-        values[] = {
-            "Rifleman",
-            "Ashes",
-            "Butler",
-            "Demon",
-            "Egg",
-            "Maid",
-            "Polaris",
-            "Rabbit",
-            "Sawbones",
-            "Tiger",
-            "Hound",
-            "Kitty",
-            "Hurricane",
-            "Roman"
-        };
-        class Rifleman {};
-        class Ashes {};
-        class Butler {};
-        class Demon {};
-        class Egg {};
-        class Maid {};
-        class Polaris {};
-        class Rabbit {};
-        class Sawbones {};
-        class Tiger {};
-        class Hound {};
-        class Kitty {};
-        class Hurricane {};
-        class Roman {};
-    };
-
-    class ColorOption
-    {
-        values[] = {"Blue","Gold","Green","Orange","Purple","Red"};
-        class Blue {};
-        class Gold {};
-        class Green {};
-        class Orange {};
-        class Purple {};
-        class Red {};
-    };
-
     #include "CfgVehicles.inc"
     #include "CfgWeapons.inc"
 };
