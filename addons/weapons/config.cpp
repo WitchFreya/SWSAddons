@@ -31,6 +31,7 @@ class CfgPatches
             "OPTRE_Weapons_Sticky",
             "LM_OPCAN_WEP_RES",
             "SWS_Main",
+            "19_UNSC_Weapons", // ammo
             "Dmns_Weapons_F_MachineGuns" };
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
