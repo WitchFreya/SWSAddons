@@ -1,1 +1,1 @@
-#include "\x\SWS\addons\loadoutMigration\script_component.hpp"
+#include "..\script_component.hpp"
