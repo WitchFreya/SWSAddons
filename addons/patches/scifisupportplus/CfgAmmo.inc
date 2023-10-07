@@ -1,3 +1,6 @@
+#define CLASSES_AMMO \
+    "mortar_155mm_AMOS"
+
 class CfgAmmo
 {
     class Default;

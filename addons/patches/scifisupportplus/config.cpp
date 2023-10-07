@@ -10,7 +10,7 @@ class CfgPatches
         units[] = { };
         weapons[] = { };
         magazines[] = { };
-        ammo[] = { };
+        ammo[] = { CLASSES_AMMO };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = { "OPAEX_AirCore", "OPAEX_Glassing", "PHAN_OPAEX" };
         skipWhenMissingDependencies = 1;
