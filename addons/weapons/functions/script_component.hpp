@@ -1,1 +1,1 @@
-#include "\x\SWS\addons\weapons\script_component.hpp"
+#include "\x\sws\addons\weapons\script_component.hpp"
