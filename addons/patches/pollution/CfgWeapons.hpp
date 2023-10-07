@@ -1,15 +1,24 @@
 class CfgWeapons {
     class Default;
-    class ItemInfo: Default {
+    class ItemInfo: Default
+    {
         scope = 1;
     };
-    class Weap_melee_knife : Default {
+    class Weap_melee_knife : Default
+    {
         scope = 1;
     };
-    class 41st_Weap_melee_knife : Default {
+    class 41st_Weap_melee_knife : Default
+    {
         scope = 1;
     };
-    class HitpointsProtectionInfo : Default {
+    class HitpointsProtectionInfo : Default
+    {
+        scope = 1;
+    };
+
+    class WeaponSlotsInfo : Default
+    {
         scope = 1;
     };
 
@@ -17,4 +26,5 @@ class CfgWeapons {
     delete 41st_Weap_melee_knife;
     delete Weap_melee_knife;
     delete HitpointsProtectionInfo;
+    delete WeaponSlotsInfo;
 };

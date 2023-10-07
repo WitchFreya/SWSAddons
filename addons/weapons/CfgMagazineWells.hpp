@@ -74,10 +74,11 @@ class CfgMagazineWells {
 
     class OPTRE_Magwell_BR55 {
         GVAR(Magazines)[] = {
-            // 19th
+            // UNSC Foundries
             "36Rnd_95x40_br_55",
             "36Rnd_95x40_ap_br_55",
-            "36Rnd_95x40_jhp_br_55",
+            "36Rnd_95x40_br_55_tracer",
+            "36Rnd_95x40_ap_br_55_tracer",
             // OPTRE's tracers
             "OPTRE_36Rnd_95x40_Mag_Tracer"
         };

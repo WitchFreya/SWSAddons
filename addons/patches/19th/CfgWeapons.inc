@@ -1,17 +1,10 @@
 class CowsSlot;
 class PointerSlot;
+class WeaponSlotsInfo;
 
 class CfgWeapons {
-    class Rifle;
-    class Rifle_Base_UGL_F : Rifle {
-        class WeaponSlotsInfo;
-    };
-
-    class Launcher;
-	class Launcher_Base_F: Launcher
-	{
-		class WeaponSlotsInfo;
-	};
+    class Rifle_Base_UGL_F;
+	class Launcher_Base_F;
 
     //== Missing optic from OPTRE update
     class arifle_19th_br_55_gl_Base_F : Rifle_Base_UGL_F {
