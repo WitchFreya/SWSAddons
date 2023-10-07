@@ -1,20 +1,19 @@
 #include "script_component.hpp"
-#include "CfgAmmo.hpp"
-#include "CfgWeapons.hpp"
-#include "CfgVehicles.hpp"
+#include "CfgAmmo.inc"
+#include "CfgWeapons.inc"
+#include "CfgVehicles.inc"
 
 class CfgPatches
 {
     class SUBADDON
     {
         name = COMPONENT_NAME;
-        units[] = { };
-        weapons[] = { };
+        units[] = { CLASSES_VEHICLES };
+        weapons[] = { CLASSSES_WEAPONS };
         magazines[] = { };
-        ammo[] = { };
+        ammo[] = { CLASSES_AMMO };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { "41ST_ODST_FACTIONS" };
-        // skipWhenMissingDependencies = 1; // TODO: enable once deps are enumerated
+        requiredAddons[] = { };
         VERSION_CONFIG;
 
         addonRootClass = QUOTE(ADDON);
