@@ -45,6 +45,7 @@
         };\
     }
 
+// Correct the missing ACE hitpoints for TCGM Divinities
 class CfgVehicles {
     class B_Soldier_F;
 

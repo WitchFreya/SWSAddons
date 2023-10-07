@@ -11,8 +11,8 @@ class CfgPatches
         magazines[] = { };
         ammo[] = { };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { };
-        // skipWhenMissingDependencies = 1; // TODO: enable once deps are enumerated
+        requiredAddons[] = { "TCGM_Divinities" };
+        skipWhenMissingDependencies = 1;
         VERSION_CONFIG;
 
         addonRootClass = QUOTE(ADDON);
