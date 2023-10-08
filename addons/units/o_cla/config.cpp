@@ -179,7 +179,6 @@ class CfgPatches {
             "SAG6_Pelicans",
             "SAG6_Pelican_VTOL",
             "A3_Soft_F_Beta_MRAP_03",
-            "SWS_Patches_EventHandlers",
             "A3_Static_F_HMG_02",
             "ace_csw",
             "A3_Static_F",
