@@ -1,20 +1,20 @@
 #include "script_component.hpp"
-
-#include "CfgVehicles.inc"
-#include "CfgWorlds.hpp"
+#include "CfgAmmo.inc"
 
 class CfgPatches
 {
-    class ADDON
+    class SUBADDON
     {
-        name = QUOTE(COMPONENT);
+        name = COMPONENT_NAME;
         units[] = { };
         weapons[] = { };
         magazines[] = { };
         ammo[] = { };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { };
-        author = QUOTE(AUTHOR);
+        requiredAddons[] = { "OPTRE_Weapons_Ammo", "SAG6_Ordinance" };
+        skipWhenMissingDependencies = 1;
         VERSION_CONFIG;
+
+        addonRootClass = QUOTE(ADDON);
     };
 };
