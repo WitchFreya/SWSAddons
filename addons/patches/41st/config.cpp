@@ -11,7 +11,11 @@ class CfgPatches
         magazines[] = { };
         ammo[] = { };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { "Jbad_ConstructionCrane", "Jbad_Misc_Powerline" };
+        requiredAddons[] = {
+            "Retirement",
+            "MyAddon", // I wish I was joking, they actually called it that.
+            "41ST_ODST_FACTIONS",
+            "OPTRE_Vehicles_Pelican"};
         skipWhenMissingDependencies = 1;
         VERSION_CONFIG;
 
