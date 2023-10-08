@@ -39,6 +39,7 @@ workshop = [
 
     # patches
     "1779063631", # zen
+    "2291129343", # improved melee system (dependency of 41st)
     "1790880882", # 41st odst/mfr declassified
     "2359395889", # TCGM_Divinities_2.0
     "2480118782", # Max Women Soldiers
