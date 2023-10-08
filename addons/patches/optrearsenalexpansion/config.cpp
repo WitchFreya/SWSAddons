@@ -1,19 +1,20 @@
 #include "script_component.hpp"
-
 #include "CfgVehicles.inc"
 
 class CfgPatches
 {
-    class ADDON
+    class SUBADDON
     {
-        name = QUOTE(COMPONENT);
+        name = COMPONENT_NAME;
         units[] = { };
         weapons[] = { };
         magazines[] = { };
         ammo[] = { };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { };
-        author = QUOTE(AUTHOR);
+        requiredAddons[] = { "OPTRE_Vehicles_Air", "OPAEX_Hornet" };
+        skipWhenMissingDependencies = 1;
         VERSION_CONFIG;
+
+        addonRootClass = QUOTE(ADDON);
     };
 };
