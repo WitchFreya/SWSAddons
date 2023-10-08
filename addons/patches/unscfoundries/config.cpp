@@ -11,7 +11,9 @@ class CfgPatches
         magazines[] = { };
         ammo[] = { };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { "Jbad_ConstructionCrane", "Jbad_Misc_Powerline" };
+        requiredAddons[] = {
+            "B_19thUNSC"
+           };
         skipWhenMissingDependencies = 1;
         VERSION_CONFIG;
 
