@@ -1,5 +1,5 @@
 #include "script_component.hpp"
-#include "CfgVehicles.hpp"
+#include "CfgVehicles.inc"
 
 class CfgPatches
 {
@@ -11,8 +11,8 @@ class CfgPatches
         magazines[] = { };
         ammo[] = { };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { "crowsEW_emp" };
-        // skipWhenMissingDependencies = 1; // TODO: enable once deps are enumerated
+        requiredAddons[] = { "OPTRE_Vehicles_Pelican", "OPTRE_JSRS_Sounds" };
+        skipWhenMissingDependencies = 1;
         VERSION_CONFIG;
 
         addonRootClass = QUOTE(ADDON);

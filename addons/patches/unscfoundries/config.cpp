@@ -12,8 +12,9 @@ class CfgPatches
         ammo[] = { };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "B_19thUNSC"
-           };
+            "B_19thUNSC",
+            "DMNS_Shortsword_F",
+            "DMNS_Vehicles_SOEIV"};
         skipWhenMissingDependencies = 1;
         VERSION_CONFIG;
 
