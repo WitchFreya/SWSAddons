@@ -24,6 +24,8 @@ class CfgVehicles
     class OPTRE_UNSC_Marine_Soldier_SquadLead;
     class OPTRE_UNSC_Marine_Soldier_TeamLead;
     class OPTRE_UNSC_Marine_Soldier_Unarmed;
+    class PlaneWreck;
+    class StaticMGWeapon;
 
     class OPTRE_UNSC_Marine_Soldier_Rifleman_AR_OCimport_01 : OPTRE_UNSC_Marine_Soldier_Rifleman_AR { CBA_PATCH; };
     class OPTRE_UNSC_Marine_Soldier_Autorifleman_OCimport_01 : OPTRE_UNSC_Marine_Soldier_Autorifleman { CBA_PATCH; };
@@ -41,4 +43,6 @@ class CfgVehicles
     class OPTRE_UNSC_Marine_Soldier_Unarmed_OCimport_01 : OPTRE_UNSC_Marine_Soldier_Unarmed { CBA_PATCH; };
     class OPTRE_UNSC_Marine_Soldier_Officer_OCimport_01 : OPTRE_UNSC_Marine_Soldier_Officer { CBA_PATCH; };
     class OPTRE_UNSC_Marine_Pilot_OCimport_01 : OPTRE_UNSC_Marine_Pilot { CBA_PATCH; };
+    class DMNS_Shortsword_01_wreck_F : PlaneWreck { CBA_PATCH; };
+    class DMNS_SOEIV : StaticMGWeapon { CBA_PATCH; };
 };
