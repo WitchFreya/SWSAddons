@@ -1,3 +1,3 @@
-#define SUBCOMPONENT firesupportplus
-#define SUBCOMPONENT_BEAUTIFIED Fire Support Plus
+#define SUBCOMPONENT jbad
+#define SUBCOMPONENT_BEAUTIFIED Jbad
 #include "..\script_component.hpp"
