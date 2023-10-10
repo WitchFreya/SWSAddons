@@ -29,6 +29,7 @@ class VEHICLE(DOUBLES(CLASS_BASE,Medical)) : VEHICLE(DOUBLES(CLASS_BASE,Base)) {
 C_HARDCASE(Sawbones,sawbones);
 C_HARDCASE(Blue,blue);
 C_HARDCASE(Vertigo,vertigo);
+C_HARDCASE(Bait,bait);
 
 #undef C_HARDCASE
 #undef CLASS_BASE
