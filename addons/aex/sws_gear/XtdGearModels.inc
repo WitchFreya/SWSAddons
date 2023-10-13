@@ -16,7 +16,6 @@ class XtdGearModels {
             "Sawbones",
             "Tiger",
             "Hound",
-            "Kitty",
             "Hurricane",
             "Roman"
         };
@@ -31,7 +30,6 @@ class XtdGearModels {
         class Sawbones {};
         class Tiger {};
         class Hound {};
-        class Kitty {};
         class Hurricane {};
         class Roman {};
     };
