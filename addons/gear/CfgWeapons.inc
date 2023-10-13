@@ -80,7 +80,7 @@ class CfgWeapons
     C_GEAR(Maid,sepia);
     C_GEAR(Polaris,pink);
     C_GEAR(Rabbit,pink);
-    C_GEAR(Tiger,pink);
+    C_GEAR(Tiger,gold);
     C_GEAR(Hound,hound);
     C_GEAR(Sawbones,teal);
     C_GEAR(Hurricane,purple);
