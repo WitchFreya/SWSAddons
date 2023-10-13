@@ -1,14 +1,22 @@
-class CfgUnitInsignia
+class SWS_CfgRoles
 {
+    class Rifleman
+    {
+        displayName = "Rifleman";
+    };
     class SWS_Insignia_Rifleman
     {
         META;
         displayName = QNAME(Rifleman);
         texture = QPATHTOF(data\sws_icon_small_ca);
         textureVehicle = QPATHTOF(data\sws_icon_small_ca);
+        GVAR(role) = "rifleman";
     };
 
-    #define C_INSIGNIA(var0,var1) class SWS_Insignia_##var0 : SWS_Insignia_Rifleman { displayName = QNAME(var1); }
+    #define C_INSIGNIA(var0,var1) class SWS_Insignia_##var0 : SWS_Insignia_Rifleman {  \
+        displayName = QNAME(var1); \
+        GVAR(role) = QUOTE(var0); \
+    }
     C_INSIGNIA(CLS,Combat Life Saver);
     C_INSIGNIA(Medic,Medic);
     C_INSIGNIA(Autorifleman,Machine Gunner);

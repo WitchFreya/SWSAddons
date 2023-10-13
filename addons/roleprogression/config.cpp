@@ -1,6 +1,8 @@
 #include "script_component.hpp"
 
+#include "CfgEventHandlers.inc"
 #include "CfgUnitInsignia.inc"
+#include "ui\RscAttributes.inc"
 
 class CfgPatches
 {
