@@ -52,6 +52,9 @@ workshop = [
     # unnecessary but i want them there
     "1957746437", # ADV ACE-CPR
     # "620260972",  # ALiVE
+
+    # server mods
+    "1768992669", # inidb2
 ]
 
 [hemtt.launch.full]
