@@ -14,7 +14,7 @@ class CfgPatches
         magazines[] = { };
         ammo[] = { };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { "DMNS_Air_UAV_01", "SWS_Main", "SWS_Logic" };
+        requiredAddons[] = { "DMNS_Air_UAV_01", "sws_main", "sws_logic" };
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };
