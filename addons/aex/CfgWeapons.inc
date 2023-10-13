@@ -3,11 +3,11 @@ class CfgWeapons
     class SWS_Weapon_NVG_NeuralLace : BaseGearModel
     {
         label = QNAME(NeuralLace Implant);
-        options[] = {"Division"};
-        class Division {
-            values[] = {"ODST","ONI"};
-            class ODST { description = "Standard SWS NeuralLace design."; };
-            class ONI { description = "ONI NeuralLace Design"; };
+        options[] = {"Thermal"};
+        class Thermal {
+            values[] = {"IR","WHOT"};
+            class IR { description = "Infrared"; };
+            class WHOT { description = "White-Hot"; };
         };
     };
 

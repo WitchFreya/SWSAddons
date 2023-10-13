@@ -1,8 +1,8 @@
 #define CLASSES_WEAPONS \
     QTERMINAL(Scarlet), \
     "SWS_Weapon_LaserDesignator", \
-    "SWS_NVG_NeuralLace", \
-    "SWS_NVG_NeuralLace_Maid"
+    "SWS_NVG_NeuralLace_IR", \
+    "SWS_NVG_NeuralLace_WHOT"
 
 class CfgWeapons {
     class B_UavTerminal;
@@ -39,11 +39,11 @@ class CfgWeapons {
 		maxRangeProbab = 0.01;
     };
 
-    class SWS_NVG_NeuralLace : OPTRE_NVG {
+    class SWS_NVG_NeuralLace_IR : OPTRE_NVG {
         ITEM_META(2);
         CLEARANCE(RESTRICTED/DECWHI);
         displayName = QNAME(Neural Lace);
-        descriptionShort = "Neural implant thermal and NVGs.";
+        descriptionShort = "Neural implant capable of infrared thermal and NVGs.";
         modelOptics = "";
         model = "";
         visionMode[] = {"Normal","NVG","TI"};
@@ -57,18 +57,18 @@ class CfgWeapons {
 
         class XtdGearInfo {
             model = "SWS_Weapon_NVG_NeuralLace";
-            clearance = "ODST";
+            thermal = "IR";
         };
     };
 
-    class SWS_NVG_NeuralLace_ONI : SWS_NVG_NeuralLace {
+    class SWS_NVG_NeuralLace_WHOT : SWS_NVG_NeuralLace_IR {
         ITEM_META(2);
-        CLEARANCE(SECRET/DECWHI);
-        displayName = QNAME(Neural Lace (ONI));
-        descriptionShort = "ONI-classified neural implant.";
+        CLEARANCE(RESTRICTED/DECWHI);
+        displayName = QNAME(Neural Lace (WHOT));
+        descriptionShort = "Neural implant capable of white-hot thermal and NVGs.";
         thermalMode[] = {0};
         class XtdGearInfo : XtdGearInfo {
-            clearance = "ONI";
+            thermal = "WHOT";
         };
     };
 };
