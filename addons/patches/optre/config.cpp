@@ -2,6 +2,7 @@
 
 #include "CfgAmmo.inc"
 #include "CfgVehicles.inc"
+#include "CfgFunctions.inc"
 
 class CfgPatches
 {
