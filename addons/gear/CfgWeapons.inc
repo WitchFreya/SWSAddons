@@ -38,7 +38,6 @@
     QWEAPONS_FN(Sawbones), \
     QWEAPONS_FN(Tiger), \
     QWEAPONS_FN(Hound), \
-    QWEAPONS_FN(Kitty), \
     QWEAPONS_FN(Hurricane), \
     QWEAPONS_FN(Roman), \
     QWEAPONS_FN(Blue), \
@@ -83,7 +82,6 @@ class CfgWeapons
     C_GEAR(Rabbit,pink);
     C_GEAR(Tiger,pink);
     C_GEAR(Hound,hound);
-    C_GEAR(Kitty,kitty);
     C_GEAR(Sawbones,teal);
     C_GEAR(Hurricane,purple);
     C_GEAR(Roman,grey);
