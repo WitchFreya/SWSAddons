@@ -64,6 +64,7 @@ class SWS_Helmet_Base_dp : SWS_Helmet_Base
     class TRIPLES(SWS_Helmet,varName,dp): SWS_Helmet_Base_dp {          \
         ITEM_META(1);                                                       \
         displayName = QNAME(Helmet (name));                             \
+        ace_arsenal_uniqueBase = QUOTE(DOUBLES(SWS_Helmet,varName)); \
         hiddenSelectionsTextures[] = {texHelmet,QPATHTOF(data\textures\visr_clr_ca.paa)};     \
         class ItemInfo : ItemInfo {                                     \
             hiddenSelectionsTextures[] = {texHelmet,QPATHTOF(data\textures\visr_clr_ca.paa)}; \
@@ -81,6 +82,7 @@ class SWS_Helmet_Base_dp : SWS_Helmet_Base
     };                                                                              \
     class TRIPLES(SWS_Helmet,DOUBLES(name,variant),dp) : TRIPLES(SWS_Helmet,name,dp)\
     {                                                                               \
+        ace_arsenal_uniqueBase = QUOTE(TRIPLES(SWS_Helmet,name,variant));                  \
         hiddenSelections[] = {varHiddenSelections};                                 \
         class ItemInfo : ItemInfo                                                   \
         {                                                                           \
