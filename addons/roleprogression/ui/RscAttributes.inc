@@ -1,5 +1,5 @@
 #include "RscCommon.inc"
-#include "..\defines.inc"
+#include "..\defines.hpp"
 
 class ace_arsenal_display
 {
