@@ -34,6 +34,7 @@ class SWS_Helmet_Base : SWS_HELMET_OPTRE_UNSC_CH252D_Helmet_Base
 
 class SWS_Helmet_Base_dp : SWS_Helmet_Base
 {
+    ace_arsenal_hide = 1;
     model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
     hiddenSelections[] = {HELMET_SELECTIONS_BASE_DP, "H_Ghillie", HELMET_SELECTIONS_COLLAR};
     hiddenSelectionsTextures[] = {
