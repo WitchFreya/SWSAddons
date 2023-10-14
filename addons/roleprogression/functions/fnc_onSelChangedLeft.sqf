@@ -13,7 +13,4 @@ private _display = ctrlParent _control;
 
 private _selection = _control lbData _curSel;
 
-private _oldRole = GVAR(role);
-GVAR(role) = _selection;
-
-[QGVAR(roleChanged), [_selection, _oldRole]] call CBA_fnc_localEvent;
+[QGVAR(changeRole), [_selection], ace_arsenal_center] call CBA_fnc_targetEvent;
