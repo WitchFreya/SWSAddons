@@ -8,6 +8,8 @@ if (_panelIDC != IDC_buttonRole) exitWith {};
 
 private _roles = uiNamespace getVariable [QGVAR(rolesCache), []];
 
+TOGGLE_RIGHT_PANEL_HIDE;
+
 {
     private _className = configName _x;
     private _displayName = [_x, "displayName", _className] call BIS_fnc_returnConfigEntry;
