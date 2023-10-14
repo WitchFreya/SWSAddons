@@ -4,12 +4,12 @@ GVAR(defaultRole) = "Rifleman";
 GVAR(role) = GVAR(defaultRole);
 
 ["CBA_loadoutSet", {
-    params ["_unit", "_loadout", "_extendedInfo"];
+    params ["", "", "_extendedInfo"];
     GVAR(role) = _extendedInfo getOrDefault [QGVARMAIN(role), GVAR(defaultRole)];
 }] call CBA_fnc_addEventHandler;
 
 ["CBA_loadoutGet", {
-    params ["_unit", "_loadout", "_extendedInfo"];
+    params ["", "", "_extendedInfo"];
     _extendedInfo set [QGVARMAIN(role), GVAR(role)];
 }] call CBA_fnc_addEventHandler;
 
