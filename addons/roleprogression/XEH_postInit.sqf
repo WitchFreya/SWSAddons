@@ -33,5 +33,13 @@ GVAR(role) = GVAR(defaultRole);
     _this call FUNC(saveRole);
 }] call CBA_fnc_addEventHandler;
 
+[QGVAR(changeRole), {
+    params ["_selection"];
+    private _oldRole = GVAR(role);
+    GVAR(role) = _selection;
+
+    [QGVAR(roleChanged), [_selection, _oldRole]] call CBA_fnc_localEvent;
+}] call CBA_fnc_addEventHandler;
+
 private _action = ["recordRole", "[SWS] Record Role Progress", "", FUNC(debrief), {true}] call ace_interact_menu_fnc_createAction;
 [["ACE_ZeusActions"], _action] call ace_interact_menu_fnc_addActionToZeus;
