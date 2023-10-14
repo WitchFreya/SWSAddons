@@ -6,6 +6,7 @@ ADDON = true;
 #include "defines.hpp"
 
 GVAR(roles) = "getNumber (_x >> 'scope') > 0" configClasses (configFile >> "CfgRoles");
+GVAR(role) = "Default";
 
 ["ace_arsenal_leftPanelFilled", {
     params ["_display", "_panelIdc"];
@@ -17,7 +18,7 @@ GVAR(roles) = "getNumber (_x >> 'scope') > 0" configClasses (configFile >> "CfgR
 
 ["ace_arsenal_rightPanelFilled", {
     params ["_display", "", "_panelIdc"];
-    private _ctrlPanel = displayCtrl IDC_rightTabContent;
+    private _ctrlPanel = displayCtrl IDC_righBrtTabContent;
     if (_panelIDC != IDC_buttonMisc) exitWith {};
 }] call CBA_fnc_addEventHandler;
 
