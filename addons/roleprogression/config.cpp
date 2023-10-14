@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 #include "CfgEventHandlers.inc"
-#include "CfgUnitInsignia.inc"
+#include "CfgWeapons.inc"
 #include "ui\RscAttributes.inc"
 
 class CfgPatches
@@ -10,9 +10,9 @@ class CfgPatches
     {
         name = QUOTE(COMPONENT);
         units[] = { };
-        weapons[] = {};
+        weapons[] = { CLASSES_WEAPONS };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {};
+        requiredAddons[] = { "ace_dogtags" };
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };
