@@ -2,8 +2,8 @@
 #define COMPONENT_BEAUTIFIED Unit Role Selection and Tracking
 #include "\x\sws\addons\main\script_mod.hpp"
 
-#define DEBUG_MODE_FULL
-#define DISABLE_COMPILE_CACHE
+// #define DEBUG_MODE_FULL
+// #define DISABLE_COMPILE_CACHE
 
 #ifdef DEBUG_ENABLED_INGAME
     #define DEBUG_MODE_FULL

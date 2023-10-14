@@ -15,15 +15,3 @@ GVAR(role) = "Default";
     if (_panelIDC != IDC_buttonRole) exitWith {};
     [_ctrlPanel] call FUNC(onRoleMenuOpen);
 }] call CBA_fnc_addEventHandler;
-
-["ace_arsenal_rightPanelFilled", {
-    params ["_display", "", "_panelIdc"];
-    private _ctrlPanel = displayCtrl IDC_righBrtTabContent;
-    if (_panelIDC != IDC_buttonMisc) exitWith {};
-}] call CBA_fnc_addEventHandler;
-
-["ace_arsenal_weaponItemChanged", {
-    {
-        TRACE_1("Prop", _x);
-    } forEach _this;
-}] call CBA_fnc_addEventHandler;
