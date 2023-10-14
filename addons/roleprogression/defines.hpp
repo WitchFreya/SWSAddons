@@ -8,6 +8,8 @@
 
 // IDCs
 #define IDC_leftTabContent 13
+#define IDC_rightTabContent 14
+#define IDC_buttonMisc 38
 #define IDC_iconBackgroundRole 2038
 #define IDC_buttonRole 2039
 
