@@ -1,27 +1,23 @@
 #include "script_component.hpp"
 #include "../defines.hpp"
 
-params ["_display"];
-
-private _tags = ace_arsenal_virtualItems select IDX_virtMisc select {
-    _x isKindOf ["SWS_Dogtag_Rifleman", configFile >> "CfgWeapons"];
-};
+params ["_ctrlPanel"];
 
 {
-    private _configPath = configFile >> "CfgWeapons" >> _x;
-    private _className = configName _configPath;
-    private _displayName = getText (_configPath >> "displayName");
-    private _itemPicture = getText (_configPath >> "picture");
+    private _className = configName _x;
+    private _displayName = getText (_x >> "displayName");
+    private _itemPicture = getText (_x >> "icon");
 
-    // _ctrlPanel lbSetPictureRight [_lbAdd, ["", _modPicture] select GVAR(enableModIcons)];
-    private _role = getText (_configPath >> QGVAR(role));
-    private _lbAdd = _ctrlPanel lbAdd _role;
+    private _lbAdd = _ctrlPanel lbAdd _displayName;
     _ctrlPanel lbSetData [_lbAdd, _className];
+    if (GVAR(role) == _className) then {
+        _ctrlPanel lbSetCurSel _lbAdd;
+    };
     _ctrlPanel lbSetPicture [_lbAdd, _itemPicture];
 
     private _usage = format ["Select this item to get credit for running as %1 when an op ends.",
-        if (_role != 'CLS') then { toLower _role } else { _role }
+        toLower _displayName
     ];
-    _ctrlPanel lbSetTooltip [_lbAdd, format ["%1\n%2\n\n%3", _displayName, _className, _usage]];
-} forEach _tags;
+    _ctrlPanel lbSetTooltip [_lbAdd, _usage];
+} forEach GVAR(roles);
 
