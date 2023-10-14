@@ -1,91 +1,77 @@
 class CfgRoles
 {
-    class Default {
+    class Rifleman {
         displayName = "Rifleman";
         icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\sergeant_gs.paa";
     };
 
-    class CombatLifeSaver : Default
+    class CombatLifeSaver : Rifleman
     {
-        scope = 1;
         displayName = "Combat Life Saver";
     };
 
     class Medic : CombatLifeSaver
     {
-        scope = 1;
         displayName = "Medic";
     };
 
-    class MachineGunner : Default
+    class MachineGunner : Rifleman
     {
-        scope = 1;
         displayName = "Machine Gunner";
     };
 
-    class Marksman : Default
+    class Marksman : Rifleman
     {
-        scope = 1;
         displayName = "Marksman";
     };
 
     class Sniper : Marksman
     {
-        scope = 1;
         displayName = "Sniper";
     };
 
-    class Grenadier : Default
+    class Grenadier : Rifleman
     {
-        scope = 1;
         displayName = "Grenadier";
     };
 
-    class Engineer : Default
+    class Engineer : Rifleman
     {
-        scope = 1;
         displayName = "Engineer";
     };
 
-    class DroneOperator : Default
+    class DroneOperator : Rifleman
     {
-        scope = 1;
         displayName = "Drone Operator";
     };
 
-    class AntiarmorSpecialist : Default
+    class AntiarmorSpecialist : Rifleman
     {
-        scope = 1;
         displayName = "Antiarmor Specialist";
     };
 
-    class TeamLead : Default
+    class TeamLead : Rifleman
     {
-        scope = 1;
         displayName = "Team Lead";
     };
 
     class PlatoonLead : TeamLead
     {
-        scope = 1;
         displayName = "Platoon Lead";
     };
 
-    class ArmorCrew : Default
+    class ArmorCrew : Rifleman
     {
-        scope = 1;
         displayName = "Armor Crew";
     };
 
-    class Pilot : Default
+    class Pilot : Rifleman
     {
-        scope = 1;
         displayName = "Pilot";
     };
 
     class Copilot : Pilot
     {
-        scope = 1;
         displayName = "Copilot";
     };
 };

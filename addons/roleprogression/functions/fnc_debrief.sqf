@@ -1,3 +1,3 @@
 #include "script_component.hpp"
 
-[QGVAR(debrief), "reportRole"] call CBA_fnc_globalEvent;
+[QGVAR(debrief), [ace_player]] call CBA_fnc_globalEvent;

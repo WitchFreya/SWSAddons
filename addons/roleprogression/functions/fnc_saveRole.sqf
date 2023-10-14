@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-params ["_uid", "_playerName", "_role"];
+params ["_uid", "_playerName", ["_role", GVAR(defaultRole)]];
 
 private _db = call FUNC(getDb);
 

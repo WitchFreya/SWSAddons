@@ -1,8 +1,11 @@
 #include "script_component.hpp"
 
+GVAR(defaultRole) = "Rifleman";
+GVAR(role) = GVAR(defaultRole);
+
 ["CBA_loadoutSet", {
     params ["_unit", "_loadout", "_extendedInfo"];
-    GVAR(role) = _extendedInfo getOrDefault [QGVARMAIN(role), "Default"];
+    GVAR(role) = _extendedInfo getOrDefault [QGVARMAIN(role), GVAR(defaultRole)];
 }] call CBA_fnc_addEventHandler;
 
 ["CBA_loadoutGet", {
@@ -12,8 +15,22 @@
 
 [QGVAR(debrief), {
     if (isDedicated) exitWith {};
-    [GVAR(role)] params [["_role", "Default"]];
-    [getPlayerUID ace_player, profileName, _role] remoteExec [QFUNC(saveRole), 2];
+    if (isNil QGVAR(role) || {
+        private _roleNames = uiNamespace getVariable [QGVAR(rolesCache), []] apply { configName _x };
+        !(GVAR(role) in _roleNames);
+    }) exitWith {
+        ERROR_1("Role was not found", GVAR(role));
+    };
+
+    [QGVAR(saveRoleProgress), [
+        getPlayerUID ace_player,
+        profileName,
+        GVAR(role)
+    ]] call CBA_fnc_serverEvent;
+}] call CBA_fnc_addEventHandler;
+
+[QGVAR(saveRoleProgress), {
+    _this call FUNC(saveRole);
 }] call CBA_fnc_addEventHandler;
 
 private _action = ["recordRole", "[SWS] Record Role Progress", "", FUNC(debrief), {true}] call ace_interact_menu_fnc_createAction;
