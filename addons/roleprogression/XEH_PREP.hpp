@@ -1,6 +1,7 @@
-PREP(onRoleMenuOpen);
-PREP(onSelChangedLeft);
-PREP(upsertPlayer);
-PREP(getDb);
-PREP(saveRole);
 PREP(debrief);
+PREP(fillLeftPanel);
+PREP(getDb);
+PREP(onSelChangedLeft);
+PREP(saveRole);
+PREP(scanConfig);
+PREP(upsertPlayer);

@@ -139,6 +139,8 @@ workshop = [
     "1623498241", # turret enhanced
     "2013446344", # Simple MapTools
     "2369477168", # advanced developer tools
+    # server mods
+    "1768992669", # inidb2
 ]
 
 [hemtt.release]
