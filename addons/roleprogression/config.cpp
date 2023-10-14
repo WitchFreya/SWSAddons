@@ -10,7 +10,7 @@ class CfgPatches
     {
         name = QUOTE(COMPONENT);
         units[] = { };
-        weapons[] = { CLASSES_WEAPONS };
+        weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = { "ace_dogtags", "ace_arsenal", "aceax_arsenal" };
         author = QUOTE(AUTHOR);
