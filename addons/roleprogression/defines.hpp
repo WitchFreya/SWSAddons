@@ -36,7 +36,6 @@
 #define IDX_CURR_HANDGUN_WEAPON_ITEMS 20
 #define IDX_CURR_BINO_ITEMS 21
 
-
 #define IDC_blockRightFrame 5
 #define IDC_blockRighttBackground 6
 #define IDC_loadIndicator 7
