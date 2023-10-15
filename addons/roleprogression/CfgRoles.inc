@@ -75,4 +75,9 @@ class CfgRoles
     {
         displayName = "Copilot";
     };
+
+    class Architect : Rifleman
+    {
+        displayName = "Architect";
+    };
 };
