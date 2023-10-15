@@ -3,8 +3,6 @@ ADDON = false;
 #include "XEH_PREP.hpp"
 ADDON = true;
 
-#include "defines.hpp"
-
 ["ace_arsenal_leftPanelFilled", {
     _this call FUNC(fillLeftPanel);
 }] call CBA_fnc_addEventHandler;

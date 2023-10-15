@@ -1,5 +1,20 @@
 #include "script_component.hpp"
 
+/*
+ * Author: Maid
+ * Find an existing player in the database by UID and update the name or create it if it doesn't exist.
+ *
+ * Arguments:
+ * 0: Player UID <STRING>
+ * 1: Player in-game profile name <STRING>
+ * 2: inidb2 instance <INIDBI2> (default: GVAR(defaultRole))
+ *
+ * Return Value:
+ * true if is write was successfull, false if not
+ *
+ * Public: No
+ */
+
 params ["_uid", "_playerName", "_db"];
 
 private _section = _uid;

@@ -13,33 +13,12 @@ GVAR(role) = GVAR(defaultRole);
     _extendedInfo set [QGVARMAIN(role), GVAR(role)];
 }] call CBA_fnc_addEventHandler;
 
-[QGVAR(debrief), {
-    if (isDedicated) exitWith {};
-    if (isNil QGVAR(role) || {
-        private _roleNames = uiNamespace getVariable [QGVAR(rolesCache), []] apply { configName _x };
-        !(GVAR(role) in _roleNames);
-    }) exitWith {
-        ERROR_1("Role was not found", GVAR(role));
-    };
+[QGVAR(changeRole), { _this call FUNC(changeRole); }] call CBA_fnc_addEventHandler;
 
-    [QGVAR(saveRoleProgress), [
-        getPlayerUID ace_player,
-        profileName,
-        GVAR(role)
-    ]] call CBA_fnc_serverEvent;
-}] call CBA_fnc_addEventHandler;
+if (!isMultiplayer) exitWith {};
 
-[QGVAR(saveRoleProgress), {
-    _this call FUNC(saveRole);
-}] call CBA_fnc_addEventHandler;
-
-[QGVAR(changeRole), {
-    params ["_selection"];
-    private _oldRole = GVAR(role);
-    GVAR(role) = _selection;
-
-    [QGVAR(roleChanged), [_selection, _oldRole]] call CBA_fnc_localEvent;
-}] call CBA_fnc_addEventHandler;
+[QGVAR(debrief), { _this call FUNC(onDebrief); }] call CBA_fnc_addEventHandler;
+[QGVAR(saveRoleProgress), { _this call FUNC(saveRole); }] call CBA_fnc_addEventHandler;
 
 private _action = ["recordRole", "[SWS] Record Role Progress", "", FUNC(debrief), {true}] call ace_interact_menu_fnc_createAction;
 [["ACE_ZeusActions"], _action] call ace_interact_menu_fnc_addActionToZeus;

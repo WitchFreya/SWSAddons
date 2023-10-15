@@ -1,6 +1,20 @@
 #include "script_component.hpp"
 #include "../defines.hpp"
 
+/*
+ * Author: Maid
+ * Populate the arsenal with the role selection info.
+ *
+ * Arguments:
+ * 0: Arsenal display <DISPLAY>
+ * 1: Tab control idc <NUMBER>
+ *
+ * Return Value:
+ * None
+ *
+ * Public: No
+ */
+
 params ["_display", "_panelIdc"];
 private _ctrlPanel = _display displayCtrl IDC_leftTabContent;
 
