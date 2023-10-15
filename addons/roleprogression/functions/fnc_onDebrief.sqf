@@ -23,7 +23,7 @@ if (isNil QGVAR(role)) exitWith {
     ERROR_1("Role not set",GVAR(role));
 };
 
-private _knownRoles = uiNamespace getVariable [QGVAR(rolesCache), []] apply { configName _x };
+private _knownRoles = uiNamespace getVariable [QGVAR(rolesOrder), []];
 
 if (!(GVAR(role) in _knownRoles)) exitWith {
     ERROR_2("Role not in cache",GVAR(role),_knownRoles);

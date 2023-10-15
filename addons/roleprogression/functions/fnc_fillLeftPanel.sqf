@@ -26,9 +26,9 @@ TOGGLE_RIGHT_PANEL_HIDE;
 lbClear _ctrlPanel;
 
 {
-    private _className = configName _x;
-    private _displayName = [_x, "displayName", _className] call BIS_fnc_returnConfigEntry;
-    private _itemPicture = [_x, "icon", QPATHTOF(data\sws_icon_howl_ca.paa)] call BIS_fnc_returnConfigEntry;
+    private _className = _x;
+	private _displayName = _y get "name";
+	private _itemPicture = _y get "icon";
 
     TRACE_3("Adding role:",_className,_displayName,_itemPicture);
     private _lbAdd = _ctrlPanel lbAdd _displayName;

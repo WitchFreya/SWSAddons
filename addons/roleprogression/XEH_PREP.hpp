@@ -8,3 +8,4 @@ PREP(upsertPlayer);
 PREP(changeRole);
 PREP(retrieveUser);
 PREP(onPlayerConnected);
+PREP(addMyRoleHistory);
