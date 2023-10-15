@@ -19,6 +19,10 @@ if (!isMultiplayer) exitWith {};
 
 [QGVAR(debrief), { _this call FUNC(onDebrief); }] call CBA_fnc_addEventHandler;
 [QGVAR(saveRoleProgress), { _this call FUNC(saveRole); }] call CBA_fnc_addEventHandler;
+[QGVAR(userRoleDataRetrieved), {
+    params ["_roleMap"];
+    TRACE_1("Client received role data",_roleMap);
+}] call CBA_fnc_addEventHandler;
 
 private _action = ["recordRole", "[SWS] Record Role Progress", "", FUNC(debrief), {true}] call ace_interact_menu_fnc_createAction;
 [["ACE_ZeusActions"], _action] call ace_interact_menu_fnc_addActionToZeus;

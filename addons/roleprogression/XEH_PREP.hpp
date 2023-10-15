@@ -6,3 +6,5 @@ PREP(saveRole);
 PREP(scanConfig);
 PREP(upsertPlayer);
 PREP(changeRole);
+PREP(retrieveUser);
+PREP(onPlayerConnected);
