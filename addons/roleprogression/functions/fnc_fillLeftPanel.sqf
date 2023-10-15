@@ -23,6 +23,7 @@ if (_panelIDC != IDC_buttonRole) exitWith {};
 private _roles = uiNamespace getVariable [QGVAR(rolesCache), []];
 
 TOGGLE_RIGHT_PANEL_HIDE;
+lbClear _ctrlPanel;
 
 {
     private _className = configName _x;
