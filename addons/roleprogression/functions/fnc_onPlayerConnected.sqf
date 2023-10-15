@@ -22,5 +22,4 @@ if (!_playerCreated) exitWith {
     ERROR_1("Unable to create player",_playerCreated);
 };
 private _roleMap = [_uid, _db] call FUNC(retrieveUser);
-TRACE_2("User retrieved",_roleMap);
 [QGVAR(userRoleDataRetrieved), [_roleMap], _player] call CBA_fnc_ownerEvent;
