@@ -1,1 +1,1 @@
-GVAR(MIGRATIONS) set ["MEU_Medical_Hardcase", QVEHICLE(DOUBLES(Bag_Hardcase,Medical))];
+GVAR(MIGRATIONS) set ["MEU_Medical_Hardcase", "SWS_V_Bag_Hardcase_Medical"];

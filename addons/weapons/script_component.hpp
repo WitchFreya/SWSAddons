@@ -20,7 +20,6 @@
 
 #define MAGAZINE(var0) TRIPLES(PREFIX,Magazine,var0)
 #define AMMO(var0) TRIPLES(PREFIX,B,var0)
-#define QMAGAZINE(var0) QUOTE(MAGAZINE(var0))
 #define QAMMO(var0) QUOTE(AMMO(var0))
 #define GRENADE(var0) AMMO(DOUBLES(Grenade,var0))
 #define QGRENADE(var0) QUOTE(GRENADE(var0))
