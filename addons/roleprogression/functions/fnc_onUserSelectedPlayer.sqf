@@ -15,21 +15,13 @@
  */
 
 params ["_networkId", "_playerObject"];
-private _uid = if (local _playerObject) then {
-    getPlayerUID _playerObject;
-} else {
-    _networkId;
+if (isNil "_playerObject") exitWith {
+    TRACE_1("Null player",_networkId);
 };
-private _db = call FUNC(getDb);
-private _playerCreated = [_uid, name _playerObject, _db] call FUNC(upsertPlayer);
-if (!_playerCreated) exitWith {
-    ERROR_1("Unable to create player",_playerCreated);
-};
-private _roleHistory = [_uid, _db] call FUNC(retrieveUser);
 
 // if we're testing things locally we're done
-if (local _playerObject) exitWith {
-    [QGVAR(userRoleDataRetrieved), _roleHistory] call CBA_fnc_localEvent;
+if (local _playerObject && { hasInterface } && { !isServer }) exitWith {
+    [QGVAR(userLocal), [_playerObject]] call CBA_fnc_serverEvent;
 };
 
 [_playerObject, "Local", {
@@ -37,5 +29,5 @@ if (local _playerObject) exitWith {
     TRACE_2("Local",_player,_isLocal);
     _player removeEventHandler ["Local", _thisID];
     if (!_isLocal) exitWith {};
-    [QGVAR(userRoleDataRetrieved), _thisArgs] call CBA_fnc_localEvent;
+    [QGVAR(userLocal), [_playerObject]] call CBA_fnc_serverEvent;
 }, [_roleHistory]] call CBA_fnc_addBISEventHandler;
