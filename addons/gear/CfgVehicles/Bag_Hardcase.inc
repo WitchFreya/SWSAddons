@@ -1,7 +1,5 @@
 
-#define CLASS_BASE Bag_Hardcase
-
-#define C_HARDCASE(var0,var1) class VEHICLE(DOUBLES(CLASS_BASE,var0)) : VEHICLE(DOUBLES(CLASS_BASE,Medical)) \
+#define C_HARDCASE(var0,var1) class SWS_V_Bag_Hardcase_##var0 : SWS_V_Bag_Hardcase_Medical \
 { \
     ITEM_META(2); \
     displayName = QNAME(Medical Satchel (var0)); \
@@ -9,18 +7,21 @@
     class XtdGearInfo : XtdGearInfo { variant = QUOTE(var0); }; \
 }
 
-class VEHICLE(DOUBLES(CLASS_BASE,Base)) : OPTRE_ONI_Researcher_Suitcase {
+class SWS_V_Bag_Hardcase_Base : OPTRE_ONI_Researcher_Suitcase
+{
     ITEM_META(0);
 };
 
-class VEHICLE(DOUBLES(CLASS_BASE,Medical)) : VEHICLE(DOUBLES(CLASS_BASE,Base)) {
+class SWS_V_Bag_Hardcase_Medical : SWS_V_Bag_Hardcase_Base
+{
     ITEM_META(2);
     displayName = QNAME(Medical Satchel);
     hiddenSelections[] = {"camo"};
     hiddenSelectionsTextures[] = {QPATHTOF(data\Bag_Hardcase\medical_co)};
     maximumLoad = 400;
 
-    class XtdGearInfo {
+    class XtdGearInfo
+    {
         model = "SWS_Bag_Hardcase";
         variant = "Medical";
     };
@@ -32,4 +33,3 @@ C_HARDCASE(Vertigo,vertigo);
 C_HARDCASE(Bait,bait);
 
 #undef C_HARDCASE
-#undef CLASS_BASE

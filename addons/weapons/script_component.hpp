@@ -20,7 +20,6 @@
 
 #define MAGAZINE(var0) TRIPLES(PREFIX,Magazine,var0)
 #define AMMO(var0) TRIPLES(PREFIX,B,var0)
-#define QMAGAZINE(var0) QUOTE(MAGAZINE(var0))
 #define QAMMO(var0) QUOTE(AMMO(var0))
 #define GRENADE(var0) AMMO(DOUBLES(Grenade,var0))
 #define QGRENADE(var0) QUOTE(GRENADE(var0))
@@ -32,9 +31,6 @@
 #define QGMAGAZINE(var0) QUOTE(GMAGAZINE(var0))
 #define GSMAGAZINE(var0,var1) GMAGAZINE(TRIPLES(var0,var1,Shell))
 #define QGSMAGAZINE(var0,var1) QUOTE(GSMAGAZINE(var0,var1))
-
-#define VEHICLE(var0) GVAR(DOUBLES(V,var0))
-#define QVEHICLE(var0) QUOTE(VEHICLE(var0))
 
 #define MAGAZINE_M24RLD_MASS 10
 #define WEAPON_M24RLD_MASS 30

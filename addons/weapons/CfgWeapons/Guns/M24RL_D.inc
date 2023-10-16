@@ -9,7 +9,7 @@ class SWS_Weapon_M24RL_D : launch_MRAWS_green_F {
     pictureWire = QPATHTOF(data\icons\m24rl_d_wire_ca.paa);
     model = QPATHTOF(data\m24rl_d\m24rl_d.p3d);
     handAnim[] = {"OFP2_ManSkeleton", "\A3\Weapons_F\Launchers\RPG32\data\Anim\RPG32.rtm"};
-    magazines[] = { QMAGAZINE(M24RL_D) };
+    magazines[] = { QUOTE(MAGAZINE(M24RL_D)) };
     magazineReloadTime = 0.1;
     reloadMagazineSound[] = {"",1,1};
     description = "A single-use dumbfire rocket launcher that will make short work of most targets.";

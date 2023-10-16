@@ -24,12 +24,12 @@ class SWS_Weapon_SM247: Dmns_M247_GPMG {
         "OPTRE_Magwell_MA5A"
     };
     magazines[] = {
-        QMAGAZINE(100Rnd_762x51_Mag),
-        QMAGAZINE(100Rnd_762x51_Mag_Tracer),
-        QMAGAZINE(200Rnd_762x51_Mag),
-        QMAGAZINE(200Rnd_762x51_Mag_Tracer),
-        QMAGAZINE(400Rnd_762x51_Mag),
-        QMAGAZINE(400Rnd_762x51_Mag_Tracer)
+        QUOTE(MAGAZINE(100Rnd_762x51_Mag)),
+        QUOTE(MAGAZINE(100Rnd_762x51_Mag_Tracer)),
+        QUOTE(MAGAZINE(200Rnd_762x51_Mag)),
+        QUOTE(MAGAZINE(200Rnd_762x51_Mag_Tracer)),
+        QUOTE(MAGAZINE(400Rnd_762x51_Mag)),
+        QUOTE(MAGAZINE(400Rnd_762x51_Mag_Tracer))
     };
 
     class Single: Single {

@@ -4,12 +4,12 @@ class CfgMagazineWells {
             QGSMAGAZINE(M3Sx,1Rnd),
             QGSMAGAZINE(M3Sx,3Rnd),
             QGSMAGAZINE(M9Sx,1Rnd),
-            QMAGAZINE(3Rnd_FlareSmoke_Blue),
-            QMAGAZINE(3Rnd_FlareSmoke_Green),
-            QMAGAZINE(3Rnd_FlareSmoke_Orange),
-            QMAGAZINE(3Rnd_FlareSmoke_Purple),
-            QMAGAZINE(3Rnd_FlareSmoke_Red),
-            QMAGAZINE(3Rnd_FlareSmoke_Yellow),
+            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Blue)),
+            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Green)),
+            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Orange)),
+            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Purple)),
+            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Red)),
+            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Yellow)),
             "3Rnd_Smoke_Grenade_Shell",
             "3Rnd_SmokeGreen_Grenade_Shell",
             "3Rnd_SmokeOrange_Grenade_Shell",
@@ -30,12 +30,12 @@ class CfgMagazineWells {
             QGSMAGAZINE(M3Sx,1Rnd),
             QGSMAGAZINE(M3Sx,3Rnd),
             QGSMAGAZINE(M9Sx,1Rnd),
-            QMAGAZINE(3Rnd_FlareSmoke_Blue),
-            QMAGAZINE(3Rnd_FlareSmoke_Green),
-            QMAGAZINE(3Rnd_FlareSmoke_Orange),
-            QMAGAZINE(3Rnd_FlareSmoke_Purple),
-            QMAGAZINE(3Rnd_FlareSmoke_Red),
-            QMAGAZINE(3Rnd_FlareSmoke_Yellow),
+            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Blue)),
+            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Green)),
+            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Orange)),
+            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Purple)),
+            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Red)),
+            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Yellow)),
             "3Rnd_Smoke_Grenade_Shell",
             "3Rnd_SmokeGreen_Grenade_Shell",
             "3Rnd_SmokeOrange_Grenade_Shell",
@@ -61,14 +61,14 @@ class CfgMagazineWells {
 
     class OPTRE_Magwell_M45 {
         GVAR(Magazines)[] = {
-            QMAGAZINE(6Rnd_Shotgun_Incendiary),
-            QMAGAZINE(12_Rnd_Shotgun_Incendiary)
+            QUOTE(MAGAZINE(6Rnd_Shotgun_Incendiary)),
+            QUOTE(MAGAZINE(12_Rnd_Shotgun_Incendiary))
         };
     };
 
     class UBS_12GA {
         GVAR(Magazines)[] = {
-            QMAGAZINE(6Rnd_Shotgun_Incendiary)
+            QUOTE(MAGAZINE(6Rnd_Shotgun_Incendiary))
         };
     };
 
@@ -86,21 +86,21 @@ class CfgMagazineWells {
 
     class MX_65x39_MSBS {
         GVAR(Magazines)[] = {
-            QMAGAZINE(60Rnd_65x39_Caseless_msbs),
-            QMAGAZINE(60Rnd_65x39_Caseless_msbs_tracers),
-            QMAGAZINE(60Rnd_65x39_Caseless_msbs_tracers_blue),
-            QMAGAZINE(60Rnd_65x39_Caseless_msbs_tracers_yellow),
-            QMAGAZINE(60Rnd_65x39_Caseless_msbs_tracers_green)
+            QUOTE(MAGAZINE(60Rnd_65x39_Caseless_msbs)),
+            QUOTE(MAGAZINE(60Rnd_65x39_Caseless_msbs_Tracers)),
+            QUOTE(MAGAZINE(60Rnd_65x39_Caseless_msbs_Tracers_Blue)),
+            QUOTE(MAGAZINE(60Rnd_65x39_Caseless_msbs_Tracers_Yellow)),
+            QUOTE(MAGAZINE(60Rnd_65x39_Caseless_msbs_Tracers_Green))
         };
     };
 
     class MX_65x39 {
         GVAR(Magazines)[] = {
-            QMAGAZINE(60Rnd_65x39_Caseless),
-            QMAGAZINE(60Rnd_65x39_Caseless_tracers),
-            QMAGAZINE(60Rnd_65x39_Caseless_tracers_yellow),
-            QMAGAZINE(60Rnd_65x39_Caseless_tracers_blue),
-            QMAGAZINE(60Rnd_65x39_Caseless_tracers_green)
+            QUOTE(MAGAZINE(60Rnd_65x39_Caseless)),
+            QUOTE(MAGAZINE(60Rnd_65x39_Caseless_Tracers)),
+            QUOTE(MAGAZINE(60Rnd_65x39_Caseless_Tracers_Yellow)),
+            QUOTE(MAGAZINE(60Rnd_65x39_Caseless_Tracers_Blue)),
+            QUOTE(MAGAZINE(60Rnd_65x39_Caseless_Tracers_Green))
         };
     };
 };

@@ -1,10 +1,10 @@
-class GRENADE(9Bang): ACE_G_CTS9
+class SWS_B_Grenade_9Bang: ACE_G_CTS9
 {
     explosionTime=1.5;
     ace_flashbang_Interval=0.050000001;
 };
 
-class GRENADE(DOUBLES(9Bang,NoFuse)): GRENADE(9bang)
+class SWS_B_Grenade_9Bang_NoFuse: SWS_B_Grenade_9Bang
 {
     ace_flashbang_Interval=0.050000001;
     timeToLive=15;
@@ -12,7 +12,8 @@ class GRENADE(DOUBLES(9Bang,NoFuse)): GRENADE(9bang)
     explosionTime=0.5;
 };
 
-class SHELL(9Bang): G_40mm_HE {
+class SWS_B_Grenade_9Bang_Shell : G_40mm_HE
+{
     hit = 0;
     indirectHit = 0;
     indirectHitRange = 0;
