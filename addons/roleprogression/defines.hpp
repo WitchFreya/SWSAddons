@@ -1,16 +1,13 @@
+// Custom IDCs
+#define IDC_iconBackgroundRole 2038
+#define IDC_buttonRole 2039
+
 // Pixel grid
 #define pixelScale  0.25
 #define GRID_W (pixelW * pixelGridNoUIScale * pixelScale)
 #define GRID_H (pixelH * pixelGridNoUIScale * pixelScale)
 
 #define IDX_virtMisc 17 // The virtual items in the miscellaneous category
-
-// IDCs
-#define IDC_leftTabContent 13
-#define IDC_rightTabContent 14
-#define IDC_buttonMisc 38
-#define IDC_iconBackgroundRole 2038
-#define IDC_buttonRole 2039
 
 // Indexes of current items array
 #define IDX_CURR_PRIMARY_WEAPON 0
@@ -36,9 +33,11 @@
 #define IDX_CURR_HANDGUN_WEAPON_ITEMS 20
 #define IDX_CURR_BINO_ITEMS 21
 
+// IDCs
 #define IDC_blockRightFrame 5
 #define IDC_blockRighttBackground 6
 #define IDC_loadIndicator 7
+#define IDC_leftTabContent 13
 #define IDC_rightTabContent 14
 #define IDC_rightTabContentListnBox 15
 #define IDC_sortRightTab 17

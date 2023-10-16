@@ -34,6 +34,5 @@
 #define BAG(var0) TRIPLES(PREFIX,Pack,var0)
 #define QBAG(var0) QUOTE(BAG(var0))
 #define VEHICLE(var0) TRIPLES(PREFIX,V,var0)
-#define QVEHICLE(var0) QUOTE(VEHICLE(var0))
 #define MODULE(var0) TRIPLES(PREFIX,Module,var0)
 #define QMODULE(var0) QUOTE(MODULE(var0))

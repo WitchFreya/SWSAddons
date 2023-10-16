@@ -3,7 +3,7 @@ class GMAGAZINE(M3Sx): OPTRE_M9_Frag {
     ITEM_META(2);
     displayName = QNAME(M3Sx (Frag));
     mass = 11;
-    ammo = QGRENADE(M3Sx);
+    ammo = "SWS_B_Grenade_M3Sx";
     displayNameShort = "M3Sx (Frag)";
     descriptionShort = "Type: Concussion Grenade<br />Rounds: 1<br />Used in: Hand";
 };

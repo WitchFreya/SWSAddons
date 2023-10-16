@@ -1,6 +1,6 @@
 class CfgWeaponCursors {
-    class throw;
-    class SWS_Weapon_Smartlink : throw {
+    class Throw;
+    class SWS_Weapon_SmartLink : Throw {
         texture = QPATHTOF(data\ma5_reticle_ca.paa);
     };
 };

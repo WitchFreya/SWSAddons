@@ -6,7 +6,7 @@ class SWS_Weapon_SBR55 : OPTRE_BR55 {
     magazineWell[] = {"OPTRE_Magwell_BR55"};
     baseWeapon = "SWS_Weapon_SBR55";
     model = "\OPTRE_Weapons\BR\BR";
-    cursor = "SWS_Weapon_Smartlink";
+    cursor = "SWS_Weapon_SmartLink";
 
     recoil = "recoil_dmr_05";
     recoilProne = "assaultRifleBase";
