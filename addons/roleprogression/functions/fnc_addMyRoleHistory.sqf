@@ -35,4 +35,4 @@ private _body = [_order, {
     format ["%1<br/>%2",_prev,_currText];
 }, ""] call EFUNC(common,reduce);
 TRACE_1("Body",_body);
-ace_player createDiaryRecord ["Roles", [_title, _body]];
+player createDiaryRecord ["Roles", [_title, _body]];

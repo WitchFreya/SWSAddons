@@ -7,5 +7,5 @@ PREP(scanConfig);
 PREP(upsertPlayer);
 PREP(changeRole);
 PREP(retrieveUser);
-PREP(onPlayerConnected);
+PREP(onUserSelectedPlayer);
 PREP(addMyRoleHistory);

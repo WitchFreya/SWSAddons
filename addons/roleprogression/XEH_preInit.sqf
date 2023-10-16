@@ -7,7 +7,16 @@ ADDON = true;
     _this call FUNC(fillLeftPanel);
 }] call CBA_fnc_addEventHandler;
 
-[missionNamespace, "PlayerConnected", {
-    params ["", "_uid", "_name", "", "_owner"];
-    [_uid, _name, _owner] call FUNC(onPlayerConnected);
+if (!isMultiplayer) exitWith {};
+
+[QGVAR(userRoleDataRetrieved), {
+    params ["_roleMap"];
+    TRACE_1(QGVAR(userRoleDataRetrieved),_roleMap);
+    GVAR(roleHistory) = compileFinal _roleMap;
+    [GVAR(roleHistory)] call FUNC(addMyRoleHistory);
+}] call CBA_fnc_addEventHandler;
+
+[missionNamespace, "OnUserSelectedPlayer", {
+    TRACE_1("OnUserSelectedPlayer",_this);
+    _this call FUNC(onUserSelectedPlayer);
 }] call CBA_fnc_addBISEventHandler;
