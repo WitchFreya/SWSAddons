@@ -2,7 +2,7 @@ class SWS_Weapon_MA5BSx: OPTRE_MA5B {
     WEAPON_META(MA5BSx,2);
     CLEARANCE(RESTRICTED/DECWHI);
     displayName = QNAME(MA5B-Sx);
-    cursor = "SWS_Weapon_Smartlink";
+    cursor = "SWS_Weapon_SmartLink";
     descriptionShort = "An experimental variant of the MA5B.";
     hiddenSelectionsTextures[] = {
         "optre_weapons\ar\data\weapon_co.paa",
@@ -19,7 +19,7 @@ class SWS_Weapon_MA5BSx: OPTRE_MA5B {
                 "OPTRE_MA5_BUIS",
                 "OPTRE_MA5_SmartLink",
                 "OPTRE_MA5C_SmartLink",
-                "SWS_Optic_Smartlink"
+                "SWS_Optic_SmartLink"
             };
         };
 
@@ -42,7 +42,7 @@ class SWS_Weapon_MA5BSx_GL : OPTRE_MA5BGL {
     WEAPON_META(MA5BSx_GL,2);
     CLEARANCE(RESTRICTED/DECWHI);
     displayName = QNAME(MA5B-Sx + M301-Sx UGL);
-    cursor = "SWS_Weapon_Smartlink";
+    cursor = "SWS_Weapon_SmartLink";
     descriptionShort = "An experimental variant of the MA5B.";
     hiddenSelectionsTextures[] = {
         "optre_weapons\ar\data\weapon_co.paa",
@@ -59,7 +59,7 @@ class SWS_Weapon_MA5BSx_GL : OPTRE_MA5BGL {
                 "OPTRE_MA5_BUIS",
                 "OPTRE_MA5_SmartLink",
                 "OPTRE_MA5C_SmartLink",
-                "SWS_Optic_Smartlink"
+                "SWS_Optic_SmartLink"
             };
         };
 

@@ -4,7 +4,7 @@ class GMAGAZINE(M9Sx): OPTRE_M9_Frag {
     displayName = QNAME(M9Sx (HE-DP));
     mass = 22;
     typicalSpeed = 10;
-    ammo = QGRENADE(M9Sx);
+    ammo = "SWS_B_Grenade_M9Sx";
     displayNameShort = "M9Sx (HE-DP)";
     descriptionShort = "Type: AT Grenade<br />Rounds: 1<br />Used in: Hand";
 };

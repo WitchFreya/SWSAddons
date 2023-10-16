@@ -1851,7 +1851,7 @@ class CfgVehicles {
 
         backpack = "B_ViperLightHarness_blk_F";
 
-        ALiVE_orbatCreator_loadout[] = {{"SWS_Weapon_MA5BSx","OPTRE_MA5Suppressor","","SWS_Optic_Smartlink",{"OPTRE_60Rnd_762x51_Mag",60},{},""},{},{},{"OPTRE_FC_Marines_Uniform_WDL",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"ACE_quikclot",10},{"OPTRE_M2_Smoke",1,1},{"OPTRE_60Rnd_762x51_Mag",1,60}}},{"OPTRE_UNSC_M52A_Armor_Rifleman_URB",{{"OPTRE_60Rnd_762x51_Mag",4,60},{"OPTRE_M2_Smoke",2,1},{"HandGrenade",2,1},{"ACE_M84",2,1}}},{"B_ViperLightHarness_blk_F",{{"ACE_M84",2,1},{"HandGrenade",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_60Rnd_762x51_Mag",7,60}}},"OPTRE_UNSC_VX16_Helmet_MaskS","",{},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"}};
+        ALiVE_orbatCreator_loadout[] = {{"SWS_Weapon_MA5BSx","OPTRE_MA5Suppressor","","SWS_Optic_SmartLink",{"OPTRE_60Rnd_762x51_Mag",60},{},""},{},{},{"OPTRE_FC_Marines_Uniform_WDL",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"ACE_quikclot",10},{"OPTRE_M2_Smoke",1,1},{"OPTRE_60Rnd_762x51_Mag",1,60}}},{"OPTRE_UNSC_M52A_Armor_Rifleman_URB",{{"OPTRE_60Rnd_762x51_Mag",4,60},{"OPTRE_M2_Smoke",2,1},{"HandGrenade",2,1},{"ACE_M84",2,1}}},{"B_ViperLightHarness_blk_F",{{"ACE_M84",2,1},{"HandGrenade",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_60Rnd_762x51_Mag",7,60}}},"OPTRE_UNSC_VX16_Helmet_MaskS","",{},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"}};
 
 
         class EventHandlers : EventHandlers {
@@ -1891,7 +1891,7 @@ class CfgVehicles {
 
         backpack = "B_ViperLightHarness_blk_F";
 
-        ALiVE_orbatCreator_loadout[] = {{"SWS_Weapon_MA5BSx_GL","OPTRE_MA5Suppressor","","SWS_Optic_Smartlink",{"OPTRE_60Rnd_762x51_Mag",60},{"1Rnd_HE_Grenade_shell",1},""},{},{},{"OPTRE_FC_Marines_Uniform_WDL",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"ACE_quikclot",10},{"OPTRE_M2_Smoke",1,1},{"OPTRE_60Rnd_762x51_Mag",1,60}}},{"OPTRE_UNSC_M52A_Armor_Rifleman_URB",{{"OPTRE_M2_Smoke",2,1},{"HandGrenade",2,1},{"ACE_M84",2,1},{"OPTRE_60Rnd_762x51_Mag",3,60},{"1Rnd_HE_Grenade_shell",3,1}}},{"B_ViperLightHarness_blk_F",{{"ACE_quikclot",15},{"ACE_tourniquet",4},{"ACE_M84",2,1},{"HandGrenade",2,1},{"OPTRE_60Rnd_762x51_Mag",4,60},{"1Rnd_HE_Grenade_shell",10,1},{"1Rnd_SmokeRed_Grenade_shell",2,1},{"OPTRE_M2_Smoke",4,1},{"OPTRE_M2_Smoke_Purple",4,1},{"SWS_Magazine_C7Sx_Sticky",1,1}}},"OPTRE_UNSC_VX16_Helmet_MaskS","",{"Binocular","","","",{},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"}};
+        ALiVE_orbatCreator_loadout[] = {{"SWS_Weapon_MA5BSx_GL","OPTRE_MA5Suppressor","","SWS_Optic_SmartLink",{"OPTRE_60Rnd_762x51_Mag",60},{"1Rnd_HE_Grenade_shell",1},""},{},{},{"OPTRE_FC_Marines_Uniform_WDL",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"ACE_quikclot",10},{"OPTRE_M2_Smoke",1,1},{"OPTRE_60Rnd_762x51_Mag",1,60}}},{"OPTRE_UNSC_M52A_Armor_Rifleman_URB",{{"OPTRE_M2_Smoke",2,1},{"HandGrenade",2,1},{"ACE_M84",2,1},{"OPTRE_60Rnd_762x51_Mag",3,60},{"1Rnd_HE_Grenade_shell",3,1}}},{"B_ViperLightHarness_blk_F",{{"ACE_quikclot",15},{"ACE_tourniquet",4},{"ACE_M84",2,1},{"HandGrenade",2,1},{"OPTRE_60Rnd_762x51_Mag",4,60},{"1Rnd_HE_Grenade_shell",10,1},{"1Rnd_SmokeRed_Grenade_shell",2,1},{"OPTRE_M2_Smoke",4,1},{"OPTRE_M2_Smoke_Purple",4,1},{"SWS_Magazine_C7Sx_Sticky",1,1}}},"OPTRE_UNSC_VX16_Helmet_MaskS","",{"Binocular","","","",{},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"}};
 
 
         class EventHandlers : EventHandlers {
@@ -1972,7 +1972,7 @@ class CfgVehicles {
 
         backpack = "B_ViperLightHarness_blk_F";
 
-        ALiVE_orbatCreator_loadout[] = {{"SWS_Weapon_MA5BSx","OPTRE_MA5Suppressor","","SWS_Optic_Smartlink",{"OPTRE_60Rnd_762x51_Mag",60},{},""},{"launch_RPG32_green_F","","","",{"RPG32_F",1},{},""},{},{"OPTRE_FC_Marines_Uniform_WDL",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"ACE_quikclot",12},{"ACE_tourniquet",4},{"ACE_morphine",1},{"ACE_epinephrine",1},{"OPTRE_M2_Smoke",1,1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",1,32}}},{"OPTRE_UNSC_M52A_Armor_Rifleman_URB",{{"OPTRE_M2_Smoke",2,1},{"HandGrenade",2,1},{"ACE_M84",2,1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",7,32}}},{"B_ViperLightHarness_blk_F",{{"ACE_M84",2,1},{"HandGrenade",2,1},{"OPTRE_M2_Smoke",2,1},{"RPG32_F",3,1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",3,32}}},"OPTRE_UNSC_VX16_Helmet_MaskS","",{},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"}};
+        ALiVE_orbatCreator_loadout[] = {{"SWS_Weapon_MA5BSx","OPTRE_MA5Suppressor","","SWS_Optic_SmartLink",{"OPTRE_60Rnd_762x51_Mag",60},{},""},{"launch_RPG32_green_F","","","",{"RPG32_F",1},{},""},{},{"OPTRE_FC_Marines_Uniform_WDL",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"ACE_quikclot",12},{"ACE_tourniquet",4},{"ACE_morphine",1},{"ACE_epinephrine",1},{"OPTRE_M2_Smoke",1,1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",1,32}}},{"OPTRE_UNSC_M52A_Armor_Rifleman_URB",{{"OPTRE_M2_Smoke",2,1},{"HandGrenade",2,1},{"ACE_M84",2,1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",7,32}}},{"B_ViperLightHarness_blk_F",{{"ACE_M84",2,1},{"HandGrenade",2,1},{"OPTRE_M2_Smoke",2,1},{"RPG32_F",3,1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",3,32}}},"OPTRE_UNSC_VX16_Helmet_MaskS","",{},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"}};
 
 
         class EventHandlers : EventHandlers {
@@ -2126,7 +2126,7 @@ class CfgVehicles {
 
         backpack = "B_ViperLightHarness_blk_F";
 
-        ALiVE_orbatCreator_loadout[] = {{"SWS_Weapon_MA5BSx","OPTRE_MA5Suppressor","","SWS_Optic_Smartlink",{"OPTRE_60Rnd_762x51_Mag",60},{},""},{"launch_B_Titan_olive_F","","","",{"Titan_AA",1},{},""},{},{"OPTRE_FC_Marines_Uniform_WDL",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"ACE_quikclot",15},{"ACE_tourniquet",4},{"OPTRE_M2_Smoke",1,1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",1,32}}},{"OPTRE_UNSC_M52A_Armor_Rifleman_URB",{{"OPTRE_M2_Smoke",2,1},{"HandGrenade",2,1},{"ACE_M84",2,1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",8,32}}},{"B_ViperLightHarness_blk_F",{{"ACE_M84",2,1},{"HandGrenade",2,1},{"OPTRE_M2_Smoke",2,1},{"Titan_AA",2,1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",2,32}}},"OPTRE_UNSC_VX16_Helmet_MaskS","",{},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"}};
+        ALiVE_orbatCreator_loadout[] = {{"SWS_Weapon_MA5BSx","OPTRE_MA5Suppressor","","SWS_Optic_SmartLink",{"OPTRE_60Rnd_762x51_Mag",60},{},""},{"launch_B_Titan_olive_F","","","",{"Titan_AA",1},{},""},{},{"OPTRE_FC_Marines_Uniform_WDL",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"ACE_quikclot",15},{"ACE_tourniquet",4},{"OPTRE_M2_Smoke",1,1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",1,32}}},{"OPTRE_UNSC_M52A_Armor_Rifleman_URB",{{"OPTRE_M2_Smoke",2,1},{"HandGrenade",2,1},{"ACE_M84",2,1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",8,32}}},{"B_ViperLightHarness_blk_F",{{"ACE_M84",2,1},{"HandGrenade",2,1},{"OPTRE_M2_Smoke",2,1},{"Titan_AA",2,1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",2,32}}},"OPTRE_UNSC_VX16_Helmet_MaskS","",{},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"}};
 
 
         class EventHandlers : EventHandlers {
@@ -2166,7 +2166,7 @@ class CfgVehicles {
 
         backpack = "B_ViperLightHarness_blk_F";
 
-        ALiVE_orbatCreator_loadout[] = {{"SWS_Weapon_MA5BSx","OPTRE_MA5Suppressor","","SWS_Optic_Smartlink",{"OPTRE_60Rnd_762x51_Mag",60},{},""},{},{},{"OPTRE_FC_Marines_Uniform_WDL",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"ACE_quikclot",10},{"OPTRE_M2_Smoke",1,1},{"OPTRE_60Rnd_762x51_Mag",1,60}}},{"OPTRE_UNSC_M52A_Armor_Rifleman_URB",{{"OPTRE_60Rnd_762x51_Mag",4,60},{"OPTRE_M2_Smoke",2,1},{"HandGrenade",2,1},{"ACE_M84",2,1}}},{"B_ViperLightHarness_blk_F",{{"ACE_M84",2,1},{"HandGrenade",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_60Rnd_762x51_Mag",7,60}}},"OPTRE_UNSC_VX16_Helmet_MaskS","",{},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"}};
+        ALiVE_orbatCreator_loadout[] = {{"SWS_Weapon_MA5BSx","OPTRE_MA5Suppressor","","SWS_Optic_SmartLink",{"OPTRE_60Rnd_762x51_Mag",60},{},""},{},{},{"OPTRE_FC_Marines_Uniform_WDL",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"ACE_quikclot",10},{"OPTRE_M2_Smoke",1,1},{"OPTRE_60Rnd_762x51_Mag",1,60}}},{"OPTRE_UNSC_M52A_Armor_Rifleman_URB",{{"OPTRE_60Rnd_762x51_Mag",4,60},{"OPTRE_M2_Smoke",2,1},{"HandGrenade",2,1},{"ACE_M84",2,1}}},{"B_ViperLightHarness_blk_F",{{"ACE_M84",2,1},{"HandGrenade",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_60Rnd_762x51_Mag",7,60}}},"OPTRE_UNSC_VX16_Helmet_MaskS","",{},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"}};
 
 
         class EventHandlers : EventHandlers {
@@ -3002,7 +3002,7 @@ class CfgVehicles {
 
         backpack = "B_ViperLightHarness_blk_F";
 
-        ALiVE_orbatCreator_loadout[] = {{"SWS_Weapon_MA5BSx","OPTRE_MA5Suppressor","","SWS_Optic_Smartlink",{"OPTRE_60Rnd_762x51_Mag",60},{},""},{},{},{"OPTRE_FC_Marines_Uniform_WDL",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"ACE_quikclot",10},{"OPTRE_M2_Smoke",1,1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",2,32}}},{"OPTRE_UNSC_M52A_Armor_Rifleman_URB",{{"ACE_M26_Clacker",1},{"ACE_DefusalKit",1},{"OPTRE_M2_Smoke",2,1},{"HandGrenade",2,1},{"ACE_M84",2,1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",6,32}}},{"B_ViperLightHarness_blk_F",{{"ToolKit",1},{"ACE_M84",2,1},{"HandGrenade",2,1},{"OPTRE_M2_Smoke",2,1},{"SWS_Magazine_C7Sx_Sticky",4,1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",4,32},{"ClaymoreDirectionalMine_Remote_Mag",2,1}}},"OPTRE_UNSC_VX16_Helmet_MaskS","",{},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"}};
+        ALiVE_orbatCreator_loadout[] = {{"SWS_Weapon_MA5BSx","OPTRE_MA5Suppressor","","SWS_Optic_SmartLink",{"OPTRE_60Rnd_762x51_Mag",60},{},""},{},{},{"OPTRE_FC_Marines_Uniform_WDL",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"ACE_quikclot",10},{"OPTRE_M2_Smoke",1,1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",2,32}}},{"OPTRE_UNSC_M52A_Armor_Rifleman_URB",{{"ACE_M26_Clacker",1},{"ACE_DefusalKit",1},{"OPTRE_M2_Smoke",2,1},{"HandGrenade",2,1},{"ACE_M84",2,1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",6,32}}},{"B_ViperLightHarness_blk_F",{{"ToolKit",1},{"ACE_M84",2,1},{"HandGrenade",2,1},{"OPTRE_M2_Smoke",2,1},{"SWS_Magazine_C7Sx_Sticky",4,1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",4,32},{"ClaymoreDirectionalMine_Remote_Mag",2,1}}},"OPTRE_UNSC_VX16_Helmet_MaskS","",{},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"}};
 
 
         class EventHandlers : EventHandlers {

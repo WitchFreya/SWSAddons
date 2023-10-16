@@ -5,7 +5,7 @@
     "SWS_Weapon_SM247", \
     "SWS_Weapon_MA5BSx", \
     "SWS_Weapon_MA5BSx_GL", \
-    "SWS_Optic_Smartlink", \
+    "SWS_Optic_SmartLink", \
     "SWS_Weapon_M24RL_D_Loaded", \
     "SWS_Weapon_SBR55"), \
     "SWS_Weapon_ARMXS", \
@@ -47,9 +47,9 @@ class CfgWeapons {
     #include "CfgWeapons\Guns\M24RL_D.inc"
 
     //== Optics
-    class OPTRE_MA5_Smartlink;
+    class OPTRE_MA5_SmartLink;
 
-    #include "CfgWeapons\Optics\Smartlink.inc"
+    #include "CfgWeapons\Optics\SmartLink.inc"
 
     //== Grenades
     class GrenadeLauncher;

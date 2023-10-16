@@ -1,7 +1,8 @@
- class SWS_Optic_Smartlink : OPTRE_MA5_SmartLink {
+ class SWS_Optic_SmartLink : OPTRE_MA5_SmartLink
+ {
     ITEM_META(2);
     CLEARANCE(RESTRICTED/DECWHI);
-    displayName = QNAME(Smartlink-Sx);
+    displayName = QNAME(SmartLink-Sx);
 
     model = QPATHTOF(data\ma5c_smartlink.p3d);
     class ItemInfo: InventoryOpticsItem_Base_F
@@ -12,7 +13,7 @@
         modelOptics = "\OPTRE_Weapons\AR\MA5_smartlink.p3d";
         inertia = 0.1;
         class OpticsModes {
-            class SWS_Optic_Smartlink {
+            class SWS_Optic_SmartLink {
                 opticsID = 1;
                 useModelOptics = 0;
                 opticsPPEffects[] = { "" };
@@ -29,7 +30,7 @@
                 discreteDistance[] = { 100,200,300,400,500 };
                 discreteDistanceInitIndex = 1;
             };
-            class SWS_Optic_Smartlink_Zoom : SWS_Optic_Smartlink {
+            class SWS_Optic_SmartLink_Zoom : SWS_Optic_SmartLink {
                 opticsID = 2;
                 opticsZoomMin = 0.125;
                 opticsZoomMax=0.125;
