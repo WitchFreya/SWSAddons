@@ -1,10 +1,10 @@
 #define CLASSES_MAGAZINES \
-    QMAGAZINE(100Rnd_762x51_Mag), \
-    QMAGAZINE(100Rnd_762x51_Mag_Tracer), \
-    QMAGAZINE(200Rnd_762x51_Mag), \
-    QMAGAZINE(200Rnd_762x51_Mag_Tracer), \
-    QMAGAZINE(400Rnd_762x51_Mag), \
-    QMAGAZINE(400Rnd_762x51_Mag_Tracer), \
+    QUOTE(MAGAZINE(100Rnd_762x51_Mag)), \
+    QUOTE(MAGAZINE(100Rnd_762x51_Mag_Tracer)), \
+    QUOTE(MAGAZINE(200Rnd_762x51_Mag)), \
+    QUOTE(MAGAZINE(200Rnd_762x51_Mag_Tracer)), \
+    QUOTE(MAGAZINE(400Rnd_762x51_Mag)), \
+    QUOTE(MAGAZINE(400Rnd_762x51_Mag_Tracer)), \
     QGMAGAZINE(M9Sx), \
     QGSMAGAZINE(M9Sx,1Rnd), \
     QGMAGAZINE(M3Sx), \
@@ -14,26 +14,26 @@
     QGMAGAZINE(DOUBLES(9Bang,NoFuse)), \
     QGSMAGAZINE(9Bang,1Rnd), \
     QGSMAGAZINE(9Bang,3Rnd), \
-    QMAGAZINE(M24RL_D), \
-    QMAGAZINE(DOUBLES(C7Sx,Sticky)), \
-    QMAGAZINE(6Rnd_Shotgun_Incendiary), \
-    QMAGAZINE(12_Rnd_Shotgun_Incendiary), \
-    QMAGAZINE(60Rnd_65x39_Caseless_msbs),\
-    QMAGAZINE(60Rnd_65x39_Caseless_msbs_tracers), \
-    QMAGAZINE(60Rnd_65x39_Caseless_msbs_tracers_blue), \
-    QMAGAZINE(60Rnd_65x39_Caseless_msbs_tracers_green), \
-    QMAGAZINE(60Rnd_65x39_Caseless_msbs_tracers_yellow), \
-    QMAGAZINE(60Rnd_65x39_Caseless), \
-    QMAGAZINE(60Rnd_65x39_Caseless_tracers), \
-    QMAGAZINE(60Rnd_65x39_Caseless_tracers_yellow), \
-    QMAGAZINE(60Rnd_65x39_Caseless_tracers_blue), \
-    QMAGAZINE(60Rnd_65x39_Caseless_tracers_green), \
-    QMAGAZINE(3Rnd_FlareSmoke_Blue), \
-    QMAGAZINE(3Rnd_FlareSmoke_Green), \
-    QMAGAZINE(3Rnd_FlareSmoke_Orange), \
-    QMAGAZINE(3Rnd_FlareSmoke_Purple), \
-    QMAGAZINE(3Rnd_FlareSmoke_Red), \
-    QMAGAZINE(3Rnd_FlareSmoke_Yellow)
+    QUOTE(MAGAZINE(M24RL_D)), \
+    QUOTE(MAGAZINE(DOUBLES(C7Sx,Sticky))), \
+    QUOTE(MAGAZINE(6Rnd_Shotgun_Incendiary)), \
+    QUOTE(MAGAZINE(12_Rnd_Shotgun_Incendiary)), \
+    QUOTE(MAGAZINE(60Rnd_65x39_Caseless_msbs)),\
+    QUOTE(MAGAZINE(60Rnd_65x39_Caseless_msbs_tracers)), \
+    QUOTE(MAGAZINE(60Rnd_65x39_Caseless_msbs_tracers_blue)), \
+    QUOTE(MAGAZINE(60Rnd_65x39_Caseless_msbs_tracers_green)), \
+    QUOTE(MAGAZINE(60Rnd_65x39_Caseless_msbs_tracers_yellow)), \
+    QUOTE(MAGAZINE(60Rnd_65x39_Caseless)), \
+    QUOTE(MAGAZINE(60Rnd_65x39_Caseless_tracers)), \
+    QUOTE(MAGAZINE(60Rnd_65x39_Caseless_tracers_yellow)), \
+    QUOTE(MAGAZINE(60Rnd_65x39_Caseless_tracers_blue)), \
+    QUOTE(MAGAZINE(60Rnd_65x39_Caseless_tracers_green)), \
+    QUOTE(MAGAZINE(3Rnd_FlareSmoke_Blue)), \
+    QUOTE(MAGAZINE(3Rnd_FlareSmoke_Green)), \
+    QUOTE(MAGAZINE(3Rnd_FlareSmoke_Orange)), \
+    QUOTE(MAGAZINE(3Rnd_FlareSmoke_Purple)), \
+    QUOTE(MAGAZINE(3Rnd_FlareSmoke_Red)), \
+    QUOTE(MAGAZINE(3Rnd_FlareSmoke_Yellow))
 
 class CfgMagazines {
 

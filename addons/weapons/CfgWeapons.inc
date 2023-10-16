@@ -75,7 +75,7 @@ class CfgWeapons {
             magazines[] = {QGMAGAZINE(DOUBLES(9Bang,NoFuse))};
         };
         class MUZZLE(C7Sx): ThrowMuzzle {
-            magazines[] = {QMAGAZINE(DOUBLES(C7Sx,Sticky))};
+            magazines[] = {QUOTE(MAGAZINE(DOUBLES(C7Sx,Sticky)))};
         };
     };
 };
