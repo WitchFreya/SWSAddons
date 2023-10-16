@@ -1,4 +1,5 @@
-class GRENADE(M3Sx): OPTRE_G_M9_Frag {
+class SWS_B_Grenade_M3Sx : OPTRE_G_M9_Frag
+{
     META;
     hit = 40;
     indirectHit = 40;
@@ -11,7 +12,8 @@ class GRENADE(M3Sx): OPTRE_G_M9_Frag {
     ace_frag_enabled = 1;
 };
 
-class SHELL(M3Sx_40mm): M319_HE {
+class SHELL(M3Sx_40mm): M319_HE
+{
     META;
     hit = 40;
     indirectHit = 40;

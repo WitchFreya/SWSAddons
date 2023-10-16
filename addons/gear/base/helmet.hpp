@@ -12,7 +12,7 @@
     "H_VacCollar",               \
     "H_Neck"
 
-class SWS_Helmet_Base : SWS_HELMET_OPTRE_UNSC_CH252D_Helmet_Base
+class SWS_Helmet_Base : SWS_Helmet_OPTRE_UNSC_CH252D_Helmet_Base
 {
     ITEM_META(1);
     descriptionShort = "Armor Level: ODST";

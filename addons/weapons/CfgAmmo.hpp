@@ -1,14 +1,14 @@
 #define CLASSES_AMMO \
     QAMMO(762x51_Ball), \
-    QGRENADE(Frag), \
-    QGRENADE(M9Sx), \
-    QGRENADE(M3Sx), \
+    "SWS_B_Grenade_Frag", \
+    "SWS_B_Grenade_M9Sx", \
+    "SWS_B_Grenade_M3Sx", \
     QSHELL(M3Sx_40mm), \
-    QGRENADE(DOUBLES(M9Sx,OnImpact)), \
-    QGRENADE(DOUBLES(M9Sx,OnExp)), \
+    "SWS_B_Grenade_M9Sx_OnImpact", \
+    "SWS_B_M9Sx_OnExp", \
     QSHELL(M9Sx_40mm), \
-    QGRENADE(9Bang), \
-    QGRENADE(DOUBLES(9Bang,NoFuse)), \
+    "SWS_B_Grenade_9Bang", \
+    "SWS_B_Grenade_9Bang_NoFuse", \
     QSHELL(9Bang), \
     QAMMO(M24RL_D), \
     QAMMO(DOUBLES(C7Sx,Sticky)), \
