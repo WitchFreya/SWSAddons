@@ -1,5 +1,5 @@
-#define COMPONENT weapons
-#define COMPONENT_BEAUTIFIED Weapons
+#define COMPONENT Vehicles
+#define COMPONENT_BEAUTIFIED Vehicles
 #include "\x\sws\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
