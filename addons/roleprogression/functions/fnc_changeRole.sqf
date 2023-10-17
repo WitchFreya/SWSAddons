@@ -13,10 +13,16 @@
  * Public: No
  */
 
-params ["_role"];
-private _oldRole = GVAR(role);
+params ["_role", "_who"];
+
+if (!local player || { player != _who }) exitWith {
+    GVAR(playerRoles) set [name _who, _role];
+    [QGVAR(playerRolesChanged), [name _who, _role]] call CBA_fnc_localEvent;
+};
+
+private _oldRole = GVAR(myRole);
 
 if (_oldRole == _role) exitWith {};
-GVAR(role) = _role;
+GVAR(myRole) = _role;
 
 [QGVAR(roleChanged), [_selection, _oldRole]] call CBA_fnc_localEvent;
