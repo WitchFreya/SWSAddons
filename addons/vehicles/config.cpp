@@ -2,10 +2,8 @@
 
 #include "CfgVehicles.inc"
 
-class CfgPatches
-{
-    class ADDON
-    {
+class CfgPatches {
+    class ADDON {
         name = QUOTE(COMPONENT);
         units[] = { CLASSES_VEHICLES };
         weapons[] = { };

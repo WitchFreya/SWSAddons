@@ -24,6 +24,9 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F {
                     {
                         "200Rnd_127x99_mag_Tracer_Yellow",
                         "200Rnd_127x99_mag_Tracer_Yellow",
+                        "200Rnd_127x99_mag_Tracer_Yellow",
+                        "SmokeLauncherMag",
+                        "SmokeLauncherMag",
                         "SmokeLauncherMag",
                         "SmokeLauncherMag",
                         "SmokeLauncherMag"
