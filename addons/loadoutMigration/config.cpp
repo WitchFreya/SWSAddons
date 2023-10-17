@@ -12,7 +12,7 @@ class CfgPatches
         units[] = { };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"ace_arsenal", "aceax_arsenal"};
+        requiredAddons[] = {"ace_arsenal"};
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };
