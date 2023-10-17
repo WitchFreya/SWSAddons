@@ -1,5 +1,4 @@
-#define CLASSES_VEHICLES \
-    "SWS_Vehicle_M700ViperMBT"
+#define CLASSES_VEHICLES "SWS_V_MBT_M700_Viper"
 
 class Turrets;
 class MainTurret;
