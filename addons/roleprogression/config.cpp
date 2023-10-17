@@ -12,8 +12,7 @@ class CfgPatches
         units[] = { };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { "ace_dogtags", "ace_arsenal", "aceax_arsenal" };
-        skipWhenMissingDependencies = 1;
+        requiredAddons[] = { "ace_dogtags", "ace_arsenal" };
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };

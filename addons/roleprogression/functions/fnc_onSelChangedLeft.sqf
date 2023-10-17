@@ -3,7 +3,7 @@
 
 /*
  * Author: Maid
- * Adds additional logic to onSelChangeLeft function for aceax which calls through to ace.
+ * Adds additional logic to onSelChangeLeft function from ace.
  *
  * Arguments:
  * 0: Left panel control <CONTROL>
@@ -15,7 +15,7 @@
  * Public: No
  */
 
-_this call aceax_arsenal_fnc_onSelChangedLeft;
+_this call ace_arsenal_fnc_onSelChangedLeft;
 
 if (ace_arsenal_currentLeftPanel != IDC_buttonRole) exitWith {};
 
