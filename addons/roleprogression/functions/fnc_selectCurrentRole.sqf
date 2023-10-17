@@ -18,7 +18,7 @@ params ["_display"];
 
 private _ctrlPanel = _display displayCtrl IDC_leftTabContent;
 private _index = 0;
-private _selectedItem = GVAR(role);
+private _selectedItem = GVAR(selectedRole);
 
 for "_lbIndex" from 0 to (lbSize _ctrlPanel) - 1 do {
     if ((_ctrlPanel lbData _lbIndex) == _selectedItem) exitWith {

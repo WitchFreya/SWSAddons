@@ -19,14 +19,14 @@ if (isDedicated) exitWith {
     TRACE_1("Debrief initiated",_caller);
 };
 
-if (isNil QGVAR(role)) exitWith {
-    ERROR_1("Role not set",GVAR(role));
+if (isNil QGVAR(myRole)) exitWith {
+    ERROR_1("Role not set",GVAR(myRole));
 };
 
 private _knownRoles = uiNamespace getVariable [QGVAR(rolesOrder), []];
 
-if (!(GVAR(role) in _knownRoles)) exitWith {
-    ERROR_2("Role not in cache",GVAR(role),_knownRoles);
+if (!(GVAR(myRole) in _knownRoles)) exitWith {
+    ERROR_2("Role not in cache",GVAR(myRole),_knownRoles);
 };
 
-[QGVAR(saveRoleProgress), [getPlayerUID ace_player, profileName, GVAR(role)]] call CBA_fnc_serverEvent;
+[QGVAR(saveRoleProgress), [getPlayerUID ace_player, profileName, GVAR(myRole)]] call CBA_fnc_serverEvent;
