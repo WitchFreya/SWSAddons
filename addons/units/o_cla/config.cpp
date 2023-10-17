@@ -78,7 +78,6 @@ class CfgPatches {
             "A3_Characters_F",
             "DMNS_Units",
             "lambs_danger",
-            "aceax_ingame",
             "A3_Sounds_F",
             "A3_Sounds_F_Exp",
             "jsrs_soundmod_complete_edition",
