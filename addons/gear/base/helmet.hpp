@@ -55,7 +55,7 @@ class SWS_Helmet_Base_dp : SWS_Helmet_Base
 #define C_HELMET_BASE(varName,texHelmet,texRest)                        \
     class DOUBLES(SWS_Helmet,varName): SWS_Helmet_Base {                \
         ITEM_META(2);                                                       \
-        displayName = QNAME(Helmet (name));                             \
+        displayName = QNAME(Helmet (varName));                             \
         hiddenSelectionsTextures[] = {ARR_2(texHelmet,texRest)};        \
         class ItemInfo : ItemInfo {                                     \
             hiddenSelectionsTextures[] = {ARR_2(texHelmet,texRest)};    \
@@ -63,7 +63,7 @@ class SWS_Helmet_Base_dp : SWS_Helmet_Base
     };                                                                  \
     class TRIPLES(SWS_Helmet,varName,dp): SWS_Helmet_Base_dp {          \
         ITEM_META(1);                                                       \
-        displayName = QNAME(Helmet (name));                             \
+        displayName = QNAME(Helmet (varName));                             \
         ace_arsenal_uniqueBase = QUOTE(DOUBLES(SWS_Helmet,varName)); \
         hiddenSelectionsTextures[] = {texHelmet,QPATHTOF(data\textures\visr_clr_ca.paa)};     \
         class ItemInfo : ItemInfo {                                     \
@@ -74,6 +74,7 @@ class SWS_Helmet_Base_dp : SWS_Helmet_Base
 #define C_HELMET_VARIANT(name,variant,varHiddenSelections,varHiddenSelectionsDp)    \
     class TRIPLES(SWS_Helmet,name,variant) : DOUBLES(SWS_Helmet,name)               \
     {                                                                               \
+        displayName = QNAME(Helmet (name/variant));                                 \
         hiddenSelections[] = {varHiddenSelections};                                 \
         class ItemInfo : ItemInfo                                                   \
         {                                                                           \
@@ -82,7 +83,7 @@ class SWS_Helmet_Base_dp : SWS_Helmet_Base
     };                                                                              \
     class TRIPLES(SWS_Helmet,DOUBLES(name,variant),dp) : TRIPLES(SWS_Helmet,name,dp)\
     {                                                                               \
-        ace_arsenal_uniqueBase = QUOTE(TRIPLES(SWS_Helmet,name,variant));                  \
+        ace_arsenal_uniqueBase = QUOTE(TRIPLES(SWS_Helmet,name,variant));           \
         hiddenSelections[] = {varHiddenSelections};                                 \
         class ItemInfo : ItemInfo                                                   \
         {                                                                           \

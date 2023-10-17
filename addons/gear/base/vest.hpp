@@ -353,6 +353,7 @@ All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With
 #define C_VEST_VARIANT(varName,varVariant,selections)               \
     class SWS_Vest_##varName##_##varVariant : SWS_Vest_##varName \
     {        \
+        displayName = QNAME(Vest (varName/varVariant));             \
         class ItemInfo: ItemInfo {                                  \
             hiddenSelections[] = {ARR_2(selections,"A_Ghillie")};   \
         };                                                          \
