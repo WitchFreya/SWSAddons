@@ -15,16 +15,18 @@
  * Public: No
  */
 
-_this call ace_arsenal_fnc_onSelChangedLeft;
-
-if (ace_arsenal_currentLeftPanel != IDC_buttonRole) exitWith {};
+if (ace_arsenal_currentLeftPanel != IDC_buttonRole) exitWith {
+    _this call ace_arsenal_fnc_onSelChangedLeft;
+};
 
 params ["_control", "_curSel"];
 
 if (_curSel < 0) exitwith {};
-
 private _display = ctrlParent _control;
 private _selection = _control lbData _curSel;
+if (_selection != GVAR(role) && { !ace_arsenal_leftTabFocus }) exitWith {
+    [_display] call FUNC(selectCurrentRole);
+};
 TRACE_1("Changing selection",_selection);
 
 [_display, _control, _curSel, configFile >> "CfgRoles" >> _selection] call ace_arsenal_fnc_itemInfo;
