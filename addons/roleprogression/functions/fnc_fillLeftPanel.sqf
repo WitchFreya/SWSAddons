@@ -8,6 +8,7 @@
  * Arguments:
  * 0: Arsenal display <DISPLAY>
  * 1: Tab control idc <NUMBER>
+ * 2: Right tab control idc <NUMBER>
  *
  * Return Value:
  * None
@@ -15,7 +16,7 @@
  * Public: No
  */
 
-params ["_display", "_panelIdc"];
+params ["_display", "_panelIdc", "_rightPanelIdc"];
 private _ctrlPanel = _display displayCtrl IDC_leftTabContent;
 
 if (_panelIDC != IDC_buttonRole) exitWith {};
@@ -30,7 +31,6 @@ lbClear _ctrlPanel;
 	private _displayName = _y get "name";
 	private _itemPicture = _y get "icon";
 
-    TRACE_3("Adding role:",_className,_displayName,_itemPicture);
     private _lbAdd = _ctrlPanel lbAdd _displayName;
     _ctrlPanel lbSetData [_lbAdd, _className];
     _ctrlPanel lbSetPicture [_lbAdd, _itemPicture];
@@ -38,9 +38,6 @@ lbClear _ctrlPanel;
         toLower _displayName
     ];
     _ctrlPanel lbSetTooltip [_lbAdd, _usage];
-
-    if (GVAR(role) == _className) then {
-        _ctrlPanel lbSetCurSel _lbAdd;
-        TRACE_1("Selecting role", _lbAdd);
-    };
 } forEach _roles;
+
+[QGVAR(leftPanelFilled), [_display, _rightPanelIdc]] call CBA_fnc_localEvent;

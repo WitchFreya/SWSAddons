@@ -9,3 +9,4 @@ PREP(changeRole);
 PREP(retrieveUser);
 PREP(onUserSelectedPlayer);
 PREP(addMyRoleHistory);
+PREP(selectCurrentRole);
