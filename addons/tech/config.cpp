@@ -1,22 +1,20 @@
 #include "script_component.hpp"
 
-#include "CfgVehicles.hpp"
 #include "CfgEventHandlers.hpp"
-#include "CfgWeapons.hpp"
+#include "CfgWeapons.inc"
 #include "RscInGameUI.inc"
-#include "XtdGearModels.inc"
 
 class CfgPatches
 {
     class ADDON
     {
         name = QUOTE(COMPONENT);
-        units[] = { CLASSES_VEHICLE };
+        units[] = { };
         weapons[] = { CLASSES_WEAPONS };
         magazines[] = { };
         ammo[] = { };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { "DMNS_Air_UAV_01", "SWS_Main", "SWS_Logic" };
+        requiredAddons[] = { "DMNS_Air_UAV_01", "sws_main", "sws_logic" };
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };

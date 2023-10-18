@@ -1,1 +1,1 @@
-#include "\x\SWS\addons\logic\script_component.hpp"
+#include "..\script_component.hpp"

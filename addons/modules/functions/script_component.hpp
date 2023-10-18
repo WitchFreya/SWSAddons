@@ -1,1 +1,1 @@
-#include "\x\SWS\addons\Modules\script_component.hpp"
+#include "..\script_component.hpp"

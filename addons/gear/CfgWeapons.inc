@@ -1,4 +1,4 @@
-#define QHELMET_VARIANTS_POLARIZATION_FN(var0) QHELMET(var0), QHELMET(DOUBLES(var0,dp))
+#define QHELMET_VARIANTS_POLARIZATION_FN(var0) QUOTE(DOUBLES(SWS_Helmet,var0)), QUOTE(TRIPLES(SWS_Helmet,var0,dp))
 #define QHELMET_VARIANTS_GHILLIE_FN(var0)  \
     QHELMET_VARIANTS_POLARIZATION_FN(var0), \
     QHELMET_VARIANTS_POLARIZATION_FN(DOUBLES(var0,Ghillie))
@@ -8,11 +8,12 @@
 
 #define QHELMETS_FN(var0) QHELMET_VARIANTS_COLLAR_FN(var0)
 
-#define QVEST_VARIANTS_GHILLIE_FN(var0) QVEST(var0), QVEST(DOUBLES(var0,Ghillie))
+#define QVEST_VARIANTS_GHILLIE_FN(var0) QUOTE(SWS_Vest_##var0), QUOTE(SWS_Vest_##var0##_Ghillie)
 #define QVEST_VARIANTS_CONFIGURATION_FN(var0)               \
     QVEST_VARIANTS_GHILLIE_FN(var0),                        \
     QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Demolitions)),   \
     QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Sniper)),        \
+    QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Copilot)),         \
     QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Light)),         \
     QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Scout)),         \
     QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Rifleman)),      \
@@ -36,7 +37,7 @@
     QWEAPONS_FN(Rabbit), \
     QWEAPONS_FN(Sawbones), \
     QWEAPONS_FN(Tiger), \
-    QWEAPONS_FN(Kitty), \
+    QWEAPONS_FN(Hound), \
     QWEAPONS_FN(Hurricane), \
     QWEAPONS_FN(Roman), \
     QWEAPONS_FN(Blue), \
@@ -45,8 +46,8 @@
     QWEAPONS_FN(Orange), \
     QWEAPONS_FN(Purple), \
     QWEAPONS_FN(Red), \
-    QHELMET(Maid_Recon), \
-    QHELMET(TRIPLES(Maid,Recon,dp))
+    "SWS_Helmet_Maid_Recon", \
+    "SWS_Helmet_Maid_Recon_dp"
 
 #define C_GEAR(varName,varVisorColor)   \
     C_HELMET(varName,varVisorColor);    \
@@ -55,12 +56,12 @@
 class CfgWeapons
 {
     class OPTRE_UNSC_M52D_Armor;
-    class VEST(OPTRE_UNSC_M52D_Armor): OPTRE_UNSC_M52D_Armor {
+    class SWS_Vest_OPTRE_UNSC_M52D_Armor : OPTRE_UNSC_M52D_Armor {
         ITEM_META(0);
         class ItemInfo;
     };
     class OPTRE_UNSC_CH252D_Helmet_Base;
-    class HELMET(OPTRE_UNSC_CH252D_Helmet_Base): OPTRE_UNSC_CH252D_Helmet_Base {
+    class SWS_Helmet_OPTRE_UNSC_CH252D_Helmet_Base : OPTRE_UNSC_CH252D_Helmet_Base {
         ITEM_META(0);
         class ItemInfo;
     };
@@ -79,8 +80,8 @@ class CfgWeapons
     C_GEAR(Maid,sepia);
     C_GEAR(Polaris,pink);
     C_GEAR(Rabbit,pink);
-    C_GEAR(Tiger,pink);
-    C_GEAR(Kitty,kitty);
+    C_GEAR(Tiger,gold);
+    C_GEAR(Hound,hound);
     C_GEAR(Sawbones,teal);
     C_GEAR(Hurricane,purple);
     C_GEAR(Roman,grey);

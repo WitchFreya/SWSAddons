@@ -1,15 +1,15 @@
 #define NAME_M24RLD NAME(M24RL-Sx 'Howdy')
 
-class WEAPON(M24RL_D): launch_MRAWS_green_F {
+class SWS_Weapon_M24RL_D : launch_MRAWS_green_F {
     ITEM_META(1);
     CLEARANCE(RESTRICTED/DECWHITE);
     displayName = QUOTE(NAME_M24RLD);
-    baseWeapon = QWEAPON(DOUBLES(M24RL_D,Loaded));
+    baseWeapon = "SWS_Weapon_M24RL_D_Loaded";
     picture = QPATHTOF(data\icons\m24rl_d_ca.paa);
     pictureWire = QPATHTOF(data\icons\m24rl_d_wire_ca.paa);
     model = QPATHTOF(data\m24rl_d\m24rl_d.p3d);
     handAnim[] = {"OFP2_ManSkeleton", "\A3\Weapons_F\Launchers\RPG32\data\Anim\RPG32.rtm"};
-    magazines[] = { QMAGAZINE(M24RL_D) };
+    magazines[] = { QUOTE(MAGAZINE(M24RL_D)) };
     magazineReloadTime = 0.1;
     reloadMagazineSound[] = {"",1,1};
     description = "A single-use dumbfire rocket launcher that will make short work of most targets.";
@@ -28,7 +28,7 @@ class WEAPON(M24RL_D): launch_MRAWS_green_F {
     };
 };
 
-class WEAPON(DOUBLES(M24RL_D,Loaded)): WEAPON(M24RL_D) {
+class SWS_Weapon_M24RL_D_Loaded : SWS_Weapon_M24RL_D {
     SCOPE(2);
     displayName = QUOTE(NAME_M24RLD (Disposable));
     magazines[] = {"CBA_FakeLauncherMagazine"};
@@ -37,7 +37,7 @@ class WEAPON(DOUBLES(M24RL_D,Loaded)): WEAPON(M24RL_D) {
     };
 };
 
-class WEAPON(DOUBLES(M24RL_D,Used)): WEAPON(M24RL_D) {
+class SWS_Weapon_M24RL_D_Used : SWS_Weapon_M24RL_D {
     displayName = QUOTE(NAME_M24RLD (Used));
     magazines[] = {"CBA_FakeLauncherMagazine"};
 };

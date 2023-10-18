@@ -168,6 +168,35 @@ All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With
                                "APO_SMG",              \
                                "CustomKit_Scorch"
 
+#define VEST_SELECTIONS_COPILOT VEST_SELECTIONS_BASE,   \
+                               VEST_SELECTIONS_MARINE, \
+                               "AS_ODSTLeft",          \
+                               "AS_ODSTRight",         \
+                               "AS_ODSTCQBRight",      \
+                               "AS_ODSTSniperLeft",   \
+                               "AS_ODSTSniperRight",   \
+                               "AS_SmallLeft",         \
+                               "AS_SmallRight",        \
+                               "AP_AR",                \
+                               "AP_BR",                \
+                               "AP_GL",                \
+                               "AP_Knife",             \
+                               "AP_MGThigh",           \
+                               "AP_Pack",              \
+                               "AP_Rounds",            \
+                               "AP_SG",                \
+                               "AP_SMG",               \
+                               "AP_Sniper",            \
+                               "AP_Thigh",             \
+                               "AP_Frag",              \
+                               "AP_Smoke",             \
+                               "APO_AR",               \
+                               "APO_BR",               \
+                               "APO_SMG",              \
+                               "CustomKit_Scorch",     \
+                               "A_TacPad",             \
+                               "A_ODST"
+
 #define VEST_SELECTIONS_LIGHT VEST_SELECTIONS_BASE, VEST_SELECTIONS_MARINE, \
                               "AS_ODSTLeft",                                \
                               "AS_ODSTRight",                               \
@@ -307,22 +336,24 @@ All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With
     "CustomKit_Scorch"
 
 #define C_VEST_GHILLIE(varName,varSelections)                 \
-    class DOUBLES(VEST(varName),Ghillie): VEST(varName) {   \
+    class SWS_Vest_##varName##_Ghillie: SWS_Vest_##varName {   \
         class ItemInfo: ItemInfo {                          \
             hiddenSelections[] = {varSelections};           \
         };                                                  \
     }
 
 #define C_VEST_BASE(varName,varTextures)                        \
-    class VEST(varName) : VEST(Base) {                          \
-        SCOPE(2);                                               \
+    class SWS_Vest_##varName : SWS_Vest_Base {                          \
+        ITEM_META(2);                                            \
         displayName = QNAME(Vest (varName));                     \
         hiddenSelectionsTextures[] = { varTextures };           \
     };                                                          \
     C_VEST_GHILLIE(varName,VEST_SELECTIONS_STANDARD)
 
 #define C_VEST_VARIANT(varName,varVariant,selections)               \
-    class DOUBLES(VEST(varName),varVariant): VEST(varName) {        \
+    class SWS_Vest_##varName##_##varVariant : SWS_Vest_##varName \
+    {        \
+        displayName = QNAME(Vest (varName/varVariant));             \
         class ItemInfo: ItemInfo {                                  \
             hiddenSelections[] = {ARR_2(selections,"A_Ghillie")};   \
         };                                                          \
@@ -339,6 +370,7 @@ All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With
     ));                                                               \
     C_VEST_VARIANT(varName,Demolitions,VEST_SELECTIONS_DEMOLITIONS);  \
     C_VEST_VARIANT(varName,Sniper,VEST_SELECTIONS_SNIPER);            \
+    C_VEST_VARIANT(varName,Copilot,VEST_SELECTIONS_COPILOT);            \
     C_VEST_VARIANT(varName,Light,VEST_SELECTIONS_LIGHT);              \
     C_VEST_VARIANT(varName,Scout,VEST_SELECTIONS_SCOUT);              \
     C_VEST_VARIANT(varName,Rifleman,VEST_SELECTIONS_RIFLEMAN);        \
@@ -346,7 +378,7 @@ All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With
     C_VEST_VARIANT(varName,Lead,VEST_SELECTIONS_LEAD)
 
 
-class VEST(Base) : VEST(OPTRE_UNSC_M52D_Armor)
+class SWS_Vest_Base : SWS_Vest_OPTRE_UNSC_M52D_Armor
 {
     /** Armor Level is meaningless anyway... */
     descriptionShort = "Armor Level: ODST";

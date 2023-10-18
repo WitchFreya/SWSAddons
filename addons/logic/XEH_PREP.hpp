@@ -3,3 +3,4 @@ PREP(arsenalAddAll);
 PREP(aceStatText);
 PREP(aceStatHasText);
 PREP(getPlayer);
+PREP(updateUnitTraits);

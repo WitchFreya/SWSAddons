@@ -29,16 +29,10 @@
 #define QPREFIX QUOTE(PREFIX)
 
 #define CLEARANCE(var0) DOUBLES(PREFIX,clearanceLevel) = QUOTE(var0)
-
 #define NAME(var0) [PREFIX] var0
 #define QNAME(var0) QUOTE(NAME(var0))
 #define BAG(var0) TRIPLES(PREFIX,Pack,var0)
 #define QBAG(var0) QUOTE(BAG(var0))
 #define VEHICLE(var0) TRIPLES(PREFIX,V,var0)
-#define QVEHICLE(var0) QUOTE(VEHICLE(var0))
-#define VEH_UAV(var0) VEHICLE(DOUBLES(UAV,var0))
-#define QVEH_UAV(var0) QUOTE(VEH_UAV(var0))
-#define HELMET(var0) TRIPLES(PREFIX,Helmet,var0)
-#define QHELMET(var0) QUOTE(HELMET(var0))
 #define MODULE(var0) TRIPLES(PREFIX,Module,var0)
 #define QMODULE(var0) QUOTE(MODULE(var0))
