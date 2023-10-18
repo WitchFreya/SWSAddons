@@ -19,7 +19,6 @@ GVAR(playerRoles) = createHashMap;
 if (!isMultiplayer) exitWith {};
 
 [QGVAR(debrief), { _this call FUNC(onDebrief); }] call CBA_fnc_addEventHandler;
-[QGVAR(saveRoleProgress), { _this call FUNC(saveRole); }] call CBA_fnc_addEventHandler;
 
 [QGVAR(userRoleDataRetrieved), {
     TRACE_1(QGVAR(userRoleDataRetrieved),_this);

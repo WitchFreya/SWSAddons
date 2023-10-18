@@ -2,26 +2,24 @@
 
 /*
  * Author: Maid
- * Retrieve the user data from the database. Must be run after the client has acknowledged a user.
+ * Retrieve the user data from the database.
  *
  * Arguments:
  * 0: Player <OBJECT>
  *
  * Return Value:
- * None
+ * User Info <HASHMAP>
  *
  * Public: No
  */
 
-params ["_player"];
+params ["_name", "_uid"];
 
 if (isNil "_player") exitWith {
     ERROR_1("Cannot retrieve an empty player's data.",_this);
 };
 
 private _db = call FUNC(getDb);
-private _name = name _player;
-private _uid = getPlayerUID _player;
 
 private _playerCreated = [_uid, _name, _db] call FUNC(upsertPlayer);
 if (!_playerCreated) exitWith {
@@ -37,4 +35,5 @@ private _userInfo = _keys apply {
     [_x, _value];
 };
 TRACE_1("UserInfo retrieved",_userInfo);
-[QGVAR(userRoleDataRetrieved), [createHashMapFromArray _userInfo], _player] call CBA_fnc_targetEvent;
+
+createHashMapFromArray _userInfo;
