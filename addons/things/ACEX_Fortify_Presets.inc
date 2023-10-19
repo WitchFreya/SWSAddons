@@ -17,7 +17,7 @@ class ACEX_Fortify_Presets {
 			{"ACE_ConcertinaWireCoil", 4}
 		};
 	};
-		class SWS_Fortify_Preset_Light {
+	class SWS_Fortify_Preset_Light {
 		displayName = "SWS Preset (Light)";
 		objects[] = {
 			{"Land_BagFence_Short_F", 2},
@@ -30,7 +30,7 @@ class ACEX_Fortify_Presets {
 			{"ACE_ConcertinaWireCoil", 4}
 		};
 	};
-		class SWS_Fortify_Preset_Minimal {
+	class SWS_Fortify_Preset_Minimal {
 		displayName = "SWS Assault/Ambush";
 		objects[] = {
 			{"Land_BagFence_Short_F", 2},
