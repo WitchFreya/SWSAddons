@@ -1,4 +1,5 @@
-#define COMPONENT Resupply
+#define COMPONENT resupply
+#define COMPONENT_BEAUTIFIED Resupply
 #include "\x\sws\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
