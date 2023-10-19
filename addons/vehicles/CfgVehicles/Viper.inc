@@ -16,6 +16,7 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F {
     class Components: Components {
         class SensorsManagerComponent {
             class Components {
+                class DataLinkSensorComponent: SensorTemplateDataLink { };
                 class PassiveRadarSensorComponent: SensorTemplatePassiveRadar {
                     class AirTarget {
                         minRange=8000;
@@ -30,8 +31,20 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F {
                         viewDistanceLimitCoef=-1;
                     };
                 };
-                class DataLinkSensorComponent: SensorTemplateDataLink { };
-                class SensorTemplateAntiRadiation: SensorTemplateAntiRadiation { };
+                class SensorTemplateAntiRadiation: SensorTemplateAntiRadiation {
+                    class AirTarget {
+                        minRange=8000;
+                        maxRange=8000;
+                        objectDistanceLimitCoef=-1;
+                        viewDistanceLimitCoef=-1;
+                    };
+                    class GroundTarget {
+                        minRange=8000;
+                        maxRange=8000;
+                        objectDistanceLimitCoef=-1;
+                        viewDistanceLimitCoef=-1;
+                    };
+                };
             };
         };
     };
