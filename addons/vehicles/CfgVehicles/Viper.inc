@@ -31,20 +31,6 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F {
                         viewDistanceLimitCoef=-1;
                     };
                 };
-                class SensorTemplateAntiRadiation: SensorTemplateAntiRadiation {
-                    class AirTarget {
-                        minRange=8000;
-                        maxRange=8000;
-                        objectDistanceLimitCoef=-1;
-                        viewDistanceLimitCoef=-1;
-                    };
-                    class GroundTarget {
-                        minRange=8000;
-                        maxRange=8000;
-                        objectDistanceLimitCoef=-1;
-                        viewDistanceLimitCoef=-1;
-                    };
-                };
             };
         };
     };

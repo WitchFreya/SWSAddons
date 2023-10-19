@@ -6,7 +6,6 @@ class CommanderOptics;
 
 class SensorTemplatePassiveRadar;
 class SensorTemplateDataLink;
-class SensorTemplateAntiRadiation;
 
 class VehicleSystemsTemplateLeftCommander;
 class VehicleSystemsTemplateRightCommander;
