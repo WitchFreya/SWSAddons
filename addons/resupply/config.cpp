@@ -5,7 +5,7 @@ class CfgPatches
     class ADDON
     {
         name = QUOTE(COMPONENT);
-        units[] = {"Box_SWS_TeamBox","SWS_Ammo_SupplyPod_Empty","SWS_Ammo_SupplyPod_Basic","SWS_Ammo_SupplyPod_Medical","SWS_Ammo_SupplyPod_Howdy"};
+        units[] = {CLASSES_VEHICLES};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
@@ -19,7 +19,7 @@ class CfgPatches
 
 
 class CfgVehicles {
-
-#include cfgVehicles.inc
-  
+    class NATO_Box_Base;
+    class OPTRE_Ammo_SupplyPod_Empty;
+    #include cfgVehicles.inc
 };

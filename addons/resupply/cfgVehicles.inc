@@ -1,4 +1,4 @@
-    class NATO_Box_Base;
+
 	class Box_SWS_TeamBox : NATO_Box_Base {
         displayName = QNAME(Team Supply Box);
         icon = "iconCrateWpns";
@@ -43,7 +43,7 @@
             WEAP_XX(SWS_Weapon_M24RL_D_Loaded,8);
         };
     };
-    class OPTRE_Ammo_SupplyPod_Empty;
+
     class SWS_Ammo_SupplyPod_Empty : OPTRE_Ammo_SupplyPod_Empty {
         displayName = QNAME(Supply Pod (Empty));
         icon = "iconCrateWpns";
