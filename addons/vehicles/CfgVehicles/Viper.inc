@@ -108,7 +108,7 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F
                     {
                         class VehicleSystemsDisplayManagerComponentLeft: VehicleSystemsTemplateLeftCommander 
                         {
-                            class Components: components 
+                            class Components: Components 
                             {
                                 class SensorDisplay 
                                 {
@@ -121,7 +121,7 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F
                         class VehicleSystemsDisplayManagerComponentRight: VehicleSystemsTemplateRightCommander 
                         {
                             defaultDisplay = "SensorDisplay";
-                            class Components: components 
+                            class Components: Components 
                             {
                                 class SensorDisplay 
                                 {
