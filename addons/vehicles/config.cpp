@@ -14,7 +14,9 @@ class CfgPatches {
             "sws_main",
             "sws_weapons",
             "A3_Armor_F_EPB",
-            "ace_medical"
+            "ace_medical",
+            "OPTRE_UNSC_Units_Army",
+            "B_19thUNSC"
         };
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;

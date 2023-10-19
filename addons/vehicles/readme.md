@@ -1,5 +1,4 @@
-SWS_Vehicles
-===========
+# sws_vehicles
 
 Adds the following custom vehicles:
 - M700 Viper
