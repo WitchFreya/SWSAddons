@@ -36,6 +36,10 @@ workshop = [
     "3038821437", # UNSC Foundries
     "3038826897", # UNSC Foundries ACE compat
 
+    # v11 mods
+    "3055061422", # Evolved Role Progression
+    "2522638637", # ace arsenal extended
+
     # patches
     "1779063631", # zen
     "2291129343", # improved melee system (dependency of 41st)
@@ -54,9 +58,6 @@ workshop = [
 
     # server mods
     "1768992669", # inidb2
-
-    # disabled in v10
-    # "2522638637", # ace arsenal extended
 ]
 
 [hemtt.launch.noini]
@@ -86,6 +87,10 @@ workshop = [
     "3038821437", # UNSC Foundries
     "3038826897", # UNSC Foundries ACE compat
 
+    # v11 mods
+    "3055061422", # Evolved Role Progression
+    "2522638637", # ace arsenal extended
+
     # patches
     "1779063631", # zen
     "2291129343", # improved melee system (dependency of 41st)
@@ -104,9 +109,6 @@ workshop = [
 
     # server mods
     # "1768992669", # inidb2
-
-    # disabled in v10
-    # "2522638637", # ace arsenal extended
 ]
 
 [hemtt.launch.full]
@@ -184,6 +186,10 @@ workshop = [
     "3038821437", # UNSC Foundries
     "3038826897", # UNSC Foundries ACE compat
 
+    # v11 mods
+    "3055061422", # Evolved Role Progression
+    "2522638637", # ace arsenal extended
+
     # additional mods
     "2791403093", # Better Inventory
     "2467590475", # Enhanced Map Ace Version
@@ -192,9 +198,6 @@ workshop = [
     "2369477168", # advanced developer tools
     # server mods
     "1768992669", # inidb2
-
-    # disabled in v10
-    # "2522638637", # ace arsenal extended
 ]
 
 [hemtt.release]
