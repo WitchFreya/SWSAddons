@@ -9,26 +9,26 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F {
     typicalCargo[] = { "OPTRE_UNSC_Marine_Soldier" };
     editorPreview = QPATHTOF(data\viper\editor_preview.jpg);
     
-    radarType=2;
-    reportRemoteTargets=1;
-    reportOwnPosition=1;
-    receiveRemoteTargets=1;
+    radarType = 2;
+    reportRemoteTargets = 1;
+    reportOwnPosition = 1;
+    receiveRemoteTargets = 1;
     class Components: Components {
         class SensorsManagerComponent {
             class Components {
                 class DataLinkSensorComponent: SensorTemplateDataLink { };
                 class PassiveRadarSensorComponent: SensorTemplatePassiveRadar {
                     class AirTarget {
-                        minRange=8000;
-                        maxRange=8000;
-                        objectDistanceLimitCoef=-1;
-                        viewDistanceLimitCoef=-1;
+                        minRange = 8000;
+                        maxRange = 8000;
+                        objectDistanceLimitCoef = -1;
+                        viewDistanceLimitCoef = -1;
                     };
                     class GroundTarget {
-                        minRange=8000;
-                        maxRange=8000;
-                        objectDistanceLimitCoef=-1;
-                        viewDistanceLimitCoef=-1;
+                        minRange = 8000;
+                        maxRange = 8000;
+                        objectDistanceLimitCoef = -1;
+                        viewDistanceLimitCoef = -1;
                     };
                 };
             };
@@ -59,19 +59,19 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F {
                         class VehicleSystemsDisplayManagerComponentLeft: VehicleSystemsTemplateLeftCommander {
                             class Components: components {
                                 class SensorDisplay {
-                                    componentType="SensorsDisplayComponent";
-                                    range[]={4000,2000,1000,8000};
-                                    resource="RscCustomInfoSensors";
+                                    componentType = "SensorsDisplayComponent";
+                                    range[] = {4000,2000,1000,8000};
+                                    resource = "RscCustomInfoSensors";
                                 };
                             };
                         };
                         class VehicleSystemsDisplayManagerComponentRight: VehicleSystemsTemplateRightCommander {
-                            defaultDisplay="SensorDisplay";
+                            defaultDisplay = "SensorDisplay";
                             class Components: components {
                                 class SensorDisplay {
-                                    componentType="SensorsDisplayComponent";
-                                    range[]={4000,2000,1000,8000};
-                                    resource="RscCustomInfoSensors";
+                                    componentType = "SensorsDisplayComponent";
+                                    range[] = {4000,2000,1000,8000};
+                                    resource = "RscCustomInfoSensors";
                                 };
                             };
                         };
@@ -106,22 +106,9 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F {
         "SWS_02", 1,
         "SWS_03", 1
     };
-    class TextureSources {
+    class TextureSources : TextureSources {
         class SWS_01 {
-            displayName = "Emblem";
-            author = QUOTE(AUTHOR);
-            textures[] = {
-                QPATHTOF(data\viper\body_texture_emblem),
-                QPATHTOF(data\viper\turret_texture_emblem),
-                QPATHTOF(data\viper\turret_mg_texture),
-                CAMO_NET_TEXTURE
-            };
-            factions[] = {
-                "SWS_UNSC"
-            };
-        };
-        class SWS_02 {
-            displayName = "Flat";
+            displayName = "SWS";
             author = QUOTE(AUTHOR);
             textures[] = {
                 QPATHTOF(data\viper\body_texture),
@@ -133,13 +120,27 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F {
                 "SWS_UNSC"
             };
         };
-        class SWS_03 {
-            displayName = "Flecktarn";
+        class SWS_02 {
+            displayName = "SWS (Flecktarn Camo)";
             author = QUOTE(AUTHOR);
             textures[] = {
                 QPATHTOF(data\viper\body_texture_flecktarn),
                 QPATHTOF(data\viper\turret_texture_flecktarn),
                 QPATHTOF(data\viper\turret_mg_texture_flecktarn),
+                CAMO_NET_TEXTURE
+            };
+            factions[] = {
+                "SWS_UNSC"
+            };
+        };
+        class SWS_03 {
+            // TODO: Create an in-game change texture system to avoid this being the selected texture if Cobra isn't the team in it.
+            displayName = "SWS (Cobra Team)";
+            author = QUOTE(AUTHOR);
+            textures[] = {
+                QPATHTOF(data\viper\body_texture_emblem),
+                QPATHTOF(data\viper\turret_texture_emblem),
+                QPATHTOF(data\viper\turret_mg_texture),
                 CAMO_NET_TEXTURE
             };
             factions[] = {

@@ -1,6 +1,5 @@
-#define COMPONENT Vehicles
+#define COMPONENT vehicles
 #define COMPONENT_BEAUTIFIED Vehicles
-#define AUTHOR Ashes
 #include "\x\sws\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
@@ -14,3 +13,6 @@
 #endif
 
 #include "\x\sws\addons\main\script_macros.hpp"
+
+#undef AUTHOR
+#define AUTHOR Ashes

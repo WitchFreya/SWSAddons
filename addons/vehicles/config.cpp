@@ -11,8 +11,8 @@ class CfgPatches {
         ammo[] = { };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = { 
-            "SWS_Main",
-            "SWS_Weapons",
+            "sws_main",
+            "sws_weapons",
             "A3_Armor_F_EPB",
             "ace_medical"
         };
