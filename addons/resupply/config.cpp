@@ -1,4 +1,6 @@
 #include "script_component.hpp"
+#include "cfgVehicles.inc"
+
 
 class CfgPatches
 {
@@ -15,11 +17,4 @@ class CfgPatches
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };
-};
-
-
-class CfgVehicles {
-    class NATO_Box_Base;
-    class OPTRE_Ammo_SupplyPod_Empty;
-    #include cfgVehicles.inc
 };

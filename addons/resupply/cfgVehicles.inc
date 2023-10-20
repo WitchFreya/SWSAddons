@@ -1,3 +1,17 @@
+#define CLASSES_VEHICLES \
+    "SWS_Ammo_SupplyPod_Empty", \
+    "SWS_Ammo_SupplyPod_Basic", \
+    "SWS_Ammo_SupplyPod_Medical", \
+    "SWS_Ammo_SupplyPod_Howdy", \
+    "SWS_Ammo_SupplyPod_Spnkr", \
+    "SWS_Ammo_SupplyPod_SM247", \
+    "Box_SWS_TeamBox"
+
+
+class CfgVehicles 
+{
+    class NATO_Box_Base;
+    class OPTRE_Ammo_SupplyPod_Empty;
 
 	class Box_SWS_TeamBox : NATO_Box_Base {
         displayName = QNAME(Team Supply Box);
@@ -135,3 +149,5 @@
             MAG_XX(SWS_Magazine_400Rnd_762x51_Mag_Tracer,2);
         };
     };      
+
+};
