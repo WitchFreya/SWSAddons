@@ -12,7 +12,14 @@ class VehicleSystemsTemplateLeftCommander;
 class VehicleSystemsTemplateRightCommander;
 class Components;
 
-class CfgVehicles 
+class SWS_SensorTargetTemplate {
+    minRange = 8000;
+    maxRange = 8000;
+    objectDistanceLimitCoef = -1;
+    viewDistanceLimitCoef = -1;
+};
+
+class CfgVehicles
 {
     //== Tanks
     class I_MBT_03_cannon_F;
