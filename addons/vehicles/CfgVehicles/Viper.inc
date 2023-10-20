@@ -1,9 +1,9 @@
 #define CAMO_NET_TEXTURE "A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa"
 
-class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F
+class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
 {
-    ITEM_META(2);
-    displayName = QNAME(M700 Viper);
+    ITEM_META(0);
+    displayName = QNAME(M700 Viper - Base);
     faction = "SWS_UNSC";
     side = 1;
     crew = "OPTRE_UNSC_Marine_Soldier_Crewman";
@@ -15,11 +15,18 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F
     reportOwnPosition = 1;
     receiveRemoteTargets = 1;
 
-    textureList[] = { "SWS_01", 1 };
+    textureList[] = {
+        "SWS_01", 1,
+        "SWS_02", 1,
+        "SWS_03", 0.1,
+        "Indep_01", 0,
+        "Indep_02", 0,
+        "Indep_03", 0
+    };
     hiddenSelectionsTextures[] = {
-        QPATHTOF(data\viper\body_texture),
-        QPATHTOF(data\viper\turret_texture),
-        QPATHTOF(data\viper\turret_mg_texture),
+        QPATHTOF(data\viper\body_co.paa),
+        QPATHTOF(data\viper\turret_co.paa),
+        QPATHTOF(data\viper\turret_mg_co.paa),
         CAMO_NET_TEXTURE
     };
 
@@ -103,9 +110,9 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F
             displayName = "SWS";
             author = QUOTE(AUTHOR);
             textures[] = {
-                QPATHTOF(data\viper\body_texture),
-                QPATHTOF(data\viper\turret_texture),
-                QPATHTOF(data\viper\turret_mg_texture),
+                QPATHTOF(data\viper\body_co.paa),
+                QPATHTOF(data\viper\turret_co.paa),
+                QPATHTOF(data\viper\turret_mg_co.paa),
                 CAMO_NET_TEXTURE
             };
             factions[] = {"SWS_UNSC"};
@@ -115,9 +122,9 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F
             displayName = "SWS (Flecktarn Camo)";
             author = QUOTE(AUTHOR);
             textures[] = {
-                QPATHTOF(data\viper\body_texture_flecktarn),
-                QPATHTOF(data\viper\turret_texture_flecktarn),
-                QPATHTOF(data\viper\turret_mg_texture_flecktarn),
+                QPATHTOF(data\viper\body_flecktarn_co.paa),
+                QPATHTOF(data\viper\turret_flecktarn_co.paa),
+                QPATHTOF(data\viper\turret_mg_flecktarn_co.paa),
                 CAMO_NET_TEXTURE
             };
             factions[] = {"SWS_UNSC"};
@@ -128,9 +135,9 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F
             displayName = "SWS (Cobra Team)";
             author = QUOTE(AUTHOR);
             textures[] = {
-                QPATHTOF(data\viper\body_texture_emblem),
-                QPATHTOF(data\viper\turret_texture_emblem),
-                QPATHTOF(data\viper\turret_mg_texture),
+                QPATHTOF(data\viper\body_cobra_co.paa),
+                QPATHTOF(data\viper\turret_cobra_co.paa),
+                QPATHTOF(data\viper\turret_mg_co.paa),
                 CAMO_NET_TEXTURE
             };
             factions[] = {"SWS_UNSC"};
@@ -153,4 +160,31 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F
         MACRO_ADDITEM(ACE_elasticBandage,20);
         MACRO_ADDITEM(ToolKit,1);
     };
+
+    class EventHandlers : EventHandlers
+    {
+        init = "if (local (_this select 0)) then {[(_this select 0), """", [], nil] call bis_fnc_initVehicle;};";
+		killed = "if (local (_this select 0)) then {[(_this select 0), nil, [], false] call bis_fnc_initVehicle;};";
+    };
+};
+
+class SWS_V_MBT_M700_Viper : SWS_V_MBT_M700_Viper_Base
+{
+    SCOPE(2);
+    displayName = QNAME(M700 Viper);
+    textureList[] = {"SWS_UNSC_01", 1};
+};
+
+class SWS_V_MBT_M700_Viper_Flecktarn : SWS_V_MBT_M700_Viper
+{
+    SCOPE(0);
+    displayName = QNAME(M700 Viper (Flecktarn));
+    textureList[] = {"SWS_UNSC_02", 1};
+};
+
+class SWS_V_MBT_M700_Viper_Cobra : SWS_V_MBT_M700_Viper
+{
+    SCOPE(0);
+    displayName = QNAME(M700 Viper (Cobra));
+    textureList[] = {"SWS_UNSC_03", 1};
 };
