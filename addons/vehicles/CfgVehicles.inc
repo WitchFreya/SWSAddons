@@ -1,5 +1,6 @@
 #define CLASSES_VEHICLES                \
     "SWS_V_MBT_M700_Viper",             \
+    "SWS_V_MBT_M700_Viper_Flat",        \
     "SWS_V_MBT_M700_Viper_Flecktarn",   \
     "SWS_V_MBT_M700_Viper_Cobra"
 

@@ -16,15 +16,16 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
     receiveRemoteTargets = 1;
 
     textureList[] = {
-        "SWS_01", 1,
-        "SWS_02", 1,
-        "SWS_03", 0.1,
+        "SWS_Basic", 1,
+        "SWS_Flecktarn", 1,
+        "SWS_Flat", 0.5,
+        "SWS_Cobra", 0,
         "Indep_01", 0,
         "Indep_02", 0,
         "Indep_03", 0
     };
     hiddenSelectionsTextures[] = {
-        QPATHTOF(data\viper\body_co.paa),
+        QPATHTOF(data\viper\body_sws_co.paa),
         QPATHTOF(data\viper\turret_co.paa),
         QPATHTOF(data\viper\turret_mg_co.paa),
         CAMO_NET_TEXTURE
@@ -105,19 +106,31 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
 
     class TextureSources : TextureSources
     {
-        class SWS_01
+        class SWS_Basic
         {
             displayName = "SWS";
             author = QUOTE(AUTHOR);
             textures[] = {
-                QPATHTOF(data\viper\body_co.paa),
+                QPATHTOF(data\viper\body_sws_co.paa),
                 QPATHTOF(data\viper\turret_co.paa),
                 QPATHTOF(data\viper\turret_mg_co.paa),
                 CAMO_NET_TEXTURE
             };
             factions[] = {"SWS_UNSC"};
         };
-        class SWS_02
+        class SWS_Flat
+        {
+            displayName = "SWS (Flat)";
+            author = QUOTE(AUTHOR);
+            textures[] = {
+                QPATHTOF(data\viper\body_flat_co.paa),
+                QPATHTOF(data\viper\turret_co.paa),
+                QPATHTOF(data\viper\turret_mg_co.paa),
+                CAMO_NET_TEXTURE
+            };
+            factions[] = {"SWS_UNSC"};
+        };
+        class SWS_Flecktarn
         {
             displayName = "SWS (Flecktarn Camo)";
             author = QUOTE(AUTHOR);
@@ -129,13 +142,13 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
             };
             factions[] = {"SWS_UNSC"};
         };
-        class SWS_03
+        class SWS_Cobra
         {
             // TODO: Create an in-game change texture system to avoid this being the selected texture if Cobra isn't the team in it.
             displayName = "SWS (Cobra Team)";
             author = QUOTE(AUTHOR);
             textures[] = {
-                QPATHTOF(data\viper\body_cobra_co.paa),
+                QPATHTOF(data\viper\body_sws_co.paa),
                 QPATHTOF(data\viper\turret_cobra_co.paa),
                 QPATHTOF(data\viper\turret_mg_co.paa),
                 CAMO_NET_TEXTURE
@@ -172,19 +185,26 @@ class SWS_V_MBT_M700_Viper : SWS_V_MBT_M700_Viper_Base
 {
     SCOPE(2);
     displayName = QNAME(M700 Viper);
-    textureList[] = {"SWS_UNSC_01", 1};
+    textureList[] = {"SWS_Basic", 1};
+};
+
+class SWS_V_MBT_M700_Viper_Flat : SWS_V_MBT_M700_Viper
+{
+    SCOPE(0);
+    displayName = QNAME(M700 Viper (Flat));
+    textureList[] = {"SWS_Flat", 1};
 };
 
 class SWS_V_MBT_M700_Viper_Flecktarn : SWS_V_MBT_M700_Viper
 {
     SCOPE(0);
     displayName = QNAME(M700 Viper (Flecktarn));
-    textureList[] = {"SWS_UNSC_02", 1};
+    textureList[] = {"SWS_Flecktarn", 1};
 };
 
 class SWS_V_MBT_M700_Viper_Cobra : SWS_V_MBT_M700_Viper
 {
     SCOPE(0);
     displayName = QNAME(M700 Viper (Cobra));
-    textureList[] = {"SWS_UNSC_03", 1};
+    textureList[] = {"SWS_Cobra", 1};
 };
