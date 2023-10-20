@@ -37,6 +37,10 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
         {
             class Components
             {
+                class LaserSensorComponent: SensorTemplateLaser
+                {
+						animDirection = "mainTurret";
+                };
                 class DataLinkSensorComponent: SensorTemplateDataLink
                 {
                     class AirTarget : SWS_SensorTargetTemplate {};
