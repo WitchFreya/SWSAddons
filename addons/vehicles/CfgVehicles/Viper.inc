@@ -32,7 +32,7 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
         CAMO_NET_TEXTURE
     };
 
-    class Components: Components
+    class Components
     {
         class SensorsManagerComponent
         {
