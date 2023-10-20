@@ -66,7 +66,10 @@ class CfgPatches {
             "O_CLA_MG_Tripod_01",
             "O_CLA_Assault_Boat_01",
             "O_CLA_Gryphon_01",
-            "O_CLA_Otokar_01"
+            "O_CLA_Otokar_01",
+            "O_CLA_Viper_01",
+            "O_CLA_Reaper_Officer_01",
+            "O_CLA_Reaper_Missile_Specialist_01"
         };
         weapons[] = {};
         requiredVersion = 1.62;
@@ -78,6 +81,7 @@ class CfgPatches {
             "A3_Characters_F",
             "DMNS_Units",
             "lambs_danger",
+            "OPTRE_ACE_Compat_Medical",
             "A3_Sounds_F",
             "A3_Sounds_F_Exp",
             "jsrs_soundmod_complete_edition",
@@ -112,6 +116,7 @@ class CfgPatches {
             "A3_Armor_F_Beta",
             "OPTRE_Vehicles_Warthog",
             "OPTRE_JSRS_Sounds",
+            "OPTRE_ACE_Compat",
             "OPTRE_Vehicles_M494",
             "A3_Armor_F_EPB_APC_Tracked_03",
             "tfar_external_intercom",
@@ -152,26 +157,27 @@ class CfgPatches {
             "A3_Armor_F_EPC_MBT_01",
             "OPTRE_FC_Vehicles_Locust",
             "ace_viewports",
+            "OPTRE_Vehicles_Grizzly",
+            "OPTRE_Vehicles_M808L",
             "OPTRE_Vehicles_M808B2",
             "OPTRE_Vehicles_M808S",
             "OPTRE_Vehicles_Scorpion",
-            "OPTRE_Vehicles_Grizzly",
             "OPTRE_FC_Vehicles_T32_Ghost",
-            "OPTRE_FC_Vehicles_M808L",
             "OPTRE_FC_Vehicles_Spectre",
             "OPTRE_FC_Vehicles_T26",
             "ace_hunterkiller",
             "OPTRE_Vehicles_Air_Falcon",
-            "A3_Air_F",
             "A3_Air_F_Heli_Light_01",
+            "ace_aircraft",
+            "A3_Air_F",
             "A3_Air_F_Heli_Light_02",
             "A3_Air_F_Beta_Heli_Transport_01",
             "MELB",
             "Splits_Vehicles_Air_Pelican",
             "DMNS_Vehicles_Nightingale",
+            "OPTRE_Vehicles_Pelican",
             "OPTRE_Vehicles_Hornet",
             "OPTRE_Vehicles_SOCOM_Pelican",
-            "OPTRE_Vehicles_Pelican",
             "OPTRE_Vehicles_Sparrowhawk",
             "OPAEX_Pelican",
             "OPAEX_Sparrowhawk",
@@ -210,7 +216,8 @@ class CfgPatches {
             "A3_Armor_F_Decade_MBT_02",
             "A3_Boat_F_Exp_Boat_Armed_01",
             "A3_Boat_F_Boat_Armed_01",
-            "A3_Boat_F"
+            "A3_Boat_F",
+            "A3_Characters_F_Exp"
         };
         author = "Bernard ""Egg"" Teller";
         authors[] = {"Bernard ""Egg"" Teller"};
