@@ -1,6 +1,6 @@
 #include "script_component.hpp"
-#include "cfgEditorCategories.inc"
-#include "cfgVehicles.inc"
+#include "CfgEditorCategories.inc"
+#include "CfgVehicles.inc"
 
 class CfgPatches
 {
