@@ -12,7 +12,17 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_INGAME
 #endif
 
-#include "\x\sws\addons\main\script_macros.hpp"
-
 #undef AUTHOR
 #define AUTHOR Ashes
+
+#define AUTHORS \
+    "Ashes",    \
+    "Maid"
+
+#include "\x\sws\addons\main\script_macros.hpp"
+
+// scopeArsenal not necessary for vehicles.
+#undef SCOPE
+#define SCOPE(var0) \
+    scope = var0;   \
+    scopeCurator = var0
