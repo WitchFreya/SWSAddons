@@ -7,7 +7,7 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F
     faction = "SWS_UNSC";
     side = 1;
     crew = "OPTRE_UNSC_Marine_Soldier_Crewman";
-    typicalCargo[] = { "OPTRE_UNSC_Marine_Soldier" };
+    typicalCargo[] = { "OPTRE_UNSC_ODST_Soldier" };
     editorPreview = QPATHTOF(data\viper\editor_preview.jpg);
 
     radarType = 2;
@@ -63,13 +63,11 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F
             {
                 class CommanderOptics: CommanderOptics
                 {
-                    weapons[] =
-                    {
+                    weapons[] = {
                         "HMG_127_APC",
                         "SmokeLauncher"
                     };
-                    magazines[] =
-                    {
+                    magazines[] = {
                         "200Rnd_127x99_mag_Tracer_Yellow",
                         "200Rnd_127x99_mag_Tracer_Yellow",
                         "200Rnd_127x99_mag_Tracer_Yellow",
@@ -81,12 +79,7 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F
                         {
                             class Components: Components
                             {
-                                class SensorDisplay
-                                {
-                                    componentType = "SensorsDisplayComponent";
-                                    range[] = {4000,2000,1000,8000};
-                                    resource = "RscCustomInfoSensors";
-                                };
+                                class SensorDisplay : SWS_SensorDisplayTemplate {};
                             };
                         };
                         class VehicleSystemsDisplayManagerComponentRight: VehicleSystemsTemplateRightCommander
@@ -94,12 +87,7 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F
                             defaultDisplay = "SensorDisplay";
                             class Components: Components
                             {
-                                class SensorDisplay
-                                {
-                                    componentType = "SensorsDisplayComponent";
-                                    range[] = {4000,2000,1000,8000};
-                                    resource = "RscCustomInfoSensors";
-                                };
+                                class SensorDisplay : SWS_SensorDisplayTemplate {};
                             };
                         };
                     };

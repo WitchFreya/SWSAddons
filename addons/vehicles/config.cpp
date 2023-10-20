@@ -10,13 +10,12 @@ class CfgPatches {
         magazines[] = { };
         ammo[] = { };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { 
+        requiredAddons[] = {
             "sws_main",
             "sws_weapons",
             "A3_Armor_F_EPB",
             "ace_medical",
-            "OPTRE_UNSC_Units_Army",
-            "B_19thUNSC"
+            "OPTRE_UNSC_Units_Army"
         };
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
