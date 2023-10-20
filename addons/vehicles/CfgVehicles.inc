@@ -1,16 +1,19 @@
-#define CLASSES_VEHICLES "SWS_V_MBT_M700_Viper"
+#define CLASSES_VEHICLES                \
+    "SWS_V_MBT_M700_Viper",             \
+    "SWS_V_MBT_M700_Viper_Flecktarn",   \
+    "SWS_V_MBT_M700_Viper_Cobra"
 
-class Turrets;
-class MainTurret;
+
 class CommanderOptics;
-class TextureSources;
-
-class SensorTemplatePassiveRadar;
+class Components;
+class EventHandlers;
+class MainTurret;
 class SensorTemplateDataLink;
-
+class SensorTemplatePassiveRadar;
+class TextureSources;
+class Turrets;
 class VehicleSystemsTemplateLeftCommander;
 class VehicleSystemsTemplateRightCommander;
-class Components;
 
 class SWS_SensorTargetTemplate
 {
