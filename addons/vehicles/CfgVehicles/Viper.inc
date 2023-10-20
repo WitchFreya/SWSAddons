@@ -1,6 +1,6 @@
-#define CAMO_NET_TEXTURE QUOTE(A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa)
+#define CAMO_NET_TEXTURE "A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa"
 
-class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F 
+class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F
 {
     ITEM_META(2);
     displayName = QNAME(M700 Viper);
@@ -9,108 +9,79 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F
     crew = "OPTRE_UNSC_Marine_Soldier_Crewman";
     typicalCargo[] = { "OPTRE_UNSC_Marine_Soldier" };
     editorPreview = QPATHTOF(data\viper\editor_preview.jpg);
-    
+
     radarType = 2;
     reportRemoteTargets = 1;
     reportOwnPosition = 1;
     receiveRemoteTargets = 1;
-    class Components: Components 
+
+    textureList[] = { "SWS_01", 1 };
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\viper\body_texture),
+        QPATHTOF(data\viper\turret_texture),
+        QPATHTOF(data\viper\turret_mg_texture),
+        CAMO_NET_TEXTURE
+    };
+
+    class Components: Components
     {
-        class SensorsManagerComponent 
+        class SensorsManagerComponent
         {
-            class Components 
+            class Components
             {
-                class DataLinkSensorComponent: SensorTemplateDataLink 
+                class DataLinkSensorComponent: SensorTemplateDataLink
                 {
-                    class AirTarget 
-                    {
-                        minRange = 8000;
-                        maxRange = 8000;
-                        objectDistanceLimitCoef = -1;
-                        viewDistanceLimitCoef = -1;
-                    };
-                    class GroundTarget 
-                    {
-                        minRange = 8000;
-                        maxRange = 8000;
-                        objectDistanceLimitCoef = -1;
-                        viewDistanceLimitCoef = -1;
-                    }; 
+                    class AirTarget : SWS_SensorTargetTemplate {};
+                    class GroundTarget : SWS_SensorTargetTemplate {};
                 };
-                class PassiveRadarSensorComponent: SensorTemplatePassiveRadar 
+                class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
                 {
-                    class AirTarget 
-                    {
-                        minRange = 8000;
-                        maxRange = 8000;
-                        objectDistanceLimitCoef = -1;
-                        viewDistanceLimitCoef = -1;
-                    };
-                    class GroundTarget 
-                    {
-                        minRange = 8000;
-                        maxRange = 8000;
-                        objectDistanceLimitCoef = -1;
-                        viewDistanceLimitCoef = -1;
-                    };
+                    class AirTarget : SWS_SensorTargetTemplate {};
+                    class GroundTarget : SWS_SensorTargetTemplate {};
                 };
             };
         };
     };
 
-    class Turrets: Turrets 
+    class Turrets: Turrets
     {
-        class MainTurret: MainTurret 
+        class MainTurret: MainTurret
         {
-            weapons[] = 
-            {
+            weapons[] = {
                 "cannon_120mm_long",
                 "LMG_coax"
             };
-            magazines[] = 
+            magazines[] =
             {
                 "20Rnd_120mm_APFSDS_shells_Tracer_Yellow",
                 "12Rnd_120mm_HEAT_MP_T_Yellow",
                 "12Rnd_120mm_HE_shells_Tracer_Yellow",
                 "4Rnd_120mm_LG_cannon_missiles",
-                "200Rnd_762x51_Belt_Yellow",
-                "200Rnd_762x51_Belt_Yellow",
-                "200Rnd_762x51_Belt_Yellow",
-                "200Rnd_762x51_Belt_Yellow",
-                "200Rnd_762x51_Belt_Yellow",
-                "200Rnd_762x51_Belt_Yellow",
-                "200Rnd_762x51_Belt_Yellow",
-                "200Rnd_762x51_Belt_Yellow",
-                "200Rnd_762x51_Belt_Yellow",
-                "200Rnd_762x51_Belt_Yellow"
+                MACRO_X10("200Rnd_762x51_Belt_Yellow")
             };
-            class Turrets: Turrets 
+            class Turrets: Turrets
             {
-                class CommanderOptics: CommanderOptics 
+                class CommanderOptics: CommanderOptics
                 {
-                    weapons[] = 
+                    weapons[] =
                     {
                         "HMG_127_APC",
                         "SmokeLauncher"
                     };
-                    magazines[] = 
+                    magazines[] =
                     {
                         "200Rnd_127x99_mag_Tracer_Yellow",
                         "200Rnd_127x99_mag_Tracer_Yellow",
                         "200Rnd_127x99_mag_Tracer_Yellow",
-                        "SmokeLauncherMag",
-                        "SmokeLauncherMag",
-                        "SmokeLauncherMag",
-                        "SmokeLauncherMag",
-                        "SmokeLauncherMag"
+                        MACRO_X5("SmokeLauncherMag")
                     };
-                    class Components 
+                    class Components
                     {
-                        class VehicleSystemsDisplayManagerComponentLeft: VehicleSystemsTemplateLeftCommander 
+                        class VehicleSystemsDisplayManagerComponentLeft: VehicleSystemsTemplateLeftCommander
                         {
-                            class Components: Components 
+                            class Components: Components
                             {
-                                class SensorDisplay 
+                                class SensorDisplay
                                 {
                                     componentType = "SensorsDisplayComponent";
                                     range[] = {4000,2000,1000,8000};
@@ -118,12 +89,12 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F
                                 };
                             };
                         };
-                        class VehicleSystemsDisplayManagerComponentRight: VehicleSystemsTemplateRightCommander 
+                        class VehicleSystemsDisplayManagerComponentRight: VehicleSystemsTemplateRightCommander
                         {
                             defaultDisplay = "SensorDisplay";
-                            class Components: Components 
+                            class Components: Components
                             {
-                                class SensorDisplay 
+                                class SensorDisplay
                                 {
                                     componentType = "SensorsDisplayComponent";
                                     range[] = {4000,2000,1000,8000};
@@ -137,15 +108,9 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F
         };
     };
 
-    textureList[] = 
+    class TextureSources : TextureSources
     {
-        "SWS_01", 1,
-        "SWS_02", 1,
-        "SWS_03", 1
-    };
-    class TextureSources : TextureSources 
-    {
-        class SWS_01 
+        class SWS_01
         {
             displayName = "SWS";
             author = QUOTE(AUTHOR);
@@ -157,7 +122,7 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F
             };
             factions[] = {"SWS_UNSC"};
         };
-        class SWS_02 
+        class SWS_02
         {
             displayName = "SWS (Flecktarn Camo)";
             author = QUOTE(AUTHOR);
@@ -169,7 +134,7 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F
             };
             factions[] = {"SWS_UNSC"};
         };
-        class SWS_03 
+        class SWS_03
         {
             // TODO: Create an in-game change texture system to avoid this being the selected texture if Cobra isn't the team in it.
             displayName = "SWS (Cobra Team)";
@@ -184,55 +149,20 @@ class SWS_V_MBT_M700_Viper : I_MBT_03_cannon_F
         };
     };
 
-    hiddenSelectionsTextures[] = 
+    class TransportMagazines
     {
-        QPATHTOF(data\viper\body_texture),
-        QPATHTOF(data\viper\turret_texture),
-        QPATHTOF(data\viper\turret_mg_texture),
-        CAMO_NET_TEXTURE
+        MACRO_ADDMAGAZINE(SmokeShell,2);
+        MACRO_ADDMAGAZINE(SmokeShellGreen,2);
+        MACRO_ADDMAGAZINE(30Rnd_65x39_caseless_msbs_mag,2);
     };
-    class TransportMagazines 
+    class TransportWeapons
     {
-        class _xx_SmokeShell 
-        {
-            magazine="SmokeShell";
-            count=2;
-        };
-        class _xx_SmokeShellGreen 
-        {
-            magazine="SmokeShellGreen";
-            count=2;
-        };
-        class _xx_30Rnd_65x39_caseless_msbs_mag 
-        {
-            magazine="30Rnd_65x39_caseless_msbs_mag";
-            count=4;
-        };
+        MACRO_ADDWEAPON(SWS_Weapon_AR0M37,2);
     };
-    class TransportWeapons 
+    class TransportItems
     {
-        class _xx_SWS_Weapon_AR0M37 
-        {
-            weapon = "SWS_Weapon_AR0M37";
-            count = 2;
-        };
-    };
-    class TransportItems 
-    {
-        class _xx_ACE_PersonalAidKit 
-        {
-            name = "ACE_PersonalAidKit";
-            count = 1;
-        };
-        class _xx_ACE_elasticBandage 
-        {
-            name = "ACE_elasticBandage";
-            count = 20;
-        };
-        class _xx_ToolKit 
-        {
-            name = "ToolKit";
-            count = 1;
-        };
+        MACRO_ADDITEM(ACE_PersonalAidKit,1);
+        MACRO_ADDITEM(ACE_elasticBandage,20);
+        MACRO_ADDITEM(ToolKit,1);
     };
 };
