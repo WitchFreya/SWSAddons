@@ -11,6 +11,7 @@
     "SWS_V_Bag_Hardcase_Sawbones", \
     "SWS_V_Bag_Hardcase_Vertigo", \
     "SWS_V_Bag_Hardcase_Bait", \
+    "SWS_V_Bag_Hardcase_Snare", \
     "SWS_V_UAV_Demining", \
     "SWS_V_UAV_SMQ94", \
     "SWS_V_UAV_SMQ94_Maid", \
