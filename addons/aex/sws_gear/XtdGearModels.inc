@@ -5,19 +5,20 @@ class XtdGearModels {
     class OperativeOption
     {
         values[] = {
-            "Rifleman",
             "Ashes",
             "Butler",
             "Demon",
             "Egg",
+            "Hound",
+            "Hurricane",
             "Maid",
             "Polaris",
             "Rabbit",
+            "Rifleman",
+            "Roman",
             "Sawbones",
-            "Tiger",
-            "Hound",
-            "Hurricane",
-            "Roman"
+            "Snare",
+            "Tiger"
         };
         class Rifleman {};
         class Ashes {};
@@ -30,6 +31,7 @@ class XtdGearModels {
         class Sawbones {};
         class Tiger {};
         class Hound {};
+        class Snare {};
         class Hurricane {};
         class Roman {};
     };

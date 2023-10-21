@@ -39,6 +39,7 @@
     QWEAPONS_FN(Tiger), \
     QWEAPONS_FN(Hound), \
     QWEAPONS_FN(Hurricane), \
+    QWEAPONS_FN(Snare), \
     QWEAPONS_FN(Roman), \
     QWEAPONS_FN(Blue), \
     QWEAPONS_FN(Gold), \
@@ -85,6 +86,7 @@ class CfgWeapons
     C_GEAR(Sawbones,teal);
     C_GEAR(Hurricane,purple);
     C_GEAR(Roman,grey);
+    C_GEAR(Snare,snare);
 
     //== COLORS
     C_GEAR(Blue,silver);
