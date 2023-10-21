@@ -80,6 +80,7 @@ class XtdGearInfos
         C_GEAR_INFO_OP(Sawbones);
         C_GEAR_INFO_OP(Tiger);
         C_GEAR_INFO_OP(Hound);
+        C_GEAR_INFO_OP(Snare);
         C_GEAR_INFO_OP(Hurricane);
         C_GEAR_INFO_OP(Roman);
 
