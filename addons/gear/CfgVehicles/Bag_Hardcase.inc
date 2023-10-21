@@ -31,5 +31,6 @@ C_HARDCASE(Sawbones,sawbones);
 C_HARDCASE(Blue,blue);
 C_HARDCASE(Vertigo,vertigo);
 C_HARDCASE(Bait,bait);
+C_HARDCASE(Snare,snare);
 
 #undef C_HARDCASE
