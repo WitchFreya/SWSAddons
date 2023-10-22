@@ -12,7 +12,4 @@ class XtdGearModels
         class Yes {};
         class No {};
     };
-
-    #include "CfgVehicles.inc"
-    #include "CfgWeapons.inc"
 };
