@@ -15,6 +15,7 @@
     "SWS_V_UAV_Demining", \
     "SWS_V_UAV_SMQ94", \
     "SWS_V_UAV_SMQ94_Maid", \
+    "SWS_V_Bag_Messenger", \
     CLASSES_UNITS
 
 
@@ -68,4 +69,7 @@ class CfgVehicles {
     class C_IDAP_UAV_06_antimine_F;
     class C_IDAP_UAV_AI_antimine_F;
     #include "CfgVehicles\UAV_Demining.inc"
+
+    class B_Messenger_IDAP_F;
+    #include "CfgVehicles\Bag_Messenger.inc"
 };
