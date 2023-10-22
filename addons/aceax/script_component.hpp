@@ -1,4 +1,4 @@
-#define COMPONENT aex
+#define COMPONENT aceax
 #define COMPONENT_BEAUTIFIED ACE Arsenal Extended
 #include "\x\sws\addons\main\script_mod.hpp"
 
