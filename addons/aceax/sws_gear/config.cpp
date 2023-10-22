@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-#include "XtdGearInfos.inc"
+#include "CfgVehicles.inc"
 #include "XtdGearModels.inc"
 
 class CfgPatches
