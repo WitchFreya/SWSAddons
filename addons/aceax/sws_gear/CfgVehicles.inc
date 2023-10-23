@@ -14,4 +14,15 @@ class CfgVehicles
     class SWS_V_Bag_Hardcase_Vertigo : SWS_V_Bag_Hardcase_Medical { XTD_GEAR_INFO(Vertigo); };
     class SWS_V_Bag_Hardcase_Bait : SWS_V_Bag_Hardcase_Medical { XTD_GEAR_INFO(Bait); };
     class SWS_V_Bag_Hardcase_Snare : SWS_V_Bag_Hardcase_Medical { XTD_GEAR_INFO(Snare); };
+
+    class B_Messenger_IDAP_F;
+    class SWS_V_Bag_Messenger : B_Messenger_IDAP_F
+    {
+        class XtdGearInfo
+        {
+            model = "SWS_Bag_Messenger";
+            variant = "SWS";
+        };
+    };
+    class SWS_V_Bag_Messenger_Tiger : SWS_V_Bag_Messenger { XTD_GEAR_INFO(Tiger); };
 };
