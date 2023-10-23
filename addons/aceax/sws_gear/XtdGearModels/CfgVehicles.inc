@@ -39,4 +39,27 @@ class CfgVehicles
             #undef C_VALUE
         };
     };
+
+    class SWS_Bag_Messenger : BaseGearModel
+    {
+        label = QNAME(Messenger Bag);
+        options[] = {"Variant"};
+        class Variant
+        {
+            values[] = {
+                "SWS"
+                , "Tiger"
+            };
+
+            class SWS
+            {
+                description = "A messenger bag with the SWS logo.";
+            };
+
+            class Tiger
+            {
+                description = "Tiger's messenger bag.";
+            };
+        };
+    };
 };

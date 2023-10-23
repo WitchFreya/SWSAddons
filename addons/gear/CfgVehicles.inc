@@ -16,6 +16,7 @@
     "SWS_V_UAV_SMQ94", \
     "SWS_V_UAV_SMQ94_Maid", \
     "SWS_V_Bag_Messenger", \
+    "SWS_V_Bag_Messenger_Tiger", \
     CLASSES_UNITS
 
 
