@@ -130,7 +130,7 @@ class CfgVehicles
         };
         class TransportMagazines
         {
-            MACRO_ADDMAGAZINE(OPTRE_M41_Twin_HEAT_Thermal_ProximityFuse,2);
+            MACRO_ADDMAGAZINE(OPTRE_M41_Twin_HE_Thermal_ProximityFuse,2);
             MACRO_ADDMAGAZINE(OPTRE_M41_Twin_HEAT_SACLOS,4);
             MACRO_ADDMAGAZINE(OPTRE_M41_Twin_HEAT_SALH,2);
             MACRO_ADDMAGAZINE(OPTRE_M41_Twin_HEAT_Guided,2);
