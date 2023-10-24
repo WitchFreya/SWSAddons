@@ -13,6 +13,3 @@
 #endif
 
 #include "\x\sws\addons\main\script_macros.hpp"
-
-#define TERMINAL(var0) TRIPLES(PREFIX,Term,var0)
-#define QTERMINAL(var0) QUOTE(TERMINAL(var0))

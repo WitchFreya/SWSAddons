@@ -1,18 +1,19 @@
 #define CLASSES_WEAPONS \
-    QTERMINAL(Scarlet), \
-    "SWS_Weapon_LaserDesignator", \
-    "SWS_NVG_NeuralLace_IR", \
-    "SWS_NVG_NeuralLace_WHOT"
+    "SWS_Term_Scarlet" \
+    , "SWS_Weapon_LaserDesignator" \
+    , "SWS_NVG_NeuralLace_IR" \
+    , "SWS_NVG_NeuralLace_WHOT" \
+    , "SWS_NVG_NeuralLace_IR_UA" \
+    , "SWS_NVG_NeuralLace_WHOT_UA" \
 
 class CfgWeapons {
     class B_UavTerminal;
     class LaserDesignator_Mounted;
-    class OPTRE_NVG;
 
-    class TERMINAL(Scarlet): B_UavTerminal {
+    class SWS_Term_Scarlet : B_UavTerminal
+    {
         ITEM_META(2);
         CLEARANCE(SECRET/DECWHI);
-        _generalMacro = QTERMINAL(Uav);
         displayName = QNAME(SCARLET);
         descriptionShort = "System Calibration and Arsenal Retasking Light Engineering Terminal.";
         model = "\a3\Props_F_Enoch\Military\Equipment\Laptop_03_F.p3d";
@@ -20,7 +21,9 @@ class CfgWeapons {
         hiddenSelectionsTextures[] = {"a3\Props_F_Enoch\Military\Equipment\data\Laptop_03_black_CO.paa"};
     };
 
-    class SWS_Weapon_LaserDesignator : LaserDesignator_Mounted {
+    /** Used for the SMQ-94 designator.*/
+    class SWS_Weapon_LaserDesignator : LaserDesignator_Mounted
+    {
         ITEM_META(2);
         CLEARANCE(SECRET/DECWHI);
         displayName = QNAME(Laser Designator);
@@ -35,36 +38,6 @@ class CfgWeapons {
 		maxRangeProbab = 0.01;
     };
 
-    class SWS_NVG_NeuralLace_IR : OPTRE_NVG {
-        ITEM_META(2);
-        CLEARANCE(RESTRICTED/DECWHI);
-        displayName = QNAME(Neural Lace);
-        descriptionShort = "Neural implant capable of infrared thermal and NVGs.";
-        modelOptics = "";
-        model = "";
-        visionMode[] = {"Normal","NVG","TI"};
-        thermalMode[] = {6};
-        class ItemInfo {
-            type = 616;
-            uniformmodel = "";
-            modelOff = "";
-            mass = 0;
-        };
-
-        class XtdGearInfo {
-            model = "SWS_Weapon_NVG_NeuralLace";
-            thermal = "IR";
-        };
-    };
-
-    class SWS_NVG_NeuralLace_WHOT : SWS_NVG_NeuralLace_IR {
-        ITEM_META(2);
-        CLEARANCE(RESTRICTED/DECWHI);
-        displayName = QNAME(Neural Lace (WHOT));
-        descriptionShort = "Neural implant capable of white-hot thermal and NVGs.";
-        thermalMode[] = {0};
-        class XtdGearInfo : XtdGearInfo {
-            thermal = "WHOT";
-        };
-    };
+    class OPTRE_NVG;
+    #include "CfgWeapons\NeuralLace.inc"
 };
