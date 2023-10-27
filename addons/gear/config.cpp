@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
-#include "CfgWeapons.inc"
 #include "CfgVehicles.inc"
+#include "CfgWeapons.inc"
 #include "XtdGearInfos.inc"
 
 class CfgPatches
@@ -13,13 +13,14 @@ class CfgPatches
         weapons[] = { CLASSES_WEAPONS };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "OPTRE_UNSC_Units",
-            "LM_OPCAN_UNSC",
-            "A3_Air_F_Orange_UAV_06",
-            "A3_Supplies_F_Orange_Bags",
-            "DMNS_Air_UAV_01",
-            "sws_main",
-            "sws_tech"};
+            "A3_Air_F_Orange_UAV_06"
+            , "A3_Supplies_F_Orange_Bags"
+            , "DMNS_Air_UAV_01"
+            , "LM_OPCAN_UNSC"
+            , "sws_main"
+            , "sws_tech"
+            ,"sws_common"
+            , "OPTRE_UNSC_Units"};
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };
