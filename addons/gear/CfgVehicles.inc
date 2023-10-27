@@ -15,6 +15,7 @@
     "SWS_V_UAV_Demining", \
     "SWS_V_UAV_SMQ94", \
     "SWS_V_UAV_SMQ94_Maid", \
+    "SWS_V_UAV_Pelican", \
     "SWS_V_Bag_Messenger", \
     "SWS_V_Bag_Messenger_Tiger", \
     CLASSES_UNITS
@@ -73,4 +74,8 @@ class CfgVehicles {
 
     class B_Messenger_IDAP_F;
     #include "CfgVehicles\Bag_Messenger.inc"
+
+    class UAV_06_Base_F;
+    #include "CfgVehicles\B_UAV_06_F.inc"
+    #include "CfgVehicles\UAV_Pelican.inc"
 };

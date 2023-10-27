@@ -14,4 +14,6 @@ class CfgAmmo
     // errors caused by pollution
     class PHAN_OPAEX_A_GBU1105_LGB : OPAEX_A_GBU1105_LGB {};
     class PHAN_OPAEX_Glass_Round : OPAEX_Glass_Round {};
+
+    // todo: No entry PHAN_OPAEX_M_GBU1105_1Rnd.mass for opening pelican zeus interface
 };
