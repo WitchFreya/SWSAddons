@@ -1,7 +1,9 @@
-class CfgFactionClasses {
-    class SWS_UNSC {
+class CfgFactionClasses
+{
+    class SWS_UNSC
+    {
         META;
-        displayName = "SWS UNSC";
+        displayName = QNAME(UNSC Scarlet Company);
         priority = 1;
         side = 1;
         icon = QPATHTOF(data\icon_sws_transparent_ca.paa);
