@@ -27,7 +27,7 @@ class BAG(SWS_V_UAV_Demining) : C_IDAP_UAV_06_antimine_backpack_F
 
 class UNIT(UAV_Antimine) : C_IDAP_UAV_AI_antimine_F
 {
-    ITEM_META(2);
+    ITEM_META(1);
     faction = "SWS_UNSC";
     side = 1;
 };
