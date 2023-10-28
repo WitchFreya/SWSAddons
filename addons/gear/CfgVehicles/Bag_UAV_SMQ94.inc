@@ -1,4 +1,4 @@
-class SWS_Bag_SMQ94_Base : DMNS_UAV_01_backpack_F
+class SWS_Bag_UAV_SMQ94_Base : DMNS_UAV_01_backpack_F
 {
     ITEM_META(0);
     displayName = QNAME(SMQ-94 UAV Bag (Base));
@@ -10,14 +10,14 @@ class SWS_Bag_SMQ94_Base : DMNS_UAV_01_backpack_F
     class AssembleInfo : AssembleInfo { displayName = "SMQ-94 Drone"; };
 };
 
-class SWS_Bag_SMQ94 : SWS_Bag_SMQ94_Base
+class SWS_Bag_UAV_SMQ94 : SWS_Bag_UAV_SMQ94_Base
 {
     SCOPE(2);
     displayName = QNAME(SMQ-94 UAV Bag);
     class AssembleInfo : AssembleInfo { assembleTo = "SWS_V_UAV_SMQ94"; };
 };
 
-class SWS_Bag_SMQ94_Maid : SWS_Bag_SMQ94_Base
+class SWS_Bag_UAV_SMQ94_Maid : SWS_Bag_UAV_SMQ94_Base
 {
     SCOPE(2);
     displayName = QNAME(SMQ-94 UAV Bag (Maid));
@@ -28,7 +28,7 @@ class SWS_V_UAV_SMQ94 : SWS_V_UAV_SMQ94_Base
 {
     class AssembleInfo : AssembleInfo
     {
-        dissasembleTo[] = {"SWS_Bag_SMQ94"};
+        dissasembleTo[] = {"SWS_Bag_UAV_SMQ94"};
     };
 };
 
@@ -36,6 +36,6 @@ class SWS_V_UAV_SMQ94_Maid : SWS_V_UAV_SMQ94_Base
 {
     class AssembleInfo : AssembleInfo
     {
-        dissasembleTo[] = {"SWS_Bag_SMQ94_Maid"};
+        dissasembleTo[] = {"SWS_Bag_UAV_SMQ94_Maid"};
     };
 };

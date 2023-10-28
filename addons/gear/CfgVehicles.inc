@@ -1,8 +1,8 @@
 #define CLASSES_VEHICLES \
-    "SWS_Bag_SMQ94_Maid" \
-    , "SWS_Bag_SMQ94" \
-    , "SWS_Bag_UAV_Demining" \
+    "SWS_Bag_UAV_Demining" \
     , "SWS_Bag_UAV_MiniPelican" \
+    , "SWS_Bag_UAV_SMQ94_Maid" \
+    , "SWS_Bag_UAV_SMQ94" \
     , "SWS_V_Bag_Hardcase_Bait" \
     , "SWS_V_Bag_Hardcase_Base" \
     , "SWS_V_Bag_Hardcase_Blue" \
