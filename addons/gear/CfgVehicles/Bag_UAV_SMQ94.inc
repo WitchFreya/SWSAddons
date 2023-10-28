@@ -1,35 +1,27 @@
-class SWS_Bag_SMQ94 : DMNS_UAV_01_backpack_F
+class SWS_Bag_SMQ94_Base : DMNS_UAV_01_backpack_F
 {
-    ITEM_META(2);
-    displayName = QNAME(ILCS UAV Rucksack [MQ-94]);
+    ITEM_META(0);
+    displayName = QNAME(SMQ-94 UAV Bag (Base));
     picture = "\OPTRE_weapons\backpacks\icons\rucksack_black";
-    model = "\OPTRE_weapons\backpacks\ODST_ruck";
+    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
     hiddenSelections[] = { "camo1", "biofoam" };
     hiddenSelectionsMaterials[] = {};
-    hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Backpacks\V_ILCS_UAV_CO"};
-    class AssembleInfo : AssembleInfo
-    {
-        assembleTo = "SWS_V_UAV_SMQ94";
-    };
-    class XtdGearInfo
-    {
-        model = "SWS_V_UAV_SMQ94";
-        variant = "Default";
-    };
+    hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Backpacks\V_ILCS_UAV_CO.paa"};
+    class AssembleInfo : AssembleInfo { displayName = "SMQ-94 Drone"; };
 };
 
-class SWS_Bag_SMQ94_Maid : SWS_Bag_SMQ94
+class SWS_Bag_SMQ94 : SWS_Bag_SMQ94_Base
 {
-    displayName = QNAME(ILCS UAV Rucksack [MQ-94] - Maid);
-    class AssembleInfo : AssembleInfo
-    {
-        assembleTo = "SWS_V_UAV_SMQ94_Maid";
-    };
+    SCOPE(2);
+    displayName = QNAME(SMQ-94 UAV Bag);
+    class AssembleInfo : AssembleInfo { assembleTo = "SWS_V_UAV_SMQ94"; };
+};
 
-    class XtdGearInfo : XtdGearInfo
-    {
-        variant = "Maid";
-    };
+class SWS_Bag_SMQ94_Maid : SWS_Bag_SMQ94_Base
+{
+    SCOPE(2);
+    displayName = QNAME(SMQ-94 UAV Bag (Maid));
+    class AssembleInfo : AssembleInfo { assembleTo = "SWS_V_UAV_SMQ94_Maid"; };
 };
 
 class SWS_V_UAV_SMQ94 : SWS_V_UAV_SMQ94_Base
