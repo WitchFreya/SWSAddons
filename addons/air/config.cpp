@@ -8,7 +8,7 @@ class CfgPatches {
         magazines[] = { };
         ammo[] = { };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"sws_main"};
+        requiredAddons[] = {"sws_main", "sws_common"};
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };

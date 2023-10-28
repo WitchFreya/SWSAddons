@@ -27,8 +27,8 @@ class CfgVehicles
         editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\B_UAV_01_F.jpg";
         crew = "B_UAV_AI";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsMaterials[] = {QPATHTOF(data\smq94\basic.rvmat)};
-        hiddenSelectionsTextures[] = {QPATHTOF(data\smq94\basic_co.paa)};
+        hiddenSelectionsMaterials[] = {QPATHTOF(data\uav_smq94\basic.rvmat)};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\uav_smq94\basic_co.paa)};
         typicalCargo[] = {"B_UAV_AI"};
         weapons[] = { "SWS_Weapon_LaserDesignator" };
         magazines[] = { "LaserBatteries" };
@@ -109,14 +109,14 @@ class CfgVehicles
             {
                 META;
                 displayName = "UNSC";
-                textures[] = {QPATHTOF(data\smq94\basic_co.paa)};
+                textures[] = {QPATHTOF(data\uav_smq94\basic_co.paa)};
             };
 
             class Maid
             {
                 META;
                 displayName = "Maid";
-                textures[] = {QPATHTOF(data\smq94\maid_co.paa)};
+                textures[] = {QPATHTOF(data\uav_smq94\maid_co.paa)};
             };
         };
     };
@@ -131,8 +131,8 @@ class CfgVehicles
     class SWS_V_UAV_SMQ94_Maid : SWS_V_UAV_SMQ94_Base
     {
         SCOPE(2);
-        displayName = QNAME(SMQ-94 Recon - Maid);
-        hiddenSelectionsTextures[] = {QPATHTOF(data\smq94\maid_co.paa)};
+        displayName = QNAME(SMQ-94 Recon (Maid));
+        hiddenSelectionsTextures[] = {QPATHTOF(data\uav_smq94\maid_co.paa)};
         textureList[] = {"Maid", 1};
     };
 };

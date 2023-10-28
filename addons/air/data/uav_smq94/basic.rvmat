@@ -8,7 +8,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture = "x\sws\addons\air\data\smq94\basic_nohq.paa";
+	texture = "x\sws\addons\air\data\uav_smq94\basic_nohq.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture = "x\sws\addons\air\data\smq94\basic_as.paa";
+	texture = "x\sws\addons\air\data\uav_smq94\basic_as.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture = "x\sws\addons\air\data\smq94\basic_smdi.paa";
+	texture = "x\sws\addons\air\data\uav_smq94\basic_smdi.paa";
 	uvSource = "tex";
 	class uvTransform
 	{

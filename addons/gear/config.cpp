@@ -20,7 +20,8 @@ class CfgPatches
             , "sws_common"
             , "sws_air_uav_smq94"
             , "sws_air_uav_demining"
-            , "OPTRE_UNSC_Units"};
+            , "OPTRE_UNSC_Units"
+        };
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };
