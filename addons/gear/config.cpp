@@ -15,11 +15,11 @@ class CfgPatches
         requiredAddons[] = {
             "A3_Air_F_Orange_UAV_06"
             , "A3_Supplies_F_Orange_Bags"
-            , "DMNS_Air_UAV_01"
             , "LM_OPCAN_UNSC"
             , "sws_main"
             , "sws_tech"
-            ,"sws_common"
+            , "sws_common"
+            , "sws_air_smq94"
             , "OPTRE_UNSC_Units"};
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;

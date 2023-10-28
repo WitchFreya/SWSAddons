@@ -8,11 +8,11 @@ class SWS_V_UAV_Demining : C_IDAP_UAV_06_antimine_F
     typicalCargo[] = {QUNIT(UAV_Antimine)};
     class AssembleInfo : AssembleInfo
     {
-        dissasembleTo[] = {QBAG(SWS_V_UAV_Demining)};
+        dissasembleTo[] = {"SWS_Bag_UAV_Demining"};
     };
 };
 
-class BAG(SWS_V_UAV_Demining) : C_IDAP_UAV_06_antimine_backpack_F
+class SWS_Bag_UAV_Demining : C_IDAP_UAV_06_antimine_backpack_F
 {
     ITEM_META(2);
     displayName = QNAME(UAV Bag (Demining));
