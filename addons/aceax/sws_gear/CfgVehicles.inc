@@ -5,6 +5,8 @@ class CfgVehicles
     class B_Messenger_IDAP_F;
     class DMNS_UAV_01_backpack_F;
     class OPTRE_ONI_Researcher_Suitcase;
+    class B_UAV_06_Backpack_F;
+    class C_IDAP_UAV_06_antimine_backpack_F;
 
     class SWS_V_Bag_Hardcase_Base : OPTRE_ONI_Researcher_Suitcase
     {
@@ -28,12 +30,48 @@ class CfgVehicles
     };
     class SWS_V_Bag_Messenger_Tiger : SWS_V_Bag_Messenger { XTD_GEAR_INFO(Tiger); };
 
-    class SWS_Bag_SMQ94_Base : DMNS_UAV_01_backpack_F
+    class SWS_Bag_UAV_SMQ94_Base : DMNS_UAV_01_backpack_F
     {
-        class XtdGearInfo { model = "SWS_Bag_SMQ94"; };
+        class XtdGearInfo
+        {
+            model = "SWS_Bag_Drone";
+            variant = "SMQ94";
+        };
     };
-    class SWS_Bag_SMQ94 : SWS_Bag_SMQ94_Base { XTD_GEAR_INFO(Default); };
-    class SWS_Bag_SMQ94_Maid : SWS_Bag_SMQ94_Base { XTD_GEAR_INFO(Maid); };
+
+    class SWS_Bag_UAV_SMQ94 : SWS_Bag_UAV_SMQ94_Base {
+        class XtdGearInfo : XtdGearInfo
+        {
+            pattern = "Default";
+        };
+    };
+
+    class SWS_Bag_UAV_SMQ94_Maid : SWS_Bag_UAV_SMQ94_Base {
+        class XtdGearInfo : XtdGearInfo
+        {
+            pattern = "Maid";
+        };
+    };
+
+    class SWS_Bag_UAV_MiniPelican : B_UAV_06_Backpack_F
+    {
+        class XtdGearInfo
+        {
+            model = "SWS_Bag_Drone";
+            variant = "MiniPelican";
+            pattern = "Default";
+        };
+    };
+
+    class SWS_Bag_UAV_Demining : C_IDAP_UAV_06_antimine_backpack_F
+    {
+        class XtdGearInfo
+        {
+            model = "SWS_Bag_Drone";
+            variant = "Demining";
+            pattern = "Default";
+        };
+    };
 };
 
 #undef XTD_GEAR_INFO

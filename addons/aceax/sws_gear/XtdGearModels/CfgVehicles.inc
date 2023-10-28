@@ -1,16 +1,36 @@
 class CfgVehicles
 {
-    class SWS_Bag_SMQ94 : BaseGearModel
+    class SWS_Bag_Drone : BaseGearModel
     {
-        label = QNAME(SMQ94 UAV Bags);
-        options[] = {"Variant"};
+        label = QNAME(UAV Bags);
+        options[] = {"Variant", "Pattern"};
+        class Pattern
+        {
+            label = "Pattern";
+            values[] = {"Default","Maid"};
+
+            class Default { description = "Standard design."; };
+            class Maid { description = "Maid's custom design."; };
+        };
+
         class Variant
         {
             label = "Variant";
-            values[] = {"Default","Maid"};
-
-            class Default { description = "Standard SMQ-94 design."; };
-            class Maid { description = "Maid's custom SMQ-94 design."; };
+            values[] = {"SMQ94","Demining","MiniPelican"};
+            class SMQ94
+            {
+                label = "SMQ-94";
+                description = "A powerful reconnaissance drone.";
+            };
+            class Demining
+            {
+                description = "A drone with grenades that can be dropped.";
+            };
+            class MiniPelican
+            {
+                label = "Mini-Pelican";
+                description = "A drone with extra storage capacity.";
+            };
         };
     };
 
