@@ -25,20 +25,19 @@ class CfgVehicles
 {
     class B_Messenger_IDAP_F;
     class C_IDAP_UAV_06_antimine_backpack_F;
-    class C_IDAP_UAV_06_antimine_F;
-    class C_IDAP_UAV_AI_antimine_F;
     class DMNS_UAV_01_backpack_F;
     class OPTRE_ONI_Researcher_Suitcase;
     class SWS_V_UAV_SMQ94_Base;
     class UAV_06_Base_F;
+    class SWS_V_UAV_Demining_Base;
 
     //== Bags
-    #include "CfgVehicles\Bag_Messenger.inc"
     #include "CfgVehicles\Bag_Hardcase.inc"
+    #include "CfgVehicles\Bag_Messenger.inc"
+    #include "CfgVehicles\Bag_UAV_Demining.inc"
     #include "CfgVehicles\Bag_UAV_SMQ94.inc"
 
     //== UAVs
-    #include "CfgVehicles\UAV_Demining.inc"
     #include "CfgVehicles\B_UAV_06_F.inc"
     #include "CfgVehicles\UAV_Pelican.inc"
 };
