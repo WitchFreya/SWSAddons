@@ -1,8 +1,8 @@
 class CfgVehicles
 {
-    class SWS_V_UAV_SMQ94 : BaseGearModel
+    class SWS_Bag_SMQ94 : BaseGearModel
     {
-        label = QNAME(UAV Bags);
+        label = QNAME(SMQ94 UAV Bags);
         options[] = {"Variant"};
         class Variant
         {

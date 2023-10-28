@@ -2,7 +2,10 @@
 
 class CfgVehicles
 {
+    class B_Messenger_IDAP_F;
+    class DMNS_UAV_01_backpack_F;
     class OPTRE_ONI_Researcher_Suitcase;
+
     class SWS_V_Bag_Hardcase_Base : OPTRE_ONI_Researcher_Suitcase
     {
         class XtdGearInfo { model = "SWS_Bag_Hardcase"; };
@@ -15,7 +18,6 @@ class CfgVehicles
     class SWS_V_Bag_Hardcase_Bait : SWS_V_Bag_Hardcase_Medical { XTD_GEAR_INFO(Bait); };
     class SWS_V_Bag_Hardcase_Snare : SWS_V_Bag_Hardcase_Medical { XTD_GEAR_INFO(Snare); };
 
-    class B_Messenger_IDAP_F;
     class SWS_V_Bag_Messenger : B_Messenger_IDAP_F
     {
         class XtdGearInfo
@@ -25,4 +27,13 @@ class CfgVehicles
         };
     };
     class SWS_V_Bag_Messenger_Tiger : SWS_V_Bag_Messenger { XTD_GEAR_INFO(Tiger); };
+
+    class SWS_Bag_SMQ94_Base : DMNS_UAV_01_backpack_F
+    {
+        class XtdGearInfo { model = "SWS_Bag_SMQ94"; };
+    };
+    class SWS_Bag_SMQ94 : SWS_Bag_SMQ94_Base { XTD_GEAR_INFO(Default); };
+    class SWS_Bag_SMQ94_Maid : SWS_Bag_SMQ94_Base { XTD_GEAR_INFO(Maid); };
 };
+
+#undef XTD_GEAR_INFO
