@@ -13,7 +13,6 @@
     "SWS_V_Bag_Hardcase_Bait", \
     "SWS_V_Bag_Hardcase_Snare", \
     "SWS_V_UAV_Demining", \
-    "SWS_V_UAV_Pelican", \
     "SWS_V_Bag_Messenger", \
     "SWS_V_Bag_Messenger_Tiger", \
     CLASSES_UNITS
@@ -28,7 +27,6 @@ class CfgVehicles
     class DMNS_UAV_01_backpack_F;
     class OPTRE_ONI_Researcher_Suitcase;
     class SWS_V_UAV_SMQ94_Base;
-    class UAV_06_Base_F;
     class SWS_V_UAV_Demining_Base;
 
     //== Bags
@@ -36,8 +34,4 @@ class CfgVehicles
     #include "CfgVehicles\Bag_Messenger.inc"
     #include "CfgVehicles\Bag_UAV_Demining.inc"
     #include "CfgVehicles\Bag_UAV_SMQ94.inc"
-
-    //== UAVs
-    #include "CfgVehicles\B_UAV_06_F.inc"
-    #include "CfgVehicles\UAV_Pelican.inc"
 };
