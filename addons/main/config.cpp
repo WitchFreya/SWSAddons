@@ -14,4 +14,12 @@ class CfgPatches
     };
 };
 
+class CfgMods
+{
+    class PREFIX
+    {
+        #include "../../mod.cpp"
+    };
+};
+
 VERSIONING
