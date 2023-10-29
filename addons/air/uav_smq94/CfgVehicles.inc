@@ -23,8 +23,7 @@ class CfgVehicles
         fuelCapacity = 100;
         side = 1;
         model = "dmns\dmns_air\mq_94\MQ_94.p3d";
-        // TODO: editor preview https://community.bistudio.com/wiki/Eden_Editor:_Configuring_Asset_Previews
-        editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\B_UAV_01_F.jpg";
+        editorPreview = QPATHTOF(data\uav_smq94\editor.jpg);
         crew = "B_UAV_AI";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsMaterials[] = {QPATHTOF(data\uav_smq94\basic.rvmat)};
