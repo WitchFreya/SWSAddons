@@ -14,7 +14,6 @@
     "SWS_Magazine_Grenade_9Bang_NoFuse", \
     "SWS_Magazine_Grenade_9Bang_1Rnd_Shell", \
     "SWS_Magazine_Grenade_9Bang_3Rnd_Shell", \
-    "SWS_Magazine_M24RL_D", \
     "SWS_Magazine_C7Sx_Sticky", \
     "SWS_Magazine_6Rnd_Shotgun_Incendiary", \
     "SWS_Magazine_12_Rnd_Shotgun_Incendiary", \
@@ -63,11 +62,6 @@ class CfgMagazines {
     #include "CfgMagazines\9Bang.inc"
     #include "CfgMagazines\C7Sx.inc"
     #include "CfgMagazines\UGLSmokeFlares.inc"
-
-    // Rockets
-    class MRAWS_HEAT_F;
-
-    #include "CfgMagazines\M24RL_D.inc"
 
     // Shotguns
     class OPTRE_6Rnd_8Gauge_Pellets;

@@ -10,7 +10,6 @@
     "SWS_B_Grenade_9Bang", \
     "SWS_B_Grenade_9Bang_NoFuse", \
     "SWS_Magazine_Grenade_9Bang_Shell", \
-    "SWS_B_M24RL_D", \
     "SWS_B_C7Sx_Sticky", \
     "SWS_B_C7Sx_Sticky_Explosion", \
     "SWS_B_8Gauge_Incendiary", \
@@ -35,11 +34,6 @@ class CfgAmmo {
     #include "CfgAmmo\M3Sx.inc"
     #include "CfgAmmo\M9Sx.inc"
     #include "CfgAmmo\9Bang.inc"
-
-    //== Rockets
-    class R_MRAAWS_HE_F;
-
-    #include "CfgAmmo\M24RL_D.inc"
 
     //== Explosives
     class OPTRE_c7_remote_ammo_thrown_sticky;
