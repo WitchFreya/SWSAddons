@@ -29,6 +29,8 @@ class CfgVehicles
         side = 1;
         crew = "SWS_U_UAV_Antimine";
         typicalCargo[] = {"SWS_U_UAV_Antimine"};
+        fuelCapacity = 40;
+        armor = 4;
         class AssembleInfo : AssembleInfo { dissasembleTo[] = {}; };
     };
 
