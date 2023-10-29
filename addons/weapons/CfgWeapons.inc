@@ -6,7 +6,6 @@
     "SWS_Weapon_MA5BSx", \
     "SWS_Weapon_MA5BSx_GL", \
     "SWS_Optic_SmartLink", \
-    "SWS_Weapon_M24RL_D_Loaded", \
     "SWS_Weapon_SBR55", \
     "SWS_Weapon_ARMXS", \
     "SWS_Weapon_ARMXS_GL"
@@ -41,11 +40,6 @@ class CfgWeapons {
 
     #include "CfgWeapons\Guns\SM247.inc"
 
-    //== Launchers
-    class launch_MRAWS_green_F;
-
-    #include "CfgWeapons\Guns\M24RL_D.inc"
-
     //== Optics
     class OPTRE_MA5_SmartLink;
 
@@ -78,8 +72,4 @@ class CfgWeapons {
             magazines[] = {"SWS_Magazine_C7Sx_Sticky"};
         };
     };
-};
-
-class CBA_DisposableLaunchers {
-    SWS_Weapon_M24RL_D[] = { "SWS_Weapon_M24RL_D_Loaded", "SWS_Weapon_M24RL_D_Used" };
 };
