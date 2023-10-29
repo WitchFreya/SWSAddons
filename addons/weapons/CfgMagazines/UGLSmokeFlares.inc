@@ -1,4 +1,4 @@
-#define C_GL(var0,var1) class MAGAZINE(3Rnd_FlareSmoke_##var1) : OPTRE_signalSmoke##var0 \
+#define C_GL(var0,var1) class SWS_Magazine_3Rnd_FlareSmoke_##var1 : OPTRE_signalSmoke##var0 \
 { \
     ITEM_META(2); \
     displayName = QUOTE(3Rnd 3GL Flare Smoke (var1)); \

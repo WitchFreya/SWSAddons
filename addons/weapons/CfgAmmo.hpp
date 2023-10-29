@@ -1,20 +1,20 @@
 #define CLASSES_AMMO \
-    QAMMO(762x51_Ball), \
+    "SWS_B_762x51_Ball", \
     "SWS_B_Grenade_Frag", \
     "SWS_B_Grenade_M9Sx", \
     "SWS_B_Grenade_M3Sx", \
-    QSHELL(M3Sx_40mm), \
+    "SWS_Magazine_Grenade_M3Sx_40mm_Shell", \
     "SWS_B_Grenade_M9Sx_OnImpact", \
     "SWS_B_M9Sx_OnExp", \
-    QSHELL(M9Sx_40mm), \
+    "SWS_B_Grenade_M9Sx_40mm_Shell", \
     "SWS_B_Grenade_9Bang", \
     "SWS_B_Grenade_9Bang_NoFuse", \
-    QSHELL(9Bang), \
-    QAMMO(M24RL_D), \
-    QAMMO(DOUBLES(C7Sx,Sticky)), \
-    QAMMO(TRIPLES(C7Sx,Sticky,Explosion)), \
-    QAMMO(8Gauge_Incendiary), \
-    QAMMO(8Gauge_Incendiary_Submunition)
+    "SWS_Magazine_Grenade_9Bang_Shell", \
+    "SWS_B_M24RL_D", \
+    "SWS_B_C7Sx_Sticky", \
+    "SWS_B_C7Sx_Sticky_Explosion", \
+    "SWS_B_8Gauge_Incendiary", \
+    "SWS_B_8Gauge_Incendiary_Submunition"
 
 
 class CfgAmmo {

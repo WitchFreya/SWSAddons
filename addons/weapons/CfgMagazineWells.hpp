@@ -1,15 +1,15 @@
 class CfgMagazineWells {
     class UGL_40x36 {
         DOUBLES(PREFIX,Magazines)[] = {
-            QGSMAGAZINE(M3Sx,1Rnd),
-            QGSMAGAZINE(M3Sx,3Rnd),
-            QGSMAGAZINE(M9Sx,1Rnd),
-            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Blue)),
-            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Green)),
-            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Orange)),
-            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Purple)),
-            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Red)),
-            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Yellow)),
+            "SWS_Magazine_Grenade_M3Sx_1Rnd_Shell",
+            "SWS_Magazine_Grenade_M3Sx_3Rnd_Shell",
+            "SWS_Magazine_Grenade_M9Sx_1Rnd_Shell",
+            "SWS_Magazine_3Rnd_FlareSmoke_Blue",
+            "SWS_Magazine_3Rnd_FlareSmoke_Green",
+            "SWS_Magazine_3Rnd_FlareSmoke_Orange",
+            "SWS_Magazine_3Rnd_FlareSmoke_Purple",
+            "SWS_Magazine_3Rnd_FlareSmoke_Red",
+            "SWS_Magazine_3Rnd_FlareSmoke_Yellow",
             "3Rnd_Smoke_Grenade_Shell",
             "3Rnd_SmokeGreen_Grenade_Shell",
             "3Rnd_SmokeOrange_Grenade_Shell",
@@ -27,15 +27,15 @@ class CfgMagazineWells {
 
     class 3UGL_40x36 {
         DOUBLES(PREFIX,Magazines)[] = {
-            QGSMAGAZINE(M3Sx,1Rnd),
-            QGSMAGAZINE(M3Sx,3Rnd),
-            QGSMAGAZINE(M9Sx,1Rnd),
-            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Blue)),
-            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Green)),
-            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Orange)),
-            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Purple)),
-            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Red)),
-            QUOTE(MAGAZINE(3Rnd_FlareSmoke_Yellow)),
+            "SWS_Magazine_Grenade_M3Sx_1Rnd_Shell",
+            "SWS_Magazine_Grenade_M3Sx_3Rnd_Shell",
+            "SWS_Magazine_Grenade_M9Sx_1Rnd_Shell",
+            "SWS_Magazine_3Rnd_FlareSmoke_Blue",
+            "SWS_Magazine_3Rnd_FlareSmoke_Green",
+            "SWS_Magazine_3Rnd_FlareSmoke_Orange",
+            "SWS_Magazine_3Rnd_FlareSmoke_Purple",
+            "SWS_Magazine_3Rnd_FlareSmoke_Red",
+            "SWS_Magazine_3Rnd_FlareSmoke_Yellow",
             "3Rnd_Smoke_Grenade_Shell",
             "3Rnd_SmokeGreen_Grenade_Shell",
             "3Rnd_SmokeOrange_Grenade_Shell",
@@ -61,14 +61,14 @@ class CfgMagazineWells {
 
     class OPTRE_Magwell_M45 {
         GVAR(Magazines)[] = {
-            QUOTE(MAGAZINE(6Rnd_Shotgun_Incendiary)),
-            QUOTE(MAGAZINE(12_Rnd_Shotgun_Incendiary))
+            "SWS_Magazine_6Rnd_Shotgun_Incendiary",
+            "SWS_Magazine_12_Rnd_Shotgun_Incendiary"
         };
     };
 
     class UBS_12GA {
         GVAR(Magazines)[] = {
-            QUOTE(MAGAZINE(6Rnd_Shotgun_Incendiary))
+            "SWS_Magazine_6Rnd_Shotgun_Incendiary"
         };
     };
 
@@ -86,21 +86,21 @@ class CfgMagazineWells {
 
     class MX_65x39_MSBS {
         GVAR(Magazines)[] = {
-            QUOTE(MAGAZINE(60Rnd_65x39_Caseless_msbs)),
-            QUOTE(MAGAZINE(60Rnd_65x39_Caseless_msbs_Tracers)),
-            QUOTE(MAGAZINE(60Rnd_65x39_Caseless_msbs_Tracers_Blue)),
-            QUOTE(MAGAZINE(60Rnd_65x39_Caseless_msbs_Tracers_Yellow)),
-            QUOTE(MAGAZINE(60Rnd_65x39_Caseless_msbs_Tracers_Green))
+            "SWS_Magazine_60Rnd_65x39_Caseless_msbs",
+            "SWS_Magazine_60Rnd_65x39_Caseless_msbs_Tracers",
+            "SWS_Magazine_60Rnd_65x39_Caseless_msbs_Tracers_Blue",
+            "SWS_Magazine_60Rnd_65x39_Caseless_msbs_Tracers_Yellow",
+            "SWS_Magazine_60Rnd_65x39_Caseless_msbs_Tracers_Green"
         };
     };
 
     class MX_65x39 {
         GVAR(Magazines)[] = {
-            QUOTE(MAGAZINE(60Rnd_65x39_Caseless)),
-            QUOTE(MAGAZINE(60Rnd_65x39_Caseless_Tracers)),
-            QUOTE(MAGAZINE(60Rnd_65x39_Caseless_Tracers_Yellow)),
-            QUOTE(MAGAZINE(60Rnd_65x39_Caseless_Tracers_Blue)),
-            QUOTE(MAGAZINE(60Rnd_65x39_Caseless_Tracers_Green))
+            "SWS_Magazine_60Rnd_65x39_Caseless",
+            "SWS_Magazine_60Rnd_65x39_Caseless_Tracers",
+            "SWS_Magazine_60Rnd_65x39_Caseless_Tracers_Yellow",
+            "SWS_Magazine_60Rnd_65x39_Caseless_Tracers_Blue",
+            "SWS_Magazine_60Rnd_65x39_Caseless_Tracers_Green"
         };
     };
 };

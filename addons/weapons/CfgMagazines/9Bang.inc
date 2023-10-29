@@ -1,4 +1,4 @@
-class GMAGAZINE(9Bang): ACE_CTS9
+class SWS_Magazine_Grenade_9Bang: ACE_CTS9
 {
     ITEM_META(2);
     displayName = QNAME(9-Bang (Stun));
@@ -7,7 +7,7 @@ class GMAGAZINE(9Bang): ACE_CTS9
     ammo = "SWS_B_Grenade_9Bang";
 };
 
-class GMAGAZINE(DOUBLES(9Bang,NoFuse)): GMAGAZINE(9Bang)
+class SWS_Magazine_Grenade_9Bang_NoFuse : SWS_Magazine_Grenade_9Bang
 {
     displayName = QNAME(9-Bang (Stun/No Fuse));
     descriptionShort = QNAME(Experimental 9-Bang (Stun/No Fuse));
@@ -15,7 +15,7 @@ class GMAGAZINE(DOUBLES(9Bang,NoFuse)): GMAGAZINE(9Bang)
     ammo = "SWS_B_Grenade_9Bang_NoFuse";
 };
 
-class GSMAGAZINE(9Bang,1Rnd): M319_HE_Grenade_Shell
+class SWS_Magazine_Grenade_9Bang_1Rnd_Shell : M319_HE_Grenade_Shell
 {
     ITEM_META(2);
     displayName = QNAME(1Rnd 9Bang (Stun) Shell);
@@ -25,10 +25,10 @@ class GSMAGAZINE(9Bang,1Rnd): M319_HE_Grenade_Shell
     mass = 6;
     fuseDistance = 3;
     picture = "\z\ace\addons\grenades\UI\ACE_m84_x_ca.paa";
-    ammo = QSHELL(9Bang);
+    ammo = "SWS_Magazine_Grenade_9Bang_Shell";
 };
 
-class GSMAGAZINE(9Bang,3Rnd): GSMAGAZINE(9Bang,1Rnd)
+class SWS_Magazine_Grenade_9Bang_3Rnd_Shell : SWS_Magazine_Grenade_9Bang_1Rnd_Shell
 {
     displayName = QNAME(3Rnd 9Bang (Stun) Shell);
     count = 3;

@@ -1,7 +1,7 @@
 #define MAG_NAME(var) NAME(var##Rnd 6.5mm Promet Mag)
 #define QMAG_NAME(var) QUOTE(MAG_NAME(var))
 #define QMAG_DESC(var) QUOTE(Caliber: 6.5x39 mm STANAG Caseless<br />Rounds: var <br/> Used in: MX/C/M/SW/3GL)
-#define C_MAG(var) MAGAZINE(var##Rnd_65x39_Caseless_msbs)
+#define C_MAG(var) SWS_Magazine_##var##Rnd_65x39_Caseless_msbs
 
 class C_MAG(60) : 30Rnd_65x39_caseless_msbs_mag
 {
@@ -45,7 +45,7 @@ class DOUBLES(C_MAG(60),Tracers_Green) : DOUBLES(C_MAG(60),Tracers)
 
 #define MAG_NAME(var) NAME(var##Rnd 6.5mm Black Mag)
 #define QMAG_NAME(var) QUOTE(MAG_NAME(var))
-#define C_MAG(var) MAGAZINE(var##Rnd_65x39_Caseless)
+#define C_MAG(var) SWS_Magazine_##var##Rnd_65x39_Caseless
 
 class C_MAG(60) : 100Rnd_65x39_caseless_black_mag
 {
