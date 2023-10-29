@@ -1,4 +1,5 @@
-class AMMO(762x51_Ball): OPTRE_B_762x51_Ball {
+class SWS_B_762x51_Ball: OPTRE_B_762x51_Ball
+{
     META;
     hit = 34;
     typicalSpeed = 950;

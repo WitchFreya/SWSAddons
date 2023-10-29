@@ -7,7 +7,7 @@
     "SWS_Weapon_MA5BSx_GL", \
     "SWS_Optic_SmartLink", \
     "SWS_Weapon_M24RL_D_Loaded", \
-    "SWS_Weapon_SBR55"), \
+    "SWS_Weapon_SBR55", \
     "SWS_Weapon_ARMXS", \
     "SWS_Weapon_ARMXS_GL"
 
@@ -55,27 +55,27 @@ class CfgWeapons {
     class GrenadeLauncher;
     class Throw : GrenadeLauncher {
         muzzles[] += {
-            QMUZZLE(M3Sx),
-            QMUZZLE(M9Sx),
-            QMUZZLE(9Bang),
-            QMUZZLE(DOUBLES(9Bang,NoFuse)),
-            QMUZZLE(C7Sx)
+            "SWS_Muzzle_M3Sx",
+            "SWS_Muzzle_M9Sx",
+            "SWS_Muzzle_9Bang",
+            "SWS_Muzzle_9Bang_NoFuse",
+            "SWS_Muzzle_C7Sx"
         };
         class ThrowMuzzle;
-        class MUZZLE(M3Sx): ThrowMuzzle {
-            magazines[] = {QGMAGAZINE(M3Sx)};
+        class SWS_Muzzle_M3Sx: ThrowMuzzle {
+            magazines[] = {"SWS_Magazine_Grenade_M3Sx"};
         };
-        class MUZZLE(M9Sx): ThrowMuzzle {
-            magazines[] = {QGMAGAZINE(M9Sx)};
+        class SWS_Muzzle_M9Sx: ThrowMuzzle {
+            magazines[] = {"SWS_Magazine_Grenade_M9Sx"};
         };
-        class MUZZLE(9Bang): ThrowMuzzle {
-            magazines[] = {QGMAGAZINE(9Bang)};
+        class SWS_Muzzle_9Bang: ThrowMuzzle {
+            magazines[] = {"SWS_Magazine_Grenade_9Bang"};
         };
-        class MUZZLE(DOUBLES(9Bang,NoFuse)): ThrowMuzzle {
-            magazines[] = {QGMAGAZINE(DOUBLES(9Bang,NoFuse))};
+        class SWS_Muzzle_9Bang_NoFuse: ThrowMuzzle {
+            magazines[] = {"SWS_Magazine_Grenade_9Bang_NoFuse"};
         };
-        class MUZZLE(C7Sx): ThrowMuzzle {
-            magazines[] = {QUOTE(MAGAZINE(DOUBLES(C7Sx,Sticky)))};
+        class SWS_Muzzle_C7Sx: ThrowMuzzle {
+            magazines[] = {"SWS_Magazine_C7Sx_Sticky"};
         };
     };
 };

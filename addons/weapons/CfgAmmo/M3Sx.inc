@@ -12,7 +12,7 @@ class SWS_B_Grenade_M3Sx : OPTRE_G_M9_Frag
     ace_frag_enabled = 1;
 };
 
-class SHELL(M3Sx_40mm): M319_HE
+class SWS_Magazine_Grenade_M3Sx_40mm_Shell: M319_HE
 {
     META;
     hit = 40;

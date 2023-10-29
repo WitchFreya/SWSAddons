@@ -1,11 +1,13 @@
-class AMMO(8Gauge_Incendiary): B_12Gauge_Pellets_Submunition {
+class SWS_B_8Gauge_Incendiary: B_12Gauge_Pellets_Submunition
+{
     submunitionConeType[] = {"poissondisccenter",15};
-    submunitionAmmo = QAMMO(8Gauge_Incendiary_Submunition);
+    submunitionAmmo = "SWS_B_8Gauge_Incendiary_Submunition";
     thrust = 15;
     triggerTime = 0.001;
 };
 
-class AMMO(8Gauge_Incendiary_Submunition) : B_12Gauge_Pellets_Submunition_Deploy {
+class SWS_B_8Gauge_Incendiary_Submunition : B_12Gauge_Pellets_Submunition_Deploy
+{
     caliber = 4;
     hit = 16;
     deflecting = 0;

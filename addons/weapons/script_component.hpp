@@ -18,20 +18,6 @@
     ITEM_META(var1);           \
     baseweapon = QUOTE(DOUBLES(SWS_Weapon,var0))
 
-#define MAGAZINE(var0) TRIPLES(PREFIX,Magazine,var0)
-#define AMMO(var0) TRIPLES(PREFIX,B,var0)
-#define QAMMO(var0) QUOTE(AMMO(var0))
-#define GRENADE(var0) AMMO(DOUBLES(Grenade,var0))
-#define QGRENADE(var0) QUOTE(GRENADE(var0))
-#define SHELL(var0) GRENADE(DOUBLES(var0,Shell))
-#define QSHELL(var0) QUOTE(SHELL(var0))
-#define MUZZLE(var0) TRIPLES(PREFIX,Muzzle,var0)
-#define QMUZZLE(var0) QUOTE(MUZZLE(var0))
-#define GMAGAZINE(var0) MAGAZINE(DOUBLES(Grenade,var0))
-#define QGMAGAZINE(var0) QUOTE(GMAGAZINE(var0))
-#define GSMAGAZINE(var0,var1) GMAGAZINE(TRIPLES(var0,var1,Shell))
-#define QGSMAGAZINE(var0,var1) QUOTE(GSMAGAZINE(var0,var1))
-
 #define MAGAZINE_M24RLD_MASS 10
 #define WEAPON_M24RLD_MASS 30
 #define WEAPON_M24RLD_LOADED_MASS 40

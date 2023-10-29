@@ -1,4 +1,5 @@
-class GMAGAZINE(M3Sx): OPTRE_M9_Frag {
+class SWS_Magazine_Grenade_M3Sx : OPTRE_M9_Frag
+{
     CLEARANCE(RESTRICTED/DECWHI);
     ITEM_META(2);
     displayName = QNAME(M3Sx (Frag));
@@ -8,17 +9,19 @@ class GMAGAZINE(M3Sx): OPTRE_M9_Frag {
     descriptionShort = "Type: Concussion Grenade<br />Rounds: 1<br />Used in: Hand";
 };
 
-class GSMAGAZINE(M3Sx,1Rnd): M319_HEDP_Grenade_Shell {
+class SWS_Magazine_Grenade_M3Sx_1Rnd_Shell : M319_HEDP_Grenade_Shell
+{
     CLEARANCE(RESTRICTED/DECWHI);
     ITEM_META(2);
     displayName = QNAME(1Rnd M3Sx (Frag) Shell);
     displayNameShort = "M3Sx (Frag)";
     descriptionShort = "Type: Concussion Grenade<br />Rounds: 1<br />Used in: EGLM, 1GL";
     mass = 12;
-    ammo = QSHELL(M3Sx_40mm);
+    ammo = "SWS_Magazine_Grenade_M3Sx_40mm_Shell";
 };
 
-class GSMAGAZINE(M3Sx,3Rnd): GSMAGAZINE(M3Sx,1Rnd) {
+class SWS_Magazine_Grenade_M3Sx_3Rnd_Shell : SWS_Magazine_Grenade_M3Sx_1Rnd_Shell
+{
     displayName = QNAME(3Rnd M3Sx (Frag) Shell);
     mass = 26;
     count = 3;
