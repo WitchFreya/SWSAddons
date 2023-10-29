@@ -55,6 +55,7 @@ class CfgWeapons
     class SWS_Weapon_M24RL_D_Used : SWS_Weapon_M24RL_D
     {
         displayName = QUOTE(NAME_M24RLD (Used));
+        baseWeapon = "SWS_Weapon_M24RL_D_Used";
         magazines[] = {"CBA_FakeLauncherMagazine"};
     };
 };
