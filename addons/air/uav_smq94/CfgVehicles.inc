@@ -32,18 +32,11 @@ class CfgVehicles
         typicalCargo[] = {"B_UAV_AI"};
         weapons[] = { "SWS_Weapon_LaserDesignator" };
         magazines[] = { "LaserBatteries" };
+        armor = 3;
 
         class AssembleInfo : AssembleInfo
         {
             dissasembleTo[] = {};
-        };
-
-        class HitPoints: HitPoints
-        {
-            class HitHull : HitHull
-            {
-                armor = 1.1;
-            };
         };
 
         class Turrets : Turrets

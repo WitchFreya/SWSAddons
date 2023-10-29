@@ -28,7 +28,19 @@ class CfgVehicles
         faction = "SWS_UNSC";
         textureList[] = {"SWS_UNSC", 1};
         hiddenSelectionsTextures[] = {QPATHTOF(data\uav_minipelican\sws_co.paa)};
+
         fuelCapacity = 100;
+        transportMaxWeapons = 2;
+        transportMaxMagazines = 20;
+        transportMaxBackpacks = 2;
+        transportAmmo = 0;
+        transportRepair = 0;
+        transportFuel = 0;
+        maximumLoad =  1000;
+        supplyRadius = -1;
+        armor = 2.5;
+
+        class TransportItems {};
         class AssembleInfo : AssembleInfo { dissasembleTo[] = {}; };
     };
 
