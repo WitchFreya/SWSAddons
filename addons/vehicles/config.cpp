@@ -35,10 +35,8 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "A3_Armor_F_EPB",
-            "A3_Weapons_F_Tank",
             "ace_medical",
             "OPTRE_UNSC_Units_Army",
-            "sws_units",
             "sws_common",
             "sws_main",
             "sws_weapons"

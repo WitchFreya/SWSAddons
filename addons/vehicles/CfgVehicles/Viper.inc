@@ -69,7 +69,6 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
                 "20Rnd_120mm_APFSDS_shells_Tracer_Yellow",
                 "12Rnd_120mm_HEAT_MP_T_Yellow",
                 "12Rnd_120mm_HE_shells_Tracer_Yellow",
-                "SWS_Magazine_4Rnd_120mm_cannon_missiles",
                 MACRO_X10("200Rnd_762x51_Belt_Yellow")
             };
             class Components
@@ -180,25 +179,13 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
         };
         class SWS_Sticker
         {
-            displayName = QNAME(SWS (Stickers));
+            displayName = "SWS (Stickers)";
             author = QUOTE(AUTHOR);
             textures[] = {
                 QPATHTOF(data\viper\body_sticker_co.paa),
                 QPATHTOF(data\viper\turret_sticker_co.paa),
                 QPATHTOF(data\viper\turret_mg_co.paa),
             };
-            factions[] = {"SWS_UNSC"};
-        };
-        class CLA_Captured
-        {
-            displayName = QNAME(CLA (Captured));
-            author = QUOTE(AUTHOR);
-            textures[] = {
-                QPATHTOF(data\viper\body_flecktarn_co.paa),
-                QPATHTOF(data\viper\turret_flecktarn_captured_co.paa),
-                QPATHTOF(data\viper\turret_mg_flecktarn_co.paa),
-            };
-            factions[] = {"O_CLA"};
         };
     };
 
@@ -257,17 +244,6 @@ class SWS_V_MBT_M700_Viper_Cobra : SWS_V_MBT_M700_Viper
 class SWS_V_MBT_M700_Viper_Sticker : SWS_V_MBT_M700_Viper
 {
     SCOPE(0);
-    displayName = QNAME(M700 Viper (Stickers!));
+    displayName = QNAME(M700 Viper (Kuma));
     textureList[] = {"SWS_Sticker", 1};
-};
-
-class SWS_V_MBT_M700_Viper_Captured : SWS_V_MBT_M700_Viper_Base
-{
-    SCOPE(2);
-    faction = "O_CLA";
-    side = 0;
-    displayName = QNAME(M700 Viper (Captured CLA));
-    textureList[] = {"CLA_Captured", 1};
-    typicalCargo[] = { "O_CLA_Crew_01" };
-    editorPreview = QPATHTOF(data\viper\editor_preview_captured.jpg);
 };
