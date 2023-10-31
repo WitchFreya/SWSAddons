@@ -20,6 +20,7 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
         "SWS_Flecktarn", 1,
         "SWS_Flat", 0.5,
         "SWS_Cobra", 0,
+        "SWS_Sticker", 0,
         "Indep_01", 0,
         "Indep_02", 0,
         "Indep_03", 0
@@ -68,8 +69,25 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
                 "20Rnd_120mm_APFSDS_shells_Tracer_Yellow",
                 "12Rnd_120mm_HEAT_MP_T_Yellow",
                 "12Rnd_120mm_HE_shells_Tracer_Yellow",
-                "4Rnd_120mm_LG_cannon_missiles",
                 MACRO_X10("200Rnd_762x51_Belt_Yellow")
+            };
+            class Components
+            {
+                class VehicleSystemsDisplayManagerComponentLeft: VehicleSystemsTemplateLeftCommander
+                {
+                    class Components: Components
+                    {
+                        class SensorDisplay : SWS_SensorDisplayTemplate {};
+                    };
+                };
+                class VehicleSystemsDisplayManagerComponentRight: VehicleSystemsTemplateRightCommander
+                {
+                    defaultDisplay = "SensorDisplay";
+                    class Components: Components
+                    {
+                        class SensorDisplay : SWS_SensorDisplayTemplate {};
+                    };
+                };
             };
             class Turrets: Turrets
             {
@@ -159,6 +177,16 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
             };
             factions[] = {"SWS_UNSC"};
         };
+        class SWS_Sticker
+        {
+            displayName = "SWS (Stickers)";
+            author = QUOTE(AUTHOR);
+            textures[] = {
+                QPATHTOF(data\viper\body_sticker_co.paa),
+                QPATHTOF(data\viper\turret_sticker_co.paa),
+                QPATHTOF(data\viper\turret_mg_co.paa),
+            };
+        };
     };
 
     class TransportMagazines
@@ -211,4 +239,11 @@ class SWS_V_MBT_M700_Viper_Cobra : SWS_V_MBT_M700_Viper
     SCOPE(0);
     displayName = QNAME(M700 Viper (Cobra));
     textureList[] = {"SWS_Cobra", 1};
+};
+
+class SWS_V_MBT_M700_Viper_Sticker : SWS_V_MBT_M700_Viper
+{
+    SCOPE(0);
+    displayName = QNAME(M700 Viper (Kuma));
+    textureList[] = {"SWS_Sticker", 1};
 };
