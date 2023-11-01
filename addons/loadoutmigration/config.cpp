@@ -1,8 +1,6 @@
 #include "script_component.hpp"
 
-#include "defines.hpp"
 #include "CfgEventHandlers.inc"
-#include "ace_arsenal_display.inc"
 
 class CfgPatches
 {
@@ -12,7 +10,7 @@ class CfgPatches
         units[] = { };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"ace_arsenal"};
+        requiredAddons[] = {"swst_loadoutmigration"};
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };

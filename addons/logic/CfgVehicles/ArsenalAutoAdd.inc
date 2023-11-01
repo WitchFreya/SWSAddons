@@ -1,10 +1,9 @@
 class SWS_Module_ArsenalAutoAdd : ACE_Module
 {
-    // TODO: icon
-    // icon = "\sws_main\data\icon_sws.paa";
+    icon = QPATHTOEF(main,data\sws_icon_howl_ca.paa);
     scope = 2;
     displayName = "ACE Arsenal Autoadd (Beta)";
-    category = QUOTE(PREFIX,Modules));
+    category = "SWS_Modules";
     function = QFUNC(moduleArsenalAddAll);
     functionPriority = 10;
     isGlobal = 0;

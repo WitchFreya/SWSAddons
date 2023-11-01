@@ -1,6 +1,6 @@
 class CfgVehicles
 {
-    class SWS_Bag_Drone : BaseGearModel
+    class SWS_Bag_Drone : SWS_BaseGearModel
     {
         label = QNAME(UAV Bags);
         options[] = {"Variant", "Pattern"};
@@ -34,7 +34,7 @@ class CfgVehicles
         };
     };
 
-    class SWS_Bag_Hardcase : BaseGearModel
+    class SWS_Bag_Hardcase : SWS_BaseGearModel
     {
         label = QNAME(Hardcases);
         options[] = {"Variant"};
@@ -60,7 +60,7 @@ class CfgVehicles
         };
     };
 
-    class SWS_Bag_Messenger : BaseGearModel
+    class SWS_Bag_Messenger : SWS_BaseGearModel
     {
         label = QNAME(Messenger Bag);
         options[] = {"Variant"};
