@@ -1,11 +1,13 @@
-class ace_arsenal_stats {
+class ace_arsenal_stats
+{
     class statBase;
 
-    class DOUBLES(PREFIX,Clearance): statBase {
+    class SWS_Clearance : statBase
+    {
         scope = 2;
         displayName = "Required Clearance";
         priority = 0;
-        stats[] = {"SWS_clearanceLevel"};
+        stats[] = {QGVARMAIN(clearanceLevel)};
         showBar = 0;
         showText = 1;
         textStatement = QUOTE(call DFUNC(aceStatText));

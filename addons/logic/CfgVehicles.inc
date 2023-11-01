@@ -1,5 +1,5 @@
 #define CLASSES_VEHICLES \
-    QMODULE(ArsenalAutoAdd)
+    "SWS_Module_ArsenalAutoAdd"
 
 class CfgVehicles {
     class ACE_Module {

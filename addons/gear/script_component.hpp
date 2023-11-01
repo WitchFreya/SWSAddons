@@ -13,6 +13,3 @@
 #endif
 
 #include "\x\sws\addons\main\script_macros.hpp"
-
-#define UNIT(var0) TRIPLES(PREFIX,U,var0)
-#define QUNIT(var0) QUOTE(UNIT(var0))

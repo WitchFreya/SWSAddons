@@ -1,7 +1,7 @@
 #define VEST_GEAR_INFO_ONE(name,varType,varVariant)                                 \
-    class SWS_Vest_##name##_##varVariant : SWS_Vest_##name                             \
+    class SWS_Vest_##name##_##varVariant : SWS_Vest_##name                          \
     {                                                                               \
-        model = QUOTE(SWS_##varType##_Armor);                               \
+        model = QUOTE(SWS_##varType##_Armor);                                       \
         Operative = QUOTE(name);                                                    \
         Variant = QUOTE(varVariant);                                                \
         Ghillie = "No";                                                             \
@@ -12,20 +12,20 @@
     }
 
 #define VEST_GEAR_INFO(name,varType)                    \
-    class SWS_Vest_##name \
+    class SWS_Vest_##name                               \
     {                                                   \
-        model = QUOTE(SWS_##varType##_Armor);       \
+        model = QUOTE(SWS_##varType##_Armor);           \
         varType = QUOTE(name);                          \
         Variant = "Standard";                           \
         Ghillie = "No";                                 \
     };                                                  \
-    class SWS_Vest_##name##_Ghillie : SWS_Vest_##name      \
+    class SWS_Vest_##name##_Ghillie : SWS_Vest_##name   \
     {                                                   \
         Ghillie = "Yes";                                \
     };                                                  \
     VEST_GEAR_INFO_ONE(name,varType,Demolitions);       \
     VEST_GEAR_INFO_ONE(name,varType,Sniper);            \
-    VEST_GEAR_INFO_ONE(name,varType,Copilot);            \
+    VEST_GEAR_INFO_ONE(name,varType,Copilot);           \
     VEST_GEAR_INFO_ONE(name,varType,Light);             \
     VEST_GEAR_INFO_ONE(name,varType,Scout);             \
     VEST_GEAR_INFO_ONE(name,varType,Rifleman);          \
@@ -33,16 +33,16 @@
     VEST_GEAR_INFO_ONE(name,varType,Lead)
 
 #define HELMET_GEAR_INFO_BASE(name,varType)             \
-    class DOUBLES(SWS_Helmet,name)                      \
+    class SWS_Helmet_##name                             \
     {                                                   \
-        model = QUOTE(TRIPLES(PREFIX,varType,Helmet));  \
+        model = QGVARMAIN(varType##_Helmet);            \
         varType = QUOTE(name);                          \
         collar = "No";                                  \
         ghillie = "No";                                 \
     }
 
 #define HELMET_GEAR_INFO_VARIANT(name,variant,varCollar,varGhillie)         \
-    class TRIPLES(SWS_Helmet,name,variant) : DOUBLES(SWS_Helmet,name)          \
+    class SWS_Helmet_##name##_##variant : DOUBLES(SWS_Helmet,name)          \
     {                                                                       \
         collar = QUOTE(varCollar);                                          \
         ghillie = QUOTE(varGhillie);                                        \

@@ -34,14 +34,14 @@
     META;                   \
     SCOPE(varScope)
 
-#define QPREFIX QUOTE(PREFIX)
+// uppercase prefix
+#define UPREFIX QUOTE(SWS)
+#define QUPREFIX QUOTE(PREFIX)
 
-#define CLEARANCE(var0) DOUBLES(PREFIX,clearanceLevel) = QUOTE(var0)
+#define CLEARANCE(var0) GVARMAIN(clearanceLevel) = QUOTE(var0)
 #define NAME(var0) [SWS] var0
 #define QNAME(var0) QUOTE(NAME(var0))
 #define VEHICLE(var0) TRIPLES(PREFIX,V,var0)
-#define MODULE(var0) TRIPLES(PREFIX,Module,var0)
-#define QMODULE(var0) QUOTE(MODULE(var0))
 
 
 #define MACRO_X2(var0) var0, var0
