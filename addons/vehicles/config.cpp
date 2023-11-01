@@ -8,22 +8,10 @@ class SWS_SensorTargetTemplate
     viewDistanceLimitCoef = -1;
 };
 
-class SWS_SensorDisplayTemplate
-{
-    componentType = "SensorsDisplayComponent";
-    range[] = { 4000, 2000, 1000, 8000 };
-    resource = "RscCustomInfoSensors";
-};
-
-class Components;
-class SensorTemplateLaser;
-class SensorTemplateDataLink;
-
-#include "CfgAmmo.hpp"
-#include "CfgMagazines.hpp"
-#include "CfgMagazineWells.hpp"
-#include "CfgWeapons.hpp"
-#include "CfgVehicles.hpp"
+#include "CfgAmmo.inc"
+#include "CfgMagazines.inc"
+#include "CfgVehicles.inc"
+#include "CfgWeapons.inc"
 
 class CfgPatches {
     class ADDON {
@@ -35,6 +23,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "A3_Armor_F_EPB",
+            "A3_Weapons_F_Tank",
             "ace_medical",
             "OPTRE_UNSC_Units_Army",
             "sws_common",
