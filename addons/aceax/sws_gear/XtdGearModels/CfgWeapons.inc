@@ -1,6 +1,6 @@
 class CfgWeapons
 {
-    class SWS_Operative_Helmet : BaseGearModel
+    class SWS_Operative_Helmet : SWS_BaseGearModel
     {
         label = QNAME(Operative Helmets);
         options[] = {"Operative","Collar","Ghillie"};
@@ -20,7 +20,7 @@ class CfgWeapons
         class Color : ColorOption {};
     };
 
-    class SWS_Operative_Armor : BaseGearModel
+    class SWS_Operative_Armor : SWS_BaseGearModel
     {
         label = QNAME(Operative Armor);
         options[] = {"Operative", "Variant", "Ghillie"};

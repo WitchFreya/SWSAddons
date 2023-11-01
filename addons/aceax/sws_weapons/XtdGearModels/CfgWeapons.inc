@@ -1,6 +1,6 @@
 class CfgWeapons
 {
-    class SWS_Weapon_Autorifles : BaseGearModel
+    class SWS_Weapon_Autorifles : SWS_BaseGearModel
     {
         label = QNAME(AR);
         options[] = {"Body","Underbarrel"};
