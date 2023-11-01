@@ -1,6 +1,6 @@
 class CfgWeapons
 {
-    class SWS_NVG_NeuralLace : BaseGearModel
+    class SWS_NVG_NeuralLace : SWS_BaseGearModel
     {
         label = QNAME(NeuralLace Implant);
         options[] = {"ThermalMode", "UpArmor"};
