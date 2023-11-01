@@ -1,5 +1,5 @@
 class XtdGearModels {
-    class BaseGearModel;
+    class SWS_BaseGearModel;
 
     #include "XtdGearModels\CfgWeapons.inc"
 };
