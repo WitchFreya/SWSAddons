@@ -17,14 +17,6 @@ class Turrets;
 class VehicleSystemsTemplateLeftCommander;
 class VehicleSystemsTemplateRightCommander;
 
-class SWS_SensorTargetTemplate
-{
-    minRange = 8000;
-    maxRange = 8000;
-    objectDistanceLimitCoef = -1;
-    viewDistanceLimitCoef = -1;
-};
-
 class SWS_SensorDisplayTemplate
 {
     componentType = "SensorsDisplayComponent";
