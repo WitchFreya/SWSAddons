@@ -17,13 +17,6 @@ class Turrets;
 class VehicleSystemsTemplateLeftCommander;
 class VehicleSystemsTemplateRightCommander;
 
-class SWS_SensorDisplayTemplate
-{
-    componentType = "SensorsDisplayComponent";
-    range[] = { 4000, 2000, 1000, 8000 };
-    resource = "RscCustomInfoSensors";
-};
-
 class CfgVehicles
 {
     //== Tanks

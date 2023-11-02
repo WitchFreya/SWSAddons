@@ -8,10 +8,18 @@ class SWS_SensorTargetTemplate
     viewDistanceLimitCoef = -1;
 };
 
-#include "CfgAmmo.inc"
-#include "CfgMagazines.inc"
-#include "CfgVehicles.inc"
-#include "CfgWeapons.inc"
+class SWS_SensorDisplayTemplate
+{
+    componentType = "SensorsDisplayComponent";
+    range[] = { 4000, 2000, 1000, 8000 };
+    resource = "RscCustomInfoSensors";
+};
+
+#include "CfgAmmo.hpp"
+#include "CfgMagazines.hpp"
+#include "CfgMagazineWells.hpp"
+#include "CfgWeapons.hpp"
+#include "CfgVehicles.hpp"
 
 class CfgPatches {
     class ADDON {
