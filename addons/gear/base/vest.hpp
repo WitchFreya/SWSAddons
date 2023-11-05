@@ -361,13 +361,7 @@ All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With
     C_VEST_GHILLIE(DOUBLES(varName,varVariant),selections)
 
 #define C_VEST(varName)                                     \
-    C_VEST_BASE(varName, ARR_5(                             \
-        TEXTURE(vest,rifleman),                             \
-        TEXTURE(armor,rifleman),                            \
-        TEXTURE(legs,varName),                              \
-        "optre_unsc_units\army\data\ghillie_desert_co.paa", \
-        TEXTURE(odst_addons,varName)                        \
-    ));                                                               \
+    C_VEST_BASE(varName,ARR_5(TEXTURE(vest,rifleman),TEXTURE(armor,rifleman),TEXTURE(legs,varName),"optre_unsc_units\army\data\ghillie_desert_co.paa",TEXTURE(odst_addons,varName))); \
     C_VEST_VARIANT(varName,Demolitions,VEST_SELECTIONS_DEMOLITIONS);  \
     C_VEST_VARIANT(varName,Sniper,VEST_SELECTIONS_SNIPER);            \
     C_VEST_VARIANT(varName,Copilot,VEST_SELECTIONS_COPILOT);            \

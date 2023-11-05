@@ -92,19 +92,7 @@ class SWS_Helmet_Base_dp : SWS_Helmet_Base
     }
 
 #define C_HELMET(name,varVisrColor)                                     \
-    C_HELMET_BASE(name,                                                 \
-        TEXTURE(helmet,name),                                           \
-        ARR_3(                                                          \
-            TEXTURE(visr,varVisrColor),                                 \
-            "optre_unsc_units\army\data\ghillie_woodland_co.paa",       \
-            "optre_unsc_units\army\data\soft_packs_co.paa"              \
-        ));                                                             \
-    C_HELMET_VARIANT(name,Collar,                                       \
-        ARR_2(HELMET_SELECTIONS_BASE, "H_Ghillie"),                     \
-        ARR_2(HELMET_SELECTIONS_BASE_DP, "H_Ghillie"));                 \
-    C_HELMET_VARIANT(name,Ghillie,                                      \
-        ARR_2(HELMET_SELECTIONS_BASE, HELMET_SELECTIONS_COLLAR),        \
-        ARR_2(HELMET_SELECTIONS_BASE_DP, HELMET_SELECTIONS_COLLAR));    \
-    C_HELMET_VARIANT(name,Collar_Ghillie,                               \
-        HELMET_SELECTIONS_BASE,                                         \
-        HELMET_SELECTIONS_BASE_DP)
+    C_HELMET_BASE(name,TEXTURE(helmet,name),ARR_3(TEXTURE(visr,varVisrColor),"optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa")); \
+    C_HELMET_VARIANT(name,Collar,ARR_2(HELMET_SELECTIONS_BASE,"H_Ghillie"),ARR_2(HELMET_SELECTIONS_BASE_DP,"H_Ghillie")); \
+    C_HELMET_VARIANT(name,Ghillie,ARR_2(HELMET_SELECTIONS_BASE,HELMET_SELECTIONS_COLLAR),ARR_2(HELMET_SELECTIONS_BASE_DP,HELMET_SELECTIONS_COLLAR)); \
+    C_HELMET_VARIANT(name,Collar_Ghillie,HELMET_SELECTIONS_BASE,HELMET_SELECTIONS_BASE_DP)
