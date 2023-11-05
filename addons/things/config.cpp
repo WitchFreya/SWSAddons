@@ -1,8 +1,6 @@
 #include "script_component.hpp"
 
 #include "CfgVehicles.inc"
-#include "ACEX_Fortify_Presets.inc"
-
 
 class CfgPatches
 {

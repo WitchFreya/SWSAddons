@@ -1,5 +1,5 @@
-#define COMPONENT modules
-#define COMPONENT_BEAUTIFIED Modules
+#define COMPONENT fortify
+#define COMPONENT_BEAUTIFIED Fortify
 #include "\x\sws\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
@@ -8,7 +8,7 @@
 #ifdef DEBUG_ENABLED_INGAME
     #define DEBUG_MODE_FULL
 #endif
-#ifdef DEBUG_SETTINGS_MODULES
+#ifdef DEBUG_SETTINGS_FORTIFY
     #define DEBUG_SETTINGS DEBUG_SETTINGS_INGAME
 #endif
 
