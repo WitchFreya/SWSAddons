@@ -2,7 +2,7 @@ class SWS_Module_ArsenalAutoAdd : ACE_Module
 {
     icon = QPATHTOEF(main,data\sws_icon_howl_ca.paa);
     scope = 2;
-    displayName = "ACE Arsenal Autoadd (Beta)";
+    displayName = "ACE Arsenal AutoAdd";
     category = "SWS_Modules";
     function = QFUNC(moduleArsenalAddAll);
     functionPriority = 10;
@@ -25,6 +25,22 @@ class SWS_Module_ArsenalAutoAdd : ACE_Module
             description = "A comma-delimited string of class names to exclude from the arsenal.";
             typeName = "STRING";
             defaultValue = "";
+        };
+
+        class AllowDragging
+        {
+            displayName = "Allow ACE Dragging";
+            description = "Whether synchronized objects can be dragged.";
+            typeName = "BOOL";
+            defaultValue = 0;
+        };
+
+        class AllowCarrying
+        {
+            displayName = "Allow ACE Carrying";
+            description = "Whether synchronized objects can be carried.";
+            typeName = "BOOL";
+            defaultValue = 0;
         };
     };
 };

@@ -14,7 +14,7 @@ class CfgPatches
         magazines[] = { };
         ammo[] = { };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { "OPTRE_UNSC_Units_Army", "sws_main", "sws_logic" };
+        requiredAddons[] = { "OPTRE_UNSC_Units_Army", "sws_main" };
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };

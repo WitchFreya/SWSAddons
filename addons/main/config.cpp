@@ -8,7 +8,7 @@ class CfgPatches
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { "cba_main" };
+        requiredAddons[] = { "cba_main", "swst_main", "erp_main" };
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
     };
