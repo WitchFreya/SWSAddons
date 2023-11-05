@@ -1,6 +1,6 @@
-PREP(moduleArsenalAddAll);
-PREP(arsenalAddAll);
-PREP(aceStatText);
 PREP(aceStatHasText);
+PREP(aceStatText);
 PREP(getPlayer);
+PREP(moduleArsenalAddAll);
+PREP(scanConfig);
 PREP(updateUnitTraits);

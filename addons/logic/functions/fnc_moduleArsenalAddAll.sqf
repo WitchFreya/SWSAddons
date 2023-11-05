@@ -21,13 +21,21 @@
 params["_logic", "_units", "_activated"];
 
 
-if (!_activated || !local _logic) exitWith {0};
-
+if (!_activated || { !local _logic; } || { count _units < 1 }) exitWith {0};
 
 TRACE_3("moduleArsenalAddAll vars",_logic,_units,_activated);
 
-private _exclude = _logic getVariable ["Exclude", ""] splitString "," apply { trim _x };
+private _exclude = _logic getVariable ["Exclude", ""] splitString "," apply { toLower (trim _x); };
+private _items = uiNamespace getVariable [QGVAR(arsenalItemNames), []];
+private _relevantItems = (_items apply { toLower _x; }) - _exclude;
+private _allowDragging = _logic getVariable ["AllowDragging", false];
+private _allowCarrying = _logic getVariable ["AllowCarrying", false];
 
-[_units,_exclude] call FUNC(arsenalAddAll);
+{
+    [_x, [], true] call ACE_arsenal_fnc_initBox;
+    [_x, _relevantItems, true] call ACE_arsenal_fnc_addVirtualItems;
+    [_x, _allowDragging] call ace_dragging_fnc_setDraggable;
+    [_x, _allowCarrying] call ace_dragging_fnc_setCarryable;
+} forEach _units;
 
 INFO("moduleArsenalAddAll complete.");
