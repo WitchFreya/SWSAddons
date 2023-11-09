@@ -95,7 +95,7 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
                 class CommanderOptics: CommanderOptics
                 {
                     weapons[] = {
-                        "HMG_127_APC",
+                        "SWS_HMG_127_Viper",
                         "SmokeLauncher"
                     };
                     magazines[] = {
@@ -188,6 +188,16 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
                 QPATHTOF(data\viper\turret_mg_co.paa),
             };
         };
+        class CLA_Captured
+        {
+            displayName = "CLA (Captured)";
+            author = QUOTE(AUTHOR);
+            textures[] = {
+                QPATHTOF(data\viper\body_flecktarn_co.paa),
+                QPATHTOF(data\viper\turret_flecktarn_insurrectionist_co.paa),
+                QPATHTOF(data\viper\turret_mg_flecktarn_co.paa),
+            };
+        };
     };
 
     class TransportMagazines
@@ -245,6 +255,17 @@ class SWS_V_MBT_M700_Viper_Cobra : SWS_V_MBT_M700_Viper
 class SWS_V_MBT_M700_Viper_Sticker : SWS_V_MBT_M700_Viper
 {
     SCOPE(0);
-    displayName = QNAME(M700 Viper (Kuma));
+    displayName = QNAME(M700 Viper (Stickers!));
     textureList[] = {"SWS_Sticker", 1};
+};
+
+class SWS_V_MBT_M700_Viper_Captured : SWS_V_MBT_M700_Viper_Base
+{
+    SCOPE(2);
+    faction = "O_CLA";
+    side = 0;
+    displayName = QNAME(M700 Viper (Captured CLA));
+    textureList[] = {"CLA_Captured", 1};
+    typicalCargo[] = { "O_CLA_Crew_01" };
+    editorPreview = QPATHTOF(data\viper\editor_preview_captured.jpg);
 };
