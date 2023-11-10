@@ -1,11 +1,6 @@
 #define CLASSES_AMMO \
     "SWS_M_120mm_cannon_ATGM"
 
-
-class Components;
-class SensorTemplateLaser;
-class SensorTemplateDataLink;
-
 class CfgAmmo
 {
     //== ATGMs

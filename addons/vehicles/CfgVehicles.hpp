@@ -6,11 +6,8 @@
 
 
 class CommanderOptics;
-class Components;
 class EventHandlers;
 class MainTurret;
-class SensorTemplateLaser;
-class SensorTemplateDataLink;
 class SensorTemplatePassiveRadar;
 class TextureSources;
 class Turrets;

@@ -131,7 +131,7 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
     {
         class SWS_Basic
         {
-            displayName = "SWS";
+            displayName = QNAME(SWS);
             author = QUOTE(AUTHOR);
             textures[] = {
                 QPATHTOF(data\viper\body_sws_co.paa),
@@ -143,7 +143,7 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
         };
         class SWS_Flat
         {
-            displayName = "SWS (Flat)";
+            displayName = QNAME(SWS (Flat));
             author = QUOTE(AUTHOR);
             textures[] = {
                 QPATHTOF(data\viper\body_flat_co.paa),
@@ -155,7 +155,7 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
         };
         class SWS_Flecktarn
         {
-            displayName = "SWS (Flecktarn Camo)";
+            displayName = QNAME(SWS (Flecktarn Camo));
             author = QUOTE(AUTHOR);
             textures[] = {
                 QPATHTOF(data\viper\body_flecktarn_co.paa),
@@ -168,7 +168,7 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
         class SWS_Cobra
         {
             // TODO: Create an in-game change texture system to avoid this being the selected texture if Cobra isn't the team in it.
-            displayName = "SWS (Cobra Team)";
+            displayName = QNAME(SWS (Cobra Team));
             author = QUOTE(AUTHOR);
             textures[] = {
                 QPATHTOF(data\viper\body_sws_co.paa),
@@ -180,7 +180,7 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
         };
         class SWS_Sticker
         {
-            displayName = "SWS (Stickers)";
+            displayName = QNAME(SWS (Stickers));
             author = QUOTE(AUTHOR);
             textures[] = {
                 QPATHTOF(data\viper\body_sticker_co.paa),
@@ -190,7 +190,7 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
         };
         class CLA_Captured
         {
-            displayName = "CLA (Captured)";
+            displayName = QNAME(CLA (Captured));
             author = QUOTE(AUTHOR);
             textures[] = {
                 QPATHTOF(data\viper\body_flecktarn_co.paa),

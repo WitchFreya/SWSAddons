@@ -26,3 +26,8 @@
 #define SCOPE(var0) \
     scope = var0;   \
     scopeCurator = var0
+
+#define MODE_AUTOMATIC_ZEROING 1
+#define MODE_MANUAL_ZEROING 2
+#define MODE_TARGET_LEAD 4
+#define MODE_FCS_PREDICTION 16
