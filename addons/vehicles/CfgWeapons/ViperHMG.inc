@@ -1,4 +1,4 @@
-class SWS_HMG_127_viper : HMG_127_APC
+class SWS_HMG_127_Viper : HMG_127_APC
 {
-    ballisticsComputer = "2 + 4 + 16";
+    ballisticsComputer = QUOTE(MODE_MANUAL_ZEROING + MODE_TARGET_LEAD + MODE_FCS_PREDICTION);
 };

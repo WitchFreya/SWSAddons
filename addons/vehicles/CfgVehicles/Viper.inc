@@ -180,7 +180,7 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
         };
         class SWS_Sticker
         {
-            displayName = "SWS (Stickers)";
+            displayName = QNAME(SWS (Stickers));
             author = QUOTE(AUTHOR);
             textures[] = {
                 QPATHTOF(data\viper\body_sticker_co.paa),
@@ -190,7 +190,7 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
         };
         class CLA_Captured
         {
-            displayName = "CLA (Captured)";
+            displayName = QNAME(CLA (Captured));
             author = QUOTE(AUTHOR);
             textures[] = {
                 QPATHTOF(data\viper\body_flecktarn_co.paa),

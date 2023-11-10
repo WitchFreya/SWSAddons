@@ -1,6 +1,6 @@
 #define CLASSES_WEAPONS       \
-    "SWS_cannon_120mm_viper", \
-    "SWS_HMG_127_viper"
+    "SWS_Cannon_120mm_Viper", \
+    "SWS_HMG_127_Viper"
 
 class CfgWeapons
 {

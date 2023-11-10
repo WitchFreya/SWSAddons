@@ -1,7 +1,8 @@
-class SWS_cannon_120mm_viper : cannon_120mm_long
+class SWS_Cannon_120mm_Viper : cannon_120mm_long
 {
-    displayName = "120/Viper";
-    ballisticsComputer = "1 + 2 + 16";
+    displayName = QNAME(XM552);
+    description = "Experimental 120mm smoothbore cannon designed for the M700 with advanced ballistics targeting.";
+    ballisticsComputer = QUOTE(MODE_AUTOMATIC_ZEROING + MODE_MANUAL_ZEROING + MODE_FCS_PREDICTION);
     magazineWell[] = {
         "120mm_Viper_AP",
         "120mm_Viper_HEAT",

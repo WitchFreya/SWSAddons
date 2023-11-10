@@ -15,6 +15,10 @@ class SWS_SensorDisplayTemplate
     resource = "RscCustomInfoSensors";
 };
 
+class Components;
+class SensorTemplateLaser;
+class SensorTemplateDataLink;
+
 #include "CfgAmmo.hpp"
 #include "CfgMagazines.hpp"
 #include "CfgMagazineWells.hpp"
