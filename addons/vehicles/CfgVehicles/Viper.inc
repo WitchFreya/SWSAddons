@@ -20,6 +20,7 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
         "SWS_Flecktarn", 1,
         "SWS_Flat", 0.5,
         "SWS_Cobra", 0,
+        "SWS_Sticker", 0,
         "Indep_01", 0,
         "Indep_02", 0,
         "Indep_03", 0
@@ -60,7 +61,7 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
         class MainTurret: MainTurret
         {
             weapons[] = {
-                "cannon_120mm_long",
+                "SWS_cannon_120mm_viper",
                 "LMG_coax"
             };
             magazines[] =
@@ -68,15 +69,33 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
                 "20Rnd_120mm_APFSDS_shells_Tracer_Yellow",
                 "12Rnd_120mm_HEAT_MP_T_Yellow",
                 "12Rnd_120mm_HE_shells_Tracer_Yellow",
-                "4Rnd_120mm_LG_cannon_missiles",
+                "SWS_Magazine_4Rnd_120mm_cannon_missiles",
                 MACRO_X10("200Rnd_762x51_Belt_Yellow")
+            };
+            class Components
+            {
+                class VehicleSystemsDisplayManagerComponentLeft: VehicleSystemsTemplateLeftCommander
+                {
+                    class Components: Components
+                    {
+                        class SensorDisplay : SWS_SensorDisplayTemplate {};
+                    };
+                };
+                class VehicleSystemsDisplayManagerComponentRight: VehicleSystemsTemplateRightCommander
+                {
+                    defaultDisplay = "SensorDisplay";
+                    class Components: Components
+                    {
+                        class SensorDisplay : SWS_SensorDisplayTemplate {};
+                    };
+                };
             };
             class Turrets: Turrets
             {
                 class CommanderOptics: CommanderOptics
                 {
                     weapons[] = {
-                        "HMG_127_APC",
+                        "SWS_HMG_127_Viper",
                         "SmokeLauncher"
                     };
                     magazines[] = {
@@ -112,7 +131,7 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
     {
         class SWS_Basic
         {
-            displayName = "SWS";
+            displayName = QNAME(SWS);
             author = QUOTE(AUTHOR);
             textures[] = {
                 QPATHTOF(data\viper\body_sws_co.paa),
@@ -124,7 +143,7 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
         };
         class SWS_Flat
         {
-            displayName = "SWS (Flat)";
+            displayName = QNAME(SWS (Flat));
             author = QUOTE(AUTHOR);
             textures[] = {
                 QPATHTOF(data\viper\body_flat_co.paa),
@@ -136,7 +155,7 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
         };
         class SWS_Flecktarn
         {
-            displayName = "SWS (Flecktarn Camo)";
+            displayName = QNAME(SWS (Flecktarn Camo));
             author = QUOTE(AUTHOR);
             textures[] = {
                 QPATHTOF(data\viper\body_flecktarn_co.paa),
@@ -149,7 +168,7 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
         class SWS_Cobra
         {
             // TODO: Create an in-game change texture system to avoid this being the selected texture if Cobra isn't the team in it.
-            displayName = "SWS (Cobra Team)";
+            displayName = QNAME(SWS (Cobra Team));
             author = QUOTE(AUTHOR);
             textures[] = {
                 QPATHTOF(data\viper\body_sws_co.paa),
@@ -158,6 +177,28 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
                 CAMO_NET_TEXTURE
             };
             factions[] = {"SWS_UNSC"};
+        };
+        class SWS_Sticker
+        {
+            displayName = QNAME(SWS (Stickers));
+            author = QUOTE(AUTHOR);
+            textures[] = {
+                QPATHTOF(data\viper\body_sticker_co.paa),
+                QPATHTOF(data\viper\turret_sticker_co.paa),
+                QPATHTOF(data\viper\turret_mg_co.paa),
+            };
+            factions[] = {"SWS_UNSC"};
+        };
+        class CLA_Captured
+        {
+            displayName = QNAME(CLA (Captured));
+            author = QUOTE(AUTHOR);
+            textures[] = {
+                QPATHTOF(data\viper\body_flecktarn_co.paa),
+                QPATHTOF(data\viper\turret_flecktarn_captured_co.paa),
+                QPATHTOF(data\viper\turret_mg_flecktarn_co.paa),
+            };
+            factions[] = {"O_CLA"};
         };
     };
 
@@ -211,4 +252,22 @@ class SWS_V_MBT_M700_Viper_Cobra : SWS_V_MBT_M700_Viper
     SCOPE(0);
     displayName = QNAME(M700 Viper (Cobra));
     textureList[] = {"SWS_Cobra", 1};
+};
+
+class SWS_V_MBT_M700_Viper_Sticker : SWS_V_MBT_M700_Viper
+{
+    SCOPE(0);
+    displayName = QNAME(M700 Viper (Stickers!));
+    textureList[] = {"SWS_Sticker", 1};
+};
+
+class SWS_V_MBT_M700_Viper_Captured : SWS_V_MBT_M700_Viper_Base
+{
+    SCOPE(2);
+    faction = "O_CLA";
+    side = 0;
+    displayName = QNAME(M700 Viper (Captured CLA));
+    textureList[] = {"CLA_Captured", 1};
+    typicalCargo[] = { "O_CLA_Crew_01" };
+    editorPreview = QPATHTOF(data\viper\editor_preview_captured.jpg);
 };
