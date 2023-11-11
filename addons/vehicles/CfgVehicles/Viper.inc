@@ -187,6 +187,7 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
                 QPATHTOF(data\viper\turret_sticker_co.paa),
                 QPATHTOF(data\viper\turret_mg_co.paa),
             };
+            factions[] = {"SWS_UNSC"};
         };
         class CLA_Captured
         {
@@ -194,9 +195,10 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
             author = QUOTE(AUTHOR);
             textures[] = {
                 QPATHTOF(data\viper\body_flecktarn_co.paa),
-                QPATHTOF(data\viper\turret_flecktarn_insurrectionist_co.paa),
+                QPATHTOF(data\viper\turret_flecktarn_captured_co.paa),
                 QPATHTOF(data\viper\turret_mg_flecktarn_co.paa),
             };
+            factions[] = {"O_CLA"};
         };
     };
 
