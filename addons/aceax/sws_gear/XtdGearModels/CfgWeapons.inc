@@ -19,6 +19,19 @@ class CfgWeapons
         options[] = {"Color","Collar","Ghillie"};
         class Color : ColorOption {};
     };
+    class SWS_Role_Helmet : SWS_Operative_Helmet
+    {
+        label = QNAME(Role Helmets);
+        options[] = {"Role","Collar","Ghillie"};
+        class Role
+        {
+            values[] = {"CLS"};
+            class CLS
+            {
+                description = "A helmet specialized for a CLS or medic.";
+            };
+        };
+    };
 
     class SWS_Operative_Armor : SWS_BaseGearModel
     {
@@ -61,5 +74,19 @@ class CfgWeapons
         label = QNAME(Generic Armor);
         options[] = {"Color","Variant","Ghillie"};
         class Color : ColorOption {};
+    };
+
+    class SWS_Role_Armor : SWS_Operative_Armor
+    {
+        label = QNAME(Role Armor);
+        options[] = {"Role","Variant","Ghillie"};
+        class Role
+        {
+            values[] = {"CLS"};
+            class CLS
+            {
+                description = "Armor specialized for a CLS or medic.";
+            };
+        };
     };
 };

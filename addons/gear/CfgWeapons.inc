@@ -47,6 +47,7 @@
     QWEAPONS_FN(Orange), \
     QWEAPONS_FN(Purple), \
     QWEAPONS_FN(Red), \
+    QWEAPONS_FN(CLS), \
     "SWS_Helmet_Maid_Recon", \
     "SWS_Helmet_Maid_Recon_dp"
 
@@ -95,6 +96,8 @@ class CfgWeapons
     C_GEAR(Orange,silver);
     C_GEAR(Purple,silver);
     C_GEAR(Red,silver);
+
+    C_GEAR(CLS,red);
 
     #include "CfgWeapons\Recon.inc"
 };
