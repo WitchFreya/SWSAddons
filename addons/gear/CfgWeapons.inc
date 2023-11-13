@@ -84,7 +84,7 @@ class CfgWeapons
     C_GEAR(Rabbit,pink);
     C_GEAR(Tiger,gold);
     C_GEAR(Hound,hound);
-    C_GEAR(Sawbones,teal);
+    C_GEAR(Sawbones,sawbones);
     C_GEAR(Hurricane,purple);
     C_GEAR(Roman,grey);
     C_GEAR(Snare,snare);
