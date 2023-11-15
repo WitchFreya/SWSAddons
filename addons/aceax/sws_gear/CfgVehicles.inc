@@ -7,6 +7,7 @@ class CfgVehicles
     class OPTRE_ONI_Researcher_Suitcase;
     class B_UAV_06_Backpack_F;
     class C_IDAP_UAV_06_antimine_backpack_F;
+    class 19thANPRC419;
 
     class SWS_V_Bag_Hardcase_Base : OPTRE_ONI_Researcher_Suitcase
     {
@@ -26,9 +27,26 @@ class CfgVehicles
         {
             model = "SWS_Bag_Messenger";
             variant = "SWS";
+            purpose = "Standard";
         };
     };
     class SWS_V_Bag_Messenger_Tiger : SWS_V_Bag_Messenger { XTD_GEAR_INFO(Tiger); };
+    class SWS_V_Bag_Messenger_Tiger_Hammerspace : SWS_V_Bag_Messenger_Tiger
+    {
+        class XtdGearInfo : XtdGearInfo
+        {
+            purpose = "Heavy";
+        };
+    };
+    class SWS_V_Bag_Messenger_Tiger_Radio : 19thANPRC419
+    {
+        class XtdGearInfo : XtdGearInfo
+        {
+            model = "SWS_Bag_Messenger";
+            variant = "Tiger";
+            purpose = "RTO";
+        };
+    };
 
     class SWS_Bag_UAV_SMQ94_Base : DMNS_UAV_01_backpack_F
     {
