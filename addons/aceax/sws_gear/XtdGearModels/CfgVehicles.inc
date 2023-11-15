@@ -63,7 +63,7 @@ class CfgVehicles
     class SWS_Bag_Messenger : SWS_BaseGearModel
     {
         label = QNAME(Messenger Bag);
-        options[] = {"Variant"};
+        options[] = {"Variant", "Purpose"};
         class Variant
         {
             values[] = {
@@ -79,6 +79,30 @@ class CfgVehicles
             class Tiger
             {
                 description = "Tiger's messenger bag.";
+            };
+        };
+
+        class Purpose
+        {
+            values[] = {
+                "Standard"
+                , "Heavy"
+                , "RTO"
+            };
+
+            class Standard
+            {
+                description = "A general purpose bag.";
+            };
+
+            class Heavy
+            {
+                description = "A curiously deep bag that weighs more.";
+            };
+
+            class RTO
+            {
+                description = "Oddly, this bag has a radio hookup in its front pocket and seems to be putting out a signal.";
             };
         };
     };
