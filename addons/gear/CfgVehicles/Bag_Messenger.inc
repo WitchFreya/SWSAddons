@@ -15,8 +15,8 @@ class SWS_V_Bag_Messenger_Tiger : SWS_V_Bag_Messenger
 class SWS_V_Bag_Messenger_Tiger_Hammerspace : SWS_V_Bag_Messenger_Tiger
 {
     displayName = QNAME(Heavy Messenger Bag (Tiger));
-    maximumLoad = 350;
-    mass = 40;
+    maximumLoad = 400;
+    mass = 50;
     hiddenSelectionsTextures[] = {QPATHTOF(data\Bag_Messenger\hammerspace_co.paa)};
 };
 
