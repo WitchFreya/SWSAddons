@@ -60,6 +60,7 @@
 
 #define C_GEAR_INFO_OP(name) GEAR_INFO(name,Operative)
 #define C_GEAR_INFO_COLOR(name) GEAR_INFO(name,Color)
+#define C_GEAR_INFO_ROLE(name) GEAR_INFO(name,Role)
 
 /**
  *  Include all variants of this armor in a single item.
@@ -91,5 +92,8 @@ class XtdGearInfos
         C_GEAR_INFO_COLOR(Orange);
         C_GEAR_INFO_COLOR(Purple);
         C_GEAR_INFO_COLOR(Red);
+
+        //== Roles
+        C_GEAR_INFO_ROLE(CLS);
     };
 };

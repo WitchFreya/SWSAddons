@@ -11,6 +11,8 @@
     , "SWS_V_Bag_Hardcase_Snare" \
     , "SWS_V_Bag_Hardcase_Vertigo" \
     , "SWS_V_Bag_Messenger_Tiger" \
+    , "SWS_V_Bag_Messenger_Tiger_Radio" \
+    , "SWS_V_Bag_Messenger_Tiger_Hammerspace" \
     , "SWS_V_Bag_Messenger"
 
 class AssembleInfo;
@@ -25,6 +27,7 @@ class CfgVehicles
     class SWS_V_UAV_Demining_Base;
     class SWS_V_UAV_MiniPelican_Base;
     class SWS_V_UAV_SMQ94_Base;
+    class 19thANPRC419;
 
     //== Bags
     #include "CfgVehicles\Bag_Hardcase.inc"
