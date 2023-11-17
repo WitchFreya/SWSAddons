@@ -8,7 +8,7 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
     typicalCargo[] = { "OPTRE_UNSC_ODST_Soldier" };
     editorPreview = QPATHTOF(data\viper\editor_preview.jpg);
 
-    armor = 800;
+    armor = 900;
 
     reportRemoteTargets = 1;
     reportOwnPosition = 1;
