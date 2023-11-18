@@ -20,6 +20,7 @@ class SWS_V_APC_M35_Cougar_Base : I_APC_Wheeled_03_cannon_F
         "SWS_Basic", 1,
         "SWS_Flecktarn", 1,
         "SWS_Cobra", 0,
+        "SWS_Winter", 0,
         "Guerilla_01", 0,
         "Guerilla_02", 0,
         "Guerilla_03", 0,
@@ -147,6 +148,19 @@ class SWS_V_APC_M35_Cougar_Base : I_APC_Wheeled_03_cannon_F
                 QPATHTOF(data\cougar\cage.paa)
             };
         };
+        class SWS_Winter
+        {
+            displayName = QNAME(SWS (Winter));
+            author = QUOTE(AUTHOR);
+            textures[] = {
+                QPATHTOF(data\cougar\body_winter.paa),
+                QPATHTOF(data\cougar\body_2_winter.paa),
+                QPATHTOF(data\cougar\turret_winter.paa),
+                QPATHTOF(data\cougar\exhaust.paa),
+                GREEN_NET_TEXTURE,
+                QPATHTOF(data\cougar\cage.paa)
+            };
+        };
     };
 
     class TransportMagazines
@@ -190,4 +204,10 @@ class SWS_V_APC_M35_Cougar_Cobra : SWS_V_APC_M35_Cougar_Base
     SCOPE(0);
     displayName = QNAME(M35 Cougar (Cobra));
     textureList[] = {"SWS_Cobra", 1};
+};
+class SWS_V_APC_M35_Cougar_Winter : SWS_V_APC_M35_Cougar_Base
+{
+    SCOPE(0);
+    displayName = QNAME(M35 Cougar (Winter));
+    textureList[] = {"SWS_Winter", 1};
 };
