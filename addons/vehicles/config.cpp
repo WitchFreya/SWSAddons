@@ -41,6 +41,7 @@ class CfgPatches {
             "A3_Weapons_F_Tank",
             "ace_medical",
             "OPTRE_UNSC_Units_Army",
+            "B_UNSCAF",
             "sws_units",
             "sws_common",
             "sws_main",

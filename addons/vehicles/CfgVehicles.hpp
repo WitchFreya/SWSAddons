@@ -5,7 +5,8 @@
     "SWS_V_MBT_M700_Viper_Cobra",        \
     "SWS_V_APC_M35_Cougar",           \
     "SWS_V_APC_M35_Cougar_Flecktarn", \
-    "SWS_V_APC_M35_Cougar_Cobra"
+    "SWS_V_APC_M35_Cougar_Cobra",        \
+    "SWS_V_Heli_Raptor"
 
 
 class CommanderOptics;
@@ -28,4 +29,8 @@ class CfgVehicles
 
     #include "CfgVehicles\Viper.inc"
     #include "CfgVehicles\Cougar.inc"
+    //== Helicopters
+    class Heli_Attack_02_dynamicLoadout_base_F;
+    
+    #include "CfgVehicles\Viper.inc"
 };
