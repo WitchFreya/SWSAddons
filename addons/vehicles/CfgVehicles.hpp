@@ -31,6 +31,6 @@ class CfgVehicles
     #include "CfgVehicles\Cougar.inc"
     //== Helicopters
     class Heli_Attack_02_dynamicLoadout_base_F;
-    
-    #include "CfgVehicles\Viper.inc"
+
+    #include "CfgVehicles\Raptor.inc"
 };
