@@ -17,6 +17,7 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
     textureList[] = {
         "SWS_Basic", 1,
         "SWS_Flecktarn", 1,
+        "SWS_Winter", 0,
         "SWS_Flat", 0.5,
         "SWS_Cobra", 0,
         "SWS_Sticker", 0,
@@ -174,6 +175,18 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
             };
             factions[] = {"SWS_UNSC"};
         };
+        class SWS_Winter
+        {
+            displayName = QNAME(SWS (Winter));
+            author = QUOTE(AUTHOR);
+            textures[] = {
+                QPATHTOF(data\viper\body_winter.paa),
+                QPATHTOF(data\viper\turret_winter.paa),
+                QPATHTOF(data\viper\turret_mg_winter.paa),
+                CSAT_NET_TEXTURE
+            };
+            factions[] = {"SWS_UNSC"};
+        };
         class SWS_Cobra
         {
             // TODO: Create an in-game change texture system to avoid this being the selected texture if Cobra isn't the team in it.
@@ -254,6 +267,12 @@ class SWS_V_MBT_M700_Viper_Flecktarn : SWS_V_MBT_M700_Viper
     SCOPE(0);
     displayName = QNAME(M700 Viper (Flecktarn));
     textureList[] = {"SWS_Flecktarn", 1};
+};
+class SWS_V_MBT_M700_Viper_Winter : SWS_V_MBT_M700_Viper
+{
+    SCOPE(0);
+    displayName = QNAME(M700 Viper (Winter));
+    textureList[] = {"SWS_Winter", 1};
 };
 class SWS_V_MBT_M700_Viper_Cobra : SWS_V_MBT_M700_Viper
 {
