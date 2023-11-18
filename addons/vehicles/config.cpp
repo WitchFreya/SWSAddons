@@ -16,6 +16,7 @@ class SWS_SensorDisplayTemplate
 };
 
 class Components;
+class SensorTemplateIR;
 class SensorTemplateLaser;
 class SensorTemplateDataLink;
 
@@ -35,6 +36,8 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "A3_Armor_F_EPB",
+            "A3_Armor_F_Gamma",
+			"A3_Soft_F",
             "A3_Weapons_F_Tank",
             "ace_medical",
             "OPTRE_UNSC_Units_Army",

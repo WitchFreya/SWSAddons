@@ -31,3 +31,7 @@
 #define MODE_MANUAL_ZEROING 2
 #define MODE_TARGET_LEAD 4
 #define MODE_FCS_PREDICTION 16
+
+#define GREEN_NET_TEXTURE "A3\Armor_F\Data\camonet_nato_green_co.paa"
+#define CSAT_NET_TEXTURE "A3\Armor_F\Data\camonet_csat_hex_green_co.paa"
+#define AAF_CAGE_TEXTURE "A3\Armor_F\Data\cage_aaf_co.paa"
