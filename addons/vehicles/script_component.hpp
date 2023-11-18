@@ -17,7 +17,8 @@
 
 #define AUTHORS \
     "Ashes",    \
-    "Maid"
+    "Maid",      \
+    "Demon"
 
 #include "\x\sws\addons\main\script_macros.hpp"
 
