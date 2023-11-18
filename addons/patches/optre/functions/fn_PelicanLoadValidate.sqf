@@ -31,6 +31,10 @@ switch true do {
         _veh attachTo [_pelican, [0,-7.2, -0.37105]];
         _veh setDir 180;
     };
+    case (_veh isKindOf "Car_F") : {
+        _veh attachTo [_pelican, [0,-7.2, -0.37105]];
+        _veh setDir 180;
+    };
     default {
         _loaded = false;
     };

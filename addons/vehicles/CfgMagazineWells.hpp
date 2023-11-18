@@ -76,7 +76,8 @@ class CfgMagazineWells
 		GVAR(Magazines)[] = {
 			"4Rnd_120mm_cannon_missiles",
 			"4Rnd_120mm_LG_cannon_missiles",
-			"SWS_Magazine_4Rnd_120mm_cannon_missiles"
+			"SWS_Magazine_4rd_Viper_ATGM",
+			"SWS_Magazine_8rd_Viper_ATGM"
 		};
 	};
 };

@@ -1,5 +1,6 @@
-#define CLASSES_MAGAZINES \
-    "SWS_Magazine_4Rnd_120mm_cannon_missiles"
+#define CLASSES_MAGAZINES          \
+    "SWS_Magazine_4rd_Viper_ATGM", \
+    "SWS_Magazine_8rd_Viper_ATGM"
 
 class CfgMagazines 
 {
