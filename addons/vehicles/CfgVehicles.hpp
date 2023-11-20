@@ -1,11 +1,8 @@
 #define CLASSES_VEHICLES                \
     "SWS_V_MBT_M700_Viper"              \
-    , "SWS_V_MBT_M700_Viper_Flat"       \
-    , "SWS_V_MBT_M700_Viper_Flecktarn"  \
-    , "SWS_V_MBT_M700_Viper_Cobra"      \
-    , "SWS_V_MBT_M700_Viper_Winter"     \
+    , "SWS_V_MBT_M700_Viper_Captured"       \
     , "SWS_V_Heli_Raptor"               \
-    , "SWS_V_APC_M35_Cougar_Winter"
+    , "SWS_V_APC_M35_Cougar"
 
 class CommanderOptics;
 class EventHandlers;
