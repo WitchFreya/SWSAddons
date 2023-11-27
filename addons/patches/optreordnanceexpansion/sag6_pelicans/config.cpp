@@ -1,5 +1,8 @@
 #include "script_component.hpp"
-#include "CfgAmmo.inc"
+
+class UserActions;
+
+#include "CfgVehicles.inc"
 
 class CfgPatches
 {
@@ -11,10 +14,9 @@ class CfgPatches
         magazines[] = { };
         ammo[] = { };
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { "OPTRE_Weapons_Ammo", "SAG6_Ordinance" };
+        requiredAddons[] = { "SAG6_Pelicans" };
         skipWhenMissingDependencies = 1;
         VERSION_CONFIG;
-
         addonRootClass = QUOTE(ADDON);
     };
 };
