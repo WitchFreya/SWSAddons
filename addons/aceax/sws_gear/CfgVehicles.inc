@@ -40,7 +40,7 @@ class CfgVehicles
     };
     class SWS_V_Bag_Messenger_Tiger_Radio : 19thANPRC419
     {
-        class XtdGearInfo : XtdGearInfo
+        class XtdGearInfo
         {
             model = "SWS_Bag_Messenger";
             variant = "Tiger";
