@@ -10,12 +10,12 @@ private _showText = {
 	private _numberFormat = "<t font='LCD14' color='#50C878' size='1.5' align='right'>%1</t>";
 	[
 		[
-			["SWS Operative", _titleFormat, 8],
-			[toUpper _playerName, _valueFormat, 10],
-			["Role", _titleFormat, 8],
-			[toUpper _roleName, _valueFormat, 10],
-			["Operations as Role", _smallTitleFormat, 8],
-			[format ["%1", _opsPlayed], _numberFormat, 30]
+			["SWS Operative", _titleFormat, 4],
+			[toUpper _playerName, _valueFormat, 7],
+			["Role", _titleFormat, 4],
+			[toUpper _roleName, _valueFormat, 7],
+			["Operations as Role", _smallTitleFormat, 4],
+			[format ["%1", _opsPlayed], _numberFormat, 35]
 		],
         0, safeZoneY + safeZoneH / 2,
         _rootFormat
