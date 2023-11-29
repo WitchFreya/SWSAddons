@@ -1,7 +1,8 @@
 #include "script_component.hpp"
 /*
- * Author: Salbei
+ * Author: Ashes
  * Digging trenches with vehicles.
+ * Based on work by Salbei from grad_trenches
  *
  * Arguments:
  * 0: Vehicle <OBJECT>

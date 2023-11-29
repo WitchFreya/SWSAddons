@@ -1,4 +1,20 @@
 #include "script_component.hpp"
+/*
+ * Author: Ashes
+ * Add plow actions to vehicles that can dig.
+ * Based on work by Salbei from grad_trenches
+ *
+ * Arguments:
+ * 0: Vehicle <OBJECT>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * vehicle ACE_player call grad_trenches_functions_vehicleAction
+ *
+ * Public: No
+ */
 
 params ["_vehicle"];
 
@@ -12,6 +28,7 @@ if ((_vehicle getVariable [QGVAR(plowMode), ""]) == PLOW_NONE) exitWith {
 
 _vehicle setVariable [QGVAR(plowMode), PLOW_NONE];
 
+// Menu root
 private _plow_mode = [
 	"SWS_PlowMode", "Plow Mode", "", 
 	{_target setVariable [QGVAR(plowMode), PLOW_VEHICLE_TRENCH];}, 
@@ -19,6 +36,7 @@ private _plow_mode = [
 ] call ace_interact_menu_fnc_createAction;
 [(typeOf _vehicle), 1, ["ACE_SelfActions"], _plow_mode] call ace_interact_menu_fnc_addActionToClass;
 
+// Children
 private _plow_none = [
 	"PlowNone", "None", "", 
 	{_target setVariable [QGVAR(plowMode), PLOW_NONE];}, 
