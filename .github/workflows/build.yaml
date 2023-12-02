@@ -1,0 +1,19 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+    tags:
+      - v*
+  #pull_request: # TODO: PR steps
+   # branches: [main]
+jobs:
+  build:
+    name: Build
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup HEMTT
+        uses: arma-actions/hemtt@v1
+      - name: Run HEMTT build
+        run: hemtt release
