@@ -12,8 +12,35 @@ jobs:
     name: Build
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Setup HEMTT
         uses: arma-actions/hemtt@v1
       - name: Run HEMTT build
         run: hemtt release
+      - name: Upload Release
+        uses: actions/upload-artifact@v2
+        with:
+          name: sws-latest
+          path: releases/sws-latest.zip
+  release:
+    name: Release
+    if: startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    needs:
+      - build
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Download Release
+        uses: actions/download-artifact@v3
+        with:
+          name: sws-latest
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: sws-latest.zip
+          draft: true
+
