@@ -20,7 +20,7 @@ jobs:
       - name: Run HEMTT build
         run: hemtt release
       - name: Upload Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: sws-${{ github.sha }}
           path: releases/sws-latest.zip
