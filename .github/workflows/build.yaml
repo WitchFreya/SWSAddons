@@ -5,9 +5,20 @@ on:
     branches: [main]
     tags:
       - v*
-  #pull_request: # TODO: PR steps
-   # branches: [main]
+  pull_request:
+    branches: [main]
+
 jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Lint
+        uses: arma-actions/sqflint@master
+        continue-on-error: true
+
   build:
     name: Build
     runs-on: windows-latest
@@ -18,17 +29,19 @@ jobs:
         uses: arma-actions/hemtt@v1
       - name: Run HEMTT build
         run: hemtt release
-      - name: Upload Release
+      - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: sws-latest
+          name: sws-${{ github.sha }}
           path: releases/sws-latest.zip
+
   release:
     name: Release
-    if: startsWith(github.ref, 'refs/tags/')
+    if: startsWith(github.ref, 'refs/tags/') && ! contains(github.event.head_commit.message, '[ci skip]')
     runs-on: ubuntu-latest
     needs:
       - build
+      - lint
     permissions:
       contents: write
     steps:
@@ -37,7 +50,7 @@ jobs:
       - name: Download Release
         uses: actions/download-artifact@v3
         with:
-          name: sws-latest
+          name: sws-${{ github.sha }}
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
