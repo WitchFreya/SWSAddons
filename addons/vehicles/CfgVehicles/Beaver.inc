@@ -6,6 +6,7 @@ class SWS_V_APC_M107_Beaver_Base : B_APC_Tracked_01_CRV_F
 	side = 1;
     crew = "OPTRE_UNSC_Marine_Soldier_Crewman";
     typicalCargo[] = { "OPTRE_UNSC_ODST_Soldier" };
+    editorPreview = QPATHTOF(data\beaver\editor_preview.jpg);
 	
     textureList[] = {
         "SWS_Basic", 1,
