@@ -70,20 +70,21 @@ class XtdGearInfos
     class CfgWeapons
     {
         //== OPERATIVES
-        C_GEAR_INFO_OP(Rifleman);
         C_GEAR_INFO_OP(Ashes);
         C_GEAR_INFO_OP(Butler);
         C_GEAR_INFO_OP(Demon);
         C_GEAR_INFO_OP(Egg);
+        C_GEAR_INFO_OP(Hound);
+        C_GEAR_INFO_OP(Hurricane);
         C_GEAR_INFO_OP(Maid);
         C_GEAR_INFO_OP(Polaris);
         C_GEAR_INFO_OP(Rabbit);
-        C_GEAR_INFO_OP(Sawbones);
-        C_GEAR_INFO_OP(Tiger);
-        C_GEAR_INFO_OP(Hound);
-        C_GEAR_INFO_OP(Snare);
-        C_GEAR_INFO_OP(Hurricane);
+        C_GEAR_INFO_OP(Rifleman);
         C_GEAR_INFO_OP(Roman);
+        C_GEAR_INFO_OP(Sawbones);
+        C_GEAR_INFO_OP(Snare);
+        C_GEAR_INFO_OP(Tiger);
+        C_GEAR_INFO_OP(Vertigo);
 
         //== COLORS
         C_GEAR_INFO_COLOR(Blue);
