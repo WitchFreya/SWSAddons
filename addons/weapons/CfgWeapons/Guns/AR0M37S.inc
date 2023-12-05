@@ -131,7 +131,7 @@ class SWS_Weapon_AR0M37S_Hound : SWS_Weapon_AR0M37
   hiddenSelectionsTextures[] = {
     QPATHTOF(data\ar0m37s\hound_co.paa)
     , "\LM_OPCAN3.0\WEP\VAN\AR0M37_2.paa"
-    , "\LM_OPCAN3.0\WEP\VAN\AR0M37_3.paa"
+    , QPATHTOF(data\ar0m37s\hound_underbarrel_co.paa)
   };
 };
 
@@ -142,7 +142,7 @@ class SWS_Weapon_AR0M37S_Hound_GL : SWS_Weapon_AR0M37_GL
   hiddenSelectionsTextures[] = {
     QPATHTOF(data\ar0m37s\hound_co.paa)
     , "\LM_OPCAN3.0\WEP\VAN\AR0M37_2.paa"
-    , "\LM_OPCAN3.0\WEP\VAN\AR0M37_3.paa"
+    , QPATHTOF(data\ar0m37s\hound_underbarrel_co.paa)
   };
 };
 
@@ -153,7 +153,7 @@ class SWS_Weapon_AR0M37S_Hound_SHT : SWS_Weapon_AR0M37_SHT
   hiddenSelectionsTextures[] = {
     QPATHTOF(data\ar0m37s\hound_co.paa)
     , "\LM_OPCAN3.0\WEP\VAN\AR0M37_2.paa"
-    , "\LM_OPCAN3.0\WEP\VAN\AR0M37_3.paa"
+    , QPATHTOF(data\ar0m37s\hound_underbarrel_co.paa)
   };
 };
 
