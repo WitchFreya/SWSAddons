@@ -22,5 +22,13 @@ class CfgWeapons
             class GL { description = "Underbarrel grenade launcher."; };
             class SHT { description = "Underbarrel shotgun."; };
         };
+
+        class Variant
+        {
+          label = "Variant";
+          values[] = {"Standard", "Hound"};
+          class Standard {};
+          class Hound {};
+        };
     };
 };
