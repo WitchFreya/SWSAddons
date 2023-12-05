@@ -41,12 +41,6 @@ class SWS_Weapon_AR0M37 : LM_OPCAN_AR0M37 {
             };
         };
     };
-
-    class XtdGearInfo {
-        model = "SWS_Weapon_Autorifles";
-        underbarrel = "None";
-        body = "0M37S";
-    };
 };
 
 class SWS_Weapon_AR0M37_GL : LM_OPCAN_AR0M37_GL {
@@ -70,12 +64,6 @@ class SWS_Weapon_AR0M37_GL : LM_OPCAN_AR0M37_GL {
         recoil = "recoil_auto_mx";
         recoilProne = "recoil_auto_prone_mx";
         dispersion = 0.0007;
-    };
-
-    class XtdGearInfo {
-        model = "SWS_Weapon_Autorifles";
-        underbarrel = "GL";
-        body = "0M37S";
     };
 
     class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -115,13 +103,7 @@ class SWS_Weapon_AR0M37_SHT : LM_OPCAN_AR0M37_SHT {
         dispersion = 0.0007;
     };
 
-    class XtdGearInfo {
-        model = "SWS_Weapon_Autorifles";
-        underbarrel = "SHT";
-        body = "0M37S";
-    };
-
-     class WeaponSlotsInfo : WeaponSlotsInfo {
+    class WeaponSlotsInfo : WeaponSlotsInfo {
         class PointerSlot : PointerSlot {
             compatibleItems[] = {
                 "acc_flashlight",
