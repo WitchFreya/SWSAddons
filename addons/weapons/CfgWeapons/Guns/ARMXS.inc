@@ -22,13 +22,6 @@ class SWS_Weapon_ARMXS: LM_OPCAN_ARMX
             };
         };
     };
-
-    class XtdGearInfo
-    {
-        model = "SWS_Weapon_Autorifles";
-        underbarrel = "None";
-        body = "MXS";
-    };
 };
 
 class SWS_Weapon_ARMXS_GL : LM_OPCAN_ARMX_GL
@@ -48,13 +41,6 @@ class SWS_Weapon_ARMXS_GL : LM_OPCAN_ARMX_GL
                 ATT_POINTER_OPTRE_RAIL_M12
             };
         };
-    };
-
-    class XtdGearInfo
-    {
-        model = "SWS_Weapon_Autorifles";
-        underbarrel = "GL";
-        body = "MXS";
     };
 };
 

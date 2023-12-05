@@ -3,7 +3,7 @@ class CfgWeapons
     class SWS_Weapon_Autorifles : SWS_BaseGearModel
     {
         label = QNAME(AR);
-        options[] = {"Body","Underbarrel"};
+        options[] = {"Body","Underbarrel","Variant"};
         class Body
         {
             label = "Body Configuration";

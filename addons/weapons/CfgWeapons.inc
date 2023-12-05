@@ -1,14 +1,17 @@
-#define CLASSES_WEAPON      \
-    "SWS_Weapon_AR0M37",        \
-    "SWS_Weapon_AR0M37_GL",     \
-    "SWS_Weapon_AR0M37_SHT",    \
-    "SWS_Weapon_SM247", \
-    "SWS_Weapon_MA5BSx", \
-    "SWS_Weapon_MA5BSx_GL", \
-    "SWS_Optic_SmartLink", \
-    "SWS_Weapon_SBR55", \
-    "SWS_Weapon_ARMXS", \
-    "SWS_Weapon_ARMXS_GL"
+#define CLASSES_WEAPON \
+    "SWS_Weapon_AR0M37" \
+    , "SWS_Weapon_AR0M37_GL" \
+    , "SWS_Weapon_AR0M37_SHT" \
+    , "SWS_Weapon_AR0M37S_Hound" \
+    , "SWS_Weapon_AR0M37S_Hound_GL" \
+    , "SWS_Weapon_AR0M37S_Hound_SHT" \
+    , "SWS_Weapon_SM247" \
+    , "SWS_Weapon_MA5BSx" \
+    , "SWS_Weapon_MA5BSx_GL" \
+    , "SWS_Optic_SmartLink" \
+    , "SWS_Weapon_SBR55" \
+    , "SWS_Weapon_ARMXS" \
+    , "SWS_Weapon_ARMXS_GL"
 
 class WeaponSlotsInfo;
 class MuzzleSlot;
