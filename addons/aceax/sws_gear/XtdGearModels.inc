@@ -18,21 +18,23 @@ class XtdGearModels {
             "Roman",
             "Sawbones",
             "Snare",
-            "Tiger"
+            "Tiger",
+            "Vertigo"
         };
         class Ashes {};
         class Butler {};
         class Demon {};
         class Egg {};
+        class Hound {};
+        class Hurricane {};
         class Maid {};
         class Polaris {};
         class Rabbit {};
-        class Sawbones {};
-        class Tiger {};
-        class Hound {};
-        class Snare {};
-        class Hurricane {};
         class Roman {};
+        class Sawbones {};
+        class Snare {};
+        class Tiger {};
+        class Vertigo {};
     };
 
     class ColorOption
