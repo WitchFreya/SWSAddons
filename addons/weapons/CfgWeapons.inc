@@ -30,7 +30,7 @@ class CfgWeapons {
     class LM_OPCAN_ARMX;
     class LM_OPCAN_ARMX_GL;
 
-    #include "CfgWeapons\Guns\AR0M7.inc"
+    #include "CfgWeapons\Guns\AR0M37S.inc"
     #include "CfgWeapons\Guns\MA5BSx.inc"
     #include "CfgWeapons\Guns\SBR55.inc"
     #include "CfgWeapons\Guns\ARMXS.inc"
