@@ -1,6 +1,5 @@
 #include "script_component.hpp"
 
-#include "CfgDigVehicles.inc"
 #include "CfgFunctions.inc"
 
 class CfgPatches {
@@ -9,7 +8,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { "ace_trenches" };
+        requiredAddons[] = { "grad_trenches_functions" };
         skipWhenMissingDependencies = 1;
         VERSION_CONFIG;
 
