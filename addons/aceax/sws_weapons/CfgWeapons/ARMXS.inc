@@ -14,7 +14,7 @@ class SWS_Weapon_ARMXS_GL : LM_OPCAN_ARMX_GL
   class XtdGearInfo
   {
     model = "SWS_Weapon_Autorifles";
-    underbarrel = "None";
+    underbarrel = "GL";
     body = "MXS";
     variant = "Standard";
   };

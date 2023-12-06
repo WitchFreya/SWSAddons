@@ -5,6 +5,7 @@ class SWS_Weapon_MA5BSx : OPTRE_MA5B
     model = "SWS_Weapon_Autorifles";
     underbarrel = "None";
     body = "MA5BSx";
+    variant = "Standard";
   };
 };
 
