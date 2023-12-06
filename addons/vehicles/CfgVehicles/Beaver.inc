@@ -60,6 +60,24 @@ class SWS_V_APC_M107_Beaver_Base : B_APC_Tracked_01_CRV_F
 		};
 	};
 
+    class TransportMagazines
+    {
+        MACRO_ADDMAGAZINE(SmokeShell, 2);
+        MACRO_ADDMAGAZINE(SmokeShellGreen, 2);
+        MACRO_ADDMAGAZINE(30Rnd_65x39_caseless_msbs_mag, 2);
+    };
+    class TransportWeapons
+    {
+        MACRO_ADDWEAPON(SWS_Weapon_AR0M37, 2);
+        MACRO_ADDWEAPON(SWS_Weapon_M24RL_D_Loaded, 4);
+    };
+    class TransportItems
+    {
+        MACRO_ADDITEM(ACE_PersonalAidKit, 1);
+        MACRO_ADDITEM(ACE_elasticBandage, 20);
+        MACRO_ADDITEM(ToolKit, 1);
+    };
+
     class EventHandlers : EventHandlers
     {
         init = "if (local (_this select 0)) then {[(_this select 0), """", [], nil] call bis_fnc_initVehicle;};";
