@@ -45,7 +45,8 @@ class CfgPatches {
             "sws_units",
             "sws_common",
             "sws_main",
-            "sws_weapons"
+            "sws_weapons",
+            "melb"
         };
         author = QUOTE(AUTHOR);
         VERSION_CONFIG;
