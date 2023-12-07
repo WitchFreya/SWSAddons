@@ -87,6 +87,7 @@ class SWS_V_APC_M107_Beaver_Base : B_APC_Tracked_01_CRV_F
         MACRO_ADDITEM(ACE_wirecutter, 2);
         MACRO_ADDITEM(ACE_UAVBattery, 2);
         MACRO_ADDITEM(ACE_Fortify, 4);
+        MACRO_ADDITEM(MineDetector, 3);
         MACRO_ADDITEM(B_UavTerminal, 2);
 		MACRO_ADDITEM(SWS_Bag_UAV_SMQ94, 1);
 		MACRO_ADDITEM(SWS_Bag_UAV_MiniPelican, 1);
