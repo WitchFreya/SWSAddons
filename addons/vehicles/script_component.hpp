@@ -36,8 +36,3 @@
 #define GREEN_NET_TEXTURE "A3\Armor_F\Data\camonet_nato_green_co.paa"
 #define CSAT_NET_TEXTURE "A3\Armor_F\Data\camonet_csat_hex_green_co.paa"
 #define AAF_CAGE_TEXTURE "A3\Armor_F\Data\cage_aaf_co.paa"
-
-/// Transport Items macros ///
-#define MAG_XX(var0,var1) class _xx_##var0 { magazine = QUOTE(var0); count = var1; }
-#define WEAP_XX(var0,var1) class _xx_##var0 { weapon = QUOTE(var0); count = var1; }
-#define ITEM_XX(var0,var1) class _xx_##var0 { name = QUOTE(var0); count = var1; }
