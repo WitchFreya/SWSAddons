@@ -1,14 +1,17 @@
 
 
 class SWS_V_Heli_Raptor_Base : Heli_Attack_02_dynamicLoadout_base_F
-    {
+{
     ITEM_META(0);
     displayName = QNAME(Sx-48 Raptor - Base);
     faction = "SWS_UNSC";
     side = 1;
     crew = "B_UNSCAF_Pilot_01";
     typicalCargo[] = { "B_UNSCAF_Pilot_01" };
+    ace_cargo_space = 6;  // 
+    ace_cargo_loadmasterTurrets[] = {{-1},{0}};
 
+    
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\raptor\raptor_body1_black_co.paa),
         QPATHTOF(data\raptor\raptor_body2_black_co.paa)
@@ -96,6 +99,26 @@ class SWS_V_Heli_Raptor_Base : Heli_Attack_02_dynamicLoadout_base_F
             };
         };
     };
+        // Remember: Parachutes by default are from the base vehicle, can override later if required
+        class TransportMagazines
+		{
+            MAG_XX(SWS_Magazine_60Rnd_65x39_Caseless_msbs,8);
+            MAG_XX(OPTRE_signalSmokeY,2);
+            MAG_XX(OPTRE_signalSmokeB,2);
+            MAG_XX(SmokeShell,6);
+		};
+		class TransportWeapons
+		{
+            WEAP_XX(SWS_Weapon_AR0M37_GL,2);
+		};
+        class TransportItems
+		{
+            ITEM_XX(ACE_bloodIV,30);
+            ITEM_XX(ACE_elasticBandage,100);
+            ITEM_XX(ACE_quikclot,40);
+			ITEM_XX(Toolkit,1);
+            ITEM_XX(OPTRE_M7_Sight,2);
+		};
 };
 
 class SWS_V_Heli_Raptor : SWS_V_Heli_Raptor_Base
