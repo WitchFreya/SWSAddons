@@ -42,6 +42,7 @@
     QWEAPONS_FN(Snare), \
     QWEAPONS_FN(Roman), \
     QWEAPONS_FN(Blue), \
+    QWEAPONS_FN(Vertigo), \
     QWEAPONS_FN(Gold), \
     QWEAPONS_FN(Green), \
     QWEAPONS_FN(Orange), \
@@ -79,15 +80,16 @@ class CfgWeapons
     C_GEAR(Butler,purple);
     C_GEAR(Demon,purple);
     C_GEAR(Egg,grey);
+    C_GEAR(Hound,hound);
+    C_GEAR(Hurricane,purple);
     C_GEAR(Maid,sepia);
     C_GEAR(Polaris,pink);
     C_GEAR(Rabbit,pink);
-    C_GEAR(Tiger,gold);
-    C_GEAR(Hound,hound);
-    C_GEAR(Sawbones,sawbones);
-    C_GEAR(Hurricane,purple);
     C_GEAR(Roman,grey);
+    C_GEAR(Sawbones,sawbones);
     C_GEAR(Snare,snare);
+    C_GEAR(Tiger,gold);
+    C_GEAR(Vertigo,gold);
 
     //== COLORS
     C_GEAR(Blue,silver);
