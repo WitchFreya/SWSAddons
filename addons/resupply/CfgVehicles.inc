@@ -189,7 +189,7 @@ class CfgVehicles
             MACRO_ADDITEM(ace_marker_flags_red,10);
             MACRO_ADDITEM(ace_marker_flags_white,10);
             MACRO_ADDITEM(MineDetector,2);
-        }
+        };
     };
     class SWS_Ammo_SupplyPod_Eng_Demo : SWS_Ammo_SupplyPod_Empty {
         displayName = QNAME(Demolitions);
@@ -205,7 +205,7 @@ class CfgVehicles
             MACRO_ADDITEM(ACE_DefusalKit,2);
             MACRO_ADDITEM(ACE_Clacker,4);
             MACRO_ADDITEM(ACE_DeadManSwitch,1);
-        }
+        };
     };
         class SWS_Ammo_SupplyPod_Eng_Support : SWS_Ammo_SupplyPod_Empty {
         displayName = QNAME(Engineering);
@@ -222,6 +222,6 @@ class CfgVehicles
             MACRO_ADDITEM(ACE_Fortify,4);
             MACRO_ADDITEM(ToolKit,2);
 
-        }
+        };
     };
 };
