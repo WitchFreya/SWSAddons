@@ -79,12 +79,12 @@ class CfgWeapons
     C_GEAR(Ashes,silver);
     C_GEAR(Butler,purple);
     C_GEAR(Demon,purple);
-    C_GEAR(Egg,grey);
+    C_GEAR(Egg,egg);
     C_GEAR(Hound,hound);
     C_GEAR(Hurricane,purple);
     C_GEAR(Maid,sepia);
     C_GEAR(Polaris,pink);
-    C_GEAR(Rabbit,pink);
+    C_GEAR(Rabbit,rabbit);
     C_GEAR(Roman,grey);
     C_GEAR(Sawbones,sawbones);
     C_GEAR(Snare,snare);
