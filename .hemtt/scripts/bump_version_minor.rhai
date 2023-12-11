@@ -6,11 +6,14 @@ let script_version = HEMTT_RFS.join("addons")
     .read();
 
 // Replace the current version with the new version
-let prefix = "#define MINOR ";
-let current = HEMTT.project().version().minor();
-let next = current + 1;
+let minorPrefix = "#define MINOR ";
+let patchPrefix = "#define PATCH ";
+let version = HEMTT.project().version();
+let minor = version.minor();
+let patch = version.patch();
 
-script_version.replace(prefix + current.to_string(), prefix + next.to_string());
+script_version.replace(minorPrefix + minor.to_string(), minorPrefix + (minor + 1).to_string());
+script_version.replace(patchPrefix + patch.to_string(), patchPrefix + "0");
 
 // Write the modified contents to script_version.hpp
 HEMTT_RFS.join("addons")
