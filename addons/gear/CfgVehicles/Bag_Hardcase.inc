@@ -25,5 +25,6 @@ C_HARDCASE(Blue,blue);
 C_HARDCASE(Vertigo,vertigo);
 C_HARDCASE(Bait,bait);
 C_HARDCASE(Snare,snare);
+C_HARDCASE(Egg,egg);
 
 #undef C_HARDCASE
