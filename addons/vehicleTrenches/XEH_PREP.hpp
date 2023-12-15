@@ -4,6 +4,6 @@ PREP(lowerPlow);
 PREP(raisePlow);
 PREP(addBuildHandler);
 PREP(buildHandler);
-PREP(detatchTrench);
+PREP(detachTrench);
 PREP(initTrench);
 PREP(continueTrench);

@@ -29,18 +29,18 @@ private _actualProgress = _trench getVariable ["ace_trenches_progress", 0];
 // check for vehicle aliveness
 if (!(alive _vehicle)) exitWith {
 	[_handle] call CBA_fnc_removePerFrameHandler;
-	[_vehicle, _trench] call FUNC(detatchTrench);
+	[_vehicle, _trench] call FUNC(detachTrench);
 };
 
 // check for changed plow state
 if (_vehicle getVariable [QGVAR(PlowMode), PLOW_MOVING] != _initMode) exitWith {
 	[_handle] call CBA_fnc_removePerFrameHandler;
-	[_vehicle, _trench] call FUNC(detatchTrench);
+	[_vehicle, _trench] call FUNC(detachTrench);
 };
 
 // check area diggability
 if (!([_vehicle modelToWorld _flatOffsets] call grad_trenches_functions_fnc_canDig)) exitWith {
-	[_vehicle, _trench] call FUNC(detatchTrench);
+	[_vehicle, _trench] call FUNC(detachTrench);
 };
 
 private _speed = speed _vehicle;
@@ -52,6 +52,6 @@ if (_speed > 1) then {
 	[QUOTE(grad_trenches_functions_digFXVehicleBlade), [_vehicle]] call CBA_fnc_globalEvent;            
 } else {
 	if (_speed < -0.5 || _isTiltAboveMax) then {
-		[_vehicle, _trench] call FUNC(detatchTrench);
+		[_vehicle, _trench] call FUNC(detachTrench);
 	};
 };

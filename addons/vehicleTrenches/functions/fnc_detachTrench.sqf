@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: Ashes
- * Detatches an associated trench from its applied vehicle
+ * detaches an associated trench from its applied vehicle
  *
  * Arguments:
  * 0: Vehicle <OBJECT>
@@ -11,7 +11,7 @@
  * Bool
  *
  * Example:
- * [_vehicle, _trench] call sws_vehicletrenches_fnc_detatchTrench
+ * [_vehicle, _trench] call sws_vehicletrenches_fnc_detachTrench
  *
  * Public: No
  */

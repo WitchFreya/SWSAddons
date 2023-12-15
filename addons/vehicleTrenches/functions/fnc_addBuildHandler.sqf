@@ -18,8 +18,8 @@
 
 params ["_vehicle"];
 
-private _config = configFile >> "CfgVehicles" >> typeOf _vehicle >> "PlowConfig";
-private _distanceToTrench = getNumber (_config >> "distanceToTrench");
+private _config = configOf _vehicle >> "PlowConfig";
+private _distanceToTrench = (_config >> "distanceToTrench") call BIS_fnc_getCfgData;
 
 // get initial plow mode
 private _initMode = _vehicle getVariable [QGVAR(plowMode), PLOW_MOVING];
