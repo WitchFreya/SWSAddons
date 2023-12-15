@@ -1,5 +1,5 @@
 #include "script_component.hpp"
 
-private _id = ["addBuildHandler", { _this call FUNC(addBuildHandler); }] call CBA_fnc_addEventHandler;
+private _id = [QGVAR(addBuildHandler), { _this call FUNC(addBuildHandler); }] call CBA_fnc_addEventHandler;
 
-diag_log format ["registered EventHandler 'addBuildHandler' at id: %1", _id];
+TRACE_1(Registered 'addBuildHandler',_id);

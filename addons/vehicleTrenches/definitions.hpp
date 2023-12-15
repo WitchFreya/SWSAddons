@@ -1,6 +1,6 @@
-#define PLOW_MOVING -1
-#define PLOW_UP 0
-#define PLOW_NONE 1
-#define PLOW_VEHICLE_TRENCH 2
-#define PLOW_GIANT_TRENCH 3
-#define PLOW_LONG_TRENCH 4
+#define PLOW_MOVING 		"plowMoving"
+#define PLOW_UP 			"plowUp"
+#define PLOW_NONE           "plowNone"
+#define PLOW_VEHICLE_TRENCH "plowVehicleTrench"
+#define PLOW_GIANT_TRENCH	"plowGiantTrench"
+#define PLOW_LONG_TRENCH	"plowLongTrench"

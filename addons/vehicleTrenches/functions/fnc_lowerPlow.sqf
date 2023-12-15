@@ -21,11 +21,11 @@ params ["_vehicle", "_plowMode"];
 // Grab config for the vehicle's plow
 private _config = configFile >> "CfgVehicles" >> typeOf _vehicle >> "PlowConfig";
 if (!(isClass _config)) exitWith {
-	diag_log format ["No plow configuration found for %1", typeOf _vehicle];
+	ERROR_1("Attempted to lowerPlow on invalid vehicle: %1", _vehicle);
 };
-private _animation = getText (_config >> "animation");
-private _plowLowered = getNumber (_config >> "plowLowered");
-private _type = getText (_config >> "type");
+private _animation = (_config >> "animation") call BIS_fnc_getCfgData;
+private _plowLowered = (_config >> "plowLowered") call BIS_fnc_getCfgData;
+private _type = (_config >> "type") call BIS_fnc_getCfgData;
 
 // Start animation
 if (_type == "animate") then {
@@ -35,22 +35,22 @@ if (_type == "animate") then {
 };
 _vehicle setCruiseControl [7, false];    
 _vehicle setVariable [QGVAR(plowMode), PLOW_MOVING, true]; // animating state to prevent multi execution
-hint "Lowering plow...";
+hintSilent "Lowering plow...";
 
 [{
 	// Check for animation finish
 	params ["_vehicle", "_type", "_animation", "_plowLowered", "_plowMode"];
 	if (_type == "animate") then {
-		(_vehicle animationPhase _animation == _plowLowered)
+		(_vehicle animationPhase _animation == _plowLowered);
 	} else {
-		(_vehicle animationSourcePhase _animation == _plowLowered)
+		(_vehicle animationSourcePhase _animation == _plowLowered);
 	};
 },
 {	
 	// Apply plow mode on finish
 	params ["_vehicle", "_type", "_animation", "_plowLowered", "_plowMode"];
 	_vehicle setVariable [QGVAR(plowMode), _plowMode, true];
-	hint "Plow lowered.";
+	hintSilent "Plow lowered.";
 	// Add frame event handler for the lowered plow
-	["addBuildHandler", [_vehicle]] call CBA_fnc_globalEvent; 
+	[QGVAR(addBuildHandler), [_vehicle]] call CBA_fnc_globalEvent; 
 }, [_vehicle, _type, _animation, _plowLowered, _plowMode]] call CBA_fnc_waitUntilAndExecute;

@@ -21,4 +21,4 @@
 params ["_target", "_player"];
 
 private _driver = (driver _target);
-(_driver isEqualTo _player && _target getVariable [QGVAR(plowMode), PLOW_UP] == PLOW_UP)
+(_driver isEqualTo _player && { _target getVariable [QGVAR(plowMode), PLOW_UP] == PLOW_UP });

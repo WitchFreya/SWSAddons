@@ -15,7 +15,3 @@
  *
  * Public: No
  */
-
-params ["_vehicle"];
-
-{}

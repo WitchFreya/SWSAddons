@@ -10,7 +10,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {  
-            "sws_patches_gradtrenches",
+            "grad_trenches_functions",
             "A3_Armor_F_Beta" 
         };
         author = QUOTE(AUTHOR);

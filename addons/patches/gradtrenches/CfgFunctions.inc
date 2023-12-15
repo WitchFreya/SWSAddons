@@ -5,13 +5,13 @@ class CfgFunctions
         class functions
         {
             class vehicleAction 
-			{
+            {
                 file = QPATHTOF(gradtrenches\functions\fnc_vehicleAction.sqf);
             };
-			class vehicleTrenchBuild 
-			{
+            class vehicleTrenchBuild 
+            {
                 file = QPATHTOF(gradtrenches\functions\fnc_vehicleTrenchBuild.sqf);
-			};
+            };
         };
     };
 };
