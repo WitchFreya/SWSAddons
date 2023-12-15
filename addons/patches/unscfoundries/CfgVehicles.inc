@@ -62,4 +62,66 @@ class CfgVehicles
       class Right : Right {};
     };
   };
+  class Splits_Pelican_base;
+  class Splits_UNSC_D77_TC_Pelican: Splits_Pelican_base
+  {
+    irTargetSize 1.6; // both of these were 0.6
+    radarTargetSize 1.0; // from 0.6
+    class Components: Components
+    {
+      class TransportPylonsComponent
+      {
+        class Pylons
+        {
+          class PylonRight1
+					{
+						attachment = "";
+						priority = 4;
+						hardpoints[] = {"Splits_T_Missiles"};
+						turret[] = {};
+						UIposition[] = {0.25,0.1};
+					};
+					class PylonRight2: PylonRight1
+					{
+						priority = 3;
+						UIposition[] = {0.25,0.2};
+					};
+					class PylonRight3
+					{
+            maxweight = 1000;
+						attachment = "ace_maverick_L_PylonRack_3Rnd";
+						priority = 2;
+						hardpoints[] = {"Splits_B_Missiles","B_MISSILE_PYLON"};
+						turret[] = {};
+						UIposition[] = {0.6,0.1};
+					};
+					class PylonRight4: PylonRight3
+					{						
+            priority = 1;
+						UIposition[] = {0.6,0.2};
+					};
+					class PylonsLeft1: PylonRight1
+					{
+						UIposition[] = {0.25,0.5};
+						mirroredMissilePos = 1;
+					};
+					class PylonsLeft2: PylonRight2
+					{
+						UIposition[] = {0.25,0.4};
+						mirroredMissilePos = 2;
+					};
+					class PylonsLeft3: PylonRight3
+					{
+						UIposition[] = {0.6,0.5};
+						mirroredMissilePos = 3;
+					};
+					class PylonsLeft4: PylonRight4
+					{
+						UIposition[] = {0.6,0.4};
+						mirroredMissilePos = 4;
+					};
+        };
+      };
+    };
+  };
 };
