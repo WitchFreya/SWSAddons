@@ -21,6 +21,7 @@ class CfgPatches
       "B_19thUNSC"
       , "DMNS_Shortsword_F"
       , "DMNS_Vehicles_SOEIV"
+      , "Splits_Vehicles_Air_Pelican"
     };
     skipWhenMissingDependencies = 1;
     VERSION_CONFIG;
