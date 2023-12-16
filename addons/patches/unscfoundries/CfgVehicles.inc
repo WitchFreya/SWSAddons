@@ -63,6 +63,7 @@ class CfgVehicles
     };
   };
   class Splits_Pelican_base;
+  // fixing pylon mirroring and targetability; see https://github.com/WitchFreya/SWSAddons/pull/14
   class Splits_UNSC_D77_TC_Pelican: Splits_Pelican_base
   {
     irTargetSize = 1.6; 
@@ -73,6 +74,7 @@ class CfgVehicles
       {
         class Pylons
         {
+          // inheritance won't work because of merged interfaces
           class PylonRight1
 					{
 						attachment = "";
@@ -88,9 +90,8 @@ class CfgVehicles
 						UIposition[] = {0.25,0.2};
 					};
 					class PylonRight3
-					{
+						hardpoints[] = {"Splits_B_Missiles","B_Missile_Pylon"};
 						attachment = "ace_maverick_L_PylonRack_3Rnd";
-						hardpoints[] = {"Splits_B_Missiles","B_MISSILE_PYLON"};
             maxweight = 1000;
             priority = 2;
 						turret[] = {};
@@ -99,7 +100,7 @@ class CfgVehicles
 					class PylonRight4: PylonRight3
 					{
             attachment = "ace_maverick_L_PylonRack_3Rnd";
-            hardpoints[] = {"Splits_B_Missiles","B_MISSILE_PYLON"};
+            hardpoints[] = {"Splits_B_Missiles","B_Missile_Pylon"};
             maxweight = 1000;
             priority = 1;
 						UIposition[] = {0.6,0.2};
@@ -119,7 +120,7 @@ class CfgVehicles
 					class PylonsLeft3: PylonRight3
 					{
             attachment = "ace_maverick_L_PylonRack_3Rnd";
-            hardpoints[] = {"Splits_B_Missiles","B_MISSILE_PYLON"};
+            hardpoints[] = {"Splits_B_Missiles","B_Missile_Pylon"};
             maxweight = 1000;
 						UIposition[] = {0.6,0.5};
 						mirroredMissilePos = 3;
@@ -127,7 +128,7 @@ class CfgVehicles
 					class PylonsLeft4: PylonRight4
 					{
             attachment = "ace_maverick_L_PylonRack_3Rnd";
-            hardpoints[] = {"Splits_B_Missiles","B_MISSILE_PYLON"};
+            hardpoints[] = {"Splits_B_Missiles","B_Missile_Pylon"};
             maxweight = 1000;
 						UIposition[] = {0.6,0.4};
 						mirroredMissilePos = 4;
