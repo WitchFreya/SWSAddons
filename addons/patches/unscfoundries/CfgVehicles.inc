@@ -89,7 +89,7 @@ class CfgVehicles
 						priority = 3;
 						UIposition[] = {0.25,0.2};
 					};
-					class PylonRight3
+					class PylonRight3 {
 						hardpoints[] = {"Splits_B_Missiles","B_Missile_Pylon"};
 						attachment = "ace_maverick_L_PylonRack_3Rnd";
             maxweight = 1000;
@@ -136,5 +136,5 @@ class CfgVehicles
         };
       };
     };
+  };
 };
-
