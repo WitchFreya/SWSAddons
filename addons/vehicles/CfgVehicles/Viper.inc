@@ -183,7 +183,7 @@ class SWS_V_MBT_M700_Viper_Base : I_MBT_03_cannon_F
                 QPATHTOF(data\viper\body_winter.paa),
                 QPATHTOF(data\viper\turret_winter.paa),
                 QPATHTOF(data\viper\turret_mg_winter.paa),
-                CSAT_NET_TEXTURE
+                QPATHTOF(data\shared\camonet_snow.paa)
             };
             factions[] = {"SWS_UNSC"};
         };
