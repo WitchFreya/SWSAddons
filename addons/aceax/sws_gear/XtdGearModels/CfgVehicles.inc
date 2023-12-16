@@ -43,19 +43,21 @@ class CfgVehicles
         {
             values[] = {
                 "Medical"
-                , "Sawbones"
-                , "Blue"
-                , "Vertigo"
                 , "Bait"
+                , "Blue"
+                , "Egg"
+                , "Sawbones"
                 , "Snare"
+                , "Vertigo"
             };
             class Medical { description = "Standard issue medical hardcase."; };
             #define C_VALUE(name) class name { description = QUOTE(A modified medical satchel for name.); }
-            C_VALUE(Blue);
-            C_VALUE(Sawbones);
-            C_VALUE(Vertigo);
             C_VALUE(Bait);
+            C_VALUE(Blue);
+            C_VALUE(Egg);
+            C_VALUE(Sawbones);
             C_VALUE(Snare);
+            C_VALUE(Vertigo);
             #undef C_VALUE
         };
     };

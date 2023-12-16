@@ -36,6 +36,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "A3_Armor_F_EPB",
+            "A3_Armor_F_Beta",
             "A3_Armor_F_Gamma",
 			"A3_Soft_F",
             "A3_Weapons_F_Tank",

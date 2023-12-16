@@ -157,7 +157,7 @@ class SWS_V_APC_M35_Cougar_Base : I_APC_Wheeled_03_cannon_F
                 QPATHTOF(data\cougar\body_2_winter.paa),
                 QPATHTOF(data\cougar\turret_winter.paa),
                 QPATHTOF(data\cougar\exhaust.paa),
-                GREEN_NET_TEXTURE,
+                QPATHTOF(data\shared\camonet_snow.paa),
                 QPATHTOF(data\cougar\cage.paa)
             };
         };

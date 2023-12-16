@@ -1,0 +1,9 @@
+PREP(canLowerPlow);
+PREP(canRaisePlow);
+PREP(lowerPlow);
+PREP(raisePlow);
+PREP(addBuildHandler);
+PREP(buildHandler);
+PREP(detachTrench);
+PREP(initTrench);
+PREP(continueTrench);
