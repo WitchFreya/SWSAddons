@@ -92,12 +92,12 @@ class CfgWeapons
     C_GEAR(Vertigo,gold);
 
     //== COLORS
-    C_GEAR(Blue,silver);
-    C_GEAR(Gold,silver);
-    C_GEAR(Green,silver);
-    C_GEAR(Orange,silver);
-    C_GEAR(Purple,silver);
-    C_GEAR(Red,silver);
+    C_GEAR(Blue,blue);
+    C_GEAR(Gold,gold);
+    C_GEAR(Green,green);
+    C_GEAR(Orange,orange);
+    C_GEAR(Purple,purple);
+    C_GEAR(Red,red);
 
     C_GEAR(CLS,red);
 
