@@ -26,14 +26,14 @@ params ["_vehicle", "_trenchEnvelope", "_trenchOffsets", "_flatOffsets", "_initM
 
 // Stop execution if vehicle no longer exists
 if (isNull _vehicle) exitWith {
-    [_handle] call CBA_fnc_removePerFrameHandler;
+  [_handle] call CBA_fnc_removePerFrameHandler;
 };
 
 private _isTiltAboveMax = (vectorUp _vehicle select 2 < (1 - sin _maxTilt));
 
 // init digging
 if (!(_vehicle getVariable [QGVAR(isDigging), false])) then {
-    [_vehicle, _trenchEnvelope, _trenchOffsets, _flatOffsets, _isTiltAboveMax, _initMode, _handle] call FUNC(initTrench);
+  [_vehicle, _trenchEnvelope, _trenchOffsets, _flatOffsets, _isTiltAboveMax, _initMode, _handle] call FUNC(initTrench);
 } else {
-    [_vehicle, _digDiff, _flatOffsets, _isTiltAboveMax, _initMode, _handle] call FUNC(continueTrench);
+  [_vehicle, _digDiff, _flatOffsets, _isTiltAboveMax, _initMode, _handle] call FUNC(continueTrench);
 };
