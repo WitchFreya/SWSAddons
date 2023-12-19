@@ -3,36 +3,36 @@
 #define DFUNC(var1) TRIPLES(ADDON,fnc,var1)
 
 #ifdef DISABLE_COMPILE_CACHE
-    #undef PREP
-    #define PREP(fncName) DFUNC(fncName) = compile preprocessFileLineNumbers QPATHTOF(functions\DOUBLES(fnc,fncName).sqf)
+  #undef PREP
+  #define PREP(fncName) DFUNC(fncName) = compile preprocessFileLineNumbers QPATHTOF(functions\DOUBLES(fnc,fncName).sqf)
 #else
-    #undef PREP
-    #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
+  #undef PREP
+  #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
 #endif
 
 #define MATERIAL(var0) QPATHTOF(data\materials\var0.rvmat)
 #define TEXTURE(var0,var1) QPATHTOF(TRIPLES(data\textures\var0,var1,co.paa))
 
-#define SCOPE(varScope)      \
-    scope = varScope;        \
-    scopeCurator = varScope; \
-    scopeArsenal = varScope
+#define SCOPE(varScope)     \
+  scope = varScope;         \
+  scopeCurator = varScope;  \
+  scopeArsenal = varScope
 
 #ifdef AUTHORS
-    #define AUTHOR_META         \
-        author = QUOTE(AUTHOR); \
-        authors[] = {AUTHORS}
+  #define AUTHOR_META       \
+    author = QUOTE(AUTHOR); \
+    authors[] = {AUTHORS}
 #else
-    #define AUTHOR_META author = QUOTE(AUTHOR)
+  #define AUTHOR_META author = QUOTE(AUTHOR)
 #endif
 
-#define META                \
-    dlc = QUOTE(PREFIX);    \
-    AUTHOR_META
+#define META            \
+  dlc = QUOTE(PREFIX);  \
+  AUTHOR_META
 
 #define ITEM_META(varScope) \
-    META;                   \
-    SCOPE(varScope)
+  META;                     \
+  SCOPE(varScope)
 
 // uppercase prefix
 #define UPREFIX QUOTE(SWS)
@@ -49,16 +49,24 @@
 #define MACRO_X10(var0) MACRO_X5(MACRO_X2(var0))
 
 #define MACRO_ADDWEAPON(WEAPON,COUNT) class _xx_##WEAPON { \
-    weapon = #WEAPON; \
-    count = COUNT; \
+  weapon = #WEAPON; \
+  count = COUNT; \
 }
 
 #define MACRO_ADDITEM(ITEM,COUNT) class _xx_##ITEM { \
-    name = #ITEM; \
-    count = COUNT; \
+  name = #ITEM; \
+  count = COUNT; \
 }
 
 #define MACRO_ADDMAGAZINE(MAGAZINE,COUNT) class _xx_##MAGAZINE { \
-    magazine = #MAGAZINE; \
-    count = COUNT; \
+  magazine = #MAGAZINE; \
+  count = COUNT; \
 }
+
+#define ASSERT_TRUE_EXIT(varAssertion,varMessage,varValue) \
+  ASSERT_TRUE(varAssertion,varMessage);                    \
+  if !(varAssertion) exitWith {varValue}
+
+#define ASSERT_FALSE_EXIT(varAssertion,varMessage,varValue) \
+  ASSERT_FALSE(varAssertion,varMessage);                    \
+  if (varAssertion) exitWith {varValue}
