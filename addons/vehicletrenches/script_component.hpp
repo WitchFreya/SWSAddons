@@ -6,18 +6,18 @@
 // #define DISABLE_COMPILE_CACHE
 
 #ifdef DEBUG_ENABLED_INGAME
-    #define DEBUG_MODE_FULL
+  #define DEBUG_MODE_FULL
 #endif
 #ifdef DEBUG_SETTINGS_WEAPONS
-    #define DEBUG_SETTINGS DEBUG_SETTINGS_INGAME
+  #define DEBUG_SETTINGS DEBUG_SETTINGS_INGAME
 #endif
 
 #undef AUTHOR
 #define AUTHOR Ashes
 
 #define AUTHORS \
-    "Ashes",    \
-    "Maid",      \
-    "Demon"
+  "Ashes",    \
+  "Maid",      \
+  "Demon"
 
 #include "\x\sws\addons\main\script_macros.hpp"

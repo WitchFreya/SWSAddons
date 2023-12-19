@@ -30,6 +30,7 @@ class SWS_PlowDown
 		statement = QUOTE([ARR_2(_target,QUOTE(PLOW_LONG_TRENCH))] call FUNC(lowerPlow));
 	};
 };
+
 class SWS_PlowUp
 {
 	displayName = "Raise Plow";
