@@ -70,3 +70,6 @@
 #define ASSERT_FALSE_EXIT(varAssertion,varMessage,varValue) \
   ASSERT_FALSE(varAssertion,varMessage);                    \
   if (varAssertion) exitWith {varValue}
+
+#define SUBGVAR(var0) GVAR(DOUBLES(SUBCOMPONENT,var0))
+#define QSUBGVAR(var0) QUOTE(SUBGVAR(var0))

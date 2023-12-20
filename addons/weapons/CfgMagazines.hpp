@@ -5,7 +5,6 @@
     "SWS_Magazine_200Rnd_762x51_Mag_Tracer", \
     "SWS_Magazine_400Rnd_762x51_Mag", \
     "SWS_Magazine_400Rnd_762x51_Mag_Tracer", \
-    "SWS_Magazine_Grenade_M9Sx_1Rnd_Shell", \
     "SWS_Magazine_Grenade_M3Sx", \
     "SWS_Magazine_Grenade_M3Sx_1Rnd_Shell", \
     "SWS_Magazine_Grenade_M3Sx_3Rnd_Shell", \
@@ -42,7 +41,6 @@ class CfgMagazines {
     //= Grenades & Shells
     class ACE_CTS9;
     class OPTRE_M9_Frag;
-    class M319_HE_Grenade_Shell;
     class M319_HEDP_Grenade_Shell;
     class OPTRE_c7_remote_throwable_sticky_mag;
     class OPTRE_signalSmokeB;
@@ -53,7 +51,6 @@ class CfgMagazines {
     class OPTRE_signalSmokeY;
 
     #include "CfgMagazines\M3Sx.inc"
-    #include "CfgMagazines\M9Sx.inc"
     #include "CfgMagazines\C7Sx.inc"
     #include "CfgMagazines\UGLSmokeFlares.inc"
 
