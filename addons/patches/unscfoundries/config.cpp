@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 
 class CBA_Extended_EventHandlers_Base;
+class Components;
 class EventHandlers;
 class Reflectors;
 class Right;
