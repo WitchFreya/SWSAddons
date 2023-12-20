@@ -47,16 +47,4 @@ class CfgWeapons {
   class OPTRE_MA5_SmartLink;
 
   #include "CfgWeapons\Optics\SmartLink.inc"
-
-  //== Grenades
-  class GrenadeLauncher;
-  class Throw : GrenadeLauncher {
-    muzzles[] += {
-      "SWS_Muzzle_C7Sx"
-    };
-    class ThrowMuzzle;
-    class SWS_Muzzle_C7Sx: ThrowMuzzle {
-      magazines[] = {"SWS_Magazine_C7Sx_Sticky"};
-    };
-  };
 };

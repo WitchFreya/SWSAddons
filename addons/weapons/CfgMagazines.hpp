@@ -8,7 +8,6 @@
     "SWS_Magazine_Grenade_M3Sx", \
     "SWS_Magazine_Grenade_M3Sx_1Rnd_Shell", \
     "SWS_Magazine_Grenade_M3Sx_3Rnd_Shell", \
-    "SWS_Magazine_C7Sx_Sticky", \
     "SWS_Magazine_6Rnd_Shotgun_Incendiary", \
     "SWS_Magazine_12_Rnd_Shotgun_Incendiary", \
     "SWS_Magazine_60Rnd_65x39_Caseless_msbs",\
@@ -42,7 +41,6 @@ class CfgMagazines {
     class ACE_CTS9;
     class OPTRE_M9_Frag;
     class M319_HEDP_Grenade_Shell;
-    class OPTRE_c7_remote_throwable_sticky_mag;
     class OPTRE_signalSmokeB;
     class OPTRE_signalSmokeG;
     class OPTRE_signalSmokeO;
@@ -50,7 +48,6 @@ class CfgMagazines {
     class OPTRE_signalSmokeR;
     class OPTRE_signalSmokeY;
 
-    #include "CfgMagazines\C7Sx.inc"
     #include "CfgMagazines\UGLSmokeFlares.inc"
 
     // Shotguns
