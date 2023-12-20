@@ -1,19 +1,17 @@
 #define CLASSES_AMMO \
-    "mortar_155mm_AMOS"
+  "mortar_155mm_AMOS"
 
 class CfgAmmo
 {
-    class Default;
+  class Default;
 
-    class OPAEX_A_GBU1105_LGB;
-    class OPAEX_Glass_Round;
+  class OPAEX_A_GBU1105_LGB;
+  class OPAEX_Glass_Round;
 
-    // pollution
-    class mortar_155mm_AMOS : Default {};
+  // pollution
+  class mortar_155mm_AMOS : Default {};
 
-    // errors caused by pollution
-    class PHAN_OPAEX_A_GBU1105_LGB : OPAEX_A_GBU1105_LGB {};
-    class PHAN_OPAEX_Glass_Round : OPAEX_Glass_Round {};
-
-    // todo: No entry PHAN_OPAEX_M_GBU1105_1Rnd.mass for opening pelican zeus interface
+  // errors caused by pollution
+  class PHAN_OPAEX_A_GBU1105_LGB : OPAEX_A_GBU1105_LGB {};
+  class PHAN_OPAEX_Glass_Round : OPAEX_Glass_Round {};
 };
