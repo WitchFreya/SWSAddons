@@ -1,8 +1,9 @@
 #include "script_component.hpp"
 
-#include "CfgMagazines.inc"
 #include "CfgAmmo.inc"
+#include "CfgMagazines.inc"
 #include "CfgMagazineWells.inc"
+#include "CfgWeapons.inc"
 
 class CfgPatches
 {
@@ -14,7 +15,10 @@ class CfgPatches
     magazines[] = { CLASSES_MAGAZINES };
     ammo[] = { CLASSES_AMMO };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = { "OPTRE_Weapons_Ammo" };
+    requiredAddons[] = {
+      "OPTRE_Weapons_Ammo"
+      , "OPTRE_ACE_Compat"
+    };
     VERSION_CONFIG;
     addonRootClass = QUOTE(ADDON);
   };

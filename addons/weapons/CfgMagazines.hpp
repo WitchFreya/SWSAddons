@@ -50,7 +50,6 @@ class CfgMagazines {
     class OPTRE_signalSmokeR;
     class OPTRE_signalSmokeY;
 
-    #include "CfgMagazines\M3Sx.inc"
     #include "CfgMagazines\C7Sx.inc"
     #include "CfgMagazines\UGLSmokeFlares.inc"
 
