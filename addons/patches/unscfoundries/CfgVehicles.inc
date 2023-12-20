@@ -61,78 +61,101 @@ class CfgVehicles
     class Reflectors : Reflectors {
       class Right : Right {};
     };
+
+    class Components;
   };
-  class Splits_Pelican_base;
-  // fixing pylon mirroring and targetability; see https://github.com/WitchFreya/SWSAddons/pull/14
-  class Splits_UNSC_D77_TC_Pelican: Splits_Pelican_base
+
+  class Splits_Pelican_Base : Helicopter_Base_H
   {
-    irTargetSize = 1.6; 
+    irTargetSize = 1.6;
     radarTargetSize = 1.0;
+
+    class Components : Components
+    {
+      class TransportPylonsComponent
+      {
+        UIPicture = "\OPTRE_Vehicles\Pelican\pelicanPylonPic.paa";
+        class Pylons
+        {
+          class PylonRight1
+          {
+            attachment = "";
+          };
+          class PylonRight2
+          {
+            attachment = "";
+          };
+          class PylonRight3
+          {
+            attachment = "ace_maverick_L_PylonRack_3Rnd";
+            hardpoints[] = {
+              "Splits_B_Missiles"
+              , "B_Missile_Pylon"
+            };
+            maxWeight = 1000;
+          };
+          class PylonRight4
+          {
+            attachment = "ace_maverick_L_PylonRack_3Rnd";
+            hardpoints[] = {
+              "Splits_B_Missiles"
+              , "B_Missile_Pylon"
+            };
+            maxWeight = 1000;
+          };
+
+          // fix mirroring
+          class PylonsLeft1 : PylonRight1 { mirroredMissilePos = 1; };
+          class PylonsLeft2 : PylonRight2 { mirroredMissilePos = 2; };
+          class PylonsLeft3 : PylonRight3 { mirroredMissilePos = 3; };
+          class PylonsLeft4 : PylonRight4 { mirroredMissilePos = 4; };
+        };
+      };
+    };
+  };
+  class Splits_Pelican_Base;
+  // fixing pylon mirroring and targetability; see https://github.com/WitchFreya/SWSAddons/pull/14
+  class Splits_UNSC_D77_TC_Pelican: Splits_Pelican_Base
+  {
     class Components: Components
     {
       class TransportPylonsComponent
       {
+        UIPicture = "\OPTRE_Vehicles\Pelican\pelicanPylonPic.paa";
         class Pylons
         {
-          // inheritance won't work because of merged interfaces
           class PylonRight1
-					{
-						attachment = "";
-						priority = 4;
-						hardpoints[] = {"Splits_T_Missiles"};
-						turret[] = {};
-						UIposition[] = {0.25,0.1};
-					};
-					class PylonRight2: PylonRight1
-					{
+          {
             attachment = "";
-						priority = 3;
-						UIposition[] = {0.25,0.2};
-					};
-					class PylonRight3 {
-						hardpoints[] = {"Splits_B_Missiles","B_Missile_Pylon"};
-						attachment = "ace_maverick_L_PylonRack_3Rnd";
-            maxweight = 1000;
-            priority = 2;
-						turret[] = {};
-						UIposition[] = {0.6,0.1};
-					};
-					class PylonRight4: PylonRight3
-					{
-            attachment = "ace_maverick_L_PylonRack_3Rnd";
-            hardpoints[] = {"Splits_B_Missiles","B_Missile_Pylon"};
-            maxweight = 1000;
-            priority = 1;
-						UIposition[] = {0.6,0.2};
-					};
-					class PylonsLeft1: PylonRight1
-					{
+          };
+          class PylonRight2
+          {
             attachment = "";
-						UIposition[] = {0.25,0.5};
-						mirroredMissilePos = 1;
-					};
-					class PylonsLeft2: PylonRight2
-					{
-            attachment = "";
-						UIposition[] = {0.25,0.4};
-						mirroredMissilePos = 2;
-					};
-					class PylonsLeft3: PylonRight3
-					{
+          };
+          class PylonRight3
+          {
             attachment = "ace_maverick_L_PylonRack_3Rnd";
-            hardpoints[] = {"Splits_B_Missiles","B_Missile_Pylon"};
-            maxweight = 1000;
-						UIposition[] = {0.6,0.5};
-						mirroredMissilePos = 3;
-					};
-					class PylonsLeft4: PylonRight4
-					{
+            hardpoints[] = {
+              "Splits_B_Missiles"
+              , "B_Missile_Pylon"
+            };
+            maxWeight = 1000;
+          };
+          class PylonRight4
+          {
             attachment = "ace_maverick_L_PylonRack_3Rnd";
-            hardpoints[] = {"Splits_B_Missiles","B_Missile_Pylon"};
-            maxweight = 1000;
-						UIposition[] = {0.6,0.4};
-						mirroredMissilePos = 4;
-					};
+            hardpoints[] = {
+              "Splits_B_Missiles"
+              , "B_Missile_Pylon"
+            };
+            maxWeight = 1000;
+          };
+
+          // fix mirroring
+          class PylonsLeft1 : PylonRight1 { mirroredMissilePos = 1; };
+          class PylonsLeft2 : PylonRight2 { mirroredMissilePos = 2; };
+          class PylonsLeft3 : PylonRight3 { mirroredMissilePos = 3; };
+          class PylonsLeft4 : PylonRight4 { mirroredMissilePos = 4; };
         };
       };
     };
