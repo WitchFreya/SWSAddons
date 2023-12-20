@@ -3,7 +3,6 @@ class CfgMagazineWells {
         GVAR(Magazines)[] = {
             "SWS_Magazine_Grenade_M3Sx_1Rnd_Shell",
             "SWS_Magazine_Grenade_M3Sx_3Rnd_Shell",
-            "SWS_Magazine_Grenade_M9Sx_1Rnd_Shell",
             "SWS_Magazine_3Rnd_FlareSmoke_Blue",
             "SWS_Magazine_3Rnd_FlareSmoke_Green",
             "SWS_Magazine_3Rnd_FlareSmoke_Orange",
@@ -29,7 +28,6 @@ class CfgMagazineWells {
         GVAR(Magazines)[] = {
             "SWS_Magazine_Grenade_M3Sx_1Rnd_Shell",
             "SWS_Magazine_Grenade_M3Sx_3Rnd_Shell",
-            "SWS_Magazine_Grenade_M9Sx_1Rnd_Shell",
             "SWS_Magazine_3Rnd_FlareSmoke_Blue",
             "SWS_Magazine_3Rnd_FlareSmoke_Green",
             "SWS_Magazine_3Rnd_FlareSmoke_Orange",
