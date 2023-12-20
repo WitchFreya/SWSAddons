@@ -1245,7 +1245,7 @@ class CfgVehicles {
 
         backpack = "B_AssaultPack_blk";
 
-        ALiVE_orbatCreator_loadout[] = {{"OPTRE_MA5AGL","","","OPTRE_M393_EOTECH",{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",32},{"1Rnd_HE_Grenade_shell",1},""},{},{},{"U_I_G_Story_Protagonist_F",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",1,32}}},{"V_CarrierRigKBT_01_light_Olive_F",{{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",5,32},{"3Rnd_HE_Grenade_shell",4,3},{"OPTRE_M2_Smoke",3,1}}},{"B_AssaultPack_blk",{{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",4,32},{"SWS_Magazine_Grenade_9Bang_1Rnd_Shell",2,1}}},"VES_CH252_WDL_Light","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"}};
+        ALiVE_orbatCreator_loadout[] = {{"OPTRE_MA5AGL","","","OPTRE_M393_EOTECH",{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",32},{"1Rnd_HE_Grenade_shell",1},""},{},{},{"U_I_G_Story_Protagonist_F",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",1,32}}},{"V_CarrierRigKBT_01_light_Olive_F",{{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",5,32},{"3Rnd_HE_Grenade_shell",4,3},{"OPTRE_M2_Smoke",3,1}}},{"B_AssaultPack_blk",{{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",4,32}}},"VES_CH252_WDL_Light","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"}};
 
 
         class EventHandlers : EventHandlers {

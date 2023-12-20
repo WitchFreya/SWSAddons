@@ -5,15 +5,10 @@
     "SWS_Magazine_200Rnd_762x51_Mag_Tracer", \
     "SWS_Magazine_400Rnd_762x51_Mag", \
     "SWS_Magazine_400Rnd_762x51_Mag_Tracer", \
-    "SWS_Magazine_Grenade_M9Sx", \
     "SWS_Magazine_Grenade_M9Sx_1Rnd_Shell", \
     "SWS_Magazine_Grenade_M3Sx", \
     "SWS_Magazine_Grenade_M3Sx_1Rnd_Shell", \
     "SWS_Magazine_Grenade_M3Sx_3Rnd_Shell", \
-    "SWS_Magazine_Grenade_9Bang", \
-    "SWS_Magazine_Grenade_9Bang_NoFuse", \
-    "SWS_Magazine_Grenade_9Bang_1Rnd_Shell", \
-    "SWS_Magazine_Grenade_9Bang_3Rnd_Shell", \
     "SWS_Magazine_C7Sx_Sticky", \
     "SWS_Magazine_6Rnd_Shotgun_Incendiary", \
     "SWS_Magazine_12_Rnd_Shotgun_Incendiary", \
@@ -59,7 +54,6 @@ class CfgMagazines {
 
     #include "CfgMagazines\M3Sx.inc"
     #include "CfgMagazines\M9Sx.inc"
-    #include "CfgMagazines\9Bang.inc"
     #include "CfgMagazines\C7Sx.inc"
     #include "CfgMagazines\UGLSmokeFlares.inc"
 
