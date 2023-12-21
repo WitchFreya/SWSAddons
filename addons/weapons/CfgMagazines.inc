@@ -1,10 +1,4 @@
 #define CLASSES_MAGAZINES \
-  "SWS_Magazine_100Rnd_762x51_Mag", \
-  "SWS_Magazine_100Rnd_762x51_Mag_Tracer", \
-  "SWS_Magazine_200Rnd_762x51_Mag", \
-  "SWS_Magazine_200Rnd_762x51_Mag_Tracer", \
-  "SWS_Magazine_400Rnd_762x51_Mag", \
-  "SWS_Magazine_400Rnd_762x51_Mag_Tracer", \
   "SWS_Magazine_Grenade_M3Sx", \
   "SWS_Magazine_Grenade_M3Sx_1Rnd_Shell", \
   "SWS_Magazine_Grenade_M3Sx_3Rnd_Shell", \
@@ -30,11 +24,9 @@
 class CfgMagazines {
 
   //= Ammo
-  class 150Rnd_762x51_Box;
   class 30Rnd_65x39_caseless_msbs_mag;
   class 100Rnd_65x39_caseless_black_mag;
 
-  #include "CfgMagazines\762x51.inc"
   #include "CfgMagazines\65x39_Caseless.inc"
 
   //= Grenades & Shells

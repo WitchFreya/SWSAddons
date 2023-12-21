@@ -5,7 +5,6 @@
     , "SWS_Weapon_AR0M37S_Hound" \
     , "SWS_Weapon_AR0M37S_Hound_GL" \
     , "SWS_Weapon_AR0M37S_Hound_SHT" \
-    , "SWS_Weapon_SM247" \
     , "SWS_Weapon_MA5BSx" \
     , "SWS_Weapon_MA5BSx_GL" \
     , "SWS_Optic_SmartLink" \
@@ -37,11 +36,6 @@ class CfgWeapons {
   #include "CfgWeapons\Guns\MA5BSx.inc"
   #include "CfgWeapons\Guns\SBR55.inc"
   #include "CfgWeapons\Guns\ARMXS.inc"
-
-  //== MG
-  class Dmns_M247_GPMG;
-
-  #include "CfgWeapons\Guns\SM247.inc"
 
   //== Optics
   class OPTRE_MA5_SmartLink;
