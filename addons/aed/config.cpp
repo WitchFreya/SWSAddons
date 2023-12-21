@@ -1,5 +1,11 @@
 #include "script_component.hpp"
 
+class ItemInfo;
+
+#include "CfgEventHandlers.inc"
+#include "CfgWeapons.inc"
+#include "ACE_Medical_Treatment_Actions.inc"
+
 class CfgPatches
 {
   class ADDON
