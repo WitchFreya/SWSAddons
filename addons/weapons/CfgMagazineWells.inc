@@ -18,14 +18,4 @@ class CfgMagazineWells {
       "OPTRE_36Rnd_95x40_Mag_Tracer"
     };
   };
-
-  class MX_65x39 {
-    GVAR(Magazines)[] = {
-      "SWS_Magazine_60Rnd_65x39_Caseless",
-      "SWS_Magazine_60Rnd_65x39_Caseless_Tracers",
-      "SWS_Magazine_60Rnd_65x39_Caseless_Tracers_Yellow",
-      "SWS_Magazine_60Rnd_65x39_Caseless_Tracers_Blue",
-      "SWS_Magazine_60Rnd_65x39_Caseless_Tracers_Green"
-    };
-  };
 };

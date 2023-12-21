@@ -20,7 +20,7 @@ class CfgPatches
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {
-      "A3_Weapons_F_Enoch_Rifles_MSBS"
+      "A3_Weapons_F_Rifles_MX_Black"
       , "LM_OPCAN_WEP_RES"
     };
     VERSION_CONFIG;
