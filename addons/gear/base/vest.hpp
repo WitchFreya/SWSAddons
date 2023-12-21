@@ -303,87 +303,88 @@ All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With
                                  "CustomKit_Scorch"
 
 #define VEST_SELECTIONS_LEAD VEST_SELECTIONS_BASE, \
-    "A_Ghillie",                \
-    "A_KneesLeft",           \
-    "A_KneesRight",          \
-    "AP_AR",                    \
-    "AP_BR",                    \
-    "AP_Canteen",               \
-    "AP_Frag",                  \
-    "AP_GL",                    \
-    "AP_MGThigh",               \
-    "AP_Pack",                  \
-    "AP_Rounds",                \
-    "AP_SG",                    \
-    "AP_SMG",                   \
-    "AP_Sniper",                \
-    "AP_Thigh",                 \
-    "AP_Knife",                 \
-    "APO_AR",                   \
-    "APO_BR",                   \
-    "APO_SMG",                  \
-    "APO_Sniper",               \
-    "AS_LargeLeft",             \
-    "AS_LargeRight",            \
-    "AS_MediumLeft",            \
-    "AS_MediumRight",           \
-    "AS_ODSTCQBLeft",           \
-    "AS_ODSTCQBRight",          \
-    "AS_ODSTLeft",              \
-    "AS_ODSTRight",             \
-    "AS_ODSTSniperLeft",        \
-    "AS_SmallRight",            \
-    "CustomKit_Scorch"
+  "A_Ghillie",                \
+  "A_KneesLeft",           \
+  "A_KneesRight",          \
+  "AP_AR",                    \
+  "AP_BR",                    \
+  "AP_Canteen",               \
+  "AP_Frag",                  \
+  "AP_GL",                    \
+  "AP_MGThigh",               \
+  "AP_Pack",                  \
+  "AP_Rounds",                \
+  "AP_SG",                    \
+  "AP_SMG",                   \
+  "AP_Sniper",                \
+  "AP_Thigh",                 \
+  "AP_Knife",                 \
+  "APO_AR",                   \
+  "APO_BR",                   \
+  "APO_SMG",                  \
+  "APO_Sniper",               \
+  "AS_LargeLeft",             \
+  "AS_LargeRight",            \
+  "AS_MediumLeft",            \
+  "AS_MediumRight",           \
+  "AS_ODSTCQBLeft",           \
+  "AS_ODSTCQBRight",          \
+  "AS_ODSTLeft",              \
+  "AS_ODSTRight",             \
+  "AS_ODSTSniperLeft",        \
+  "AS_SmallRight",            \
+  "CustomKit_Scorch"
 
 #define C_VEST_GHILLIE(varName,varSelections)                 \
-    class SWS_Vest_##varName##_Ghillie: SWS_Vest_##varName {   \
-        class ItemInfo: ItemInfo {                          \
-            hiddenSelections[] = {varSelections};           \
-        };                                                  \
-    }
+  class SWS_Vest_##varName##_Ghillie: SWS_Vest_##varName {   \
+      class ItemInfo: ItemInfo {                          \
+          hiddenSelections[] = {varSelections};           \
+      };                                                  \
+  }
 
 #define C_VEST_BASE(varName,varTextures)                        \
-    class SWS_Vest_##varName : SWS_Vest_Base {                          \
-        ITEM_META(2);                                            \
-        displayName = QNAME(Vest (varName));                     \
-        hiddenSelectionsTextures[] = { varTextures };           \
-    };                                                          \
-    C_VEST_GHILLIE(varName,VEST_SELECTIONS_STANDARD)
+  class SWS_Vest_##varName : SWS_Vest_Base {                          \
+      ITEM_META(2);                                            \
+      displayName = QNAME(Vest (varName));                     \
+      hiddenSelectionsTextures[] = { varTextures };           \
+  };                                                          \
+  C_VEST_GHILLIE(varName,VEST_SELECTIONS_STANDARD)
 
 #define C_VEST_VARIANT(varName,varVariant,selections)               \
-    class SWS_Vest_##varName##_##varVariant : SWS_Vest_##varName \
-    {        \
-        displayName = QNAME(Vest (varName/varVariant));             \
-        class ItemInfo: ItemInfo {                                  \
-            hiddenSelections[] = {ARR_2(selections,"A_Ghillie")};   \
-        };                                                          \
-    };                                                              \
-    C_VEST_GHILLIE(DOUBLES(varName,varVariant),selections)
+  class SWS_Vest_##varName##_##varVariant : SWS_Vest_##varName \
+  {        \
+      displayName = QNAME(Vest (varName/varVariant));             \
+      class ItemInfo: ItemInfo {                                  \
+          hiddenSelections[] = {ARR_2(selections,"A_Ghillie")};   \
+      };                                                          \
+  };                                                              \
+  C_VEST_GHILLIE(DOUBLES(varName,varVariant),selections)
 
 #define C_VEST(varName)                                     \
-    C_VEST_BASE(varName,ARR_5(TEXTURE(vest,rifleman),TEXTURE(armor,rifleman),TEXTURE(legs,varName),"optre_unsc_units\army\data\ghillie_desert_co.paa",TEXTURE(odst_addons,varName))); \
-    C_VEST_VARIANT(varName,Demolitions,VEST_SELECTIONS_DEMOLITIONS);  \
-    C_VEST_VARIANT(varName,Sniper,VEST_SELECTIONS_SNIPER);            \
-    C_VEST_VARIANT(varName,Copilot,VEST_SELECTIONS_COPILOT);            \
-    C_VEST_VARIANT(varName,Light,VEST_SELECTIONS_LIGHT);              \
-    C_VEST_VARIANT(varName,Scout,VEST_SELECTIONS_SCOUT);              \
-    C_VEST_VARIANT(varName,Rifleman,VEST_SELECTIONS_RIFLEMAN);        \
-    C_VEST_VARIANT(varName,Marksman,VEST_SELECTIONS_MARKSMAN); \
-    C_VEST_VARIANT(varName,Lead,VEST_SELECTIONS_LEAD)
+  C_VEST_BASE(varName,ARR_5(TEXTURE(vest,rifleman),TEXTURE(armor,rifleman),TEXTURE(legs,varName),"optre_unsc_units\army\data\ghillie_desert_co.paa",TEXTURE(odst_addons,varName))); \
+  C_VEST_VARIANT(varName,Demolitions,VEST_SELECTIONS_DEMOLITIONS);  \
+  C_VEST_VARIANT(varName,Sniper,VEST_SELECTIONS_SNIPER);            \
+  C_VEST_VARIANT(varName,Copilot,VEST_SELECTIONS_COPILOT);            \
+  C_VEST_VARIANT(varName,Light,VEST_SELECTIONS_LIGHT);              \
+  C_VEST_VARIANT(varName,Scout,VEST_SELECTIONS_SCOUT);              \
+  C_VEST_VARIANT(varName,Rifleman,VEST_SELECTIONS_RIFLEMAN);        \
+  C_VEST_VARIANT(varName,Marksman,VEST_SELECTIONS_MARKSMAN); \
+  C_VEST_VARIANT(varName,Lead,VEST_SELECTIONS_LEAD)
 
 
 class SWS_Vest_Base : SWS_Vest_OPTRE_UNSC_M52D_Armor
 {
-    /** Armor Level is meaningless anyway... */
-    descriptionShort = "Armor Level: ODST";
+  /** Armor Level is meaningless anyway... */
+  descriptionShort = "Armor Level: ODST";
 
-    hiddenSelectionsMaterials[] = {
-        MATERIAL(Vest),
-        MATERIAL(Armor),
-        MATERIAL(Legs),
-        MATERIAL(ODST)};
+  hiddenSelectionsMaterials[] = {
+    MATERIAL(Vest),
+    MATERIAL(Armor),
+    MATERIAL(Legs),
+    MATERIAL(ODST)};
 
-    class ItemInfo : ItemInfo {
-        hiddenSelections[] = {VEST_SELECTIONS_STANDARD, "A_Ghillie"};
-    };
+  class ItemInfo : ItemInfo {
+    containerClass = "Supply200";
+    hiddenSelections[] = {VEST_SELECTIONS_STANDARD, "A_Ghillie"};
+  };
 };
