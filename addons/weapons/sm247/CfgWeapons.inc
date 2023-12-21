@@ -27,17 +27,11 @@ class CfgWeapons
       "\OPTRE_Weapons\MG\data\M247_barrel_sights_CO.paa"
     };
     magazineWell[] = {
+      "OPTRE_Magwell_MA5A",
       "OPTRE_Magwell_MA5B",
-      "OPTRE_Magwell_MA5A"
+      "OPTRE_Magwell_M247"
     };
-    magazines[] = {
-      "SWS_Magazine_100Rnd_762x51_Mag",
-      "SWS_Magazine_100Rnd_762x51_Mag_Tracer",
-      "SWS_Magazine_200Rnd_762x51_Mag",
-      "SWS_Magazine_200Rnd_762x51_Mag_Tracer",
-      "SWS_Magazine_400Rnd_762x51_Mag",
-      "SWS_Magazine_400Rnd_762x51_Mag_Tracer"
-    };
+    magazines[] = {};
 
     class Single: Single {
       dispersion = 0.00064;
