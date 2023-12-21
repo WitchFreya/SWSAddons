@@ -1,10 +1,10 @@
 #include "script_component.hpp"
 
-#include "CfgEventHandlers.hpp"
-#include "CfgAmmo.hpp"
-#include "CfgMagazines.hpp"
+#include "CfgEventHandlers.inc"
+#include "CfgAmmo.inc"
+#include "CfgMagazines.inc"
 #include "CfgWeapons.inc"
-#include "CfgMagazineWells.hpp"
+#include "CfgMagazineWells.inc"
 #include "CfgWeaponCursors.inc"
 
 class CfgPatches
