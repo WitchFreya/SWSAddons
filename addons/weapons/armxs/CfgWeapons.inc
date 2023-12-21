@@ -20,6 +20,11 @@ class CfgWeapons
     HUD_SETUP;
 
     class WeaponSlotsInfo : WeaponSlotsInfo {
+      class CowsSlot : CowsSlot
+      {
+        delete compatibleItems;
+        class CompatibleItems : SWS_Scopes_65mm {};
+      };
       class PointerSlot : PointerSlot {
         compatibleItems[] = {
           "acc_flashlight",
@@ -40,6 +45,11 @@ class CfgWeapons
     HUD_SETUP;
 
     class WeaponSlotsInfo : WeaponSlotsInfo {
+      class CowsSlot : CowsSlot
+      {
+        delete compatibleItems;
+        class CompatibleItems : SWS_Scopes_65mm {};
+      };
       class PointerSlot : PointerSlot {
         compatibleItems[] = {
           "acc_flashlight",

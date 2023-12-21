@@ -4,6 +4,8 @@ class Single;
 class FullAuto;
 class WeaponSlotsInfo;
 class PointerSlot;
+class CowsSlot;
+class SWS_Scopes_65mm;
 
 #include "CfgWeapons.inc"
 #include "CfgMagazines.inc"

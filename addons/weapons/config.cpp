@@ -6,6 +6,8 @@
 #include "CfgMagazineWells.inc"
 #include "CfgWeaponCursors.inc"
 
+#include "SWS_Scopes_65mm.inc"
+
 class CfgPatches
 {
   class ADDON
