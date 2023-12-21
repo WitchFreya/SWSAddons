@@ -8,6 +8,7 @@ class PointerSlot;
 #include "CfgAmmo.inc"
 #include "CfgMagazines.inc"
 #include "CfgWeapons.inc"
+#include "CfgMagazineWells.inc"
 
 class CfgPatches
 {
