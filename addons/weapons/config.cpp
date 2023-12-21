@@ -6,7 +6,7 @@
 #include "CfgMagazineWells.inc"
 #include "CfgWeaponCursors.inc"
 
-#include "SWS_Scopes_65mm.inc"
+#include "SWS_Scopes.inc"
 
 class CfgPatches
 {
