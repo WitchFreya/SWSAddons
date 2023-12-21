@@ -13,9 +13,9 @@ class CfgPatches
   {
     name = QUOTE(COMPONENT);
     units[] = { };
-    weapons[] = { CLASSES_AMMO };
+    weapons[] = { };
     magazines[] = { CLASSES_MAGAZINES };
-    ammo[] = { CLASSES_AMMO };
+    ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {
       "A3_Weapons_F",
