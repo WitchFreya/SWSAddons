@@ -46,6 +46,12 @@ class CfgWeapons
     {
       mass = 45;
 
+      class CowsSlot : CowsSlot
+      {
+        delete compatibleItems;
+        class CompatibleItems : SWS_Scopes_65mm {};
+      };
+
       class PointerSlot : PointerSlot
       {
         compatibleItems[] = {
@@ -86,6 +92,12 @@ class CfgWeapons
 
     class WeaponSlotsInfo : WeaponSlotsInfo
     {
+      class CowsSlot : CowsSlot
+      {
+        delete compatibleItems;
+        class CompatibleItems : SWS_Scopes_65mm {};
+      };
+
       class PointerSlot : PointerSlot
       {
         compatibleItems[] = {
@@ -125,6 +137,12 @@ class CfgWeapons
     };
 
     class WeaponSlotsInfo : WeaponSlotsInfo {
+      class CowsSlot : CowsSlot
+      {
+        delete compatibleItems;
+        class CompatibleItems : SWS_Scopes_65mm {};
+      };
+
       class PointerSlot : PointerSlot {
         compatibleItems[] = {
           "acc_flashlight"
