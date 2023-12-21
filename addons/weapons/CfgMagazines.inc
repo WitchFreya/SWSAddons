@@ -13,13 +13,7 @@
   "SWS_Magazine_60Rnd_65x39_Caseless_tracers", \
   "SWS_Magazine_60Rnd_65x39_Caseless_tracers_yellow", \
   "SWS_Magazine_60Rnd_65x39_Caseless_tracers_blue", \
-  "SWS_Magazine_60Rnd_65x39_Caseless_tracers_green", \
-  "SWS_Magazine_3Rnd_FlareSmoke_Blue", \
-  "SWS_Magazine_3Rnd_FlareSmoke_Green", \
-  "SWS_Magazine_3Rnd_FlareSmoke_Orange", \
-  "SWS_Magazine_3Rnd_FlareSmoke_Purple", \
-  "SWS_Magazine_3Rnd_FlareSmoke_Red", \
-  "SWS_Magazine_3Rnd_FlareSmoke_Yellow"
+  "SWS_Magazine_60Rnd_65x39_Caseless_tracers_green"
 
 class CfgMagazines {
 
@@ -28,19 +22,6 @@ class CfgMagazines {
   class 100Rnd_65x39_caseless_black_mag;
 
   #include "CfgMagazines\65x39_Caseless.inc"
-
-  //= Grenades & Shells
-  class ACE_CTS9;
-  class OPTRE_M9_Frag;
-  class M319_HEDP_Grenade_Shell;
-  class OPTRE_signalSmokeB;
-  class OPTRE_signalSmokeG;
-  class OPTRE_signalSmokeO;
-  class OPTRE_signalSmokeP;
-  class OPTRE_signalSmokeR;
-  class OPTRE_signalSmokeY;
-
-  #include "CfgMagazines\UGLSmokeFlares.inc"
 
   // Shotguns
   class OPTRE_6Rnd_8Gauge_Pellets;
