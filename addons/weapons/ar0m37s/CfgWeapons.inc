@@ -90,6 +90,11 @@ class CfgWeapons
       dispersion = 0.0007;
     };
 
+    class UGL : UGL
+    {
+      magazineWell[] = {"UGL_40x36","3UGL_40x36","CBA_40mm_3GL","CBA_40mm_M203","CBA_40mm_EGLM"};
+    };
+
     class WeaponSlotsInfo : WeaponSlotsInfo
     {
       class CowsSlot : CowsSlot
