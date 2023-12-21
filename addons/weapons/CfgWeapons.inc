@@ -13,13 +13,10 @@ class FullAuto;
 
 class CfgWeapons {
   //== Rifles
-  class OPTRE_MA5B;
-  class OPTRE_MA5BGL;
   class InventoryOpticsItem_Base_F;
   class PointerSlot;
   class OPTRE_BR55;
 
-  #include "CfgWeapons\Guns\MA5BSx.inc"
   #include "CfgWeapons\Guns\SBR55.inc"
 
   //== Optics
