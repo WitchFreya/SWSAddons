@@ -2,7 +2,6 @@
 
 #include "CfgEventHandlers.inc"
 #include "CfgAmmo.inc"
-#include "CfgMagazines.inc"
 #include "CfgWeapons.inc"
 #include "CfgMagazineWells.inc"
 #include "CfgWeaponCursors.inc"
@@ -14,7 +13,7 @@ class CfgPatches
     name = QUOTE(COMPONENT);
     units[] = { };
     weapons[] = { };
-    magazines[] = { CLASSES_MAGAZINES };
+    magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {
