@@ -6,7 +6,7 @@ class WeaponSlotsInfo;
 class PointerSlot;
 class CowsSlot;
 class SWS_Scopes_762mm;
-class EGLM;
+class OPTRE_M301UGL;
 
 #include "CfgWeapons.inc"
 
