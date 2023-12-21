@@ -7,6 +7,7 @@ class Reflectors;
 class Right;
 
 #include "CfgVehicles.inc"
+#include "CfgMagazines.inc"
 #include "CfgMagazineWells.inc"
 
 class CfgPatches
