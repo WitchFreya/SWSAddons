@@ -1,11 +1,5 @@
 #define CLASSES_WEAPON \
-    "SWS_Weapon_AR0M37" \
-    , "SWS_Weapon_AR0M37_GL" \
-    , "SWS_Weapon_AR0M37_SHT" \
-    , "SWS_Weapon_AR0M37S_Hound" \
-    , "SWS_Weapon_AR0M37S_Hound_GL" \
-    , "SWS_Weapon_AR0M37S_Hound_SHT" \
-    , "SWS_Weapon_MA5BSx" \
+    "SWS_Weapon_MA5BSx" \
     , "SWS_Weapon_MA5BSx_GL" \
     , "SWS_Optic_SmartLink" \
     , "SWS_Weapon_SBR55" \
@@ -21,9 +15,6 @@ class FullAuto;
 
 class CfgWeapons {
   //== Rifles
-  class LM_OPCAN_AR0M37;
-  class LM_OPCAN_AR0M37_GL;
-  class LM_OPCAN_AR0M37_SHT;
   class OPTRE_MA5B;
   class OPTRE_MA5BGL;
   class InventoryOpticsItem_Base_F;
@@ -32,7 +23,6 @@ class CfgWeapons {
   class LM_OPCAN_ARMX;
   class LM_OPCAN_ARMX_GL;
 
-  #include "CfgWeapons\Guns\AR0M37S.inc"
   #include "CfgWeapons\Guns\MA5BSx.inc"
   #include "CfgWeapons\Guns\SBR55.inc"
   #include "CfgWeapons\Guns\ARMXS.inc"
