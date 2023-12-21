@@ -1,9 +1,4 @@
 #define CLASSES_MAGAZINES \
-  "SWS_Magazine_60Rnd_65x39_Caseless_msbs",\
-  "SWS_Magazine_60Rnd_65x39_Caseless_msbs_tracers", \
-  "SWS_Magazine_60Rnd_65x39_Caseless_msbs_tracers_blue", \
-  "SWS_Magazine_60Rnd_65x39_Caseless_msbs_tracers_green", \
-  "SWS_Magazine_60Rnd_65x39_Caseless_msbs_tracers_yellow", \
   "SWS_Magazine_60Rnd_65x39_Caseless", \
   "SWS_Magazine_60Rnd_65x39_Caseless_tracers", \
   "SWS_Magazine_60Rnd_65x39_Caseless_tracers_yellow", \

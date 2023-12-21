@@ -19,16 +19,6 @@ class CfgMagazineWells {
     };
   };
 
-  class MX_65x39_MSBS {
-    GVAR(Magazines)[] = {
-      "SWS_Magazine_60Rnd_65x39_Caseless_msbs",
-      "SWS_Magazine_60Rnd_65x39_Caseless_msbs_Tracers",
-      "SWS_Magazine_60Rnd_65x39_Caseless_msbs_Tracers_Blue",
-      "SWS_Magazine_60Rnd_65x39_Caseless_msbs_Tracers_Yellow",
-      "SWS_Magazine_60Rnd_65x39_Caseless_msbs_Tracers_Green"
-    };
-  };
-
   class MX_65x39 {
     GVAR(Magazines)[] = {
       "SWS_Magazine_60Rnd_65x39_Caseless",
