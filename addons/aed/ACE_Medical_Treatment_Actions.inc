@@ -14,6 +14,6 @@ class ACE_Medical_Treatment_Actions
     callbackFailure = QFUNC(onFailure);
     medicRequired = QGVAR(trainingLevelRequired);
     treatmentTime = QGVAR(treatmentTime);
-    sounds[] = {QPATHTOF(data\defib.ogg), 5, 1, 15};
+    sounds[] = {{QPATHTOF(data\defib.ogg), 5, 1, 15}};
   };
 };
