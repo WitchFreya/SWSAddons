@@ -212,3 +212,6 @@ workshop = [
 
 [files]
 exclude = ["*.inc"]
+
+[asc]
+exclude = [".inc.sqf"]
