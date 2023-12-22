@@ -4,3 +4,4 @@ PREP(canUse);
 PREP(onFailure);
 PREP(onStart);
 PREP(onSuccess);
+PREP(punishHubris);
