@@ -22,4 +22,13 @@ params [
   ["_patient", objNull, [objNull]]
 ];
 
-_this call ace_medical_treatment_fnc_cprSuccess;
+TRACE_2("AED success",_medic,_patient);
+
+_patient setVariable ["ace_medical_CPR_provider", objNull, true];
+
+if !(alive _patient || {_patient getVariable ["ace_medical_inCardiacArrest", false]}) exitWith {
+  TRACE_1("Not alive or in cardiac arrest",_patient);
+};
+
+TRACE_1("Sending AED local event",_patient);
+[QGVAR(aedLocal), [_medic, _patient], _patient] call CBA_fnc_targetEvent;

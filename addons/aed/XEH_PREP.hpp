@@ -1,5 +1,6 @@
-PREP(canUse);
-PREP(onStart);
+PREP(aedLocal);
 PREP(canProgress);
-PREP(onSuccess);
+PREP(canUse);
 PREP(onFailure);
+PREP(onStart);
+PREP(onSuccess);
