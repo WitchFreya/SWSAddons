@@ -1,1 +1,2 @@
 PREPMAIN(reduce);
+PREPMAIN(pipe);
