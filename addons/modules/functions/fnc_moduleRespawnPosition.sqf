@@ -70,7 +70,7 @@ if (_side isEqualTo sideEmpty) exitWith {
 private _showMarkerTo /* string */ = _logic getVariable "Marker";
 private _showNotification /* boolean */ = _logic getVariable "ShowNotification";
 private _pos = getPosATL _logic;
-private _respawnObjs /* Map<[side,number],object> */ = createHashMap;
+private _respawnObjs /* Map<[side,number],instanceof AllVehicles> */ = createHashMap;
 
 //--- Start creating respawns
 private _isInfantryRespawn = _markerType == "respawn_inf";
