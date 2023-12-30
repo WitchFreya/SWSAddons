@@ -4,7 +4,7 @@
 #define MISSION_DATE 31 AUGUST, 2524
 #define MISSION_DESCRIPTION Reinforce some UNSC Marines.
 #define MIN_PLAYERS 1
-#define MAX_PLAYERS 999
+#define MAX_PLAYERS 999 // IMPORTANT: Update this with the number of playable units you have in your mission!
 
 //== Do not touch after this line unless you know what you're doing.
 
@@ -17,5 +17,5 @@
 #define QLOCATION QUOTE(MISSION_LOCATION)
 #define QDESC QUOTE(MISSION_DESCRIPTION)
 #define DEBUG_STEAM_IDS \
-    QUOTE(STEAM_ID_HOLLY),\
-    QUOTE(STEAM_ID_ASH)
+  QUOTE(STEAM_ID_HOLLY),\
+  QUOTE(STEAM_ID_ASH)

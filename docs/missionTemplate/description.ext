@@ -25,18 +25,18 @@ loadScreen = SWS_ADDONS_PATH(main\data\icon_sws.paa);
 
 class CfgWorlds
 {
-    class Any
-    {
-        author = QAUTHORS;
-        description = QLOCATION;
-    };
+  class Any
+  {
+    author = QAUTHORS;
+    description = QLOCATION;
+  };
 };
 
 class Header
 {
-    gameType = Zeus;
-    minPlayers = MIN_PLAYERS;
-    maxPlayers = MAX_PLAYERS;
+  gameType = Zeus;
+  minPlayers = MIN_PLAYERS;
+  maxPlayers = MAX_PLAYERS;
 };
 
 respawnOnStart 	= 1;

@@ -3,7 +3,7 @@
 params ["_player", "_didJIP"];
 
 private _fn_showTitle = {
-    QUOTE(MISSION_DATE) splitString "," params ["_dayMonth", "_year"];
+  QUOTE(MISSION_DATE) splitString "," params ["_dayMonth", "_year"];
 	[
 		QNAME,
 		QLOCATION, _dayMonth, _year
