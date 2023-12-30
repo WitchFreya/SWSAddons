@@ -119,7 +119,7 @@ if (isNil {GVAR(ModuleRespawnPosition_loop)}) then {
 
 //--- If we don't need notifications, we're done.
 if !(_showNotification) exitWith {
-  TRACE_2("No notifications needed, exiting",_list);
+  TRACE_1("No notifications needed, exiting",_list);
   true;
 };
 
