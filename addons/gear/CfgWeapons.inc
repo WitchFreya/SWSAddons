@@ -1,59 +1,61 @@
 #define QHELMET_VARIANTS_POLARIZATION_FN(var0) QUOTE(DOUBLES(SWS_Helmet,var0)), QUOTE(TRIPLES(SWS_Helmet,var0,dp))
-#define QHELMET_VARIANTS_GHILLIE_FN(var0)  \
-    QHELMET_VARIANTS_POLARIZATION_FN(var0), \
-    QHELMET_VARIANTS_POLARIZATION_FN(DOUBLES(var0,Ghillie))
-#define QHELMET_VARIANTS_COLLAR_FN(var0) \
-    QHELMET_VARIANTS_GHILLIE_FN(var0), \
-    QHELMET_VARIANTS_GHILLIE_FN(DOUBLES(var0,Collar))
+#define QHELMET_VARIANTS_GHILLIE_FN(var0) \
+  QHELMET_VARIANTS_POLARIZATION_FN(var0), \
+  QHELMET_VARIANTS_POLARIZATION_FN(DOUBLES(var0,Ghillie))
+#define QHELMET_VARIANTS_COLLAR_FN(var0)  \
+  QHELMET_VARIANTS_GHILLIE_FN(var0),      \
+  QHELMET_VARIANTS_GHILLIE_FN(DOUBLES(var0,Collar))
 
 #define QHELMETS_FN(var0) QHELMET_VARIANTS_COLLAR_FN(var0)
 
 #define QVEST_VARIANTS_GHILLIE_FN(var0) QUOTE(SWS_Vest_##var0), QUOTE(SWS_Vest_##var0##_Ghillie)
-#define QVEST_VARIANTS_CONFIGURATION_FN(var0)               \
-    QVEST_VARIANTS_GHILLIE_FN(var0),                        \
-    QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Demolitions)),   \
-    QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Sniper)),        \
-    QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Copilot)),         \
-    QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Light)),         \
-    QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Scout)),         \
-    QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Rifleman)),      \
-    QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Marksman)),      \
-    QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Lead))
+#define QVEST_VARIANTS_CONFIGURATION_FN(var0)             \
+  QVEST_VARIANTS_GHILLIE_FN(var0),                        \
+  QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Demolitions)),   \
+  QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Sniper)),        \
+  QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Copilot)),       \
+  QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Light)),         \
+  QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Scout)),         \
+  QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Rifleman)),      \
+  QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Marksman)),      \
+  QVEST_VARIANTS_GHILLIE_FN(DOUBLES(var0,Lead))
 
 #define QVESTS_FN(var0) QVEST_VARIANTS_CONFIGURATION_FN(var0)
 
-#define QWEAPONS_FN(var0)   \
-    QHELMETS_FN(var0),      \
-    QVESTS_FN(var0)
+#define QWEAPONS_FN(var0) \
+  QHELMETS_FN(var0),      \
+  QVESTS_FN(var0)
 
-#define CLASSES_WEAPONS \
-    QWEAPONS_FN(Rifleman), \
-    QWEAPONS_FN(Ashes), \
-    QWEAPONS_FN(Butler), \
-    QWEAPONS_FN(Demon), \
-    QWEAPONS_FN(Egg), \
-    QWEAPONS_FN(Maid), \
-    QWEAPONS_FN(Polaris), \
-    QWEAPONS_FN(Rabbit), \
-    QWEAPONS_FN(Sawbones), \
-    QWEAPONS_FN(Tiger), \
-    QWEAPONS_FN(Hound), \
-    QWEAPONS_FN(Hurricane), \
-    QWEAPONS_FN(Snare), \
-    QWEAPONS_FN(Roman), \
-    QWEAPONS_FN(Blue), \
-    QWEAPONS_FN(Vertigo), \
-    QWEAPONS_FN(Gold), \
-    QWEAPONS_FN(Green), \
-    QWEAPONS_FN(Orange), \
-    QWEAPONS_FN(Purple), \
-    QWEAPONS_FN(Red), \
-    QWEAPONS_FN(CLS), \
-    "SWS_Helmet_Maid_Recon", \
-    "SWS_Helmet_Maid_Recon_dp"
+#define CLASSES_WEAPONS     \
+  QWEAPONS_FN(Ashes),       \
+  QWEAPONS_FN(Blue),        \
+  QWEAPONS_FN(Butler),      \
+  QWEAPONS_FN(Chrome),      \
+  QWEAPONS_FN(CLS),         \
+  QWEAPONS_FN(Demon),       \
+  QWEAPONS_FN(Egg),         \
+  QWEAPONS_FN(Gold),        \
+  QWEAPONS_FN(Green),       \
+  QWEAPONS_FN(Hound),       \
+  QWEAPONS_FN(Hurricane),   \
+  QWEAPONS_FN(Maid),        \
+  QWEAPONS_FN(Orange),      \
+  QWEAPONS_FN(Polaris),     \
+  QWEAPONS_FN(Purple),      \
+  QWEAPONS_FN(Rabbit),      \
+  QWEAPONS_FN(Red),         \
+  QWEAPONS_FN(Rifleman),    \
+  QWEAPONS_FN(Roman),       \
+  QWEAPONS_FN(Sawbones),    \
+  QWEAPONS_FN(Snare),       \
+  QWEAPONS_FN(Sonic),       \
+  QWEAPONS_FN(Tiger),       \
+  QWEAPONS_FN(Vertigo),     \
+  "SWS_Helmet_Maid_Recon",  \
+  "SWS_Helmet_Maid_Recon_dp"
 
-#define C_GEAR(varName,varVisorColor)   \
-    C_HELMET(varName,varVisorColor);    \
+#define C_GEAR(varName,varVisorColor) \
+    C_HELMET(varName,varVisorColor);  \
     C_VEST(varName)
 
 class CfgWeapons
@@ -88,6 +90,8 @@ class CfgWeapons
     C_GEAR(Roman,grey);
     C_GEAR(Sawbones,sawbones);
     C_GEAR(Snare,snare);
+    C_GEAR(Sonic,defiant);
+    C_GEAR(Chrome,defiant);
     C_GEAR(Tiger,gold);
     C_GEAR(Vertigo,gold);
 
