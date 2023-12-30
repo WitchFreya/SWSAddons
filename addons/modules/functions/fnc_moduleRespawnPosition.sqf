@@ -140,15 +140,18 @@ private _fnc_respawnNotificationName /* object -> string */ = {
     {
       if isNull _this exitWith {
         private _base = format [localize "str_a3_bis_fnc_respawnmenuposition_grid", mapGridPosition _pos];
+        TRACE_2("Converted to string,pos",_base,_pos);
         [_base, _pos];
       };
 
       private _base = (configOf _this >> "displayName") call BIS_fnc_getCfgData;
+      TRACE_2("Non-null object",_base,getPosATL _this);
       [_base, getPosATL _this];
     },
     {
       params ["_baseName", "_position"];
       private _description = _position call BIS_fnc_locationDescription;
+      TRACE_2("Assemble name",_baseName,_description);
       format ["%1 - %2", _baseName, _description];
     }
   ] call FUNCMAIN(pipe);

@@ -15,6 +15,7 @@ class EmptyDetector;
 class CfgVehicles
 {
   class ModuleRespawnPosition_F;
+  //--- 3DEN respawn module.
   class SWS_ModuleRespawnPosition : ModuleRespawnPosition_F
   {
     category = "SWS_Modules";
