@@ -71,5 +71,6 @@
   ASSERT_FALSE(varAssertion,varMessage);                    \
   if (varAssertion) exitWith {varValue}
 
+//--- Subcomponent Stuff
 #define SUBGVAR(var0) GVAR(DOUBLES(SUBCOMPONENT,var0))
 #define QSUBGVAR(var0) QUOTE(SUBGVAR(var0))
