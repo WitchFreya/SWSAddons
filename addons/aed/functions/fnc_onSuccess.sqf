@@ -26,10 +26,6 @@ TRACE_2("AED success",_medic,_patient);
 
 _patient setVariable ["ace_medical_CPR_provider", objNull, true];
 
-private _fnc_showPulse = {
-  ["ace_medical_checkPulseLocal", [_medic, _patient, "HEAD"], _patient] call CBA_fnc_targetEvent;
-};
-
 // patient is not in a vehicle
 if (vehicle _patient isEqualTo _patient) then {
   private _bystanders = nearestObjects [_medic, ["CAManBase"], 1.7] - [_medic];
@@ -40,9 +36,9 @@ if (vehicle _patient isEqualTo _patient) then {
 
 if !(alive _patient || {_patient getVariable ["ace_medical_inCardiacArrest", false]}) exitWith {
   TRACE_1("Not alive or in cardiac arrest",_patient);
-  call _fnc_showPulse;
+  [_medic, _patient, "HEAD"] call ace_medical_treatment_fnc_checkPulse;
 };
 
 TRACE_1("Sending AED local event",_patient);
 [QGVAR(aedLocal), [_medic, _patient], _patient] call CBA_fnc_targetEvent;
-call _fnc_showPulse;
+[_medic, _patient, "HEAD"] call ace_medical_treatment_fnc_checkPulse;
