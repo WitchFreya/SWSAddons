@@ -11,7 +11,8 @@ class SWS_Weapon_AR0M37 : LM_OPCAN_AR0M37
 
 class SWS_Weapon_AR0M37_GL : LM_OPCAN_AR0M37_GL
 {
-  class XtdGearInfo {
+  class XtdGearInfo
+  {
     model = "SWS_Weapon_Autorifles";
     underbarrel = "GL";
     body = "0M37S";
@@ -21,7 +22,8 @@ class SWS_Weapon_AR0M37_GL : LM_OPCAN_AR0M37_GL
 
 class SWS_Weapon_AR0M37_SHT : LM_OPCAN_AR0M37_SHT
 {
-  class XtdGearInfo {
+  class XtdGearInfo
+  {
     model = "SWS_Weapon_Autorifles";
     underbarrel = "SHT";
     body = "0M37S";

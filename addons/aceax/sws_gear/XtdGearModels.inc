@@ -1,4 +1,5 @@
-class XtdGearModels {
+class XtdGearModels
+{
   class SWS_BaseGearModel;
   class YesNoOption;
 

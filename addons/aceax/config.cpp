@@ -4,15 +4,15 @@
 
 class CfgPatches
 {
-    class ADDON
-    {
-        name = QUOTE(COMPONENT);
-        units[] = {  };
-        weapons[] = {  };
-        requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"aceax_main"};
-        skipWhenMissingDependencies = 1;
-        author = QUOTE(AUTHOR);
-        VERSION_CONFIG;
-    };
+  class ADDON
+  {
+    name = QUOTE(COMPONENT);
+    author = QUOTE(AUTHOR);
+    units[] = {  };
+    weapons[] = {  };
+    requiredVersion = REQUIRED_VERSION;
+    requiredAddons[] = {"aceax_main"};
+    skipWhenMissingDependencies = 1;
+    VERSION_CONFIG;
+  };
 };

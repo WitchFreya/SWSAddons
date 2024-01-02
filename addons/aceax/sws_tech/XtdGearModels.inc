@@ -1,6 +1,7 @@
-class XtdGearModels {
-    class SWS_BaseGearModel;
-    class YesNoOption;
+class XtdGearModels
+{
+  class SWS_BaseGearModel;
+  class YesNoOption;
 
-    #include "XtdGearModels\CfgWeapons.inc"
+  #include "XtdGearModels\CfgWeapons.inc"
 };

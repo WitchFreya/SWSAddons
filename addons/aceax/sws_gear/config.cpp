@@ -5,17 +5,16 @@
 
 class CfgPatches
 {
-    class SUBADDON
-    {
-        name = COMPONENT_NAME;
-        units[] = { };
-        weapons[] = { };
-        magazines[] = { };
-        ammo[] = { };
-        requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { QUOTE(SUBCOMPONENT) };
-        VERSION_CONFIG;
-
-        addonRootClass = QUOTE(ADDON);
-    };
+  class SUBADDON
+  {
+    addonRootClass = QUOTE(ADDON);
+    name = COMPONENT_NAME;
+    units[] = { };
+    weapons[] = { };
+    magazines[] = { };
+    ammo[] = { };
+    requiredVersion = REQUIRED_VERSION;
+    requiredAddons[] = { QUOTE(SUBCOMPONENT) };
+    VERSION_CONFIG;
+  };
 };
