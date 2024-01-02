@@ -43,6 +43,6 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          files: sws-latest.zip
+          files: sws-${{ github.ref_name }}.zip
           draft: true
 
