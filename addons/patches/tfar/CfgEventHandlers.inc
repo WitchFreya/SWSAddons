@@ -1,4 +1,3 @@
-
 class Extended_PostInit_EventHandlers
 {
   class SUBADDON
