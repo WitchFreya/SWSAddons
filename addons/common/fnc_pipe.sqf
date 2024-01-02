@@ -1,5 +1,3 @@
-#include "script_component.hpp"
-
 /*
  * Author: Maid
  * Given x value and N functions, do f_2(f_1(f_0(x))) etc until you have reached f_N(...).
