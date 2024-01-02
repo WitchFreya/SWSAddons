@@ -3,7 +3,7 @@ params ["_title", "_subtitleLeft", "_subtitleMiddle", "_subtitleRight"];
 private _showText = {
 	params ["_playerName", "_roleName", "_opsPlayed"];
 
-    private _rootFormat = "<t align='left' shadow='2' size='0.7' font='EtelkaMonospacePro'>%1</t>";
+  private _rootFormat = "<t align='left' shadow='2' size='0.7' font='EtelkaMonospacePro'>%1</t>";
 	private _titleFormat = "<t>%1</t>";
 	private _valueFormat = "<t font='LCD14' color='#097969' size='1.0' align='right'>%1</t><br/>";
 	private _smallTitleFormat = "<t size='0.6'>%1</t>";
@@ -17,15 +17,14 @@ private _showText = {
 			["Operations as Role", _smallTitleFormat, 4],
 			[format ["%1", _opsPlayed], _numberFormat, 35]
 		],
-        0, safeZoneY + safeZoneH / 2,
-        _rootFormat
+    0, safeZoneY + safeZoneH / 2,
+    _rootFormat
 	] call BIS_fnc_typeText;
 };
 
 
 params ["_zeus"];
-private _role = player getVariable "erp_role";
-private _uid = getPlayerUID player;
-private _opsPlayed = missionNamespace getVariable "erp_history" get _uid getOrDefault [_role, 0];
+private _role = [player] call erp_roles_fnc_unitRole;
+private _opCountAsRole = [player, _role] call erp_history_fnc_opCount;
 
-[name player, _role, _opsPlayed] spawn _showText;
+[name player, _role, _opCountAsRole] spawn _showText;

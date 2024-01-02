@@ -14,6 +14,9 @@ class CfgVehicles
     class PlaneWreck;
     class Plane_Base_F;
     class OPTRE_M12_CIV;
+    // class OPTRE_M808B2A1;
+    // dev_flood_combat_o
+    // dev_flood_sangheili_o
 
     class Land_OPTRE_barrel_hydrogen : Items_base_F { CBA_PATCH; };
     class Land_OPTRE_fusion_coil : Items_base_F { CBA_PATCH; };
@@ -26,3 +29,4 @@ class CfgVehicles
     class unscdrone_wreck_F : PlaneWreck { CBA_PATCH; };
     class OPTRE_Objects_Wreck_Falcon : PlaneWreck { CBA_PATCH; };
 };
+
