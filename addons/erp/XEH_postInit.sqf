@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-["erp_saved", {	_this call FUNC(showSave); }] call CBA_fnc_addEventHandler;
+["erp_saved", FUNC(showSave)] call CBA_fnc_addEventHandler;
 
 if (is3DEN) exitWith {};
 
