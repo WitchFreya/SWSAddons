@@ -41,7 +41,7 @@ jobs:
         with:
           name: sws-${{ github.sha }}
       - name: Rename Release
-        run: mv erp-latest.zip erp-${{ github.ref_name }}.zip
+        run: mv sws-latest.zip sws-${{ github.ref_name }}.zip
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
