@@ -29,7 +29,6 @@ TRACE_2("aedLocal",_medic,_patient);
 private _bloodVolume = _patient getVariable ["ace_medical_bloodVolume", 6.0];
 private _successChance = linearConversion [BLOOD_VOLUME_CLASS_4_HEMORRHAGE, BLOOD_VOLUME_CLASS_2_HEMORRHAGE, _bloodVolume, GVAR(chanceMin), GVAR(chanceMax), true];
 
-// TODO: Report heartrate to _medic.
 if (random 1 >= _successChance) exitWith {
   TRACE_2("AED random fail",_bloodVolume,_successChance);
 };
