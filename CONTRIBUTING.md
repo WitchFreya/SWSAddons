@@ -6,6 +6,8 @@ This file will contain some general guidelines for contributing as well as setup
 
 You'll need HEMTT in your path. See [the HEMTT Book - Installation](https://brettmayson.github.io/HEMTT/installation.html) for how to do this.
 
+Once it's installed, you can copy the [`tasks.template.json`](.vscode/tasks.template.json) file and rename it to `.vscode/tasks.json` to have some helpful tasks that you can run in the terminal. 
+
 ## SQF
 
 1. Keep variables immutable. 
