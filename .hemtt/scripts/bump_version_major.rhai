@@ -24,3 +24,5 @@ HEMTT_RFS.join("addons")
   .join("script_version.hpp")
   .create_file()
   .write(script_version);
+
+print(`New version: ${HEMTT.project().version().to_string_short()}`);

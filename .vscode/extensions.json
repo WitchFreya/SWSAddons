@@ -1,3 +1,7 @@
 {
-    "recommendations": ["brettmayson.hemtt", "bux578.vscode-openlastrpt"]
+  "recommendations": [
+    "brettmayson.hemtt",
+    "bux578.vscode-openlastrpt",
+    "rhaiscript.vscode-rhai"
+  ]
 }
