@@ -18,7 +18,7 @@ Thumbs.db
 /store/wiki/*
 .vscode/*
 !.vscode/extensions.json
-!.vscode/tasks.template.json
+!.vscode/tasks.template*.json
 changelog.txt
 
 *.7z
