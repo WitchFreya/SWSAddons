@@ -34,3 +34,5 @@ ArmaScriptCompiler.exe
 *.sqfc
 .hemttout
 scratch
+unpacked-mods/*
+!unpacked-mods/.gitkeep
