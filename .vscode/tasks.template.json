@@ -1,0 +1,84 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Launch",
+      "detail": "Launch the base profile with minimal addons loaded.",
+      "type": "process",
+      "command": "hemtt.exe",
+      "problemMatcher": [],
+      "args": [
+        "launch"
+      ],
+      "group": "build"
+    },
+    {
+      "label": "Launch: VR",
+      "detail": "Launch the base profile with minimal addons loaded directly into the VR testing mission.",
+      "type": "process",
+      "command": "hemtt.exe",
+      "problemMatcher": [],
+      "args": [
+        "launch",
+        "default_vr"
+      ],
+      "group": "build"
+    },
+    {
+      "label": "Launch: Full",
+      "detail": "Launch the full profile with all addons from our modpack loaded.",
+      "type": "process",
+      "command": "hemtt.exe",
+      "problemMatcher": [],
+      "args": [
+        "launch",
+        "full"
+      ],
+      "group": "build"
+    },
+    {
+      "label": "Release",
+      "detail": "Create a release zip file.",
+      "type": "process",
+      "command": "hemtt.exe",
+      "problemMatcher": [],
+      "args": [
+        "release"
+      ],
+      "group": "build"
+    },
+    {
+      "label": "Version: Bump Major",
+      "detail": "Increment the major version.",
+      "type": "process",
+      "command": "hemtt.exe",
+      "problemMatcher": [],
+      "args": [
+        "script",
+        "bump_version_major"
+      ]
+    },
+    {
+      "label": "Version: Bump Minor",
+      "detail": "Increment the minor version.",
+      "type": "process",
+      "command": "hemtt.exe",
+      "problemMatcher": [],
+      "args": [
+        "script",
+        "bump_version_minor"
+      ]
+    },
+    {
+      "label": "Version: Bump Patch",
+      "detail": "Increment the patch version.",
+      "type": "process",
+      "command": "hemtt.exe",
+      "problemMatcher": [],
+      "args": [
+        "script",
+        "bump_version_patch"
+      ]
+    }
+  ]
+}
