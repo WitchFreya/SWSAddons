@@ -5,10 +5,10 @@
 if (is3DEN) exitWith {};
 
 private _action = [
-    "saveRoleProgress",
-    "[SWS] Record Role Progress",
-    "",
-    FUNC(recordProgress),
-    {true}
+  "saveRoleProgress",
+  "[SWS] Record Role Progress",
+  "",
+  FUNC(recordProgress),
+  {true}
 ] call ace_interact_menu_fnc_createAction;
 [["ACE_ZeusActions"], _action] call ace_interact_menu_fnc_addActionToZeus;
