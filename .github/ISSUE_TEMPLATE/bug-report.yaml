@@ -1,0 +1,38 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: input
+    id: discord
+    attributes:
+      label: Discord Handle
+      description: What is your Discord handle? (Either the @ or your callsign in the SWS Server)
+      placeholder: ex. @webwitch
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened, and what did you expect to happen?
+      description: Provide some kind of description of the issue here; often this can just be an error message but providing some context of what you were doing can help to fix the bug. Image attachments are a plus.
+      placeholder: I was placing a tank (DMNS_M808B_F) and I got an error message (Cannot load texture optre_vehicles\scorpion\data\texture\scorp_decals_ca.paa). I expected not to see the error.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        To address your bug, it can help a lot to have your RPT file. To retrieve it, do the following:
+
+        1. Open File Explorer.
+        2. Enter `%localappdata%\Arma 3` into the address bar and hit enter.
+        3. Sort by 'Date Modified'.
+        4. Get the most recent file with a .RPT extension (Type: RPT File), or whichever one is tagged with the date and time you started Arma when the bug happened.
+        5. In the next text area, click on the little paperclip icon and attach the file.
+  - type: textarea
+    id: rpt-file
+    attributes:
+      label: Attach Your RPT File
+      description: See the steps above for how to find and attach the file.
+    validations:
+      required: true
