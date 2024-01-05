@@ -17,5 +17,6 @@ Once it's installed, you can copy the [`tasks.template.json`](.vscode/tasks.temp
 
 1. Folders should be named in snake case, e.g. `loadout_migration`.
 2. Folders should always be named in lowercase, due to quirks with Windows.
+3. PAA files should be suffixed with their type based on [Texture Map Types](https://community.bistudio.com/wiki/Texture_Map_Types).
 
 
