@@ -1,0 +1,48 @@
+name: Design Config Request
+description: Request a config for texture/design work
+title: "[Design]: Add config <put your details here, ex: 'for new AR-0M37S texture'>"
+labels: ["design-req", "enhancement"]
+body:
+  - type: input
+    id: discord
+    attributes:
+      label: Discord Handle
+      description: What is your Discord handle? (Either the @ or your callsign in the SWS Server, **do not include the @ symbol**)
+      placeholder: ex. webwitch
+    validations:
+      required: false
+  - type: dropdown
+    id: config-type
+    attributes:
+      label: What type of config do you need?
+      description: This is used for devs to find where the base config lives.
+      options:
+        - Vehicle/UAV/Unit or similar (CfgVehicles)
+        - Gear (CfgWeapons)
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: config-path
+    attributes:
+      label: What's the base class or path?
+      description: The full path (found in the Config Viewer at the bottom under 'Path') or the class name.
+      placeholder: ex. configFile >> "CfgVehicles" >> "VES_M808BM_MBT" or VES_M808BM_MBT
+    validations:
+      required: true
+  - type: textarea
+    id: texture
+    attributes:
+      label: What texture are you trying to change?
+      description: Either the texture path, multiple texture paths, or 'I couldn't find it,' in which case a dev will help you track it down. If you couldn't find it, please include a screenshot of the item/subsection of the item you want to modify.
+      placeholder: ex. "V_FZ_Ground_Vehicles\data\Scorpion\V_M808_OD3_CO.paa"
+    validations:
+      required: true
+  - type: textarea
+    id: additional-details
+    attributes:
+      label: Describe the nature of the changes you want to make and any other details.
+      description: This is necessary so we can give the item a name as well as provide info back to you on the config's location. You can request a display name if you like and we'll consider it.
+      placeholder: ex. I want to add a new body texture for the Scorpion for SWS stuff. I don't care about the name.
+    validations:
+      required: true
