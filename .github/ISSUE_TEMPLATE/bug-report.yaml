@@ -7,8 +7,8 @@ body:
     id: discord
     attributes:
       label: Discord Handle
-      description: What is your Discord handle? (Either the @ or your callsign in the SWS Server)
-      placeholder: ex. @webwitch
+      description: What is your Discord handle? (Either the @ or your callsign in the SWS Server, **do not include the @ symbol**)
+      placeholder: ex. webwitch
     validations:
       required: false
   - type: textarea
@@ -28,12 +28,12 @@ body:
         2. Enter `%localappdata%\Arma 3` into the address bar and hit enter.
         3. Sort by 'Date Modified'.
         4. Get the most recent file with a .RPT extension (Type: RPT File), or whichever one is tagged with the date and time you started Arma when the bug happened.
-        5. Right-click on it and Compress to ZIP
+        5. Right-click on it and Compress to ZIP.
         6. Attach it by clicking into the next section and then clicking the paperclip icon.
   - type: textarea
     id: rpt-file
     attributes:
-      label: Paste your RPT file
-      description: See the steps above for how to find and copy the file.
+      label: Attach your zipped RPT file
+      description: See the steps above for how to find and zip the file.
     validations:
       required: true
