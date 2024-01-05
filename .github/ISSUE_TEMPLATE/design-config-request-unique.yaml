@@ -1,0 +1,45 @@
+name: Design New Object Config Request
+description: Request a config for modeling or similar that has no base config
+title: "[Design]: Add config <put your details here, ex: 'for modeling a crate'>"
+labels: ["design-req", "enhancement"]
+body:
+  - type: input
+    id: discord
+    attributes:
+      label: Discord Handle
+      description: What is your Discord handle? (Either the @ or your callsign in the SWS Server, **do not include the @ symbol**)
+      placeholder: ex. webwitch
+    validations:
+      required: false
+  - type: dropdown
+    id: config-type
+    attributes:
+      label: What type of config do you need?
+      description: This is used for devs to find where the base config lives.
+      options:
+        - Vehicle/UAV/Unit or similar (CfgVehicles)
+        - Gear (CfgWeapons)
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: config-path
+    attributes:
+      label: Do you have a similar item that you're basing off of?
+      description: For example, if you're making a chair you may look for a chair in ACE and provide that class name here; it'll expedite making a new config.
+      placeholder: ex. I don't have a base.
+  - type: input
+    id: config-name
+    attributes:
+      label: In a word or a few words, what are you trying to create?
+      description: This is helpful for us to categorize and name the configs.
+      placeholder: A new chair, a new tank, et cetera.
+    validations:
+      required: true
+  - type: textarea
+    id: additional-details
+    attributes:
+      label: Provide any additional details that may be helpful.
+      description: Any additional info, screenshots, et cetera can go here; taking a screenshot of the model you're working on could be helpful.
+      placeholder: ex. I want to create a new armor type.
+
