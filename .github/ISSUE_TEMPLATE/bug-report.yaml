@@ -28,11 +28,13 @@ body:
         2. Enter `%localappdata%\Arma 3` into the address bar and hit enter.
         3. Sort by 'Date Modified'.
         4. Get the most recent file with a .RPT extension (Type: RPT File), or whichever one is tagged with the date and time you started Arma when the bug happened.
-        5. In the next text area, click on the little paperclip icon and attach the file.
+        5. Double-click on it to open it. If you don't have a program associated with it yet, it's a text file so you can open it in VS Code, Notepad++, Notepad, et cetera.
+        6. Ctrl+A to highlight all, then Ctrl+C to copy and paste it into the following text area.
   - type: textarea
     id: rpt-file
     attributes:
-      label: Attach Your RPT File
-      description: See the steps above for how to find and attach the file.
+      label: Paste your RPT file
+      description: See the steps above for how to find and copy the file.
+      render: bash
     validations:
       required: true
