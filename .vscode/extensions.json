@@ -2,6 +2,11 @@
   "recommendations": [
     "brettmayson.hemtt",
     "bux578.vscode-openlastrpt",
-    "rhaiscript.vscode-rhai"
+    "rhaiscript.vscode-rhai",
+    "eamodio.gitlens",
+    "editorconfig.editorconfig",
+    "tamasfe.even-better-toml",
+    "github.vscode-pull-request-github",
+    "armitxes.sqf"
   ]
 }
