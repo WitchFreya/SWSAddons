@@ -1,6 +1,6 @@
 #define MAINPREFIX x
 #define PREFIX sws
-#define AUTHOR Maid
+#define AUTHOR Project: SCARLET
 
 #include "script_version.hpp"
 
