@@ -12,12 +12,4 @@
   #define DEBUG_SETTINGS DEBUG_SETTINGS_INGAME
 #endif
 
-#undef AUTHOR
-#define AUTHOR Ashes
-
-#define AUTHORS \
-  "Ashes",    \
-  "Maid",      \
-  "Demon"
-
 #include "\x\sws\addons\main\script_macros.hpp"
