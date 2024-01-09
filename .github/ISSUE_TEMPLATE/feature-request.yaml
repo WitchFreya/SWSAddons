@@ -1,0 +1,20 @@
+name: Feature Request
+description: Request a new feature for the addons
+title: "[Feature]: <Briefly describe what you want here>"
+labels: ["enhancement"]
+body:
+  - type: input
+    id: discord
+    attributes:
+      label: Discord Handle
+      description: What is your Discord handle? (Either the @ or your callsign in the SWS Server, **do not include the @ symbol**)
+      placeholder: ex. webwitch
+    validations:
+      required: false
+  - type: textarea
+    id: additional-details
+    attributes:
+      label: Describe what sort of feature you are looking to have added
+      description: Be precise where you can, and if any screenshots are relevant please include them.
+    validations:
+      required: true
