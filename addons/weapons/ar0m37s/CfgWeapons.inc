@@ -4,7 +4,10 @@
   , "SWS_Weapon_AR0M37_SHT" \
   , "SWS_Weapon_AR0M37S_Hound" \
   , "SWS_Weapon_AR0M37S_Hound_GL" \
-  , "SWS_Weapon_AR0M37S_Hound_SHT"
+  , "SWS_Weapon_AR0M37S_Hound_SHT" \
+  , "SWS_Weapon_AR0M37S_Rabbit" \
+  , "SWS_Weapon_AR0M37S_Rabbit_GL" \
+  , "SWS_Weapon_AR0M37S_Rabbit_SHT"
 
 class CfgWeapons
 {
@@ -191,6 +194,39 @@ class CfgWeapons
       QPATHTOF(data\ar0m37s\hound_co.paa)
       , "\LM_OPCAN3.0\WEP\VAN\AR0M37_2.paa"
       , QPATHTOF(data\ar0m37s\hound_underbarrel_co.paa)
+    };
+  };
+
+  class SWS_Weapon_AR0M37S_Rabbit : SWS_Weapon_AR0M37
+  {
+    baseWeapon = "SWS_Weapon_AR0M37S_Rabbit";
+    displayName = QNAME(AR-0M37S 6.5mm (Rabbit));
+    hiddenSelectionsTextures[] = {
+      QPATHTOF(data\ar0m37s\rabbit_co.paa)
+      , "\LM_OPCAN3.0\WEP\VAN\AR0M37_2.paa"
+      , QPATHTOF(data\ar0m37s\rabbit_underbarrel_co.paa)
+    };
+  };
+
+  class SWS_Weapon_AR0M37S_Rabbit_GL : SWS_Weapon_AR0M37_GL
+  {
+    baseWeapon = "SWS_Weapon_AR0M37S_Rabbit_GL";
+    displayName = QNAME(AR-0M37S UGL 6.5mm (Rabbit));
+    hiddenSelectionsTextures[] = {
+      QPATHTOF(data\ar0m37s\Rabbit_co.paa)
+      , "\LM_OPCAN3.0\WEP\VAN\AR0M37_2.paa"
+      , QPATHTOF(data\ar0m37s\Rabbit_underbarrel_co.paa)
+    };
+  };
+
+  class SWS_Weapon_AR0M37S_Rabbit_SHT : SWS_Weapon_AR0M37_SHT
+  {
+    baseWeapon = "SWS_Weapon_AR0M37S_Rabbit_SHT";
+    displayName = QNAME(AR-0M37S Breacher 6.5mm (Rabbit));
+    hiddenSelectionsTextures[] = {
+      QPATHTOF(data\ar0m37s\Rabbit_co.paa)
+      , "\LM_OPCAN3.0\WEP\VAN\AR0M37_2.paa"
+      , QPATHTOF(data\ar0m37s\Rabbit_underbarrel_co.paa)
     };
   };
 
