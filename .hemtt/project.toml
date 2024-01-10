@@ -206,6 +206,9 @@ workshop = [
   "1508091616", # Metis Marker
   # "1957746437", # ADV ACE-CPR (removed in this version)
 
+  # v16
+  "718649903", # Lingor/Dingor island
+
   # additional mods
   "2791403093", # Better Inventory
   "1623498241", # turret enhanced
