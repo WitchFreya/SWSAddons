@@ -34,6 +34,6 @@ body:
     id: rpt-file
     attributes:
       label: Attach your zipped RPT file
-      description: See the steps above for how to find and zip the file.
+      description: See the steps above for how to find and zip the file, or enter N/A if it's not relevant. Be warned that entering N/A may mean that an irritable dev comes to get you later if it actually is necessary.
     validations:
       required: true
