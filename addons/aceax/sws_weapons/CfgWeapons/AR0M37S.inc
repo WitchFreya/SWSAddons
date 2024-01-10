@@ -30,24 +30,29 @@ class SWS_Weapon_AR0M37_SHT : LM_OPCAN_AR0M37_SHT
     variant = "Standard";
   };
 };
+
 class SWS_Weapon_AR0M37S_Hound : SWS_Weapon_AR0M37
 {
-  class XtdGearInfo : XtdGearInfo
-  {
-    variant = "Hound";
-  };
+  class XtdGearInfo : XtdGearInfo { variant = "Hound"; };
 };
 class SWS_Weapon_AR0M37S_Hound_GL : SWS_Weapon_AR0M37_GL
 {
-  class XtdGearInfo : XtdGearInfo
-  {
-    variant = "Hound";
-  };
+  class XtdGearInfo : XtdGearInfo { variant = "Hound"; };
 };
 class SWS_Weapon_AR0M37S_Hound_SHT : SWS_Weapon_AR0M37_SHT
 {
-  class XtdGearInfo : XtdGearInfo
-  {
-    variant = "Hound";
-  };
+  class XtdGearInfo : XtdGearInfo { variant = "Hound"; };
 };
+class SWS_Weapon_AR0M37S_Rabbit : SWS_Weapon_AR0M37
+{
+  class XtdGearInfo : XtdGearInfo { variant = "Rabbit"; };
+};
+class SWS_Weapon_AR0M37S_Rabbit_GL : SWS_Weapon_AR0M37_GL
+{
+  class XtdGearInfo : XtdGearInfo { variant = "Rabbit"; };
+};
+class SWS_Weapon_AR0M37S_Rabbit_SHT : SWS_Weapon_AR0M37_SHT
+{
+  class XtdGearInfo : XtdGearInfo { variant = "Rabbit"; };
+};
+
