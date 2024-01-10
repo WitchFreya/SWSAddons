@@ -30,9 +30,10 @@ class XtdGearModels
       class Variant
       {
         label = "Variant";
-        values[] = {"Standard", "Hound"};
+        values[] = {"Standard", "Hound", "Rabbit"};
         class Standard {};
         class Hound {};
+        class Rabbit {};
       };
     };
   };
