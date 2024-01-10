@@ -16,7 +16,7 @@ class CfgPatches
     requiredAddons[] = {
       "dev_flood_combat"
       , "OPTRE_FC_Units_Elite"
-      , "CBA_EventHandlers"
+      , "cba_xeh"
     };
     skipWhenMissingDependencies = 1;
     VERSION_CONFIG;
