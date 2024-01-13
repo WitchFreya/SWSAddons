@@ -7,7 +7,6 @@ class CfgVehicles
   class OPTRE_ONI_Researcher_Suitcase;
   class B_UAV_06_Backpack_F;
   class C_IDAP_UAV_06_antimine_backpack_F;
-  class 19thANPRC419;
 
   class SWS_V_Bag_Hardcase_Base : OPTRE_ONI_Researcher_Suitcase
   {
@@ -25,7 +24,8 @@ class CfgVehicles
   class SWS_V_Bag_Hardcase_Spritz : SWS_V_Bag_Hardcase_Medical { XTD_GEAR_INFO(Spritz); };
   class SWS_V_Bag_Hardcase_Vertigo : SWS_V_Bag_Hardcase_Medical { XTD_GEAR_INFO(Vertigo); };
 
-  class SWS_V_Bag_Messenger : B_Messenger_IDAP_F
+  //--- Messenger Bag Bases
+  class SWS_V_Bag_Messenger_Base : B_Messenger_IDAP_F
   {
     class XtdGearInfo
     {
@@ -34,23 +34,19 @@ class CfgVehicles
       purpose = "Standard";
     };
   };
-  class SWS_V_Bag_Messenger_Tiger : SWS_V_Bag_Messenger { XTD_GEAR_INFO(Tiger); };
-  class SWS_V_Bag_Messenger_Tiger_Hammerspace : SWS_V_Bag_Messenger_Tiger
+  class SWS_V_Bag_Messenger_Hammerspace_Base : SWS_V_Bag_Messenger_Base
   {
-    class XtdGearInfo : XtdGearInfo
-    {
-      purpose = "Heavy";
-    };
+    class XtdGearInfo : XtdGearInfo { purpose = "Heavy"; };
   };
-  class SWS_V_Bag_Messenger_Tiger_Radio : 19thANPRC419
+  class SWS_V_Bag_Messenger_Radio_Base : SWS_V_Bag_Messenger_Base
   {
-    class XtdGearInfo
-    {
-      model = "SWS_Bag_Messenger";
-      variant = "Tiger";
-      purpose = "RTO";
-    };
+    class XtdGearInfo : XtdGearInfo { purpose = "LR"; };
   };
+
+  //--- Messenger Bag Customs
+  class SWS_V_Bag_Messenger_Tiger : SWS_V_Bag_Messenger_Base { XTD_GEAR_INFO(Tiger); };
+  class SWS_V_Bag_Messenger_Tiger_Hammerspace : SWS_V_Bag_Messenger_Hammerspace_Base { XTD_GEAR_INFO(Tiger); };
+  class SWS_V_Bag_Messenger_Tiger_Radio : SWS_V_Bag_Messenger_Radio_Base { XTD_GEAR_INFO(Tiger); };
 
   class SWS_Bag_UAV_SMQ94_Base : DMNS_UAV_01_backpack_F
   {
