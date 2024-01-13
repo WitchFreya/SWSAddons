@@ -6,11 +6,12 @@
   , "SWS_V_Bag_Hardcase_Bait" \
   , "SWS_V_Bag_Hardcase_Base" \
   , "SWS_V_Bag_Hardcase_Blue" \
+  , "SWS_V_Bag_Hardcase_Chrome" \
   , "SWS_V_Bag_Hardcase_Medical" \
   , "SWS_V_Bag_Hardcase_Sawbones" \
   , "SWS_V_Bag_Hardcase_Snare" \
+  , "SWS_V_Bag_Hardcase_Spritz" \
   , "SWS_V_Bag_Hardcase_Vertigo" \
-  , "SWS_V_Bag_Hardcase_Chrome" \
   , "SWS_V_Bag_Messenger_Tiger" \
   , "SWS_V_Bag_Messenger_Tiger_Radio" \
   , "SWS_V_Bag_Messenger_Tiger_Hammerspace" \

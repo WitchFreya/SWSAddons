@@ -27,5 +27,6 @@ C_HARDCASE(Bait,bait);
 C_HARDCASE(Snare,snare);
 C_HARDCASE(Egg,egg);
 C_HARDCASE(Chrome,chrome);
+C_HARDCASE(Spritz,spritz);
 
 #undef C_HARDCASE
