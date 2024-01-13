@@ -57,3 +57,17 @@ class SWS_V_Bag_Messenger_Tiger_Radio : SWS_V_Bag_Messenger_Radio_Base
   displayName = QNAME(Radio Messenger Bag (Tiger));
   hiddenSelectionsTextures[] = {QPATHTOF(data\Bag_Messenger\tiger_radio_co.paa)};
 };
+
+class SWS_V_Bag_Messenger_Snare : SWS_V_Bag_Messenger_Base
+{
+  SCOPE(2);
+  displayName = QNAME(Messenger Bag (Snare));
+  hiddenSelectionsTextures[] = {QPATHTOF(data\Bag_Messenger\snare_co.paa)};
+};
+
+class SWS_V_Bag_Messenger_Snare_Radio : SWS_V_Bag_Messenger_Radio_Base
+{
+  SCOPE(2);
+  displayName = QNAME(Radio Messenger Bag (Snare));
+  hiddenSelectionsTextures[] = {QPATHTOF(data\Bag_Messenger\snare_radio_co.paa)};
+};
