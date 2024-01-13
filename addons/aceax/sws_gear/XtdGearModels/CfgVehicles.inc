@@ -49,6 +49,7 @@ class CfgVehicles
         , "Egg"
         , "Sawbones"
         , "Snare"
+        , "Spritz"
         , "Vertigo"
       };
       class Medical { description = "Standard issue medical hardcase."; };
