@@ -9,4 +9,9 @@ class CfgMagazineWells
   {
     SUBGVAR(Magazines)[] = {"SWS_Magazine_Grenade_M9Sx_1Rnd_Shell"};
   };
+
+  class CBA_40mm_M203
+  {
+    SUBGVAR(Magazines)[] = {"SWS_Magazine_Grenade_M9Sx_1Rnd_Shell"};
+  };
 };
