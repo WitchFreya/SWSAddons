@@ -92,7 +92,7 @@ class CfgVehicles
       values[] = {
         "Standard"
         , "Heavy"
-        , "RTO"
+        , "LR"
       };
 
       class Standard
@@ -105,7 +105,7 @@ class CfgVehicles
         description = "A curiously deep bag that weighs more.";
       };
 
-      class RTO
+      class LR
       {
         description = "Oddly, this bag has a radio hookup in its front pocket and seems to be putting out a signal.";
       };

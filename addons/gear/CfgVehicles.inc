@@ -29,7 +29,6 @@ class CfgVehicles
   class SWS_V_UAV_Demining_Base;
   class SWS_V_UAV_MiniPelican_Base;
   class SWS_V_UAV_SMQ94_Base;
-  class 19thANPRC419;
 
   //== Bags
   #include "CfgVehicles\Bag_Hardcase.inc"
