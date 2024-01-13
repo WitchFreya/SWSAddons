@@ -55,7 +55,7 @@ class CfgWeapons
 
     class OPTRE_M301UGL : OPTRE_M301UGL
     {
-      magazineWell[] = {"UGL_40x36","3UGL_40x36","CBA_40mm_3GL","CBA_40mm_M203","CBA_40mm_EGLM"};
+      magazineWell[] += {"3UGL_40x36","CBA_40mm_3GL"};
     };
 
     class WeaponSlotsInfo: WeaponSlotsInfo
