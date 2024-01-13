@@ -19,4 +19,6 @@ Once it's installed, you can copy the [`tasks.template.json`](.vscode/tasks.temp
 2. Folders should always be named in lowercase, due to quirks with Windows.
 3. PAA files should be suffixed with their type based on [Texture Map Types](https://community.bistudio.com/wiki/Texture_Map_Types).
 
+## Docs
 
+Check out the [Docs Folder](./docs/) for a collection of various info pieces that seemed useful to have internally; there's also some info on the [Wiki](https://github.com/WitchFreya/SWSAddons/wiki).
