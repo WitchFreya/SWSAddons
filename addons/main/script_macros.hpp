@@ -75,3 +75,6 @@
 #define SUBGVAR(var0) GVAR(DOUBLES(SUBCOMPONENT,var0))
 #define QSUBGVAR(var0) QUOTE(SUBGVAR(var0))
 #define COMPILE_SUBSCRIPT(var1) compileScript ['PATHTO_SYS(PREFIX,COMPONENT_F\SUBCOMPONENT,var1)']
+
+#define TRUE 1
+#define FALSE 0
