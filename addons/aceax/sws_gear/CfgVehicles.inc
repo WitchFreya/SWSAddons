@@ -48,6 +48,9 @@ class CfgVehicles
   class SWS_V_Bag_Messenger_Tiger_Hammerspace : SWS_V_Bag_Messenger_Hammerspace_Base { XTD_GEAR_INFO(Tiger); };
   class SWS_V_Bag_Messenger_Tiger_Radio : SWS_V_Bag_Messenger_Radio_Base { XTD_GEAR_INFO(Tiger); };
 
+  class SWS_V_Bag_Messenger_Snare : SWS_V_Bag_Messenger_Base { XTD_GEAR_INFO(Snare); };
+  class SWS_V_Bag_Messenger_Snare_Radio : SWS_V_Bag_Messenger_Radio_Base { XTD_GEAR_INFO(Snare); };
+
   class SWS_Bag_UAV_SMQ94_Base : DMNS_UAV_01_backpack_F
   {
     class XtdGearInfo
