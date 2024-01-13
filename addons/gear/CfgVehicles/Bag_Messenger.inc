@@ -27,7 +27,8 @@ class SWS_V_Bag_Messenger_Radio_Base : SWS_V_Bag_Messenger_Base
   tf_encryptionCode = "tf_west_radio_code";
   tf_dialog = "rt1523g_radio_dialog";
   tf_subtype = "digital_lr";
-  #include "\z\tfar\addons\static_radios\edenAttributes.hpp"
+  // TODO(#60): Determine how to make this work
+  // #include "\z\tfar\addons\static_radios\edenAttributes.hpp"
 };
 
 class SWS_V_Bag_Messenger : SWS_V_Bag_Messenger_Base
