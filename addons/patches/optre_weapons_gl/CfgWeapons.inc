@@ -6,24 +6,12 @@ class CfgWeapons
   //--- Enable primary grenade launcher to take 3-round grenades from the magwell.
   class OPTRE_M319 : OPTRE_Rifle_Base
   {
-    magazineWell[] = {
-      "UGL_40x36"
-      , "3UGL_40x36"
-      , "CBA_40mm_M203"
-      , "CBA_40mm_EGLM"
-      , "CBA_40mm_3GL"
-    };
+    magazineWell[] += {"3UGL_40x36", "CBA_40mm_3GL"};
   };
 
   //--- Enable primary grenade launcher to take 3-round grenades from the magwell.
   class OPTRE_M319M : OPTRE_Handgun_Base
   {
-    magazineWell[] = {
-      "UGL_40x36"
-      , "3UGL_40x36"
-      , "CBA_40mm_M203"
-      , "CBA_40mm_EGLM"
-      , "CBA_40mm_3GL"
-    };
+    magazineWell[] += {"3UGL_40x36", "CBA_40mm_3GL"};
   };
 };
