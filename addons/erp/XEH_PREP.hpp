@@ -1,2 +1,0 @@
-PREP(recordProgress);
-PREP(showSave);
