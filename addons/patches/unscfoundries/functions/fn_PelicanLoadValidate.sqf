@@ -44,26 +44,26 @@ switch true do {
 		_veh attachTo [_spelican,[0,-4.8,-0.1]];
 		_loaded = true;
 	};
-    case (_veh isKindOf "SWS_V_APC_M107_Beaver_Base") : {
-        _veh attachTo [_spelican, [0,-10, -0.95]];
-        _veh setDir 180;
-        _loaded = true;
-    };
-    case (_veh isKindOf "APC_Wheeled_03_base_F") : {
-        _veh attachTo [_spelican, [0,-11, -0.95]];
-        _veh setDir 180;
-        _loaded = true;
-    };
-    case (_veh isKindOf "Tank_F") : {
-        _veh attachTo [_spelican, [0,-11, -0.8]];
-        _veh setDir 180;
-        _loaded = true;
-    };
-    case (_veh isKindOf "Car_F") : {
-        _veh attachTo [_spelican, [0,-10, -0.8]];
-        _veh setDir 180;
-        _loaded = true;
-    };
+  case (_veh isKindOf "SWS_V_APC_M107_Beaver_Base") : {
+    _veh attachTo [_spelican, [0,-10, -0.95]];
+    _veh setDir 180;
+    _loaded = true;
+  };
+  case (_veh isKindOf "APC_Wheeled_03_base_F") : {
+    _veh attachTo [_spelican, [0,-11, -0.95]];
+    _veh setDir 180;
+    _loaded = true;
+  };
+  case (_veh isKindOf "Tank_F") : {
+    _veh attachTo [_spelican, [0,-11, -0.8]];
+    _veh setDir 180;
+    _loaded = true;
+  };
+  case (_veh isKindOf "Car_F") : {
+    _veh attachTo [_spelican, [0,-10, -0.8]];
+    _veh setDir 180;
+    _loaded = true;
+  };
 };
 
 if (_loaded) then {

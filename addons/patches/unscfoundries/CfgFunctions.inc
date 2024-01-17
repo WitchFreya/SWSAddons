@@ -4,9 +4,10 @@ class CfgFunctions
 	{
 		class PelicanMagLiftSystem
 		{
-			class PelicanLoadValidate{
-                file = QPATHTOF(unscfoundries\functions\fn_PelicanLoadValidate.sqf);
-            };
+			class PelicanLoadValidate
+      {
+        file = QPATHTOF(unscfoundries\functions\fn_PelicanLoadValidate.sqf);
+      };
 		};
 	};
 };
