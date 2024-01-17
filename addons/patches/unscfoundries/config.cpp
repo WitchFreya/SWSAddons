@@ -9,6 +9,7 @@ class Right;
 #include "CfgVehicles.inc"
 #include "CfgMagazines.inc"
 #include "CfgMagazineWells.inc"
+#include "CfgFunctions.inc"
 
 class CfgPatches
 {
