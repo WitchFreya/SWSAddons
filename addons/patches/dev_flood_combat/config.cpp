@@ -15,7 +15,6 @@ class CfgPatches
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {
       "dev_flood_combat"
-      , "OPTRE_FC_Units_Elite"
       , "cba_xeh"
     };
     skipWhenMissingDependencies = 1;
