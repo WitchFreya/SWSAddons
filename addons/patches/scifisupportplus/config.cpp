@@ -2,6 +2,7 @@
 
 #include "CfgAmmo.inc"
 #include "CfgMagazines.inc"
+#include "CfgEventHandlers.inc"
 
 class CfgPatches
 {
@@ -13,7 +14,7 @@ class CfgPatches
     magazines[] = { };
     ammo[] = { CLASSES_AMMO };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = { "OPAEX_AirCore", "OPAEX_Glassing", "PHAN_OPAEX" };
+    requiredAddons[] = { "OPAEX_AirCore", "OPAEX_Glassing", "PHAN_OPAEX", "PHAN_ScifiSupportPlus" };
     skipWhenMissingDependencies = 1;
     VERSION_CONFIG;
     addonRootClass = QUOTE(ADDON);
