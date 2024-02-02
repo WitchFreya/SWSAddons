@@ -20,7 +20,7 @@ params ["_vehicle"];
 // Grab config for the vehicle's plow
 private _config = configFile >> "CfgVehicles" >> typeOf _vehicle >> "PlowConfig";
 if (!(isClass _config)) exitWith {
-	ERROR_1("Attempted to lowerPlow on invalid vehicle: %1", _vehicle);
+	ERROR_1("Attempted to lowerPlow on invalid vehicle: %1",_vehicle);
 };
 private _animation = (_config >> "animation") call BIS_fnc_getCfgData;
 private _plowRaised = (_config >> "plowRaised") call BIS_fnc_getCfgData;
@@ -46,7 +46,7 @@ hintSilent "Raising plow...";
 		(_vehicle animationSourcePhase _animation == _plowRaised)
 	};
 },
-{	
+{
 	// Set plow mode to raised
 	params ["_vehicle", "_type", "_animation", "_plowRaised"];
 	_vehicle setVariable [QGVAR(plowMode), PLOW_UP, true];
