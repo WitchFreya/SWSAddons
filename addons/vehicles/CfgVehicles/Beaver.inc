@@ -9,7 +9,7 @@ class SWS_V_APC_M107_Beaver_Base : B_APC_Tracked_01_CRV_F
     editorPreview = QPATHTOF(data\beaver\editor_preview.jpg);
 
 	ace_cargo_space = 10;
-	
+
     textureList[] = {
         "SWS_Basic", 1,
         "SWS_Flecktarn", 0,
@@ -20,7 +20,7 @@ class SWS_V_APC_M107_Beaver_Base : B_APC_Tracked_01_CRV_F
         QPATHTOF(data\beaver\body.paa),
         QPATHTOF(data\beaver\turret.paa),
         QPATHTOF(data\beaver\crane.paa),
-		GREEN_NET_TEXTURE
+		A3_TEX_CAMONET_GREEN
     };
 
 	class TextureSources : TextureSources
@@ -34,7 +34,7 @@ class SWS_V_APC_M107_Beaver_Base : B_APC_Tracked_01_CRV_F
 				QPATHTOF(data\beaver\body.paa),
 				QPATHTOF(data\beaver\turret.paa),
 				QPATHTOF(data\beaver\crane.paa),
-				GREEN_NET_TEXTURE
+				A3_TEX_CAMONET_GREEN
 			};
 		};
 		class SWS_Flecktarn
@@ -46,7 +46,7 @@ class SWS_V_APC_M107_Beaver_Base : B_APC_Tracked_01_CRV_F
 				QPATHTOF(data\beaver\body_fleck.paa),
 				QPATHTOF(data\beaver\turret_fleck.paa),
 				QPATHTOF(data\beaver\crane_fleck.paa),
-                CSAT_NET_TEXTURE
+                A3_TEX_CAMONET_CSAT
 			};
 		};
 		class SWS_Winter
@@ -58,7 +58,7 @@ class SWS_V_APC_M107_Beaver_Base : B_APC_Tracked_01_CRV_F
 				QPATHTOF(data\beaver\body_winter.paa),
 				QPATHTOF(data\beaver\turret_winter.paa),
 				QPATHTOF(data\beaver\crane_winter.paa),
-                QPATHTOF(data\shared\camonet_snow.paa)
+        QPATHTOF(data\camonet_snow.paa)
 			};
 		};
 	};

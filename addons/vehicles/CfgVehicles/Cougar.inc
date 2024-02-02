@@ -31,7 +31,7 @@ class SWS_V_APC_M35_Cougar_Base : I_APC_Wheeled_03_cannon_F
         QPATHTOF(data\cougar\body_2.paa),
         QPATHTOF(data\cougar\turret.paa),
         QPATHTOF(data\cougar\exhaust.paa),
-        GREEN_NET_TEXTURE,
+        A3_TEX_CAMONET_GREEN,
         QPATHTOF(data\cougar\cage.paa)
     };
 
@@ -51,7 +51,7 @@ class SWS_V_APC_M35_Cougar_Base : I_APC_Wheeled_03_cannon_F
                     class AirTarget : SWS_SensorTargetTemplate {};
                     class GroundTarget : SWS_SensorTargetTemplate {};
                 };
-                class IRSensorComponent : SensorTemplateIR 
+                class IRSensorComponent : SensorTemplateIR
                 {
                     animDirection = "mainTurret";
                 };
@@ -118,7 +118,7 @@ class SWS_V_APC_M35_Cougar_Base : I_APC_Wheeled_03_cannon_F
                 QPATHTOF(data\cougar\body_2.paa),
                 QPATHTOF(data\cougar\turret.paa),
                 QPATHTOF(data\cougar\exhaust.paa),
-                GREEN_NET_TEXTURE,
+                A3_TEX_CAMONET_GREEN,
                 QPATHTOF(data\cougar\cage.paa)
             };
         };
@@ -131,8 +131,8 @@ class SWS_V_APC_M35_Cougar_Base : I_APC_Wheeled_03_cannon_F
                 QPATHTOF(data\cougar\body_2_fleck.paa),
                 QPATHTOF(data\cougar\turret_fleck.paa),
                 QPATHTOF(data\cougar\exhaust.paa),
-                CSAT_NET_TEXTURE,
-                AAF_CAGE_TEXTURE
+                A3_TEX_CAMONET_CSAT,
+                A3_TEX_CAGE_AAF
             };
         };
         class SWS_Cobra
@@ -144,7 +144,7 @@ class SWS_V_APC_M35_Cougar_Base : I_APC_Wheeled_03_cannon_F
                 QPATHTOF(data\cougar\body_2.paa),
                 QPATHTOF(data\cougar\turret_cobra.paa),
                 QPATHTOF(data\cougar\exhaust.paa),
-                GREEN_NET_TEXTURE,
+                A3_TEX_CAMONET_GREEN,
                 QPATHTOF(data\cougar\cage.paa)
             };
         };
@@ -157,7 +157,7 @@ class SWS_V_APC_M35_Cougar_Base : I_APC_Wheeled_03_cannon_F
                 QPATHTOF(data\cougar\body_2_winter.paa),
                 QPATHTOF(data\cougar\turret_winter.paa),
                 QPATHTOF(data\cougar\exhaust.paa),
-                QPATHTOF(data\shared\camonet_snow.paa),
+                QPATHTOF(data\camonet_snow.paa),
                 QPATHTOF(data\cougar\cage.paa)
             };
         };
