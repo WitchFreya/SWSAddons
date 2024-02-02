@@ -377,7 +377,7 @@ class CfgGroups {
                 name = "SpecOps";
 
                 class o_cla_specops_reaper_fireteam {
-                    name = "[SWS} Reaper Fireteam";
+                    name = "[SWS] Reaper Fireteam";
                     side = 0;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
@@ -2834,7 +2834,7 @@ class CfgVehicles {
         author = "Bernard ""Egg"" Teller";
         scope = 2;
         scopeCurator = 2;
-        displayName = "[SWS} Mortar Bipod";
+        displayName = "[SWS] Mortar Bipod";
         side = 0;
         faction = "o_cla";
 
