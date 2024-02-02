@@ -1,6 +1,4 @@
 #define CLASSES_VEHICLES                \
-    "SWS_V_MBT_M700_Viper",             \
-    "SWS_V_MBT_M700_Viper_Captured",    \
     "SWS_V_APC_M35_Cougar",             \
     "SWS_V_APC_M107_Beaver",            \
     "SWS_V_Heli_Raptor"
@@ -31,7 +29,6 @@ class CfgVehicles
     //== Helicopters
     class Heli_Attack_02_dynamicLoadout_base_F;
 
-    #include "CfgVehicles\Viper.inc"
     #include "CfgVehicles\Cougar.inc"
     #include "CfgVehicles\Beaver.inc"
     #include "CfgVehicles\Raptor.inc"
