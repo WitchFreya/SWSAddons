@@ -1,13 +1,15 @@
-class CfgEditorCategories 
+class CfgEditorCategories
 {
 	class SWSObjects
 	{
-		displayName = "[SWS] Objects"; 
+		displayName = "[SWS] Objects";
 	};
 };
-class CfgEditorSubcategories 
+
+class CfgEditorSubcategories
 {
-    class SWSResupply {
-        displayName = "Supply Pods & Boxes"; 
-    };
+  class SWSResupply
+  {
+    displayName = "Supply Pods & Boxes";
+  };
 };
