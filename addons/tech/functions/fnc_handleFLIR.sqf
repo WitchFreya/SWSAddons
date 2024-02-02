@@ -89,7 +89,7 @@ high refresh rate loop [0.1 sec]
 		*/
 
 		_zoomLevel =  (parseNumber  (ctrlText _z))*70;
-		_zoomLevel	= (if (_zoomLevel <= 99) then {"0"} else {""})+ str _zoomLevel;
+		_zoomLevel	= (["", "0"] select (_zoomLevel <= 99)) + str _zoomLevel;
 		_gridA		= toArray _zoomLevel;
 		_gridaA		= toString (call compile (format["[%1,%2,32,%3]",_gridA select 0,_gridA select 1,_gridA select 2]));
 

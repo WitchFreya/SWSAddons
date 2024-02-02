@@ -221,6 +221,3 @@ workshop = [
 
 [files]
 exclude = ["*.inc"]
-
-[asc]
-exclude = [".inc.sqf"] # will be unnecessary in hemtt's next release
