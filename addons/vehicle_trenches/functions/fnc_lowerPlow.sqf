@@ -52,5 +52,5 @@ hintSilent "Lowering plow...";
 	_vehicle setVariable [QGVAR(plowMode), _plowMode, true];
 	hintSilent "Plow lowered.";
 	// Add frame event handler for the lowered plow
-	[QGVAR(addBuildHandler), [_vehicle]] call CBA_fnc_serverEvent;
+	[QGVAR(addBuildHandler), [_vehicle]] call CBA_fnc_localEvent;
 }, [_vehicle, _type, _animation, _plowLowered, _plowMode]] call CBA_fnc_waitUntilAndExecute;
