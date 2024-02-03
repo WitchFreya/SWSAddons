@@ -1,5 +1,4 @@
 #define CLASSES_VEHICLES                \
-    "SWS_V_APC_M107_Beaver",            \
     "SWS_V_Heli_Raptor"
 
 class CommanderOptics;
@@ -14,7 +13,6 @@ class HitComGun;
 class VehicleSystemsTemplateLeftCommander;
 class VehicleSystemsTemplateRightCommander;
 class ACE_SelfActions;
-class ACE_Passengers;
 
 class CfgVehicles
 {
@@ -28,6 +26,5 @@ class CfgVehicles
     //== Helicopters
     class Heli_Attack_02_dynamicLoadout_base_F;
 
-    #include "CfgVehicles\Beaver.inc"
     #include "CfgVehicles\Raptor.inc"
 };
