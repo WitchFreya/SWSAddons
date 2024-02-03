@@ -27,6 +27,14 @@ class CfgVehicles
       , "SWS_Camo"    , 0
     };
 
+    class PilotCamera : PilotCamera
+    {
+      minTurn = -140;
+      maxTurn = 140;
+      maxMouseXRotSpeed = 1;
+      maxMouseYRotSpeed = 1;
+    };
+
     class TextureSources : TextureSources
     {
       class Black;
@@ -71,7 +79,6 @@ class CfgVehicles
               , "UNI_SCALPEL"
               , "DAGR"
             };
-            turret[] = { 0 };
             uiPosition[] = { 0.06, 0.4 };
           };
           class PylonLeft2 : PylonLeft1
