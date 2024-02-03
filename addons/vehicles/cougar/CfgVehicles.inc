@@ -172,12 +172,6 @@ class CfgVehicles
       MACRO_ADDITEM(ACE_ElasticBandage,20);
       MACRO_ADDITEM(ToolKit,1);
     };
-
-    class EventHandlers : EventHandlers
-    {
-      init = "if (local (_this select 0)) then {[(_this select 0), """", [], nil] call bis_fnc_initVehicle;};";
-      killed = "if (local (_this select 0)) then {[(_this select 0), nil, [], false] call bis_fnc_initVehicle;};";
-    };
   };
 
   class SWS_V_APC_M35_Cougar : SWS_V_APC_M35_Cougar_Base

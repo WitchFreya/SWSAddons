@@ -220,13 +220,6 @@ class CfgVehicles
       MACRO_ADDITEM(ACE_elasticBandage,20);
       MACRO_ADDITEM(ToolKit,1);
     };
-
-    // TODO : Check if this is necessary
-    class EventHandlers : EventHandlers
-    {
-      init = "if (local (_this select 0)) then {[(_this select 0), """", [], nil] call bis_fnc_initVehicle;};";
-      killed = "if (local (_this select 0)) then {[(_this select 0), nil, [], false] call bis_fnc_initVehicle;};";
-    };
   };
 
   class SWS_V_MBT_M700_Viper : SWS_V_MBT_M700_Viper_Base
