@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 
 class Components;
+class PilotCamera;
 class TextureSources;
 
 #include "CfgVehicles.inc"
