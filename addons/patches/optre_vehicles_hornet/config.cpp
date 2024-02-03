@@ -1,20 +1,20 @@
 #include "script_component.hpp"
 
-#include "SensorTargetTemplates.inc"
-#include "CfgMagazineWells.inc"
+#include "CfgVehicles.inc"
 
 class CfgPatches
 {
-  class ADDON
+  class SUBADDON
   {
-    name = QUOTE(COMPONENT);
+    addonRootClass = QUOTE(ADDON);
+    name = COMPONENT_NAME;
     units[] = { };
     weapons[] = { };
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = {"sws_main"};
-    author = QUOTE(AUTHOR);
+    requiredAddons[] = {"OPTRE_Vehicles_Hornet"};
+    skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
   };
 };
