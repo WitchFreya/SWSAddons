@@ -1,5 +1,6 @@
 #include "script_component.hpp"
 
+#include "CfgEventHandlers.inc"
 #include "SensorTargetTemplates.inc"
 #include "CfgMagazineWells.inc"
 
@@ -13,7 +14,7 @@ class CfgPatches
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = {"sws_main"};
+    requiredAddons[] = {"ace_common", "sws_main", "phan_scifisupportplus"};
     author = QUOTE(AUTHOR);
     VERSION_CONFIG;
   };
