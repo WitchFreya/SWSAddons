@@ -85,6 +85,7 @@ class XtdGearInfos
     C_GEAR_INFO_OP(Sawbones);
     C_GEAR_INFO_OP(Snare);
     C_GEAR_INFO_OP(Sonic);
+    C_GEAR_INFO_OP(Spritz);
     C_GEAR_INFO_OP(Tiger);
     C_GEAR_INFO_OP(Vertigo);
 
