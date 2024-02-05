@@ -21,6 +21,7 @@ class XtdGearModels
       , "Sawbones"
       , "Snare"
       , "Sonic"
+      , "Spritz"
       , "Tiger"
       , "Vertigo"
     };
@@ -38,6 +39,7 @@ class XtdGearModels
     class Sawbones {};
     class Snare {};
     class Sonic {};
+    class Spritz {};
     class Tiger {};
     class Vertigo {};
   };

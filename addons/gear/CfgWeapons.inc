@@ -80,6 +80,7 @@ class CfgWeapons
     //== OPERATIVES
     C_GEAR(Ashes,silver);
     C_GEAR(Butler,purple);
+    C_GEAR(Chrome,defiant);
     C_GEAR(Demon,purple);
     C_GEAR(Egg,egg);
     C_GEAR(Hound,hound);
@@ -91,7 +92,7 @@ class CfgWeapons
     C_GEAR(Sawbones,sawbones);
     C_GEAR(Snare,snare);
     C_GEAR(Sonic,defiant);
-    C_GEAR(Chrome,defiant);
+    C_GEAR(Spritz,spritz);
     C_GEAR(Tiger,gold);
     C_GEAR(Vertigo,gold);
 
