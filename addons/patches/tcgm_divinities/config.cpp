@@ -14,7 +14,7 @@ class CfgPatches {
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = { "TCGM_Divinities", "ace_medical_engine", "" };
+    requiredAddons[] = { "TCGM_Divinities" };
     skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
   };
