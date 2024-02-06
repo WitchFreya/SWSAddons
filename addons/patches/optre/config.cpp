@@ -1,5 +1,7 @@
 #include "script_component.hpp"
 
+class Mode_FullAuto;
+
 #include "CfgAmmo.inc"
 #include "CfgWeapons.inc"
 #include "CfgVehicles.inc"
@@ -7,7 +9,7 @@
 
 class CfgPatches
 {
-    class SUBADDON
+    class SUBADDON 
     {
         name = COMPONENT_NAME;
         units[] = { };
