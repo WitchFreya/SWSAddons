@@ -93,7 +93,7 @@ class CfgWeapons
     C_GEAR(Snare,snare);
     C_GEAR(Sonic,defiant);
     C_GEAR(Spritz,spritz);
-    C_GEAR(Tiger,gold);
+    C_GEAR(Tiger,tiger);
     C_GEAR(Vertigo,gold);
 
     //== COLORS
