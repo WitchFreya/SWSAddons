@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-class Mode_FullAuto;
+class LowROF;
 
 #include "CfgAmmo.inc"
 #include "CfgWeapons.inc"
