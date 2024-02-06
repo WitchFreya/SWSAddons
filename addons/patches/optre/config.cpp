@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 
 #include "CfgAmmo.inc"
+#include "CfgWeapons.inc"
 #include "CfgVehicles.inc"
 #include "CfgFunctions.inc"
 
