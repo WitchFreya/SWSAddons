@@ -8,6 +8,7 @@
   , "SWS_V_Bag_Hardcase_Blue" \
   , "SWS_V_Bag_Hardcase_Chrome" \
   , "SWS_V_Bag_Hardcase_Medical" \
+  , "SWS_V_Bag_Hardcase_Polaris" \
   , "SWS_V_Bag_Hardcase_Sawbones" \
   , "SWS_V_Bag_Hardcase_Snare" \
   , "SWS_V_Bag_Hardcase_Spritz" \

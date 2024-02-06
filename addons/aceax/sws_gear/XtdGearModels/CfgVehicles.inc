@@ -47,6 +47,7 @@ class CfgVehicles
         , "Blue"
         , "Chrome"
         , "Egg"
+        , "Polaris"
         , "Sawbones"
         , "Snare"
         , "Spritz"
@@ -58,6 +59,7 @@ class CfgVehicles
       C_VALUE(Blue);
       C_VALUE(Chrome);
       C_VALUE(Egg);
+      C_VALUE(Polaris);
       C_VALUE(Sawbones);
       C_VALUE(Snare);
       C_VALUE(Vertigo);
