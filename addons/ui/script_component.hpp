@@ -13,3 +13,6 @@
 #endif
 
 #include "\x\sws\addons\main\script_macros.hpp"
+
+#define RGBA_WHITE 1,1,1,1
+#define RGBA_BLACK_TRANSLUCENT 0,0,0,0.5
