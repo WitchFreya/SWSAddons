@@ -5,12 +5,10 @@ class cfgWeapons
     {
         magazineReloadTime = 40;
     };
-    class MGunCore;
-    class M134_minigun: MGunCore
-    {
-        class LowROF;
-    };
-
+    class LowROF;
+    class Mode_Burst;
+    class Mode_SemiAuto;
+    class M134_minigun;
     class M134_MELB: M134_minigun 
     {
         displayName = "Sx1337-H";
@@ -21,11 +19,8 @@ class cfgWeapons
             recoil = "recoil_empty";  
         };
     };
-
-
     class missiles_DAR;
-    class Mode_Burst;
-    class Mode_SemiAuto;
+
     class M260_MELB;
     class SWS_TalonLauncher: M260_MELB 
     {
@@ -35,7 +30,6 @@ class cfgWeapons
 			"Pylon_Talon_3x_MELB",
 			"Pylon_Talon_4x_MELB"
 		};
-
         class Burst1: Mode_SemiAuto 
         {
             displayName = "Single";

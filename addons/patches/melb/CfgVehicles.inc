@@ -1,7 +1,9 @@
+class Components;
+class TransportPylonsComponent;
+class Pylons;
 class CfgVehicles
 {
     class MELB_base;
-
     class MELB_MH6M: MELB_base
     {
         scope = 1;
@@ -16,16 +18,6 @@ class CfgVehicles
     {
         scope = 1;
         scopeCurator = 1;
-        class Components: Components 
-        {
-            class TransportPylonsComponent 
-            {
-                class pylons 
-                {
-                    class R_Pylon;
-                };
-            };
-        };
     };
 
     class SWS_Shrike: MELB_AH6M 
