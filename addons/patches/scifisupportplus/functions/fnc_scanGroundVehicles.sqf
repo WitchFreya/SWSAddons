@@ -15,8 +15,6 @@
  * Public: No
  */
 
-if !(["PHAN_ScifiSupportPlus"] call ace_common_fnc_isModLoaded) exitWith {[[], []]};
-
 private _classNames = _this;
 private _configs = _classNames apply { configFile >> "CfgVehicles" >> _x };
 //--- https://zen-mod.github.io/ZEN/#/frameworks/dynamic_dialog?id=combo-box-combo
