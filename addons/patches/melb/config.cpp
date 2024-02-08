@@ -17,7 +17,17 @@ class CfgPatches
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = {"MELB", "ace_hellfire"};
+    requiredAddons[] = {
+      "MELB"
+      , "a3_weapons_f"
+      , "b_unscaf"
+      , "optre_weapons_ammo_signal_smoke"
+      , "optre_weapons_smg"
+      , "ace_hellfire"
+      , "ace_medical_treatment"
+      , "sws_main"
+      , "sws_weapons_ar0m37s" 
+      };
     skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
   };

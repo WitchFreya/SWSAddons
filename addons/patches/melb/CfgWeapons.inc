@@ -27,6 +27,7 @@ class cfgWeapons
     class SWS_TalonLauncher: M260_MELB 
     {
         displayName = "Sx260 Talon HEDP";
+        ballisticsComputer = 8;
         magazines[] =
 		{
 			"Pylon_Talon_3x_MELB",
