@@ -13,15 +13,15 @@ jobs:
     name: Build
     runs-on: windows-latest
     steps:
-      - uses: arma-actions/arma3-tools@master
+      # A3 tools necessary for HEMTT binarization
+      - name: Install Arma 3 Tools
+        uses: arma-actions/arma3-tools@master
         with:
           toolsUrl: ${{ secrets.A3_TOOLS_URL }}
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup HEMTT
         uses: arma-actions/hemtt@v1
-        with:
-          version: 'v1.10.2'
       - name: Run HEMTT build
         run: hemtt release
       - name: Upload Artifact
