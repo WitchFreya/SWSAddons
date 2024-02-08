@@ -59,7 +59,8 @@ class cfgMagazines
 
 	class Talon_Magazine_MELB: SWS_Magazine_MELB
 	{
-		ammo = "M151_Ammo_MELB";
+		count = 1;
+		ammo = "SWS_M_Talon";
 		displaynameshort = "Sx260 HEDP";
 		displayName = "Sx260 Experimental HEDP Rocket";
 		descriptionShort = "HEDP Rocket";
@@ -68,7 +69,8 @@ class cfgMagazines
 
 	class Rake_Magazine_MELB: SWS_Magazine_MELB
 	{
-		ammo = "M261_Ammo_MELB";
+		count = 1;
+		ammo = "SWS_M_Rake";
 		displaynameshort = "Sx261 HE";
 		displayName = "Sx260 Experimental HE-AP Rocket";
 		descriptionShort = "HE Rocket";
@@ -98,6 +100,7 @@ class cfgMagazines
 		model = "melb\proxies\pylon_m261_3x";
 		hardpoints[] = {"3x_Rockets_SWSLB"};
 		pylonWeapon = "SWS_RakeLauncher";
+		count = 3;
         weight = 36;
 	};
 	class Pylon_Rake_4x_MELB: Pylon_Rake_3x_MELB
@@ -119,7 +122,7 @@ class cfgMagazines
     class Pylon_S260L_MELB: Pylon_M260_MELB
 	{
 		count = 0;
-		displayName = "Talon HEDP Launchtubes";
+		displayName = "Talon Missile (HEDP)";
         description = "TALON System launch tubes. Fires missiles good against clustered infantry and light armor.";
 		model = "melb\proxies\pylon_m260";
 		pylonWeapon = "";
@@ -130,8 +133,8 @@ class cfgMagazines
 	class Pylon_S261L_MELB: Pylon_M261_MELB
 	{
 		count = 0;
-		displayName = "Rake HE Launchtubes";
-        description = "RAKE System launch tubes. Fires missiles good against infantry and cars.";
+		displayName = "Rake Missile (HEAP)";
+        description = "RAKE System launch tubes. Fires missiles good against infantry and cars. High damage radius.";
 		model = "melb\proxies\pylon_m261";
 		pylonWeapon = "";
 		hardpoints[] = {"RightMount_MELB","LeftMount_MELB"};

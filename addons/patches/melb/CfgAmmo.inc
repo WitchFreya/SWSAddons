@@ -1,18 +1,32 @@
 class cfgAmmo {
-    class MissileBase;
-    class Hydra_Ammo_Base_MELB: MissileBase
+	class M_AT;
+	class SWS_Dumbfire_Base : M_AT // Same as default hydras
 	{
-        cost = 100;
+		cmimmunity = 1;
+		whistleDist=24;
+		effectsMissileInit = "MissileDAR1";
+		muzzleEffect = "BIS_fnc_effectFiredRocket";
+	};
+	class SWS_M_Talon : SWS_Dumbfire_Base {
+		model = "melb\proxies\m229_fly";
+		proxyShape = "melb\proxies\m229_proxy";
 		hit = 300;
 		indirectHit = 50;
-		indirectHitRange = 10;
-        initTime = 0.02;
-		maxSpeed = 720;
-		thrustTime = 1.07;
-		thrust = 825;
-		fuseDistance = 75;
-		airFriction = 0.1;
-		sideAirFriction = 0.005;
-		timeToLive = 20;
-    };
+		indirectHitRange = 15;
+		suppressionRadiusHit = 20;
+	};
+	class SWS_M_Rake : SWS_Dumbfire_Base {
+		model = "melb\proxies\m261_mpsm_fly";
+		proxyShape = "melb\proxies\m261_mpsm_proxy";
+		hit = 250;
+		indirectHitRange = 15;
+		indirectHit = 50;
+		ace_frag_gurney_c = 3000;
+		ace_frag_gurney_k = "1/2";
+		ace_frag_classes[] = {"ACE_frag_medium"};
+		ace_frag_metal = 280;
+		ace_frag_charge = 350;
+		ace_frag_enabled = 1;
+		suppressionRadiusHit = 50;
+	};
 };
