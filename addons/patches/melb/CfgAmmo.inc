@@ -18,14 +18,14 @@ class cfgAmmo {
 	class SWS_M_Rake : SWS_Dumbfire_Base {
 		model = "melb\proxies\m261_mpsm_fly";
 		proxyShape = "melb\proxies\m261_mpsm_proxy";
-		hit = 250;
+		hit = 200;
 		indirectHitRange = 15;
 		indirectHit = 50;
 		ace_frag_gurney_c = 3000;
 		ace_frag_gurney_k = "1/2";
 		ace_frag_classes[] = {"ACE_frag_medium"};
-		ace_frag_metal = 280;
-		ace_frag_charge = 350;
+		ace_frag_metal = 230;
+		ace_frag_charge = 300;
 		ace_frag_enabled = 1;
 		suppressionRadiusHit = 50;
 	};
