@@ -13,6 +13,9 @@ jobs:
     name: Build
     runs-on: windows-latest
     steps:
+      - uses: arma-actions/arma3-tools@master
+        with:
+          toolsUrl: ${{ secrets.A3_TOOLS_URL }}
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup HEMTT
@@ -26,6 +29,8 @@ jobs:
         with:
           name: sws-${{ github.sha }}
           path: releases/sws-latest.zip
+          if-no-files-found: error
+          compression-level: 0 # Big files aren't compressed easily
 
   release:
     name: Release
