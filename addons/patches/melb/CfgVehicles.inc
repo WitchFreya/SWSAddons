@@ -2,10 +2,43 @@ class Components;
 class TransportPylonsComponent;
 class Pylons;
 class PilotCamera;
-class CfgVehicles
 class Turrets;
-{
-    class MELB_base;
+class CfgVehicles
+{	
+	class Helicopter_Base_H;
+    class MELB_base : Helicopter_Base_H 
+	{	
+		crew = "B_UNSCAF_Pilot_01";
+		typicalCargo[] = { "B_UNSCAF_Pilot_01" };
+		ace_cargo_space = 6;
+		ace_cargo_loadMasterTurrets[] = {{-1},{0}};
+		irTargetSize = 0.6;
+		radarTargetSize = 0.55;
+		startDuration = 15;
+		class Turrets: Turrets
+		{
+			class CopilotTurret;
+		};
+		class TransportMagazines
+		{
+			MACRO_ADDMAGAZINE(SWS_Magazine_60Rnd_65x39_Caseless_MSBS,8);
+			MACRO_ADDMAGAZINE(OPTRE_SignalSmokeY,1);
+			MACRO_ADDMAGAZINE(OPTRE_SignalSmokeB,1);
+			MACRO_ADDMAGAZINE(SmokeShell,6);
+		};
+		class TransportWeapons
+		{
+			MACRO_ADDWEAPON(SWS_Weapon_AR0M37_GL,2);
+		};
+		class TransportItems
+		{
+			MACRO_ADDITEM(ACE_BloodIV,2);
+			MACRO_ADDITEM(ACE_ElasticBandage,10);
+			MACRO_ADDITEM(ACE_QuikClot,5);
+			MACRO_ADDITEM(Toolkit,1);
+			MACRO_ADDITEM(OPTRE_M7_Sight,1);
+		};
+	};
     class MELB_MH6M: MELB_base
     {
         scope = 1;
@@ -29,13 +62,6 @@ class Turrets;
 		ITEM_META(2);
 		faction = "SWS_UNSC";
 		side = 1;
-		crew = "B_UNSCAF_Pilot_01";
-		typicalCargo[] = { "B_UNSCAF_Pilot_01" };
-		ace_cargo_space = 6;
-		ace_cargo_loadMasterTurrets[] = {{-1},{0}};
-		irTargetSize = 0.6;
-		radarTargetSize = 0.55;
-		startDuration = 15;
         class Components: Components
 		{
 			class TransportPylonsComponent: TransportPylonsComponent
@@ -177,30 +203,11 @@ class Turrets;
 		{
 			class CopilotTurret: CopilotTurret
 			{
-				maxHorizontalRotSpeed = 1.2;
-				maxMouseXRotSpeed = 1.2;
+				maxHorizontalRotSpeed = 2;
+				maxMouseXRotSpeed = 2;
 				maxVerticalRotSpeed = 1.2;
 				maxMouseYRotSpeed = 1.2;
 			};
-		};
-		class TransportMagazines
-		{
-			MACRO_ADDMAGAZINE(SWS_Magazine_60Rnd_65x39_Caseless_MSBS,8);
-			MACRO_ADDMAGAZINE(OPTRE_SignalSmokeY,2);
-			MACRO_ADDMAGAZINE(OPTRE_SignalSmokeB,2);
-			MACRO_ADDMAGAZINE(SmokeShell,6);
-		};
-		class TransportWeapons
-		{
-			MACRO_ADDWEAPON(SWS_Weapon_AR0M37_GL,2);
-		};
-		class TransportItems
-		{
-			MACRO_ADDITEM(ACE_BloodIV,30);
-			MACRO_ADDITEM(ACE_ElasticBandage,100);
-			MACRO_ADDITEM(ACE_QuikClot,40);
-			MACRO_ADDITEM(Toolkit,1);
-			MACRO_ADDITEM(OPTRE_M7_Sight,2);
 		};
     };
 
@@ -210,41 +217,15 @@ class Turrets;
 		ITEM_META(2);
 		faction = "SWS_UNSC";
 		side = 1;
-		crew = "B_UNSCAF_Pilot_01";
-		typicalCargo[] = { "B_UNSCAF_Pilot_01" };
-		ace_cargo_space = 6;
-		ace_cargo_loadMasterTurrets[] = {{-1},{0}};
-		irTargetSize = 0.6;
-		radarTargetSize = 0.55;
-		startDuration = 15;
 		class Turrets: Turrets
 		{
 			class CopilotTurret: CopilotTurret
 			{
-				maxHorizontalRotSpeed = 1.2;
-				maxMouseXRotSpeed = 1.2;
+				maxHorizontalRotSpeed = 2;
+				maxMouseXRotSpeed = 2;
 				maxVerticalRotSpeed = 1.2;
 				maxMouseYRotSpeed = 1.2;
 			};
-		};
-		class TransportMagazines
-		{
-			MACRO_ADDMAGAZINE(SWS_Magazine_60Rnd_65x39_Caseless_MSBS,8);
-			MACRO_ADDMAGAZINE(OPTRE_SignalSmokeY,2);
-			MACRO_ADDMAGAZINE(OPTRE_SignalSmokeB,2);
-			MACRO_ADDMAGAZINE(SmokeShell,6);
-		};
-		class TransportWeapons
-		{
-			MACRO_ADDWEAPON(SWS_Weapon_AR0M37_GL,2);
-		};
-		class TransportItems
-		{
-			MACRO_ADDITEM(ACE_BloodIV,30);
-			MACRO_ADDITEM(ACE_ElasticBandage,100);
-			MACRO_ADDITEM(ACE_QuikClot,40);
-			MACRO_ADDITEM(Toolkit,1);
-			MACRO_ADDITEM(OPTRE_M7_Sight,2);
 		};
     };
 };
