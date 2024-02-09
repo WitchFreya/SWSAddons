@@ -1,6 +1,5 @@
-class cfgMagazines 
-{   
-    // Buffing recoil, by which I mean nearly removing it. Little bird is too light, gets pushed around too hard.
+class cfgMagazines
+{
     class 5000Rnd_762x51_Belt;
     class 500Rnd_127x99_mag_Tracer_Red;
 
@@ -12,28 +11,28 @@ class cfgMagazines
 	{
 		muzzleImpulseFactor[] = {0,0.3};
 	};
-    // Let's use SWS hydra missiles. Because. You know. Murder. Murdermurdermurder.
-
     // Pulling in ACE actual munitions to avoid fuckery.
     class PylonMissile_1Rnd_ACE_Hellfire_AGM114K;
     class PylonMissile_1Rnd_ACE_Hellfire_AGM114N;
     class PylonMissile_1Rnd_ACE_Hellfire_AGM114L;
-    class SWS_AGM114K_Bare: PylonMissile_1Rnd_ACE_Hellfire_AGM114K {
+    class SWS_AGM114K_Bare: PylonMissile_1Rnd_ACE_Hellfire_AGM114K 
+	{
         displayName = "[SWS] AGM-114K";
         model = "melb\proxies\pylon_agm_114k";
         hardpoints[] = {"SWS_Hellfires"};
     };
-    class SWS_AGM114N_Bare: PylonMissile_1Rnd_ACE_Hellfire_AGM114N {
+    class SWS_AGM114N_Bare: PylonMissile_1Rnd_ACE_Hellfire_AGM114N 
+	{
         displayName = "[SWS] AGM-114N";
         model = "melb\proxies\pylon_agm_114k";
         hardpoints[] = {"SWS_Hellfires"};
     };
-    class SWS_AGM114L_Bare: PylonMissile_1Rnd_ACE_Hellfire_AGM114L {
+    class SWS_AGM114L_Bare: PylonMissile_1Rnd_ACE_Hellfire_AGM114L 
+	{
         displayName = "[SWS] AGM-114L";
         model = "melb\proxies\pylon_agm_114k";
         hardpoints[] = {"SWS_Hellfires"};
     };
-    // Denying nonfunctional missiles because I can't be fucked to fix them.
     class AGM_114K_MELB;
     class FakeMagazine_MELB;
     class M229_Magazine_MELB;
@@ -41,9 +40,9 @@ class cfgMagazines
     class Pylon_M261_MELB;
     class Pylon_AGM_114K_MELB: AGM_114K_MELB
     {
-        hardpoints[] = {"MELB_Disabled"};
+        hardpoints[] = {"MELB_Disabled"}; // We never want to see this POS
     };
-    // Let's just make our own entire set of missiles and give them a reason to be.
+	// Roll new magazines from scratch. MELB does it, so can we.
     class VehicleMagazine;
     class SWS_Magazine_MELB: VehicleMagazine
 	{

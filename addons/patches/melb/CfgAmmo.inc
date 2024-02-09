@@ -7,11 +7,12 @@ class cfgAmmo {
 		effectsMissileInit = "MissileDAR1";
 		muzzleEffect = "BIS_fnc_effectFiredRocket";
 	};
-	class SWS_M_Talon : SWS_Dumbfire_Base {
+	class SWS_M_Talon : SWS_Dumbfire_Base 
+	{
 		model = "melb\proxies\m229_fly";
 		proxyShape = "melb\proxies\m229_proxy";
-		hit = 300;
-		indirectHit = 50;
+		hit = 320;
+		indirectHit = 60;
 		indirectHitRange = 15;
 		suppressionRadiusHit = 20;
 	};
@@ -19,7 +20,7 @@ class cfgAmmo {
 		model = "melb\proxies\m261_mpsm_fly";
 		proxyShape = "melb\proxies\m261_mpsm_proxy";
 		hit = 200;
-		indirectHitRange = 15;
+		indirectHitRange = 20;
 		indirectHit = 50;
 		ace_frag_gurney_c = 3000;
 		ace_frag_gurney_k = "1/2";

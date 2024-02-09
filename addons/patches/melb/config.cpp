@@ -1,18 +1,30 @@
 #include "script_component.hpp"
 
+
+class Components;
+class SensorTemplatePassiveRadar;
+class SensorTemplateLaser;
+class SensorTemplateDataLink;
+class TransportPylonsComponent;
+class Pylons;
+class PilotCamera;
+class Turrets;
+class LowROF;
+class Mode_Burst;
+class Mode_SemiAuto;
+class Burst1;
+class Burst2;
 #include "CfgVehicles.inc"
 #include "CfgWeapons.inc"
 #include "CfgAmmo.inc"
 #include "CfgMagazines.inc"
-
-
 class CfgPatches
 {
   class SUBADDON
   {
     addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
-    units[] = { };
+    units[] = { CLASSES_VEHICLES };
     weapons[] = { };
     magazines[] = { };
     ammo[] = { };

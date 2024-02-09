@@ -1,19 +1,20 @@
-class Components;
-class TransportPylonsComponent;
-class Pylons;
-class PilotCamera;
-class Turrets;
+#define CLASSES_VEHICLES  \
+  "SWS_V_Heli_Shrike"\
+  , "SWS_V_Heli_Magpie"
+
+
+
 class CfgVehicles
-{	
+{
 	class Helicopter_Base_H;
     class MELB_base : Helicopter_Base_H 
-	{	
+	{
 		crew = "B_UNSCAF_Pilot_01";
 		typicalCargo[] = { "B_UNSCAF_Pilot_01" };
 		ace_cargo_space = 6;
 		ace_cargo_loadMasterTurrets[] = {{-1},{0}};
 		irTargetSize = 0.6;
-		radarTargetSize = 0.55;
+		radarTargetSize = 0.45;
 		startDuration = 15;
 		class Turrets: Turrets
 		{
@@ -36,8 +37,77 @@ class CfgVehicles
 			MACRO_ADDITEM(ACE_ElasticBandage,10);
 			MACRO_ADDITEM(ACE_QuikClot,5);
 			MACRO_ADDITEM(Toolkit,1);
-			MACRO_ADDITEM(OPTRE_M7_Sight,1);
+			MACRO_ADDITEM(OPTRE_M7_Sight,2);
 		};
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class DataLinkSensorComponent : SensorTemplateDataLink { };
+				};
+			};
+		};
+		memoryPointDriverOptics="commanderview";
+		driverWeaponsInfoType="RscOptics_Heli_Attack_02_pilot";
+		class pilotCamera
+		{
+			class OpticsIn
+			{
+				class Wide
+				{
+					opticsDisplayName="WFOV";
+					initAngleX=0;
+					minAngleX=0;
+					maxAngleX=0;
+					initAngleY=0;
+					minAngleY=0;
+					maxAngleY=0;
+					initFov="(60 / 120)";
+					minFov="(30 / 120)";
+					maxFov="(60 / 120)";
+					directionStabilized=1;
+					visionMode[]=
+					{
+						"Normal",
+						"NVG",
+						"Ti"
+					};
+					thermalMode[]={0,1};
+					gunnerOpticsModel="\A3\Weapons_F\Reticle\Optics_Generic_wide_F.p3d";
+				};
+				class Medium: Wide
+				{
+					opticsDisplayName="MFOV";
+					initFov="(6 / 120)";
+					minFov="(6 / 120)";
+					maxFov="(6 / 120)";
+					gunnerOpticsModel="\A3\Weapons_F\Reticle\Optics_Generic_medium_F.p3d";
+				};
+				class Narrow: Wide
+				{
+					opticsDisplayName="NFOV";
+					initFov="(2 / 120)";
+					minFov="(2 / 120)";
+					maxFov="(2 / 120)";
+					gunnerOpticsModel="\A3\Weapons_F\Reticle\Optics_Generic_narrow_F.p3d";
+				};
+			};
+			minTurn=-120;
+			maxTurn=120;
+			initTurn=0;
+			minElev=-10;
+			maxElev=90;
+			initElev=0;
+			maxXRotSpeed=1;
+			maxYRotSpeed=1;
+			maxMouseXRotSpeed=1;
+			maxMouseYRotSpeed=1;
+			pilotOpticsShowCursor=1;
+			controllable=1;
+		};
+
 	};
     class MELB_MH6M: MELB_base
     {
@@ -45,18 +115,18 @@ class CfgVehicles
         scopeCurator = 1;
 
     };
-    class MELB_H6M: MELB_base 
+    class MELB_H6M: MELB_base
     {
         scope = 1;
         scopeCurator = 1;
     };
     class MELB_AH6M: MELB_base
     {
-        scope = 1;
+        scope = 2;
         scopeCurator = 1;
     };
 
-    class SWS_Shrike: MELB_AH6M 
+    class SWS_V_Heli_Shrike: MELB_AH6M
     {
         displayName = QNAME(Sx-6A Shrike);
 		ITEM_META(2);
@@ -170,10 +240,10 @@ class CfgVehicles
 				};
 				class presets
 				{
-					class Spam
+					class HEAP
 					{
 						displayName = "38x RAKE-HE + M134";
-						attachment[] = {"Pylon_S261L_MELB","Pylon_Talon_12x_MELB","Pylon_Talon_4x_MELB","Pylon_Talon_3x_MELB","","","Pylon_R_3000Rnd_M134_MELB","Pylon_L_3000Rnd_M134_MELB","","","Pylon_Talon_3x_MELB","Pylon_Talon_4x_MELB","Pylon_Talon_12x_MELB","Pylon_S261L_MELB"};
+						attachment[] = {"Pylon_S261L_MELB","Pylon_Rake_12x_MELB","Pylon_Rake_4x_MELB","Pylon_Rake_3x_MELB","","","Pylon_R_3000Rnd_M134_MELB","Pylon_L_3000Rnd_M134_MELB","","","Pylon_Rake_3x_MELB","Pylon_Rake_4x_MELB","Pylon_Rake_12x_MELB","Pylon_S261L_MELB"};
 					};
                     class Default
                     {
@@ -187,7 +257,6 @@ class CfgVehicles
 					};
 					class DoubleGuns
 					{
-                        
 						displayName = "GAU + M134";
 						attachment[] = {"Pylon_R_1300Rnd_GAU19_MELB","","","","","","Pylon_R_3000Rnd_M134_MELB","Pylon_L_3000Rnd_M134_MELB","","","","","","Pylon_L_1300Rnd_GAU19_MELB"};
 					};
@@ -211,7 +280,7 @@ class CfgVehicles
 		};
     };
 
-    class SWS_Magpie: MELB_MH6M
+    class SWS_V_Heli_Magpie: MELB_MH6M
     {
         displayName = QNAME(Sx-6M Magpie);
 		ITEM_META(2);
