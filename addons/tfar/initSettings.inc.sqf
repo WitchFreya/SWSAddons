@@ -1,13 +1,4 @@
 [
-  QGVAR(restoreSwRadio),
-  "CHECKBOX",
-  ["Restore SR Settings with Loadout", "When you restore loadout within an arsenal, restore the SR radio settings as well."],
-  [QNAME(Common), COMPONENT_NAME],
-  true,
-  0
-] call CBA_fnc_addSetting;
-
-[
   QGVAR(restoreRadios),
   "LIST",
   ["Restore radio settings with loadout", "When you load a loadout within the arsenal, what radio settings should be preserved from your previous loadout?"],
