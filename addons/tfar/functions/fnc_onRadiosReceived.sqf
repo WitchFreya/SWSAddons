@@ -27,7 +27,14 @@ switch (GVAR(restoreRadios)) do {
   case "sr_only": {
     [_unit] call FUNC(restoreShortRangeRadio);
   };
+  case "lr_only": {
+    [_unit] call FUNC(restoreLongRangeRadio);
+  };
   case "both": {
     [_unit] call FUNC(restoreShortRangeRadio);
+    [_unit] call FUNC(restoreLongRangeRadio);
+  };
+  default {
+    TRACE_2("Skipped restoring radio settings",_unit,GVAR(restoreRadios));
   };
 };

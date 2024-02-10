@@ -31,8 +31,8 @@ if (isNil {_radio}) exitWith {
   true;
 };
 
-private _settings = _radio call TFAR_fnc_getSwSettings;
+private _settings = _radio call tfar_fnc_getSwSettings;
 
 _unit setVariable [QGVAR(savedShortRangeSettings), _settings];
-TRACE_2("Saved radio settings",_unit,_settings);
+TRACE_2("Saved short-range radio settings",_unit,_settings);
 true;

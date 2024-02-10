@@ -6,3 +6,5 @@
 // Ensure locality.
 [QGVAR(restoreShortRangeRadio), FUNC(restoreShortRangeRadio)] call CBA_fnc_addEventHandler;
 [QGVAR(saveShortRangeRadio), FUNC(saveShortRangeRadio)] call CBA_fnc_addEventHandler;
+[QGVAR(restoreLongRangeRadio), FUNC(restoreLongRangeRadio)] call CBA_fnc_addEventHandler;
+[QGVAR(saveLongRangeRadio), FUNC(saveLongRangeRadio)] call CBA_fnc_addEventHandler;
