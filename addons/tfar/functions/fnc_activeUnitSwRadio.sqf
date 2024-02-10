@@ -1,28 +1,33 @@
-#include "script_component.hpp"
+#include "script_component.inc.sqf"
 
 /*
  * Author: Maid
  * Retrieve the active SW radio for a unit.
  *
  * Arguments:
- * None
+ * 0: unit <OBJECT> - The unit to check for a radio.
  *
  * Return Value:
- * The radio class name or nil if not found
+ * <string | nil> - The radio class name or nil if not found
  *
- * Public: Yes
+ * Example:
+ * [player] call sws_tfar_fnc_activeUnitSwRadio;
+ *
+ * Public: No
  */
 
-params ["_unit"];
+params [
+  ["_unit", objNull, [objNull]]
+];
 
 private _items = assignedItems _unit;
 private _radioIdx = _items findIf {
-    _x call TFAR_fnc_isRadio;
+  _x call TFAR_fnc_isRadio;
 };
 
 if (_radioIdx == -1) exitWith {
-    TRACE_1("No SW radio on unit",_unit);
-    nil;
+  TRACE_1("No SW radio on unit",_unit);
+  nil;
 };
 
 _items select _radioIdx;
