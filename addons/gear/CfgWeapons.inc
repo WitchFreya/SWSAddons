@@ -28,6 +28,7 @@
 
 #define CLASSES_WEAPONS     \
   QWEAPONS_FN(Ashes),       \
+  QWEAPONS_FN(Bait),        \
   QWEAPONS_FN(Blue),        \
   QWEAPONS_FN(Butler),      \
   QWEAPONS_FN(Chrome),      \
@@ -79,6 +80,7 @@ class CfgWeapons
 
     //== OPERATIVES
     C_GEAR(Ashes,silver);
+    C_GEAR(Bait,red);
     C_GEAR(Butler,purple);
     C_GEAR(Chrome,defiant);
     C_GEAR(Demon,purple);
