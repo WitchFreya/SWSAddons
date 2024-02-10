@@ -71,6 +71,7 @@ class XtdGearInfos
   {
     //== OPERATIVES
     C_GEAR_INFO_OP(Ashes);
+    C_GEAR_INFO_OP(Bait);
     C_GEAR_INFO_OP(Butler);
     C_GEAR_INFO_OP(Chrome);
     C_GEAR_INFO_OP(Demon);

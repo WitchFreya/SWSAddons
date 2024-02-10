@@ -7,6 +7,7 @@ class XtdGearModels
   {
     values[] = {
       "Ashes"
+      , "Bait"
       , "Butler"
       , "Chrome"
       , "Demon"
@@ -26,6 +27,7 @@ class XtdGearModels
       , "Vertigo"
     };
     class Ashes {};
+    class Bait {};
     class Butler {};
     class Chrome {};
     class Demon {};
