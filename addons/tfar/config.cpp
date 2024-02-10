@@ -11,7 +11,7 @@ class CfgPatches {
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = { "tfar_core" };
+    requiredAddons[] = { "tfar_core", "ace_arsenal" };
     skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
   };
