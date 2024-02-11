@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "script_component.inc.sqf"
 
 /*
  * Author: Maid
@@ -15,9 +15,9 @@
 
 params ["_config"];
 private _filter = toString {
-    (toLower (getText (_x >> "dlc")) in ['sws','swst','erp'])
-    && { getNumber (_x >> "scopeArsenal") > 1; }
-    && { getNumber (_x >> QGVAR(arsenalHide)) != 1; };
+  (toLower (getText (_x >> "dlc")) in ['sws','swst','erp'])
+  && { getNumber (_x >> "scopeArsenal") > 1; }
+  && { getNumber (_x >> QGVAR(arsenalHide)) != 1; };
 };
 
 private _relevantConfigs = ["CfgWeapons","CfgGlasses","CfgMagazines","CfgVehicles"];

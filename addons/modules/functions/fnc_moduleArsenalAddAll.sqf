@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "script_component.inc.sqf"
 
 /*
  * Author: Maid
@@ -18,7 +18,7 @@
  * Public: No
  */
 
-params["_logic", "_units", "_activated"];
+params ["_logic", "_units", "_activated"];
 
 
 if (!_activated || { !local _logic; } || { count _units < 1 }) exitWith {0};
@@ -32,10 +32,10 @@ private _allowDragging = _logic getVariable ["AllowDragging", false];
 private _allowCarrying = _logic getVariable ["AllowCarrying", false];
 
 {
-    [_x, [], true] call ACE_arsenal_fnc_initBox;
-    [_x, _relevantItems, true] call ACE_arsenal_fnc_addVirtualItems;
-    [_x, _allowDragging] call ace_dragging_fnc_setDraggable;
-    [_x, _allowCarrying] call ace_dragging_fnc_setCarryable;
+  [_x, [], true] call ace_arsenal_fnc_initBox;
+  [_x, _relevantItems, true] call ace_arsenal_fnc_addVirtualItems;
+  [_x, _allowDragging] call ace_dragging_fnc_setDraggable;
+  [_x, _allowCarrying] call ace_dragging_fnc_setCarryable;
 } forEach _units;
 
 INFO("moduleArsenalAddAll complete.");
