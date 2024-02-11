@@ -13,3 +13,8 @@ class Extended_PostInit_EventHandlers {
     init = QUOTE(call COMPILE_SCRIPT(XEH_postInit));
   };
 };
+class Extended_Local_EventHandlers {
+  class AllVehicles {
+    local = QFUNC(onLocal);
+  };
+};
