@@ -1,6 +1,19 @@
 class CfgVehicles
 {
-  //--- https://github.com/vespade/Zulu/blob/aef9d8d4549e30ce7b9da5a77469fad73120cb59/V_FZ_Ground_Vehicles/config.cpp#L457
-  // TODO: Review texture variants and fix... all of them. fuck me i guess.
-  // class VES_M808BM_MBT
+  class OPTRE_M808B_UNSC;
+  class OPTRE_M808BM_UNSC;
+  class OPTRE_M875_SPH;
+
+  class VES_M808B_MBT : OPTRE_M808B_UNSC
+  {
+    #include "FZ_A_ScorpionCamos.inc"
+  };
+
+  class VES_M808BM_MBT : OPTRE_M808BM_UNSC {
+    #include "FZ_B_ScorpionCamos.inc"
+  };
+
+  class VES_M875_SPH: OPTRE_M875_SPH {
+    #include "FZ_E_ScorpionCamos.inc"
+  };
 };
