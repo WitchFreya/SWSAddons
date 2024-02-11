@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "script_component.inc.sqf"
 
 private _text = _this call DFUNC(aceStatText);
 
