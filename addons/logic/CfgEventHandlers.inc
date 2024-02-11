@@ -15,6 +15,8 @@ class Extended_PostInit_EventHandlers {
 };
 class Extended_Local_EventHandlers {
   class AllVehicles {
-    local = QFUNC(onLocal);
+    class ADDON {
+      local = QFUNC(onLocal);
+    };
   };
 };

@@ -19,7 +19,6 @@
 
 TRACE_1("allowDamage",_this);
 
-
 params [
   ["_entity", objNull, [objNull]],
   ["_allowDamage", true, [true]]
