@@ -11,7 +11,13 @@ class CfgPatches {
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = { "ace_modules", "swst_main", "erp_main" };
+    requiredAddons[] = {
+      "ace_modules"
+      , "swst_main"
+      , "erp_main"
+      , "sws_gear"
+      , "sws_air"
+    };
     skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
   };
