@@ -7,6 +7,5 @@ If you stumble upon this project, you are welcome to reuse the assets for your o
 ## Special Thanks
 
 - [Operation: TREBUCHET](https://steamcommunity.com/sharedfiles/filedetails/?id=769440155)
-- [41st ODST/MFR - Declassified Assets](https://steamcommunity.com/sharedfiles/filedetails/?id=1790880882)
-- [Armco Halo Mod](https://github.com/Belhun/Armco-Halo-Mod/): Bless Belhun for their breakdown on the hiddenSelections properties.
-- [Advanced Developer Tools](https://steamcommunity.com/sharedfiles/filedetails/?id=2369477168): My friend, you are a genius.
+- [Advanced Developer Tools](https://steamcommunity.com/sharedfiles/filedetails/?id=2369477168): Genuinely one of the most valuable addons available.
+- [ZEN](https://github.com/zen-mod/ZEN)
