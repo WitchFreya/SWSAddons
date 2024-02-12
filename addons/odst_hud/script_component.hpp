@@ -1,5 +1,5 @@
-#define COMPONENT optre_hud
-#define COMPONENT_BEAUTIFIED Operation: TREBUCHET ODST HUD
+#define COMPONENT odst_hud
+#define COMPONENT_BEAUTIFIED Improved ODST HUD
 #include "\x\sws\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
