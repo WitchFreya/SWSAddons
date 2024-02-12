@@ -2,10 +2,8 @@
 
 #include "CfgEventHandlers.inc"
 
-class CfgPatches
-{
-  class SUBADDON
-  {
+class CfgPatches {
+  class SUBADDON {
     addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
     units[] = { };
@@ -14,7 +12,7 @@ class CfgPatches
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = { "crowsza_zeus_text" };
-    skipWhenMissingDependencies = 1;
+    skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
   };
 };
