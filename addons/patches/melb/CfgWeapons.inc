@@ -24,11 +24,10 @@ class cfgWeapons
     class M260_MELB;
     class SWS_TalonLauncher: M260_MELB
     {
-
         displayName = "Sx260 Talon HEDP";
         ballisticsComputer = "8";
         // cursor="EmptyCursor";
-		// cursorAim="mg";
+		cursorAimOn="mg";
         showAimCursorInternal=0;
         magazines[] =
 		{
