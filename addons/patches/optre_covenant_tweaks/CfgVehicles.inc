@@ -30,7 +30,7 @@ class CfgVehicles
 			{
         maxHorizontalRotSpeed = 0.25;
         maxVerticalRotSpeed = 0.25;
-        minElev = -2;
+        minElev = 0;
 			};
 		};
 	};
