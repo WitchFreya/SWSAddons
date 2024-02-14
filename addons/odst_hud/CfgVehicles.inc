@@ -6,16 +6,18 @@ class CfgVehicles {
     class Components {
       class VehicleSystemsDisplayManagerComponentLeft : DefaultVehicleSystemsDisplayManagerLeft {
         class Components : Components {
-          class CustomDisplayTest {
+          class SWS_ODST_Radar {
             componentType = "CustomDisplayComponent";
             resource = "SWS_RscCustomInfoODSTRadar";
           };
         };
       };
       class VehicleSystemsDisplayManagerComponentRight : DefaultVehicleSystemsDisplayManagerRight {
-        class CustomDisplayTest {
-          componentType = "CustomDisplayComponent";
-          resource = "SWS_RscCustomInfoODSTRadar";
+        class Components : Components {
+          class SWS_ODST_Radar {
+            componentType = "CustomDisplayComponent";
+            resource = "SWS_RscCustomInfoODSTRadar";
+          };
         };
       };
     };
