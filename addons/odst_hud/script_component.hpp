@@ -13,3 +13,13 @@
 #endif
 
 #include "\x\sws\addons\main\script_macros.hpp"
+
+
+#include "defineCommonGrids.hpp"
+#include "defineCommonColors.hpp"
+
+#define IDD_FOF 7000
+#define IDC_FOF_TITLE 15112
+#define IDC_FOF_RANGE 197
+#define IDC_FOF_BACKGROUND 15110
+#define IDC_FOF_VIEWPORT 102
