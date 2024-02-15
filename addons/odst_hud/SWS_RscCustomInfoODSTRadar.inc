@@ -26,6 +26,25 @@ class SWS_RscCustomInfoODSTRadar {
       text = "50m";
       style = ST_RIGHT;
     };
+
+    class MapContainer : RscControlsGroupNoScrollbars {
+      idc = IDC_FOF_GROUP_MAP;
+      // Align inside ViewPort.
+      x = QUOTE(0.125 * GUI_GRID_W + IGUI_GRID_CUSTOMINFOLEFT_XDef);
+      y = QUOTE(1.125 * GUI_GRID_H + IGUI_GRID_CUSTOMINFOLEFT_YDef);
+      h = QUOTE(IGUI_GRID_CUSTOMINFO_HAbs - 1.125 * GUI_GRID_H);
+      w = QUOTE(IGUI_GRID_CUSTOMINFO_WAbs - 0.25 * GUI_GRID_W);
+      class Controls : Controls {
+        class Map : RscMapControl {
+          idc = IDC_FOF_MAP;
+          // Align inside ViewPort.
+          x = QUOTE(0.125 * GUI_GRID_W + IGUI_GRID_CUSTOMINFOLEFT_XDef);
+          y = QUOTE(1.125 * GUI_GRID_H + IGUI_GRID_CUSTOMINFOLEFT_YDef);
+          h = QUOTE(IGUI_GRID_CUSTOMINFO_HAbs - 1.125 * GUI_GRID_H);
+          w = QUOTE(IGUI_GRID_CUSTOMINFO_WAbs - 0.25 * GUI_GRID_W);
+        };
+      };
+    };
   };
 
   class ControlsBackground {
