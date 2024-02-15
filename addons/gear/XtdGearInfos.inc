@@ -71,6 +71,7 @@ class XtdGearInfos
   {
     //== OPERATIVES
     C_GEAR_INFO_OP(Ashes);
+    C_GEAR_INFO_OP(Bait);
     C_GEAR_INFO_OP(Butler);
     C_GEAR_INFO_OP(Chrome);
     C_GEAR_INFO_OP(Demon);
@@ -85,6 +86,7 @@ class XtdGearInfos
     C_GEAR_INFO_OP(Sawbones);
     C_GEAR_INFO_OP(Snare);
     C_GEAR_INFO_OP(Sonic);
+    C_GEAR_INFO_OP(Spritz);
     C_GEAR_INFO_OP(Tiger);
     C_GEAR_INFO_OP(Vertigo);
 

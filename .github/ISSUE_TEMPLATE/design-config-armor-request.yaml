@@ -1,0 +1,40 @@
+name: Design Request - New Armor/Medical Bag Config
+description: Request an armor/medic bag config.
+title: "[Design]: Add armor/medical bag config for <put name here, ex: 'Maid'>"
+labels: ["design-req", "enhancement"]
+body:
+  - type: input
+    id: discord
+    attributes:
+      label: Discord Handle
+      description: What is your Discord handle? (Either the @ or your callsign in the SWS Server, **do not include the @ symbol**)
+      placeholder: ex. webwitch
+    validations:
+      required: false
+  - type: dropdown
+    id: config-type
+    attributes:
+      label: Which type?
+      options:
+        - Armor
+        - Medical Bag
+    validations:
+      required: true
+  - type: input
+    id: visor-type
+    attributes:
+      label: If armor, which visor?
+      description: Either one of the existing visors, or 'Custom' for a customized version.
+  - type: input
+    id: recipient
+    attributes:
+      label: Recipient
+      description: Who is this for?
+      placeholder: ex. Maid
+    validations:
+      required: true
+  - type: textarea
+    id: additional-details
+    attributes:
+      label: Provide any additional details that may be helpful.
+

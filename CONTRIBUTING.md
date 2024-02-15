@@ -12,6 +12,7 @@ Once it's installed, you can copy the [`tasks.template.json`](.vscode/tasks.temp
 
 1. Keep variables immutable. 
   1. If you must mutate a variable, name it `_mut_<varName>`.
+2. Prefer not to call `remoteExec` directly. Instead, add a new function that does the behavior you want to operate with and pass the data to it via targeted event handlers.
 
 ## Naming
 
