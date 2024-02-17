@@ -24,4 +24,9 @@ class CfgVehicles {
     // Based on the Stomper's effects
     class DestructionEffects : GVAR(OPTRE_DestructionEffectsTemplate) {};
   };
+  // FG75 AT Gun
+  class OPTRE_Static_FG75 : StaticMGWeapon {
+    armor = 400;
+    class DestructionEffects : GVAR(OPTRE_DestructionEffectsTemplate) {};
+  };
 };
