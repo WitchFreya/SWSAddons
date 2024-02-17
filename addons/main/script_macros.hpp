@@ -86,3 +86,6 @@
 
 #define TRUE 1
 #define FALSE 0
+
+#define SIDE_OPFOR 0
+#define SIDE_BLUFOR 1
