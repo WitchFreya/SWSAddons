@@ -29,4 +29,11 @@ class CfgVehicles {
     armor = 400;
     class DestructionEffects : GVAR(OPTRE_DestructionEffectsTemplate) {};
   };
+  class SWS_Static_FG75 : OPTRE_Static_FG75 {
+    ITEM_META(2);
+    displayName = QNAME(FG75 Anti-Tank Gun);
+    side = SIDE_BLUFOR;
+    faction = "SWS_UNSC";
+    crew = "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL";
+  };
 };

@@ -13,7 +13,11 @@ class CfgPatches {
     ammo[] = { };
     magazines[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = {"OPTRE_Weapons_StaticTurret", "OPTRE_Weapons_FG75"};
+    requiredAddons[] = {
+      "OPTRE_Weapons_StaticTurret"
+      , "OPTRE_Weapons_FG75"
+      , "OPTRE_UNSC_Units_Army"
+    };
     skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
   };
