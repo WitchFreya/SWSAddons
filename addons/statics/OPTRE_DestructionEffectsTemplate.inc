@@ -1,3 +1,4 @@
+// Based on the Stomper's effects
 class GVAR(OPTRE_DestructionEffectsTemplate) {
   class Fire1 {
     intensity = 0.15;
