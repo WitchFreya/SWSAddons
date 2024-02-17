@@ -2,10 +2,10 @@
 
 /*
  * Author: Maid
- * Replace the OPTRE static weapons with just their base or delete after a short delay.
+ * After a short delay (3-13 seconds), replace or remove a vehicle from the world.
  *
  * Arguments:
- * 0: vehicle <OBJECT> - The optre defense to replace (M41, for example)
+ * 0: vehicle <OBJECT> - The vehicle to replace (M41, for example)
  * 1: replaceWith <STRING> - OPTIONAL The simple object to put when it is replaced; if excluded, the vehicle will just be deleted.
  *
  * Return Value:
@@ -22,10 +22,10 @@ params [
   ["_replaceWith", nil, ["", nil]]
 ];
 if !(local _vic) exitWith {
-  TRACE_1("optreReplaceStatic should be run local to the vehicle only",_vic);
+  TRACE_1("delayedReplace should be run local to the vehicle only",_vic);
 };
 private _destructionDuration = floor (random 10) + 3;
-TRACE_2("Replacing object soon",_vic,_destructionDuration);
+TRACE_3("Replacing object soon",_vic,_destructionDuration,_replaceWith);
 
 [{
   params ["_vic", "_replaceWith"];
