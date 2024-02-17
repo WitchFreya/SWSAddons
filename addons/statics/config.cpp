@@ -1,7 +1,5 @@
 #include "script_component.hpp"
 
-#include "OPTRE_DestructionEffectsTemplate.inc"
-#include "CfgVehicles.inc"
 #include "CfgEventHandlers.inc"
 
 class CfgPatches {
