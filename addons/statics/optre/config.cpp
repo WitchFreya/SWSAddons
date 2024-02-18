@@ -14,9 +14,8 @@ class CfgPatches {
     magazines[] = { };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {
-      "OPTRE_Weapons_StaticTurret"
-      , "OPTRE_Weapons_FG75"
-      , "OPTRE_UNSC_Units_Army"
+      "OPTRE_Weapons"
+      , "OPTRE_UNSC_Units"
     };
     skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
