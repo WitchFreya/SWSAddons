@@ -8,7 +8,7 @@ class CfgPatches {
   class SUBADDON {
     addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
-    units[] = { };
+    units[] = { CLASSES_VEHICLES };
     weapons[] = { };
     ammo[] = { };
     magazines[] = { };

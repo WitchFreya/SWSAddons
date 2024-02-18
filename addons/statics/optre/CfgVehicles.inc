@@ -1,3 +1,6 @@
+#define CLASSES_VEHICLES \
+  "SWS_Static_FG75"
+
 class CfgVehicles {
   class StaticAAWeapon;
   class StaticATWeapon;
