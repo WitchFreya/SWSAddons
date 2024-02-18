@@ -2,7 +2,10 @@
 
 class ACE_Actions;
 class ACE_MainActions;
+class Turrets;
+class MainTurret;
 
+#include "CfgWeapons.inc"
 #include "CfgVehicles.inc"
 
 class CfgPatches {
@@ -14,7 +17,7 @@ class CfgPatches {
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = {"OPTRE_Weapons_FG75", "ace_interaction"};
+    requiredAddons[] = {"OPTRE_Weapons", "ace_interaction"};
     skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
   };
