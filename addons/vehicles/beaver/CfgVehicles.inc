@@ -10,7 +10,7 @@ class CfgVehicles
     ITEM_META(0);
     displayName = "-";
     faction = "SWS_UNSC";
-    side = 1;
+    side = SIDE_BLUFOR;
     crew = "OPTRE_UNSC_Marine_Soldier_Crewman";
     typicalCargo[] = { "OPTRE_UNSC_ODST_Soldier" };
     editorPreview = QPATHTOF(data\beaver\editor_preview.jpg);

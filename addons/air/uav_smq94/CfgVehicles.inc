@@ -20,7 +20,7 @@ class CfgVehicles
     displayName = QNAME(SMQ-94 Recon (Base));
     faction = "SWS_UNSC";
     fuelCapacity = 100;
-    side = 1;
+    side = SIDE_BLUFOR;
     model = "dmns\dmns_air\mq_94\MQ_94.p3d";
     editorPreview = QPATHTOF(data\uav_smq94\editor.jpg);
     crew = "B_UAV_AI";

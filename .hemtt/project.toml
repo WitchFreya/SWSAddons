@@ -52,6 +52,8 @@ workshop = [
   "520618345",  # Jbad
   "2515887728", # Crow's EWAR
   "1910457930", # Fapovo Island
+  "2918542818", # Sci-fi Support Plus
+  "2447965207", # Crow's Zeus Additions
 
   # unnecessary but occasionally useful
   # "620260972",  # ALiVE
@@ -103,11 +105,12 @@ workshop = [
   "520618345",  # Jbad
   "2515887728", # Crow's EWAR
   "1910457930", # Fapovo Island
+  "2918542818", # Sci-fi Support Plus
+  "2447965207", # Crow's Zeus Additions
 
   # unnecessary but occasionally useful
   # "620260972",  # ALiVE
 
-  "2447965207", # Crow's Zeus Additions
 
   # server mods
   "1768992669", # inidb2

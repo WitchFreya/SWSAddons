@@ -10,7 +10,7 @@ class CfgVehicles
     ITEM_META(0);
     displayName = "-";
     faction = "SWS_UNSC";
-    side = 1;
+    side = SIDE_BLUFOR;
     crew = "B_UNSCAF_Pilot_01";
     typicalCargo[] = { "B_UNSCAF_Pilot_01" };
     ace_cargo_space = 6;
