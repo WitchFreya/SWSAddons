@@ -20,13 +20,14 @@ class SWS_V_Bag_Hardcase_Medical : SWS_V_Bag_Hardcase_Base
   hiddenSelectionsTextures[] = {QPATHTOF(data\Bag_Hardcase\medical_co)};
 };
 
-C_HARDCASE(Sawbones,sawbones);
-C_HARDCASE(Blue,blue);
-C_HARDCASE(Vertigo,vertigo);
 C_HARDCASE(Bait,bait);
-C_HARDCASE(Snare,snare);
-C_HARDCASE(Egg,egg);
+C_HARDCASE(Blue,blue);
+C_HARDCASE(Carver,Carver);
 C_HARDCASE(Chrome,chrome);
+C_HARDCASE(Egg,egg);
+C_HARDCASE(Sawbones,sawbones);
+C_HARDCASE(Snare,snare);
 C_HARDCASE(Spritz,spritz);
+C_HARDCASE(Vertigo,vertigo);
 
 #undef C_HARDCASE
