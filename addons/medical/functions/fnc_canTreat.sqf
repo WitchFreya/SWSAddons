@@ -1,7 +1,7 @@
 #include "script_component.inc.sqf"
 /*
  * Author: Maid
- * Checks if treatment will do anything.
+ * Adds an additional treatment check to only show it if it will actually help an injury.
  *
  * Arguments:
  * 0: Medic <OBJECT>
@@ -26,10 +26,14 @@ params [
   ["_treatment", "", [""]]
 ];
 
+private _aceCanTreat = _this call ace_medical_treatment_fnc_canTreat;
+
+if !(_aceCanTreat) exitWith {false};
+
 switch (_treatment) do {
   case "SWS_Biofoam": {
     private _effectiveWounds = [_patient, _treatment, toLower _part] call ace_medical_treatment_fnc_findMostEffectiveWounds;
     !(_effectiveWounds isEqualTo createHashMap);
   };
-  default { _this call ace_medical_treatment_fnc_canTreat; };
+  default { false };
 };

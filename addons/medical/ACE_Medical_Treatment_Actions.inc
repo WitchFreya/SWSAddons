@@ -8,6 +8,7 @@ class ACE_Medical_Treatment_Actions {
     treatmentTime = QGVAR(biofoamTreatmentTime);
     condition = QFUNC(canTreat);
     callbackSuccess = QFUNC(biofoam);
+    allowedUnderwater = TRUE;
     sounds[] = {{"z\ace\addons\medical_treatment\sounds\Inject.ogg",1,1,50}};
     items[] = {"SWS_Biofoam"};
     litter[] = {{}, {"ACE_MedicalLitter_Biofoam"}};
