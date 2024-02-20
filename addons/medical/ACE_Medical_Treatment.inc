@@ -55,4 +55,12 @@ class ACE_Medical_Treatment {
       class VelocityWoundMajor : VelocityWound {};
     };
   };
+
+  class Medication {
+    class SWS_Biofoam {
+      painReduce = 0.4;
+      timeInSystem = 60 * 10;
+      timeTillMaxEffect = 10;
+    };
+  };
 };
