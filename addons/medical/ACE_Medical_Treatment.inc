@@ -61,6 +61,7 @@ class ACE_Medical_Treatment {
       painReduce = 0.4;
       timeInSystem = 60 * 10;
       timeTillMaxEffect = 10;
+      viscosityChange = 5;
     };
   };
 };
