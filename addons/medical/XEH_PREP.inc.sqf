@@ -1,2 +1,2 @@
-PREP(biofoam);
-PREP(canTreat);
+PREP(canBandageAndEffective);
+PREP(treatMedicationBandageCombo);

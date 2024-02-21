@@ -28,5 +28,3 @@ class CfgPatches {
     VERSION_CONFIG;
   };
 };
-
-// OPTRE_Biofoam, OPTRE_Medigel

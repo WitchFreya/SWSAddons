@@ -19,21 +19,11 @@
  */
 
 TRACE_1("canTreat",_this);
-params [
-  ["_medic", objNull, [objNull]],
-  ["_patient", objNull, [objNull]],
-  ["_part", "", [""]],
-  ["_treatment", "", [""]]
-];
+params ["_medic", "_patient", "_part", "_treatment"];
 
-private _aceCanTreat = _this call ace_medical_treatment_fnc_canTreat;
+private _aceCanTreat = _this call ace_medical_treatment_fnc_canBandage;
 
 if !(_aceCanTreat) exitWith {false};
 
-switch (_treatment) do {
-  case "SWS_Biofoam": {
-    private _effectiveWounds = [_patient, _treatment, toLower _part] call ace_medical_treatment_fnc_findMostEffectiveWounds;
-    !(_effectiveWounds isEqualTo createHashMap);
-  };
-  default { false };
-};
+private _effectiveWounds = [_patient, _treatment, toLower _part] call ace_medical_treatment_fnc_findMostEffectiveWounds;
+!(_effectiveWounds isEqualTo createHashMap);
