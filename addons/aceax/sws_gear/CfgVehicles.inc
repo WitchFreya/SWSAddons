@@ -17,6 +17,7 @@ class CfgVehicles
 
   class SWS_V_Bag_Hardcase_Bait : SWS_V_Bag_Hardcase_Medical { XTD_GEAR_INFO(Bait); };
   class SWS_V_Bag_Hardcase_Blue : SWS_V_Bag_Hardcase_Medical { XTD_GEAR_INFO(Blue); };
+  class SWS_V_Bag_Hardcase_Carver : SWS_V_Bag_Hardcase_Medical { XTD_GEAR_INFO(Carver); };
   class SWS_V_Bag_Hardcase_Chrome : SWS_V_Bag_Hardcase_Medical { XTD_GEAR_INFO(Chrome); };
   class SWS_V_Bag_Hardcase_Egg : SWS_V_Bag_Hardcase_Medical { XTD_GEAR_INFO(Egg); };
   class SWS_V_Bag_Hardcase_Sawbones : SWS_V_Bag_Hardcase_Medical { XTD_GEAR_INFO(Sawbones); };
