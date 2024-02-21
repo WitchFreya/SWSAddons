@@ -45,6 +45,7 @@ class CfgVehicles
         "Medical"
         , "Bait"
         , "Blue"
+        , "Carver"
         , "Chrome"
         , "Egg"
         , "Sawbones"
@@ -56,6 +57,7 @@ class CfgVehicles
       #define C_VALUE(name) class name { description = QUOTE(A modified medical satchel for name.); }
       C_VALUE(Bait);
       C_VALUE(Blue);
+      C_VALUE(Carver);
       C_VALUE(Chrome);
       C_VALUE(Egg);
       C_VALUE(Sawbones);
