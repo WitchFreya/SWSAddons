@@ -6,6 +6,7 @@
   , "SWS_V_Bag_Hardcase_Bait" \
   , "SWS_V_Bag_Hardcase_Base" \
   , "SWS_V_Bag_Hardcase_Blue" \
+  , "SWS_V_Bag_Hardcase_Carver" \
   , "SWS_V_Bag_Hardcase_Chrome" \
   , "SWS_V_Bag_Hardcase_Medical" \
   , "SWS_V_Bag_Hardcase_Sawbones" \
