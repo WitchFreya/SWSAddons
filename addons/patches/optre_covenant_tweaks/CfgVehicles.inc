@@ -40,7 +40,7 @@ class CfgVehicles
 			class MainTurret: MainTurret
 			{
         maxHorizontalRotSpeed = 0.667;
-        maxHorizontalRotSpeed = 0.667;
+				maxVerticalRotSpeed = 0.25;
         minElev = 0;
 			};
 		};
@@ -53,7 +53,7 @@ class CfgVehicles
 			class MainTurret: MainTurret
 			{
         maxHorizontalRotSpeed = 0.667;
-        maxHorizontalRotSpeed = 0.667;
+				maxVerticalRotSpeed = 0.25;
         minElev = -10;
 			};
 		};
@@ -66,7 +66,7 @@ class CfgVehicles
 			class MainTurret: MainTurret
 			{
         maxHorizontalRotSpeed = 0.667;
-        maxHorizontalRotSpeed = 0.667;
+				maxVerticalRotSpeed = 0.25;
         minElev = -10;
 			};
 		};
@@ -79,7 +79,7 @@ class CfgVehicles
 			class MainTurret: MainTurret
 			{
         maxHorizontalRotSpeed = 0.667;
-        maxHorizontalRotSpeed = 0.667;
+				maxVerticalRotSpeed = 0.25;
         minElev = -25;
 			};
 		};
@@ -93,7 +93,7 @@ class CfgVehicles
 			class MainTurret: MainTurret
 			{
         maxHorizontalRotSpeed = 0.667;
-        maxHorizontalRotSpeed = 0.667;
+        maxVerticalRotSpeed = 0.25;
         minElev = 0;
 			};
 		};
@@ -107,7 +107,7 @@ class CfgVehicles
 			class MainTurret: MainTurret
 			{
         maxHorizontalRotSpeed = 0.667;
-        maxHorizontalRotSpeed = 0.667;
+        maxVerticalRotSpeed = 0.25;
         minElev = -25;
 			};
 		};
