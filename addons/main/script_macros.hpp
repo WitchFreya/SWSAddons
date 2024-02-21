@@ -74,7 +74,18 @@
 //--- Subcomponent Stuff
 #define SUBGVAR(var0) GVAR(DOUBLES(SUBCOMPONENT,var0))
 #define QSUBGVAR(var0) QUOTE(SUBGVAR(var0))
-#define COMPILE_SUBSCRIPT(var1) compileScript ['PATHTO_SYS(PREFIX,COMPONENT_F\SUBCOMPONENT,var1)']
+#define SUBPATHTOF(var0) PATHTO_SYS(PREFIX,COMPONENT\SUBCOMPONENT,var0)
+#define QSUBPATHTOF(var0) QUOTE(SUBPATHTOF(var0))
+#define COMPILE_SUBSCRIPT(var0) compileScript ['SUBPATHTOF(var0)']
+
+#ifdef DISABLE_COMPILE_CACHE
+  #define PREP_SUBSCRIPT(fncName) DFUNC(fncName) = compile preprocessFileLineNumbers QSUBPATHTOF(functions\DOUBLES(fnc,fncName))
+#else
+  #define PREP_SUBSCRIPT(fncName) [QSUBPATHTOF(functions\DOUBLES(fnc,fncName)), QFUNC(fncName)] call CBA_fnc_compileFunction
+#endif
 
 #define TRUE 1
 #define FALSE 0
+
+#define SIDE_OPFOR 0
+#define SIDE_BLUFOR 1

@@ -17,7 +17,7 @@ class CfgVehicles
   {
     ITEM_META(1);
     faction = "SWS_UNSC";
-    side = 1;
+    side = SIDE_BLUFOR;
   };
 
   class SWS_V_UAV_Demining_Base : C_IDAP_UAV_06_AntiMine_F
@@ -25,7 +25,7 @@ class CfgVehicles
     ITEM_META(0);
     displayName = QNAME(Demining Drone (Base));
     faction = "SWS_UNSC";
-    side = 1;
+    side = SIDE_BLUFOR;
     crew = "SWS_U_UAV_AntiMine";
     typicalCargo[] = {"SWS_U_UAV_AntiMine"};
     fuelCapacity = 40;

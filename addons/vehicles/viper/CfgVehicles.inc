@@ -10,7 +10,7 @@ class CfgVehicles
     ITEM_META(0);
     displayName = "-";
     faction = "SWS_UNSC";
-    side = 1;
+    side = SIDE_BLUFOR;
     crew = "OPTRE_UNSC_Marine_Soldier_Crewman";
     typicalCargo[] = { "OPTRE_UNSC_ODST_Soldier" };
     editorPreview = QPATHTOF(data\viper\editor_preview.jpg);
@@ -268,7 +268,7 @@ class CfgVehicles
   {
     SCOPE(2);
     faction = "O_CLA";
-    side = 0;
+    side = SIDE_OPFOR;
     displayName = QNAME(M700 Viper (Captured CLA));
     textureList[] = {"CLA_Captured", 1};
     typicalCargo[] = {"O_CLA_Crew_01"};

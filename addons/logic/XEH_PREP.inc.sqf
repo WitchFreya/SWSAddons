@@ -1,0 +1,2 @@
+PREP(allowDamage);
+PREP(onLocal);

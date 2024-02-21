@@ -1,4 +1,4 @@
-name: Design New Object Config Request
+name: Design Request - New Object Config
 description: Request a config for modeling or similar that has no base config
 title: "[Design]: Add config <put your details here, ex: 'for modeling a crate'>"
 labels: ["design-req", "enhancement"]
