@@ -1,8 +1,6 @@
 class CfgVehicles
 {
 	class StaticMGWeapon;
-	class Turrets;
-	class MainTurret;
 	class AAA_System_01_base_F: StaticMGWeapon
 	{
 		class Turrets: Turrets
@@ -88,7 +86,7 @@ class CfgVehicles
 	};
 	class OPTRE_FC_T56_AA: AAA_System_01_base_F
 	{
-		displayName = "Type-56 Howler AA Turret";
+		displayName = "Type-56 Howler AA Turret"; // remove thyself from my holy shrike-name plzkthx
 		radarTargetSize = 1;
 		class Turrets: Turrets
 		{
@@ -102,7 +100,7 @@ class CfgVehicles
 	};
 	class OPTRE_FC_T56_AAG: AAA_System_01_base_F
 	{
-		displayName = "Type-56 Howler Turret";
+		displayName = "Type-56 Howler Turret"; // remove thyself from my holy shrike-name plzkthx
 		radarTargetSize = 1;
 		class Turrets: Turrets
 		{
