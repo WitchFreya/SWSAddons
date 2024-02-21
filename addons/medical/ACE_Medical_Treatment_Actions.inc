@@ -11,7 +11,7 @@ class ACE_Medical_Treatment_Actions {
     allowedUnderwater = TRUE;
     sounds[] = {{"z\ace\addons\medical_treatment\sounds\Inject.ogg",1,1,50}};
     items[] = {"SWS_Biofoam"};
-    litter[] = {{}, {"ACE_MedicalLitter_Biofoam"}};
+    litter[] = {{"ACE_MedicalLitter_Biofoam"}};
   };
   class SWS_Medigel : BasicBandage {
     displayName = "Apply Medigel-Sx";
@@ -22,6 +22,6 @@ class ACE_Medical_Treatment_Actions {
     condition = "";
     callbackSuccess = QFUNC(treatMedicationBandageCombo);
     items[] = {"SWS_Medigel"};
-    litter[] = {{}, {"ACE_MedicalLitter_suture"}};
+    litter[] = {{"ACE_MedicalLitter_suture"}};
   };
 };
