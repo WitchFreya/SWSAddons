@@ -14,12 +14,7 @@ class CfgPatches {
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = {
-      "OPTRE_FC_Weapons_Tyrant"
-      , "OPTRE_FC_Weapons_Shrike"
-      , "OPTRE_FC_Weapons_Shade"
-      , "OPTRE_FC_Weapons_Draugr"
-    };
+    requiredAddons[] = {"OPTRE_FC_Weapons"};
     skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
   };
