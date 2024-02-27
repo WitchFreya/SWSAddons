@@ -13,6 +13,9 @@ class cfgWeapons
     class M134_minigun;
     class M134_MELB: M134_minigun
     {
+        ballisticsComputer = "8";
+        cursor="EmptyCursor";
+		cursorAim="mg";
         displayName = "Sx1337-H";
         class LowROF: LowROF
 		{
@@ -26,9 +29,9 @@ class cfgWeapons
     {
         displayName = "Sx260 Talon HEDP";
         ballisticsComputer = "8";
-        // cursor="EmptyCursor";
-		cursorAimOn="mg";
-        showAimCursorInternal=0;
+        showAimCursorInternal = 1;
+        cursor="EmptyCursor";
+		cursorAim="rocket";
         magazines[] =
 		{
 			"Pylon_Talon_3x_MELB",

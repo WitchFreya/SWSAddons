@@ -11,9 +11,9 @@ class PilotCamera;
 class Turrets;
 class LowROF;
 class Mode_Burst;
-class Mode_SemiAuto;
 class Burst1;
 class Burst2;
+class AnimationSources;
 #include "CfgVehicles.inc"
 #include "CfgWeapons.inc"
 #include "CfgAmmo.inc"
