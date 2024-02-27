@@ -2,11 +2,10 @@
 
 #include "CfgEventHandlers.inc"
 #include "CfgFactionClasses.inc"
+#include "ACE_Arsenal_Stats.inc"
 
-class CfgPatches
-{
-  class ADDON
-  {
+class CfgPatches {
+  class ADDON {
     name = QUOTE(COMPONENT);
     units[] = { };
     weapons[] = { };

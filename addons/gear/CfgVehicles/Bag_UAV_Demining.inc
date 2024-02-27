@@ -3,7 +3,7 @@ class SWS_Bag_UAV_Demining : C_IDAP_UAV_06_antimine_backpack_F
     ITEM_META(2);
     displayName = QNAME(UAV Bag (Demining));
     faction = "SWS_UNSC";
-    side = 1;
+    side = SIDE_BLUFOR;
     class AssembleInfo : AssembleInfo
     {
         displayName = "Demining Drone";

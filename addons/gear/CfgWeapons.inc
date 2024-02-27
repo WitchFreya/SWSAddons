@@ -28,6 +28,7 @@
 
 #define CLASSES_WEAPONS     \
   QWEAPONS_FN(Ashes),       \
+  QWEAPONS_FN(Bait),        \
   QWEAPONS_FN(Blue),        \
   QWEAPONS_FN(Butler),      \
   QWEAPONS_FN(Chrome),      \
@@ -79,7 +80,9 @@ class CfgWeapons
 
     //== OPERATIVES
     C_GEAR(Ashes,silver);
+    C_GEAR(Bait,red);
     C_GEAR(Butler,purple);
+    C_GEAR(Chrome,defiant);
     C_GEAR(Demon,purple);
     C_GEAR(Egg,egg);
     C_GEAR(Hound,hound);
@@ -91,8 +94,8 @@ class CfgWeapons
     C_GEAR(Sawbones,sawbones);
     C_GEAR(Snare,snare);
     C_GEAR(Sonic,defiant);
-    C_GEAR(Chrome,defiant);
-    C_GEAR(Tiger,gold);
+    C_GEAR(Spritz,spritz);
+    C_GEAR(Tiger,tiger);
     C_GEAR(Vertigo,gold);
 
     //== COLORS

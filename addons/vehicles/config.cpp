@@ -13,7 +13,7 @@ class CfgPatches
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = {"sws_main"};
+    requiredAddons[] = {"ace_common", "sws_main"};
     author = QUOTE(AUTHOR);
     VERSION_CONFIG;
   };
