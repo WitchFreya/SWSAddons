@@ -18,7 +18,7 @@ class CfgVehicles
   //--- 3DEN respawn module.
   class SWS_ModuleRespawnPosition : ModuleRespawnPosition_F
   {
-    category = "SWS_Modules";
+    category = "SWS_Utility";
     function = QFUNC(moduleRespawnPosition);
 
     delete Arguments;

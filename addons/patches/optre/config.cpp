@@ -1,12 +1,15 @@
 #include "script_component.hpp"
 
+class LowROF;
+
 #include "CfgAmmo.inc"
+#include "CfgWeapons.inc"
 #include "CfgVehicles.inc"
 #include "CfgFunctions.inc"
 
 class CfgPatches
 {
-    class SUBADDON
+    class SUBADDON 
     {
         name = COMPONENT_NAME;
         units[] = { };

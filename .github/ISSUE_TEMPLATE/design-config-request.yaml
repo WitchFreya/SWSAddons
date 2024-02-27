@@ -1,4 +1,4 @@
-name: Design Retexture Config Request
+name: Design Request - Retexture Config
 description: Request a config for texture/design work
 title: "[Design]: Add config <put your details here, ex: 'for new AR-0M37S texture'>"
 labels: ["design-req", "enhancement"]
