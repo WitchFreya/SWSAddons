@@ -12,7 +12,7 @@ class CfgPatches
   {
     addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
-    units[] = { CLASSES_VEHICLES };
+    units[] = { };
     weapons[] = { };
     magazines[] = { };
     ammo[] = { };

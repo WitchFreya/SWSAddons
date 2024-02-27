@@ -4,6 +4,7 @@
 class Components;
 class TransportPylonsComponent;
 class Turrets;
+class CopilotTurret;
 class LowROF;
 class Burst1;
 class Burst2;

@@ -4,6 +4,8 @@
 
 class CfgVehicles
 {
+  class MELB_MH6M;
+  class MELB_AH6M;
   class SWS_V_Heli_Shrike: MELB_AH6M
 	{
 		displayName = QNAME(Sx-6A Shrike);
