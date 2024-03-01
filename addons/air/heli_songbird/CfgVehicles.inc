@@ -216,6 +216,89 @@ class CfgVehicles
 				maxVerticalRotSpeed = 1.2;
 				maxMouseYRotSpeed = 1.2;
 			};
+			class CargoTurret_03: CargoTurret
+			{
+				gunnerAction = "passenger_bench_1";
+				gunnerCompartments = "Compartment2";
+				memoryPointsGetInGunner = "pos L1";
+				memoryPointsGetInGunnerDir = "pos L1 dir";
+				gunnerName = "Passenger (Left Bench 1)";
+				proxyIndex = 3;
+				maxElev = 45;
+				minElev = -60;
+				maxTurn = 95;
+				minTurn = -15;
+				isPersonTurret = 1;
+				ejectDeadGunner = 0;
+				playerPosition = 4;
+				soundAttenuationTurret = "";
+				disableSoundAttenuation = 1;
+				gunnerGetInAction = "GetInHeli_Light_01bench";
+			};
+			class CargoTurret_04: CargoTurret_03
+			{
+				gunnerCompartments = "compartment3";
+				memoryPointsGetInGunner = "pos R1";
+				memoryPointsGetInGunnerDir = "pos R1 dir";
+				gunnerName = "Passenger (Right Bench 1)";
+				proxyIndex = 4;
+				maxTurn = 15;
+				minTurn = -95;
+			};
+			class CargoTurret_05: CargoTurret_04
+			{
+				gunnerCompartments = "Compartment2";
+				memoryPointsGetInGunner = "pos L2";
+				memoryPointsGetInGunnerDir = "pos L2 dir";
+				gunnerName = "Passenger (Left Bench 2)";
+				proxyIndex = 5;
+				maxElev = 45;
+				minElev = -45;
+				maxTurn = 95;
+				minTurn = -95;
+				class dynamicViewLimits
+				{
+					CargoTurret_03[] = {-30,95};
+					CargoTurret_07[] = {-95,50};
+				};
+			};
+			class CargoTurret_06: CargoTurret_05
+			{
+				gunnerCompartments = "compartment3";
+				memoryPointsGetInGunner = "pos R2";
+				memoryPointsGetInGunnerDir = "pos R2 dir";
+				gunnerName = "Passenger (Right Bench 2)";
+				proxyIndex = 6;
+				class dynamicViewLimits
+				{
+					CargoTurret_04[] = {-95,30};
+					CargoTurret_08[] = {-50,95};
+				};
+			};
+			class CargoTurret_07: CargoTurret_06
+			{
+				gunnerCompartments = "Compartment2";
+				memoryPointsGetInGunner = "pos L3";
+				memoryPointsGetInGunnerDir = "pos L3 dir";
+				gunnerName = "Passenger (Left Bench 3)";
+				proxyIndex = 7;
+				class dynamicViewLimits
+				{
+					CargoTurret_05[] = {-50,95};
+				};
+			};
+			class CargoTurret_08: CargoTurret_07
+			{
+				gunnerCompartments = "compartment3";
+				memoryPointsGetInGunner = "pos R3";
+				memoryPointsGetInGunnerDir = "pos R3 dir";
+				gunnerName = "Passenger (Right Bench 3)";
+				proxyIndex = 8;
+				class dynamicViewLimits
+				{
+					CargoTurret_06[] = {-95,50};
+				};
+			};
 		};
 	};
 };
