@@ -207,7 +207,6 @@ class CfgPatches {
             "A3_Air_F_Jets_Plane_Fighter_04",
             "A3_Air_F_Jets_UAV_05",
             "OPTRE_Plus_Longsword",
-            "OPTRE_Vehicles_Longsword",
             "DMNS_Shortsword_F",
             "OPTRE_Vehicles_Pod",
             "OPTRE_Vehicles_Sabre",
