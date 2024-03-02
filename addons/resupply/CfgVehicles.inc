@@ -120,7 +120,7 @@ class CfgVehicles
       MACRO_ADDMAGAZINE(SWS_Magazine_60Rnd_65x39_Caseless_msbs_Tracers_Blue,5);
       MACRO_ADDMAGAZINE(SWS_Magazine_60Rnd_65x39_Caseless,10);
       MACRO_ADDMAGAZINE(SWS_Magazine_60Rnd_65x39_Caseless_Tracers_Blue,5);
-      
+      MACRO_ADDMAGAZINE(SWS_Magazine_200Rnd_762x51_Mag_Tracer,4);
       MACRO_ADDMAGAZINE(OPTRE_36Rnd_95x40_Mag,8);
       MACRO_ADDMAGAZINE(OPTRE_60Rnd_5x23mm_Mag,10);
       MACRO_ADDMAGAZINE(OPTRE_15Rnd_762x51_Mag,8);
@@ -163,9 +163,9 @@ class CfgVehicles
     {
       MACRO_ADDMAGAZINE(OPTRE_M41_Twin_HE_Thermal_ProximityFuse,2);
       MACRO_ADDMAGAZINE(OPTRE_M41_Twin_HEAT_SACLOS,4);
-      MACRO_ADDMAGAZINE(OPTRE_M41_Twin_HEAT_SALH,4);
-      MACRO_ADDMAGAZINE(OPTRE_M41_Twin_HEAT_Guided,4);
+      MACRO_ADDMAGAZINE(OPTRE_M41_Twin_HEAT_SALH,2);
       MACRO_ADDMAGAZINE(OPTRE_M41_Twin_HEAP,2);
+      MACRO_ADDMAGAZINE(OPTRE_M41_Twin_HEAT,2);
     };
   };
   class SWS_Ammo_SupplyPod_SM247 : SWS_Ammo_SupplyPod_Empty
