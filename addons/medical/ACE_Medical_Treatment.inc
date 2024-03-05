@@ -24,6 +24,11 @@ class ACE_Medical_Treatment {
       class ContusionMedium : Contusion {};
       class ContusionMajor : Contusion {};
 
+      class Crush : Abrasion {};
+      class CrushMinor : Crush {};
+      class CrushMedium : Crush {};
+      class CrushMajor : Crush {};
+
       class Avulsion {
         effectiveness = 10;
         reopeningChance = 0;
@@ -53,6 +58,11 @@ class ACE_Medical_Treatment {
       class VelocityWoundMinor : VelocityWound {};
       class VelocityWoundMedium : VelocityWound {};
       class VelocityWoundMajor : VelocityWound {};
+
+      class ThermalBurn : Avulsion {};
+      class ThermalBurnMinor : ThermalBurn {};
+      class ThermalBurnMedium : ThermalBurn {};
+      class ThermalBurnMajor : ThermalBurn {};
     };
 
     class SWS_MediGel : BasicBandage {
@@ -77,6 +87,16 @@ class ACE_Medical_Treatment {
       class ContusionMinor : Contusion {};
       class ContusionMedium : Contusion {};
       class ContusionMajor : Contusion {};
+
+      class ThermalBurn : Abrasion {};
+      class ThermalBurnMinor : ThermalBurn {};
+      class ThermalBurnMedium : ThermalBurn {};
+      class ThermalBurnMajor : ThermalBurn {};
+
+      class Crush : Abrasion {};
+      class CrushMinor : Crush {};
+      class CrushMedium : Crush {};
+      class CrushMajor : Crush {};
 
       class Avulsion {
         effectiveness = 0;
