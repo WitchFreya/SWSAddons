@@ -21,6 +21,8 @@ class CfgPatches {
       , "ace_medical_statemachine"
       , "optre_weapons"
       , "optre_ace_compat_medical"
+      , "DMNS_Weapons_Items"
+      , "DMNS_ACE_Compat"
       , "sws_main"
       , "sws_common"
     };
