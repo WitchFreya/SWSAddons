@@ -72,7 +72,6 @@ class ACE_Medical_Treatment {
       reopeningMaxDelay = 0;
       reopeningMinDelay = 0;
 
-      // No Effect on Abrasions, Contusions, or burns; massive effect on everything else.
       class Abrasion {
         effectiveness = 5;
         reopeningChance = 0;
