@@ -1,5 +1,6 @@
 class ACE_Medical_Treatment_Actions {
   class BasicBandage;
+  class Morphine;
   class SWS_Biofoam : BasicBandage {
     displayName = "Inject Biofoam-Sx";
     displayNameProgress = "Injecting biofoam-Sx...";
@@ -22,5 +23,12 @@ class ACE_Medical_Treatment_Actions {
     callbackSuccess = QFUNC(treatMedicationBandageCombo);
     items[] = {"SWS_Medigel"};
     litter[] = {{"ACE_MedicalLitter_suture"}};
+  };
+  class SWS_NeuroStim : Morphine {
+    allowedSelections[] = {"Head", "LeftArm", "RightArm", "LeftLeg", "RightLeg"};
+    displayName = "Inject NeuroStim";
+    displayNameProgress = "Injecting NeuroStim...";
+    treatmentTime = QGVAR(stimTreatmentTime);
+    items[] = {"SWS_NeuroStim"};
   };
 };

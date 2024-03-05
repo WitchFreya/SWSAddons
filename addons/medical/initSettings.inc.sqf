@@ -20,6 +20,15 @@
 ] call CBA_fnc_addSetting;
 
 [
+  QGVAR(stimTreatmentTime),
+  "SLIDER",
+  ["NeuroStim Treatment Time", "Time, in seconds, required to apply neuro-stims to a patient."],
+  [CATEGORY, SUBCATEGORY],
+  [0.1, 60, 2, 1],
+  true
+] call CBA_fnc_addSetting;
+
+[
 	QGVAR(clearBruiseOnMedigel),
 	"CHECKBOX", //setting type
   ["Medigel Clear Trauma", "If enabled, medigel will clear trauma on abrasions and contusions (bruises)."],

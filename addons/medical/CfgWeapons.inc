@@ -5,6 +5,7 @@
 class CfgWeapons {
   class OPTRE_Biofoam;
   class OPTRE_MedKit;
+  class ACE_Morphine;
 
   class SWS_Biofoam : OPTRE_Biofoam {
     ITEM_META(2);
@@ -31,5 +32,17 @@ class CfgWeapons {
     class ItemInfo : ItemInfo {
       mass = 1;
     };
+  };
+
+  class SWS_NeuroStim : ACE_Morphine {
+    ITEM_META(2);
+    displayName = QNAME(NeuroStim);
+    displayNameShort = "NeuroStim";
+    descriptionShort = "In pain? Deal with it, fast, with no side effects!*<br />*Project: SCARLET experimental medication is not subject to UNSC FDA approval.";
+    descriptionUse = "Applying NeuroStim...";
+    // TODO: Different model.
+    model = "\z\ace\addons\medical_treatment\data\morphine.p3d";
+    // TODO: Different picture
+    picture = "\z\ace\addons\medical_treatment\ui\morphine_ca.paa";
   };
 };

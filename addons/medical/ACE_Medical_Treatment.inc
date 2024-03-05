@@ -143,5 +143,13 @@ class ACE_Medical_Treatment {
       timeInSystem = 60 * 10;
       timeTillMaxEffect = 10;
     };
+
+    class SWS_NeuroStim {
+      painReduce = 0.5;
+      timeInSystem = 60 * 2;
+      timeTillMaxEffect = 3;
+      viscosityChange = 5;
+      maxDose = 5;
+    };
   };
 };
