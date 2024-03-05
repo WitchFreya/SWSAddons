@@ -37,7 +37,13 @@ private _medicName /* string */ = [_medic, false, true] call ace_common_fnc_getN
 
 [_patient, "activity", "STR_ACE_Medical_Treatment_Activity_usedItem", [_medicName, _displayName]] call ace_medical_treatment_fnc_addToLog;
 
+// Medigel can clear trauma on bruises.
+private _events /* string[] */ = if (_usedItem isKindOf ["SWS_Medigel", configFile >> "CfgWeapons"] && {GVAR(clearBruiseOnMedigel)}) then {
+  ["ace_medical_treatment_medicationLocal", QGVAR(bandageClearTraumaLocal)]
+} else {
+  ["ace_medical_treatment_medicationLocal", "ace_medical_treatment_bandageLocal"]
+};
+
 {
-  private _eventName /* string */ = format ["ace_medical_treatment_%1Local", _x];
-  [_eventName, [_patient, _bodyPart, _className], _patient] call CBA_fnc_targetEvent;
-} forEach ["medication", "bandage"];
+  [_x, [_patient, _bodyPart, _className], _patient] call CBA_fnc_targetEvent;
+} forEach _events;

@@ -1,5 +1,5 @@
 #define CLASSES_WEAPONS \
-  "SWS_Biofoam"
+  "SWS_Biofoam"         \
   , "SWS_Medigel"
 
 class CfgWeapons {

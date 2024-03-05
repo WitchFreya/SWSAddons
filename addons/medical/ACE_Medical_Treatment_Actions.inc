@@ -15,11 +15,10 @@ class ACE_Medical_Treatment_Actions {
   };
   class SWS_Medigel : BasicBandage {
     displayName = "Apply Medigel-Sx";
-    category = "medication";
     displayNameProgress = "Applying medigel-Sx...";
     icon = "\z\ace\addons\medical_gui\ui\bandage.paa";
     treatmentTime = QGVAR(medigelTreatmentTime);
-    condition = "";
+    condition = QFUNC(canBandageAndEffective);
     callbackSuccess = QFUNC(treatMedicationBandageCombo);
     items[] = {"SWS_Medigel"};
     litter[] = {{"ACE_MedicalLitter_suture"}};
