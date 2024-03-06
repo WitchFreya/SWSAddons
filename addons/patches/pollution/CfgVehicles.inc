@@ -8,4 +8,6 @@ class CfgVehicles {
   class MainTurret: AllVehicles {};
   class NewTurret : AllVehicles {};
   class ViewOptics : AllVehicles {};
+  class AnimationSources : AllVehicles {};
+  class EventHandlers : AllVehicles {};
 };
