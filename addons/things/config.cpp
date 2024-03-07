@@ -1,5 +1,5 @@
 #include "script_component.hpp"
-
+#include "CfgEditorCategories.inc"
 #include "CfgWeapons.inc"
 #include "CfgVehicles.inc"
 
