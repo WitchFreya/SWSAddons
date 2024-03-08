@@ -13,5 +13,3 @@
 #endif
 
 #include "\x\sws\addons\main\script_macros.hpp"
-
-// VES_MPU_Reach_Slim

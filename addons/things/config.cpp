@@ -1,13 +1,13 @@
 #include "script_component.hpp"
 
+#include "CfgEditorSubcategories.inc"
 #include "CfgWeapons.inc"
 #include "CfgVehicles.inc"
 
-class CfgPatches
-{
-  class ADDON
-  {
+class CfgPatches {
+  class ADDON {
     name = QUOTE(COMPONENT);
+    author = QUOTE(AUTHOR);
     units[] = {
         #ifdef CLASSES_VEHICLES
         CLASSES_VEHICLES
@@ -16,7 +16,6 @@ class CfgPatches
     weapons[] = { };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {};
-    author = QUOTE(AUTHOR);
     VERSION_CONFIG;
   };
 };
