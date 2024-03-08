@@ -11,6 +11,7 @@ class CfgVehicles
     displayName = QNAME(Corvette Hallway Door Frame);
     editorCategory = "SWS_Objects";
     editorSubcategory = "SWS_Helpers_Door";
+    editorPreview = QPATHTOF(data\sws_corvette_door_frame.jpg);
     model = QPATHTOF(data\sws_corvette_door_frame.p3d);
     vehicleClass = "Fortifications";
     destrType = "DestructNo";
