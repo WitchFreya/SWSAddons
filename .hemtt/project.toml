@@ -119,6 +119,64 @@ parameters = [ # TODO: Figure out how to include this so it'll work for other co
   "C:\\Users\\freya\\Documents\\Arma 3 - Other Profiles\\Maid\\missions\\Dev.VR\\mission.sqm",
 ]
 
+[hemtt.launch.helpers]
+workshop = [
+  "1224892496", # gruppe adler trenches
+  "1572627279", # optre first contact
+  "1659590037", # fireteam zulu - required by 19th
+  "1797512739", # operation arsenal expansion for OPTRE
+  "1858075458", # LAMBS_Danger
+  "2016312756", # opcan
+  "2261045061", # TCGM
+  "2369477168", # advanced developer tools
+  "3007731986", # SWS Timeless
+  "450814997",  # cba_a3
+  "463939057",  # ace
+  "623475643",  # 3den Enhanced
+  "769440155",  # OPTRE
+  "894678801",  # TFAR
+  "2018593688", # Zeus Enhanced - ACE3 Compatibility
+  "583496184",  # CUP Terrains - Core
+  "861133494",  # JSRS SOUNDMOD
+  "2695649037", # Operation TREBUCHET JSRS Compat
+  "1763651451", # optre PLUS+
+  "333310405",  # Enhanced Movement
+  "2034363662", # Enhanced Movement Rework
+  "561177050",  # Mission Enhanced Little Bird
+  # v9 mods
+  "3038821437", # UNSC Foundries
+  "3038826897", # UNSC Foundries ACE compat
+
+  # v11 mods
+  "3055061422", # Evolved Role Progression
+  "2522638637", # ace arsenal extended
+
+  # patches
+  "1779063631", # zen
+  "2291129343", # improved melee system (dependency of 41st)
+  "1790880882", # 41st odst/mfr declassified
+  "2359395889", # TCGM_Divinities_2.0
+  "2480118782", # Max Women Soldiers
+  "2699465073", # Fire Support Plus
+  "2909265898", # OPTRE Ordnance Expansion
+  "520618345",  # Jbad
+  "2515887728", # Crow's EWAR
+  "2918542818", # Sci-fi Support Plus
+  "2447965207", # Crow's Zeus Additions
+
+  # unnecessary but occasionally useful
+  # "620260972",  # ALiVE
+
+  #specifically for helper Objects
+  "1876589191", # JM's Structures
+
+  # server mods
+  "1768992669", # inidb2
+]
+parameters = [ # TODO: Figure out how to include this so it'll work for other contributors
+  "C:\\Users\\Black\\Documents\\Arma 3 - Other Profiles\\Demon\\missions\\SWS-Helpers.VR\\mission.sqm",
+]
+
 [hemtt.launch.full]
 workshop = [
   "1224892496", # gruppe adler trenches

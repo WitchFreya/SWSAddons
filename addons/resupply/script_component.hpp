@@ -13,6 +13,3 @@
 #endif
 
 #include "\x\sws\addons\main\script_macros.hpp"
-
-
-#define OBJ_CATEGORY(var1) editorCategory = QUOTE(SWSObjects); editorSubcategory = QUOTE(var1)

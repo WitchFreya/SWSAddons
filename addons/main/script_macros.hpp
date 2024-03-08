@@ -89,3 +89,4 @@
 
 #define SIDE_OPFOR 0
 #define SIDE_BLUFOR 1
+#define SIDE_CIV 3
