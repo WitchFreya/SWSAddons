@@ -2,6 +2,7 @@
 
 #include "CfgEventHandlers.inc"
 #include "CfgFactionClasses.inc"
+#include "CfgEditorCategories.inc"
 #include "ACE_Arsenal_Stats.inc"
 
 class CfgPatches {
