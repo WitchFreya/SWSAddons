@@ -13,8 +13,3 @@
 #endif
 
 #include "\x\sws\addons\main\script_macros.hpp"
-
-
-#define OBJ_CATEGORY(var1,var2) editorCategory = QUOTE(var1); editorSubcategory = QUOTE(var2)
-
-// VES_MPU_Reach_Slim
