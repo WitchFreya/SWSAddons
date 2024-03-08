@@ -5,20 +5,21 @@
   , "SWS_Ammo_SupplyPod_Howdy"    \
   , "SWS_Ammo_SupplyPod_Spnkr"    \
   , "SWS_Ammo_SupplyPod_SM247"    \
-  , "Box_SWS_TeamBox"
+  , "SWS_Box_TeamSupplies"
 
 class CfgVehicles
 {
   class NATO_Box_Base;
   class OPTRE_Ammo_SupplyPod_Empty;
 
-	class Box_SWS_TeamBox : NATO_Box_Base
+	class SWS_Box_TeamSupplies : NATO_Box_Base
   {
+    ITEM_META(2);
     displayName = QNAME(Team Supply Box);
     icon = "iconCrateWpns";
-    ITEM_META(2);
-    OBJ_CATEGORY(SWSResupply);
-    side = 3;
+    editorCategory = "SWS_Objects";
+    editorSubcategory = "SWS_Resupply";
+    side = SIDE_CIV;
 
     maximumLoad = 8000;
     transportMaxWeapons = 14;
@@ -73,12 +74,13 @@ class CfgVehicles
 
   class SWS_Ammo_SupplyPod_Empty : OPTRE_Ammo_SupplyPod_Empty
   {
+    ITEM_META(2);
     displayName = QNAME(Supply Pod (Empty));
     icon = "iconCrateWpns";
 
-    ITEM_META(2);
-    OBJ_CATEGORY(SWSResupply);
-    side = 3;
+    editorCategory = "SWS_Objects";
+    editorSubcategory = "SWS_Resupply";
+    side = SIDE_CIV;
 
     transportMaxWeapons = 8;
     transportMaxMagazines = 40;
@@ -94,7 +96,7 @@ class CfgVehicles
 
     model = "\OPTRE_misc\crates\Supply_pod.p3d";
     hiddenSelections[] = {"camo"};
-    hiddenSelectionsTextures[] = {QPATHTOF(data\sws_supplypod_base_co.paa)};
+    hiddenSelectionsTextures[] = {QPATHTOF(data\base_co.paa)};
 
     ace_dragging_canDrag = TRUE;
     ace_dragging_ignoreWeight = TRUE;
@@ -112,7 +114,7 @@ class CfgVehicles
   class SWS_Ammo_SupplyPod_Basic : SWS_Ammo_SupplyPod_Empty
   {
     displayName = QNAME(Basic Resupply);
-    hiddenSelectionsTextures[] = {QPATHTOF(data\sws_supplypod_ammo_co.paa)};
+    hiddenSelectionsTextures[] = {QPATHTOF(data\ammo_co.paa)};
     class TransportMagazines
     {
       MACRO_ADDMAGAZINE(OPTRE_60Rnd_762x51_Mag,30);
@@ -133,7 +135,7 @@ class CfgVehicles
   class SWS_Ammo_SupplyPod_Medical : SWS_Ammo_SupplyPod_Empty
   {
     displayName = QNAME(Medical Resupply);
-    hiddenSelectionsTextures[] = {QPATHTOF(data\sws_supplypod_medical_co.paa)};
+    hiddenSelectionsTextures[] = {QPATHTOF(data\medical_co.paa)};
     class TransportItems
     {
       MACRO_ADDITEM(ACE_bloodIV,10);
@@ -145,7 +147,7 @@ class CfgVehicles
   class SWS_Ammo_SupplyPod_Howdy : SWS_Ammo_SupplyPod_Empty
   {
     displayName = QNAME(Howdy Resupply);
-    hiddenSelectionsTextures[] = {QPATHTOF(data\sws_supplypod_base_co.paa)};
+    hiddenSelectionsTextures[] = {QPATHTOF(data\base_co.paa)};
     class TransportWeapons
     {
       MACRO_ADDWEAPON(SWS_Weapon_M24RL_D_Loaded,4);
@@ -154,7 +156,7 @@ class CfgVehicles
   class SWS_Ammo_SupplyPod_Spnkr : SWS_Ammo_SupplyPod_Empty
   {
     displayName = QNAME(SPNKR Resupply);
-    hiddenSelectionsTextures[] = {QPATHTOF(data\sws_supplypod_spnkr_co.paa)};
+    hiddenSelectionsTextures[] = {QPATHTOF(data\spnkr_co.paa)};
     class TransportWeapons
     {
       MACRO_ADDWEAPON(OPTRE_M41_SSR,1);
@@ -171,7 +173,7 @@ class CfgVehicles
   class SWS_Ammo_SupplyPod_SM247 : SWS_Ammo_SupplyPod_Empty
   {
     displayName = QNAME(SM247 Resupply);
-    hiddenSelectionsTextures[] = {QPATHTOF(data\sws_supplypod_mg_co.paa)};
+    hiddenSelectionsTextures[] = {QPATHTOF(data\mg_co.paa)};
     class TransportMagazines
     {
       MACRO_ADDMAGAZINE(SWS_Magazine_200Rnd_762x51_Mag,4);
@@ -184,7 +186,7 @@ class CfgVehicles
   class SWS_Ammo_SupplyPod_Eng_Mines : SWS_Ammo_SupplyPod_Empty
   {
     displayName = QNAME(Sabotage);
-    hiddenSelectionsTextures[] = {QPATHTOF(data\sws_supplypod_ammo_co.paa)};
+    hiddenSelectionsTextures[] = {QPATHTOF(data\ammo_co.paa)};
     class TransportMagazines
     {
       MACRO_ADDMAGAZINE(APERSMineDispenser_Mag,6);
@@ -204,7 +206,7 @@ class CfgVehicles
   class SWS_Ammo_SupplyPod_Eng_Demo : SWS_Ammo_SupplyPod_Empty
   {
     displayName = QNAME(Demolitions);
-    hiddenSelectionsTextures[] = {QPATHTOF(data\sws_supplypod_ammo_co.paa)};
+    hiddenSelectionsTextures[] = {QPATHTOF(data\ammo_co.paa)};
     class TransportMagazines
     {
       MACRO_ADDMAGAZINE(DemoCharge_Remote_Mag,8);
@@ -222,7 +224,7 @@ class CfgVehicles
   class SWS_Ammo_SupplyPod_Eng_Support : SWS_Ammo_SupplyPod_Empty
   {
     displayName = QNAME(Engineering);
-    hiddenSelectionsTextures[] = {QPATHTOF(data\sws_supplypod_ammo_co.paa)};
+    hiddenSelectionsTextures[] = {QPATHTOF(data\ammo_co.paa)};
 
     class TransportItems
     {

@@ -1,7 +1,5 @@
-class CfgEditorCategories
-{
-	class SWSObjects
-	{
-		displayName = "[SWS] Objects";
+class CfgEditorCategories {
+	class SWS_Objects {
+		displayName = QNAME(Objects);
 	};
 };

@@ -1,5 +1,5 @@
 class CfgEditorSubcategories {
-  class SWSResupply {
+  class SWS_Resupply {
     displayName = "Supply Pods & Boxes";
   };
 };
