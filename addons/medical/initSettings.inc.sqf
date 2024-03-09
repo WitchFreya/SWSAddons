@@ -33,5 +33,6 @@
 	"CHECKBOX", //setting type
   ["Medigel Clear Trauma", "If enabled, medigel will clear trauma on abrasions and contusions (bruises)."],
 	[CATEGORY, SUBCATEGORY],
-	true
+	true,
+  true
 ] call CBA_fnc_addSetting;
