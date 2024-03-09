@@ -65,7 +65,7 @@ class ACE_Medical_Treatment {
       class ThermalBurnMajor : ThermalBurn {};
     };
 
-    class SWS_MediGel : BasicBandage {
+    class SWS_Medigel : BasicBandage {
       // Used if advanced medical treatment is turned off
       effectiveness = 5;
       reopeningChance = 0;
@@ -144,7 +144,7 @@ class ACE_Medical_Treatment {
     };
 
     class SWS_NeuroStim {
-      painReduce = 0.5;
+      painReduce = 0.8;
       timeInSystem = 60 * 2;
       timeTillMaxEffect = 3;
       viscosityChange = 5;
