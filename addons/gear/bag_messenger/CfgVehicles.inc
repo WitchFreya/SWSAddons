@@ -1,8 +1,11 @@
 #define CLASSES_VEHICLES                    \
   "SWS_V_Bag_Messenger"                     \
+  , "SWS_V_Bag_Messenger_Maid_Radio"        \
+  , "SWS_V_Bag_Messenger_Maid"              \
   , "SWS_V_Bag_Messenger_Snare_Radio"       \
   , "SWS_V_Bag_Messenger_Snare"             \
   , "SWS_V_Bag_Messenger_Tiger_Hammerspace" \
+  , "SWS_V_Bag_Messenger_Tiger_Medical"     \
   , "SWS_V_Bag_Messenger_Tiger_Radio"       \
   , "SWS_V_Bag_Messenger_Tiger"
 
@@ -13,7 +16,7 @@ class CfgVehicles {
 
   class SWS_V_Bag_Messenger_Base : B_Messenger_IDAP_F {
     ITEM_META(0);
-    displayName = QNAME(Messenger Bag (Base));
+    displayName = "-";
     maximumLoad = 250;
     // mass = 20; //--- Inherited
     hiddenSelections[] = {"camo"};
@@ -27,7 +30,7 @@ class CfgVehicles {
   };
 
   class SWS_V_Bag_Messenger_Hammerspace_Base : SWS_V_Bag_Messenger_Base {
-    displayName = QNAME(Heavy Messenger Bag (Base));
+    displayName = "-";
     maximumLoad = 400;
     mass = 50;
 
@@ -37,7 +40,7 @@ class CfgVehicles {
   };
 
   class SWS_V_Bag_Messenger_Radio_Base : SWS_V_Bag_Messenger_Base {
-    displayName = QNAME(Heavy Messenger Bag (Base));
+    displayName = "-";
     maximumLoad = 400;
     mass = 50;
     //-- TFAR initialization
@@ -55,12 +58,22 @@ class CfgVehicles {
     };
   };
 
+  class SWS_V_Bag_Messenger_Medical_Base : SWS_V_Bag_Messenger_Hammerspace_Base {
+    displayName = "-";
+    mass = 10;
+
+    class XtdGearInfo : XtdGearInfo {
+      purpose = "Medical";
+    };
+  };
+
   class SWS_V_Bag_Messenger : SWS_V_Bag_Messenger_Base {
     SCOPE(2);
     displayName = QNAME(Messenger Bag);
     hiddenSelectionsTextures[] = {QPATHTOF(data\bag_messenger\sws_co.paa)};
   };
 
+  /** Tiger's Variants */
   class SWS_V_Bag_Messenger_Tiger : SWS_V_Bag_Messenger_Base {
     SCOPE(2);
     displayName = QNAME(Messenger Bag (Tiger));
@@ -82,6 +95,14 @@ class CfgVehicles {
     INFO_VARIANT(Tiger);
   };
 
+  class SWS_V_Bag_Messenger_Tiger_Medical : SWS_V_Bag_Messenger_Medical_Base {
+    SCOPE(2);
+    displayName = QNAME(Medical Messenger Bag (Tiger));
+    hiddenSelectionsTextures[] = {QPATHTOF(data\bag_messenger\tiger_medical_co.paa)};
+    INFO_VARIANT(Tiger);
+  };
+
+  /** Snare's Variants */
   class SWS_V_Bag_Messenger_Snare : SWS_V_Bag_Messenger_Base {
     SCOPE(2);
     displayName = QNAME(Messenger Bag (Snare));
@@ -94,6 +115,21 @@ class CfgVehicles {
     displayName = QNAME(Radio Messenger Bag (Snare));
     hiddenSelectionsTextures[] = {QPATHTOF(data\bag_messenger\snare_radio_co.paa)};
     INFO_VARIANT(Snare);
+  };
+
+  /** Maid's Variants */
+  class SWS_V_Bag_Messenger_Maid : SWS_V_Bag_Messenger_Base {
+    SCOPE(2);
+    displayName = QNAME(Messenger Bag (Maid));
+    hiddenSelectionsTextures[] = {QPATHTOF(data\bag_messenger\maid_co.paa)};
+    INFO_VARIANT(Maid);
+  };
+
+  class SWS_V_Bag_Messenger_Maid_Radio : SWS_V_Bag_Messenger_Radio_Base {
+    SCOPE(2);
+    displayName = QNAME(Radio Messenger Bag (Maid));
+    hiddenSelectionsTextures[] = {QPATHTOF(data\bag_messenger\maid_co.paa)};
+    INFO_VARIANT(Maid);
   };
 };
 
