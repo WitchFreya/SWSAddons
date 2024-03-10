@@ -72,6 +72,7 @@ class ACE_Medical_Treatment {
       reopeningMaxDelay = 0;
       reopeningMinDelay = 0;
 
+      // Scrape
       class Abrasion {
         effectiveness = 5;
         reopeningChance = 0;
@@ -82,6 +83,7 @@ class ACE_Medical_Treatment {
       class AbrasionMedium : Abrasion {};
       class AbrasionMajor : Abrasion {};
 
+      // Bruise
       class Contusion : Abrasion {};
       class ContusionMinor : Contusion {};
       class ContusionMedium : Contusion {};
@@ -103,27 +105,37 @@ class ACE_Medical_Treatment {
         reopeningMaxDelay = 0;
         reopeningMinDelay = 0;
       };
-      class AvulsionMinor : Avulsion {};
+      class AvulsionMinor : Avulsion {
+        effectiveness = 5;
+      };
       class AvulsionMedium : Avulsion {};
       class AvulsionLarge : Avulsion {};
 
       class Cut : Avulsion {};
-      class CutMinor : Cut {};
+      class CutMinor : Cut {
+        effectiveness = 5;
+      };
       class CutMedium : Cut {};
       class CutLarge : Cut {};
 
       class Laceration : Avulsion {};
-      class LacerationMinor : Laceration {};
+      class LacerationMinor : Laceration {
+        effectiveness = 5;
+      };
       class LacerationMedium : Laceration {};
       class LacerationMajor : Laceration {};
 
       class PunctureWound : Avulsion {};
-      class PunctureWoundMinor : PunctureWound {};
+      class PunctureWoundMinor : PunctureWound {
+        effectiveness = 5;
+      };
       class PunctureWoundMedium : PunctureWound {};
       class PunctureWoundMajor : PunctureWound {};
 
       class VelocityWound : Avulsion {};
-      class VelocityWoundMinor : VelocityWound {};
+      class VelocityWoundMinor : VelocityWound {
+        effectiveness = 5;
+      };
       class VelocityWoundMedium : VelocityWound {};
       class VelocityWoundMajor : VelocityWound {};
     };
