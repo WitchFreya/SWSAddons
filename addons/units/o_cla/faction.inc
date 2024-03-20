@@ -1245,7 +1245,7 @@ class CfgVehicles {
 
         backpack = "B_AssaultPack_blk";
 
-        ALiVE_orbatCreator_loadout[] = {{"OPTRE_MA5AGL","","","OPTRE_M393_EOTECH",{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",32},{"1Rnd_HE_Grenade_shell",1},""},{},{},{"U_I_G_Story_Protagonist_F",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",1,32}}},{"V_CarrierRigKBT_01_light_Olive_F",{{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",5,32},{"3Rnd_HE_Grenade_shell",4,3},{"OPTRE_M2_Smoke",3,1}}},{"B_AssaultPack_blk",{{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",4,32}}},"VES_CH252_WDL_Light","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"}};
+        ALiVE_orbatCreator_loadout[] = {{"OPTRE_MA5AGL","","","OPTRE_M393_EOTECH",{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",32},{"1Rnd_HE_Grenade_shell",1},""},{},{},{"U_I_G_Story_Protagonist_F",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",1,32}}},{"V_CarrierRigKBT_01_light_Olive_F",{{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",5,32},{"1Rnd_HE_Grenade_shell",4,3},{"OPTRE_M2_Smoke",3,1}}},{"B_AssaultPack_blk",{{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",4,32}}},"VES_CH252_WDL_Light","",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"}};
 
 
         class EventHandlers : EventHandlers {
@@ -1525,7 +1525,7 @@ class CfgVehicles {
 
         backpack = "B_AssaultPack_blk";
 
-        ALiVE_orbatCreator_loadout[] = {{"OPTRE_MA5AGL","","","OPTRE_M7_Sight",{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",32},{"1Rnd_HE_Grenade_shell",1},""},{},{},{"TCGM_F_SoldierParamilitary2",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",1,32}}},{"V_PlateCarrier2_blk",{{"ACE_quikclot",10},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",4,32},{"3Rnd_HE_Grenade_shell",1,3},{"OPTRE_32Rnd_762x51_Mag_Tracer",3,32}}},{"B_AssaultPack_blk",{{"1Rnd_HE_Grenade_shell",4,1},{"OPTRE_32Rnd_762x51_Mag_Tracer",8,32},{"HandGrenade",2,1},{"OPTRE_M2_Smoke",2,1},{"3Rnd_UGL_FlareWhite_F",1,3},{"3Rnd_HE_Grenade_shell",1,3},{"1Rnd_SmokeRed_Grenade_shell",1,1}}},"H_HelmetB_light_black","G_Bandanna_oli",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"}};
+        ALiVE_orbatCreator_loadout[] = {{"OPTRE_MA5AGL","","","OPTRE_M7_Sight",{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",32},{"1Rnd_HE_Grenade_shell",1},""},{},{},{"TCGM_F_SoldierParamilitary2",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",1,32}}},{"V_PlateCarrier2_blk",{{"ACE_quikclot",10},{"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",4,32},{"1Rnd_HE_Grenade_shell",1,3},{"OPTRE_32Rnd_762x51_Mag_Tracer",3,32}}},{"B_AssaultPack_blk",{{"1Rnd_HE_Grenade_shell",4,1},{"OPTRE_32Rnd_762x51_Mag_Tracer",8,32},{"HandGrenade",2,1},{"OPTRE_M2_Smoke",2,1},{"3Rnd_UGL_FlareWhite_F",1,3},{"1Rnd_HE_Grenade_shell",1,3}}},"H_HelmetB_light_black","G_Bandanna_oli",{},{"ItemMap","","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"}};
 
 
         class EventHandlers : EventHandlers {
@@ -1645,7 +1645,7 @@ class CfgVehicles {
 
         backpack = "B_FieldPack_blk";
 
-        ALiVE_orbatCreator_loadout[] = {{"OPTRE_MA5AGL","","","OPTRE_M7_Sight",{"OPTRE_60Rnd_762x51_Mag",60},{"1Rnd_HE_Grenade_shell",1},""},{},{},{"OPTRE_FC_Marines_Uniform_WDL",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"ACE_quikclot",10},{"OPTRE_M2_Smoke",1,1},{"1Rnd_HE_Grenade_shell",5,1}}},{"OPTRE_UNSC_M52A_Armor_Soft",{{"OPTRE_32Rnd_762x51_Mag_Tracer",6,32}}},{"B_FieldPack_blk",{{"ACE_M84",2,1},{"HandGrenade",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_32Rnd_762x51_Mag_Tracer",4,32},{"3Rnd_HE_Grenade_shell",2,3}}},"OPTRE_Ins_URF_Helmet1","",{"Binocular","","","",{},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","ACE_NVG_Gen4_Green"}};
+        ALiVE_orbatCreator_loadout[] = {{"OPTRE_MA5AGL","","","OPTRE_M7_Sight",{"OPTRE_60Rnd_762x51_Mag",60},{"1Rnd_HE_Grenade_shell",1},""},{},{},{"OPTRE_FC_Marines_Uniform_WDL",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"ACE_quikclot",10},{"OPTRE_M2_Smoke",1,1},{"1Rnd_HE_Grenade_shell",5,1}}},{"OPTRE_UNSC_M52A_Armor_Soft",{{"OPTRE_32Rnd_762x51_Mag_Tracer",6,32}}},{"B_FieldPack_blk",{{"ACE_M84",2,1},{"HandGrenade",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_32Rnd_762x51_Mag_Tracer",4,32}}},"OPTRE_Ins_URF_Helmet1","",{"Binocular","","","",{},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","ACE_NVG_Gen4_Green"}};
 
 
         class EventHandlers : EventHandlers {
@@ -1965,7 +1965,7 @@ class CfgVehicles {
 
         backpack = "B_ViperLightHarness_blk_F";
 
-        ALiVE_orbatCreator_loadout[] = {{"SWS_Weapon_MA5BSx_GL","OPTRE_MA5Suppressor","","SWS_Optic_SmartLink",{"OPTRE_60Rnd_762x51_Mag",60},{"1Rnd_HE_Grenade_shell",1},""},{},{},{"OPTRE_FC_Marines_Uniform_WDL",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"ACE_quikclot",10},{"OPTRE_M2_Smoke",1,1},{"OPTRE_60Rnd_762x51_Mag",1,60}}},{"OPTRE_UNSC_M52A_Armor_Rifleman_URB",{{"OPTRE_M2_Smoke",2,1},{"HandGrenade",2,1},{"ACE_M84",2,1},{"OPTRE_60Rnd_762x51_Mag",3,60},{"1Rnd_HE_Grenade_shell",3,1}}},{"B_ViperLightHarness_blk_F",{{"ACE_quikclot",15},{"ACE_tourniquet",4},{"ACE_M84",2,1},{"HandGrenade",2,1},{"OPTRE_60Rnd_762x51_Mag",4,60},{"1Rnd_HE_Grenade_shell",10,1},{"1Rnd_SmokeRed_Grenade_shell",2,1},{"OPTRE_M2_Smoke",4,1},{"OPTRE_M2_Smoke_Purple",4,1},{"SWS_Magazine_C7Sx_Sticky",1,1}}},"OPTRE_UNSC_VX16_Helmet_MaskS","",{"Binocular","","","",{},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"}};
+        ALiVE_orbatCreator_loadout[] = {{"SWS_Weapon_MA5BSx_GL","OPTRE_MA5Suppressor","","SWS_Optic_SmartLink",{"OPTRE_60Rnd_762x51_Mag",60},{"1Rnd_HE_Grenade_shell",1},""},{},{},{"OPTRE_FC_Marines_Uniform_WDL",{{"OPTRE_Biofoam",1},{"ACE_EarPlugs",1},{"ACE_quikclot",10},{"OPTRE_M2_Smoke",1,1},{"OPTRE_60Rnd_762x51_Mag",1,60}}},{"OPTRE_UNSC_M52A_Armor_Rifleman_URB",{{"OPTRE_M2_Smoke",2,1},{"HandGrenade",2,1},{"ACE_M84",2,1},{"OPTRE_60Rnd_762x51_Mag",3,60},{"1Rnd_HE_Grenade_shell",3,1}}},{"B_ViperLightHarness_blk_F",{{"ACE_quikclot",15},{"ACE_tourniquet",4},{"ACE_M84",2,1},{"HandGrenade",2,1},{"OPTRE_60Rnd_762x51_Mag",4,60},{"1Rnd_HE_Grenade_shell",10,1},{"OPTRE_M2_Smoke",4,1}}},"OPTRE_UNSC_VX16_Helmet_MaskS","",{"Binocular","","","",{},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"}};
 
 
         class EventHandlers : EventHandlers {
