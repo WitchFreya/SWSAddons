@@ -34,16 +34,6 @@ class CfgVehicles
       pattern = "Default";
     };
   };
-
-  class SWS_Bag_UAV_Demining : C_IDAP_UAV_06_Antimine_Backpack_F
-  {
-    class XtdGearInfo
-    {
-      model = "SWS_Bag_Drone";
-      variant = "Demining";
-      pattern = "Default";
-    };
-  };
 };
 
 #undef XTD_GEAR_INFO

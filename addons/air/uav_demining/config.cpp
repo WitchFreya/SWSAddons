@@ -2,10 +2,8 @@
 
 #include "CfgVehicles.inc"
 
-class CfgPatches
-{
-  class SUBADDON
-  {
+class CfgPatches {
+  class SUBADDON {
     addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
     units[] = { CLASSES_VEHICLES };
@@ -13,7 +11,11 @@ class CfgPatches
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = {"A3_Air_F_Orange_UAV_06"};
+    requiredAddons[] = {
+      "A3_Air_F_Orange_UAV_06"
+      , "sws_main"
+      , "sws_aceax"
+    };
     VERSION_CONFIG;
   };
 };
