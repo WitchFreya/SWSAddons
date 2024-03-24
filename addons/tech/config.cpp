@@ -4,18 +4,16 @@
 #include "CfgWeapons.inc"
 #include "RscInGameUI.inc"
 
-class CfgPatches
-{
-    class ADDON
-    {
-        name = QUOTE(COMPONENT);
-        units[] = { };
-        weapons[] = { CLASSES_WEAPONS };
-        magazines[] = { };
-        ammo[] = { };
-        requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { "OPTRE_UNSC_Units_Army", "sws_main" };
-        author = QUOTE(AUTHOR);
-        VERSION_CONFIG;
-    };
+class CfgPatches {
+  class ADDON {
+    name = QUOTE(COMPONENT);
+    author = QUOTE(AUTHOR);
+    units[] = { };
+    weapons[] = { CLASSES_WEAPONS };
+    magazines[] = { };
+    ammo[] = { };
+    requiredVersion = REQUIRED_VERSION;
+    requiredAddons[] = { "OPTRE_UNSC_Units_Army", "sws_main" };
+    VERSION_CONFIG;
+  };
 };

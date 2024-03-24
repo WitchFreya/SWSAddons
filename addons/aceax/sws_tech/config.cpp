@@ -1,12 +1,8 @@
 #include "script_component.hpp"
 
-#include "CfgWeapons.inc"
-#include "XtdGearModels.inc"
-
-class CfgPatches
-{
-  class SUBADDON
-  {
+/** This was merged into the CfgWeapons\neural_lace subcomponent. */
+class CfgPatches {
+  class SUBADDON {
     addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
     units[] = { };
