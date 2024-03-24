@@ -54,6 +54,7 @@ class CfgVehicles
     displayName = QNAME(UAV Bag (MiniPelican));
     faction = "SWS_UNSC";
     side = SIDE_BLUFOR;
+    mass = 100;
     class AssembleInfo : AssembleInfo {
       displayName = "MiniPelican Drone";
       assembleTo = "SWS_V_UAV_MiniPelican";
