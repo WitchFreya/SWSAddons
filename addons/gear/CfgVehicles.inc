@@ -11,14 +11,9 @@
   , "SWS_V_Bag_Hardcase_Spritz"   \
   , "SWS_V_Bag_Hardcase_Vertigo"
 
-class AssembleInfo;
-
 class CfgVehicles {
-  class B_UAV_06_Backpack_F;
   class OPTRE_ONI_Researcher_Suitcase;
-  class SWS_V_UAV_MiniPelican_Base;
 
   //== Bags
   #include "CfgVehicles\Bag_Hardcase.inc"
-  #include "CfgVehicles\Bag_UAV_MiniPelican.inc"
 };
