@@ -27,6 +27,8 @@ class CfgVehicles
     textureList[] = {"SWS_UNSC", 1};
     hiddenSelectionsTextures[] = {QPATHTOF(data\uav_minipelican\sws_co.paa)};
 
+    ace_cargo_space = 2;
+    ace_cargo_hasCargo = TRUE;
     fuelCapacity = 100;
     transportMaxWeapons = 2;
     transportMaxMagazines = 20;
