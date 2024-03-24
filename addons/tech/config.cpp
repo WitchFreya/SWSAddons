@@ -1,8 +1,6 @@
 #include "script_component.hpp"
 
-#include "CfgEventHandlers.hpp"
 #include "CfgWeapons.inc"
-#include "RscInGameUI.inc"
 
 class CfgPatches {
   class ADDON {
