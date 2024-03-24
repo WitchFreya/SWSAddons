@@ -124,6 +124,8 @@ class CfgVehicles {
     hiddenSelections[] = { "camo1", "biofoam" };
     hiddenSelectionsMaterials[] = {};
     hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Backpacks\V_ILCS_UAV_CO.paa"};
+    /** 20 lbs */
+    mass = 200;
     class AssembleInfo : AssembleInfo { displayName = "SMQ-94 Drone"; };
     class XtdGearInfo {
       model = "SWS_Bag_Drone";
