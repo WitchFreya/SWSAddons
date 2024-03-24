@@ -25,29 +25,6 @@ class CfgVehicles
   class SWS_V_Bag_Hardcase_Spritz : SWS_V_Bag_Hardcase_Medical { XTD_GEAR_INFO(Spritz); };
   class SWS_V_Bag_Hardcase_Vertigo : SWS_V_Bag_Hardcase_Medical { XTD_GEAR_INFO(Vertigo); };
 
-  class SWS_Bag_UAV_SMQ94_Base : DMNS_UAV_01_Backpack_F
-  {
-    class XtdGearInfo
-    {
-      model = "SWS_Bag_Drone";
-      variant = "SMQ94";
-    };
-  };
-
-  class SWS_Bag_UAV_SMQ94 : SWS_Bag_UAV_SMQ94_Base {
-    class XtdGearInfo : XtdGearInfo
-    {
-      pattern = "Default";
-    };
-  };
-
-  class SWS_Bag_UAV_SMQ94_Maid : SWS_Bag_UAV_SMQ94_Base {
-    class XtdGearInfo : XtdGearInfo
-    {
-      pattern = "Maid";
-    };
-  };
-
   class SWS_Bag_UAV_MiniPelican : B_UAV_06_Backpack_F
   {
     class XtdGearInfo

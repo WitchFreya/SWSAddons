@@ -125,6 +125,10 @@ class CfgVehicles {
     hiddenSelectionsMaterials[] = {};
     hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Backpacks\V_ILCS_UAV_CO.paa"};
     class AssembleInfo : AssembleInfo { displayName = "SMQ-94 Drone"; };
+    class XtdGearInfo {
+      model = "SWS_Bag_Drone";
+      variant = "SMQ94";
+    };
   };
 
   class SWS_Bag_UAV_SMQ94 : SWS_Bag_UAV_SMQ94_Base
@@ -132,6 +136,9 @@ class CfgVehicles {
     SCOPE(2);
     displayName = QNAME(SMQ-94 UAV Bag);
     class AssembleInfo : AssembleInfo { assembleTo = "SWS_V_UAV_SMQ94"; };
+    class XtdGearInfo : XtdGearInfo {
+      pattern = "Default";
+    };
   };
 
   class SWS_Bag_UAV_SMQ94_Maid : SWS_Bag_UAV_SMQ94_Base
@@ -139,6 +146,9 @@ class CfgVehicles {
     SCOPE(2);
     displayName = QNAME(SMQ-94 UAV Bag (Maid));
     class AssembleInfo : AssembleInfo { assembleTo = "SWS_V_UAV_SMQ94_Maid"; };
+    class XtdGearInfo : XtdGearInfo {
+      pattern = "Maid";
+    };
   };
 
   #pragma endregion

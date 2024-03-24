@@ -24,6 +24,7 @@ class CfgPatches {
       , "DMNS_Supplies_F_Bags"
       , "DMNS_Air_UAV_01"
       , "sws_main"
+      , "sws_aceax"
     };
     VERSION_CONFIG;
   };
