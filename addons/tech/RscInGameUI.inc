@@ -12,24 +12,21 @@ class RscControlsGroupNoScrollbars;
 class RscIGUIValue;
 class RscIGUIText;
 class RscVehicleToggles;
+
 class RscInGameUI {
-    class RscUnitInfoArtillery;
+  class RscUnitInfoArtillery;
 	class RscUnitInfo;
 
-    class Rsc_MELB_Turret_UnitInfo: RscUnitInfo
-	{
+  class Rsc_MELB_Turret_UnitInfo: RscUnitInfo {
 		idd = 300;
 		onLoad = QUOTE(ARR_4('onLoad',_this,'RscUnitInfo','IGUI') call (uiNamespace getVariable 'BIS_fnc_initDisplay'); _this spawn DFUNC(handleFLIR));
 		controls[] = {"MELB_GUI"};
-		class MELB_GUI: RscControlsGroup
-		{
+		class MELB_GUI: RscControlsGroup {
 			idc = 170;
-			class VScrollbar: VScrollbar
-			{
+			class VScrollbar: VScrollbar {
 				width = 0;
 			};
-			class HScrollbar: HScrollbar
-			{
+			class HScrollbar: HScrollbar {
 				height = 0;
 			};
 			x = "0 * 		(0.01875 * SafezoneH) + 		(SafezoneX + ((SafezoneW - SafezoneH) / 2))";
