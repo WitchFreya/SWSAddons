@@ -1,9 +1,12 @@
-#define CLASSES_VEHICLES  \
-  "SWS_V_UAV_SMQ94"       \
-  , "SWS_V_UAV_SMQ94_Maid"
+#define CLASSES_VEHICLES      \
+  "SWS_V_UAV_SMQ94"           \
+  , "SWS_V_UAV_SMQ94_Maid"    \
+  , "SWS_Bag_UAV_SMQ94_Maid"  \
+  , "SWS_Bag_UAV_SMQ94"       \
 
 class CfgVehicles {
   class B_UAV_01_F;
+  class DMNS_UAV_01_Backpack_F;
 
   class SWS_V_UAV_SMQ94_Base : B_UAV_01_F {
     ITEM_META(0);
@@ -94,6 +97,9 @@ class CfgVehicles {
     SCOPE(2);
     displayName = QNAME(SMQ-94 Recon);
     textureList[] = {"UNSC", 1};
+    class AssembleInfo : AssembleInfo {
+      dissasembleTo[] = {"SWS_Bag_UAV_SMQ94"};
+    };
   };
 
   class SWS_V_UAV_SMQ94_Maid : SWS_V_UAV_SMQ94_Base {
@@ -101,5 +107,51 @@ class CfgVehicles {
     displayName = QNAME(SMQ-94 Recon (Maid));
     hiddenSelectionsTextures[] = {QPATHTOF(data\uav_smq94\maid_co.paa)};
     textureList[] = {"Maid", 1};
+
+    class AssembleInfo : AssembleInfo {
+      dissasembleTo[] = {"SWS_Bag_UAV_SMQ94_Maid"};
+    };
   };
+
+  #pragma region Bag
+
+  class SWS_Bag_UAV_SMQ94_Base : DMNS_UAV_01_Backpack_F
+  {
+    ITEM_META(0);
+    displayName = QNAME(SMQ-94 UAV Bag (Base));
+    picture = "\OPTRE_weapons\backpacks\icons\rucksack_black";
+    model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+    hiddenSelections[] = { "camo1", "biofoam" };
+    hiddenSelectionsMaterials[] = {};
+    hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Backpacks\V_ILCS_UAV_CO.paa"};
+    /** 20 lbs */
+    mass = 200;
+    class AssembleInfo : AssembleInfo { displayName = "SMQ-94 Drone"; };
+    class XtdGearInfo {
+      model = "SWS_Bag_Drone";
+      variant = "SMQ94";
+    };
+  };
+
+  class SWS_Bag_UAV_SMQ94 : SWS_Bag_UAV_SMQ94_Base
+  {
+    SCOPE(2);
+    displayName = QNAME(SMQ-94 UAV Bag);
+    class AssembleInfo : AssembleInfo { assembleTo = "SWS_V_UAV_SMQ94"; };
+    class XtdGearInfo : XtdGearInfo {
+      pattern = "Default";
+    };
+  };
+
+  class SWS_Bag_UAV_SMQ94_Maid : SWS_Bag_UAV_SMQ94_Base
+  {
+    SCOPE(2);
+    displayName = QNAME(SMQ-94 UAV Bag (Maid));
+    class AssembleInfo : AssembleInfo { assembleTo = "SWS_V_UAV_SMQ94_Maid"; };
+    class XtdGearInfo : XtdGearInfo {
+      pattern = "Maid";
+    };
+  };
+
+  #pragma endregion
 };
