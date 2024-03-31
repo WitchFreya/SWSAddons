@@ -23,3 +23,7 @@ Once it's installed, you can copy the [`tasks.template.json`](.vscode/tasks.temp
 ## Docs
 
 Check out the [Docs Folder](./docs/) for a collection of various info pieces that seemed useful to have internally; there's also some info on the [Wiki](https://github.com/WitchFreya/SWSAddons/wiki).
+
+## Other Standards
+
+Make sure you read through the [BIKI page on Code Optimization](https://community.bistudio.com/wiki/Code_Optimisation) and the [ACE3 wiki's Coding Guidelines](https://ace3.acemod.org/wiki/development/coding-guidelines). We don't follow either of these strictly, but they can provide a guideline for where to start.
