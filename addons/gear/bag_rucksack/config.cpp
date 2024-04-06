@@ -17,7 +17,6 @@ class CfgPatches
     requiredAddons[] = {
       "optre_weapons_backpacks"
       , "sws_main"
-      , "sws_aceax"
     };
     VERSION_CONFIG;
   };
