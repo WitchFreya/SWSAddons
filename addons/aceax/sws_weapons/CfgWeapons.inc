@@ -12,5 +12,5 @@ class CfgWeapons
   #include "CfgWeapons\AR0M37S.inc"
   #include "CfgWeapons\ARMXS.inc"
   #include "CfgWeapons\MA5BSx.inc"
-  #include "CfgWeapons\XMA37K.inc"
+  #include "CfgWeapons\SMA37K.inc"
 };
