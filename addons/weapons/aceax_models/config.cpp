@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 
-/** This was merged into the CfgWeapons\neural_lace subcomponent. */
+#include "XtdGearModels.inc"
+
 class CfgPatches {
   class SUBADDON {
     addonRootClass = QUOTE(ADDON);
@@ -10,7 +11,11 @@ class CfgPatches {
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = { QUOTE(SUBCOMPONENT) };
+    requiredAddons[] = {
+      "aceax_main"
+      , "sws_aceax"
+    };
+    skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
   };
 };

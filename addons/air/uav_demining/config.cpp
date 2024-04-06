@@ -14,7 +14,6 @@ class CfgPatches {
     requiredAddons[] = {
       "A3_Air_F_Orange_UAV_06"
       , "sws_main"
-      , "sws_aceax"
     };
     VERSION_CONFIG;
   };

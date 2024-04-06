@@ -1,7 +1,6 @@
 #include "script_component.hpp"
 
 #include "CfgWeapons.inc"
-#include "XtdGearModels.inc"
 
 class CfgPatches {
   class SUBADDON {
@@ -16,7 +15,6 @@ class CfgPatches {
       "OPTRE_UNSC_Units_Army"
       , "OPTRE_ACE_Compat"
       , "sws_main"
-      , "sws_aceax"
     };
     VERSION_CONFIG;
   };

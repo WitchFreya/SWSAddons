@@ -2,17 +2,15 @@
 
 #include "XtdGearModels.inc"
 
-class CfgPatches
-{
-  class ADDON
-  {
+class CfgPatches {
+  class ADDON {
     name = QUOTE(COMPONENT);
     author = QUOTE(AUTHOR);
     units[] = {  };
     weapons[] = {  };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {"aceax_main"};
-    skipWhenMissingDependencies = 1;
+    skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
   };
 };
