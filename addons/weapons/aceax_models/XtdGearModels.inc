@@ -1,15 +1,11 @@
-class XtdGearModels
-{
+class XtdGearModels {
   class SWS_BaseGearModel;
 
-  class CfgWeapons
-  {
-    class SWS_Weapon_Autorifles : SWS_BaseGearModel
-    {
+  class CfgWeapons {
+    class SWS_Weapon_Autorifles : SWS_BaseGearModel {
       label = QNAME(AR);
       options[] = {"Body","Underbarrel","Variant"};
-      class Body
-      {
+      class Body {
         label = "Body Configuration";
         values[] = {"0M37S", "MXS","MA5BSx","SMA37K"};
 
@@ -19,8 +15,7 @@ class XtdGearModels
         class XMA37K { description = "SMA-37k";};
       };
 
-      class Underbarrel
-      {
+      class Underbarrel {
         label = "Underbarrel Attachment";
         values[] = {"None", "GL","SHT"};
         class None {};
@@ -28,8 +23,7 @@ class XtdGearModels
         class SHT { description = "Underbarrel shotgun."; };
       };
 
-      class Variant
-      {
+      class Variant {
         label = "Variant";
         values[] = {"Standard", "Hound", "Rabbit"};
         class Standard {};
