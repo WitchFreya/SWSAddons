@@ -1,21 +1,21 @@
 #include "script_component.hpp"
 
-#include "CfgWeapons.inc"
+#include "XtdGearModels.inc"
 
 class CfgPatches {
   class SUBADDON {
     addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
     units[] = { };
-    weapons[] = { CLASSES_WEAPONS };
-    ammo[] = { };
+    weapons[] = { };
     magazines[] = { };
+    ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {
-      "OPTRE_UNSC_Units_Army"
-      , "OPTRE_ACE_Compat"
-      , "sws_main"
+      "aceax_main"
+      , "sws_aceax"
     };
+    skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
   };
 };

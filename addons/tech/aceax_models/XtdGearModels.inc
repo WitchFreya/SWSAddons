@@ -1,5 +1,6 @@
 class XtdGearModels {
   class SWS_BaseGearModel;
+
   class CfgWeapons {
     class SWS_NVG_NeuralLace : SWS_BaseGearModel {
       label = QNAME(NeuralLace Implant);
