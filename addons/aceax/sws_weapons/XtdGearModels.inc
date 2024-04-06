@@ -11,11 +11,12 @@ class XtdGearModels
       class Body
       {
         label = "Body Configuration";
-        values[] = {"0M37S", "MXS","MA5BSx"};
+        values[] = {"0M37S", "MXS","MA5BSx","SMA37K"};
 
         class 0M37S { description = "AR-0M37S"; };
         class MXS { description = "ARMXS"; };
         class MA5BSx {};
+        class XMA37K { description = "SMA-37k";};
       };
 
       class Underbarrel
