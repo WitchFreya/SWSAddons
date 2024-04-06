@@ -16,7 +16,6 @@ class CfgPatches {
     requiredAddons[] = {
       "ace_vector"
       , "sws_main"
-      , "sws_aceax"
     };
     VERSION_CONFIG;
   };

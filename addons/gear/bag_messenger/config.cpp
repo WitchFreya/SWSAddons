@@ -15,7 +15,6 @@ class CfgPatches {
     requiredAddons[] = {
       "A3_Supplies_F_Orange_Bags"
       , "sws_main"
-      , "sws_aceax"
     };
     VERSION_CONFIG;
   };

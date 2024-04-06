@@ -1,12 +1,8 @@
 #include "script_component.hpp"
+#include "CfgVehicles.inc"
 
-#include "XtdGearInfos.inc"
-#include "XtdGearModels.inc"
-
-class CfgPatches
-{
-  class SUBADDON
-  {
+class CfgPatches {
+  class SUBADDON {
     addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
     units[] = { };
@@ -14,8 +10,8 @@ class CfgPatches
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = { "OPTRE_Weapons" };
-    skipWhenMissingDependencies = 1;
+    requiredAddons[] = {"OPTRE_FC_Vehicles"};
+    skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
   };
 };
