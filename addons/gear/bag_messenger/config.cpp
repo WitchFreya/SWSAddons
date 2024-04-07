@@ -1,7 +1,6 @@
 #include "script_component.hpp"
 
 #include "CfgVehicles.inc"
-#include "XtdGearModels.inc"
 
 class CfgPatches {
   class SUBADDON {
