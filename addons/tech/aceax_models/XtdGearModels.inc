@@ -6,6 +6,7 @@ class XtdGearModels {
       label = QNAME(NeuralLace Implant);
       options[] = {"ThermalMode", "UpArmor"};
       class ThermalMode {
+        alwaysSelectable = TRUE;
         label = "Thermal Mode";
         values[] = {"Infrared", "WhiteHot"};
         class Infrared {
@@ -19,6 +20,7 @@ class XtdGearModels {
       };
 
       class UpArmor {
+        alwaysSelectable = TRUE;
         label = "Up-Armor";
         values[] = {"None", "UpArmor_UpLink_CNM"};
         class None {};

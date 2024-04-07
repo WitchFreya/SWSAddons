@@ -1,13 +1,12 @@
 #include "script_component.hpp"
 
-#include "CfgVehicles.inc"
 #include "CfgWeapons.inc"
 #include "XtdGearInfos.inc"
 
 class CfgPatches {
   class ADDON {
     name = QUOTE(COMPONENT);
-    units[] = { CLASSES_VEHICLES };
+    units[] = { };
     weapons[] = { CLASSES_WEAPONS };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {

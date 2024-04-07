@@ -5,6 +5,7 @@ class XtdGearModels {
   };
 
   class YesNoOption {
+    alwaysSelectable = TRUE;
     values[] = {"Yes","No"};
     class Yes {};
     class No {};
