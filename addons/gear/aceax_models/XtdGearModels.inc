@@ -3,6 +3,7 @@ class XtdGearModels {
   class YesNoOption;
 
   class OperativeOption {
+    alwaysSelectable = TRUE;
     values[] = {
       "Ashes"
       , "Bait"
@@ -45,6 +46,7 @@ class XtdGearModels {
   };
 
   class ColorOption {
+    alwaysSelectable = TRUE;
     values[] = {"Blue","Gold","Green","Orange","Purple","Red"};
     class Blue {};
     class Gold {};
@@ -76,6 +78,7 @@ class XtdGearModels {
       label = QNAME(Role Helmets);
       options[] = {"Role","Collar","Ghillie"};
       class Role {
+        alwaysSelectable = TRUE;
         values[] = {"CLS"};
         class CLS {
           description = "A helmet specialized for a CLS or medic.";
@@ -88,6 +91,7 @@ class XtdGearModels {
       options[] = {"Operative", "Variant", "Ghillie"};
       class Operative : OperativeOption {};
       class Variant {
+        alwaysSelectable = TRUE;
         values[] = {
           "Standard"
           , "Demolitions"
@@ -127,6 +131,7 @@ class XtdGearModels {
       label = QNAME(Role Armor);
       options[] = {"Role","Variant","Ghillie"};
       class Role {
+        alwaysSelectable = TRUE;
         values[] = {"CLS"};
         class CLS {
           description = "Armor specialized for a CLS or medic.";
@@ -140,6 +145,7 @@ class XtdGearModels {
       label = QNAME(UAV Bags);
       options[] = {"Variant", "Pattern"};
       class Pattern {
+        alwaysSelectable = TRUE;
         label = "Pattern";
         values[] = {"Default","Maid"};
         class Default { description = "Standard design."; };
@@ -147,6 +153,7 @@ class XtdGearModels {
       };
 
       class Variant {
+        alwaysSelectable = TRUE;
         label = "Variant";
         values[] = {"SMQ94","Demining","MiniPelican"};
         class SMQ94 {
@@ -168,6 +175,7 @@ class XtdGearModels {
       options[] = {"Variant"};
 
       class Variant {
+        alwaysSelectable = TRUE;
         values[] = {
           "Medical"
           , "Bait"
@@ -198,6 +206,7 @@ class XtdGearModels {
       label = QNAME(Rucksacks);
       options[] = { "Variant", "Customization" };
       class Variant {
+        alwaysSelectable = TRUE;
         values[] = { "Basic", "Medic", "Heavy" };
         class Basic {};
         class Medic {};
@@ -205,6 +214,7 @@ class XtdGearModels {
       };
 
       class Customization {
+        alwaysSelectable = TRUE;
         values[] = { "None", "Hound" };
         class None {};
         class Hound { description = "Hound's customized version."; };
@@ -216,6 +226,7 @@ class XtdGearModels {
       options[] = { "Variant", "Purpose" };
 
       class Variant {
+        alwaysSelectable = TRUE;
         values[] = {
           "SWS"
           , "Maid"
@@ -230,6 +241,7 @@ class XtdGearModels {
       };
 
       class Purpose {
+        alwaysSelectable = TRUE;
         values[] = {
           "Standard"
           , "Heavy"

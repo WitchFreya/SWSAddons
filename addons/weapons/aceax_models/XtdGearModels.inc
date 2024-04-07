@@ -6,6 +6,7 @@ class XtdGearModels {
       label = QNAME(AR);
       options[] = {"Body","Underbarrel","Variant"};
       class Body {
+        alwaysSelectable = TRUE;
         label = "Body Configuration";
         values[] = {"0M37S", "MXS","MA5BSx","SMA37K"};
 
@@ -16,6 +17,7 @@ class XtdGearModels {
       };
 
       class Underbarrel {
+        alwaysSelectable = TRUE;
         label = "Underbarrel Attachment";
         values[] = {"None", "GL","SHT"};
         class None {};
@@ -24,6 +26,7 @@ class XtdGearModels {
       };
 
       class Variant {
+        alwaysSelectable = TRUE;
         label = "Variant";
         values[] = {"Standard", "Hound", "Rabbit"};
         class Standard {};
