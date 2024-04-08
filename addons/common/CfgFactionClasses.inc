@@ -1,7 +1,5 @@
-class CfgFactionClasses
-{
-  class SWS_UNSC
-  {
+class CfgFactionClasses {
+  class SWS_UNSC {
     META;
     displayName = QNAME(UNSC Scarlet Company);
     priority = 1;
