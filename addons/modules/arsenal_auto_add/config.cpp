@@ -1,5 +1,8 @@
 #include "script_component.hpp"
 
+class ModuleDescription;
+class ArgumentsBaseUnits;
+
 #include "CfgVehicles.inc"
 
 class CfgPatches {

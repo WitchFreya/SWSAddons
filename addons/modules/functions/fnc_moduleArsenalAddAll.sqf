@@ -20,7 +20,6 @@
 
 params ["_logic", "_units", "_activated"];
 
-
 if (!_activated || { !local _logic; } || { count _units < 1 }) exitWith {0};
 
 TRACE_3("moduleArsenalAddAll vars",_logic,_units,_activated);
