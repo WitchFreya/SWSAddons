@@ -5,8 +5,7 @@
     class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_Base {};   \
   }
 
-class CfgVehicles
-{
+class CfgVehicles {
   class Land_CampingChair_V1_F;
   class OPTRE_Pelican_armed;
   class UGV_01_RCWS_Base_F;

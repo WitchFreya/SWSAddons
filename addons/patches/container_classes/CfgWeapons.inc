@@ -1,11 +1,6 @@
-class CBA_Extended_EventHandlers_Base;
-class EventHandlers;
-
 #define CONTAINER_PATCH(varClass) class varClass { class ItemInfo : ItemInfo { containerClass = "Supply100"; }; }
 
-class ItemInfo;
-class CfgWeapons
-{
+class CfgWeapons {
   class OPTRE_UNSC_Army_Uniform_OLIWDL;
   class OPTRE_UNSC_Dress_Uniform_gray;
   class OPTRE_UNSC_PT_Uniform;
@@ -93,6 +88,4 @@ class CfgWeapons
   CONTAINER_PATCH(OPTRE_UNSC_Army_Uniform_R_URB_SlimLeg : OPTRE_UNSC_Army_Uniform_R_URB);
   CONTAINER_PATCH(OPTRE_UNSC_Army_Uniform_R_WDLDES_SlimLeg : OPTRE_UNSC_Army_Uniform_R_WDLDES);
   CONTAINER_PATCH(OPTRE_UNSC_Army_Uniform_R_WDL_SlimLeg : OPTRE_UNSC_Army_Uniform_R_WDL);
-
-
 };
