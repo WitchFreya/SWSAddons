@@ -1,11 +1,9 @@
 #define CLASSES_WEAPONS "SWS_AED"
 
-class CfgWeapons
-{
+class CfgWeapons {
   class ACE_ItemCore;
 
-  class SWS_AED : ACE_ItemCore
-  {
+  class SWS_AED : ACE_ItemCore {
     ITEM_META(2);
     displayName = QNAME(Automated External Defibrillator);
     picture = QPATHTOF(data\defib.paa);
@@ -13,10 +11,9 @@ class CfgWeapons
     description = "Use to halt abnormal heart rhythm during cardiac arrest.";
     descriptionShort = "Use to halt abnormal heart rhythm during cardiac arrest.";
 
-    ace_isMedicalItem = 1;
+    ace_isMedicalItem = TRUE;
 
-    class ItemInfo : ItemInfo
-    {
+    class ItemInfo : ItemInfo {
       mass = 30;
     };
   };
