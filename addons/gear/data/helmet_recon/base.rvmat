@@ -60,7 +60,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="x\sws\addons\gear\data\materials\recon_smdi.paa";
+	texture="x\sws\addons\gear\data\helmet_recon\base_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{

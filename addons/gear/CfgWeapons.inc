@@ -52,8 +52,6 @@
   QWEAPONS_FN(Sonic),       \
   QWEAPONS_FN(Tiger),       \
   QWEAPONS_FN(Vertigo),     \
-  "SWS_Helmet_Maid_Recon",  \
-  "SWS_Helmet_Maid_Recon_dp"
 
 #define C_GEAR(varName,varVisorColor) \
     C_HELMET(varName,varVisorColor);  \
@@ -107,6 +105,4 @@ class CfgWeapons
     C_GEAR(Red,red);
 
     C_GEAR(CLS,red);
-
-    #include "CfgWeapons\Recon.inc"
 };
