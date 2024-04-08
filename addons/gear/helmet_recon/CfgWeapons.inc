@@ -24,13 +24,12 @@ class CfgWeapons {
     hiddenSelectionsTextures[] = {};
 
     class ItemInfo : ItemInfo {
-      uniformModel = "\OPTRE_UNSC_Units\Army\recon_helmet.p3d";
-      hiddenSelections[] = {HS_BASE, HS_VISOR, HS_GHILLIE, "H_VacCollar"};
-      hiddenSelectionsTextures[] = {};
       hiddenSelectionsMaterials[] = {
         QPATHTOF(data\helmet_recon\base.rvmat)
         , QPATHTOF(data\helmet_recon\visor_trans.rvmat)
       };
+      uniformModel = "\OPTRE_UNSC_Units\Army\recon_helmet.p3d";
+      hiddenSelections[] = {HS_BASE, HS_VISOR, HS_GHILLIE, "H_VacCollar"};
     };
   };
 
@@ -48,13 +47,6 @@ class CfgWeapons {
       QPATHTOF(data\helmet_recon\maid_base_co.paa)
       , QPATHTOF(data\helmet_recon\maid_visor_co.paa)
     };
-
-    class ItemInfo : ItemInfo {
-      hiddenSelectionsTextures[] = {
-        QPATHTOF(data\helmet_recon\maid_base_co.paa)
-        , QPATHTOF(data\helmet_recon\maid_visor_co.paa)
-      };
-    };
   };
 
   class SWS_Helmet_Recon_Maid_dp : SWS_Helmet_Recon_Base_dp {
@@ -64,12 +56,6 @@ class CfgWeapons {
     hiddenSelectionsTextures[] = {
       QPATHTOF(data\helmet_recon\maid_base_co.paa)
       , QPATHTOF(data\helmet_recon\maid_visor_ca.paa)
-    };
-    class ItemInfo : ItemInfo {
-      hiddenSelectionsTextures[] = {
-        QPATHTOF(data\helmet_recon\maid_base_co.paa)
-        , QPATHTOF(data\helmet_recon\maid_visor_ca.paa)
-      };
     };
   };
 };
