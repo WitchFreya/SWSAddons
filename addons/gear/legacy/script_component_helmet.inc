@@ -17,18 +17,12 @@
     SCOPE(2);                                                                           \
     displayName = QNAME(Helmet (varName));                                              \
     hiddenSelectionsTextures[] = {ARR_2(texHelmet,texRest)};                            \
-    class ItemInfo : ItemInfo {                                                         \
-      hiddenSelectionsTextures[] = {ARR_2(texHelmet,texRest)};                          \
-    };                                                                                  \
   };                                                                                    \
   class TRIPLES(SWS_Helmet,varName,dp): SWS_Helmet_Legacy_Base_dp {                     \
     SCOPE(1);                                                                           \
     displayName = QNAME(Helmet (varName));                                              \
     ace_arsenal_uniqueBase = QUOTE(DOUBLES(SWS_Helmet,varName));                        \
     hiddenSelectionsTextures[] = {texHelmet,QPATHTOF(data\textures\visr_clr_ca.paa)};   \
-    class ItemInfo : ItemInfo {                                                         \
-      hiddenSelectionsTextures[] = {texHelmet,QPATHTOF(data\textures\visr_clr_ca.paa)}; \
-    };                                                                                  \
   }
 
 #define C_HELMET_VARIANT(name,variant,varHiddenSelections,varHiddenSelectionsDp)      \
