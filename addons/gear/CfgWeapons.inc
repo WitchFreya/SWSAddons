@@ -57,52 +57,46 @@
     C_HELMET(varName,varVisorColor);  \
     C_VEST(varName)
 
-class CfgWeapons
-{
-    class OPTRE_UNSC_M52D_Armor;
-    class SWS_Vest_OPTRE_UNSC_M52D_Armor : OPTRE_UNSC_M52D_Armor {
-        ITEM_META(0);
-        class ItemInfo;
-    };
-    class OPTRE_UNSC_CH252D_Helmet_Base;
-    class SWS_Helmet_OPTRE_UNSC_CH252D_Helmet_Base : OPTRE_UNSC_CH252D_Helmet_Base {
-        ITEM_META(0);
-        class ItemInfo;
-    };
+class CfgWeapons {
+  class OPTRE_UNSC_M52D_Armor;
+  class OPTRE_UNSC_CH252D_Helmet_Base;
+  class SWS_Vest_OPTRE_UNSC_M52D_Armor : OPTRE_UNSC_M52D_Armor {
+    ITEM_META(0);
+  };
 
-    #include "base\helmet.hpp"
-    #include "base\vest.hpp"
+  #include "base\helmet.hpp"
+  #include "base\vest.hpp"
 
-    //== BASE
-    C_GEAR(Rifleman,grey);
+  //== BASE
+  C_GEAR(Rifleman,grey);
 
-    //== OPERATIVES
-    C_GEAR(Ashes,silver);
-    C_GEAR(Bait,red);
-    C_GEAR(Butler,purple);
-    C_GEAR(Chrome,defiant);
-    C_GEAR(Demon,purple);
-    C_GEAR(Egg,egg);
-    C_GEAR(Hound,hound);
-    C_GEAR(Hurricane,purple);
-    C_GEAR(Maid,sepia);
-    C_GEAR(Polaris,pink);
-    C_GEAR(Rabbit,rabbit);
-    C_GEAR(Roman,grey);
-    C_GEAR(Sawbones,sawbones);
-    C_GEAR(Snare,snare);
-    C_GEAR(Sonic,defiant);
-    C_GEAR(Spritz,spritz);
-    C_GEAR(Tiger,tiger);
-    C_GEAR(Vertigo,gold);
+  //== OPERATIVES
+  C_GEAR(Ashes,silver);
+  C_GEAR(Bait,red);
+  C_GEAR(Butler,purple);
+  C_GEAR(Chrome,defiant);
+  C_GEAR(Demon,purple);
+  C_GEAR(Egg,egg);
+  C_GEAR(Hound,hound);
+  C_GEAR(Hurricane,purple);
+  C_GEAR(Maid,sepia);
+  C_GEAR(Polaris,pink);
+  C_GEAR(Rabbit,rabbit);
+  C_GEAR(Roman,grey);
+  C_GEAR(Sawbones,sawbones);
+  C_GEAR(Snare,snare);
+  C_GEAR(Sonic,defiant);
+  C_GEAR(Spritz,spritz);
+  C_GEAR(Tiger,tiger);
+  C_GEAR(Vertigo,gold);
 
-    //== COLORS
-    C_GEAR(Blue,blue);
-    C_GEAR(Gold,gold);
-    C_GEAR(Green,green);
-    C_GEAR(Orange,orange);
-    C_GEAR(Purple,purple);
-    C_GEAR(Red,red);
+  //== COLORS
+  C_GEAR(Blue,blue);
+  C_GEAR(Gold,gold);
+  C_GEAR(Green,green);
+  C_GEAR(Orange,orange);
+  C_GEAR(Purple,purple);
+  C_GEAR(Red,red);
 
-    C_GEAR(CLS,red);
+  C_GEAR(CLS,red);
 };

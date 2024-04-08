@@ -1,5 +1,7 @@
 #include "script_component.hpp"
 
+class ItemInfo;
+
 #include "CfgWeapons.inc"
 #include "XtdGearInfos.inc"
 
