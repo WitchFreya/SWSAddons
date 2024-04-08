@@ -6,10 +6,7 @@
   , "SWS_Bag_UAV_Demining"  \
   , CLASSES_UNITS
 
-class AssembleInfo;
-
-class CfgVehicles
-{
+class CfgVehicles {
   class C_IDAP_UAV_06_AntiMine_F;
   class C_IDAP_UAV_AI_AntiMine_F;
   class C_IDAP_UAV_06_AntiMine_Backpack_F;

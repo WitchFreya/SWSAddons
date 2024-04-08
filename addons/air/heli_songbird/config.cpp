@@ -36,8 +36,7 @@ class CfgPatches
       , "ace_medical_treatment"
       , "sws_main"
       , "sws_weapons_ar0m37s"
-      };
-    skipWhenMissingDependencies = TRUE;
+    };
     VERSION_CONFIG;
   };
 };
