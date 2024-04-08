@@ -1,5 +1,8 @@
 #include "script_component.hpp"
-#include "CfgWorlds.inc"
+
+class CBA_Extended_EventHandlers_Base;
+class EventHandlers;
+#include "CfgVehicles.inc"
 
 class CfgPatches {
   class SUBADDON {
@@ -10,7 +13,7 @@ class CfgPatches {
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = { "ibr_fapovo_c" };
+    requiredAddons[] = { "CBRN_units" };
     skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
   };
