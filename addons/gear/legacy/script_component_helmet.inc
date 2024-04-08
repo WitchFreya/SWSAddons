@@ -12,50 +12,8 @@
   "H_VacCollar"                  \
   , "H_Neck"
 
-class SWS_Helmet_Base : OPTRE_UNSC_CH252D_Helmet_Base {
-  ITEM_META(0);
-  descriptionShort = "Armor Level: ODST";
-  hiddenSelectionsMaterials[] = {MATERIAL(odsthud)};
-  hiddenSelectionsTextures[] = {
-    "optre_unsc_units\army\data\odst_helmet_co.paa"
-    , "optre_unsc_units\army\data\odst_helmet_visor_co.paa"
-    , "optre_unsc_units\army\data\ghillie_woodland_co.paa"
-    , "optre_unsc_units\army\data\soft_packs_co.paa"
-  };
-  hiddenSelections[] = {HELMET_SELECTIONS_BASE, "H_Ghillie", HELMET_SELECTIONS_COLLAR};
-
-  class ItemInfo : ItemInfo {
-    hiddenSelectionsMaterials[] = {MATERIAL(odsthud)};
-    hiddenSelectionsTextures[] = {
-      "optre_unsc_units\army\data\odst_helmet_co.paa"
-      , "optre_unsc_units\army\data\odst_helmet_visor_co.paa"
-      , "optre_unsc_units\army\data\ghillie_woodland_co.paa"
-      , "optre_unsc_units\army\data\soft_packs_co.paa"
-    };
-    hiddenSelections[] = {HELMET_SELECTIONS_BASE, "H_Ghillie", HELMET_SELECTIONS_COLLAR};
-  };
-};
-
-class SWS_Helmet_Base_dp : SWS_Helmet_Base {
-  ace_arsenal_hide = 1;
-  model = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-  hiddenSelections[] = {HELMET_SELECTIONS_BASE_DP, "H_Ghillie", HELMET_SELECTIONS_COLLAR};
-  hiddenSelectionsTextures[] = {
-    "optre_unsc_units\army\data\odst_helmet_co.paa"
-    , QPATHTOF(data\textures\visr_clr_ca.paa)
-  };
-  class ItemInfo : ItemInfo {
-    uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-    hiddenSelections[] = {HELMET_SELECTIONS_BASE_DP, "H_Ghillie", HELMET_SELECTIONS_COLLAR};
-    hiddenSelectionsTextures[] = {
-      "optre_unsc_units\army\data\odst_helmet_co.paa"
-      , QPATHTOF(data\textures\visr_clr_ca.paa)
-    };
-  };
-};
-
 #define C_HELMET_BASE(varName,texHelmet,texRest)                                        \
-  class DOUBLES(SWS_Helmet,varName): SWS_Helmet_Base {                                  \
+  class DOUBLES(SWS_Helmet,varName): SWS_Helmet_Legacy_Base {                           \
     SCOPE(2);                                                                           \
     displayName = QNAME(Helmet (varName));                                              \
     hiddenSelectionsTextures[] = {ARR_2(texHelmet,texRest)};                            \
@@ -63,7 +21,7 @@ class SWS_Helmet_Base_dp : SWS_Helmet_Base {
       hiddenSelectionsTextures[] = {ARR_2(texHelmet,texRest)};                          \
     };                                                                                  \
   };                                                                                    \
-  class TRIPLES(SWS_Helmet,varName,dp): SWS_Helmet_Base_dp {                            \
+  class TRIPLES(SWS_Helmet,varName,dp): SWS_Helmet_Legacy_Base_dp {                     \
     SCOPE(1);                                                                           \
     displayName = QNAME(Helmet (varName));                                              \
     ace_arsenal_uniqueBase = QUOTE(DOUBLES(SWS_Helmet,varName));                        \

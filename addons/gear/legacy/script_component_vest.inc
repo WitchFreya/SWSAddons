@@ -353,12 +353,12 @@ All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With
     };                                                      \
   }
 
-#define C_VEST_BASE(varName,varTextures)          \
-  class SWS_Vest_##varName : SWS_Vest_Base {      \
-    ITEM_META(2);                                 \
-    displayName = QNAME(Vest (varName));          \
-    hiddenSelectionsTextures[] = { varTextures }; \
-  };                                              \
+#define C_VEST_BASE(varName,varTextures)            \
+  class SWS_Vest_##varName : SWS_Vest_Legacy_Base { \
+    ITEM_META(2);                                   \
+    displayName = QNAME(Vest (varName));            \
+    hiddenSelectionsTextures[] = { varTextures };   \
+  };                                                \
   C_VEST_GHILLIE(varName,VEST_SELECTIONS_STANDARD)
 
 #define C_VEST_VARIANT(varName,varVariant,selections)             \
@@ -370,31 +370,13 @@ All Options: https://github.com/Belhun/Armco-Halo-Mod/wiki/Armour-Breakdown-With
   };                                                              \
   C_VEST_GHILLIE(DOUBLES(varName,varVariant),selections)
 
-#define C_VEST(varName)                                     \
+#define C_VEST(varName)                                                                                                                                                             \
   C_VEST_BASE(varName,ARR_5(TEXTURE(vest,rifleman),TEXTURE(armor,rifleman),TEXTURE(legs,varName),"optre_unsc_units\army\data\ghillie_desert_co.paa",TEXTURE(odst_addons,varName))); \
-  C_VEST_VARIANT(varName,Demolitions,VEST_SELECTIONS_DEMOLITIONS);  \
-  C_VEST_VARIANT(varName,Sniper,VEST_SELECTIONS_SNIPER);            \
-  C_VEST_VARIANT(varName,Copilot,VEST_SELECTIONS_COPILOT);            \
-  C_VEST_VARIANT(varName,Light,VEST_SELECTIONS_LIGHT);              \
-  C_VEST_VARIANT(varName,Scout,VEST_SELECTIONS_SCOUT);              \
-  C_VEST_VARIANT(varName,Rifleman,VEST_SELECTIONS_RIFLEMAN);        \
-  C_VEST_VARIANT(varName,Marksman,VEST_SELECTIONS_MARKSMAN); \
+  C_VEST_VARIANT(varName,Demolitions,VEST_SELECTIONS_DEMOLITIONS);                                                                                                                  \
+  C_VEST_VARIANT(varName,Sniper,VEST_SELECTIONS_SNIPER);                                                                                                                            \
+  C_VEST_VARIANT(varName,Copilot,VEST_SELECTIONS_COPILOT);                                                                                                                          \
+  C_VEST_VARIANT(varName,Light,VEST_SELECTIONS_LIGHT);                                                                                                                              \
+  C_VEST_VARIANT(varName,Scout,VEST_SELECTIONS_SCOUT);                                                                                                                              \
+  C_VEST_VARIANT(varName,Rifleman,VEST_SELECTIONS_RIFLEMAN);                                                                                                                        \
+  C_VEST_VARIANT(varName,Marksman,VEST_SELECTIONS_MARKSMAN);                                                                                                                        \
   C_VEST_VARIANT(varName,Lead,VEST_SELECTIONS_LEAD)
-
-
-class SWS_Vest_Base : SWS_Vest_OPTRE_UNSC_M52D_Armor {
-  /** Armor Level is meaningless anyway... */
-  descriptionShort = "Armor Level: ODST";
-
-  hiddenSelectionsMaterials[] = {
-    MATERIAL(Vest)
-    , MATERIAL(Armor)
-    , MATERIAL(Legs)
-    , MATERIAL(ODST)
-  };
-
-  class ItemInfo : ItemInfo {
-    containerClass = "Supply200";
-    hiddenSelections[] = {VEST_SELECTIONS_STANDARD, "A_Ghillie"};
-  };
-};
