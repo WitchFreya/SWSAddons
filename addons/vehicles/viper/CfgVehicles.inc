@@ -191,16 +191,16 @@ class CfgVehicles
           , A3_TEX_CAMONET_GREEN
         };
       };
-      class CLA_Captured : SWS_Basic
+      class INS_Captured : SWS_Basic
       {
-        displayName = QNAME(CLA (Captured));
+        displayName = QNAME(Innie (Captured));
         textures[] = {
           QPATHTOF(data\viper\body_flecktarn_co.paa)
           , QPATHTOF(data\viper\turret_flecktarn_captured_co.paa)
           , QPATHTOF(data\viper\turret_mg_flecktarn_co.paa)
           , A3_TEX_CAMONET_CSAT
         };
-        factions[] = {"O_CLA"};
+        factions[] = {"OPTRE_INS"};
       };
     };
 
@@ -264,14 +264,20 @@ class CfgVehicles
     textureList[] = {"SWS_Sticker", 1};
   };
 
-  class SWS_V_MBT_M700_Viper_Captured : SWS_V_MBT_M700_Viper_Base
-  {
+  class SWS_V_MBT_M700_Viper_Captured : SWS_V_MBT_M700_Viper_Base {
     SCOPE(2);
-    faction = "O_CLA";
+    faction = "OPTRE_Ins";
     side = SIDE_OPFOR;
-    displayName = QNAME(M700 Viper (Captured CLA));
-    textureList[] = {"CLA_Captured", 1};
-    typicalCargo[] = {"O_CLA_Crew_01"};
+    displayName = QNAME(M700 Viper (Insurrectionist));
+    crew = "OPTRE_Ins_URF_Rifleman_AR";
+    textureList[] = {"INS_Captured", 1};
+    typicalCargo[] = {"OPTRE_Ins_URF_Rifleman_AR"};
     editorPreview = QPATHTOF(data\viper\editor_preview_captured.jpg);
+    hiddenSelectionsTextures[] = {
+      QPATHTOF(data\viper\body_flecktarn_co.paa)
+      , QPATHTOF(data\viper\turret_flecktarn_captured_co.paa)
+      , QPATHTOF(data\viper\turret_mg_flecktarn_co.paa)
+      , A3_TEX_CAMONET_CSAT
+    };
   };
 };
