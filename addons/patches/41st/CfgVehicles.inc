@@ -9,6 +9,7 @@ class CfgVehicles {
   class Land_CampingChair_V1_F;
   class OPTRE_Pelican_armed;
   class UGV_01_RCWS_Base_F;
+  class House_F;
 
   class bench_1 : Land_CampingChair_V1_F { CBA_PATCH; };
   class bench_2 : Land_CampingChair_V1_F { CBA_PATCH; };
@@ -17,6 +18,30 @@ class CfgVehicles {
   class SZ_stool : Land_CampingChair_V1_F { CBA_PATCH; };
   class SZ_Chair : Land_CampingChair_V1_F { CBA_PATCH; };
   class Hogosha_D77HTCI_A : OPTRE_Pelican_armed { CBA_PATCH; };
+
+  class Dropbay : House_F {
+    displayName = "Dropbay (Stairs)";
+    author = "Sanchez";
+    dlc = "41";
+    class AnimationSources {
+      class Cylinder_Spin {
+        delete sound;
+        delete soundPosition;
+      };
+    };
+  };
+
+  class Dropbay_2 : House_F {
+    displayName = "Dropbay (Sealed)";
+    author = "Sanchez";
+    dlc = "41";
+    class AnimationSources {
+      class Cylinder_Spin {
+        delete sound;
+        delete soundPosition;
+      };
+    };
+  };
 
   /*
     The 41st fucked up the Stomper's inheritance chain.

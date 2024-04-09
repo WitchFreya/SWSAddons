@@ -2,10 +2,9 @@
 
 #include "CfgWeapons.inc"
 
-class CfgPatches
-{
-  class SUBADDON
-  {
+class CfgPatches {
+  class SUBADDON {
+    addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
     units[] = { };
     weapons[] = { };
@@ -13,8 +12,7 @@ class CfgPatches
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = { "OPTRE_Weapons", "SAG6_SPNKR" };
-    skipWhenMissingDependencies = 1;
+    skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
-    addonRootClass = QUOTE(ADDON);
   };
 };
