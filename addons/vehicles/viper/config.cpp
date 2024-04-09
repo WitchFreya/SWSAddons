@@ -42,9 +42,9 @@ class CfgPatches
       , "a3_weapons_f"
       , "ace_medical_treatment"
       , "optre_unsc_units_army"
+      , "OPTRE_Ins_Units"
       , "sws_main"
       , "sws_weapons_ar0m37s"
-      , "sws_units_o_cla"
     };
     VERSION_CONFIG;
   };
