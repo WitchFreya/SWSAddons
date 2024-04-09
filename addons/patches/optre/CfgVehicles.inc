@@ -1,13 +1,9 @@
-class CBA_Extended_EventHandlers_Base;
-class EventHandlers;
-
-#define CBA_PATCH                                                           \
-  class EventHandlers : EventHandlers {                                     \
-      class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_Base {}; \
+#define CBA_PATCH                                                         \
+  class EventHandlers : EventHandlers {                                   \
+    class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_Base {}; \
   }
 
-class CfgVehicles
-{
+class CfgVehicles {
   class Items_base_F;
   class OPTRE_M12_FAV;
   class StaticMGWeapon;
