@@ -1,12 +1,10 @@
 #define CLASSES_VEHICLES  \
   "SWS_V_APC_M107_Beaver"
 
-class CfgVehicles
-{
+class CfgVehicles {
   class B_APC_Tracked_01_CRV_F;
 
-  class SWS_V_APC_M107_Beaver_Base : B_APC_Tracked_01_CRV_F
-  {
+  class SWS_V_APC_M107_Beaver_Base : B_APC_Tracked_01_CRV_F {
     ITEM_META(0);
     displayName = "-";
     faction = "SWS_UNSC";
@@ -30,10 +28,8 @@ class CfgVehicles
       , A3_TEX_CAMONET_GREEN
     };
 
-    class TextureSources : TextureSources
-    {
-      class SWS_Basic
-      {
+    class TextureSources : TextureSources {
+      class SWS_Basic {
         displayName = QNAME(Standard);
         author = QUOTE(AUTHOR);
         textures[] = {
@@ -45,8 +41,7 @@ class CfgVehicles
         };
       };
 
-      class SWS_Flecktarn : SWS_Basic
-      {
+      class SWS_Flecktarn : SWS_Basic {
         displayName = QNAME(Flecktarn);
         textures[] = {
           QPATHTOF(data\beaver\chassis_fleck.paa)
@@ -57,8 +52,7 @@ class CfgVehicles
         };
       };
 
-      class SWS_Winter : SWS_Basic
-      {
+      class SWS_Winter : SWS_Basic {
         displayName = QNAME(Winter);
         textures[] = {
           QPATHTOF(data\beaver\chassis_winter.paa)
@@ -70,21 +64,19 @@ class CfgVehicles
       };
     };
 
-    class TransportMagazines
-    {
+    class TransportMagazines {
       MACRO_ADDMAGAZINE(SmokeShell,2);
       MACRO_ADDMAGAZINE(SmokeShellGreen,2);
       MACRO_ADDMAGAZINE(3rnd_UGL_FlareWhite_F,2);
       MACRO_ADDMAGAZINE(SWS_Magazine_3Rnd_FlareSmoke_Green,2);
       MACRO_ADDMAGAZINE(30Rnd_65x39_caseless_msbs_mag,2);
     };
-    class TransportWeapons
-    {
+
+    class TransportWeapons {
       MACRO_ADDWEAPON(SWS_Weapon_AR0M37_GL,2);
       MACRO_ADDWEAPON(SWS_Weapon_M24RL_D_Loaded,4);
     };
-    class TransportItems
-    {
+    class TransportItems {
       MACRO_ADDITEM(ACE_PersonalAidKit,2);
       MACRO_ADDITEM(ACE_ElasticBandage,60);
       MACRO_ADDITEM(ACE_Tourniquet,8);
@@ -102,21 +94,18 @@ class CfgVehicles
     };
   };
 
-  class SWS_V_APC_M107_Beaver : SWS_V_APC_M107_Beaver_Base
-  {
+  class SWS_V_APC_M107_Beaver : SWS_V_APC_M107_Beaver_Base {
     SCOPE(2);
     displayName = QNAME(M107 Beaver);
     textureList[] = {"SWS_Basic", 1};
   };
 
-  class SWS_V_APC_M107_Beaver_Flecktarn : SWS_V_APC_M107_Beaver_Base
-  {
+  class SWS_V_APC_M107_Beaver_Flecktarn : SWS_V_APC_M107_Beaver_Base {
     displayName = QNAME(M107 Beaver (Flecktarn));
     textureList[] = {"SWS_Flecktarn", 1};
   };
 
-  class SWS_V_APC_M107_Beaver_Winter : SWS_V_APC_M107_Beaver_Base
-  {
+  class SWS_V_APC_M107_Beaver_Winter : SWS_V_APC_M107_Beaver_Base {
     displayName = QNAME(M107 Beaver (Winter));
     textureList[] = {"SWS_Winter", 1};
   };
