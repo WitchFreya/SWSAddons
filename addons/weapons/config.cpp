@@ -2,9 +2,7 @@
 
 #include "CfgEventHandlers.inc"
 #include "CfgAmmo.inc"
-#include "CfgWeapons.inc"
 #include "CfgMagazineWells.inc"
-#include "CfgWeaponCursors.inc"
 
 #include "SWS_Scopes.inc"
 
@@ -32,7 +30,8 @@ class CfgPatches
       "OPTRE_Weapons_Sticky",
       "SWS_Main",
       "19_UNSC_Weapons", // ammo
-      "Dmns_Weapons_F_MachineGuns" };
+      "Dmns_Weapons_F_MachineGuns",
+      "sws_tech" };
     author = QUOTE(AUTHOR);
     VERSION_CONFIG;
   };
