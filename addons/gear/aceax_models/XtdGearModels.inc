@@ -183,6 +183,7 @@ class XtdGearModels {
           , "Carver"
           , "Chrome"
           , "Egg"
+          , "Polaris"
           , "Sawbones"
           , "Snare"
           , "Spritz"
@@ -198,6 +199,7 @@ class XtdGearModels {
         C_VALUE(Sawbones);
         C_VALUE(Snare);
         C_VALUE(Vertigo);
+        C_VALUE(Polaris);
         #undef C_VALUE
       };
     };
