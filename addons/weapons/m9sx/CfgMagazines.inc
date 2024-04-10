@@ -1,12 +1,10 @@
 #define CLASSES_MAGAZINES \
   "SWS_Magazine_Grenade_M9Sx_1Rnd_Shell"
 
-class CfgMagazines
-{
+class CfgMagazines {
   class M319_HEDP_Grenade_Shell;
 
-  class SWS_Magazine_Grenade_M9Sx_1Rnd_Shell : M319_HEDP_Grenade_Shell
-  {
+  class SWS_Magazine_Grenade_M9Sx_1Rnd_Shell : M319_HEDP_Grenade_Shell {
     CLEARANCE(RESTRICTED/DECWHI);
     ITEM_META(2);
     displayName = QNAME(1Rnd M9Sx (HEAT));

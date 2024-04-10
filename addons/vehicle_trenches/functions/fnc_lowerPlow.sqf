@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "script_component.inc.sqf"
 /*
  * Author: Ashes
  * Lower the plow for the target vehicle, setting the plow to the specified mode.

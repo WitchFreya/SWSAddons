@@ -1,12 +1,10 @@
 #define CLASSES_AMMO    \
   "SWS_B_762x51_Ball"
 
-class CfgAmmo
-{
+class CfgAmmo {
   class OPTRE_B_762x51_Ball;
 
-  class SWS_B_762x51_Ball : OPTRE_B_762x51_Ball
-  {
+  class SWS_B_762x51_Ball : OPTRE_B_762x51_Ball {
     META;
     hit = 34;
     typicalSpeed = 950;

@@ -10,18 +10,16 @@ class OPTRE_M301UGL;
 
 #include "CfgWeapons.inc"
 
-class CfgPatches
-{
-  class SUBADDON
-  {
+class CfgPatches {
+  class SUBADDON {
+    addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
     units[] = { };
     weapons[] = { CLASSES_WEAPONS };
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = {"OPTRE_Weapons_AR"};
+    requiredAddons[] = {"sws_weapons", "OPTRE_Weapons"};
     VERSION_CONFIG;
-    addonRootClass = QUOTE(ADDON);
   };
 };

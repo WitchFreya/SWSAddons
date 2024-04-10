@@ -5,8 +5,7 @@
     class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_Base {}; \
   }
 
-class CfgVehicles
-{
+class CfgVehicles {
   class Helicopter_Base_F;
   class OPTRE_UNSC_Marine_Pilot;
   class OPTRE_UNSC_Marine_Soldier_AA_Specialist;
@@ -56,8 +55,8 @@ class CfgVehicles
   class B_19thUNSC_Corpsman_Urban_01 : OPTRE_UNSC_ODST_Soldier {};
   class B_19thUNSC_Autorifleman_Urban_01 : OPTRE_UNSC_ODST_Soldier {};
 
-  class Helicopter_Base_H : Helicopter_Base_F
-  {
+  // This is fixing the inheritance chain that fucked up
+  class Helicopter_Base_H : Helicopter_Base_F {
     class Reflectors : Reflectors {
       class Right : Right {};
     };
@@ -65,28 +64,21 @@ class CfgVehicles
     class Components;
   };
 
-  class Splits_Pelican_Base : Helicopter_Base_H
-  {
+  class Splits_Pelican_Base : Helicopter_Base_H {
     irTargetSize = 1.6;
     radarTargetSize = 1.0;
 
-    class Components : Components
-    {
-      class TransportPylonsComponent
-      {
+    class Components : Components {
+      class TransportPylonsComponent {
         UIPicture = "\OPTRE_Vehicles\Pelican\pelicanPylonPic.paa";
-        class Pylons
-        {
-          class PylonRight1
-          {
+        class Pylons {
+          class PylonRight1 {
             attachment = "";
           };
-          class PylonRight2
-          {
+          class PylonRight2 {
             attachment = "";
           };
-          class PylonRight3
-          {
+          class PylonRight3 {
             attachment = "ace_maverick_L_PylonRack_3Rnd";
             hardpoints[] = {
               "Splits_B_Missiles"
@@ -94,8 +86,7 @@ class CfgVehicles
             };
             maxWeight = 1000;
           };
-          class PylonRight4
-          {
+          class PylonRight4 {
             attachment = "ace_maverick_L_PylonRack_3Rnd";
             hardpoints[] = {
               "Splits_B_Missiles"
@@ -113,27 +104,20 @@ class CfgVehicles
       };
     };
   };
-  class Splits_Pelican_Base;
+
   // fixing pylon mirroring and targetability; see https://github.com/WitchFreya/SWSAddons/pull/14
-  class Splits_UNSC_D77_TC_Pelican: Splits_Pelican_Base
-  {
-    class Components: Components
-    {
-      class TransportPylonsComponent
-      {
+  class Splits_UNSC_D77_TC_Pelican: Splits_Pelican_Base {
+    class Components: Components {
+      class TransportPylonsComponent {
         UIPicture = "\OPTRE_Vehicles\Pelican\pelicanPylonPic.paa";
-        class Pylons
-        {
-          class PylonRight1
-          {
+        class Pylons {
+          class PylonRight1 {
             attachment = "";
           };
-          class PylonRight2
-          {
+          class PylonRight2 {
             attachment = "";
           };
-          class PylonRight3
-          {
+          class PylonRight3 {
             attachment = "ace_maverick_L_PylonRack_3Rnd";
             hardpoints[] = {
               "Splits_B_Missiles"
@@ -141,8 +125,7 @@ class CfgVehicles
             };
             maxWeight = 1000;
           };
-          class PylonRight4
-          {
+          class PylonRight4 {
             attachment = "ace_maverick_L_PylonRack_3Rnd";
             hardpoints[] = {
               "Splits_B_Missiles"

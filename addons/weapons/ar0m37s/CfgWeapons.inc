@@ -20,7 +20,8 @@ class CfgWeapons {
   class LM_OPCAN_AR0M37_GL;
   class LM_OPCAN_AR0M37_SHT;
   class SWS_Weapon_AR0M37 : LM_OPCAN_AR0M37 {
-    WEAPON_META(AR0M37,2);
+    ITEM_META(2);
+    baseWeapon = "SWS_Weapon_AR0M37";
     displayName = QNAME(AR-0M37S 6.5mm);
     picture = QPATHTOF(data\icons\msbs65_ca.paa);
     HUD_SETUP;
@@ -69,7 +70,8 @@ class CfgWeapons {
   };
 
   class SWS_Weapon_AR0M37_GL : LM_OPCAN_AR0M37_GL {
-    WEAPON_META(AR0M37_GL,2);
+    ITEM_META(2);
+    baseWeapon = "SWS_Weapon_AR0M37_GL";
     displayName = QNAME(AR-0M37S UGL 6.5mm);
     picture = QPATHTOF(data\icons\msbs65_barrel_ca.paa);
     HUD_SETUP;
@@ -120,7 +122,8 @@ class CfgWeapons {
   };
 
   class SWS_Weapon_AR0M37_SHT : LM_OPCAN_AR0M37_SHT {
-    WEAPON_META(AR0M37_SHT,2);
+    ITEM_META(2);
+    baseWeapon = "SWS_Weapon_AR0M37_SHT";
     displayName = QNAME(AR-0M37S Breacher 6.5mm);
     picture = QPATHTOF(data\icons\msbs65_barrel_ca.paa);
     HUD_SETUP;

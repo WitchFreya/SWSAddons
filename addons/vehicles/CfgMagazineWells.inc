@@ -1,7 +1,5 @@
-class CfgMagazineWells
-{
-  class SWS_MBT_Cannon_120mm
-  {
+class CfgMagazineWells {
+  class SWS_MBT_Cannon_120mm {
     GVAR(Magazines)[] = {
       //--- AP
       "32Rnd_120mm_APFSDS_shells"

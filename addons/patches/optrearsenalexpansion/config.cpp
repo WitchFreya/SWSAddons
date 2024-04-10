@@ -3,10 +3,9 @@
 #include "CfgVehicles.inc"
 #include "EventHandlers.inc"
 
-class CfgPatches
-{
-  class SUBADDON
-  {
+class CfgPatches {
+  class SUBADDON {
+    addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
     units[] = { };
     weapons[] = { };
@@ -14,8 +13,7 @@ class CfgPatches
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = { "OPTRE_Vehicles_Air", "OPAEX_Hornet", "OPAEX_D20", "OPAEX_Functions" };
-    skipWhenMissingDependencies = 1;
+    skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
-    addonRootClass = QUOTE(ADDON);
   };
 };

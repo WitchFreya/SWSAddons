@@ -11,10 +11,9 @@ class Right;
 #include "CfgMagazineWells.inc"
 #include "CfgFunctions.inc"
 
-class CfgPatches
-{
-  class SUBADDON
-  {
+class CfgPatches {
+  class SUBADDON {
+    addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
     units[] = { };
     weapons[] = { };
@@ -30,8 +29,7 @@ class CfgPatches
       , "Split_Weapons_Ammo"
       , "DMNS_Weapons_Ammo"
     };
-    skipWhenMissingDependencies = 1;
+    skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
-    addonRootClass = QUOTE(ADDON);
   };
 };

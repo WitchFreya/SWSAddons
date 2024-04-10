@@ -1,7 +1,5 @@
-class CfgMagazineWells
-{
-  class OPTRE_Magwell_M247
-  {
+class CfgMagazineWells {
+  class OPTRE_Magwell_M247 {
     DMNS_Magazines[] = {
       "DMNS_100Rnd_762x51_Mag_GPMG"
       , "DMNS_100Rnd_762x51_Mag_GPMG_Tracer"
@@ -12,8 +10,7 @@ class CfgMagazineWells
     };
   };
 
-  class OPTRE_Magwell_MA5A
-  {
+  class OPTRE_Magwell_MA5A {
     DMNS_Magazines[] = {
       "32Rnd_762x51_MA5"
       , "32Rnd_762x51_MA5_AP"
@@ -22,8 +19,7 @@ class CfgMagazineWells
     };
   };
 
-  class OPTRE_Magwell_MA5B
-  {
+  class OPTRE_Magwell_MA5B {
     DMNS_Magazines[] = {
       "32Rnd_762x51_MA5"
       , "32Rnd_762x51_MA5_AP"

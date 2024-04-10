@@ -1,8 +1,6 @@
-class ACE_Medical_Treatment_Actions
-{
+class ACE_Medical_Treatment_Actions {
   class CPR;
-  class Defibrillator : CPR
-  {
+  class Defibrillator : CPR {
     displayName = "Use Defibrillator";
     displayNameProgress = "Defibrillating...";
     icon = QPATHTOF(data\defib_action.paa);

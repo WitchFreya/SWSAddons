@@ -3,10 +3,8 @@
 #include "SensorTargetTemplates.inc"
 #include "CfgMagazineWells.inc"
 
-class CfgPatches
-{
-  class ADDON
-  {
+class CfgPatches {
+  class ADDON {
     name = QUOTE(COMPONENT);
     units[] = { };
     weapons[] = { };

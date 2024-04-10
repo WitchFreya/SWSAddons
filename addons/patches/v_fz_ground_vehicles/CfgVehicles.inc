@@ -1,11 +1,9 @@
-class CfgVehicles
-{
+class CfgVehicles {
   class OPTRE_M808B_UNSC;
   class OPTRE_M808BM_UNSC;
   class OPTRE_M875_SPH;
 
-  class VES_M808B_MBT : OPTRE_M808B_UNSC
-  {
+  class VES_M808B_MBT : OPTRE_M808B_UNSC {
     #include "FZ_A_ScorpionCamos.inc"
   };
 

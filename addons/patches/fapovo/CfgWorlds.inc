@@ -1,11 +1,8 @@
-class CfgWorlds
-{
-    class CAWorld;
-    class fapovo : CAWorld
-    {
-        class Names
-        {
-            delete gypsy;
-        };
+class CfgWorlds {
+  class CAWorld;
+  class Fapovo : CAWorld {
+    class Names {
+      delete Gypsy;
     };
+  };
 };

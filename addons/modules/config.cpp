@@ -9,7 +9,7 @@ class CfgPatches {
     units[] = { };
     weapons[] = {};
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = { "sws_common" };
+    requiredAddons[] = { "sws_main", "sws_common" };
     author = QUOTE(AUTHOR);
     VERSION_CONFIG;
   };

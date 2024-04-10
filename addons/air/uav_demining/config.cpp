@@ -1,5 +1,7 @@
 #include "script_component.hpp"
 
+class AssembleInfo;
+
 #include "CfgVehicles.inc"
 
 class CfgPatches {

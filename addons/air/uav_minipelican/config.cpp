@@ -1,4 +1,8 @@
 #include "script_component.hpp"
+
+class AssembleInfo;
+class TextureSources;
+
 #include "CfgVehicles.inc"
 
 class CfgPatches {

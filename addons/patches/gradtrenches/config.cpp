@@ -2,17 +2,15 @@
 
 delete CfgDigVehicles;
 
-class CfgPatches
-{
-  class SUBADDON
-  {
+class CfgPatches {
+  class SUBADDON {
+    addonRootClass = QUOTE(ADDON);
     name = QUOTE(ADDON);
     units[] = {};
     weapons[] = {};
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = { "grad_trenches_functions" };
-    skipWhenMissingDependencies = 1;
+    skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
-    addonRootClass = QUOTE(ADDON);
   };
 };

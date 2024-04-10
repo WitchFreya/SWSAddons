@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "script_component.inc.sqf"
 /*
  * Author: Ashes
  * Continues a vehicle trench placed by fnc_initTrench
@@ -49,7 +49,7 @@ if (_speed > 1) then {
 	[_trench, _actualProgress + _digDiff, 0.7] call grad_trenches_functions_fnc_setTrenchProgress;
 	_trench setObjectTextureGlobal [0, surfaceTexture position _vehicle];
 	[QUOTE(grad_trenches_functions_digFX), [_trench]] call CBA_fnc_globalEvent;
-	[QUOTE(grad_trenches_functions_digFXVehicleBlade), [_vehicle]] call CBA_fnc_globalEvent;            
+	[QUOTE(grad_trenches_functions_digFXVehicleBlade), [_vehicle]] call CBA_fnc_globalEvent;
 } else {
 	if (_speed < -0.5 || _isTiltAboveMax) then {
 		[_vehicle, _trench] call FUNC(detachTrench);

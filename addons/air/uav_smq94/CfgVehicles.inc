@@ -114,9 +114,7 @@ class CfgVehicles {
   };
 
   #pragma region Bag
-
-  class SWS_Bag_UAV_SMQ94_Base : DMNS_UAV_01_Backpack_F
-  {
+  class SWS_Bag_UAV_SMQ94_Base : DMNS_UAV_01_Backpack_F {
     ITEM_META(0);
     displayName = QNAME(SMQ-94 UAV Bag (Base));
     picture = "\OPTRE_weapons\backpacks\icons\rucksack_black";
@@ -133,8 +131,7 @@ class CfgVehicles {
     };
   };
 
-  class SWS_Bag_UAV_SMQ94 : SWS_Bag_UAV_SMQ94_Base
-  {
+  class SWS_Bag_UAV_SMQ94 : SWS_Bag_UAV_SMQ94_Base {
     SCOPE(2);
     displayName = QNAME(SMQ-94 UAV Bag);
     class AssembleInfo : AssembleInfo { assembleTo = "SWS_V_UAV_SMQ94"; };
@@ -143,8 +140,7 @@ class CfgVehicles {
     };
   };
 
-  class SWS_Bag_UAV_SMQ94_Maid : SWS_Bag_UAV_SMQ94_Base
-  {
+  class SWS_Bag_UAV_SMQ94_Maid : SWS_Bag_UAV_SMQ94_Base {
     SCOPE(2);
     displayName = QNAME(SMQ-94 UAV Bag (Maid));
     class AssembleInfo : AssembleInfo { assembleTo = "SWS_V_UAV_SMQ94_Maid"; };
@@ -152,6 +148,5 @@ class CfgVehicles {
       pattern = "Maid";
     };
   };
-
   #pragma endregion
 };

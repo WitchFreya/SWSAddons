@@ -1,13 +1,10 @@
-class CfgWeapons
-{
+class CfgWeapons {
   class OPTRE_UnguidedLauncher_Base;
   //--- Begging and pleading you people to stop pushing broken mods. How do you even DO this???
   //--- Even better, I informed the mod author and he won't fix it because 'It's the same as how OPTRE did it!' (spoiler: it is not)
-  class OPTRE_M41_SSR : OPTRE_UnguidedLauncher_Base
-  {
+  class OPTRE_M41_SSR : OPTRE_UnguidedLauncher_Base {
     class Single;
-    class TopDown : Single
-    {
+    class TopDown : Single {
       delete sound;
       delete soundBegin;
       delete soundBeginWater;
@@ -23,8 +20,7 @@ class CfgWeapons
       soundLoop[] = {};
       sounds[] = {"StandardSound"};
 
-      class BaseSoundModeType
-      {
+      class BaseSoundModeType {
         delete begin1;
         delete soundBegin;
         delete soundSetShot;

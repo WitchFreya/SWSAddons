@@ -23,10 +23,8 @@ class SensorTemplateLaser;
 #include "CfgWeapons.inc"
 #include "CfgVehicles.inc"
 
-class CfgPatches
-{
-  class SUBADDON
-  {
+class CfgPatches {
+  class SUBADDON {
     addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
     units[] = { CLASSES_VEHICLES };

@@ -7,17 +7,20 @@ class ItemInfo;
 #include "ACE_Medical_Treatment_Actions.inc"
 #include "ACE_Medical_StateMachine.inc"
 
-class CfgPatches
-{
-  class ADDON
-  {
+class CfgPatches {
+  class ADDON {
     name = QUOTE(COMPONENT);
     units[] = {};
     weapons[] = { };
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = {"sws_main", "sws_common", "ace_medical_treatment", "ace_medical_statemachine"};
+    requiredAddons[] = {
+      "ace_medical_treatment"
+      , "ace_medical_statemachine"
+      , "sws_main"
+      , "sws_common"
+    };
     author = QUOTE(AUTHOR);
     VERSION_CONFIG;
   };
