@@ -1,11 +1,9 @@
 #define CLASSES_AMMO \
   "SWS_B_Grenade_M9Sx_40mm_Shell"
 
-class CfgAmmo
-{
+class CfgAmmo {
   class M319_HEDP;
-  class SWS_B_Grenade_M9Sx_40mm_Shell : M319_HEDP
-  {
+  class SWS_B_Grenade_M9Sx_40mm_Shell : M319_HEDP {
     META;
     hit = 300;
     indirectHit = 300;

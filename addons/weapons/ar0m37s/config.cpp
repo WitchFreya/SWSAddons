@@ -12,10 +12,9 @@ class UGL;
 #include "CfgMagazines.inc"
 #include "CfgMagazineWells.inc"
 
-class CfgPatches
-{
-  class SUBADDON
-  {
+class CfgPatches {
+  class SUBADDON {
+    addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
     units[] = { };
     weapons[] = { CLASSES_WEAPONS };
@@ -27,6 +26,5 @@ class CfgPatches
       , "LM_OPCAN_WEP_RES"
     };
     VERSION_CONFIG;
-    addonRootClass = QUOTE(ADDON);
   };
 };

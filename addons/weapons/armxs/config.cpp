@@ -11,10 +11,8 @@ class SWS_Scopes_65mm;
 #include "CfgMagazines.inc"
 #include "CfgMagazineWells.inc"
 
-class CfgPatches
-{
-  class SUBADDON
-  {
+class CfgPatches {
+  class SUBADDON {
     name = COMPONENT_NAME;
     units[] = { };
     weapons[] = { CLASSES_WEAPONS };

@@ -6,33 +6,26 @@
 
 #include "SWS_Scopes.inc"
 
-class CfgPatches
-{
-  class ADDON
-  {
+class CfgPatches {
+  class ADDON {
     name = QUOTE(COMPONENT);
+    author = QUOTE(AUTHOR);
     units[] = { };
     weapons[] = { };
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {
-      "A3_Weapons_F",
-      "A3_Weapons_F_Enoch",
-      "EMP_Greystone_PMC",
-      "ace_arsenal",
-      "ace_grenades",
-      "OPTRE_ACE_Compat",
-      "OPTRE_FunctionsLibrary_supercombustion",
-      "OPTRE_Weapons_Ammo_Signal_Smoke",
-      "OPTRE_Weapons_Ammo",
-      "OPTRE_Weapons_AR",
-      "OPTRE_Weapons_Sticky",
-      "SWS_Main",
-      "19_UNSC_Weapons", // ammo
-      "Dmns_Weapons_F_MachineGuns",
-      "sws_tech" };
-    author = QUOTE(AUTHOR);
+      "ace_grenades"
+      , "OPTRE_ACE_Compat"
+      , "OPTRE_FunctionsLibrary"
+      , "OPTRE_Weapons"
+      , "19_UNSC_Weapons"
+      , "Dmns_Weapons_F_MachineGuns"
+      , "sws_main"
+      , "sws_common"
+      , "sws_tech"
+    };
     VERSION_CONFIG;
   };
 };

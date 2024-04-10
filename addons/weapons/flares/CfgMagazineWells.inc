@@ -1,5 +1,4 @@
-class CfgMagazineWells
-{
+class CfgMagazineWells {
   class 3UGL_40x36 {
     SUBGVAR(Magazines)[] = {
       "SWS_Magazine_3Rnd_FlareSmoke_Blue"
@@ -11,8 +10,7 @@ class CfgMagazineWells
     };
   };
 
-  class CBA_40mm_3GL
-  {
+  class CBA_40mm_3GL {
     SUBGVAR(Magazines)[] = {
       "SWS_Magazine_3Rnd_FlareSmoke_Blue"
       , "SWS_Magazine_3Rnd_FlareSmoke_Green"

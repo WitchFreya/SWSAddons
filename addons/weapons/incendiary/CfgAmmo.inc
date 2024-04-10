@@ -1,14 +1,12 @@
-#define CLASSES_AMMO    \
-  "SWS_B_8Gauge_Incendiary"  \
+#define CLASSES_AMMO        \
+  "SWS_B_8Gauge_Incendiary" \
   , "SWS_B_8Gauge_Incendiary_Submunition"
 
-class CfgAmmo
-{
+class CfgAmmo {
   class B_12Gauge_Pellets_Submunition;
   class B_12Gauge_Pellets_Submunition_Deploy;
 
-  class SWS_B_8Gauge_Incendiary: B_12Gauge_Pellets_Submunition
-  {
+  class SWS_B_8Gauge_Incendiary: B_12Gauge_Pellets_Submunition {
     META;
     submunitionConeType[] = {"poissondisccenter",15};
     submunitionAmmo = "SWS_B_8Gauge_Incendiary_Submunition";
@@ -16,8 +14,7 @@ class CfgAmmo
     triggerTime = 0.001;
   };
 
-  class SWS_B_8Gauge_Incendiary_Submunition : B_12Gauge_Pellets_Submunition_Deploy
-  {
+  class SWS_B_8Gauge_Incendiary_Submunition : B_12Gauge_Pellets_Submunition_Deploy {
     META;
     caliber = 4;
     hit = 16;

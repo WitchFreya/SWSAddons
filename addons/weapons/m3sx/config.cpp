@@ -5,10 +5,9 @@
 #include "CfgMagazineWells.inc"
 #include "CfgWeapons.inc"
 
-class CfgPatches
-{
-  class SUBADDON
-  {
+class CfgPatches {
+  class SUBADDON {
+    addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
     units[] = { };
     weapons[] = { };
@@ -16,10 +15,9 @@ class CfgPatches
     ammo[] = { CLASSES_AMMO };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {
-      "OPTRE_Weapons_Ammo"
+      "OPTRE_Weapons"
       , "OPTRE_ACE_Compat"
     };
     VERSION_CONFIG;
-    addonRootClass = QUOTE(ADDON);
   };
 };

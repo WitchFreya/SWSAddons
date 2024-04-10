@@ -8,16 +8,17 @@ class CfgWeapons {
   class OPTRE_MA5BGL;
 
   class SWS_Weapon_MA5BSx : OPTRE_MA5B {
-    WEAPON_META(MA5BSx,2);
+    ITEM_META(2);
+    baseWeapon = "SWS_Weapon_MA5BSx";
     CLEARANCE(RESTRICTED/DECWHI);
     displayName = QNAME(MA5B-Sx);
     cursor = "SWS_Weapon_SmartLink";
     descriptionShort = "An experimental variant of the MA5B.";
     hiddenSelectionsTextures[] = {
-      "optre_weapons\ar\data\weapon_co.paa",
-      "optre_weapons\ar\data\smartlink_co.paa",
-      "optre_weapons\ar\data\cover_co.paa",
-      QPATHTOEF(tech,data\optic_smartlink\reticle_ca.paa)
+      "optre_weapons\ar\data\weapon_co.paa"
+      , "optre_weapons\ar\data\smartlink_co.paa"
+      , "optre_weapons\ar\data\cover_co.paa"
+      , QPATHTOEF(tech,data\optic_smartlink\reticle_ca.paa)
     };
 
     class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -40,16 +41,17 @@ class CfgWeapons {
   };
 
   class SWS_Weapon_MA5BSx_GL : OPTRE_MA5BGL {
-    WEAPON_META(MA5BSx_GL,2);
+    ITEM_META(2);
+    baseWeapon = "SWS_Weapon_MA5BSx_GL";
     CLEARANCE(RESTRICTED/DECWHI);
     displayName = QNAME(MA5B-Sx + M301-Sx UGL);
     cursor = "SWS_Weapon_SmartLink";
     descriptionShort = "An experimental variant of the MA5B.";
     hiddenSelectionsTextures[] = {
-      "optre_weapons\ar\data\weapon_co.paa",
-      "optre_weapons\ar\data\smartlink_co.paa",
-      "optre_weapons\ar\data\cover_co.paa",
-      QPATHTOEF(tech,data\optic_smartlink\reticle_ca.paa)
+      "optre_weapons\ar\data\weapon_co.paa"
+      , "optre_weapons\ar\data\smartlink_co.paa"
+      , "optre_weapons\ar\data\cover_co.paa"
+      , QPATHTOEF(tech,data\optic_smartlink\reticle_ca.paa)
     };
 
     class OPTRE_M301UGL : OPTRE_M301UGL {

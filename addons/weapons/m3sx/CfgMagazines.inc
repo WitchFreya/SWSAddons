@@ -5,13 +5,11 @@
 
 #define M9_MASS 9
 
-class CfgMagazines
-{
+class CfgMagazines {
   class OPTRE_M9_Frag;
   class M319_HEDP_Grenade_Shell;
 
-  class SWS_Magazine_Grenade_M3Sx : OPTRE_M9_Frag
-  {
+  class SWS_Magazine_Grenade_M3Sx : OPTRE_M9_Frag {
     CLEARANCE(RESTRICTED/DECWHI);
     ITEM_META(2);
     displayName = QNAME(M3Sx (Frag));
@@ -21,8 +19,7 @@ class CfgMagazines
     descriptionShort = "High-yield fragmentation grenade.";
   };
 
-  class SWS_Magazine_Grenade_M3Sx_1Rnd_Shell : M319_HEDP_Grenade_Shell
-  {
+  class SWS_Magazine_Grenade_M3Sx_1Rnd_Shell : M319_HEDP_Grenade_Shell {
     CLEARANCE(RESTRICTED/DECWHI);
     ITEM_META(2);
     displayName = QNAME(1Rnd M3Sx (Frag));
@@ -32,8 +29,7 @@ class CfgMagazines
     ammo = "SWS_B_Grenade_M3Sx_40mm_Shell";
   };
 
-  class SWS_Magazine_Grenade_M3Sx_3Rnd_Shell : SWS_Magazine_Grenade_M3Sx_1Rnd_Shell
-  {
+  class SWS_Magazine_Grenade_M3Sx_3Rnd_Shell : SWS_Magazine_Grenade_M3Sx_1Rnd_Shell {
     displayName = QNAME(3Rnd M3Sx (Frag));
     descriptionShort = "Type: Frag Grenade<br />Rounds: 3<br />Used in: EGLM, 1GL";
     mass = M9_MASS * 3 + 1;

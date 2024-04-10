@@ -11,12 +11,10 @@
 #define QNAME_762x51(var0) QUOTE(NAME_762x51(var0))
 #define QNAME_762x51_T(var0) QUOTE(NAME_762x51_T(var0))
 
-class CfgMagazines
-{
+class CfgMagazines {
   class 150Rnd_762x51_Box;
 
-  class SWS_Magazine_100Rnd_762x51_Mag : 150Rnd_762x51_Box
-  {
+  class SWS_Magazine_100Rnd_762x51_Mag : 150Rnd_762x51_Box {
     CLEARANCE(RESTRICTED/DECWHI);
     ITEM_META(2);
     model = "\OPTRE_Weapons\MG\M247_Mag_Proxy.p3d";
@@ -37,8 +35,7 @@ class CfgMagazines
     lastRoundsTracer = 5;
   };
 
-  class SWS_Magazine_100Rnd_762x51_Mag_Tracer : SWS_Magazine_100Rnd_762x51_Mag
-  {
+  class SWS_Magazine_100Rnd_762x51_Mag_Tracer : SWS_Magazine_100Rnd_762x51_Mag {
     displayName = QNAME_762x51_T(100);
     displayNameShort = "7.62x51-T";
     tracersEvery = 1;
@@ -46,16 +43,14 @@ class CfgMagazines
     descriptionShort = "100 Round Tracer Magazine<SM247>7.62x51 Carbine<SM247>";
   };
 
-  class SWS_Magazine_200Rnd_762x51_Mag : SWS_Magazine_100Rnd_762x51_Mag
-  {
+  class SWS_Magazine_200Rnd_762x51_Mag : SWS_Magazine_100Rnd_762x51_Mag {
     displayName = QNAME_762x51(200);
     mass = 70;
     count = 200;
     descriptionShort = "200 Round Magazine<SM247>7.62x51 Carbine<SM247>";
   };
 
-  class SWS_Magazine_200Rnd_762x51_Mag_Tracer : SWS_Magazine_200Rnd_762x51_Mag
-  {
+  class SWS_Magazine_200Rnd_762x51_Mag_Tracer : SWS_Magazine_200Rnd_762x51_Mag {
     displayName = QNAME_762x51_T(200);
     displayNameShort = "7.62x51-T";
     tracersEvery = 1;
@@ -63,16 +58,14 @@ class CfgMagazines
     descriptionShort = "200 Round Tracer Magazine<SM247>7.62x51 Carbine<SM247>";
   };
 
-  class SWS_Magazine_400Rnd_762x51_Mag : SWS_Magazine_100Rnd_762x51_Mag
-  {
+  class SWS_Magazine_400Rnd_762x51_Mag : SWS_Magazine_100Rnd_762x51_Mag {
     displayName = QNAME_762x51(400);
     mass = 110;
     count = 400;
     descriptionShort = "400 Round Magazine<SM247>7.62x51 Carbine<SM247>";
   };
 
-  class SWS_Magazine_400Rnd_762x51_Mag_Tracer : SWS_Magazine_400Rnd_762x51_Mag
-  {
+  class SWS_Magazine_400Rnd_762x51_Mag_Tracer : SWS_Magazine_400Rnd_762x51_Mag {
     displayName = QNAME_762x51_T(400);
     displayNameShort = "7.62x51-T";
     tracersEvery = 1;

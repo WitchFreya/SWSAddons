@@ -10,10 +10,9 @@ class PointerSlot;
 #include "CfgWeapons.inc"
 #include "CfgMagazineWells.inc"
 
-class CfgPatches
-{
-  class SUBADDON
-  {
+class CfgPatches {
+  class SUBADDON {
+    addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
     units[] = { };
     weapons[] = { CLASSES_WEAPONS };
@@ -21,10 +20,9 @@ class CfgPatches
     ammo[] = { CLASSES_AMMO };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {
-      "OPTRE_Weapons_Ammo"
+      "OPTRE_Weapons"
       , "Dmns_Weapons_F_MachineGuns"
     };
     VERSION_CONFIG;
-    addonRootClass = QUOTE(ADDON);
   };
 };
