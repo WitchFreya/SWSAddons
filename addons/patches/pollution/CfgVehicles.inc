@@ -1,13 +1,13 @@
 class CfgVehicles {
-  class AllVehicles;
+  class All;
 
-  class UniformItem: AllVehicles {};
-  class Turrets: AllVehicles {};
-  class B_T_LSV_02_unarmed_olive_F: AllVehicles {};
-  class Components : AllVehicles {};
-  class MainTurret: AllVehicles {};
-  class NewTurret : AllVehicles {};
-  class ViewOptics : AllVehicles {};
-  class AnimationSources : AllVehicles {};
-  class EventHandlers : AllVehicles {};
+  class UniformItem: All {};
+  class Turrets: All {};
+  class B_T_LSV_02_Unarmed_Olive_F: All {};
+  class Components : All {};
+  class MainTurret: All {};
+  class NewTurret : All {};
+  class ViewOptics : All {};
+  class AnimationSources : All {};
+  class EventHandlers : All {};
 };
