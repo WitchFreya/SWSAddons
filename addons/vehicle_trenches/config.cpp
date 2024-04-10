@@ -1,5 +1,8 @@
 #include "script_component.hpp"
 
+class ACE_SelfActions;
+
+#include "SelfActions.inc"
 #include "CfgEventHandlers.inc"
 #include "CfgVehicles.hpp"
 
