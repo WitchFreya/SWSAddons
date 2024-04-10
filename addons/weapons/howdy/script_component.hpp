@@ -3,7 +3,7 @@
 #include "..\script_component.hpp"
 
 #define SLOT_VEST 701
-#define SLOW_UNIFORM 801
+#define SLOT_UNIFORM 801
 #define SLOT_BACKPACK 901
 
 #define MASS_MAG 10

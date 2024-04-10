@@ -2,13 +2,11 @@
   "SWS_B_Grenade_M3Sx"  \
   , "SWS_B_Grenade_M3Sx_40mm_Shell"
 
-class CfgAmmo
-{
+class CfgAmmo {
   class OPTRE_G_M9_Frag;
   class M319_HE;
 
-  class SWS_B_Grenade_M3Sx : OPTRE_G_M9_Frag
-  {
+  class SWS_B_Grenade_M3Sx : OPTRE_G_M9_Frag {
     META;
     hit = 40;
     indirectHit = 40;
@@ -21,8 +19,7 @@ class CfgAmmo
     ace_frag_enabled = 1;
   };
 
-  class SWS_B_Grenade_M3Sx_40mm_Shell: M319_HE
-  {
+  class SWS_B_Grenade_M3Sx_40mm_Shell: M319_HE {
     META;
     hit = 40;
     indirectHit = 40;

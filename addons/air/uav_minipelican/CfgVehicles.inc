@@ -2,11 +2,8 @@
   "SWS_Bag_UAV_MiniPelican" \
   , "SWS_V_UAV_MiniPelican"
 
-class AssembleInfo;
-class TextureSources;
 
-class CfgVehicles
-{
+class CfgVehicles {
   class UAV_06_Base_F;
   class B_UAV_06_Backpack_F;
 
@@ -44,7 +41,7 @@ class CfgVehicles
     class AssembleInfo : AssembleInfo { dissasembleTo[] = {}; };
   };
 
-  // D77-TC-M Mini-Pelican
+  /** D77-TC-M Mini-Pelican */
   class SWS_V_UAV_MiniPelican : SWS_V_UAV_MiniPelican_Base {
     SCOPE(2);
     displayName = QNAME(Mini-Pelican);
@@ -57,10 +54,12 @@ class CfgVehicles
     faction = "SWS_UNSC";
     side = SIDE_BLUFOR;
     mass = 100;
+
     class AssembleInfo : AssembleInfo {
       displayName = "MiniPelican Drone";
       assembleTo = "SWS_V_UAV_MiniPelican";
     };
+
     class XtdGearInfo {
       model = "SWS_Bag_Drone";
       variant = "MiniPelican";

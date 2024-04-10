@@ -2,16 +2,14 @@
 
 #include "CfgEventHandlers.inc"
 
-class CfgPatches
-{
-  class ADDON
-  {
+class CfgPatches {
+  class ADDON {
     name = QUOTE(COMPONENT);
     units[] = {  };
     weapons[] = {  };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {"CBRN_scripts"};
-    skipWhenMissingDependencies = 1;
+    skipWhenMissingDependencies = TRUE;
     author = QUOTE(AUTHOR);
     VERSION_CONFIG;
   };

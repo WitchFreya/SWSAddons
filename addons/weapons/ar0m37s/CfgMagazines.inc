@@ -5,11 +5,9 @@
   , "SWS_Magazine_60Rnd_65x39_Caseless_MSBS_Tracers_Yellow" \
   , "SWS_Magazine_60Rnd_65x39_Caseless_MSBS_Tracers_Green"
 
-class CfgMagazines
-{
+class CfgMagazines {
   class 30Rnd_65x39_Caseless_MSBS_Mag;
-  class SWS_Magazine_60Rnd_65x39_Caseless_MSBS : 30Rnd_65x39_Caseless_MSBS_Mag
-  {
+  class SWS_Magazine_60Rnd_65x39_Caseless_MSBS : 30Rnd_65x39_Caseless_MSBS_Mag {
     ITEM_META(2);
     CLEARANCE(RESTRICTED/DECWHI);
     displayName = QNAME(60Rnd 6.5mm 0M37S Mag);
@@ -19,8 +17,7 @@ class CfgMagazines
     mass = 25;
   };
 
-  class SWS_Magazine_60Rnd_65x39_Caseless_MSBS_Tracers : SWS_Magazine_60Rnd_65x39_Caseless_MSBS
-  {
+  class SWS_Magazine_60Rnd_65x39_Caseless_MSBS_Tracers : SWS_Magazine_60Rnd_65x39_Caseless_MSBS {
     displayName = QNAME(60Rnd 6.5mm 0M37S Mag (Red Tracer));
     tracersEvery = 1;
   };

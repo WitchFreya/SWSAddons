@@ -13,7 +13,8 @@ class CfgWeapons {
   class LM_OPCAN_ARMX_GL;
 
   class SWS_Weapon_ARMXS: LM_OPCAN_ARMX {
-    WEAPON_META(ARMXS,2);
+    ITEM_META(2);
+    baseWeapon = "SWS_Weapon_ARMXS";
     displayName = QNAME(ARMXS 6.5mm);
     HUD_SETUP;
 
@@ -25,12 +26,12 @@ class CfgWeapons {
 
       class PointerSlot : PointerSlot {
         compatibleItems[] = {
-          "acc_flashlight",
-          "acc_pointer_IR",
-          "ACE_acc_pointer_red",
-          "ACE_acc_pointer_green_IR",
-          "ACE_acc_pointer_green",
-          ATT_POINTER_OPTRE_RAIL_M12
+          "acc_flashlight"
+          , "acc_pointer_IR"
+          , "ACE_acc_pointer_red"
+          , "ACE_acc_pointer_green_IR"
+          , "ACE_acc_pointer_green"
+          , ATT_POINTER_OPTRE_RAIL_M12
         };
       };
     };
@@ -44,7 +45,8 @@ class CfgWeapons {
   };
 
   class SWS_Weapon_ARMXS_GL : LM_OPCAN_ARMX_GL {
-    WEAPON_META(ARMXS_GL,2);
+    ITEM_META(2);
+    baseWeapon = "SWS_Weapon_ARMXS_GL";
     displayName = QNAME(ARMXS UGL 6.5mm);
     HUD_SETUP;
 

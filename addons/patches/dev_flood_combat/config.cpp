@@ -1,11 +1,13 @@
 #include "script_component.hpp"
 
+class CBA_Extended_EventHandlers_Base;
+class EventHandlers;
+
 #include "CfgVehicles.inc"
 
-class CfgPatches
-{
-  class SUBADDON
-  {
+class CfgPatches {
+  class SUBADDON {
+    skipWhenMissingDependencies = TRUE;
     addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
     units[] = { };
@@ -17,7 +19,6 @@ class CfgPatches
       "dev_flood_combat"
       , "cba_xeh"
     };
-    skipWhenMissingDependencies = 1;
     VERSION_CONFIG;
   };
 };

@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "script_component.inc.sqf"
 /*
  * Author: Ashes
  * Raise the plow for the target vehicle.

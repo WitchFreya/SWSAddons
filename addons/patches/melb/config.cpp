@@ -6,10 +6,9 @@ class Mode_Burst;
 #include "CfgVehicles.inc"
 #include "CfgWeapons.inc"
 #include "CfgMagazines.inc"
-class CfgPatches
-{
-  class SUBADDON
-  {
+
+class CfgPatches {
+  class SUBADDON {
     addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
     units[] = { };
@@ -17,10 +16,7 @@ class CfgPatches
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = {
-      "MELB"
-      , "a3_weapons_f"
-      };
+    requiredAddons[] = {"MELB"};
     skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
   };

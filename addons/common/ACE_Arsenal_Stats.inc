@@ -10,7 +10,7 @@ class ACE_Arsenal_Stats {
     showText = TRUE;
     textStatement = QUOTE(call DFUNC(aceStatText));
     condition = QUOTE(call DFUNC(aceStatHasText));
-    barStatement = "1";
+    barStatement = QUOTE(TRUE);
     // https://ace3.acemod.org/wiki/framework/arsenal-framework.html#54-stat-tab-numbers
     tabs[] = {
       { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
