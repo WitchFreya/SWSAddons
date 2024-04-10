@@ -1,10 +1,10 @@
 #define CLASSES_VEHICLES          \
   "SWS_V_Bag_Hardcase_Bait"       \
-  , "SWS_V_Bag_Hardcase_Base"     \
   , "SWS_V_Bag_Hardcase_Blue"     \
   , "SWS_V_Bag_Hardcase_Carver"   \
   , "SWS_V_Bag_Hardcase_Chrome"   \
   , "SWS_V_Bag_Hardcase_Medical"  \
+  , "SWS_V_Bag_Hardcase_Polaris"  \
   , "SWS_V_Bag_Hardcase_Sawbones" \
   , "SWS_V_Bag_Hardcase_Snare"    \
   , "SWS_V_Bag_Hardcase_Spritz"   \
@@ -43,6 +43,7 @@ class CfgVehicles {
   C_HARDCASE(Sawbones,sawbones);
   C_HARDCASE(Snare,snare);
   C_HARDCASE(Spritz,spritz);
+  C_HARDCASE(Polaris,polaris);
   C_HARDCASE(Vertigo,vertigo);
 };
 
