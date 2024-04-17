@@ -9,8 +9,8 @@ class CfgVehicles {
     displayName = "-";
     faction = "SWS_UNSC";
     side = SIDE_BLUFOR;
-    crew = "B_UNSCAF_Pilot_01";
-    typicalCargo[] = { "B_UNSCAF_Pilot_01" };
+    crew = "OPTRE_UNSC_Navy_Solider_Olive_Unarmed";
+    typicalCargo[] = { "OPTRE_UNSC_Navy_Solider_Olive_Unarmed" };
     ace_cargo_space = 6;
     ace_cargo_loadMasterTurrets[] = {{-1},{0}};
 
