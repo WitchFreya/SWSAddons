@@ -29,9 +29,9 @@ class CfgPatches
     requiredAddons[] = {
       "MELB"
       , "a3_weapons_f"
-      , "b_unscaf"
-      , "optre_weapons_ammo_signal_smoke"
-      , "optre_weapons_smg"
+      , "OPTRE_UNSC_Units_Navy"
+      , "optre_weapons"
+      , "optre_weapons"
       , "ace_hellfire"
       , "ace_medical_treatment"
       , "sws_main"

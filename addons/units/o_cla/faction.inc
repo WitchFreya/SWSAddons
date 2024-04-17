@@ -181,7 +181,7 @@ class CfgGroups {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_CLA_Elite_AnitArmor_01";
+                        vehicle = "O_CLA_Elite_AntiArmor_01";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
@@ -361,13 +361,13 @@ class CfgGroups {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_CLA_Elite_AnitArmor_01";
+                        vehicle = "O_CLA_Elite_AntiArmor_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_CLA_Elite_AnitArmor_01";
+                        vehicle = "O_CLA_Elite_AntiArmor_01";
                     };
                 };
 
@@ -810,6 +810,9 @@ class CBA_Extended_EventHandlers_base;
 
 class CfgVehicles {
 
+    class I_LT_01_AA_F;
+    class I_Plane_Fighter_04_F;
+
     class OPTRE_Ins_URF_TeamLead;
     class OPTRE_Ins_URF_TeamLead_OCimport_01 : OPTRE_Ins_URF_TeamLead { scope = 0; class EventHandlers; };
     class OPTRE_Ins_URF_TeamLead_OCimport_02 : OPTRE_Ins_URF_TeamLead_OCimport_01 { class EventHandlers; };
@@ -887,15 +890,6 @@ class CfgVehicles {
         class Turrets : Turrets {
             class CargoTurret_01;
             class CargoTurret_02;
-        };
-    };
-
-    class EMP_Wiesel_2_Ozelot_AA;
-    class EMP_Wiesel_2_Ozelot_AA_OCimport_01 : EMP_Wiesel_2_Ozelot_AA { scope = 0; class EventHandlers; class Turrets; };
-    class EMP_Wiesel_2_Ozelot_AA_OCimport_02 : EMP_Wiesel_2_Ozelot_AA_OCimport_01 {
-        class EventHandlers;
-        class Turrets : Turrets {
-            class MainTurret;
         };
     };
 
@@ -1159,10 +1153,6 @@ class CfgVehicles {
             class RearTurret;
         };
     };
-
-    class EMP_A149_Gryphon;
-    class EMP_A149_Gryphon_OCimport_01 : EMP_A149_Gryphon { scope = 0; class EventHandlers; };
-    class EMP_A149_Gryphon_OCimport_02 : EMP_A149_Gryphon_OCimport_01 { scope = 0; class EventHandlers; };
 
     class O_APC_Wheeled_02_rcws_v2_F;
     class O_APC_Wheeled_02_rcws_v2_F_OCimport_01 : O_APC_Wheeled_02_rcws_v2_F { scope = 0; class EventHandlers; class Turrets; };
@@ -1702,11 +1692,11 @@ class CfgVehicles {
 
     };
 
-    class O_CLA_Elite_AnitArmor_01 : O_CLA_Elite_Rifleperson_01 {
+    class O_CLA_Elite_AntiArmor_01 : O_CLA_Elite_Rifleperson_01 {
         author = "Bernard ""Egg"" Teller";
         scope = 2;
         scopeCurator = 2;
-        displayName = "[SWS] Elite AnitArmor";
+        displayName = "[SWS] Elite AntiArmor";
         side = 0;
         faction = "o_cla";
 
@@ -2384,36 +2374,6 @@ class CfgVehicles {
 
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
-
-    };
-
-    class O_OCLA_Ozelot_AA_01 : EMP_Wiesel_2_Ozelot_AA_OCimport_02 {
-        author = "Bernard ""Egg"" Teller";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "[SWS] Ozelot AA";
-        side = 0;
-        faction = "o_cla";
-        crew = "O_CLA_Crew_01";
-
-        class Turrets : Turrets {
-            class MainTurret : MainTurret { gunnerType = "O_CLA_Crew_02"; };
-        };
-
-
-
-        class EventHandlers : EventHandlers {
-            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-            class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'A3\armor_f_tank\lt_01\data\lt_01_main_olive_co.paa'];_unit setObjectTextureGlobal [1,'A3\armor_f_tank\lt_01\data\lt_01_at_olive_co.paa'];_unit setObjectTextureGlobal [2,'A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa'];_unit setObjectTextureGlobal [3,'A3\armor_f\data\cage_olive_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-            };
-
-        };
-
-        // custom attributes (do not delete)
-        ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_texture = "Indep_Olive";
 
     };
 
@@ -3348,30 +3308,6 @@ class CfgVehicles {
 
     };
 
-    class O_CLA_Gryphon_01 : EMP_A149_Gryphon_OCimport_02 {
-        author = "Bernard ""Egg"" Teller";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "[SWS] Gryphon";
-        side = 0;
-        faction = "o_cla";
-        crew = "O_CLA_Crew_01";
-
-
-        class EventHandlers : EventHandlers {
-            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-            class ALiVE_orbatCreator {
-                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'a3\air_f_jets\plane_fighter_04\data\Fighter_04_fuselage_01_co.paa'];_unit setObjectTextureGlobal [1,'a3\air_f_jets\plane_fighter_04\data\Fighter_04_fuselage_02_co.paa'];_unit setObjectTextureGlobal [2,'a3\air_f_jets\plane_fighter_04\data\fighter_04_misc_01_co.paa'];_unit setObjectTextureGlobal [3,'a3\air_f_jets\plane_fighter_04\data\Numbers\Fighter_04_number_04_ca.paa'];_unit setObjectTextureGlobal [4,'a3\air_f_jets\plane_fighter_04\data\Numbers\Fighter_04_number_04_ca.paa'];_unit setObjectTextureGlobal [5,'a3\air_f_jets\plane_fighter_04\data\Numbers\Fighter_04_number_08_ca.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-            };
-
-        };
-
-        // custom attributes (do not delete)
-        ALiVE_orbatCreator_owned = 1;
-        ALiVE_orbatCreator_texture = "CamoGrey";
-
-    };
 
     class O_CLA_Otokar_01 : O_APC_Wheeled_02_rcws_v2_F_OCimport_02 {
         author = "Bernard ""Egg"" Teller";
