@@ -10,8 +10,8 @@ class CfgVehicles {
 		ITEM_META(2);
 		faction = "SWS_UNSC";
 		side = SIDE_BLUFOR;
-    crew = "B_UNSCAF_Pilot_01";
-		typicalCargo[] = { "B_UNSCAF_Pilot_01" };
+    crew = "OPTRE_UNSC_Navy_Solider_Olive_Unarmed";
+		typicalCargo[] = { "OPTRE_UNSC_Navy_Solider_Olive_Unarmed" };
 
     class TransportMagazines {
 			MACRO_ADDMAGAZINE(SWS_Magazine_60Rnd_65x39_Caseless_MSBS,8);
@@ -242,8 +242,8 @@ class CfgVehicles {
 		displayName = QNAME(Sx-6M Magpie);
 		faction = "SWS_UNSC";
 		side = SIDE_BLUFOR;
-    crew = "B_UNSCAF_Pilot_01";
-		typicalCargo[] = { "B_UNSCAF_Pilot_01" };
+    crew = "OPTRE_UNSC_Navy_Solider_Olive_Unarmed";
+		typicalCargo[] = { "OPTRE_UNSC_Navy_Solider_Olive_Unarmed" };
 
     class TransportMagazines {
 			MACRO_ADDMAGAZINE(SWS_Magazine_60Rnd_65x39_Caseless_MSBS,8);
