@@ -1,5 +1,6 @@
 #include "script_component.hpp"
 
+#include "CfgEventHandlers.inc"
 #include "CfgVehicles.inc"
 #include "CfgEditorSubcategories.inc"
 
@@ -15,6 +16,7 @@ class CfgPatches {
       , "sws_main"
       , "sws_common"
       , "sws_weapons"
+      , "sws_arsenal"
       , "ace_medical_treatment"
     };
     VERSION_CONFIG;
