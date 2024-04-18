@@ -4,3 +4,4 @@ ADDON = false;
 ADDON = true;
 
 
+#include "initSettings.inc.sqf"
