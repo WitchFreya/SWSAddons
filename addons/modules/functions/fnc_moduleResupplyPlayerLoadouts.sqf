@@ -100,7 +100,8 @@ private _onConfirm = {
   _selections params [
     "_targeting",
     "_includeZeus",
-    "_type"
+    "_type",
+    "_height"
   ];
 
   _targeting params [
@@ -125,12 +126,31 @@ private _onConfirm = {
       case ZEN_DIALOG_OWNER_TAB_PLAYERS: {_targetPlayers};
     });
 
-  switch (_type) do {
-    case "orbital": {};
-    case "aerial": {};
-    case "magic": {
-      {[_x] call EFUNC(resupply,restoreLastLoadout)} forEach _unitsToResupply;
+  if (count _unitsToResupply == 0) exitWith {
+    ["No units selected to resupply"] call ace_zeus_fnc_showMessage;
+  };
+
+  if (_type == "magic") exitWith {
+    {[_x] call EFUNC(resupply,restoreLastLoadout)} forEach _unitsToResupply;
+  };
+
+  private _defaultHeight /* number */ = [200, 600] select (_type == "orbital");
+  // How high should it be dropped from?
+  private _heightDialog = [
+    "SLIDER",
+    ["Airdrop height [m]", "How high should the item drop from? 0 will spawn on the ground."],
+    [0, 1000, _defaultHeight, 0]
+  ];
+
+  if (_type == "orbital") exitWith {
+    private _onConfirm = {
+      params ["_props", "_args"];
+      _props params ["_dropHeight"];
+      _args params ["_units", "_pos"];
+      [_units, _dropHeight, _pos] call EFUNC(resupply,orbitalResupplyPos);
     };
+
+    ["Orbital Resupply Options", [_heightDialog], _onConfirm, {}, [_unitsToResupply, _pos]] call zen_dialog_fnc_create;
   };
 };
 

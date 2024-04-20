@@ -13,3 +13,6 @@
 #endif
 
 #include "\x\sws\addons\main\script_macros.hpp"
+
+#define ACE_INTERACT_ACTIONTYPE_TARGET 0
+#define ACE_INTERACT_ACTIONTYPE_SELF 1
