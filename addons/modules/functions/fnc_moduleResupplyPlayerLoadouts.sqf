@@ -134,12 +134,11 @@ private _onConfirm = {
     {[_x] call EFUNC(resupply,restoreLastLoadout)} forEach _unitsToResupply;
   };
 
-  private _defaultHeight /* number */ = [200, 600] select (_type == "orbital");
   // How high should it be dropped from?
   private _heightDialog = [
     "SLIDER",
     ["Airdrop height [m]", "How high should the item drop from? 0 will spawn on the ground."],
-    [0, 1000, _defaultHeight, 0]
+    [0, 1000, 200, 0]
   ];
 
   if (_type == "orbital") exitWith {
@@ -147,7 +146,7 @@ private _onConfirm = {
       params ["_props", "_args"];
       _props params ["_dropHeight"];
       _args params ["_units", "_pos"];
-      [_units, _dropHeight, _pos] call EFUNC(resupply,orbitalResupplyPos);
+      [_units, _dropHeight, _pos] call EFUNC(resupply,dropOrbitalResupply);
     };
 
     ["Orbital Resupply Options", [_heightDialog], _onConfirm, {}, [_unitsToResupply, _pos]] call zen_dialog_fnc_create;

@@ -1,3 +1,4 @@
 PREP(addRestockAction);
-PREP(orbitalResupplyPos);
+PREP(dropOrbitalResupply);
 PREP(restoreLastLoadout);
+PREP(onResupplyPodHitGround);
