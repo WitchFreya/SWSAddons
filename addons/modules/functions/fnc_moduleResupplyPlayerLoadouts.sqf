@@ -65,11 +65,6 @@ private _dialogOptions = call {
     false
   ];
 
-  private _airDropVehicleName = [
-    configFile >> "CfgVehicles" >> GVAR(resupplyAirVehicle),
-    "displayName",
-    "unknown vehicle"
-  ] call BIS_fnc_returnConfigEntry;
   // How should the resupply be dropped?
   private _sourceDialog /* ZEN_Component<LIST> */ = [
     "LIST",
@@ -78,7 +73,7 @@ private _dialogOptions = call {
       ["orbital", "aerial", "magic"],
       [
         ["Orbital", "Drop pods near the spot from orbit."],
-        [format ["Air Drop from %1", _airDropVehicleName], "Fly in and drop pods."],
+        ["Air Drop", "Fly in and drop pods; a custom vehicle can be picked on the next page."],
         ["Magic", "Attempt to restock their loadouts without user interactions. This may be destructive."]
       ],
       0
@@ -134,14 +129,13 @@ private _onConfirm = {
     {[_x] call EFUNC(resupply,restoreLastLoadout)} forEach _unitsToResupply;
   };
 
-  // How high should it be dropped from?
-  private _heightDialog = [
-    "SLIDER",
-    ["Airdrop height [m]", "How high should the item drop from? 0 will spawn on the ground."],
-    [0, 1000, 200, 0]
-  ];
-
   if (_type == "orbital") exitWith {
+    // How high should it be dropped from?
+    private _heightDialog = [
+      "SLIDER",
+      ["Airdrop height [m]", "How high should the item drop from? 0 will spawn on the ground."],
+      [0, 1000, 200, 0]
+    ];
     private _onConfirm = {
       params ["_props", "_args"];
       _props params ["_dropHeight"];
@@ -151,6 +145,44 @@ private _onConfirm = {
 
     ["Orbital Resupply Options", [_heightDialog], _onConfirm, {}, [_unitsToResupply, _pos]] call zen_dialog_fnc_create;
   };
+
+  private _vehicleDialog = [
+    "EDIT",
+    ["Airdrop Vehicle", "What type of vehicle should be spawned for the airdrop?"],
+    ["Splits_UNSC_D77_TC_Pelican"]
+  ];
+
+  private _directionDialog = [
+    "TOOLBOX",
+    ["Direction", "Which way should the vehicle spawn in from?"],
+    [0, 1, 8, ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]]
+  ];
+
+  private _howFarDialog = [
+    "SLIDER",
+    ["Spawn Range", "How far away should the vehicle be spawned?"],
+    [500, 13e3, 2e3, {format ["%1m", round _this]}]
+  ];
+
+  // How high should it be dropped from?
+  private _heightDialog = [
+    "SLIDER",
+    ["Vehicle height [m]", "How high should the airdrop vehicle spawn?"],
+    [200, 1000, 200, 0]
+  ];
+
+  private _onConfirm = {
+    params ["_props", "_args"];
+    TRACE_1("onConfirm",_this);
+    _props params ["_vehicle", "_direction", "_howFar", "_howHigh"];
+    _args params ["_units", "_logicPosASL"];
+    private _bearing = _direction * 45;
+    private _zASL = _logicPosASL select 2;
+    private _spawnPos /* PosAGL */ = _logicPosASL getPos [_howFar, _bearing] vectorAdd [0, 0, _zASL + _howHigh];
+    [_vehicle, _spawnPos, _logicPosASL, _units] call EFUNC(resupply,spawnAirdropResupply)
+  };
+
+  ["Aerial Resupply Options", [_vehicleDialog, _directionDialog, _howFarDialog, _heightDialog], _onConfirm, {}, [_unitsToResupply, _pos]] call zen_dialog_fnc_create;
 };
 
 private _onCancel = {
