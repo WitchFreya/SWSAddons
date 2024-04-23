@@ -48,15 +48,12 @@ _box setVelocity [0, 0, -20];
 
 /** getPos becomes exceptionally slow in busy areas. this is an effort to compensate for that. */
 private _fn_notFalling = {
-  private _isFalling = _this call {
-    params ["_object"];
-    private _zVelocity = velocity _object select 2;
-    if (_zVelocity < -2) exitWith {true};
-    if (round _zVelocity != 0) exitWith {true};
-    private _posZ = getPos _object select 2;
-    round _posZ != 0;
-  };
-  !_isFalling;
+  params ["_object"];
+  private _zVelocity = velocity _object select 2;
+  if (round _zVelocity != 0) exitWith {false};
+  private _posZ = getPos _object select 2;
+  if (_posZ > 2) exitWith {false};
+  true;
 };
 
 private _fn_onDone = {
