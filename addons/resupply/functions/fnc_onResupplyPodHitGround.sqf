@@ -36,7 +36,7 @@ _pod attachTo [
 ];
 
 // add some variety to the pod's angles on the ground.
-private _offset = [random [-25, 0, 25], 0, random [-25, 0, 25]];
+private _offset = [random [-8, 0, 8], 0, random [-8, 0, 8]];
 {
   private _adjustedVector = ([
     [vectorDir _x, vectorUp _x]
