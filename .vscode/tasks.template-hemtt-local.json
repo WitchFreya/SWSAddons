@@ -13,18 +13,6 @@
       "group": "build"
     },
     {
-      "label": "Launch: VR",
-      "detail": "Launch the base profile with minimal addons loaded directly into the VR testing mission.",
-      "type": "process",
-      "command": ".\\hemtt.exe",
-      "problemMatcher": [],
-      "args": [
-        "launch",
-        "default_vr"
-      ],
-      "group": "build"
-    },
-    {
       "label": "Launch: Full",
       "detail": "Launch the full profile with all addons from our modpack loaded.",
       "type": "process",
