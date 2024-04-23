@@ -11,6 +11,7 @@ class CfgPatches {
     name = COMPONENT_NAME;
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {"OPTRE_JSRS_Sounds"};
+    units[] = {};
     skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
   };
