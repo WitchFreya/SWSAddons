@@ -11,7 +11,8 @@
     params ["_newValue"];
     if (_newValue) exitWith {};
     systemChat "Warning: You have disabled saving your last loadout from the ACE Arsenal. This will make Zeus resupplying your loadout more difficult.";
-  }
+  },
+  true
 ] call CBA_fnc_addSetting;
 
 [
