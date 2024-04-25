@@ -12,12 +12,13 @@ class CfgPatches {
     weapons[] = {};
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {
-      "OPTRE_Misc"
+      "ace_common"
+      , "ace_medical_treatment"
+      , "OPTRE_Misc"
       , "sws_main"
       , "sws_common"
       , "sws_weapons"
       , "sws_arsenal"
-      , "ace_medical_treatment"
     };
     VERSION_CONFIG;
   };

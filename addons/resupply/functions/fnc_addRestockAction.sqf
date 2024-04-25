@@ -2,42 +2,57 @@
 
 /*
  * Author: Maid
- *  Add a restock action onto an object for some units.
+ * Add a local restock action onto an object.
  *
  * Arguments:
  * 0: Object to add the restock action on <OBJECT>
- * 1: Units for whom it should restock <OBJECT[]>
  *
  * Return Value:
  * None
  *
  * Example:
- * [cursorObject, [player]] call sws_resupply_fnc_addRestockAction;
+ * [cursorObject] call sws_resupply_fnc_addRestockAction;
  *
  * Public: No
  */
 
 params [
-  ["_target", objNull, [objNull]],
-  ["_units", [], [[]]]
+  ["_target", objNull, [objNull]]
 ];
 
-private _localUnits = _units select { local _x; };
-private _nonLocalUnits = _units - _localUnits;
-{
-  [QGVAR(addRestockAction), [_target, [_x]], _x] call CBA_fnc_targetEvent;
-} forEach _nonLocalUnits;
+TRACE_1(QGVAR(DOUBLES(fnc,addRestockAction)),_this);
+
+private _fnc_onInteract = {
+  params ["_target", "_caller"];
+
+  private _fnc_onSuccess = {
+    params ["_args"];
+    _args params ["_target", "_caller"];
+    [QGVAR(consumeRestock), [_target, _caller], _target] call CBA_fnc_targetEvent;
+  };
+
+  private _fnc_onEachFrame = {
+    param [0] call FUNC(canRestock);
+  };
+
+  [
+    GVAR(restockTime),
+    [_target, _caller],
+    _fnc_onSuccess,
+    QGVAR(restockInterrupted),
+    "Restocking",
+    _fnc_onEachFrame,
+    [],
+    false
+  ] call ace_common_fnc_progressBar;
+};
 
 private _restockAction = [
   QGVAR(restock),
   "Restock Gear",
   QPATHTOEF(main,data\sws_icon_howl_ca.paa), // ICON
-  {
-    params ["", "_caller"];
-    // TODO: Probably some kind of delay or something?
-    [_caller] call FUNC(restoreLastLoadout);
-  },
-  {true}, // TODO: Probably a condition based on whether the vehicle has any supplies left?
+  _fnc_onInteract,
+  FUNC(canRestock),
   {}, // Insert children
   [] // Parameters
 ] call ace_interact_menu_fnc_createAction;

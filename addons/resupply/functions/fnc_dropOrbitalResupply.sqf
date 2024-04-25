@@ -5,24 +5,26 @@
  * Drop an orbital resupply on the position.
  *
  * Arguments:
- * 0: Units to resupply <OBJECT[]>
- * 1: Drop height in meters <NUMBER>
- * 2: Destination drop position <PosASL>
- * 3: Vehicle to drop <STRING> OPTIONAL - Defaults to SWS_Ammo_SupplyPod
+ * 0: Drop height in meters <NUMBER>
+ * 1: Destination drop position <PosASL>
+ * 2: Total number of resupplies per person <NUMBER> OPTIONAL - Defaults to -1 for infinite.
+ * 3: Total number of resupplies <NUMBER> OPTIONAL - Defaults to -1 for infinite.
+ * 4: Vehicle to drop <STRING> OPTIONAL - Defaults to SWS_Ammo_SupplyPod
  *
  * Return Value:
  * None
  *
  * Example:
- * [[player], 100, [0, 0, 0]] call sws_resupply_fnc_dropOrbitalResupply;
+ * [100, [0, 0, 0], -1, -1, "SWS_Ammo_SupplyPod"] call sws_resupply_fnc_dropOrbitalResupply;
  *
  * Public: No
  */
 
 params [
-  ["_unitsToResupply", [], [[]]],
   ["_dropHeight", 100, [0]],
   ["_dropPosASL", [0, 0, 0], [[]]],
+  ["_totalPerPerson", -1, [0]],
+  ["_total", -1, [0]],
   ["_carrier", "SWS_Ammo_SupplyPod", [""]]
 ];
 
@@ -41,9 +43,9 @@ private _dropPosATL /* PosATL */ = [_dropPosASL, _dropHeight, _carrier] call {
   [_x, _y, _z];
 };
 
-
 private _box = createVehicle [_carrier, _dropPosATL, [], 0, "CAN_COLLIDE"];
-[_box, _unitsToResupply] call FUNC(addRestockAction);
+[_box, _totalPerPerson, _total] call FUNC(setRestockAmount);
+
 _box setVelocity [0, 0, -20];
 
 /** getPos becomes exceptionally slow in busy areas. this is an effort to compensate for that. */

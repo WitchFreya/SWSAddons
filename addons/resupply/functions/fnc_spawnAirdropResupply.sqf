@@ -8,7 +8,8 @@
  * 0: Vehicle type <STRING>
  * 1: Vehicle spawn position <PosAGL>
  * 2: Vehicle airdrop position <Position2D>
- * 3: Units to resupply <OBJECT[]>
+ * 3: Total number of resupplies per person <NUMBER> OPTIONAL - Defaults to -1 for infinite.
+ * 4: Total number of resupplies <NUMBER> OPTIONAL - Defaults to -1 for infinite.
  *
  * Return Value:
  * None
@@ -25,7 +26,8 @@ params [
   ["_airVicClassName", "Splits_UNSC_D77_TC_Pelican", [""]],
   ["_spawnPosAGL", [], [[]]],
   ["_destinationPos", [], [[]]],
-  ["_units", [], [[]]]
+  ["_totalPerPerson", -1, [0]],
+  ["_total", -1, [0]]
 ];
 
 private _airVicCfg = configFile >> "CfgVehicles" >> _airVicClassName;
@@ -37,7 +39,7 @@ private _height = _spawnPosAGL select 2;
 private _destinationPosAGL = (_destinationPos select [0, 2]) + [_height];
 private _direction = _spawnPosAGL getDir _destinationPos;
 private _cargo = createVehicle ["SWS_Box_TeamSupplies", [0, 0], [], 0, "CAN_COLLIDE"];
-[_cargo, _units] call FUNC(addRestockAction);
+[_cargo, _totalPerPerson, _total] call FUNC(setRestockAmount);
 
 private _aircraft = createVehicle [_airVicClassName, _spawnPosAGL, [], 0, "FLY"];
 

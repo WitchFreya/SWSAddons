@@ -46,23 +46,25 @@ TRACE_1("moduleResupplyPlayerLoadouts",_this);
   ]
 */
 private _dialogOptions = call {
-  private _players /* (Player: object)[] */ = call BIS_fnc_listPlayers - [player];
-
-  private _playerGroups /* Group[] */= _players apply { group _x; };
-  private _groups /* Set<Group> */ = _playerGroups arrayIntersect _playerGroups;
-
-  private _defaultTargets /* OWNER Dialog Args */ = [[blufor], _groups, _players, ZEN_DIALOG_OWNER_TAB_GROUPS];
-  // Whose equipment should be considered?
-  private _targetsDialog /* ZEN_Component<OWNER> */ = [
-    "OWNERS",
-    ["Targets", "Whose equipment should be included in the resupply?"],
-    [[blufor], _groups, _players, ZEN_DIALOG_OWNER_TAB_GROUPS]
+  private _fnc_amountFormat = {format ["%1", [round _this, "∞"] select (round _this == 0)]};
+  private _usesPerPersonDialog = [
+    "SLIDER",
+    ["Uses per Person", "How many times can a single unit restock from this?"],
+    [0, 10, 1, _fnc_amountFormat]
   ];
 
-  private _includeForZeusDialog /* ZEN_Component<CHECKBOX> */ = [
-    "CHECKBOX",
-    ["Include Me", "Check this to include resupply munitions for you. If unchecked, you will not be considered for munitions unless you selected the Players option above and added yourself."],
-    false
+  private _playerCount = count (call BIS_fnc_listPlayers);
+
+  private _totalUsesDialog = [
+    "SLIDER",
+    [
+      "Total Uses",
+      format [
+        "How many times can a this restock be used in total? Note: There are currently %1 players on the server.",
+        _playerCount
+      ]
+    ],
+    [0, 100, 0, _fnc_amountFormat]
   ];
 
   // How should the resupply be dropped?
@@ -70,80 +72,58 @@ private _dialogOptions = call {
     "LIST",
     ["Source", "How should the supplies be delivered?"],
     [
-      ["orbital", "aerial", "magic"],
+      ["orbital", "aerial"],
       [
         ["Orbital", "Drop pods near the spot from orbit."],
-        ["Air Drop", "Fly in and drop pods; a custom vehicle can be picked on the next page."],
-        ["Magic", "Attempt to restock their loadouts without user interactions. This may be destructive."]
+        ["Air Drop", "Fly in and drop pods; a custom vehicle can be picked on the next page."]
       ],
       0
     ]
   ];
 
-  [_targetsDialog, _includeForZeusDialog, _sourceDialog];
+  [_usesPerPersonDialog, _totalUsesDialog, _sourceDialog];
 };
 
 private _onConfirm = {
   params ["_selections", "_module"];
-  _module params [
-    "_logic"
-  ];
+  _module params ["_logic"];
 
   private _pos /* PosASL */ = getPosASL _logic;
   deleteVehicle _logic;
 
   _selections params [
-    "_targeting",
-    "_includeZeus",
-    "_type",
-    "_height"
+    "_countPerPlayer",
+    "_countTotal",
+    "_type"
   ];
 
-  _targeting params [
-    "_targetSides",
-    "_targetGroups",
-    "_targetPlayers",
-    "_targetType"
+  /** Convert 0 = infinite to -1 = infinite and round the slider. */
+  private _fnc_formatQuantityOutput = {
+    params ["_amount"];
+    [round _amount, -1] select (round _amount == 0);
+  };
+
+  private _additionalParams = [
+    _countPerPlayer call _fnc_formatQuantityOutput,
+    _countTotal call _fnc_formatQuantityOutput,
+    _pos
   ];
-
-  private _unitsToResupply /* Unit[] */ = call BIS_fnc_listPlayers
-    arrayIntersect (switch _targetType do {
-      case ZEN_DIALOG_OWNER_TAB_SIDES: {
-        private _allUnits = flatten (_targetSides apply { units _x });
-        if (_includeZeus) exitWith {_allUnits};
-        _allUnits - [player];
-      };
-      case ZEN_DIALOG_OWNER_TAB_GROUPS: {
-        private _allUnits = flatten (_targetGroups apply { units _x });
-        if (_includeZeus) exitWith {_allUnits};
-        _allUnits - [player];
-      };
-      case ZEN_DIALOG_OWNER_TAB_PLAYERS: {_targetPlayers};
-    });
-
-  if (count _unitsToResupply == 0) exitWith {
-    ["No units selected to resupply"] call ace_zeus_fnc_showMessage;
-  };
-
-  if (_type == "magic") exitWith {
-    {[_x] call EFUNC(resupply,restoreLastLoadout)} forEach _unitsToResupply;
-  };
 
   if (_type == "orbital") exitWith {
     // How high should it be dropped from?
     private _heightDialog = [
       "SLIDER",
-      ["Airdrop height [m]", "How high should the item drop from? 0 will spawn on the ground."],
-      [0, 1000, 200, 0]
+      ["Airdrop height", "How high should the item drop from? 0 will spawn on the ground."],
+      [0, 1000, 200, {format ["%1m", round _this]}]
     ];
     private _onConfirm = {
       params ["_props", "_args"];
       _props params ["_dropHeight"];
-      _args params ["_units", "_pos"];
-      [_units, _dropHeight, _pos] call EFUNC(resupply,dropOrbitalResupply);
+      _args params ["_totalPerPerson", "_total", "_pos"];
+      [_dropHeight, _pos, _totalPerPerson, _total] call EFUNC(resupply,dropOrbitalResupply);
     };
 
-    ["Orbital Resupply Options", [_heightDialog], _onConfirm, {}, [_unitsToResupply, _pos]] call zen_dialog_fnc_create;
+    ["Orbital Resupply Options", [_heightDialog], _onConfirm, {}, _additionalParams] call zen_dialog_fnc_create;
   };
 
   private _vehicleDialog = [
@@ -167,22 +147,23 @@ private _onConfirm = {
   // How high should it be dropped from?
   private _heightDialog = [
     "SLIDER",
-    ["Vehicle height [m]", "How high should the airdrop vehicle spawn?"],
-    [200, 1000, 200, 0]
+    ["Vehicle height", "How high should the airdrop vehicle spawn?"],
+    [200, 1000, 200, {format ["%1m", round _this]}]
   ];
 
   private _onConfirm = {
     params ["_props", "_args"];
     TRACE_1("onConfirm",_this);
     _props params ["_vehicle", "_direction", "_howFar", "_howHigh"];
-    _args params ["_units", "_logicPosASL"];
+    _args params ["_totalPerPerson", "_total", "_pos"];
     private _bearing = _direction * 45;
-    private _zASL = _logicPosASL select 2;
-    private _spawnPos /* PosAGL */ = _logicPosASL getPos [_howFar, _bearing] vectorAdd [0, 0, _zASL + _howHigh];
-    [_vehicle, _spawnPos, _logicPosASL, _units] call EFUNC(resupply,spawnAirdropResupply)
+    private _zASL = _pos select 2;
+    private _spawnPos /* PosAGL */ = _pos getPos [_howFar, _bearing] vectorAdd [0, 0, _zASL + _howHigh];
+    [_vehicle, _spawnPos, _pos, _totalPerPerson, _total] call EFUNC(resupply,spawnAirdropResupply);
   };
 
-  ["Aerial Resupply Options", [_vehicleDialog, _directionDialog, _howFarDialog, _heightDialog], _onConfirm, {}, [_unitsToResupply, _pos]] call zen_dialog_fnc_create;
+  private _aerialDialogs = [_vehicleDialog, _directionDialog, _howFarDialog, _heightDialog];
+  ["Aerial Resupply Options", _aerialDialogs, _onConfirm, {}, _additionalParams] call zen_dialog_fnc_create;
 };
 
 private _onCancel = {
