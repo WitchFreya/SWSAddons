@@ -1,5 +1,5 @@
 #define CLASSES_VEHICLES          \
-  "SWS_Ammo_SupplyPod_Empty"      \
+  "SWS_Ammo_SupplyPod"            \
   , "SWS_Ammo_SupplyPod_Basic"    \
   , "SWS_Ammo_SupplyPod_Medical"  \
   , "SWS_Ammo_SupplyPod_Howdy"    \
@@ -10,31 +10,20 @@
 class CfgVehicles {
   class NATO_Box_Base;
   class OPTRE_Ammo_SupplyPod_Empty;
+  class B_SupplyCrate_F;
 
-	class SWS_Box_TeamSupplies : NATO_Box_Base {
+	class SWS_Box_TeamSupplies : B_SupplyCrate_F {
     ITEM_META(2);
     displayName = QNAME(Team Supply Box);
     icon = "iconCrateWpns";
     editorCategory = "SWS_Objects";
     editorSubcategory = "SWS_Resupply";
-    side = SIDE_CIV;
 
     maximumLoad = 8000;
     transportMaxWeapons = 14;
     transportMaxMagazines = 144;
-    transportMaxBackpacks = 12;
 
-    transportAmmo = 0;
-    transportRepair = 0;
-    transportFuel = 0;
-    supplyRadius = -1;
     armor = 10000;
-
-    model = "\A3\Weapons_F\Ammoboxes\Supplydrop.p3d";
-    editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\B_supplyCrate_F.jpg";
-
-    hiddenSelections[] = {"camo"};
-    hiddenSelectionsTextures[] = {"a3\weapons_f\ammoboxes\data\supplydrop_co.paa"};
 
     ace_dragging_canDrag = TRUE;
     ace_dragging_ignoreWeight = TRUE;
@@ -42,7 +31,6 @@ class CfgVehicles {
     ace_dragging_ignoreWeightCarry = TRUE;
     ace_cargo_size = 4;
     ace_cargo_canLoad = TRUE;
-    ace_cargo_noRename = TRUE;
 
     class TransportMagazines {
       MACRO_ADDMAGAZINE(OPTRE_60Rnd_762x51_Mag,80);
@@ -68,45 +56,32 @@ class CfgVehicles {
     };
   };
 
-  class SWS_Ammo_SupplyPod_Empty : OPTRE_Ammo_SupplyPod_Empty {
+  class SWS_Ammo_SupplyPod : OPTRE_Ammo_SupplyPod_Empty {
     ITEM_META(2);
-    displayName = QNAME(Supply Pod (Empty));
+    displayName = QNAME(Supply Pod);
     icon = "iconCrateWpns";
 
     editorCategory = "SWS_Objects";
     editorSubcategory = "SWS_Resupply";
-    side = SIDE_CIV;
 
     transportMaxWeapons = 8;
     transportMaxMagazines = 40;
     transportMaxBackpacks = 4;
     maximumLoad = 4000;
 
-    transportAmmo = 0;
-    transportRepair = 0;
-    transportFuel = 0;
-
     supplyRadius = -1;
-    armor = 10000;
 
-    model = "\OPTRE_misc\crates\Supply_pod.p3d";
-    hiddenSelections[] = {"camo"};
     hiddenSelectionsTextures[] = {QPATHTOF(data\base_co.paa)};
 
-    ace_dragging_canDrag = TRUE;
     ace_dragging_ignoreWeight = TRUE;
-    ace_dragging_canCarry = TRUE;
     ace_dragging_ignoreWeightCarry = TRUE;
-    ace_cargo_size = 2;
-    ace_cargo_canLoad = TRUE;
-    ace_cargo_noRename = TRUE;
 
     class TransportMagazines {};
     class TransportWeapons {};
     class TransportItems {};
   };
 
-  class SWS_Ammo_SupplyPod_Basic : SWS_Ammo_SupplyPod_Empty {
+  class SWS_Ammo_SupplyPod_Basic : SWS_Ammo_SupplyPod {
     displayName = QNAME(Basic Resupply);
     hiddenSelectionsTextures[] = {QPATHTOF(data\ammo_co.paa)};
     class TransportMagazines {
@@ -125,7 +100,7 @@ class CfgVehicles {
     };
   };
 
-  class SWS_Ammo_SupplyPod_Medical : SWS_Ammo_SupplyPod_Empty {
+  class SWS_Ammo_SupplyPod_Medical : SWS_Ammo_SupplyPod {
     displayName = QNAME(Medical Resupply);
     hiddenSelectionsTextures[] = {QPATHTOF(data\medical_co.paa)};
     class TransportItems {
@@ -135,14 +110,14 @@ class CfgVehicles {
     };
   };
 
-  class SWS_Ammo_SupplyPod_Howdy : SWS_Ammo_SupplyPod_Empty {
+  class SWS_Ammo_SupplyPod_Howdy : SWS_Ammo_SupplyPod {
     displayName = QNAME(Howdy Resupply);
     hiddenSelectionsTextures[] = {QPATHTOF(data\base_co.paa)};
     class TransportWeapons {
       MACRO_ADDWEAPON(SWS_Weapon_M24RL_D_Loaded,4);
     };
   };
-  class SWS_Ammo_SupplyPod_Spnkr : SWS_Ammo_SupplyPod_Empty {
+  class SWS_Ammo_SupplyPod_Spnkr : SWS_Ammo_SupplyPod {
     displayName = QNAME(SPNKR Resupply);
     hiddenSelectionsTextures[] = {QPATHTOF(data\spnkr_co.paa)};
     class TransportWeapons {
@@ -156,7 +131,7 @@ class CfgVehicles {
       MACRO_ADDMAGAZINE(OPTRE_M41_Twin_HEAT,2);
     };
   };
-  class SWS_Ammo_SupplyPod_SM247 : SWS_Ammo_SupplyPod_Empty {
+  class SWS_Ammo_SupplyPod_SM247 : SWS_Ammo_SupplyPod {
     displayName = QNAME(SM247 Resupply);
     hiddenSelectionsTextures[] = {QPATHTOF(data\mg_co.paa)};
     class TransportMagazines {
@@ -167,7 +142,7 @@ class CfgVehicles {
     };
   };
 
-  class SWS_Ammo_SupplyPod_Eng_Mines : SWS_Ammo_SupplyPod_Empty {
+  class SWS_Ammo_SupplyPod_Eng_Mines : SWS_Ammo_SupplyPod {
     displayName = QNAME(Sabotage);
     hiddenSelectionsTextures[] = {QPATHTOF(data\ammo_co.paa)};
     class TransportMagazines {
@@ -185,7 +160,7 @@ class CfgVehicles {
     };
   };
 
-  class SWS_Ammo_SupplyPod_Eng_Demo : SWS_Ammo_SupplyPod_Empty {
+  class SWS_Ammo_SupplyPod_Eng_Demo : SWS_Ammo_SupplyPod {
     displayName = QNAME(Demolitions);
     hiddenSelectionsTextures[] = {QPATHTOF(data\ammo_co.paa)};
     class TransportMagazines {
@@ -200,7 +175,7 @@ class CfgVehicles {
     };
   };
 
-  class SWS_Ammo_SupplyPod_Eng_Support : SWS_Ammo_SupplyPod_Empty {
+  class SWS_Ammo_SupplyPod_Eng_Support : SWS_Ammo_SupplyPod {
     displayName = QNAME(Engineering);
     hiddenSelectionsTextures[] = {QPATHTOF(data\ammo_co.paa)};
 

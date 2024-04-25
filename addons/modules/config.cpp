@@ -9,7 +9,13 @@ class CfgPatches {
     units[] = { };
     weapons[] = {};
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = { "sws_main", "sws_common" };
+    requiredAddons[] = {
+      "zen_dialog"
+      , "Splits_Vehicles_Air_Pelican"
+      , "sws_main"
+      , "sws_common"
+      , "sws_resupply"
+    };
     author = QUOTE(AUTHOR);
     VERSION_CONFIG;
   };
