@@ -1,5 +1,6 @@
 #include "script_component.hpp"
 
+#include "CfgEventHandlers.inc"
 #include "CfgVehicles.inc"
 #include "CfgEditorSubcategories.inc"
 
@@ -11,11 +12,13 @@ class CfgPatches {
     weapons[] = {};
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {
-      "OPTRE_Misc"
+      "ace_common"
+      , "ace_medical_treatment"
+      , "OPTRE_Misc"
       , "sws_main"
       , "sws_common"
       , "sws_weapons"
-      , "ace_medical_treatment"
+      , "sws_arsenal"
     };
     VERSION_CONFIG;
   };
