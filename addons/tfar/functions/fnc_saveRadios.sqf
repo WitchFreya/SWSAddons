@@ -2,23 +2,29 @@
 
 /*
  * Author: Maid
- * Handle the ACE arsenal loadoutsDisplayOpened event.
+ * Save the radio for a unit.
  *
  * Arguments:
- * 0: display <DISPLAY> - Loadout's display; unused here.
+ * 0: Unit to save the radio on <OBJECT>
  *
  * Return Value:
  * True on success
  *
  * Example:
- * [] call sws_tfar_fnc_onLoadoutsDisplayOpened;
+ * [player] call sws_tfar_fnc_saveRadios;
  *
  * Public: No
  */
 
-TRACE_1("ace_arsenal_loadoutsDisplayOpened",_this);
+TRACE_1(QGVAR(DOUBLES(fnc,saveRadios)),_this);
 
-private _target = currentNamespace getVariable ["ace_arsenal_center", player];
+if !(local _target) exitWith {
+  [QGVAR(saveRadios), [_target], _target] call CBA_fnc_targetEvent;
+};
+
+params [
+  ["_target", objNull, [objNull]]
+];
 
 switch (GVAR(restoreRadios)) do {
   case "sr_only": {
