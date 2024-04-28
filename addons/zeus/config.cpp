@@ -1,19 +1,24 @@
 #include "script_component.hpp"
 
 #include "CfgEventHandlers.inc"
-#include "RscCommon.hpp"
-#include "defines.hpp"
-#include "Cfg3DEN.inc"
 
 class CfgPatches {
   class ADDON {
     name = QUOTE(COMPONENT);
     author = QUOTE(AUTHOR);
     units[] = { };
-    weapons[] = {  };
+    weapons[] = {};
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = {"ace_arsenal", "sws_main","sws_common"};
     skipWhenMissingDependencies = TRUE;
+    requiredAddons[] = {
+      "ace_zeus"
+      , "zen_dialog"
+      , "Splits_Vehicles_Air_Pelican" // default vehicle for restock
+      , "sws_main"
+      , "sws_common"
+      , "sws_modules"
+      , "sws_arsenal"
+    };
     VERSION_CONFIG;
   };
 };

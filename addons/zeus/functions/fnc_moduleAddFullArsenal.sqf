@@ -31,7 +31,7 @@ switch (true) do {
   };
   default {
     [_object, true] call ace_arsenal_fnc_removeBox;
-    [_object] call FUNC(addFullArsenal);
+    [_object] call EFUNC(arsenal,addFullArsenal);
   };
 };
 

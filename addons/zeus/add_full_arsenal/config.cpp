@@ -11,12 +11,13 @@ class CfgPatches {
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
+    skipWhenMissingDependencies = TRUE;
     requiredAddons[] = {
-      "crowsza_misc"
+      "ace_zeus"
       , "sws_main"
       , "sws_common"
-      , "sws_resupply"
-      , "sws_air"
+      , "sws_arsenal"
+      , "sws_modules"
     };
     VERSION_CONFIG;
   };
