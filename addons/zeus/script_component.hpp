@@ -1,15 +1,15 @@
-#define COMPONENT modules
-#define COMPONENT_BEAUTIFIED Modules
+#define COMPONENT zeus
+#define COMPONENT_BEAUTIFIED Zeus
 #include "\x\sws\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
 
-#ifdef DEBUG_ENABLED_INGAME
+#ifdef DEBUG_ENABLED_ZEUS
   #define DEBUG_MODE_FULL
 #endif
-#ifdef DEBUG_SETTINGS_MODULES
-  #define DEBUG_SETTINGS DEBUG_SETTINGS_INGAME
+#ifdef DEBUG_SETTINGS_ZEUS
+  #define DEBUG_SETTINGS DEBUG_SETTINGS_ZEUS
 #endif
 
 #include "\x\sws\addons\main\script_macros.hpp"
