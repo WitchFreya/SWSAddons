@@ -1,1 +1,2 @@
+PREP(moduleAddFullArsenal);
 PREP(moduleRestockPlayers);

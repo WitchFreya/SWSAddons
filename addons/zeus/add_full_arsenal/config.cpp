@@ -1,23 +1,23 @@
 #include "script_component.hpp"
 
-#include "CfgEventHandlers.inc"
+#include "CfgVehicles.inc"
 
 class CfgPatches {
-  class ADDON {
-    name = QUOTE(COMPONENT);
-    author = QUOTE(AUTHOR);
-    units[] = { };
-    weapons[] = {};
+  class SUBADDON {
+    addonRootClass = QUOTE(ADDON);
+    name = COMPONENT_NAME;
+    units[] = { CLASSES_VEHICLES };
+    weapons[] = { };
+    magazines[] = { };
+    ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
     skipWhenMissingDependencies = TRUE;
     requiredAddons[] = {
       "ace_zeus"
-      , "zen_dialog"
-      , "Splits_Vehicles_Air_Pelican" // default vehicle for restock
       , "sws_main"
       , "sws_common"
-      , "sws_modules"
       , "sws_arsenal"
+      , "sws_modules"
     };
     VERSION_CONFIG;
   };
