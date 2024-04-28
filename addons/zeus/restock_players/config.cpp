@@ -11,8 +11,9 @@ class CfgPatches {
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
+    skipWhenMissingDependencies = TRUE;
     requiredAddons[] = {
-      "crowsza_misc"
+      "crowsza_misc" // icon
       , "sws_main"
       , "sws_common"
       , "sws_resupply"
