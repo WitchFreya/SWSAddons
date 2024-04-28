@@ -1,18 +1,18 @@
 #include "script_component.hpp"
 
-#include "CfgVehicles.inc"
+class StandardSound;
+class Single;
+
+#include "CfgWeapons.inc"
 
 class CfgPatches {
   class SUBADDON {
     addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
-    units[] = { };
-    weapons[] = { };
-    magazines[] = { };
-    ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = {"OPTRE_Vehicles_Hornet"};
+    units[] = {};
     skipWhenMissingDependencies = TRUE;
+    requiredAddons[] = {"OPTRE_JSRS_Sounds"};
     VERSION_CONFIG;
   };
 };

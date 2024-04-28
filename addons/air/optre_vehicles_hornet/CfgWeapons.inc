@@ -1,4 +1,3 @@
-
 class CfgWeapons {
     class M134_Minigun;
     class OPTRE_GUA23A : M134_Minigun {
