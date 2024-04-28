@@ -7,14 +7,13 @@ class CBA_Extended_EventHandlers_Base;
 #include "CfgVehicles.inc"
 
 class CfgPatches {
-  class SUBADDON {
-    addonRootClass = QUOTE(ADDON);
-    name = COMPONENT_NAME;
+  class ADDON {
+    author = QUOTE(AUTHOR);
+    name = QUOTE(COMPONENT);
     units[] = { };
-    weapons[] = { };
-    magazines[] = { };
-    ammo[] = { };
+    weapons[] = {};
     requiredVersion = REQUIRED_VERSION;
+    skipWhenMissingDependencies = TRUE;
     requiredAddons[] = {
       "cba_xeh"
       , "OPTRE_Weapons"
@@ -23,7 +22,6 @@ class CfgPatches {
       , "OPTRE_Vehicles_Air"
       , "OPTRE_ACE_Compat"
     };
-    skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
   };
 };
