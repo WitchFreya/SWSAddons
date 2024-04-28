@@ -1,12 +1,8 @@
 #include "script_component.hpp"
 
-class CBA_Extended_EventHandlers_Base;
-class EventHandlers;
 class LowROF;
 
 #include "CfgAmmo.inc"
-#include "CfgWeapons.inc"
-#include "CfgVehicles.inc"
 #include "CfgFunctions.inc"
 
 class CfgPatches {

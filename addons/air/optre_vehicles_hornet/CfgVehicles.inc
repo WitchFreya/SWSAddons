@@ -1,3 +1,4 @@
+/** Increase the ammunition and decrease the target size of the Hornets. */
 class CfgVehicles {
   class Helicopter_Base_H;
 
