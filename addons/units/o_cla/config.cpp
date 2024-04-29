@@ -222,9 +222,6 @@ class CfgPatches {
       , "OPTRE_Vehicles_Wildebeest"
       , "Splits_Vehicles_Air_Pelican"
       , "sws_vehicles"
-      , "tfar_core"
-      , "tfar_external_intercom"
-      , "TFAR_IntercomDummy"
       , "zen_attributes"
     };
     VERSION_CONFIG;
