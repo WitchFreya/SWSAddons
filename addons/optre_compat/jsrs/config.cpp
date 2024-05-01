@@ -12,7 +12,10 @@ class CfgPatches {
     requiredVersion = REQUIRED_VERSION;
     units[] = {};
     skipWhenMissingDependencies = TRUE;
-    requiredAddons[] = {"OPTRE_JSRS_Sounds"};
+    requiredAddons[] = {
+      "OPTRE_JSRS_Sounds"
+      , "sws_optre_compat"
+    };
     VERSION_CONFIG;
   };
 };
