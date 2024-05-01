@@ -18,3 +18,10 @@
   class EventHandlers : EventHandlers {                                   \
     class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_Base {}; \
   }
+
+// CfgGlasses mode property from https://community.bistudio.com/wiki/Arma_3:_Characters_And_Gear_Encoding_Guide#Facewear_Configuration
+#define GLASSES_MODE_NONE 0 // Not supported according to BIKI
+#define GLASSES_MODE_DIVING 1 // Only appear while swimming
+#define GLASSES_MODE_GOGGLES 2 // Only overwater
+#define GLASSES_MODE_NVG 3 // not supported; probably should check at some point?
+#define GLASSES_MODE_MULTIPURPOSE 4 // Above and below water

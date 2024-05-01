@@ -1,20 +1,21 @@
 #include "script_component.hpp"
 
-class StandardSound;
-class Single;
-
-#include "CfgWeapons.inc"
+#include "CfgGlasses.inc"
 
 class CfgPatches {
   class SUBADDON {
     addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
+    units[] = { };
+    weapons[] = { };
+    ammo[] = { };
+    magazines[] = { };
     requiredVersion = REQUIRED_VERSION;
-    units[] = {};
-    skipWhenMissingDependencies = TRUE;
     requiredAddons[] = {
-      "OPTRE_JSRS_Sounds"
-      , "sws_optre_compat"
+      QUOTE(ADDON)
+      , "OPTRE_Misc_Objects"
+      , "sws_main"
+      , "sws_common"
     };
     VERSION_CONFIG;
   };
