@@ -36,3 +36,5 @@ ArmaScriptCompiler.exe
 scratch
 unpacked-mods/*
 !unpacked-mods/.gitkeep
+.hemtt/missions/*
+!.hemtt/missions/Dev.VR.Template
