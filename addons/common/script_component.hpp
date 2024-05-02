@@ -5,11 +5,11 @@
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
 
-#ifdef DEBUG_ENABLED_INGAME
+#ifdef DEBUG_ENABLED_COMMON
   #define DEBUG_MODE_FULL
 #endif
 #ifdef DEBUG_SETTINGS_COMMON
-  #define DEBUG_SETTINGS DEBUG_SETTINGS_INGAME
+  #define DEBUG_SETTINGS DEBUG_SETTINGS_COMMON
 #endif
 
 #include "\x\sws\addons\main\script_macros.hpp"
