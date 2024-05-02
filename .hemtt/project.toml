@@ -10,15 +10,9 @@ url = "https://github.com/WitchFreya/SWSAddons"
 [files]
 exclude = ["*.inc"]
 
-[hemtt.launch.vr_freya]
-parameters = [ # TODO: Figure out how to include this so it'll work for other contributors
-  "C:\\Users\\freya\\Documents\\Arma 3 - Other Profiles\\Maid\\missions\\Dev.VR\\mission.sqm",
-]
-
-[hemtt.launch.vr_black]
-parameters = [ # TODO: Figure out how to include this so it'll work for other contributors
-  "C:\\Users\\Black\\Documents\\Arma 3 - Other Profiles\\Demon\\missions\\SWS-Helpers.VR\\mission.sqm",
-]
+# To use this profile, copy .hemtt/missions/Dev.VR.Template to .hemtt/missions/Dev.VR and edit that to your heart's content
+[hemtt.launch.vr]
+mission = "Dev.VR"
 
 [hemtt.launch.default]
 workshop = [
