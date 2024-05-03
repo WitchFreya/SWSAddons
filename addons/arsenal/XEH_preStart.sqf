@@ -1,6 +1,8 @@
 #include "script_component.hpp"
 #include "XEH_PREP.inc.sqf"
 
+uiNamespace setVariable [QGVAR(loadoutMigrations), createHashMap];
+
 private _allItems = uiNamespace getVariable "ace_arsenal_configItemsFlat" apply { _x };
 // load the blacklist from file and store it in memory
 private _blacklist = call compileFinal preprocessFileLineNumbers QPATHTOF(defaultItems.sqf);
