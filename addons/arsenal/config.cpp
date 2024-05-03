@@ -1,8 +1,9 @@
 #include "script_component.hpp"
 
 #include "CfgEventHandlers.inc"
-#include "RscCommon.hpp"
 #include "defines.hpp"
+#include "ui\RscCommon.inc"
+#include "ui\RscAttributes.inc"
 #include "Cfg3DEN.inc"
 
 class CfgPatches {
