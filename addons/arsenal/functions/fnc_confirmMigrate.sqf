@@ -98,8 +98,7 @@ private _mut_newLoadout = [_loadout] call _fnc_migrate;
 
 // remove the cached data
 private _contentPanelCtrl = _display displayCtrl IDC_contentPanel;
-private _aceCacheName = _loadoutName + str ace_arsenal_currentLoadoutsTab;
-_contentPanelCtrl setVariable [_aceCacheName, nil];
+_contentPanelCtrl setVariable [LOADOUT_CACHE_NAME(_loadoutName), nil];
 
 // update the displayed data
 private _myLoadoutsButton = _display displayCtrl IDC_buttonMyLoadouts;

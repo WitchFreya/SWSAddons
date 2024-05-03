@@ -6,3 +6,4 @@ ADDON = true;
 #include "initSettings.inc.sqf"
 
 ["ace_arsenal_loadoutsDisplayOpened", FUNC(onLoadoutsDisplayOpened)] call CBA_fnc_addEventHandler;
+["ace_arsenal_loadoutsListFilled", FUNC(onLoadoutsListFilled)] call CBA_fnc_addEventHandler;

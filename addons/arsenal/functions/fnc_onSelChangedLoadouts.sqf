@@ -16,9 +16,9 @@
 
 TRACE_1(QGVAR(DOUBLES(fnc,onSelChangedLoadouts)),_this);
 
-params ["_control", "_curSel"];
+params ["_contentPanelCtrl", "_curSel"];
 
-private _ctrlGroup = ctrlParentControlsGroup _control;
+private _ctrlGroup = ctrlParentControlsGroup _contentPanelCtrl;
 private _migrateButtonCtrl = _ctrlGroup controlsGroupCtrl IDC_buttonMigrate;
 
 _migrateButtonCtrl ctrlEnable false;
@@ -28,18 +28,11 @@ if (_curSel == -1 || { ace_arsenal_currentLoadoutsTab != IDC_buttonMyLoadouts })
   _migrateButtonCtrl ctrlCommit 0;
 };
 
-private _loadoutName = _control lnbText [_curSel, 1];
-private _allLoadouts = profileNamespace getVariable ["ace_arsenal_saved_loadouts", []];
-_allLoadouts select {
-  _x params ["_name"];
-  _name == _loadoutName;
-} select 0 params ["_name", "_extendedLoadout"];
-
-// avoid mutating the loadout by creating a copy first
-[+_extendedLoadout] call ace_arsenal_fnc_verifyLoadout params [
+private _loadoutName = _contentPanelCtrl lnbText [_curSel, 1];
+_contentPanelCtrl getVariable [LOADOUT_CACHE_NAME(_loadoutName), []] params [
   "",
-  "_nullItemsList",
-  "_unavailableItems"
+  ["_nullItemsList", []],
+  ["_unavailableItems", []]
 ];
 
 private _missingItems /* string[] */ = _nullItemsList + _unavailableItems;
@@ -48,11 +41,10 @@ if (_missingItems isEqualTo []) exitWith {
   _migrateButtonCtrl ctrlCommit 0;
 };
 
-private _uniqueMissingItems = _missingItems arrayIntersect _missingItems;
 private _migrations = uiNamespace getVariable [QGVAR(loadoutMigrations), createHashMap];
-private _migratableItems = (keys _migrations) arrayIntersect _uniqueMissingItems;
+private _migratableItems = (keys _migrations) arrayIntersect _missingItems;
 if (_migratableItems isEqualTo []) exitWith {
-  TRACE_1("No items to migrate",_uniqueMissingItems);
+  TRACE_1("No items to migrate",_missingItems);
   _migrateButtonCtrl ctrlCommit 0;
 };
 
