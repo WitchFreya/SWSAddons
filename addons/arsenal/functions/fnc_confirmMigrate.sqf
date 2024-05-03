@@ -23,13 +23,13 @@ if !(canSuspend) exitWith {
   _this spawn FUNC(confirmMigrate);
 };
 
-params [["_originalName", "", [""]]];
+params [["_loadoutName", "", [""]]];
 
 private _migrations = uiNamespace getVariable [QGVAR(loadoutMigrations), createHashMap];
 private _allLoadouts = profileNamespace getVariable ["ace_arsenal_saved_loadouts", []];
 private _extendedLoadout /* CBA Extended Loadout */ = _allLoadouts select {
   _x params ["_name"];
-  _name == _originalName;
+  _name == _loadoutName;
 } select 0 /* [name, loadout] */ select 1;
 
 _extendedLoadout params ["_loadout", "_cbaExtended"];
@@ -49,7 +49,7 @@ private _itemsToChange /* string[] */ = call {
 TRACE_1("ItemsToChange",_itemsToChange);
 
 private _message = composeText [
-  format ["The following items in loadout %1 have potential migrations:", _originalName],
+  format ["The following items in loadout %1 have potential migrations:", _loadoutName],
   lineBreak, lineBreak,
   parseText format [
     "<t size='0.8' font='EtelkaMonospacePro'>%1</t>",
@@ -89,9 +89,19 @@ private _fnc_migrate = {
   _current apply { [_x] call _fnc_migrate };
 };
 
-private _mut_newLoadout = [_loadout] call _fnc_migrate;
-private _newName = format ["%1 (Migrated)", _originalName];
+// backup the original
+[format ["%1 (Backup)", _loadoutName], _extendedLoadout] call FUNC(saveLoadoutWithName);
 
-[_newName, [_mut_newLoadout, _cbaExtended]] call FUNC(saveLoadoutWithName);
-[_display, format ["Loadout Saved: %1", _newName]] call ace_arsenal_fnc_message;
+// save the new
+private _mut_newLoadout = [_loadout] call _fnc_migrate;
+[_loadoutName, [_mut_newLoadout, _cbaExtended]] call FUNC(saveLoadoutWithName);
+
+// remove the cached data
+private _contentPanelCtrl = _display displayCtrl IDC_contentPanel;
+private _aceCacheName = _loadoutName + str ace_arsenal_currentLoadoutsTab;
+_contentPanelCtrl setVariable [_aceCacheName, nil];
+
+// update the displayed data
+private _myLoadoutsButton = _display displayCtrl IDC_buttonMyLoadouts;
+[_display, format ["Loadout Migrated: %1", _loadoutName]] call ace_arsenal_fnc_message;
 [_display,  _display displayCtrl IDC_buttonMyLoadouts] call ace_arsenal_fnc_fillLoadoutsList;
