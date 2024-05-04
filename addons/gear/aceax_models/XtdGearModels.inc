@@ -22,6 +22,7 @@ class XtdGearModels {
       , "Snare"
       , "Sonic"
       , "Spritz"
+      , "Sula"
       , "Tiger"
       , "Vertigo"
     };
@@ -41,6 +42,7 @@ class XtdGearModels {
     class Snare {};
     class Sonic {};
     class Spritz {};
+    class Sula {};
     class Tiger {};
     class Vertigo {};
   };
