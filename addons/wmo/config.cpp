@@ -1,6 +1,5 @@
 #include "script_component.hpp"
 
-#include "CfgFunctions.inc"
 #include "CfgEventHandlers.inc"
 
 class CfgPatches {
