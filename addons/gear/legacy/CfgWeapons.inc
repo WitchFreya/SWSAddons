@@ -22,8 +22,9 @@
   QWEAPONS_FN(Sawbones),    \
   QWEAPONS_FN(Snare),       \
   QWEAPONS_FN(Sonic),       \
+  QWEAPONS_FN(Sula),        \
   QWEAPONS_FN(Tiger),       \
-  QWEAPONS_FN(Vertigo),     \
+  QWEAPONS_FN(Vertigo)
 
 #define C_GEAR(varName,varVisorColor) \
     C_HELMET(varName,varVisorColor);  \
@@ -107,6 +108,7 @@ class CfgWeapons {
   C_GEAR(Snare,snare);
   C_GEAR(Sonic,defiant);
   C_GEAR(Spritz,spritz);
+  C_GEAR(Sula,sula);
   C_GEAR(Tiger,tiger);
   C_GEAR(Vertigo,gold);
 
