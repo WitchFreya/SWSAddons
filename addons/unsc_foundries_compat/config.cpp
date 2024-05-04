@@ -5,7 +5,7 @@
 class CfgPatches {
   class ADDON {
     author = QUOTE(AUTHOR);
-    name = QUOTE(COMPONENT);
+    name = COMPONENT_NAME;
     units[] = { };
     weapons[] = {};
     requiredVersion = REQUIRED_VERSION;
