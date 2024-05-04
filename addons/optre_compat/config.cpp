@@ -5,13 +5,14 @@
 class EventHandlers;
 class CBA_Extended_EventHandlers_Base;
 #include "CfgVehicles.inc"
-
 #include "CfgWeapons.inc"
+
+#include "ui\RscAttributes.inc"
 
 class CfgPatches {
   class ADDON {
     author = QUOTE(AUTHOR);
-    name = QUOTE(COMPONENT);
+    name = COMPONENT_NAME;
     units[] = { };
     weapons[] = {};
     requiredVersion = REQUIRED_VERSION;
@@ -24,6 +25,7 @@ class CfgPatches {
       , "OPTRE_Vehicles_Air"
       , "OPTRE_Misc"
       , "OPTRE_ACE_Compat"
+      , "OPTRE_Modules"
     };
     VERSION_CONFIG;
   };

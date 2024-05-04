@@ -9,7 +9,7 @@ class ItemInfo;
 
 class CfgPatches {
   class ADDON {
-    name = QUOTE(COMPONENT);
+    name = COMPONENT_NAME;
     units[] = {};
     weapons[] = { CLASSES_WEAPONS };
     magazines[] = { };
