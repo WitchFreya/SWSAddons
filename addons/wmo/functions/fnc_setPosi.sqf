@@ -30,7 +30,7 @@ if ([player] call FUNCMAIN(isInVehicle)) exitWith {
 };
 
 // Ace Fatigue recovery aid
-if !(isNil {ace_advanced_fatigue_anReserve}) then {
+if (!isNil {ace_advanced_fatigue_anReserve} && {!isNull BW_anker}) then {
   ace_advanced_fatigue_anReserve = ace_advanced_fatigue_anReserve + (ace_advanced_fatigue_recoveryFactor * 0.8);
   if (ace_advanced_fatigue_anReserve < 2300) exitWith {};
   ace_advanced_fatigue_anReserve = 2300;
