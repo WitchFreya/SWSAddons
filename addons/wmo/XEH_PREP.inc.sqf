@@ -1,1 +1,1 @@
-PREP(setPosi);
+PREP(handleFatigue);
