@@ -79,6 +79,11 @@ if !(_doMigrate) exitWith {
 
 /* Take a loadout and convert it to the new items. Recursive to handle nested properties. */
 private _fnc_migrate = {
+  params ["_current"];
+  if !(typeName _current in ["SCALAR", "ARRAY", "STRING"]) exitWith {
+    ERROR_3("Unexpected type in loadout migration",_current,_loadoutName,_extendedLoadout);
+    _current;
+  };
   params [
     ["_current", [], ["", [], 0]]
   ];
