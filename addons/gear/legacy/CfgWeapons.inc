@@ -12,6 +12,7 @@
   QWEAPONS_FN(Hound),       \
   QWEAPONS_FN(Hurricane),   \
   QWEAPONS_FN(Maid),        \
+  QWEAPONS_FN(Manny),       \
   QWEAPONS_FN(Orange),      \
   QWEAPONS_FN(Polaris),     \
   QWEAPONS_FN(Purple),      \
@@ -101,6 +102,7 @@ class CfgWeapons {
   C_GEAR(Hound,hound);
   C_GEAR(Hurricane,purple);
   C_GEAR(Maid,sepia);
+  C_GEAR(Manny,manny);
   C_GEAR(Polaris,pink);
   C_GEAR(Rabbit,rabbit);
   C_GEAR(Roman,grey);

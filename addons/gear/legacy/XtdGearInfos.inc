@@ -79,6 +79,7 @@ class XtdGearInfos
     C_GEAR_INFO_OP(Hound);
     C_GEAR_INFO_OP(Hurricane);
     C_GEAR_INFO_OP(Maid);
+    C_GEAR_INFO_OP(Manny);
     C_GEAR_INFO_OP(Polaris);
     C_GEAR_INFO_OP(Rabbit);
     C_GEAR_INFO_OP(Rifleman);
