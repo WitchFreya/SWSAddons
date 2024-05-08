@@ -14,6 +14,7 @@ class XtdGearModels {
       , "Hound"
       , "Hurricane"
       , "Maid"
+      , "Manny"
       , "Polaris"
       , "Rabbit"
       , "Rifleman"
@@ -35,6 +36,7 @@ class XtdGearModels {
     class Hound {};
     class Hurricane {};
     class Maid {};
+    class Manny {};
     class Polaris {};
     class Rabbit {};
     class Roman {};
