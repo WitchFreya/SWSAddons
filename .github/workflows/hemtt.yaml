@@ -1,0 +1,17 @@
+name: HEMTT
+
+on: [push]
+
+jobs:
+  hemtt:
+    name: HEMTT
+    runs-on: windows-latest
+    if: "!contains(github.event.head_commit.message, '[ci skip]')"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup HEMTT
+        uses: arma-actions/hemtt@v1
+      - name: Run HEMTT check
+        run: hemtt check
+
