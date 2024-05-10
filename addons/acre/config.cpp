@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 
 #include "CfgWeapons.inc"
+#include "CfgEventHandlers.inc"
 
 class CfgPatches {
   class ADDON {
@@ -12,7 +13,8 @@ class CfgPatches {
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {
-      "acre_main"
+      "ace_arsenal"
+      , "acre_main"
       , "acre_sys_components"
     };
     skipWhenMissingDependencies = TRUE;

@@ -29,7 +29,6 @@ workshop = [
   "463939057",  # ace
   "623475643",  # 3den Enhanced
   "769440155",  # OPTRE
-  "894678801",  # TFAR
   "2018593688", # Zeus Enhanced - ACE3 Compatibilityr
   "583496184",  # CUP Terrains - Core
   "861133494",  # JSRS SOUNDMOD
@@ -66,6 +65,15 @@ workshop = [
 
   # server mods
   "1768992669", # inidb2
+]
+
+[hemtt.launch.tfar]
+workshop = [
+  "894678801", # TFAR
+]
+[hemtt.launch.acre]
+workshop = [
+  "751965892", # acre
 ]
 
 [hemtt.launch.full]
