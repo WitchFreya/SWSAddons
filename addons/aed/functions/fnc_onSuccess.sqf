@@ -30,7 +30,7 @@ _patient setVariable ["ace_medical_CPR_provider", objNull, true];
 
 // patient is not in a vehicle
 if !([_patient] call EFUNC(common,isInVehicle)) then {
-  private _bystanders = nearestObjects [_medic, ["CAManBase"], 1.7] - [_medic];
+  private _bystanders = nearestObjects [_patient, ["CAManBase"], 1.7] - [_medic, _patient];
   {
     [_x] call FUNC(punishHubris);
   } forEach _bystanders;
