@@ -12,8 +12,7 @@ class CfgPatches {
     weapons[] = {  };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {
-      "LM_OPCAN_UNSC"
-      , "sws_main"
+      "sws_main"
       , "sws_tech"
       , "sws_common"
       , "OPTRE_UNSC_Units"
