@@ -24,11 +24,13 @@ params [
 
 TRACE_2("AED success",_medic,_patient);
 
+playSound3D [QPATHTO_R(sounds\bump.ogg), objNull, false, getPosASL _patient, 5, 1, 15];
+
 _patient setVariable ["ace_medical_CPR_provider", objNull, true];
 
 // patient is not in a vehicle
-if (vehicle _patient isEqualTo _patient) then {
-  private _bystanders = nearestObjects [_medic, ["CAManBase"], 1.7] - [_medic];
+if !([_patient] call EFUNC(common,isInVehicle)) then {
+  private _bystanders = nearestObjects [_patient, ["CAManBase"], 1.7] - [_medic, _patient];
   {
     [_x] call FUNC(punishHubris);
   } forEach _bystanders;
