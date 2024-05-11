@@ -20,7 +20,7 @@ class CfgAmmo {
     hit = 16;
     deflecting = 0;
     thrust = 75;
-    model = QPATHTOF(data\tracer_orange\tracer_orange.p3d);
+    model = QPATHTOEF(ballistics,data\tracer_orange\tracer_orange.p3d);
     timeToLive = 6;
     tracerEndTime = 3;
     tracerStartTime = 0;

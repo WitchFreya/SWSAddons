@@ -1,7 +1,6 @@
 #include "script_component.hpp"
 
 #include "CfgEventHandlers.inc"
-#include "CfgAmmo.inc"
 #include "CfgMagazineWells.inc"
 
 #include "SWS_Scopes.inc"
@@ -24,6 +23,7 @@ class CfgPatches {
       , "Dmns_Weapons_F_MachineGuns"
       , "sws_main"
       , "sws_common"
+      , "sws_ballistics"
       , "sws_tech"
     };
     VERSION_CONFIG;

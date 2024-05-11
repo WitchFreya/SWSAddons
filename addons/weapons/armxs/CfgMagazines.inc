@@ -1,9 +1,10 @@
-#define CLASSES_MAGAZINES \
-  "SWS_Magazine_60Rnd_65x39_Caseless" \
-  , "SWS_Magazine_60Rnd_65x39_Caseless_Tracers" \
-  , "SWS_Magazine_60Rnd_65x39_Caseless_Tracers_Blue" \
-  , "SWS_Magazine_60Rnd_65x39_Caseless_Tracers_Yellow" \
-  , "SWS_Magazine_60Rnd_65x39_Caseless_Tracers_Green"
+#define CLASSES_MAGAZINES                               \
+  "SWS_Magazine_60Rnd_65x39_Caseless"                   \
+  , "SWS_Magazine_60Rnd_65x39_Caseless_Tracers"         \
+  , "SWS_Magazine_60Rnd_65x39_Caseless_Tracers_Blue"    \
+  , "SWS_Magazine_60Rnd_65x39_Caseless_Tracers_Yellow"  \
+  , "SWS_Magazine_60Rnd_65x39_Caseless_Tracers_Green"   \
+  , "SWS_Magazine_60Rnd_65x39_Caseless_Tracers_Orange"
 
 class CfgMagazines {
   class 100Rnd_65x39_Caseless_Black_Mag;
@@ -29,6 +30,7 @@ class CfgMagazines {
   C_TRACERS(Blue);
   C_TRACERS(Yellow);
   C_TRACERS(Green);
+  C_TRACERS(Orange);
 
 #undef C_TRACERS
 };

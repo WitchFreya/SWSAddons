@@ -1,21 +1,19 @@
 #include "script_component.hpp"
 
-class ItemInfo;
-
-#include "CfgWeapons.inc"
+#include "CfgAmmo.inc"
 
 class CfgPatches {
   class ADDON {
-    name = COMPONENT_NAME;
+    name = QUOTE(COMPONENT);
     author = QUOTE(AUTHOR);
+    ammo[] = { };
     units[] = { };
     weapons[] = {  };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {
-      "sws_main"
-      , "sws_tech"
+      "optre_weapons"
+      , "sws_main"
       , "sws_common"
-      , "OPTRE_UNSC_Units"
     };
     VERSION_CONFIG;
   };
