@@ -22,4 +22,4 @@ params [
 
 [_obliviousFool, "activity", "%1 stood too close to a defib", [[_obliviousFool, false, true] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
 [_obliviousFool, 0.3, "body", "punch", _obliviousFool] call ace_medical_fnc_addDamageToUnit;
-[_obliviousFool, true, 3, true] call ace_medical_fnc_setUnconscious;
+[_obliviousFool, true] call ace_medical_fnc_setUnconscious;
