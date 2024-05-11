@@ -6,11 +6,15 @@ class CfgPatches {
   class ADDON {
     name = QUOTE(COMPONENT);
     author = QUOTE(AUTHOR);
+    ammo[] = { };
     units[] = { };
     weapons[] = {  };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = {"sws_main","sws_common"};
-    skipWhenMissingDependencies = TRUE;
+    requiredAddons[] = {
+      "optre_weapons"
+      , "sws_main"
+      , "sws_common"
+    };
     VERSION_CONFIG;
   };
 };

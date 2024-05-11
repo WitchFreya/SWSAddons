@@ -2,6 +2,11 @@
 
 #include "CfgAmmo.inc"
 
+#define REQUIRED_ADDONS_BASE  \
+  "OPTRE_Weapons"             \
+  , "OPTRE_ACE_Compat"        \
+  , QUOTE(ADDON)
+
 class CfgPatches {
   class SUBADDON {
     addonRootClass = QUOTE(ADDON);
@@ -9,9 +14,18 @@ class CfgPatches {
     units[] = { };
     weapons[] = { };
     magazines[] = { };
-    ammo[] = { };
+    ammo[] = { CLASSES_AMMO };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = {"sws_ballistics"};
+    requiredAddons[] = {REQUIRED_ADDONS_BASE};
     VERSION_CONFIG;
+  };
+
+  // Ensure this loads after Wentis if it exists.
+  class DOUBLES(SUBADDON,Wentis13_Blue_Tracers) : SUBADDON {
+    requiredAddons[] = {
+      REQUIRED_ADDONS_BASE
+      ,"Wentis13_Blue_Tracers"
+    };
+    skipWhenMissingDependencies = TRUE;
   };
 };
