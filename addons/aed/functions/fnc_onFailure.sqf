@@ -23,3 +23,5 @@ params [
 ];
 
 _this call ace_medical_treatment_fnc_cprFailure;
+
+playSound3D [QPATHTO_R(sounds\fuse.ogg), objNull, false, getPosASL _patient, 5, 1, 15];

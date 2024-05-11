@@ -24,6 +24,8 @@ params [
 
 TRACE_2("AED success",_medic,_patient);
 
+playSound3D [QPATHTO_R(sounds\bump.ogg), objNull, false, getPosASL _patient, 5, 1, 15];
+
 _patient setVariable ["ace_medical_CPR_provider", objNull, true];
 
 // patient is not in a vehicle
