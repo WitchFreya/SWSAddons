@@ -3,6 +3,9 @@
 #include "CfgWeapons.inc"
 #include "CfgEventHandlers.inc"
 
+#include "ui\RscCommon.inc"
+#include "ui\RscAttributes.inc"
+
 class CfgPatches {
   class ADDON {
     name = COMPONENT_NAME;
