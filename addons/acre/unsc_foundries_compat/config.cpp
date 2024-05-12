@@ -12,8 +12,7 @@ class CfgPatches {
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {
-      QUOTE(ADDON)
-      , "19thArmors_new"
+      "19thArmors_new"
       , "19thMD_Vests_Kelp"
     };
     skipWhenMissingDependencies = TRUE;
