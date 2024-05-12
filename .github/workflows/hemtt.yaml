@@ -8,6 +8,10 @@ jobs:
     runs-on: windows-latest
     if: "!contains(github.event.head_commit.message, '[ci skip]')"
     steps:
+      - name: Install Arma 3 Tools
+        uses: arma-actions/arma3-tools@master
+        with:
+          toolsUrl: ${{ secrets.A3_TOOLS_URL }}
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup HEMTT
