@@ -73,7 +73,8 @@ workshop = [
 ]
 [hemtt.launch.acre]
 workshop = [
-  "751965892", # acre
+  "751965892",  # acre
+  "3043180500", # acre persistence
 ]
 
 [hemtt.launch.full]
