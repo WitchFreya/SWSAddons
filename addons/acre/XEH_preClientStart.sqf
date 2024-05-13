@@ -1,3 +1,3 @@
 #include "script_component.hpp"
 
-uiNamespace setVariable [QGVAR(radioClassNames), [true] call FUNC(scanConfig)];
+[true] call FUNC(radioClassNames); // builds the radio cache
