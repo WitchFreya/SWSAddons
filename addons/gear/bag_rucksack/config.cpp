@@ -1,5 +1,7 @@
 #include "script_component.hpp"
 
+class XtdGearInfo;
+
 #include "CfgVehicles.inc"
 
 class CfgPatches {
