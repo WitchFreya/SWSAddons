@@ -221,9 +221,10 @@ class XtdGearModels {
 
       class Customization {
         alwaysSelectable = TRUE;
-        values[] = { "None", "Hound" };
+        values[] = { "None", "Hound", "Manny" };
         class None {};
         class Hound { description = "Hound's customized version."; };
+        class Manny { description = "Manny's customized version."; };
       };
     };
 

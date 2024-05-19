@@ -1,15 +1,3 @@
-#define CLASSES_VEHICLES              \
-  "SWS_V_Bag_Rucksack"                \
-  , "SWS_V_Bag_Rucksack_Medic"        \
-  , "SWS_V_Bag_Rucksack_Heavy"        \
-  , "SWS_V_Bag_Rucksack_Hound"        \
-  , "SWS_V_Bag_Rucksack_Medic_Hound"  \
-  , "SWS_V_Bag_Rucksack_Heavy_Hound"
-
-#define HS_VAR_BIOFOAM "biofoam"
-#define HS_VAR_SOFTPACKS "AP_Heavy"
-#define HS_BASE "camo1", HS_VAR_SOFTPACKS, HS_VAR_BIOFOAM
-
 class CfgVehicles {
   class OPTRE_ILCS_Rucksack_Black;
 
@@ -54,29 +42,12 @@ class CfgVehicles {
     displayName = QNAME(Rucksack - Heavy);
     class XtdGearInfo : XtdGearInfo { variant = "Heavy"; };
   };
-
-  #define HS_TEXTURES                         \
-    QPATHTOF(data\bag_rucksack\hound_co.paa)  \
-    , QPATHTOF(data\softpacks_co.paa)         \
-    , QPATHTOF(data\biofoam_co.paa)
-  class SWS_V_Bag_Rucksack_Hound : SWS_V_Bag_Rucksack {
-    displayName = QNAME(Hound's Rucksack);
-    hiddenSelectionsTextures[] = {HS_TEXTURES};
-    class XtdGearInfo : XtdGearInfo { customization = "Hound"; };
-  };
-  class SWS_V_Bag_Rucksack_Medic_Hound : SWS_V_Bag_Rucksack_Medic {
-    displayName = QNAME(Hound's Rucksack - Medic);
-    hiddenSelectionsTextures[] = {HS_TEXTURES};
-    class XtdGearInfo : XtdGearInfo { customization = "Hound"; };
-  };
-  class SWS_V_Bag_Rucksack_Heavy_Hound : SWS_V_Bag_Rucksack_Heavy {
-    displayName = QNAME(Hound's Rucksack - Heavy);
-    hiddenSelectionsTextures[] = {HS_TEXTURES};
-    class XtdGearInfo : XtdGearInfo { customization = "Hound"; };
-  };
-  #undef HS_TEXTURES
 };
 
-#undef HS_BASE
-#undef HS_VAR_BIOFOAM
-#undef HS_VAR_SOFTPACKS
+#include "CfgVehicles_Variants.inc"
+
+#define CLASSES_VEHICLES              \
+  "SWS_V_Bag_Rucksack"                \
+  , "SWS_V_Bag_Rucksack_Medic"        \
+  , "SWS_V_Bag_Rucksack_Heavy"        \
+  , CLASSES_VEHICLES_VARIANTS
