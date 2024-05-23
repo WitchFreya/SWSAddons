@@ -1,13 +1,13 @@
 #define CLASSES_WEAPONS \
-  "SWS_S379_DMR"
+  "SWS_Weapon_SXMR397"
 
 class CfgWeapons
 {
   class OPTRE_M393_DMR;
-  class SWS_Weapon_XMR397: OPTRE_M393_DMR
+  class SWS_Weapon_SXMR397: OPTRE_M393_DMR
   {
-    WEAPON_META(XMR397,2);
-    displayName = QUOTE(sXMR-397 Equalizer);
+    ITEM_META(2);
+    displayName = QUOTE(SxMR-397 Equalizer);
     magazines[] = {"SWS_Magazine_15rnd_338_Abyssal"};
     magazineWell[] = { "XMR_Abyssal" };
     recoil = "recoil_dmr_02";
@@ -16,11 +16,11 @@ class CfgWeapons
     class WeaponSlotsInfo : WeaponSlotsInfo {
       class CowsSlot : CowsSlot
       {
-        delete compatibleItems;
+        delete CompatibleItems;
         class CompatibleItems : SWS_Scopes_Marksman {};
       };
       class PointerSlot : PointerSlot {
-        compatibleItems[] = {
+        CompatibleItems[] = {
           "acc_flashlight",
           "acc_pointer_IR",
           "ACE_acc_pointer_red",
