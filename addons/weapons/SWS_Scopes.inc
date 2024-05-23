@@ -34,6 +34,30 @@ class SWS_Scopes_65mm {
   optre_recon_sight_unsc = TRUE;
 };
 
+class SWS_Scopes_PDW {
+  optic_aco = TRUE;
+  optic_aco_grn = TRUE;
+  optic_aco_smg = TRUE;
+  optic_aco_grn_smg = TRUE;
+
+  optic_holosight = TRUE;
+  optic_holosight_blk_f = TRUE;
+  optic_holosight_khk_f = TRUE;
+
+  optic_holosight_smg = TRUE;
+  optic_holosight_smg_blk_f = TRUE;
+  optic_holosight_smg_khk_f = TRUE;
+
+  optic_mrco = TRUE;
+
+  optre_recon_sight = TRUE;
+  optre_recon_sight_desert = TRUE;
+  optre_recon_sight_green = TRUE;
+  optre_recon_sight_red = TRUE;
+  optre_recon_sight_snow = TRUE;
+  optre_recon_sight_unsc = TRUE;
+};
+
 class SWS_Scopes_762mm : SWS_Scopes_65mm {
   optre_recon_sight = FALSE;
   optre_recon_sight_desert = FALSE;
@@ -49,36 +73,36 @@ class SWS_Scopes_762mm : SWS_Scopes_65mm {
 };
 class SWS_Scopes_Marksman : SWS_Scopes_65mm
 {
-  OPTRE_BR45_Scope = 1;
-  OPTRE_M392_Scope = 1;
-  OPTRE_M393_Scope = 1;
-  OPTRE_M12_Optic = 1;
-  OPTRE_M12_Optic_Green = 1;
-  OPTRE_M12_Optic_Red = 1;
-  OPTRE_BMR_Scope = 1;
-  OPTRE_M7_Sight = 1;
-  OPTRE_M73_SmartLink = 1;
-  optic_KHS_blk = 1;
-  optic_KHS_hex = 1;
-  optic_KHS_tan = 1;
-  optic_SOS = 1;
-  ACE_optic_SOS_2D = 1;
-  optic_SOS_khk_F = 1;
-  ACE_optic_SOS_PIP = 1;
-  optic_LRPS = 1;
-  ACE_optic_LRPS_2D = 1;
-  optic_LRPS_ghex_F = 1;
-  optic_LRPS_tna_F = 1;
-  ACE_optic_LRPS_PIP = 1;
-  optic_Nightstalker = 1;
-  optic_NVS = 1;
-  OPTRE_SRM_Sight = 1;
-  optic_tws = 1;
-  optic_AMS = 1;
-  optic_AMS_khk = 1;
-  optic_AMS_snd = 1;
-  optic_DMS = 1;
-  optic_DMS_weathered_Kir_F = 1;
-  optic_DMS_ghex_F = 1;
-  SWS_Optic_SxAMS = 1;
+  OPTRE_BR45_Scope = TRUE;
+  OPTRE_M392_Scope = TRUE;
+  OPTRE_M393_Scope = TRUE;
+  OPTRE_M12_Optic = TRUE;
+  OPTRE_M12_Optic_Green = TRUE;
+  OPTRE_M12_Optic_Red = TRUE;
+  OPTRE_BMR_Scope = TRUE;
+  OPTRE_M7_Sight = TRUE;
+  OPTRE_M73_SmartLink = TRUE;
+  optic_KHS_blk = TRUE;
+  optic_KHS_hex = TRUE;
+  optic_KHS_tan = TRUE;
+  optic_SOS = TRUE;
+  ACE_optic_SOS_2D = TRUE;
+  optic_SOS_khk_F = TRUE;
+  ACE_optic_SOS_PIP = TRUE;
+  optic_LRPS = TRUE;
+  ACE_optic_LRPS_2D = TRUE;
+  optic_LRPS_ghex_F = TRUE;
+  optic_LRPS_tna_F = TRUE;
+  ACE_optic_LRPS_PIP = TRUE;
+  optic_Nightstalker = TRUE;
+  optic_NVS = TRUE;
+  OPTRE_SRM_Sight = TRUE;
+  optic_tws = TRUE;
+  optic_AMS = TRUE;
+  optic_AMS_khk = TRUE;
+  optic_AMS_snd = TRUE;
+  optic_DMS = TRUE;
+  optic_DMS_weathered_Kir_F = TRUE;
+  optic_DMS_ghex_F = TRUE;
+  SWS_Optic_SxAMS = TRUE;
 };

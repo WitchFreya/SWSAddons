@@ -15,7 +15,7 @@ class CfgMagazines
     descriptionShort = ".338 Hand-loaded variant. Uses experimental alloys derived from studying Forerunner metallic alloys.";
     lastRoundsTracer = 3;
     count = 20;
-    mass = 10;
+    mass = 15;
   };
 
   class SWS_Magazine_20Rnd_338_Abyssal_Tracers : SWS_Magazine_20Rnd_338_Abyssal

@@ -7,7 +7,7 @@ class CfgWeapons
   class SWS_Optic_SxAMS: optic_AMS
   {
     displayName = QNAME(SxAMS);
-    descriptionShort = QNAME(Experimental optic based on the US Optics MR-10. A night vision mode has been added.);
+    descriptionShort = QUOTE(Experimental optic based on the US Optics MR-10.<br/> A night vision mode has been added.);
     class itemInfo : itemInfo
     {
       class opticsModes : opticsModes
