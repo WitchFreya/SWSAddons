@@ -1,5 +1,7 @@
 #include "script_component.hpp"
 
+class Mode_FullAuto;
+
 #include "CfgWeapons.inc"
 #include "CfgVehicles.inc"
 
