@@ -1,5 +1,5 @@
 #define CLASSES_MAGAZINES \
-  "50Rnd_570x28_SMG_03"
+  "SWS_Magazine_50rnd_SX90"
 class CfgMagazines
 {
   class 50Rnd_570x28_SMG_03;
@@ -11,7 +11,7 @@ class CfgMagazines
     displayName = QNAME(50Rnd 6.5mm Sx90 Magazine);
     displayNameShort = QUOTE(6.5mm Caseless);
     descriptionShort = "Caliber: 6.5mm<br />Rounds: 50<br />Used in: SX90";
-    mass = 12;
+    mass = 17;
     lastRoundsTracer = 7;
   };
 };
