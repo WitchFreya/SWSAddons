@@ -7,4 +7,4 @@
 #define SLOT_BACKPACK 901
 
 #define MASS_MAG 10
-#define MASS_WEAPON 30
+#define MASS_WEAPON 100
