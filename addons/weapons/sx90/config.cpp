@@ -1,5 +1,4 @@
 #include "script_component.hpp"
-#include "CfgAmmo.inc"
 #include "CfgWeapons.inc"
 #include "CfgMagazines.inc"
 #include "CfgMagazineWells.inc"

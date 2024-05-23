@@ -1,3 +1,3 @@
-#define SUBCOMPONENT sxmr397
-#define SUBCOMPONENT_BEAUTIFIED SxMR-397
+#define SUBCOMPONENT sx90
+#define SUBCOMPONENT_BEAUTIFIED Sx90
 #include "..\script_component.hpp"
