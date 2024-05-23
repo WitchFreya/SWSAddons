@@ -6,7 +6,7 @@ class TransportPylonsComponent;
 class Turrets;
 class CopilotTurret;
 class CargoTurret;
-class LowROF;
+class Mode_FullAuto;
 class Burst1;
 class Burst2;
 class AnimationSources;

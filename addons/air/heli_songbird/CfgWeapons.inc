@@ -11,7 +11,7 @@ class CfgWeapons {
     cursorAim = "mg";
     displayName = "Sx1337-H";
 
-    class LowROF : LowROF {
+    class LowROF : Mode_FullAuto {
       dispersion = 0.0045;
       recoil = "recoil_empty";
     };
