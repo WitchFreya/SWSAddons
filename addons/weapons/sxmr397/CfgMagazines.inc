@@ -10,7 +10,7 @@ class CfgMagazines
     ITEM_META(2);
     CLEARANCE(RESTRICTED/DECWHI);
     ammo = "SWS_338_Abyssal";
-    displayName = QUOTE(20Rnd .338 XMR-0 Magazine);
+    displayName = QNAME(20Rnd .338 SxMR-0 Magazine);
     displayNameShort = QUOTE(.338 Abyssal);
     descriptionShort = ".338 Hand-loaded variant. Uses experimental alloys derived from studying Forerunner metallic alloys.";
     lastRoundsTracer = 3;
