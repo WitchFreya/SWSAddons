@@ -14,16 +14,27 @@ class CfgWeapons
         delete compatibleItems;
         class CompatibleItems : SWS_Scopes_PDW {};
       };
+      class MuzzleSlot : MuzzleSlot {
+        compatibleItems[] = {
+          "ACE_muzzle_mzls_H",
+          "muzzle_snds_H",
+          "muzzle_snds_65_TI_blk_F",
+          "OPTRE_MA5Suppressor"
+        };
+      };
       class PointerSlot : PointerSlot {
         compatibleItems[] = {
           "acc_flashlight",
-          "acc_pointer_IR",
-          "ACE_acc_pointer_red",
-          "ACE_acc_pointer_green_IR",
-          "ACE_acc_pointer_green",
+          ATT_POINTER_ACE,
           ATT_POINTER_OPTRE_RAIL_M12
         };
       };
+    };
+    class XtdGearInfo {
+      model = "SWS_Weapon_PDW";
+      underbarrel = "None";
+      body = "Sx90";
+      variant = "Standard";
     };
   };
 };

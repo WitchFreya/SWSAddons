@@ -7,12 +7,12 @@ class CfgWeapons
   class SWS_Weapon_SXMR397: OPTRE_M393_DMR
   {
     ITEM_META(2);
-    displayName = QNAME(SxMR-397 Equalizer);
+    displayName = QNAME(SxMR-397);
     magazines[] = {"SWS_Magazine_15rnd_338_Abyssal"};
     magazineWell[] = { "XMR_Abyssal" };
     recoil = "recoil_dmr_02";
     recoilProne = "recoil_ebr";
-
+    baseWeapon = "SWS_Weapon_SXMR397";
     class WeaponSlotsInfo : WeaponSlotsInfo {
       class CowsSlot : CowsSlot
       {
@@ -22,10 +22,7 @@ class CfgWeapons
       class PointerSlot : PointerSlot {
         CompatibleItems[] = {
           "acc_flashlight",
-          "acc_pointer_IR",
-          "ACE_acc_pointer_red",
-          "ACE_acc_pointer_green_IR",
-          "ACE_acc_pointer_green",
+          ATT_POINTER_ACE,
           ATT_POINTER_OPTRE_RAIL_M12
         };
       };
