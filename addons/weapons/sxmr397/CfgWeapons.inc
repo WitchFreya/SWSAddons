@@ -19,6 +19,15 @@ class CfgWeapons
         delete CompatibleItems;
         class CompatibleItems : SWS_Scopes_Marksman {};
       };
+      class MuzzleSlot : MuzzleSlot {
+        delete CompatibleItems;
+        CompatibleItems[] = {
+          "OPTRE_MA5Suppressor",
+          "muzzle_snds_B",
+          "OPTRE_SRS99D_Suppressor",
+          "OPTRE_M7_silencer"
+        };
+      };
       class PointerSlot : PointerSlot {
         CompatibleItems[] = {
           "acc_flashlight",

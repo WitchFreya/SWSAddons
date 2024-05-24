@@ -73,15 +73,18 @@ class SWS_Scopes_762mm : SWS_Scopes_65mm {
 };
 class SWS_Scopes_Marksman : SWS_Scopes_65mm
 {
+
+  OPTRE_M7_Sight = FALSE;
+  OPTRE_M73_SmartLink = FALSE;
+  OPTRE_M12_Optic = FALSE;
+  OPTRE_M12_Optic_Green = FALSE;
+  OPTRE_M12_Optic_Red = FALSE;
+
   OPTRE_BR45_Scope = TRUE;
   OPTRE_M392_Scope = TRUE;
   OPTRE_M393_Scope = TRUE;
-  OPTRE_M12_Optic = TRUE;
-  OPTRE_M12_Optic_Green = TRUE;
-  OPTRE_M12_Optic_Red = TRUE;
   OPTRE_BMR_Scope = TRUE;
-  OPTRE_M7_Sight = TRUE;
-  OPTRE_M73_SmartLink = TRUE;
+
   optic_KHS_blk = TRUE;
   optic_KHS_hex = TRUE;
   optic_KHS_tan = TRUE;

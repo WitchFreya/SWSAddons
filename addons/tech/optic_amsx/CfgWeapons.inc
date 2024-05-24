@@ -6,6 +6,11 @@ class CfgWeapons {
   class SWS_Optic_AMSx: optic_AMS_base {
     ITEM_META(2);
     displayName = QNAME(AMSx);
+    ACE_ScopeHeightAboveRail = 3.8933;
+    ACE_ScopeAdjust_Vertical[] = {0, 16};
+    ACE_ScopeAdjust_Horizontal[] = {-11, 11};
+    ACE_ScopeAdjust_VerticalIncrement = 0.1;
+    ACE_ScopeAdjust_HorizontalIncrement = 0.1;
     descriptionShort = QUOTE(Experimental optic based on the US Optics MR-10.<br/> A night vision mode has been added.);
     class ItemInfo : InventoryOpticsItem_Base_F {
 			mass=14;
@@ -22,14 +27,14 @@ class CfgWeapons {
 						"OpticsCHAbera2",
 						"OpticsBlur3"
 					};
-					opticsZoomMin=0.025;
-					opticsZoomMax=0.075000003;
-					opticsZoomInit=0.075000003;
-					discreteDistance[]={300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
-					discreteDistanceInitIndex=2;
+					opticsZoomMin = 0.0285; // Use ACE Value
+					opticsZoomMax = 0.085; // Use ACE Value
+					opticsZoomInit = 0.085; // Use ACE Value
+					discreteDistance[] = {100};  // Use ACE Value
+					discreteDistanceInitIndex=0;  // Use ACE Value
 					distanceZoomMin=300;
 					distanceZoomMax=2000;
-					discretefov[]={0.075000003,0.025};
+					discretefov[] = {0.085, 0.0285}; // Use ACE Value
 					discreteInitIndex=0;
 					memoryPointCamera="opticView";
 					modelOptics[]= {
