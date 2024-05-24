@@ -1,8 +1,7 @@
 #include "script_component.hpp"
 
-class ItemInfo;
-class OpticsModes;
-class Snip;
+class InventoryOpticsItem_Base_F;
+
 
 #include "CfgWeapons.inc"
 
@@ -17,7 +16,7 @@ class CfgPatches
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {
-      "A3_Weapons_F_Acc"
+      "A3_Weapons_F_Mark_Acc"
     };
     VERSION_CONFIG;
     addonRootClass = QUOTE(ADDON);
