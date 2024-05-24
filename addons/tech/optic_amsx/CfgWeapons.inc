@@ -1,30 +1,24 @@
 #define CLASSES_WEAPONS \
   "SWS_Optic_AMSx"
 
-class CfgWeapons
-{
+class CfgWeapons {
   class optic_AMS_base;
-  class SWS_Optic_AMSx: optic_AMS_base
-  {
+  class SWS_Optic_AMSx: optic_AMS_base {
     ITEM_META(2);
     displayName = QNAME(AMSx);
     descriptionShort = QUOTE(Experimental optic based on the US Optics MR-10.<br/> A night vision mode has been added.);
-    class ItemInfo : InventoryOpticsItem_Base_F
-    {
+    class ItemInfo : InventoryOpticsItem_Base_F {
 			mass=14;
 			opticType=2;
 			weaponInfoType="RscWeaponRangeZeroingFOV";
 			optics=1;
 			modelOptics="\A3\Weapons_F_Mark\Acc\reticle_acco_ams_F";
-			class OpticsModes
-			{
-				class AMS
-				{
+			class OpticsModes {
+				class AMS {
 					opticsID=1;
 					opticsDisplayName="WFOV";
 					useModelOptics=1;
-					opticsPPEffects[]=
-					{
+					opticsPPEffects[]= {
 						"OpticsCHAbera2",
 						"OpticsBlur3"
 					};
@@ -38,21 +32,18 @@ class CfgWeapons
 					discretefov[]={0.075000003,0.025};
 					discreteInitIndex=0;
 					memoryPointCamera="opticView";
-					modelOptics[]=
-					{
+					modelOptics[]= {
 						"\A3\Weapons_F_Mark\Acc\reticle_acco_ams_F",
 						"\A3\Weapons_F_Mark\Acc\reticle_acco_ams_z_F"
 					};
-					visionMode[]=
-					{
+					visionMode[]= {
 						"Normal", "NVG"
 					};
 					opticsFlare=1;
 					opticsDisablePeripherialVision=1;
 					cameraDir="";
 				};
-				class Iron
-				{
+				class Iron {
 					opticsID=2;
 					opticsDisplayName="";
 					useModelOptics=0;
@@ -72,6 +63,7 @@ class CfgWeapons
 					discreteInitIndex=0;
 					cameraDir="";
 				};
+      };
     };
   };
 };
