@@ -1,6 +1,7 @@
 #include "script_component.inc.sqf"
 
 TRACE_1(QFUNC(saveRadios),_this);
+TRACE_1("acre_player",acre_player);
 
 /*
  * Author: Maid

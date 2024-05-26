@@ -16,3 +16,17 @@ class Extended_PostInit_EventHandlers {
     clientInit = QUOTE(call COMPILE_SCRIPT(XEH_postClientInit));
   };
 };
+class Extended_Killed_EventHandlers {
+  class CAManBase {
+    class ADDON {
+      clientKilled = QUOTE([_this select 0] call FUNC(saveRadios));
+    };
+  };
+};
+class Extended_Respawn_EventHandlers {
+  class CAManBase {
+    class ADDON {
+      clientRespawn = QUOTE([_this select 0] call FUNC(restoreRadios));
+    };
+  };
+};
