@@ -7,7 +7,7 @@ TRACE_1(QFUNC(saveRadios),_this);
  * Save the state of radios of acre_player.
  *
  * Arguments:
- * 0: Namespace, defaults to profileNamespace, where the radios will be stored <NAMESPACE>
+ * 0: Namespace, defaults to acre_player, where the radios will be stored <NAMESPACE>
  *
  * Return Value:
  * The serialized radios.
@@ -19,8 +19,12 @@ TRACE_1(QFUNC(saveRadios),_this);
  */
 
 params [
-  ["_namespace", profileNamespace]
+  ["_namespace", acre_player]
 ];
+
+if !(local _namespace) exitWith {
+  [QFUNC(saveRadios),_this] call CBA_fnc_targetEvent;
+};
 
 [QGVAR(beforeRadiosSaved), [_namespace]] call CBA_fnc_localEvent;
 
@@ -44,6 +48,6 @@ private _serializedOtherRadios = _otherRadios apply {
 _namespace setVariable [QGVAR(savedRadiosPTT), _serializedPTTRadios];
 _namespace setVariable [QGVAR(savedRadiosOther), _serializedOtherRadios];
 [QGVAR(radiosSaved), [_namespace, _serializedPTTRadios, _serializedOtherRadios]] call CBA_fnc_localEvent;
-_serialized;
+[_serializedPTTRadios, _serializedOtherRadios];
 
 

@@ -7,7 +7,7 @@ TRACE_1(QFUNC(restoreRadios),_this);
  * Restore the radios of acre_player.
  *
  * Arguments:
- * 0: Namespace, defaults to profileNamespace, where the stored radio state will be retrieved <NAMESPACE>
+ * 0: Namespace, defaults to acre_player, where the stored radio state will be retrieved <NAMESPACE>
  *
  * Return Value:
  * 0..N: The modified radio ids <STRING[]>
@@ -19,8 +19,12 @@ TRACE_1(QFUNC(restoreRadios),_this);
  */
 
 params [
-  ["_namespace", profileNamespace]
+  ["_namespace", acre_player]
 ];
+
+if !(local _namespace) exitWith {
+  [QFUNC(restoreRadios),_this] call CBA_fnc_targetEvent;
+};
 
 if !([] call ACRE_FUNC(isInitialized)) exitWith {
   [
@@ -54,7 +58,7 @@ private _fnc_findTargets = {
     if !(IS_STRING(_target)) then {
       continueWith nil;
     };
-    [_target, _data] call FUNC(deserializeRadio);
+    [FUNC(deserializeRadio), [_target, _data]] call CBA_fnc_execNextFrame;
     _target;
   } select {!isNil {_x}};
 };

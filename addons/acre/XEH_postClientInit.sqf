@@ -2,14 +2,14 @@
 
 ASSERT_DEFINED({acre_player},"This probably means acre isn't loaded or initialized.");
 
-// When the display is opened, adjust the cache for the radio items to display the descriptive name from acre
-GVAR(ace_arsenal_displayOpenedEH) = ["ace_arsenal_displayOpened", {
-  [] call FUNC(populateAceCache);
-
+GVAR(cba_preLoadoutSetEH) = ["CBA_preLoadoutSet", {
+  params ["_unit"];
+  [_unit] call FUNC(saveRadios);
 }] call CBA_fnc_addEventHandler;
 
-GVAR(cba_loadoutGet) = ["CBA_loadoutGet", {
+GVAR(cba_loadoutSetEH) = ["CBA_loadoutSet", {
   params ["_unit"];
+  [_unit] call FUNC(restoreRadios);
 }] call CBA_fnc_addEventHandler;
 
 
