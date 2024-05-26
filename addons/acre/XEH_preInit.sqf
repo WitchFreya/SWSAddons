@@ -11,3 +11,5 @@ GVAR(radioProps) = [
   "volume",
   "onOffState"
 ];
+
+#include "initSettings.inc.sqf"

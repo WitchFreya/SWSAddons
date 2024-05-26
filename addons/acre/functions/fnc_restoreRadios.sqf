@@ -32,7 +32,7 @@ if !([] call ACRE_FUNC(isInitialized)) exitWith {
     {[] call ACRE_FUNC(isInitialized)},
     {_this call FUNC(restoreRadios)},
     _this,
-    10,
+    GVAR(restoreRadiosTimeout),
     {WARNING_1("Timed out waiting for all the radios on unit to initialize",acre_player);}
   ] call CBA_fnc_waitUntilAndExecute;
 };

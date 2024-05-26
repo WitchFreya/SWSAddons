@@ -19,14 +19,14 @@ class Extended_PostInit_EventHandlers {
 class Extended_Killed_EventHandlers {
   class CAManBase {
     class ADDON {
-      clientKilled = QUOTE([_this select 0] call FUNC(saveRadios));
+      clientKilled = QUOTE(_this call FUNC(onKilled));
     };
   };
 };
 class Extended_Respawn_EventHandlers {
   class CAManBase {
     class ADDON {
-      clientRespawn = QUOTE([_this select 0] call FUNC(restoreRadios));
+      clientRespawn = QUOTE(_this call FUNC(onRespawn));
     };
   };
 };

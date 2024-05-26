@@ -4,12 +4,16 @@ ASSERT_DEFINED({acre_player},"This probably means acre isn't loaded or initializ
 
 GVAR(cba_preLoadoutSetEH) = ["CBA_preLoadoutSet", {
   params ["_unit"];
+  if !(GVAR(restoreOnLoadoutSet)) exitWith {
+    TRACE_2("Nothing to do",GVAR(restoreOnLoadoutSet),_unit);
+  };
   [_unit] call FUNC(saveRadios);
 }] call CBA_fnc_addEventHandler;
 
 GVAR(cba_loadoutSetEH) = ["CBA_loadoutSet", {
   params ["_unit"];
+  if !(GVAR(restoreOnLoadoutSet)) exitWith {
+    TRACE_2("Nothing to do",GVAR(restoreOnLoadoutSet),_unit);
+  };
   [_unit] call FUNC(restoreRadios);
 }] call CBA_fnc_addEventHandler;
-
-
