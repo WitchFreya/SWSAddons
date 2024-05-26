@@ -1,5 +1,6 @@
 #include "script_component.hpp"
 
+#include "CfgFunctions.inc"
 #include "CfgWeapons.inc"
 #include "CfgEventHandlers.inc"
 
@@ -18,6 +19,7 @@ class CfgPatches {
     requiredAddons[] = {
       "ace_arsenal"
       , "acre_main"
+      , "acre_api"
       , "acre_sys_components"
     };
     skipWhenMissingDependencies = TRUE;
