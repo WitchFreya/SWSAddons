@@ -1,5 +1,7 @@
 #include "script_component.inc.sqf"
 
+TRACE_1(QFUNC(radioClassNames),_this);
+
 /*
  * Author: Maid
  * List all class names for radios, including unique radio instances.
@@ -20,8 +22,6 @@
 params [
   ["_rebuildCache", false, [false]]
 ];
-
-TRACE_1(QGVAR(DOUBLES(fnc,radioClassNames)),_rebuildCache);
 
 private _cache = uiNamespace getVariable QGVAR(radioClassNames);
 // force rebuild the cache if it hasn't been populated

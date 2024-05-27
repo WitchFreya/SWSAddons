@@ -2,3 +2,14 @@
 ADDON = false;
 #include "XEH_PREP.inc.sqf"
 ADDON = true;
+
+GVAR(radioProps) = [
+  "audioSource",
+  "channel",
+  "spatial",
+  "speaker",
+  "volume",
+  "onOffState"
+];
+
+#include "initSettings.inc.sqf"

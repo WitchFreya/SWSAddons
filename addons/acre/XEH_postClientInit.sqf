@@ -1,17 +1,30 @@
 #include "script_component.hpp"
 
-// When the display is opened, adjust the cache for the radio items to display the descriptive name from acre
-GVAR(ace_arsenal_displayOpenedEH) = ["ace_arsenal_displayOpened", {
-  private _rightPanelCache = uiNamespace getVariable ["ace_arsenal_rightPanelCache", createHashMap];
-  private _acreItems = [] call FUNC(radioClassNames);
-  private _radios = items ace_arsenal_center arrayIntersect _acreItems;
-  {
-    private _radio = _x;
-    private _cacheKey = "CfgWeapons" + _radio;
-    private _displayName = [_radio] call acre_sys_core_fnc_getDescriptiveName;
-    _rightPanelCache getOrDefaultCall [_cacheKey, {
-      ["", getText (configFile >> "CfgWeapons" >> _radio >> "picture")]
-    }] params ["", "_picture"];
-    _rightPanelCache set [_cacheKey, [_displayName, _picture]];
-  } forEach _radios;
+["acre_api_fnc_godModeConfigureAccess", acre_api_fnc_godModeConfigureAccess] call CBA_fnc_addEventHandler;
+
+ASSERT_DEFINED({acre_player},"This probably means acre isn't loaded or initialized.");
+
+GVAR(cba_preLoadoutSetEH) = ["CBA_preLoadoutSet", {
+  params ["_unit"];
+  if !(GVAR(restoreOnLoadoutSet)) exitWith {
+    TRACE_2("Nothing to do",GVAR(restoreOnLoadoutSet),_unit);
+  };
+  [_unit] call FUNC(saveRadios);
 }] call CBA_fnc_addEventHandler;
+
+GVAR(cba_loadoutSetEH) = ["CBA_loadoutSet", {
+  params ["_unit"];
+  if !(GVAR(restoreOnLoadoutSet)) exitWith {
+    TRACE_2("Nothing to do",GVAR(restoreOnLoadoutSet),_unit);
+  };
+  [_unit] call FUNC(restoreRadios);
+}] call CBA_fnc_addEventHandler;
+
+GVAR(ace_zeus_zeusCreatedEH) = ["ace_zeus_zeusCreated", {
+  [true, true] call acre_api_fnc_godModeConfigureAccess;
+}] call CBA_fnc_addEventHandler;
+
+// add god mode access to zeuses that aren't in zeus cam
+if !(isNull getAssignedCuratorLogic player) then {
+  [true, true] call ace_api_fnc_godModeConfigureAccess;
+};
