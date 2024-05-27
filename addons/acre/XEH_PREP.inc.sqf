@@ -1,4 +1,5 @@
 PREP(deserializeRadio);
+PREP(onCuratorDeleted);
 PREP(onKilled);
 PREP(onRespawn);
 PREP(populateAceCache);

@@ -30,3 +30,10 @@ class Extended_Respawn_EventHandlers {
     };
   };
 };
+class Extended_Deleted_EventHandlers {
+  class ModuleCurator_F {
+    class ADDON {
+      deleted = QUOTE(_this call FUNC(onCuratorDeleted));
+    };
+  };
+};
