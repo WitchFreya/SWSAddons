@@ -7,6 +7,10 @@ class MainTurret;
 class OpticsIn;
 class Wide;
 class AssembleInfo;
+class Components;
+class SensorsManagerComponent;
+class ManSensorComponent;
+class GroundTarget;
 
 #include "CfgVehicles.inc"
 
