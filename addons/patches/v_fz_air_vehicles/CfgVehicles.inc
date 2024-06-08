@@ -6,13 +6,22 @@ class CfgVehicles {
   class VES_F99 : OPTRE_Wombat_S {
     displayName = "F-99 Wombat";
     crew = "B_UAV_AI";
+    class TransportItems {};
+    class TransportWeapons {};
+    class TransportMagazines {};
   };
   class VES_F99_Gunpod : OPTRE_Wombat {
     displayName = "F-99 Wombat (Gunpod)";
     crew = "B_UAV_AI";
+    class TransportItems {};
+    class TransportWeapons {};
+    class TransportMagazines {};
   };
   class VES_F99_Missile : OPTRE_Wombat_B {
     displayName = "F-99 Wombat (Missile)";
     crew = "B_UAV_AI";
+    class TransportItems {};
+    class TransportWeapons {};
+    class TransportMagazines {};
   };
 };
