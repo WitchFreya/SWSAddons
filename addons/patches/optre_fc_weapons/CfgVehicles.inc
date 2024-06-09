@@ -1,4 +1,4 @@
-class CfgVehicle {
+class CfgVehicles {
 	class StaticMGWeapon;
 	class AAA_System_01_Base_F;
 	class OPTRE_FC_Tyrant : AAA_System_01_Base_F {
