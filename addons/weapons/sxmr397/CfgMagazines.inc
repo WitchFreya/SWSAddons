@@ -10,9 +10,9 @@ class CfgMagazines
     ITEM_META(2);
     CLEARANCE(RESTRICTED/DECWHI);
     ammo = "SWS_338_Abyssal";
-    displayName = QNAME(20Rnd .338 SxMR-0 Magazine);
+    displayName = QNAME(20Rnd .338 Magazine);
     displayNameShort = QUOTE(.338 Abyssal);
-    descriptionShort = ".338 Hand-loaded variant. Uses experimental alloys derived from studying Forerunner metallic alloys.";
+    descriptionShort = QUOTE(.338 DMR rounds hand-loaded by Demon.<br />Tipped with an alloy derived from Forerunner materials.);
     lastRoundsTracer = 3;
     count = 20;
     mass = 15;
@@ -21,7 +21,7 @@ class CfgMagazines
   class SWS_Magazine_20Rnd_338_Abyssal_Tracers : SWS_Magazine_20Rnd_338_Abyssal
   {
     displayName = QUOTE(20Rnd .338 XMR-T (RED));
-    displayNameShort = QUOTE(.338 Abyssal Red Tracer);
+    displayNameShort = QUOTE(.338 DMR rounds hand-loaded by Demon.<br />Tipped with an alloy derived from Forerunner materials.<br />Red tracer variant.);
     tracersEvery = 1;
   };
 };
