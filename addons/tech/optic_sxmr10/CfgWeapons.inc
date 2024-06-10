@@ -1,17 +1,20 @@
 #define CLASSES_WEAPONS \
-  "SWS_Optic_AMSx"
+  "SWS_Optic_SxMR10"
 
 class CfgWeapons {
   class optic_AMS_base;
-  class SWS_Optic_AMSx: optic_AMS_base {
+  class SWS_Optic_SxMR10: optic_AMS_base {
     ITEM_META(2);
-    displayName = QNAME(AMSx);
+    displayName = QNAME(SxMR-10);
+		picture = "\x\sws\addons\tech\optic_sxmr10\data\icon_optic_sxmr10_ca.paa"; // I wanted to use a QSUBPATHTOF here but it kept adding .sqf. TODO: Diagnose this later?
+    descriptionShort = QUOTE(Experimental optic based on the US Optics MR-10.<br/> A night vision mode has been added.);
+
     ACE_ScopeHeightAboveRail = 3.8933;
     ACE_ScopeAdjust_Vertical[] = {0, 16};
     ACE_ScopeAdjust_Horizontal[] = {-11, 11};
     ACE_ScopeAdjust_VerticalIncrement = 0.1;
     ACE_ScopeAdjust_HorizontalIncrement = 0.1;
-    descriptionShort = QUOTE(Experimental optic based on the US Optics MR-10.<br/> A night vision mode has been added.);
+
     class ItemInfo : InventoryOpticsItem_Base_F {
 			mass=14;
 			opticType=2;

@@ -107,5 +107,5 @@ class SWS_Scopes_Marksman : SWS_Scopes_65mm
   optic_DMS = TRUE;
   optic_DMS_weathered_Kir_F = TRUE;
   optic_DMS_ghex_F = TRUE;
-  SWS_Optic_AMSx = TRUE;
+  SWS_Optic_SxMR10 = TRUE;
 };
