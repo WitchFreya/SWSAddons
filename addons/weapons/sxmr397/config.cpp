@@ -1,7 +1,6 @@
 #include "script_component.hpp"
 
 class Single;
-class FullAuto;
 class WeaponSlotsInfo;
 class MuzzleSlot;
 class PointerSlot;

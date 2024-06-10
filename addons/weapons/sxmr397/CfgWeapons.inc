@@ -13,6 +13,10 @@ class CfgWeapons
     recoil = "recoil_dmr_02";
     recoilProne = "recoil_ebr";
     baseWeapon = "SWS_Weapon_SXMR397";
+    class Single : Single {
+      reloadTime = 0.2;
+    };
+
     class WeaponSlotsInfo : WeaponSlotsInfo {
       class CowsSlot : CowsSlot
       {
@@ -35,6 +39,12 @@ class CfgWeapons
           ATT_POINTER_OPTRE_RAIL_M12
         };
       };
+    };
+    class XtdGearInfo {
+      model = "SWS_Weapon_DMR";
+      underbarrel = "None";
+      body = "SxMR-397";
+      variant = "Standard";
     };
   };
 };

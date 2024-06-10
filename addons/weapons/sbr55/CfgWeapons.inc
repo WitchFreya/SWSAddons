@@ -57,6 +57,12 @@ class CfgWeapons {
       aiRateOfFire = 1;
       aiRateOfFireDistance = 10;
     };
+    class XtdGearInfo {
+      model = "SWS_Weapon_DMR";
+      underbarrel = "None";
+      body = "SBR-55";
+      variant = "Standard";
+    };
   };
 };
 
