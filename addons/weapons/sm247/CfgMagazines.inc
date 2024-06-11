@@ -30,7 +30,7 @@ class CfgMagazines {
     initSpeed = 950;
     picture = "\DMNS\Weapons\Ammo\Data\CM12_AMMO_Icon.paa";
     descriptionShort = "100 Round Magazine<SM247>7.62x51 Carbine<SM247>";
-    mass = 40;
+    mass = 30;
     tracersEvery = 0;
     lastRoundsTracer = 5;
   };
@@ -45,7 +45,7 @@ class CfgMagazines {
 
   class SWS_Magazine_200Rnd_762x51_Mag : SWS_Magazine_100Rnd_762x51_Mag {
     displayName = QNAME_762x51(200);
-    mass = 70;
+    mass = 60;
     count = 200;
     descriptionShort = "200 Round Magazine<SM247>7.62x51 Carbine<SM247>";
   };
@@ -60,7 +60,7 @@ class CfgMagazines {
 
   class SWS_Magazine_400Rnd_762x51_Mag : SWS_Magazine_100Rnd_762x51_Mag {
     displayName = QNAME_762x51(400);
-    mass = 110;
+    mass = 120;
     count = 400;
     descriptionShort = "400 Round Magazine<SM247>7.62x51 Carbine<SM247>";
   };

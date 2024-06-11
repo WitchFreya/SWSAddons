@@ -15,7 +15,7 @@ class CfgMagazines {
     descriptionShort = "ARMXS 6.5mm Ammunition";
     lastRoundsTracer = 5;
     count = 60;
-    mass = 25;
+    mass = 20;
   };
 
   class SWS_Magazine_60Rnd_65x39_Caseless_Tracers : SWS_Magazine_60Rnd_65x39_Caseless {
