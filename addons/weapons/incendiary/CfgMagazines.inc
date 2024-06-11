@@ -12,6 +12,7 @@ class CfgMagazines {
     displayName = QNAME(Dragon's Breath (6Rnd));
     descriptionShort = QUOTE(6 Rounds<br/>8 Gauge<br/>Incendiary);
     tracersEvery = 1;
+    mass = 10;
   };
 
   class SWS_Magazine_12_Rnd_Shotgun_Incendiary : SWS_Magazine_6Rnd_Shotgun_Incendiary {
