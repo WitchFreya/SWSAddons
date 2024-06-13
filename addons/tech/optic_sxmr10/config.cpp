@@ -1,7 +1,9 @@
 #include "script_component.hpp"
 
-class InventoryOpticsItem_Base_F;
-
+class ItemInfo;
+class OpticsModes;
+class AMS;
+class Iron;
 
 #include "CfgWeapons.inc"
 
