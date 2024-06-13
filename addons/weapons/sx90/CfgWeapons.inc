@@ -25,21 +25,20 @@ class CfgWeapons
         class CompatibleItems : SWS_Scopes_PDW {};
       };
       class MuzzleSlot : MuzzleSlot {
-        compatibleItems[] = {
-          "ACE_muzzle_mzls_H",
-          "muzzle_snds_H",
-          "muzzle_snds_65_TI_blk_F",
-          "OPTRE_MA5Suppressor"
+        delete compatibleItems;
+        class compatibleItems {
+          ACE_muzzle_mzls_H = TRUE;
+          muzzle_snds_H = TRUE;
+          muzzle_snds_65_TI_blk_F = TRUE;
+          OPTRE_MA5Suppressor = TRUE;
         };
       };
       class PointerSlot : PointerSlot {
-        compatibleItems[] = {
-          "acc_flashlight",
-          ATT_POINTER_ACE,
-          ATT_POINTER_OPTRE_RAIL_M12
+        delete compatibleItems;
+        class CompatibleItems : SWS_Pointers_NoBMR {};
         };
       };
-    };
+
     class XtdGearInfo {
       model = "SWS_Weapon_PDW";
       underbarrel = "None";
@@ -68,11 +67,12 @@ class CfgWeapons
         class CompatibleItems : SWS_Scopes_PDW {};
       };
       class MuzzleSlot : MuzzleSlot {
-        compatibleItems[] = {
-          "ACE_muzzle_mzls_H",
-          "muzzle_snds_H",
-          "muzzle_snds_65_TI_blk_F",
-          "OPTRE_MA5Suppressor"
+        delete compatibleItems;
+        class compatibleItems {
+          ACE_muzzle_mzls_H = TRUE;
+          muzzle_snds_H = TRUE;
+          muzzle_snds_65_TI_blk_F = TRUE;
+          OPTRE_MA5Suppressor = TRUE;
         };
       };
       class PointerSlot : PointerSlot {

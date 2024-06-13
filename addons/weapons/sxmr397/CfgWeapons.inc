@@ -25,18 +25,17 @@ class CfgWeapons
       };
       class MuzzleSlot : MuzzleSlot {
         delete CompatibleItems;
-        CompatibleItems[] = {
-          "OPTRE_MA5Suppressor",
-          "muzzle_snds_B",
-          "OPTRE_SRS99D_Suppressor",
-          "OPTRE_M7_silencer"
+        class CompatibleItems {
+          OPTRE_MA5Suppressor = TRUE;
+          muzzle_snds_B = TRUE;
+          OPTRE_SRS99D_Suppressor = TRUE;
+          OPTRE_M7_silencer = TRUE;
         };
       };
       class PointerSlot : PointerSlot {
-        CompatibleItems[] = {
-          "acc_flashlight",
-          ATT_POINTER_ACE,
-          ATT_POINTER_OPTRE_RAIL_M12
+        delete compatibleItems;
+        class CompatibleItems : SWS_Pointers_Standard {
+          ACE_SPIR = FALSE;
         };
       };
     };
