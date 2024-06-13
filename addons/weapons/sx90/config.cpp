@@ -5,6 +5,7 @@ class PointerSlot;
 class CowsSlot;
 class MuzzleSlot;
 class SWS_Scopes_PDW;
+class SWS_Pointers_NoBMR;
 
 #include "script_component.hpp"
 #include "CfgWeapons.inc"

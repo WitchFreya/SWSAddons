@@ -76,11 +76,8 @@ class CfgWeapons
         };
       };
       class PointerSlot : PointerSlot {
-        compatibleItems[] = {
-          "acc_flashlight",
-          ATT_POINTER_ACE,
-          ATT_POINTER_OPTRE_RAIL_M12
-        };
+        delete compatibleItems;
+        class CompatibleItems : SWS_Pointers_NoBMR {};
       };
     };
 

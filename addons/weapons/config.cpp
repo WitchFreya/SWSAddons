@@ -4,7 +4,7 @@
 #include "CfgMagazineWells.inc"
 
 #include "SWS_Scopes.inc"
-
+#include "SWS_Attachments.inc"
 class CfgPatches {
   class ADDON {
     name = COMPONENT_NAME;

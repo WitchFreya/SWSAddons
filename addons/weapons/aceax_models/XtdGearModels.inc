@@ -66,9 +66,9 @@ class XtdGearModels {
       class Underbarrel {
         alwaysSelectable = TRUE;
         label = "Underbarrel Attachment";
-        values[] = {"None", "UBGL"};
+        values[] = {"None", "UGL"};
         class None {};
-        class UBGL { description = "UnderBarrel Grenade Launcher."; };
+        class UGL { description = "Underbarrel Grenade Launcher."; };
       };
       class Variant {
         alwaysSelectable = TRUE;

@@ -10,7 +10,12 @@ class CfgWeapons {
     description = "SMA-37K Carbine";
     descriptionShort = "The SMA-37K, now optimized for advanced operations.";
     baseWeapon = "SWS_Weapon_SMA37K";
-
+    class WeaponSlotsInfo : WeaponSlotsInfo {
+      class PointerSlot : PointerSlot {
+        delete compatibleItems;
+        class CompatibleItems : SWS_Pointers_Standard {};
+      };
+    };
     class XtdGearInfo {
       model = "SWS_Weapon_Autorifles";
       underbarrel = "None";

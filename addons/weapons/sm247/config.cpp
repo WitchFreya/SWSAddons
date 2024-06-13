@@ -5,6 +5,8 @@ class FullAuto;
 class WeaponSlotsInfo;
 class PointerSlot;
 
+class SWS_Pointers_Standard;
+
 #include "CfgAmmo.inc"
 #include "CfgMagazines.inc"
 #include "CfgWeapons.inc"

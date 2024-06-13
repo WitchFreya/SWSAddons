@@ -20,7 +20,7 @@ class CfgMagazines
 
   class SWS_Magazine_20Rnd_338_Abyssal_Tracers : SWS_Magazine_20Rnd_338_Abyssal
   {
-    displayName = QUOTE(20Rnd .338 XMR-T (RED));
+    displayName = QNAME(20Rnd .338 XMR-T (RED));
     displayNameShort = QUOTE(.338 DMR rounds hand-loaded by Demon.<br />Tipped with an alloy derived from Forerunner materials.<br />Red tracer variant.);
     tracersEvery = 1;
   };

@@ -44,7 +44,8 @@ class CfgWeapons {
 
     class WeaponSlotsInfo : WeaponSlotsInfo {
       class PointerSlot : PointerSlot {
-        compatibleItems[] = {ATT_POINTER_OPTRE_RAIL_M12};
+        delete compatibleItems;
+        class CompatibleItems : SWS_Pointers_Standard {};
       };
     };
   };

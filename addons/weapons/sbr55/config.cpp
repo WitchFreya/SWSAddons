@@ -5,6 +5,8 @@ class PointerSlot;
 class Single;
 class Burst;
 
+class SWS_Pointers_Standard;
+
 #include "CfgWeapons.inc"
 
 class CfgPatches {

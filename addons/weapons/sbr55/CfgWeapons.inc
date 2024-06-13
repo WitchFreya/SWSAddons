@@ -20,10 +20,8 @@ class CfgWeapons {
     class WeaponSlotsInfo : WeaponSlotsInfo {
       mass = 45;
       class PointerSlot : PointerSlot {
-        compatibleItems[] = {
-          ATT_POINTER_ACE
-          , ATT_POINTER_OPTRE_RAIL
-        };
+        delete compatibleItems;
+        class CompatibleItems : SWS_Pointers_Standard {};
       };
     };
 

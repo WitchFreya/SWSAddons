@@ -7,7 +7,7 @@ class PointerSlot;
 class CowsSlot;
 class ItemInfo;
 class SWS_Scopes_Marksman;
-
+class SWS_Pointers_Standard;
 #include "CfgAmmo.inc"
 #include "CfgWeapons.inc"
 #include "CfgMagazines.inc"

@@ -1,5 +1,7 @@
 #include "script_component.hpp"
 
+class SWS_Pointers_Standard;
+
 #include "CfgWeapons.inc"
 
 class CfgPatches {

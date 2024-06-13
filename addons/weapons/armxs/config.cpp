@@ -6,6 +6,7 @@ class WeaponSlotsInfo;
 class PointerSlot;
 class CowsSlot;
 class SWS_Scopes_65mm;
+class SWS_Pointers_NoBMR;
 
 #include "CfgWeapons.inc"
 #include "CfgMagazines.inc"
