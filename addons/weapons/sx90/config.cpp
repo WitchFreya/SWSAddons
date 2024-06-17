@@ -23,7 +23,7 @@ class CfgPatches
     magazines[] = { CLASSES_MAGAZINES };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = {"A3_Weapons_F_Mod_SMGs_SMG_03", "A3_Weapons_F"};
+    requiredAddons[] = {"A3_Weapons_F_Mod_SMGs_SMG_03", "A3_Weapons_F","sws_ballistics_tracers"};
     VERSION_CONFIG;
     addonRootClass = QUOTE(ADDON);
   };
