@@ -42,6 +42,7 @@ class CfgVehicles {
             animDirection = "mainTurret";
           };
           class DataLinkSensorComponent : SensorTemplateDataLink {
+            typeRecognitionDistance = -1;
             class AirTarget : SWS_SensorTargetTemplate {};
             class GroundTarget : SWS_SensorTargetTemplate {};
           };

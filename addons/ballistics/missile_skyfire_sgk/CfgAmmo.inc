@@ -1,23 +1,12 @@
 class CfgAmmo {
-  class M_AT;
-  class M_PG_AT;
-
-  class ACE_Hydra70_DAGR : M_PG_AT {
-    maxSpeed = 600;
-
-    class ACE_MissileGuidance {
-      defaultAttackProfile = "hellfire";
-      attackProfiles[] = {"hellfire", "hellfire_hi", "hellfire_lo"};
-    };
-  };
-
-  class SWS_Hydra70_DAGR_HE : M_AT {
+  class R_80mm_HE;
+  class SWS_Skyfire_SGK : R_80mm_HE {
     displayName = QNAME(Hydra-70 DAGR HE);
-    displayNameShort = "DAGR HE";
-    description = "Hydra-70 DAGR with High-Explosive Warhead";
-    descriptionShort  = "Hydra-70 DAGR with High-Explosive Warhead";
+    displayNameShort = "Skyfire SGK";
+    description = "Skyfire-70 with Scarlet Laser-Guidance Kit";
+    descriptionShort  = "Skyfire-70 with Scarlet Laser-Guidance Kit";
 
-    maxSpeed = 600;
+    maxSpeed = 500;
     class ACE_MissileGuidance {
       enabled = TRUE;
 
@@ -31,10 +20,10 @@ class CfgAmmo {
       seekerTypes[] = { "SALH" };
 
       defaultSeekerLockMode = "LOAL";
-      seekerLockModes[] = { "LOAL" };
+      seekerLockModes[] = { "LOAL", "LOBL" };
 
       seekerAngle = 90;
-      seekerAccuracy = 1;""
+      seekerAccuracy = 1;
 
       seekerMinRange = 1;
       seekerMaxRange = 2500;

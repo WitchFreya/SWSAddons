@@ -1,7 +1,5 @@
 #include "script_component.hpp"
 
-class ACE_MissileGuidance;
-
 #include "CfgWeapons.inc"
 #include "CfgMagazines.inc"
 #include "CfgAmmo.inc"
