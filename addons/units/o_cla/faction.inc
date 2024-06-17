@@ -805,9 +805,6 @@ class CfgGroups {
     };
 };
 
-
-class CBA_Extended_EventHandlers_base;
-
 class CfgVehicles {
 
     class I_LT_01_AA_F;
