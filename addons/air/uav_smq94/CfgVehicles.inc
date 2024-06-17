@@ -91,6 +91,19 @@ class CfgVehicles {
         textures[] = {QPATHTOF(data\uav_smq94\maid_co.paa)};
       };
     };
+
+    class Components : Components {
+      class SensorsManagerComponent : SensorsManagerComponent {
+        class Components : Components {
+          class ManSensorComponent : ManSensorComponent {
+            typeRecognitionDistance = 750;
+            class GroundTarget : GroundTarget {
+              maxRange = 1000;
+            };
+          };
+        };
+      };
+    };
   };
 
   class SWS_V_UAV_SMQ94 : SWS_V_UAV_SMQ94_Base {

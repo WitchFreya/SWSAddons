@@ -13,3 +13,5 @@
 #endif
 
 #include "\x\sws\addons\main\script_macros.hpp"
+
+#include "acre_macros.hpp"

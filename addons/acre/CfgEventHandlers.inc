@@ -16,3 +16,24 @@ class Extended_PostInit_EventHandlers {
     clientInit = QUOTE(call COMPILE_SCRIPT(XEH_postClientInit));
   };
 };
+class Extended_Killed_EventHandlers {
+  class CAManBase {
+    class ADDON {
+      clientKilled = QUOTE(_this call FUNC(onKilled));
+    };
+  };
+};
+class Extended_Respawn_EventHandlers {
+  class CAManBase {
+    class ADDON {
+      clientRespawn = QUOTE(_this call FUNC(onRespawn));
+    };
+  };
+};
+class Extended_Deleted_EventHandlers {
+  class ModuleCurator_F {
+    class ADDON {
+      deleted = QUOTE(_this call FUNC(onCuratorDeleted));
+    };
+  };
+};

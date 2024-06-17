@@ -1,1 +1,9 @@
+PREP(deserializeRadio);
+PREP(onCuratorDeleted);
+PREP(onKilled);
+PREP(onRespawn);
+PREP(populateAceCache);
 PREP(radioClassNames);
+PREP(restoreRadios);
+PREP(saveRadios);
+PREP(serializeRadio);

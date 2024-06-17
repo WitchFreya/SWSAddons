@@ -64,10 +64,7 @@ class CfgVehicles {
 		};
 	};
 
-	class MELB_MH6M: MELB_Base { SCOPE(0); };
-	class MELB_H6M: MELB_Base { SCOPE(0); };
 	class MELB_AH6M: MELB_Base {
-    SCOPE(1);
 		class AnimationSources: AnimationSources {
 			class AddCrosshair {
 				source = "user";
@@ -76,5 +73,9 @@ class CfgVehicles {
 			};
 		};
 	};
+
+  class MELB_H6M : MELB_Base {
+    displayName = "OH-6M Little Bird";
+  };
 };
 

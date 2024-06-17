@@ -1,16 +1,7 @@
 #include "script_component.hpp"
 
-class HitPoints;
-class HitHull;
-class Turrets;
-class MainTurret;
-class OpticsIn;
-class Wide;
-class AssembleInfo;
-class Components;
-class SensorsManagerComponent;
-class ManSensorComponent;
-class GroundTarget;
+class AcreIntercoms;
+class Intercom_1;
 
 #include "CfgVehicles.inc"
 
@@ -18,17 +9,19 @@ class CfgPatches {
   class SUBADDON {
     addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
-    units[] = { CLASSES_VEHICLES };
+    units[] = { };
     weapons[] = { };
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {
-      "melb"
-      , "DMNS_Supplies_F_Bags"
-      , "DMNS_Air_UAV_01"
+      "acre_main"
+      , "acre_sys_intercom"
+      , "MELB"
+      , "sws_patches_melb_reborn"
       , "sws_main"
     };
+    skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
   };
 };

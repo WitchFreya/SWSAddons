@@ -1,26 +1,19 @@
 #include "script_component.hpp"
 
-#include "CfgFunctions.inc"
-#include "CfgWeapons.inc"
-#include "CfgEventHandlers.inc"
-
-#include "ui\RscCommon.inc"
-#include "ui\RscAttributes.inc"
+#include "CfgVehicles.inc"
 
 class CfgPatches {
-  class ADDON {
+  class SUBADDON {
+    addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
-    author = QUOTE(AUTHOR);
     units[] = { };
     weapons[] = { };
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
     requiredAddons[] = {
-      "ace_arsenal"
-      , "acre_main"
-      , "acre_api"
-      , "acre_sys_components"
+      "optre_vehicles_air"
+      , "v_fz_air_vehicles"
     };
     skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
