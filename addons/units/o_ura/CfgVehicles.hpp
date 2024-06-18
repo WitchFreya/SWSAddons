@@ -3,8 +3,6 @@
 // Generated with Arma 3 version 216.151618 on Stable branch
 // Generated with ALiVE version 2.1.2.2309211
 //////////////////////////////////////////////////////////////////////////////////
-
-
 class CBA_Extended_EventHandlers_base;
 
 class CfgVehicles {
@@ -121,6 +119,91 @@ class CfgVehicles {
     class I_Plane_Fighter_04_F;
     class I_Plane_Fighter_04_F_OCimport_01 : I_Plane_Fighter_04_F { scope = 0; class EventHandlers; };
     class I_Plane_Fighter_04_F_OCimport_02 : I_Plane_Fighter_04_F_OCimport_01 { scope = 0; class EventHandlers; };
+
+    class EMP_Recon_Marksman;
+    class EMP_Recon_Marksman_OCimport_01 : EMP_Recon_Marksman { scope = 0; class EventHandlers; };
+    class EMP_Recon_Marksman_OCimport_02 : EMP_Recon_Marksman_OCimport_01 { class EventHandlers; };
+
+    class O_MBT_02_cannon_F;
+    class O_MBT_02_cannon_F_OCimport_01 : O_MBT_02_cannon_F { scope = 0; class EventHandlers; class Turrets; };
+    class O_MBT_02_cannon_F_OCimport_02 : O_MBT_02_cannon_F_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class O_MBT_04_cannon_F;
+    class O_MBT_04_cannon_F_OCimport_01 : O_MBT_04_cannon_F { scope = 0; class EventHandlers; class Turrets; };
+    class O_MBT_04_cannon_F_OCimport_02 : O_MBT_04_cannon_F_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class O_MBT_04_command_F;
+    class O_MBT_04_command_F_OCimport_01 : O_MBT_04_command_F { scope = 0; class EventHandlers; class Turrets; };
+    class O_MBT_04_command_F_OCimport_02 : O_MBT_04_command_F_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class I_LT_01_AT_F;
+    class I_LT_01_AT_F_OCimport_01 : I_LT_01_AT_F { scope = 0; class EventHandlers; class Turrets; };
+    class I_LT_01_AT_F_OCimport_02 : I_LT_01_AT_F_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class I_LT_01_cannon_F;
+    class I_LT_01_cannon_F_OCimport_01 : I_LT_01_cannon_F { scope = 0; class EventHandlers; class Turrets; };
+    class I_LT_01_cannon_F_OCimport_02 : I_LT_01_cannon_F_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class B_MBT_01_cannon_F;
+    class B_MBT_01_cannon_F_OCimport_01 : B_MBT_01_cannon_F { scope = 0; class EventHandlers; class Turrets; };
+    class B_MBT_01_cannon_F_OCimport_02 : B_MBT_01_cannon_F_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class O_APC_Tracked_02_AA_F;
+    class O_APC_Tracked_02_AA_F_OCimport_01 : O_APC_Tracked_02_AA_F { scope = 0; class EventHandlers; class Turrets; };
+    class O_APC_Tracked_02_AA_F_OCimport_02 : O_APC_Tracked_02_AA_F_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class I_LT_01_AA_F;
+    class I_LT_01_AA_F_OCimport_01 : I_LT_01_AA_F { scope = 0; class EventHandlers; class Turrets; };
+    class I_LT_01_AA_F_OCimport_02 : I_LT_01_AA_F_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class O_MBT_02_arty_F;
+    class O_MBT_02_arty_F_OCimport_01 : O_MBT_02_arty_F { scope = 0; class EventHandlers; class Turrets; };
+    class O_MBT_02_arty_F_OCimport_02 : O_MBT_02_arty_F_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
 
 
     class O_OURArmy_Anti_Tank_Person_02_01 : EMP_Demolitions_Specialist_OCimport_02 {
@@ -1211,6 +1294,513 @@ class CfgVehicles {
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
         ALiVE_orbatCreator_texture = "DigitalCamoGreen";
+
+    };
+
+    class O_OURArmy_Ranger_01_01 : EMP_Recon_Marksman_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Ranger 01";
+        side = 0;
+        faction = "O_URArmy";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
+
+        uniformClass = "U_O_CombatUniform_oucamo";
+
+        linkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
+        respawnlinkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
+
+        weapons[] = {"19_UNSC_MA5A","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
+        respawnWeapons[] = {"19_UNSC_MA5A","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
+
+        magazines[] = {"32Rnd_762x51_MA5","11Rnd_45ACP_Mag","32Rnd_762x51_MA5","11Rnd_45ACP_Mag"};
+        respawnMagazines[] = {"32Rnd_762x51_MA5","11Rnd_45ACP_Mag","32Rnd_762x51_MA5","11Rnd_45ACP_Mag"};
+
+        backpack = "B_CombinationUnitRespirator_01_F";
+
+        ALiVE_orbatCreator_loadout[] = {{"19_UNSC_MA5A","","","19_UNSC_MA5A_smartlink",{"32Rnd_762x51_MA5",32},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","muzzle_snds_acp","acc_flashlight_pistol","optic_MRD_black",{"11Rnd_45ACP_Mag",15},{},""},{"U_O_CombatUniform_oucamo",{}},{"OPTRE_FC_M52B_Armor_Vest_URB",{{"ACE_quikclot",5},{"ACE_bloodIV_500",1},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",4,1},{"32Rnd_762x51_MA5",4,32}}},{"B_CombinationUnitRespirator_01_F",{}},"OPTRE_FC_VX19_Helmet_Desert","G_Balaclava_TI_blk_F",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_OURArmy_Ranger_02_01 : O_OURArmy_Ranger_01_01 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Ranger 02";
+        side = 0;
+        faction = "O_URArmy";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
+
+        uniformClass = "U_O_CombatUniform_oucamo";
+
+        linkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
+        respawnlinkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
+
+        weapons[] = {"OPTRE_MA37K","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
+        respawnWeapons[] = {"OPTRE_MA37K","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
+
+        magazines[] = {"OPTRE_32Rnd_762x51_Mag","11Rnd_45ACP_Mag","OPTRE_32Rnd_762x51_Mag","11Rnd_45ACP_Mag"};
+        respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag","11Rnd_45ACP_Mag","OPTRE_32Rnd_762x51_Mag","11Rnd_45ACP_Mag"};
+
+        backpack = "B_CombinationUnitRespirator_01_F";
+
+        ALiVE_orbatCreator_loadout[] = {{"OPTRE_MA37K","","OPTRE_M12_Laser","optic_Holosight_blk_F",{"OPTRE_32Rnd_762x51_Mag",32},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","muzzle_snds_acp","acc_flashlight_pistol","optic_MRD_black",{"11Rnd_45ACP_Mag",15},{},""},{"U_O_CombatUniform_oucamo",{{"OPTRE_32Rnd_762x51_Mag_Tracer",3,32}}},{"OPTRE_FC_M52B_Armor_Vest_URB",{{"ACE_quikclot",5},{"ACE_bloodIV_500",1},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",4,1},{"OPTRE_32Rnd_762x51_Mag_Tracer",1,32}}},{"B_CombinationUnitRespirator_01_F",{}},"OPTRE_FC_VX19_Helmet_Desert","G_Balaclava_TI_blk_F",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_OURArmy_Ranger_Team_Lead_01 : O_OURArmy_Ranger_01_01 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Ranger Team Lead";
+        side = 0;
+        faction = "O_URArmy";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
+
+        uniformClass = "U_O_CombatUniform_oucamo";
+
+        linkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
+        respawnlinkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
+
+        weapons[] = {"19_UNSC_MA5A_gl","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
+        respawnWeapons[] = {"19_UNSC_MA5A_gl","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
+
+        magazines[] = {"32Rnd_762x51_MA5","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag","32Rnd_762x51_MA5","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag"};
+        respawnMagazines[] = {"32Rnd_762x51_MA5","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag","32Rnd_762x51_MA5","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag"};
+
+        backpack = "B_RadioBag_01_oucamo_F";
+
+        ALiVE_orbatCreator_loadout[] = {{"19_UNSC_MA5A_gl","","","19_UNSC_MA5A_smartlink",{"32Rnd_762x51_MA5",32},{"1Rnd_HE_Grenade_shell",1},""},{},{"EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","muzzle_snds_acp","acc_flashlight_pistol","optic_MRD_black",{"11Rnd_45ACP_Mag",15},{},""},{"U_O_CombatUniform_oucamo",{{"32Rnd_762x51_MA5",2,32}}},{"OPTRE_FC_M52B_Armor_Vest_URB",{{"ACE_quikclot",5},{"ACE_bloodIV_500",1},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",4,1},{"32Rnd_762x51_MA5",2,32},{"1Rnd_HE_Grenade_shell",3,1},{"SWS_Magazine_Grenade_M3Sx_1Rnd_Shell",3,1}}},{"B_RadioBag_01_oucamo_F",{}},"OPTRE_FC_VX19_Helmet_Desert","G_Balaclava_TI_blk_F",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_OURArmy_Range_Autorifle_01 : O_OURArmy_Ranger_01_01 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Range Autorifle";
+        side = 0;
+        faction = "O_URArmy";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
+
+        uniformClass = "U_O_CombatUniform_oucamo";
+
+        linkedItems[] = {"OPTRE_UNSC_M52A_Armor4_MAR","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
+        respawnlinkedItems[] = {"OPTRE_UNSC_M52A_Armor4_MAR","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
+
+        weapons[] = {"Dmns_M33_T","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
+        respawnWeapons[] = {"Dmns_M33_T","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
+
+        magazines[] = {"DMNS_100Rnd_762x51_Mag","11Rnd_45ACP_Mag","DMNS_100Rnd_762x51_Mag","11Rnd_45ACP_Mag"};
+        respawnMagazines[] = {"DMNS_100Rnd_762x51_Mag","11Rnd_45ACP_Mag","DMNS_100Rnd_762x51_Mag","11Rnd_45ACP_Mag"};
+
+        backpack = "B_ViperHarness_hex_F";
+
+        ALiVE_orbatCreator_loadout[] = {{"Dmns_M33_T","","","optic_MRCO",{"DMNS_100Rnd_762x51_Mag",100},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","muzzle_snds_acp","acc_flashlight_pistol","optic_MRD_black",{"11Rnd_45ACP_Mag",15},{},""},{"U_O_CombatUniform_oucamo",{}},{"OPTRE_UNSC_M52A_Armor4_MAR",{{"ACE_quikclot",5},{"ACE_bloodIV_500",1},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",4,1}}},{"B_ViperHarness_hex_F",{{"DMNS_400Rnd_762x51_AP_Mag_Tracer",3,400}}},"OPTRE_FC_VX19_Helmet_Desert","G_Balaclava_TI_blk_F",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_OURArmy_Ranger_Marksmen_01 : O_OURArmy_Ranger_02_01 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Ranger Marksmen";
+        side = 0;
+        faction = "O_URArmy";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
+
+        uniformClass = "U_O_CombatUniform_oucamo";
+
+        linkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
+        respawnlinkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
+
+        weapons[] = {"srifle_DMR_05_tan_f","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
+        respawnWeapons[] = {"srifle_DMR_05_tan_f","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
+
+        magazines[] = {"10Rnd_93x64_DMR_05_Mag","11Rnd_45ACP_Mag","10Rnd_93x64_DMR_05_Mag","11Rnd_45ACP_Mag"};
+        respawnMagazines[] = {"10Rnd_93x64_DMR_05_Mag","11Rnd_45ACP_Mag","10Rnd_93x64_DMR_05_Mag","11Rnd_45ACP_Mag"};
+
+        backpack = "B_CombinationUnitRespirator_01_F";
+
+        ALiVE_orbatCreator_loadout[] = {{"srifle_DMR_05_tan_f","","","optic_AMS_snd",{"10Rnd_93x64_DMR_05_Mag",10},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","muzzle_snds_acp","acc_flashlight_pistol","optic_MRD_black",{"11Rnd_45ACP_Mag",15},{},""},{"U_O_CombatUniform_oucamo",{{"10Rnd_93x64_DMR_05_Mag",2,10}}},{"OPTRE_FC_M52B_Armor_Vest_URB",{{"ACE_quikclot",5},{"ACE_bloodIV_500",1},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",4,1},{"10Rnd_93x64_DMR_05_Mag",4,10}}},{"B_CombinationUnitRespirator_01_F",{}},"OPTRE_FC_VX19_Helmet_Desert","G_Balaclava_TI_blk_F",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_OURArmy_Ranger_Medic_01 : O_OURArmy_Range_Autorifle_01 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Ranger Medic";
+        side = 0;
+        faction = "O_URArmy";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
+
+        uniformClass = "U_O_CombatUniform_oucamo";
+
+        linkedItems[] = {"OPTRE_UNSC_M52A_Armor4_MAR","OPTRE_FC_VX19_Helmet_Snow","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
+        respawnlinkedItems[] = {"OPTRE_UNSC_M52A_Armor4_MAR","OPTRE_FC_VX19_Helmet_Snow","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
+
+        weapons[] = {"19_UNSC_M7","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
+        respawnWeapons[] = {"19_UNSC_M7","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
+
+        magazines[] = {"60Rnd_5x23_m7_fmj","11Rnd_45ACP_Mag","60Rnd_5x23_m7_fmj","11Rnd_45ACP_Mag"};
+        respawnMagazines[] = {"60Rnd_5x23_m7_fmj","11Rnd_45ACP_Mag","60Rnd_5x23_m7_fmj","11Rnd_45ACP_Mag"};
+
+        backpack = "B_ViperHarness_hex_F";
+
+        ALiVE_orbatCreator_loadout[] = {{"19_UNSC_M7","","19_UNSC_M7_LAM","19_UNSC_M7_optic",{"60Rnd_5x23_m7_fmj",60},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","muzzle_snds_acp","acc_flashlight_pistol","optic_MRD_black",{"11Rnd_45ACP_Mag",15},{},""},{"U_O_CombatUniform_oucamo",{{"60Rnd_5x23_m7_fmj",3,60}}},{"OPTRE_UNSC_M52A_Armor4_MAR",{{"ACE_quikclot",5},{"ACE_bloodIV_500",1},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",4,1}}},{"B_ViperHarness_hex_F",{{"ACE_bloodIV_500",2},{"ACE_bloodIV",1},{"ACE_quikclot",10}}},"OPTRE_FC_VX19_Helmet_Snow","G_Balaclava_TI_blk_F",{"Rangefinder","","","",{},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_OURArmy_Black_Eagle_01 : O_MBT_02_cannon_F_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Black Eagle";
+        side = 0;
+        faction = "O_URArmy";
+        crew = "O_URArmy_Crew_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "O_URArmy_Crew_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'a3\armor_f_gamma\mbt_02\data\mbt_02_body_co.paa'];_unit setObjectTextureGlobal [1,'a3\armor_f_gamma\mbt_02\data\mbt_02_turret_co.paa'];_unit setObjectTextureGlobal [2,'a3\armor_f_gamma\mbt_02\data\mbt_02_co.paa'];_unit setObjectTextureGlobal [3,'A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Hex";
+
+    };
+
+    class O_OURArmy_Black_Crusader_01 : O_MBT_04_cannon_F_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Black Crusader";
+        side = 0;
+        faction = "O_URArmy";
+        crew = "O_URArmy_Crew_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "O_URArmy_Crew_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'a3\Armor_F_Tank\MBT_04\Data\MBT_04_exterior_brown_hex_1_CO.paa'];_unit setObjectTextureGlobal [1,'a3\Armor_F_Tank\MBT_04\Data\MBT_04_exterior_brown_hex_2_CO.paa'];_unit setObjectTextureGlobal [2,'A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Hex";
+
+    };
+
+    class O_OURArmy_Black_Crusader_Lead_01 : O_MBT_04_command_F_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Black Crusader Lead";
+        side = 0;
+        faction = "O_URArmy";
+        crew = "O_crew_F";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_OURArmy_Rat_ATGM_01 : I_LT_01_AT_F_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Rat [ATGM]";
+        side = 0;
+        faction = "O_URArmy";
+        crew = "O_URArmy_Crew_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "O_URArmy_Crew_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'A3\armor_f_tank\lt_01\data\lt_01_main_co.paa'];_unit setObjectTextureGlobal [1,'A3\armor_f_tank\lt_01\data\lt_01_at_co.paa'];_unit setObjectTextureGlobal [2,'A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa'];_unit setObjectTextureGlobal [3,'A3\armor_f\data\cage_aaf_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Indep_01";
+
+    };
+
+    class O_OURArmy_Rat_Light_01 : I_LT_01_cannon_F_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Rat [Light]";
+        side = 0;
+        faction = "O_URArmy";
+        crew = "O_URArmy_Crew_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "O_URArmy_Crew_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_OURArmy_Red_Eagle_01 : B_MBT_01_cannon_F_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Red Eagle";
+        side = 0;
+        faction = "O_URArmy";
+        crew = "O_URArmy_Crew_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "O_URArmy_Crew_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'A3\armor_f_gamma\MBT_01\Data\MBT_01_body_CO.paa'];_unit setObjectTextureGlobal [1,'A3\armor_f_gamma\MBT_01\Data\MBT_01_tow_CO.paa'];_unit setObjectTextureGlobal [2,'A3\Armor_F\Data\camonet_NATO_Desert_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Sand";
+
+    };
+
+    class O_OURArmy_Tiger_01 : O_APC_Tracked_02_AA_F_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Tiger";
+        side = 0;
+        faction = "O_URArmy";
+        crew = "O_URArmy_Crew_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "O_URArmy_Crew_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_01_aa_hexarid_co.paa'];_unit setObjectTextureGlobal [1,'A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_02_hexarid_co.paa'];_unit setObjectTextureGlobal [2,'A3\Armor_F_Beta\APC_Tracked_01\Data\apc_tracked_01_aa_tower_opfor_co.paa'];_unit setObjectTextureGlobal [3,'A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa'];_unit setObjectTextureGlobal [4,'A3\armor_f\data\cage_csat_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Hex";
+
+    };
+
+    class O_OURArmy_Rat_AA_01 : I_LT_01_AA_F_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Rat [AA]";
+        side = 0;
+        faction = "O_URArmy";
+        crew = "O_URArmy_Crew_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "O_URArmy_Crew_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_OURArmy_Shadow_01 : O_MBT_02_arty_F_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Shadow";
+        side = 0;
+        faction = "O_URArmy";
+        crew = "O_URArmy_Crew_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "O_URArmy_Crew_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'a3\armor_f_gamma\mbt_02\data\mbt_02_body_co.paa'];_unit setObjectTextureGlobal [1,'a3\armor_f_gamma\mbt_01\data\mbt_01_scorcher_hexarid_co.paa'];_unit setObjectTextureGlobal [2,'a3\armor_f_gamma\mbt_02\data\mbt_02_co.paa'];_unit setObjectTextureGlobal [3,'a3\data_f\vehicles\turret_opfor_co.paa'];_unit setObjectTextureGlobal [4,'A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Hex";
 
     };
 
