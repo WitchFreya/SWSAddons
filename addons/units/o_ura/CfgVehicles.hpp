@@ -9,14 +9,18 @@ class CBA_Extended_EventHandlers_base;
 
 class CfgVehicles {
 
+    class EMP_Demolitions_Specialist;
+    class EMP_Demolitions_Specialist_OCimport_01 : EMP_Demolitions_Specialist { scope = 0; class EventHandlers; };
+    class EMP_Demolitions_Specialist_OCimport_02 : EMP_Demolitions_Specialist_OCimport_01 { class EventHandlers; };
+
     class EMP_CBRN_Element_Lead;
     class EMP_CBRN_Element_Lead_OCimport_01 : EMP_CBRN_Element_Lead { scope = 0; class EventHandlers; };
     class EMP_CBRN_Element_Lead_OCimport_02 : EMP_CBRN_Element_Lead_OCimport_01 { class EventHandlers; };
 
     class I_APC_tracked_03_cannon_F;
     class I_APC_tracked_03_cannon_F_OCimport_01 : I_APC_tracked_03_cannon_F { scope = 0; class EventHandlers; class Turrets; };
-    class I_APC_tracked_03_cannon_F_OCimport_02 : I_APC_tracked_03_cannon_F_OCimport_01 { 
-        class EventHandlers; 
+    class I_APC_tracked_03_cannon_F_OCimport_02 : I_APC_tracked_03_cannon_F_OCimport_01 {
+        class EventHandlers;
         class Turrets : Turrets {
             class MainTurret;
         };
@@ -24,8 +28,8 @@ class CfgVehicles {
 
     class EMP_Polaris_DAGOR_HMG;
     class EMP_Polaris_DAGOR_HMG_OCimport_01 : EMP_Polaris_DAGOR_HMG { scope = 0; class EventHandlers; class Turrets; };
-    class EMP_Polaris_DAGOR_HMG_OCimport_02 : EMP_Polaris_DAGOR_HMG_OCimport_01 { 
-        class EventHandlers; 
+    class EMP_Polaris_DAGOR_HMG_OCimport_02 : EMP_Polaris_DAGOR_HMG_OCimport_01 {
+        class EventHandlers;
         class Turrets : Turrets {
             class TopTurret;
             class CodRiverTurret;
@@ -36,8 +40,8 @@ class CfgVehicles {
 
     class I_C_Offroad_02_LMG_F;
     class I_C_Offroad_02_LMG_F_OCimport_01 : I_C_Offroad_02_LMG_F { scope = 0; class EventHandlers; class Turrets; };
-    class I_C_Offroad_02_LMG_F_OCimport_02 : I_C_Offroad_02_LMG_F_OCimport_01 { 
-        class EventHandlers; 
+    class I_C_Offroad_02_LMG_F_OCimport_02 : I_C_Offroad_02_LMG_F_OCimport_01 {
+        class EventHandlers;
         class Turrets : Turrets {
             class LMG_Turret;
             class CargoTurret_01;
@@ -46,14 +50,118 @@ class CfgVehicles {
 
     class O_Truck_02_covered_F;
     class O_Truck_02_covered_F_OCimport_01 : O_Truck_02_covered_F { scope = 0; class EventHandlers; class Turrets; };
-    class O_Truck_02_covered_F_OCimport_02 : O_Truck_02_covered_F_OCimport_01 { 
-        class EventHandlers; 
+    class O_Truck_02_covered_F_OCimport_02 : O_Truck_02_covered_F_OCimport_01 {
+        class EventHandlers;
         class Turrets : Turrets {
             class CargoTurret_01;
             class CargoTurret_02;
         };
     };
 
+    class EMP_CBRN_LMG_Operator;
+    class EMP_CBRN_LMG_Operator_OCimport_01 : EMP_CBRN_LMG_Operator { scope = 0; class EventHandlers; };
+    class EMP_CBRN_LMG_Operator_OCimport_02 : EMP_CBRN_LMG_Operator_OCimport_01 { class EventHandlers; };
+
+    class O_APC_Tracked_02_cannon_F;
+    class O_APC_Tracked_02_cannon_F_OCimport_01 : O_APC_Tracked_02_cannon_F { scope = 0; class EventHandlers; class Turrets; };
+    class O_APC_Tracked_02_cannon_F_OCimport_02 : O_APC_Tracked_02_cannon_F_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class EMP_Mi290_Taru_Transport;
+    class EMP_Mi290_Taru_Transport_OCimport_01 : EMP_Mi290_Taru_Transport { scope = 0; class EventHandlers; class Turrets; };
+    class EMP_Mi290_Taru_Transport_OCimport_02 : EMP_Mi290_Taru_Transport_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class CopilotTurret;
+            class LoadmasterTurret;
+            class CargoTurret_01;
+            class CargoTurret_02;
+        };
+    };
+
+    class I_Heli_Transport_02_F;
+    class I_Heli_Transport_02_F_OCimport_01 : I_Heli_Transport_02_F { scope = 0; class EventHandlers; class Turrets; };
+    class I_Heli_Transport_02_F_OCimport_02 : I_Heli_Transport_02_F_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class CopilotTurret;
+            class CargoTurret_01;
+            class CargoTurret_02;
+        };
+    };
+
+    class I_Heli_light_03_dynamicLoadout_F;
+    class I_Heli_light_03_dynamicLoadout_F_OCimport_01 : I_Heli_light_03_dynamicLoadout_F { scope = 0; class EventHandlers; class Turrets; };
+    class I_Heli_light_03_dynamicLoadout_F_OCimport_02 : I_Heli_light_03_dynamicLoadout_F_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+            class CargoTurret_01;
+            class CargoTurret_02;
+        };
+    };
+
+    class O_Heli_Attack_02_dynamicLoadout_F;
+    class O_Heli_Attack_02_dynamicLoadout_F_OCimport_01 : O_Heli_Attack_02_dynamicLoadout_F { scope = 0; class EventHandlers; class Turrets; };
+    class O_Heli_Attack_02_dynamicLoadout_F_OCimport_02 : O_Heli_Attack_02_dynamicLoadout_F_OCimport_01 {
+        class EventHandlers;
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
+
+    class O_Plane_CAS_02_dynamicLoadout_F;
+    class O_Plane_CAS_02_dynamicLoadout_F_OCimport_01 : O_Plane_CAS_02_dynamicLoadout_F { scope = 0; class EventHandlers; };
+    class O_Plane_CAS_02_dynamicLoadout_F_OCimport_02 : O_Plane_CAS_02_dynamicLoadout_F_OCimport_01 { scope = 0; class EventHandlers; };
+
+    class I_Plane_Fighter_04_F;
+    class I_Plane_Fighter_04_F_OCimport_01 : I_Plane_Fighter_04_F { scope = 0; class EventHandlers; };
+    class I_Plane_Fighter_04_F_OCimport_02 : I_Plane_Fighter_04_F_OCimport_01 { scope = 0; class EventHandlers; };
+
+
+    class O_OURArmy_Anti_Tank_Person_02_01 : EMP_Demolitions_Specialist_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Anti-Tank Person 02";
+        side = 0;
+        faction = "o_urarmy";
+
+        identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
+
+        uniformClass = "U_C_CBRN_Suit_01_Blue_F";
+
+        linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+        respawnlinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+
+        weapons[] = {"arifle_AK12_F","launch_MRAWS_sand_rail_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+        respawnWeapons[] = {"arifle_AK12_F","launch_MRAWS_sand_rail_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+
+        magazines[] = {"30Rnd_762x39_AK12_Mag_F","MRAWS_HEAT_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
+        respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","MRAWS_HEAT_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
+
+        backpack = "B_ViperLightHarness_blk_F";
+
+        ALiVE_orbatCreator_loadout[] = {{"arifle_AK12_F","","acc_flashlight","ACE_optic_Hamr_PIP",{"30Rnd_762x39_AK12_Mag_F",30},{},""},{"launch_MRAWS_sand_rail_F","","","",{"MRAWS_HEAT_F",1},{},""},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"OPTRE_Vest_CMA_Heavy",{{"ACE_bloodIV_500",2},{"ACE_quikclot",10},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"30Rnd_762x39_AK12_Mag_F",4,30}}},{"B_ViperLightHarness_blk_F",{{"MRAWS_HEAT_F",3,1}}},"H_PASGT_basic_black_F","G_CBRN_M04_Hood",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
 
     class O_URArmy_Squad_Lead_01 : EMP_CBRN_Element_Lead_OCimport_02 {
         author = "Rabbit";
@@ -61,7 +169,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Squad Lead";
         side = 0;
-        faction = "O_URArmy";
+        faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
 
@@ -70,15 +178,15 @@ class CfgVehicles {
         linkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"};
         respawnlinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"};
 
-        weapons[] = {"arifle_AK12_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
-        respawnWeapons[] = {"arifle_AK12_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+        weapons[] = {"arifle_AK12_GL_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+        respawnWeapons[] = {"arifle_AK12_GL_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
 
-        magazines[] = {"30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
-        respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
+        magazines[] = {"30Rnd_762x39_AK12_Mag_F","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag","Laserbatteries"};
+        respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag","Laserbatteries"};
 
         backpack = "B_RadioBag_01_black_F";
 
-        ALiVE_orbatCreator_loadout[] = {{"arifle_AK12_F","","acc_flashlight","optic_MRCO",{"30Rnd_762x39_AK12_Mag_F",30},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"WNZ_EMPGrenade",1,1},{"HandGrenade",1,1}}},{"V_PlateCarrier1_blk",{{"ACE_bloodIV_500",1},{"ACE_quikclot",5},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"OPTRE_M2_Smoke",2,1},{"30Rnd_762x39_AK12_Mag_F",3,30}}},{"B_RadioBag_01_black_F",{}},"H_PASGT_basic_black_F","G_CBRN_M04_Hood",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"}};
+        ALiVE_orbatCreator_loadout[] = {{"arifle_AK12_GL_F","","acc_flashlight","optic_MRCO",{"30Rnd_762x39_AK12_Mag_F",30},{"1Rnd_HE_Grenade_shell",1},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"V_PlateCarrier1_blk",{{"ACE_bloodIV_500",1},{"ACE_quikclot",5},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"OPTRE_M2_Smoke",2,1},{"30Rnd_762x39_AK12_Mag_F",3,30},{"1Rnd_HE_Grenade_shell",3,1}}},{"B_RadioBag_01_black_F",{{"SWS_Magazine_Grenade_M3Sx_1Rnd_Shell",4,1}}},"H_PASGT_basic_black_F","G_CBRN_M04_Hood",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"}};
 
 
         class EventHandlers : EventHandlers {
@@ -101,7 +209,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Team Lead";
         side = 0;
-        faction = "O_URArmy";
+        faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
 
@@ -110,15 +218,15 @@ class CfgVehicles {
         linkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"};
         respawnlinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"};
 
-        weapons[] = {"arifle_AK12_GL_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
-        respawnWeapons[] = {"arifle_AK12_GL_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+        weapons[] = {"arifle_AK12_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+        respawnWeapons[] = {"arifle_AK12_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
 
-        magazines[] = {"30Rnd_762x39_AK12_Mag_F","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag","Laserbatteries"};
-        respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag","Laserbatteries"};
+        magazines[] = {"30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
+        respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
 
         backpack = "B_RadioBag_01_black_F";
 
-        ALiVE_orbatCreator_loadout[] = {{"arifle_AK12_GL_F","","acc_flashlight","optic_MRCO",{"30Rnd_762x39_AK12_Mag_F",30},{"1Rnd_HE_Grenade_shell",1},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"WNZ_EMPGrenade",1,1},{"HandGrenade",1,1}}},{"V_PlateCarrier1_blk",{{"ACE_quikclot",5},{"ACE_bloodIV_500",1},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"OPTRE_M2_Smoke",2,1},{"30Rnd_762x39_AK12_Mag_F",3,30},{"1Rnd_HE_Grenade_shell",3,1}}},{"B_RadioBag_01_black_F",{}},"H_PASGT_basic_black_F","G_CBRN_M04_Hood",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"}};
+        ALiVE_orbatCreator_loadout[] = {{"arifle_AK12_F","","acc_flashlight","optic_MRCO",{"30Rnd_762x39_AK12_Mag_F",30},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"V_PlateCarrier1_blk",{{"ACE_quikclot",5},{"ACE_bloodIV_500",1},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"OPTRE_M2_Smoke",2,1},{"30Rnd_762x39_AK12_Mag_F",3,30}}},{"B_RadioBag_01_black_F",{}},"H_PASGT_basic_black_F","G_CBRN_M04_Hood",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"}};
 
 
         class EventHandlers : EventHandlers {
@@ -141,7 +249,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Rifleperson 1";
         side = 0;
-        faction = "O_URArmy";
+        faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
 
@@ -158,7 +266,7 @@ class CfgVehicles {
 
         backpack = "B_CombinationUnitRespirator_01_F";
 
-        ALiVE_orbatCreator_loadout[] = {{"arifle_AK12_F","","acc_flashlight","ACE_optic_Hamr_PIP",{"30Rnd_762x39_AK12_Mag_F",30},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"WNZ_EMPGrenade",1,1},{"HandGrenade",1,1}}},{"OPTRE_Vest_CMA_Heavy",{{"ACE_bloodIV_500",2},{"ACE_quikclot",10},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"30Rnd_762x39_AK12_Mag_F",4,30}}},{"B_CombinationUnitRespirator_01_F",{}},"H_PASGT_basic_black_F","G_CBRN_M04_Hood",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"}};
+        ALiVE_orbatCreator_loadout[] = {{"arifle_AK12_F","","acc_flashlight","ACE_optic_Hamr_PIP",{"30Rnd_762x39_AK12_Mag_F",30},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"OPTRE_Vest_CMA_Heavy",{{"ACE_bloodIV_500",2},{"ACE_quikclot",10},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"30Rnd_762x39_AK12_Mag_F",4,30}}},{"B_CombinationUnitRespirator_01_F",{}},"H_PASGT_basic_black_F","G_CBRN_M04_Hood",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"}};
 
 
         class EventHandlers : EventHandlers {
@@ -181,7 +289,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Rifleperson 2";
         side = 0;
-        faction = "O_URArmy";
+        faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
 
@@ -198,7 +306,7 @@ class CfgVehicles {
 
         backpack = "B_CombinationUnitRespirator_01_F";
 
-        ALiVE_orbatCreator_loadout[] = {{"OPTRE_MA37K","","OPTRE_M12_Laser","OPTRE_M12_Optic_Red",{"OPTRE_32Rnd_762x51_Mag",32},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"WNZ_EMPGrenade",1,1},{"HandGrenade",1,1}}},{"OPTRE_Vest_CMA_Heavy",{{"ACE_bloodIV_500",1},{"ACE_quikclot",10},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"OPTRE_32Rnd_762x51_Mag",4,32}}},{"B_CombinationUnitRespirator_01_F",{}},"H_PASGT_basic_black_F","G_CBRN_M04_Hood",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"}};
+        ALiVE_orbatCreator_loadout[] = {{"OPTRE_MA37K","","OPTRE_M12_Laser","OPTRE_M12_Optic_Red",{"OPTRE_32Rnd_762x51_Mag",32},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"OPTRE_Vest_CMA_Heavy",{{"ACE_bloodIV_500",1},{"ACE_quikclot",10},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"OPTRE_32Rnd_762x51_Mag",4,32}}},{"B_CombinationUnitRespirator_01_F",{}},"H_PASGT_basic_black_F","G_CBRN_M04_Hood",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"}};
 
 
         class EventHandlers : EventHandlers {
@@ -221,7 +329,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Automatic Rifle";
         side = 0;
-        faction = "O_URArmy";
+        faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
 
@@ -238,7 +346,7 @@ class CfgVehicles {
 
         backpack = "B_Carryall_blk";
 
-        ALiVE_orbatCreator_loadout[] = {{"MMG_02_black_F","","","optic_ERCO_blk_F",{"130Rnd_338_Mag",130},{},"bipod_01_F_blk"},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"WNZ_EMPGrenade",1,1},{"HandGrenade",1,1}}},{"V_PlateCarrier1_blk",{{"ACE_bloodIV_500",1},{"ACE_quikclot",5},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"130Rnd_338_Mag",1,130}}},{"B_Carryall_blk",{{"130Rnd_338_Mag",2,130}}},"H_PASGT_basic_black_F","G_CBRN_M04_Hood",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"}};
+        ALiVE_orbatCreator_loadout[] = {{"MMG_02_black_F","","","optic_ERCO_blk_F",{"130Rnd_338_Mag",130},{},"bipod_01_F_blk"},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"V_PlateCarrier1_blk",{{"ACE_bloodIV_500",1},{"ACE_quikclot",5},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"130Rnd_338_Mag",1,130}}},{"B_Carryall_blk",{{"130Rnd_338_Mag",2,130}}},"H_PASGT_basic_black_F","G_CBRN_M04_Hood",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"}};
 
 
         class EventHandlers : EventHandlers {
@@ -261,7 +369,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Medic";
         side = 0;
-        faction = "O_URArmy";
+        faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
 
@@ -278,7 +386,7 @@ class CfgVehicles {
 
         backpack = "B_CombinationUnitRespirator_01_F";
 
-        ALiVE_orbatCreator_loadout[] = {{"OPTRE_MA37K","","OPTRE_M12_Laser","OPTRE_M12_Optic_Red",{"OPTRE_32Rnd_762x51_Mag",32},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"WNZ_EMPGrenade",1,1},{"HandGrenade",1,1}}},{"OPTRE_Vest_CMA_Light",{{"ACE_bloodIV_500",4},{"ACE_quikclot",20},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"OPTRE_32Rnd_762x51_Mag",4,32}}},{"B_CombinationUnitRespirator_01_F",{}},"H_PASGT_basic_white_F","G_CBRN_M04_Hood",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"}};
+        ALiVE_orbatCreator_loadout[] = {{"OPTRE_MA37K","","OPTRE_M12_Laser","OPTRE_M12_Optic_Red",{"OPTRE_32Rnd_762x51_Mag",32},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"OPTRE_Vest_CMA_Light",{{"ACE_bloodIV_500",4},{"ACE_quikclot",20},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"OPTRE_32Rnd_762x51_Mag",4,32}}},{"B_CombinationUnitRespirator_01_F",{}},"H_PASGT_basic_white_F","G_CBRN_M04_Hood",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"}};
 
 
         class EventHandlers : EventHandlers {
@@ -301,7 +409,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Marksman";
         side = 0;
-        faction = "O_URArmy";
+        faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
 
@@ -318,7 +426,7 @@ class CfgVehicles {
 
         backpack = "B_Carryall_blk";
 
-        ALiVE_orbatCreator_loadout[] = {{"srifle_DMR_02_F","","","optic_AMS",{"10Rnd_338_Mag",10},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"WNZ_EMPGrenade",1,1},{"HandGrenade",1,1}}},{"V_PlateCarrier1_blk",{{"ACE_bloodIV_500",1},{"ACE_quikclot",5},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"ACE_10Rnd_338_API526_Mag",2,10},{"ACE_10Rnd_338_300gr_HPBT_Mag",2,10},{"ACE_10Rnd_762x67_Mk248_Mod_1_Mag",1,10}}},{"B_Carryall_blk",{}},"H_PASGT_basic_black_F","G_CBRN_M04_Hood",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"}};
+        ALiVE_orbatCreator_loadout[] = {{"srifle_DMR_02_F","","","optic_AMS",{"10Rnd_338_Mag",10},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"V_PlateCarrier1_blk",{{"ACE_bloodIV_500",1},{"ACE_quikclot",5},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"ACE_10Rnd_338_API526_Mag",2,10},{"ACE_10Rnd_338_300gr_HPBT_Mag",2,10},{"ACE_10Rnd_762x67_Mk248_Mod_1_Mag",1,10}}},{"B_Carryall_blk",{}},"H_PASGT_basic_black_F","G_CBRN_M04_Hood",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"}};
 
 
         class EventHandlers : EventHandlers {
@@ -341,7 +449,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Crew";
         side = 0;
-        faction = "O_URArmy";
+        faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
 
@@ -358,7 +466,7 @@ class CfgVehicles {
 
         backpack = "B_CombinationUnitRespirator_01_F";
 
-        ALiVE_orbatCreator_loadout[] = {{"hgun_PDW2000_F","","","optic_Holosight_blk_F",{"30Rnd_9x21_Mag",30},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"WNZ_EMPGrenade",1,1},{"HandGrenade",1,1}}},{"OPTRE_Vest_CMA_Light",{{"ACE_bloodIV_500",2},{"ACE_quikclot",10},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"30Rnd_9x21_Red_Mag",4,30}}},{"B_CombinationUnitRespirator_01_F",{}},"H_PilotHelmetFighter_B","",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""}};
+        ALiVE_orbatCreator_loadout[] = {{"hgun_PDW2000_F","","","optic_Holosight_blk_F",{"30Rnd_9x21_Mag",30},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"OPTRE_Vest_CMA_Light",{{"ACE_bloodIV_500",2},{"ACE_quikclot",10},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"30Rnd_9x21_Red_Mag",4,30}}},{"B_CombinationUnitRespirator_01_F",{}},"H_PilotHelmetFighter_B","",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""}};
 
 
         class EventHandlers : EventHandlers {
@@ -381,7 +489,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Sniper";
         side = 0;
-        faction = "O_URArmy";
+        faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
 
@@ -398,7 +506,7 @@ class CfgVehicles {
 
         backpack = "B_RadioBag_01_digi_F";
 
-        ALiVE_orbatCreator_loadout[] = {{"srifle_GM6_ghex_F","","","optic_AMS_khk",{"5Rnd_127x108_Mag",5},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_B_CBRN_Suit_01_MTP_F",{{"FirstAidKit",3},{"WNZ_EMPGrenade",1,1},{"HandGrenade",1,1}}},{"V_PlateCarrier2_rgr_noflag_F",{{"ACE_bloodIV_500",1},{"ACE_quikclot",5},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"5Rnd_127x108_APDS_Mag",6,5}}},{"B_RadioBag_01_digi_F",{}},"H_HelmetIA","G_Balaclava_TI_G_tna_F",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"}};
+        ALiVE_orbatCreator_loadout[] = {{"srifle_GM6_ghex_F","","","optic_AMS_khk",{"5Rnd_127x108_Mag",5},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_B_CBRN_Suit_01_MTP_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"V_PlateCarrier2_rgr_noflag_F",{{"ACE_bloodIV_500",1},{"ACE_quikclot",5},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"5Rnd_127x108_APDS_Mag",6,5}}},{"B_RadioBag_01_digi_F",{}},"H_HelmetIA","G_Balaclava_TI_G_tna_F",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"}};
 
 
         class EventHandlers : EventHandlers {
@@ -421,7 +529,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Spotter";
         side = 0;
-        faction = "O_URArmy";
+        faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
 
@@ -438,7 +546,7 @@ class CfgVehicles {
 
         backpack = "B_TacticalPack_oli";
 
-        ALiVE_orbatCreator_loadout[] = {{"arifle_AK12_lush_F","","","optic_Arco_ghex_F",{"30rnd_762x39_AK12_Lush_Mag_F",30},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_B_CBRN_Suit_01_MTP_F",{{"FirstAidKit",3},{"WNZ_EMPGrenade",1,1},{"HandGrenade",1,1}}},{"V_PlateCarrier2_rgr_noflag_F",{{"ACE_bloodIV_500",1},{"ACE_quikclot",5},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"30rnd_762x39_AK12_Lush_Mag_F",3,30}}},{"B_TacticalPack_oli",{}},"H_HelmetIA","G_Balaclava_TI_G_tna_F",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"}};
+        ALiVE_orbatCreator_loadout[] = {{"arifle_AK12_lush_F","","","optic_Arco_ghex_F",{"30rnd_762x39_AK12_Lush_Mag_F",30},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_B_CBRN_Suit_01_MTP_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"V_PlateCarrier2_rgr_noflag_F",{{"ACE_bloodIV_500",1},{"ACE_quikclot",5},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"30rnd_762x39_AK12_Lush_Mag_F",3,30}}},{"B_TacticalPack_oli",{}},"H_HelmetIA","G_Balaclava_TI_G_tna_F",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"}};
 
 
         class EventHandlers : EventHandlers {
@@ -461,7 +569,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Marine 1";
         side = 0;
-        faction = "O_URArmy";
+        faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
 
@@ -478,7 +586,7 @@ class CfgVehicles {
 
         backpack = "B_CombinationUnitRespirator_01_F";
 
-        ALiVE_orbatCreator_loadout[] = {{"arifle_AK12_F","","acc_flashlight","OPTRE_M12_Optic",{"30Rnd_762x39_AK12_Mag_F",30},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_White_F",{{"FirstAidKit",3},{"WNZ_EMPGrenade",1,1},{"HandGrenade",1,1}}},{"OPTRE_Vest_CMA_Heavy",{{"ACE_bloodIV_500",2},{"ACE_quikclot",10},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"30Rnd_762x39_AK12_Mag_F",4,30}}},{"B_CombinationUnitRespirator_01_F",{}},"H_PASGT_basic_white_F","G_CBRN_S10",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"}};
+        ALiVE_orbatCreator_loadout[] = {{"arifle_AK12_F","","acc_flashlight","OPTRE_M12_Optic",{"30Rnd_762x39_AK12_Mag_F",30},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_White_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"OPTRE_Vest_CMA_Heavy",{{"ACE_bloodIV_500",2},{"ACE_quikclot",10},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"30Rnd_762x39_AK12_Mag_F",4,30}}},{"B_CombinationUnitRespirator_01_F",{}},"H_PASGT_basic_white_F","G_CBRN_S10",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"}};
 
 
         class EventHandlers : EventHandlers {
@@ -501,7 +609,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Marine 2";
         side = 0;
-        faction = "O_URArmy";
+        faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
 
@@ -518,7 +626,7 @@ class CfgVehicles {
 
         backpack = "B_CombinationUnitRespirator_01_F";
 
-        ALiVE_orbatCreator_loadout[] = {{"OPTRE_M45ATAC","","","OPTRE_M12_Optic",{"OPTRE_12Rnd_8Gauge_Pellets",12},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_White_F",{{"FirstAidKit",3},{"WNZ_EMPGrenade",1,1},{"HandGrenade",1,1}}},{"OPTRE_Vest_CMA_Heavy",{{"ACE_bloodIV_500",2},{"ACE_quikclot",10},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"SWS_Magazine_12_Rnd_Shotgun_Incendiary",5,12}}},{"B_CombinationUnitRespirator_01_F",{}},"H_PASGT_basic_white_F","G_CBRN_S10",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"}};
+        ALiVE_orbatCreator_loadout[] = {{"OPTRE_M45ATAC","","","OPTRE_M12_Optic",{"OPTRE_12Rnd_8Gauge_Pellets",12},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_White_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"OPTRE_Vest_CMA_Heavy",{{"ACE_bloodIV_500",2},{"ACE_quikclot",10},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"SWS_Magazine_12_Rnd_Shotgun_Incendiary",5,12}}},{"B_CombinationUnitRespirator_01_F",{}},"H_PASGT_basic_white_F","G_CBRN_S10",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"}};
 
 
         class EventHandlers : EventHandlers {
@@ -541,7 +649,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Marine Team Lead";
         side = 0;
-        faction = "O_URArmy";
+        faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
 
@@ -558,7 +666,7 @@ class CfgVehicles {
 
         backpack = "B_RadioBag_01_oucamo_F";
 
-        ALiVE_orbatCreator_loadout[] = {{"19_UNSC_M7","","19_UNSC_M7_LAM","19_UNSC_M7_optic",{"60Rnd_5x23_m7_fmj",60},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_White_F",{{"FirstAidKit",3},{"WNZ_EMPGrenade",1,1},{"HandGrenade",1,1}}},{"OPTRE_Vest_CMA_Heavy",{{"ACE_bloodIV_500",2},{"ACE_quikclot",10},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",4,1},{"60Rnd_5x23_m7_fmj",4,60},{"OPTRE_M2_Smoke",2,1},{"ACE_M84",2,1}}},{"B_RadioBag_01_oucamo_F",{}},"H_PASGT_basic_white_F","G_CBRN_S10",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"}};
+        ALiVE_orbatCreator_loadout[] = {{"19_UNSC_M7","","19_UNSC_M7_LAM","19_UNSC_M7_optic",{"60Rnd_5x23_m7_fmj",60},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_White_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"OPTRE_Vest_CMA_Heavy",{{"ACE_bloodIV_500",2},{"ACE_quikclot",10},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",4,1},{"60Rnd_5x23_m7_fmj",4,60},{"OPTRE_M2_Smoke",2,1},{"ACE_M84",2,1}}},{"B_RadioBag_01_oucamo_F",{}},"H_PASGT_basic_white_F","G_CBRN_S10",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"}};
 
 
         class EventHandlers : EventHandlers {
@@ -581,7 +689,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Marine Medic";
         side = 0;
-        faction = "O_URArmy";
+        faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
 
@@ -598,7 +706,7 @@ class CfgVehicles {
 
         backpack = "OPTRE_UNSC_Rucksack_Medic";
 
-        ALiVE_orbatCreator_loadout[] = {{"19_UNSC_M7","","19_UNSC_M7_LAM","19_UNSC_M7_optic",{"60Rnd_5x23_m7_fmj",60},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_White_F",{{"FirstAidKit",3},{"WNZ_EMPGrenade",1,1},{"HandGrenade",1,1}}},{"OPTRE_Vest_CMA_Light",{{"ACE_bloodIV_500",2},{"ACE_quikclot",10},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",4,1},{"60Rnd_5x23_m7_fmj",4,60},{"OPTRE_M2_Smoke",2,1},{"ACE_M84",2,1}}},{"OPTRE_UNSC_Rucksack_Medic",{}},"H_PASGT_basic_white_F","G_CBRN_S10",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"}};
+        ALiVE_orbatCreator_loadout[] = {{"19_UNSC_M7","","19_UNSC_M7_LAM","19_UNSC_M7_optic",{"60Rnd_5x23_m7_fmj",60},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_White_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"OPTRE_Vest_CMA_Light",{{"ACE_bloodIV_500",2},{"ACE_quikclot",10},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",4,1},{"60Rnd_5x23_m7_fmj",4,60},{"OPTRE_M2_Smoke",2,1},{"ACE_M84",2,1}}},{"OPTRE_UNSC_Rucksack_Medic",{}},"H_PASGT_basic_white_F","G_CBRN_S10",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"}};
 
 
         class EventHandlers : EventHandlers {
@@ -621,7 +729,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Warrior";
         side = 0;
-        faction = "O_URArmy";
+        faction = "o_urarmy";
         crew = "O_URArmy_Crew_01";
 
         class Turrets : Turrets {
@@ -651,7 +759,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "HMG Dagger";
         side = 0;
-        faction = "O_URArmy";
+        faction = "o_urarmy";
         crew = "O_URArmy_Team_Lead_01";
 
         class Turrets : Turrets {
@@ -684,7 +792,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "HMG Jeep";
         side = 0;
-        faction = "O_URArmy";
+        faction = "o_urarmy";
         crew = "O_URArmy_Team_Lead_01";
 
         class Turrets : Turrets {
@@ -715,7 +823,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Covered Truck";
         side = 0;
-        faction = "O_URArmy";
+        faction = "o_urarmy";
         crew = "O_URArmy_Rifleperson_1_01";
 
         class Turrets : Turrets {
@@ -737,6 +845,372 @@ class CfgVehicles {
         // custom attributes (do not delete)
         ALiVE_orbatCreator_owned = 1;
         ALiVE_orbatCreator_texture = "EAF";
+
+    };
+
+    class O_OURArmy_Anti_Tank_Person_01_01 : EMP_CBRN_Element_Lead_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Anti-Tank Person 01";
+        side = 0;
+        faction = "o_urarmy";
+
+        identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
+
+        uniformClass = "U_C_CBRN_Suit_01_Blue_F";
+
+        linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+        respawnlinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+
+        weapons[] = {"arifle_AK12_F","launch_O_Vorona_brown_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+        respawnWeapons[] = {"arifle_AK12_F","launch_O_Vorona_brown_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+
+        magazines[] = {"30Rnd_762x39_AK12_Mag_F","Vorona_HEAT","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
+        respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","Vorona_HEAT","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
+
+        backpack = "B_ViperLightHarness_blk_F";
+
+        ALiVE_orbatCreator_loadout[] = {{"arifle_AK12_F","","acc_flashlight","ACE_optic_Hamr_PIP",{"30Rnd_762x39_AK12_Mag_F",30},{},""},{"launch_O_Vorona_brown_F","","","",{"Vorona_HEAT",1},{},""},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"OPTRE_Vest_CMA_Heavy",{{"ACE_bloodIV_500",2},{"ACE_quikclot",10},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"30Rnd_762x39_AK12_Mag_F",4,30}}},{"B_ViperLightHarness_blk_F",{{"Vorona_HEAT",2,1}}},"H_PASGT_basic_black_F","G_CBRN_M04_Hood",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_OURArmy_Light_Marksmen_01 : EMP_CBRN_Element_Lead_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Light Marksmen";
+        side = 0;
+        faction = "o_urarmy";
+
+        identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
+
+        uniformClass = "U_C_CBRN_Suit_01_Blue_F";
+
+        linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+        respawnlinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+
+        weapons[] = {"srifle_EBR_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+        respawnWeapons[] = {"srifle_EBR_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+
+        magazines[] = {"20Rnd_762x51_Mag","11Rnd_45ACP_Mag","Laserbatteries","20Rnd_762x51_Mag","11Rnd_45ACP_Mag","Laserbatteries"};
+        respawnMagazines[] = {"20Rnd_762x51_Mag","11Rnd_45ACP_Mag","Laserbatteries","20Rnd_762x51_Mag","11Rnd_45ACP_Mag","Laserbatteries"};
+
+        backpack = "B_CombinationUnitRespirator_01_F";
+
+        ALiVE_orbatCreator_loadout[] = {{"srifle_EBR_F","","OPTRE_BMR_Laser","optic_DMS",{"20Rnd_762x51_Mag",20},{},""},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"OPTRE_Vest_CMA_Heavy",{{"ACE_bloodIV_500",2},{"ACE_quikclot",10},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"ACE_20Rnd_762x51_M993_AP_Mag",4,20}}},{"B_CombinationUnitRespirator_01_F",{}},"H_PASGT_basic_black_F","G_CBRN_M04_Hood",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_OURArmy_Anti_Air_Person_01 : EMP_CBRN_Element_Lead_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Anti Air Person";
+        side = 0;
+        faction = "o_urarmy";
+
+        identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
+
+        uniformClass = "U_C_CBRN_Suit_01_Blue_F";
+
+        linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+        respawnlinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+
+        weapons[] = {"arifle_AK12_F","launch_B_Titan_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+        respawnWeapons[] = {"arifle_AK12_F","launch_B_Titan_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+
+        magazines[] = {"30Rnd_762x39_AK12_Mag_F","Titan_AA","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
+        respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","Titan_AA","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
+
+        backpack = "B_ViperLightHarness_blk_F";
+
+        ALiVE_orbatCreator_loadout[] = {{"arifle_AK12_F","","acc_flashlight","ACE_optic_Hamr_PIP",{"30Rnd_762x39_AK12_Mag_F",30},{},""},{"launch_B_Titan_F","","","",{"Titan_AA",1},{},""},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"OPTRE_Vest_CMA_Heavy",{{"ACE_bloodIV_500",2},{"ACE_quikclot",10},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"30Rnd_762x39_AK12_Mag_F",4,30}}},{"B_ViperLightHarness_blk_F",{{"Titan_AA",2,1}}},"H_PASGT_basic_black_F","G_CBRN_M04_Hood",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_OURArmy_Marine_MG_01 : EMP_CBRN_LMG_Operator_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Marine MG";
+        side = 0;
+        faction = "o_urarmy";
+
+        identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
+
+        uniformClass = "U_C_CBRN_Suit_01_White_F";
+
+        linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+        respawnlinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+
+        weapons[] = {"LMG_Mk200_black_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+        respawnWeapons[] = {"LMG_Mk200_black_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+
+        magazines[] = {"200Rnd_65x39_cased_Box","11Rnd_45ACP_Mag","Laserbatteries","200Rnd_65x39_cased_Box","11Rnd_45ACP_Mag","Laserbatteries"};
+        respawnMagazines[] = {"200Rnd_65x39_cased_Box","11Rnd_45ACP_Mag","Laserbatteries","200Rnd_65x39_cased_Box","11Rnd_45ACP_Mag","Laserbatteries"};
+
+        backpack = "B_CombinationUnitRespirator_01_F";
+
+        ALiVE_orbatCreator_loadout[] = {{"LMG_Mk200_black_F","","acc_pointer_IR","optic_Aco_smg",{"200Rnd_65x39_cased_Box",200},{},"bipod_03_F_blk"},{},{"EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_White_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"OPTRE_Vest_CMA_Heavy",{{"ACE_bloodIV_500",2},{"ACE_quikclot",10},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"200Rnd_65x39_cased_Box_Tracer_Red",2,200}}},{"B_CombinationUnitRespirator_01_F",{}},"H_PASGT_basic_white_F","G_CBRN_S10",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_OURArmy_Stalker_01 : O_APC_Tracked_02_cannon_F_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Stalker";
+        side = 0;
+        faction = "o_urarmy";
+        crew = "O_URArmy_Crew_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "O_URArmy_Crew_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_01_hexarid_co.paa'];_unit setObjectTextureGlobal [1,'A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_02_hexarid_co.paa'];_unit setObjectTextureGlobal [2,'A3\Armor_F_Beta\APC_Tracked_02\Data\rcws30_opfor_co.paa'];_unit setObjectTextureGlobal [3,'A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa'];_unit setObjectTextureGlobal [4,'A3\armor_f\data\cage_csat_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Hex";
+
+    };
+
+    class O_OURArmy_Taru_Transport_01 : EMP_Mi290_Taru_Transport_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Taru Transport";
+        side = 0;
+        faction = "o_urarmy";
+        crew = "O_URArmy_Crew_01";
+
+        class Turrets : Turrets {
+            class CopilotTurret : CopilotTurret { gunnerType = "O_URArmy_Crew_01"; };
+            class LoadmasterTurret : LoadmasterTurret { gunnerType = "O_URArmy_Crew_01"; };
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
+            class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa'];_unit setObjectTextureGlobal [1,'A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa'];_unit setObjectTextureGlobal [2,'A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa'];_unit setObjectTextureGlobal [3,'A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Black";
+
+    };
+
+    class O_OURArmy_Merlin_Transport_01 : I_Heli_Transport_02_F_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Merlin Transport";
+        side = 0;
+        faction = "o_urarmy";
+        crew = "O_URArmy_Crew_01";
+
+        class Turrets : Turrets {
+            class CopilotTurret : CopilotTurret { gunnerType = "O_URArmy_Crew_01"; };
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
+            class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_1_INDP_CO.paa'];_unit setObjectTextureGlobal [1,'A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_2_INDP_CO.paa'];_unit setObjectTextureGlobal [2,'A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_3_INDP_CO.paa'];_unit setObjectTextureGlobal [3,'A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_int_02_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "AAF";
+
+    };
+
+    class O_OURArmy_Wildcat_01 : I_Heli_light_03_dynamicLoadout_F_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Wildcat";
+        side = 0;
+        faction = "o_urarmy";
+        crew = "O_URArmy_Crew_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "O_URArmy_Crew_01"; };
+            class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
+            class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\A3\Air_F_Enoch\Heli_Light_03\data\Heli_Light_03_base_EAF_CO.paa'];_unit setObjectTextureGlobal [1,'\a3\Supplies_F_Enoch\Ammoboxes\Data\AmmoBox_EAF_CO.paa'];_unit setObjectTextureGlobal [2,'\a3\Supplies_F_Enoch\Ammoboxes\Data\AmmoBox_signs_EAF_CA.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "EAF";
+
+    };
+
+    class O_OURArmy_Kajman_01 : O_Heli_Attack_02_dynamicLoadout_F_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Kajman";
+        side = 0;
+        faction = "o_urarmy";
+        crew = "O_URArmy_Crew_01";
+
+        class Turrets : Turrets {
+            class MainTurret : MainTurret { gunnerType = "O_URArmy_Crew_01"; };
+        };
+
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body1_black_CO.paa'];_unit setObjectTextureGlobal [1,'A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body2_black_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "Black";
+
+    };
+
+    class O_OURArmy_YAK_CAS_01 : O_Plane_CAS_02_dynamicLoadout_F_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "YAK CAS";
+        side = 0;
+        faction = "o_urarmy";
+        crew = "O_URArmy_Crew_01";
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_OURArmy_JAS_AIR_01 : I_Plane_Fighter_04_F_OCimport_02 {
+        author = "Rabbit";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "JAS AIR";
+        side = 0;
+        faction = "o_urarmy";
+        crew = "O_URArmy_Crew_01";
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'a3\air_f_jets\plane_fighter_04\data\Fighter_04_fuselage_01_green_co.paa'];_unit setObjectTextureGlobal [1,'a3\air_f_jets\plane_fighter_04\data\Fighter_04_fuselage_02_green_co.paa'];_unit setObjectTextureGlobal [2,'a3\air_f_jets\plane_fighter_04\data\fighter_04_misc_01_co.paa'];_unit setObjectTextureGlobal [3,'a3\air_f_jets\plane_fighter_04\data\Numbers\Fighter_04_number_04_ca.paa'];_unit setObjectTextureGlobal [4,'a3\air_f_jets\plane_fighter_04\data\Numbers\Fighter_04_number_04_ca.paa'];_unit setObjectTextureGlobal [5,'a3\air_f_jets\plane_fighter_04\data\Numbers\Fighter_04_number_08_ca.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+        ALiVE_orbatCreator_texture = "DigitalCamoGreen";
 
     };
 

@@ -16,7 +16,7 @@ class CfgGroups {
                 class o_urarmy_infantry_squad {
                     name = "Squad";
                     side = 0;
-                    faction = "O_URArmy";
+                    faction = "o_urarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
 
@@ -68,12 +68,24 @@ class CfgGroups {
                         side = 0;
                         vehicle = "O_URArmy_Rifleperson_2_01";
                     };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Anti_Tank_Person_02_01";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Light_Marksmen_01";
+                    };
                 };
 
                 class o_urarmy_infantry_team {
                     name = "Team";
                     side = 0;
-                    faction = "O_URArmy";
+                    faction = "o_urarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
 
@@ -106,7 +118,7 @@ class CfgGroups {
                 class o_urarmy_infantry_patrol {
                     name = "Patrol";
                     side = 0;
-                    faction = "O_URArmy";
+                    faction = "o_urarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
 
@@ -127,7 +139,7 @@ class CfgGroups {
                 class o_urarmy_infantry_sniper_team {
                     name = "Sniper Team";
                     side = 0;
-                    faction = "O_URArmy";
+                    faction = "o_urarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
 
@@ -145,10 +157,147 @@ class CfgGroups {
                     };
                 };
 
+                class o_ourarmy_infantry_mg_team {
+                    name = "MG Team";
+                    side = 0;
+                    faction = "o_urarmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_URArmy_Squad_Lead_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_URArmy_Automatic_Rifle_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_URArmy_Automatic_Rifle_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Light_Marksmen_01";
+                    };
+                };
+
+                class o_urarmy_infantry_marksmen_team {
+                    name = "Marksmen Team";
+                    side = 0;
+                    faction = "o_urarmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_URArmy_Team_Lead_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_URArmy_Marksman_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Light_Marksmen_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Light_Marksmen_01";
+                    };
+                };
+
+                class o_ourarmy_infantry_at_team {
+                    name = "AT Team";
+                    side = 0;
+                    faction = "o_urarmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_URArmy_Squad_Lead_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Anti_Tank_Person_02_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Anti_Tank_Person_01_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_URArmy_Rifleperson_2_01";
+                    };
+                };
+
+                class o_ourarmy_infantry_aa_team {
+                    name = "AA Team";
+                    side = 0;
+                    faction = "o_urarmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_URArmy_Squad_Lead_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Anti_Air_Person_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Anti_Air_Person_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_URArmy_Rifleperson_1_01";
+                    };
+                };
+
+            };
+
+            class SpecOps {
+                name = "SpecOps";
+
                 class o_urarmy_infantry_marine_team {
                     name = "Marine Team";
                     side = 0;
-                    faction = "O_URArmy";
+                    faction = "o_urarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
 
@@ -178,10 +327,10 @@ class CfgGroups {
                     };
                 };
 
-                class o_urarmy_infantry_marksmen_team {
-                    name = "Marksmen Team";
+                class o_ourarmy_infantry_marine_squad {
+                    name = "Marine Squad";
                     side = 0;
-                    faction = "O_URArmy";
+                    faction = "o_urarmy";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
 
@@ -189,37 +338,44 @@ class CfgGroups {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
                         side = 0;
-                        vehicle = "O_URArmy_Team_Lead_01";
+                        vehicle = "O_URArmy_Marine_Team_Lead_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_URArmy_Marksman_01";
+                        vehicle = "O_URArmy_Marine_1_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_URArmy_Rifleperson_1_01";
+                        vehicle = "O_URArmy_Marine_2_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
                         side = 0;
-                        vehicle = "O_URArmy_Rifleperson_2_01";
+                        vehicle = "O_OURArmy_Marine_MG_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_URArmy_Marine_Medic_01";
+                    };
+                    class Unit5 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_URArmy_Marine_1_01";
                     };
                 };
 
             };
 
-            class SpecOps {
-                name = "Special Forces";
-
-            };
-
             class Motorized {
-                name = "Motorized Infantry";
+                name = "Motorized";
 
             };
 
@@ -229,17 +385,44 @@ class CfgGroups {
             };
 
             class Support {
-                name = "Support Infantry";
+                name = "Support";
 
             };
 
             class Mechanized {
-                name = "Mechanized Infantry";
+                name = "Mechanized";
+
+                class o_ourarmy_mechanized_apc_squad {
+                    name = "APC Squad";
+                    side = 0;
+                    faction = "o_urarmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_URArmy_Warrior_01";
+                    };
+                    class Unit1 {
+                        position[] = {8,-16,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Stalker_01";
+                    };
+                    class Unit2 {
+                        position[] = {-8,-16,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Stalker_01";
+                    };
+                };
 
             };
 
             class Armored {
-                name = "Armor";
+                name = "Armored";
 
             };
 
