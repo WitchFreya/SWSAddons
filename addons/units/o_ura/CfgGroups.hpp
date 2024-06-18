@@ -372,6 +372,51 @@ class CfgGroups {
                     };
                 };
 
+                class o_ourarmy_specops_ranger_team {
+                    name = "Ranger Team";
+                    side = 0;
+                    faction = "O_URArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_OURArmy_Ranger_Team_Lead_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Ranger_01_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Ranger_02_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Range_Autorifle_01";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Ranger_Marksmen_01";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Ranger_Medic_01";
+                    };
+                };
+
             };
 
             class Motorized {
@@ -423,6 +468,72 @@ class CfgGroups {
 
             class Armored {
                 name = "Armored";
+
+                class o_ourarmy_armored_tank_squadron {
+                    name = "Tank Squad";
+                    side = 0;
+                    faction = "O_URArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_OURArmy_Black_Crusader_Lead_01";
+                    };
+                    class Unit1 {
+                        position[] = {11,-18,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Black_Crusader_01";
+                    };
+                    class Unit2 {
+                        position[] = {-11,-18,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Black_Crusader_01";
+                    };
+                    class Unit3 {
+                        position[] = {21,-26,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Black_Eagle_01";
+                    };
+                };
+
+                class o_ourarmy_armored_light_tank_squad {
+                    name = "Light Tank Squad";
+                    side = 0;
+                    faction = "O_URArmy";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_OURArmy_Red_Eagle_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-8,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Rat_Light_01";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-8,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Rat_ATGM_01";
+                    };
+                    class Unit3 {
+                        position[] = {10,-13,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_OURArmy_Rat_Light_01";
+                    };
+                };
 
             };
 
