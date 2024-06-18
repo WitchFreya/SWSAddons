@@ -1,24 +1,26 @@
 #include "script_component.hpp"
 
-class WeaponSlotsInfo;
-class PointerSlot;
-class Single;
-class Burst;
-
-class SWS_Pointers_Standard;
+class ItemInfo;
+class OpticsModes;
+class AMS;
+class Iron;
 
 #include "CfgWeapons.inc"
 
-class CfgPatches {
-  class SUBADDON {
-    addonRootClass = QUOTE(ADDON);
+class CfgPatches
+{
+  class SUBADDON
+  {
     name = COMPONENT_NAME;
     units[] = { };
     weapons[] = { CLASSES_WEAPONS };
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = {"OPTRE_Weapons"};
+    requiredAddons[] = {
+      "A3_Weapons_F_Mark_Acc"
+    };
     VERSION_CONFIG;
+    addonRootClass = QUOTE(ADDON);
   };
 };

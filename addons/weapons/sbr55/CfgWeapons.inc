@@ -20,10 +20,8 @@ class CfgWeapons {
     class WeaponSlotsInfo : WeaponSlotsInfo {
       mass = 45;
       class PointerSlot : PointerSlot {
-        compatibleItems[] = {
-          ATT_POINTER_ACE
-          , ATT_POINTER_OPTRE_RAIL
-        };
+        delete compatibleItems;
+        class CompatibleItems : SWS_Pointers_Standard {};
       };
     };
 
@@ -56,6 +54,12 @@ class CfgWeapons {
       maxRangeProbab = 0.6;
       aiRateOfFire = 1;
       aiRateOfFireDistance = 10;
+    };
+    class XtdGearInfo {
+      model = "SWS_Weapon_DMR";
+      underbarrel = "None";
+      body = "SBR-55";
+      variant = "Standard";
     };
   };
 };
