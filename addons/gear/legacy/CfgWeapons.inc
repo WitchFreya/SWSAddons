@@ -3,6 +3,7 @@
   QWEAPONS_FN(Bait),        \
   QWEAPONS_FN(Blue),        \
   QWEAPONS_FN(Butler),      \
+  QWEAPONS_FN(Carver),      \
   QWEAPONS_FN(Chrome),      \
   QWEAPONS_FN(CLS),         \
   QWEAPONS_FN(Demon),       \
@@ -96,6 +97,7 @@ class CfgWeapons {
   C_GEAR(Ashes,silver);
   C_GEAR(Bait,red);
   C_GEAR(Butler,purple);
+  C_GEAR(Carver,carver);
   C_GEAR(Chrome,defiant);
   C_GEAR(Demon,purple);
   C_GEAR(Egg,egg);

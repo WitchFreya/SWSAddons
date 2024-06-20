@@ -73,6 +73,7 @@ class XtdGearInfos
     C_GEAR_INFO_OP(Ashes);
     C_GEAR_INFO_OP(Bait);
     C_GEAR_INFO_OP(Butler);
+    C_GEAR_INFO_OP(Carver);
     C_GEAR_INFO_OP(Chrome);
     C_GEAR_INFO_OP(Demon);
     C_GEAR_INFO_OP(Egg);
