@@ -8,6 +8,7 @@ class XtdGearModels {
       "Ashes"
       , "Bait"
       , "Butler"
+      , "Carver"
       , "Chrome"
       , "Demon"
       , "Egg"
@@ -30,6 +31,7 @@ class XtdGearModels {
     class Ashes {};
     class Bait {};
     class Butler {};
+    class Carver {};
     class Chrome {};
     class Demon {};
     class Egg {};
