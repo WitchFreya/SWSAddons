@@ -73,9 +73,7 @@ class CfgWeapons {
 
     class XtdGearInfo {
       model = "SWS_Weapon_DMR";
-      underbarrel = "None";
-      body = "SxMR-397";
-      variant = "Standard";
+      body = "SxMR397";
     };
   };
 };

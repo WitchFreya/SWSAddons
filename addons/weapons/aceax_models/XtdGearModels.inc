@@ -52,26 +52,15 @@ class XtdGearModels {
 
     class SWS_Weapon_DMR : SWS_BaseGearModel {
       label = QNAME(Marksman & Battle Rifles);
-      options[] = {"Body","Underbarrel","Variant"};
+      options[] = {"Body"};
       class Body {
-        alwaysSelectable = TRUE;
         label = "Body Configuration";
-        values[] = {"SBR-55","SxMR-397"};
-        class SBR55 { description = "SBR-55 Battle Rifle"; };
-        class SxMR397 { description = "Longshot"; };
-      };
-      class Underbarrel {
-        alwaysSelectable = TRUE;
-        label = "Underbarrel Attachment";
-        values[] = {"None", "UGL"};
-        class None {};
-        class UGL { description = "Underbarrel Grenade Launcher."; };
-      };
-      class Variant {
-        alwaysSelectable = TRUE;
-        label = "Variant";
-        values[] = {"Standard"};
-        class Standard {};
+        values[] = {"SBR55","SxMR397"};
+        class SBR55 { label = "SBR-55"; };
+        class SxMR397 {
+          label = "SxMR-397";
+          description = "Longshot";
+        };
       };
     };
   };

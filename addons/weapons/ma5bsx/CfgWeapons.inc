@@ -23,7 +23,6 @@ class CfgWeapons {
 
     class WeaponSlotsInfo : WeaponSlotsInfo {
       class CowsSlot : CowsSlot {
-        delete compatibleItems;
         class CompatibleItems : SWS_Scopes_762mm { };
       };
 

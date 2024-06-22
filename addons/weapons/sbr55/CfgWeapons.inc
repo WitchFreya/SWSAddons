@@ -20,7 +20,6 @@ class CfgWeapons {
     class WeaponSlotsInfo : WeaponSlotsInfo {
       mass = 45;
       class PointerSlot : PointerSlot {
-        delete compatibleItems;
         class CompatibleItems : SWS_Pointers_Standard {};
       };
     };
@@ -57,9 +56,7 @@ class CfgWeapons {
     };
     class XtdGearInfo {
       model = "SWS_Weapon_DMR";
-      underbarrel = "None";
-      body = "SBR-55";
-      variant = "Standard";
+      body = "SBR55";
     };
   };
 };
