@@ -34,22 +34,19 @@ class XtdGearModels {
         class Rabbit {};
       };
     };
-    
+
     class SWS_Weapon_PDW : SWS_BaseGearModel {
       label = QNAME(PDW);
-      options[] = {"Body","Variant"};
+      options[] = {"Body"};
       class Body {
         alwaysSelectable = TRUE;
         label = "Body Configuration";
-        values[] = {"Sx-90", "SxC-90"};
-        class SX90 {};
-        class SXC90 {};
-      };
-      class Variant {
-        alwaysSelectable = TRUE;
-        label = "Variant";
-        values[] = {"Standard"};
-        class Standard {};
+        values[] = {"Sx90", "SxC90"};
+        class Sx90 { label = "Sx-90"; };
+        class SxC90 {
+          label = "SxC-90";
+          description = "A longer barrel providing additional accuracy.";
+        };
       };
     };
 

@@ -1,16 +1,16 @@
+#include "script_component.hpp"
+
+#include "CfgMagazines.inc"
+
 class Single;
 class FullAuto;
 class WeaponSlotsInfo;
 class PointerSlot;
 class CowsSlot;
 class MuzzleSlot;
-class SWS_Scopes_PDW;
 class SWS_Pointers_NoBMR;
 
-#include "script_component.hpp"
 #include "CfgWeapons.inc"
-#include "CfgMagazines.inc"
-#include "CfgMagazineWells.inc"
 
 class CfgPatches {
   class SUBADDON {

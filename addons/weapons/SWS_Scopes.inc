@@ -34,30 +34,6 @@ class SWS_Scopes_65mm {
   optre_recon_sight_unsc = TRUE;
 };
 
-class SWS_Scopes_PDW {
-  optic_aco = TRUE;
-  optic_aco_grn = TRUE;
-  optic_aco_smg = TRUE;
-  optic_aco_grn_smg = TRUE;
-
-  optic_holosight = TRUE;
-  optic_holosight_blk_f = TRUE;
-  optic_holosight_khk_f = TRUE;
-
-  optic_holosight_smg = TRUE;
-  optic_holosight_smg_blk_f = TRUE;
-  optic_holosight_smg_khk_f = TRUE;
-
-  optic_mrco = TRUE;
-
-  optre_recon_sight = TRUE;
-  optre_recon_sight_desert = TRUE;
-  optre_recon_sight_green = TRUE;
-  optre_recon_sight_red = TRUE;
-  optre_recon_sight_snow = TRUE;
-  optre_recon_sight_unsc = TRUE;
-};
-
 class SWS_Scopes_762mm : SWS_Scopes_65mm {
   optre_recon_sight = FALSE;
   optre_recon_sight_desert = FALSE;
