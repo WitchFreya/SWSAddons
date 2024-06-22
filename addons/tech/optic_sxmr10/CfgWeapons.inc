@@ -3,21 +3,21 @@
 
 
 class CfgWeapons {
-  class optic_AMS;
-  class SWS_Optic_SxMR10: optic_AMS {
+  class Optic_AMS;
+  class SWS_Optic_SxMR10: Optic_AMS {
     ITEM_META(2);
     displayName = QNAME(SxMR-10);
-		picture = "\x\sws\addons\tech\optic_sxmr10\data\icon_ca.paa";
+		picture = QPATHTOF(data\optic_sxmr10\icon_ca.paa);
     descriptionShort = QUOTE(Experimental optic based on the US Optics MR-10.<br/> A night vision mode has been added.);
 
     class ItemInfo : ItemInfo {
 			class OpticsModes : OpticsModes {
 				class AMS : AMS {
-					visionMode[]= {
-						"Normal", "NVG"
+					visionMode[] = {
+						"Normal"
+            , "NVG"
 					};
 				};
-				class Iron : Iron {};
       };
     };
   };

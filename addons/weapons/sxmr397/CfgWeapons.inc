@@ -46,7 +46,7 @@ class CfgWeapons {
           optic_NVS = TRUE;
           OPTRE_SRM_Sight = TRUE;
           optic_tws = TRUE;
-          optic_AMS = TRUE;
+          Optic_AMS = TRUE;
           optic_AMS_khk = TRUE;
           optic_AMS_snd = TRUE;
           optic_DMS = TRUE;
