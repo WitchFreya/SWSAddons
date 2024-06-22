@@ -1,7 +1,5 @@
-class CfgMagazineWells
-{
-  class XMR_Abyssal
-  {
-    SUBGVAR(Magazines)[] = {CLASSES_MAGAZINES};
+class CfgMagazineWells {
+  class XMR_Abyssal {
+    SUBADDON[] = {CLASSES_MAGAZINES};
   };
 };

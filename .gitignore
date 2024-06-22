@@ -20,6 +20,7 @@ Thumbs.db
 !.vscode/extensions.json
 !.vscode/tasks.template*.json
 changelog.txt
+steamcmd
 
 *.7z
 
