@@ -35,9 +35,9 @@ class CfgVehicles {
     class TransportMagazines {
       MACRO_ADDMAGAZINE(OPTRE_60Rnd_762x51_Mag,80);
       MACRO_ADDMAGAZINE(SWS_Magazine_60Rnd_65x39_Caseless_msbs,40);
-      MACRO_ADDMAGAZINE(SWS_Magazine_60Rnd_65x39_Caseless_msbs_Tracers_Blue,15);
+      MACRO_ADDMAGAZINE(SWS_Magazine_60Rnd_65x39_Caseless_msbs_Tracer_Blue,15);
       MACRO_ADDMAGAZINE(SWS_Magazine_60Rnd_65x39_Caseless,40);
-      MACRO_ADDMAGAZINE(SWS_Magazine_60Rnd_65x39_Caseless_Tracers_Blue,15);
+      MACRO_ADDMAGAZINE(SWS_Magazine_60Rnd_65x39_Caseless_Tracer_Blue,15);
       MACRO_ADDMAGAZINE(OPTRE_36Rnd_95x40_Mag,20);
       MACRO_ADDMAGAZINE(OPTRE_60Rnd_5x23mm_Mag,30);
       MACRO_ADDMAGAZINE(OPTRE_15Rnd_762x51_Mag,20);
@@ -87,9 +87,9 @@ class CfgVehicles {
     class TransportMagazines {
       MACRO_ADDMAGAZINE(OPTRE_60Rnd_762x51_Mag,30);
       MACRO_ADDMAGAZINE(SWS_Magazine_60Rnd_65x39_Caseless_msbs,10);
-      MACRO_ADDMAGAZINE(SWS_Magazine_60Rnd_65x39_Caseless_msbs_Tracers_Blue,5);
+      MACRO_ADDMAGAZINE(SWS_Magazine_60Rnd_65x39_Caseless_msbs_Tracer_Blue,5);
       MACRO_ADDMAGAZINE(SWS_Magazine_60Rnd_65x39_Caseless,10);
-      MACRO_ADDMAGAZINE(SWS_Magazine_60Rnd_65x39_Caseless_Tracers_Blue,5);
+      MACRO_ADDMAGAZINE(SWS_Magazine_60Rnd_65x39_Caseless_Tracer_Blue,5);
       MACRO_ADDMAGAZINE(SWS_Magazine_200Rnd_762x51_Mag_Tracer,4);
       MACRO_ADDMAGAZINE(OPTRE_36Rnd_95x40_Mag,8);
       MACRO_ADDMAGAZINE(OPTRE_60Rnd_5x23mm_Mag,10);

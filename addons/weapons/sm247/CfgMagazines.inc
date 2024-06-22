@@ -7,7 +7,7 @@
   "SWS_Magazine_400Rnd_762x51_Mag_Tracer"
 
 #define NAME_762x51(var0) NAME(var0##Rnd 7.62x51 Box)
-#define NAME_762x51_T(var0) NAME_762x51(var0) (Tracers)
+#define NAME_762x51_T(var0) NAME_762x51(var0) (Tracer)
 #define QNAME_762x51(var0) QUOTE(NAME_762x51(var0))
 #define QNAME_762x51_T(var0) QUOTE(NAME_762x51_T(var0))
 

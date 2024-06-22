@@ -11,7 +11,7 @@ class SWS_Pointers_Standard {
   OPTRE_M12_Laser = TRUE;
   OPTRE_M12_Flashlight = TRUE;
   OPTRE_M12_Vis_Red_Laser = TRUE;
-  // "BMR" target laser 3-mode. 
+  // "BMR" target laser 3-mode.
   OPTRE_BMR_Laser = TRUE;
   OPTRE_BMR_Vis_Red_Laser = TRUE;
   OPTRE_BMR_MEQ_Flashlight = TRUE;
@@ -21,11 +21,4 @@ class SWS_Pointers_NoBMR : SWS_Pointers_Standard {
   OPTRE_BMR_Laser = FALSE;
   OPTRE_BMR_Vis_Red_Laser = FALSE;
   OPTRE_BMR_MEQ_Flashlight = FALSE;
-};
-
-class SWS_Pointers_Muzzle {
-  // BMR Muzzle-mounted thing. Very ugly, we don't normally like this.
-  OPTRE_BMR_Flashlight = TRUE;
-  OPTRE_BMR_Flashlight_Laser = TRUE;
-  OPTRE_BMR_Flashlight_Vis_Red_Laser = TRUE;
 };
