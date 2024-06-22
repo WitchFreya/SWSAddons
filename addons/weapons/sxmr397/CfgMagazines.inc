@@ -17,11 +17,8 @@ class CfgMagazines {
     mass = 15;
   };
 
-  class SWS_Magazine_20Rnd_338_Abyssal_Tracer : SWS_Magazine_20Rnd_338_Abyssal
-  {
-    displayName = QNAME(20Rnd .338 Red Tracer);
-    displayNameShort = QUOTE(.338 Abyssal);
-    descriptionShort = QUOTE(.338 DMR rounds hand-loaded by Demon.<br/>Tipped with an alloy derived from Forerunner materials.);
+  class SWS_Magazine_20Rnd_338_Abyssal_Tracer : SWS_Magazine_20Rnd_338_Abyssal {
+    displayName = QNAME(20Rnd .338 (Red Tracer));
     tracersEvery = 1;
   };
 };
