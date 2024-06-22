@@ -1,10 +1,10 @@
 #define CLASSES_MAGAZINES                                   \
   "SWS_Magazine_60Rnd_65x39_Caseless_MSBS"                  \
-  , "SWS_Magazine_60Rnd_65x39_Caseless_MSBS_Tracers"        \
-  , "SWS_Magazine_60Rnd_65x39_Caseless_MSBS_Tracers_Blue"   \
-  , "SWS_Magazine_60Rnd_65x39_Caseless_MSBS_Tracers_Yellow" \
-  , "SWS_Magazine_60Rnd_65x39_Caseless_MSBS_Tracers_Green"  \
-  , "SWS_Magazine_60Rnd_65x39_Caseless_MSBS_Tracers_Orange"
+  , "SWS_Magazine_60Rnd_65x39_Caseless_MSBS_Tracer"        \
+  , "SWS_Magazine_60Rnd_65x39_Caseless_MSBS_Tracer_Blue"   \
+  , "SWS_Magazine_60Rnd_65x39_Caseless_MSBS_Tracer_Yellow" \
+  , "SWS_Magazine_60Rnd_65x39_Caseless_MSBS_Tracer_Green"  \
+  , "SWS_Magazine_60Rnd_65x39_Caseless_MSBS_Tracer_Orange"
 
 class CfgMagazines {
   class 30Rnd_65x39_Caseless_MSBS_Mag;
@@ -18,13 +18,13 @@ class CfgMagazines {
     mass = 25;
   };
 
-  class SWS_Magazine_60Rnd_65x39_Caseless_MSBS_Tracers : SWS_Magazine_60Rnd_65x39_Caseless_MSBS {
+  class SWS_Magazine_60Rnd_65x39_Caseless_MSBS_Tracer : SWS_Magazine_60Rnd_65x39_Caseless_MSBS {
     displayName = QNAME(60Rnd 6.5mm 0M37S Mag (Red Tracer));
     tracersEvery = 1;
   };
 
 #define C_TRACERS(varColor) \
-  class SWS_Magazine_60Rnd_65x39_Caseless_MSBS_Tracers_##varColor : SWS_Magazine_60Rnd_65x39_Caseless_MSBS_Tracers \
+  class SWS_Magazine_60Rnd_65x39_Caseless_MSBS_Tracer_##varColor : SWS_Magazine_60Rnd_65x39_Caseless_MSBS_Tracer \
   { displayName = QNAME(60Rnd 6.5mm 0M37S Mag (varColor Tracer)); ammo = QUOTE(B_65x39_Caseless_##varColor); }
 
   C_TRACERS(Blue);

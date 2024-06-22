@@ -12,7 +12,6 @@ class CfgWeapons {
     baseWeapon = "SWS_Weapon_SMA37K";
     class WeaponSlotsInfo : WeaponSlotsInfo {
       class PointerSlot : PointerSlot {
-        delete compatibleItems;
         class CompatibleItems : SWS_Pointers_Standard {};
       };
     };

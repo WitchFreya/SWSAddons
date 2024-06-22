@@ -34,47 +34,33 @@ class XtdGearModels {
         class Rabbit {};
       };
     };
-    
+
     class SWS_Weapon_PDW : SWS_BaseGearModel {
       label = QNAME(PDW);
-      options[] = {"Body","Variant"};
+      options[] = {"Body"};
       class Body {
         alwaysSelectable = TRUE;
         label = "Body Configuration";
-        values[] = {"Sx-90", "SxC-90"};
-        class SX90 {};
-        class SXC90 {};
-      };
-      class Variant {
-        alwaysSelectable = TRUE;
-        label = "Variant";
-        values[] = {"Standard"};
-        class Standard {};
+        values[] = {"Sx90", "SxC90"};
+        class Sx90 { label = "Sx-90"; };
+        class SxC90 {
+          label = "SxC-90";
+          description = "A longer barrel providing additional accuracy.";
+        };
       };
     };
 
     class SWS_Weapon_DMR : SWS_BaseGearModel {
       label = QNAME(Marksman & Battle Rifles);
-      options[] = {"Body","Underbarrel","Variant"};
+      options[] = {"Body"};
       class Body {
-        alwaysSelectable = TRUE;
         label = "Body Configuration";
-        values[] = {"SBR-55","SxMR-397"};
-        class SBR55 { description = "SBR-55 Battle Rifle"; };
-        class SxMR397 { description = "Longshot"; };
-      };
-      class Underbarrel {
-        alwaysSelectable = TRUE;
-        label = "Underbarrel Attachment";
-        values[] = {"None", "UGL"};
-        class None {};
-        class UGL { description = "Underbarrel Grenade Launcher."; };
-      };
-      class Variant {
-        alwaysSelectable = TRUE;
-        label = "Variant";
-        values[] = {"Standard"};
-        class Standard {};
+        values[] = {"SBR55","SxMR397"};
+        class SBR55 { label = "SBR-55"; };
+        class SxMR397 {
+          label = "SxMR-397";
+          description = "Longshot";
+        };
       };
     };
   };
