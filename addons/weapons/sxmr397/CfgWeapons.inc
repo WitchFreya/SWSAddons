@@ -7,8 +7,8 @@ class CfgWeapons {
   class SWS_Weapon_SxMR397 : OPTRE_M393_DMR {
     ITEM_META(2);
     displayName = QNAME(SxMR-397 Longshot);
-    magazines[] = {"SWS_Magazine_15rnd_338_Abyssal"};
-    magazineWell[] = { "XMR_Abyssal" };
+    magazines[] = {CLASSES_MAGAZINES};
+    magazineWell[] = {};
     recoil = "recoil_dmr_02";
     recoilProne = "recoil_ebr";
     baseWeapon = "SWS_Weapon_SXMR397";

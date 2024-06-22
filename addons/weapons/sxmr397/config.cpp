@@ -1,5 +1,8 @@
 #include "script_component.hpp"
 
+#include "CfgAmmo.inc"
+#include "CfgMagazines.inc"
+
 class Single;
 class WeaponSlotsInfo;
 class MuzzleSlot;
@@ -7,10 +10,6 @@ class PointerSlot;
 class CowsSlot;
 class SWS_Scopes_65mm;
 #include "CfgWeapons.inc"
-
-#include "CfgAmmo.inc"
-#include "CfgMagazines.inc"
-#include "CfgMagazineWells.inc"
 
 class CfgPatches {
   class SUBADDON {
