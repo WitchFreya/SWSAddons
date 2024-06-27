@@ -1,4 +1,5 @@
 #include "script_component.hpp"
+
 #include "CfgFactionClasses.hpp"
 
 class CargoTurret_01;
@@ -21,30 +22,12 @@ class CfgPatches {
     author = QUOTE(AUTHOR);
     authors[] = {AUTHORS};
     skipWhenMissingDependencies = TRUE;
-    units[] = {
-      "O_URArmy_Squad_Lead_01"
-      , "O_URArmy_Team_Lead_01"
-      , "O_URArmy_Rifleperson_1_01"
-      , "O_URArmy_Rifleperson_2_01"
-      , "O_URArmy_Automatic_Rifle_01"
-      , "O_URArmy_Medic_01"
-      , "O_URArmy_Marksman_01"
-      , "O_URArmy_Crew_01"
-      , "O_URArmy_Sniper_01"
-      , "O_URArmy_Spotter_01"
-      , "O_URArmy_Marine_1_01"
-      , "O_URArmy_Marine_2_01"
-      , "O_URArmy_Marine_Team_Lead_01"
-      , "O_URArmy_Marine_Medic_01"
-      , "O_URArmy_Warrior_01"
-      , "O_URArmy_HMG_Dagger_01"
-      , "O_URArmy_HMG_Jeep_01"
-      , "O_URArmy_Covered_Truck_01"
-    };
+    units[] = {CLASSES_VEHICLES};
     weapons[] = {};
     requiredVersion = 1.62;
     requiredAddons[] = {
-      "OPTRE_Vehicles_Elephant"
+      "OPTRE_core"
+      , "OPTRE_Vehicles_Elephant"
       , "OPTRE_Vehicles_M494"
       , "OPTRE_Vehicles_M808B2"
     };
