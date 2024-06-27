@@ -2,3 +2,4 @@
 #define SUBCOMPONENT_BEAUTIFIED United Rebel Army
 #include "..\script_component.hpp"
 
+#define AUTHORS "Rabbit", "Maid"
