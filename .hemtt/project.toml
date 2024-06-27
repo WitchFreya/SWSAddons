@@ -45,6 +45,9 @@ workshop = [
   "3055061422", # Evolved Role Progression
   "2522638637", # ace arsenal extended
 
+  # v13
+  "2202413047", # ACE No Uniform Restriction
+
   # patches
   "1779063631", # zen
   "2291129343", # improved melee system (dependency of 41st)
@@ -59,9 +62,6 @@ workshop = [
   "2918542818", # Sci-fi Support Plus
   "2447965207", # Crow's Zeus Additions
   "925018569",  # WMO - Walkable Moving Objects
-
-  # unnecessary but occasionally useful
-  # "620260972",  # ALiVE
 
   # server mods
   "1768992669", # inidb2
@@ -120,7 +120,6 @@ workshop = [
   "769440155",  # optre
   "837729515",  # CH View Distance
   "861133494",  # JSRS SOUNDMOD
-  "894678801",  # tfar
   "925018569",  # WMO - Walkable Moving Objects
   # mods I hate
   "1797512739", # operation arsenal expansion for OPTRE
@@ -168,9 +167,6 @@ workshop = [
   "2499317133", # Space Skyboxes
   "1508091616", # Metis Marker
   # "1957746437", # ADV ACE-CPR (removed in this version)
-
-  # v16
-  "718649903", # Lingor/Dingor island
 
   # additional mods
   "2791403093", # Better Inventory
@@ -275,4 +271,9 @@ workshop = [
   # "1797512739", # operation arsenal expansion for OPTRE
   # "2909265898", # OPTRE Ordnance Expansion
   "2735613231", # Weather Plus
+]
+
+[hemtt.launch.alive]
+workshop = [
+  "620260972", # ALiVE
 ]
