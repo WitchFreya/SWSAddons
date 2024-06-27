@@ -45,6 +45,9 @@ workshop = [
   "3055061422", # Evolved Role Progression
   "2522638637", # ace arsenal extended
 
+  # v13
+  "2202413047", # ACE No Uniform Restriction
+
   # patches
   "1779063631", # zen
   "2291129343", # improved melee system (dependency of 41st)
@@ -59,9 +62,6 @@ workshop = [
   "2918542818", # Sci-fi Support Plus
   "2447965207", # Crow's Zeus Additions
   "925018569",  # WMO - Walkable Moving Objects
-
-  # unnecessary but occasionally useful
-  # "620260972",  # ALiVE
 
   # server mods
   "1768992669", # inidb2
