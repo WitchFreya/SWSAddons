@@ -37,8 +37,8 @@ class CfgVehicles {
     linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
     respawnlinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
-    weapons[] = {"arifle_AK12_F","launch_MRAWS_sand_rail_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
-    respawnWeapons[] = {"arifle_AK12_F","launch_MRAWS_sand_rail_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+    weapons[] = {"arifle_AK12_F","launch_MRAWS_sand_rail_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
+    respawnWeapons[] = {"arifle_AK12_F","launch_MRAWS_sand_rail_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
 
     magazines[] = {"30Rnd_762x39_AK12_Mag_F","MRAWS_HEAT_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","MRAWS_HEAT_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -62,8 +62,8 @@ class CfgVehicles {
     linkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"};
     respawnlinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"};
 
-    weapons[] = {"arifle_AK12_GL_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
-    respawnWeapons[] = {"arifle_AK12_GL_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+    weapons[] = {"arifle_AK12_GL_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
+    respawnWeapons[] = {"arifle_AK12_GL_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
 
     magazines[] = {"30Rnd_762x39_AK12_Mag_F","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -84,8 +84,8 @@ class CfgVehicles {
     linkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"};
     respawnlinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"};
 
-    weapons[] = {"arifle_AK12_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
-    respawnWeapons[] = {"arifle_AK12_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+    weapons[] = {"arifle_AK12_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
+    respawnWeapons[] = {"arifle_AK12_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
 
     magazines[] = {"30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -106,8 +106,8 @@ class CfgVehicles {
     linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
     respawnlinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
-    weapons[] = {"arifle_AK12_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
-    respawnWeapons[] = {"arifle_AK12_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+    weapons[] = {"arifle_AK12_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
+    respawnWeapons[] = {"arifle_AK12_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
 
     magazines[] = {"30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -128,8 +128,8 @@ class CfgVehicles {
     linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
     respawnlinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
-    weapons[] = {"OPTRE_MA37K","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
-    respawnWeapons[] = {"OPTRE_MA37K","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+    weapons[] = {"OPTRE_MA37K","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
+    respawnWeapons[] = {"OPTRE_MA37K","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
 
     magazines[] = {"OPTRE_32Rnd_762x51_Mag","11Rnd_45ACP_Mag","Laserbatteries","OPTRE_32Rnd_762x51_Mag","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag","11Rnd_45ACP_Mag","Laserbatteries","OPTRE_32Rnd_762x51_Mag","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -150,8 +150,8 @@ class CfgVehicles {
     linkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
     respawnlinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
 
-    weapons[] = {"MMG_02_black_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
-    respawnWeapons[] = {"MMG_02_black_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+    weapons[] = {"MMG_02_black_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
+    respawnWeapons[] = {"MMG_02_black_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
 
     magazines[] = {"130Rnd_338_Mag","11Rnd_45ACP_Mag","Laserbatteries","130Rnd_338_Mag","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"130Rnd_338_Mag","11Rnd_45ACP_Mag","Laserbatteries","130Rnd_338_Mag","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -172,8 +172,8 @@ class CfgVehicles {
     linkedItems[] = {"OPTRE_Vest_CMA_Light","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
     respawnlinkedItems[] = {"OPTRE_Vest_CMA_Light","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
 
-    weapons[] = {"OPTRE_MA37K","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
-    respawnWeapons[] = {"OPTRE_MA37K","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+    weapons[] = {"OPTRE_MA37K","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
+    respawnWeapons[] = {"OPTRE_MA37K","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
 
     magazines[] = {"OPTRE_32Rnd_762x51_Mag","11Rnd_45ACP_Mag","Laserbatteries","OPTRE_32Rnd_762x51_Mag","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag","11Rnd_45ACP_Mag","Laserbatteries","OPTRE_32Rnd_762x51_Mag","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -194,8 +194,8 @@ class CfgVehicles {
     linkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
     respawnlinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
 
-    weapons[] = {"srifle_DMR_02_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
-    respawnWeapons[] = {"srifle_DMR_02_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+    weapons[] = {"srifle_DMR_02_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
+    respawnWeapons[] = {"srifle_DMR_02_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
 
     magazines[] = {"10Rnd_338_Mag","11Rnd_45ACP_Mag","Laserbatteries","10Rnd_338_Mag","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"10Rnd_338_Mag","11Rnd_45ACP_Mag","Laserbatteries","10Rnd_338_Mag","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -216,8 +216,8 @@ class CfgVehicles {
     linkedItems[] = {"OPTRE_Vest_CMA_Light","H_PilotHelmetFighter_B","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
     respawnlinkedItems[] = {"OPTRE_Vest_CMA_Light","H_PilotHelmetFighter_B","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
 
-    weapons[] = {"hgun_PDW2000_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
-    respawnWeapons[] = {"hgun_PDW2000_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+    weapons[] = {"hgun_PDW2000_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
+    respawnWeapons[] = {"hgun_PDW2000_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
 
     magazines[] = {"30Rnd_9x21_Mag","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_9x21_Mag","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"30Rnd_9x21_Mag","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_9x21_Mag","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -238,8 +238,8 @@ class CfgVehicles {
     linkedItems[] = {"V_PlateCarrier2_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
     respawnlinkedItems[] = {"V_PlateCarrier2_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
 
-    weapons[] = {"srifle_GM6_ghex_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
-    respawnWeapons[] = {"srifle_GM6_ghex_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+    weapons[] = {"srifle_GM6_ghex_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
+    respawnWeapons[] = {"srifle_GM6_ghex_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
 
     magazines[] = {"5Rnd_127x108_Mag","11Rnd_45ACP_Mag","Laserbatteries","5Rnd_127x108_Mag","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"5Rnd_127x108_Mag","11Rnd_45ACP_Mag","Laserbatteries","5Rnd_127x108_Mag","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -260,8 +260,8 @@ class CfgVehicles {
     linkedItems[] = {"V_PlateCarrier2_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
     respawnlinkedItems[] = {"V_PlateCarrier2_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
 
-    weapons[] = {"arifle_AK12_lush_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
-    respawnWeapons[] = {"arifle_AK12_lush_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+    weapons[] = {"arifle_AK12_lush_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
+    respawnWeapons[] = {"arifle_AK12_lush_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
 
     magazines[] = {"30rnd_762x39_AK12_Lush_Mag_F","11Rnd_45ACP_Mag","Laserbatteries","30rnd_762x39_AK12_Lush_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"30rnd_762x39_AK12_Lush_Mag_F","11Rnd_45ACP_Mag","Laserbatteries","30rnd_762x39_AK12_Lush_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -282,8 +282,8 @@ class CfgVehicles {
     linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
     respawnlinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
-    weapons[] = {"arifle_AK12_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
-    respawnWeapons[] = {"arifle_AK12_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+    weapons[] = {"arifle_AK12_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
+    respawnWeapons[] = {"arifle_AK12_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
 
     magazines[] = {"30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -304,8 +304,8 @@ class CfgVehicles {
     linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
     respawnlinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
-    weapons[] = {"OPTRE_M45ATAC","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
-    respawnWeapons[] = {"OPTRE_M45ATAC","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+    weapons[] = {"OPTRE_M45ATAC","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
+    respawnWeapons[] = {"OPTRE_M45ATAC","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
 
     magazines[] = {"OPTRE_12Rnd_8Gauge_Pellets","11Rnd_45ACP_Mag","Laserbatteries","OPTRE_12Rnd_8Gauge_Pellets","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"OPTRE_12Rnd_8Gauge_Pellets","11Rnd_45ACP_Mag","Laserbatteries","OPTRE_12Rnd_8Gauge_Pellets","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -326,8 +326,8 @@ class CfgVehicles {
     linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
     respawnlinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
-    weapons[] = {"19_UNSC_M7","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
-    respawnWeapons[] = {"19_UNSC_M7","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+    weapons[] = {"19_UNSC_M7","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
+    respawnWeapons[] = {"19_UNSC_M7","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
 
     magazines[] = {"60Rnd_5x23_m7_fmj","11Rnd_45ACP_Mag","Laserbatteries","60Rnd_5x23_m7_fmj","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"60Rnd_5x23_m7_fmj","11Rnd_45ACP_Mag","Laserbatteries","60Rnd_5x23_m7_fmj","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -348,8 +348,8 @@ class CfgVehicles {
     linkedItems[] = {"OPTRE_Vest_CMA_Light","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
     respawnlinkedItems[] = {"OPTRE_Vest_CMA_Light","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
-    weapons[] = {"19_UNSC_M7","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
-    respawnWeapons[] = {"19_UNSC_M7","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+    weapons[] = {"19_UNSC_M7","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
+    respawnWeapons[] = {"19_UNSC_M7","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
 
     magazines[] = {"60Rnd_5x23_m7_fmj","11Rnd_45ACP_Mag","Laserbatteries","60Rnd_5x23_m7_fmj","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"60Rnd_5x23_m7_fmj","11Rnd_45ACP_Mag","Laserbatteries","60Rnd_5x23_m7_fmj","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -449,8 +449,8 @@ class CfgVehicles {
     linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
     respawnlinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
-    weapons[] = {"arifle_AK12_F","launch_O_Vorona_brown_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
-    respawnWeapons[] = {"arifle_AK12_F","launch_O_Vorona_brown_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+    weapons[] = {"arifle_AK12_F","launch_O_Vorona_brown_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
+    respawnWeapons[] = {"arifle_AK12_F","launch_O_Vorona_brown_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
 
     magazines[] = {"30Rnd_762x39_AK12_Mag_F","Vorona_HEAT","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","Vorona_HEAT","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -471,8 +471,8 @@ class CfgVehicles {
     linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
     respawnlinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
-    weapons[] = {"srifle_EBR_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
-    respawnWeapons[] = {"srifle_EBR_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+    weapons[] = {"srifle_EBR_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
+    respawnWeapons[] = {"srifle_EBR_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
 
     magazines[] = {"20Rnd_762x51_Mag","11Rnd_45ACP_Mag","Laserbatteries","20Rnd_762x51_Mag","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"20Rnd_762x51_Mag","11Rnd_45ACP_Mag","Laserbatteries","20Rnd_762x51_Mag","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -493,8 +493,8 @@ class CfgVehicles {
     linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
     respawnlinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
-    weapons[] = {"arifle_AK12_F","launch_B_Titan_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
-    respawnWeapons[] = {"arifle_AK12_F","launch_B_Titan_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+    weapons[] = {"arifle_AK12_F","launch_B_Titan_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
+    respawnWeapons[] = {"arifle_AK12_F","launch_B_Titan_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
 
     magazines[] = {"30Rnd_762x39_AK12_Mag_F","Titan_AA","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","Titan_AA","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -515,8 +515,8 @@ class CfgVehicles {
     linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
     respawnlinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
-    weapons[] = {"LMG_Mk200_black_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
-    respawnWeapons[] = {"LMG_Mk200_black_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+    weapons[] = {"LMG_Mk200_black_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
+    respawnWeapons[] = {"LMG_Mk200_black_F","hgun_Pistol_heavy_01_F","Laserdesignator_01_khk_F"};
 
     magazines[] = {"200Rnd_65x39_cased_Box","11Rnd_45ACP_Mag","Laserbatteries","200Rnd_65x39_cased_Box","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"200Rnd_65x39_cased_Box","11Rnd_45ACP_Mag","Laserbatteries","200Rnd_65x39_cased_Box","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -659,8 +659,8 @@ class CfgVehicles {
     linkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
     respawnlinkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
 
-    weapons[] = {"19_UNSC_MA5A","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
-    respawnWeapons[] = {"19_UNSC_MA5A","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
+    weapons[] = {"19_UNSC_MA5A","hgun_Pistol_heavy_01_F","Rangefinder"};
+    respawnWeapons[] = {"19_UNSC_MA5A","hgun_Pistol_heavy_01_F","Rangefinder"};
 
     magazines[] = {"32Rnd_762x51_MA5","11Rnd_45ACP_Mag","32Rnd_762x51_MA5","11Rnd_45ACP_Mag"};
     respawnMagazines[] = {"32Rnd_762x51_MA5","11Rnd_45ACP_Mag","32Rnd_762x51_MA5","11Rnd_45ACP_Mag"};
@@ -684,8 +684,8 @@ class CfgVehicles {
     linkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
     respawnlinkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
 
-    weapons[] = {"OPTRE_MA37K","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
-    respawnWeapons[] = {"OPTRE_MA37K","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
+    weapons[] = {"OPTRE_MA37K","hgun_Pistol_heavy_01_F","Rangefinder"};
+    respawnWeapons[] = {"OPTRE_MA37K","hgun_Pistol_heavy_01_F","Rangefinder"};
 
     magazines[] = {"OPTRE_32Rnd_762x51_Mag","11Rnd_45ACP_Mag","OPTRE_32Rnd_762x51_Mag","11Rnd_45ACP_Mag"};
     respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag","11Rnd_45ACP_Mag","OPTRE_32Rnd_762x51_Mag","11Rnd_45ACP_Mag"};
@@ -706,8 +706,8 @@ class CfgVehicles {
     linkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
     respawnlinkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
 
-    weapons[] = {"19_UNSC_MA5A_gl","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
-    respawnWeapons[] = {"19_UNSC_MA5A_gl","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
+    weapons[] = {"19_UNSC_MA5A_gl","hgun_Pistol_heavy_01_F","Rangefinder"};
+    respawnWeapons[] = {"19_UNSC_MA5A_gl","hgun_Pistol_heavy_01_F","Rangefinder"};
 
     magazines[] = {"32Rnd_762x51_MA5","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag","32Rnd_762x51_MA5","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag"};
     respawnMagazines[] = {"32Rnd_762x51_MA5","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag","32Rnd_762x51_MA5","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag"};
@@ -728,8 +728,8 @@ class CfgVehicles {
     linkedItems[] = {"OPTRE_UNSC_M52A_Armor4_MAR","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
     respawnlinkedItems[] = {"OPTRE_UNSC_M52A_Armor4_MAR","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
 
-    weapons[] = {"Dmns_M33_T","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
-    respawnWeapons[] = {"Dmns_M33_T","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
+    weapons[] = {"Dmns_M33_T","hgun_Pistol_heavy_01_F","Rangefinder"};
+    respawnWeapons[] = {"Dmns_M33_T","hgun_Pistol_heavy_01_F","Rangefinder"};
 
     magazines[] = {"DMNS_100Rnd_762x51_Mag","11Rnd_45ACP_Mag","DMNS_100Rnd_762x51_Mag","11Rnd_45ACP_Mag"};
     respawnMagazines[] = {"DMNS_100Rnd_762x51_Mag","11Rnd_45ACP_Mag","DMNS_100Rnd_762x51_Mag","11Rnd_45ACP_Mag"};
@@ -750,8 +750,8 @@ class CfgVehicles {
     linkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
     respawnlinkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
 
-    weapons[] = {"srifle_DMR_05_tan_f","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
-    respawnWeapons[] = {"srifle_DMR_05_tan_f","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
+    weapons[] = {"srifle_DMR_05_tan_f","hgun_Pistol_heavy_01_F","Rangefinder"};
+    respawnWeapons[] = {"srifle_DMR_05_tan_f","hgun_Pistol_heavy_01_F","Rangefinder"};
 
     magazines[] = {"10Rnd_93x64_DMR_05_Mag","11Rnd_45ACP_Mag","10Rnd_93x64_DMR_05_Mag","11Rnd_45ACP_Mag"};
     respawnMagazines[] = {"10Rnd_93x64_DMR_05_Mag","11Rnd_45ACP_Mag","10Rnd_93x64_DMR_05_Mag","11Rnd_45ACP_Mag"};
@@ -772,8 +772,8 @@ class CfgVehicles {
     linkedItems[] = {"OPTRE_UNSC_M52A_Armor4_MAR","OPTRE_FC_VX19_Helmet_Snow","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
     respawnlinkedItems[] = {"OPTRE_UNSC_M52A_Armor4_MAR","OPTRE_FC_VX19_Helmet_Snow","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
 
-    weapons[] = {"19_UNSC_M7","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
-    respawnWeapons[] = {"19_UNSC_M7","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
+    weapons[] = {"19_UNSC_M7","hgun_Pistol_heavy_01_F","Rangefinder"};
+    respawnWeapons[] = {"19_UNSC_M7","hgun_Pistol_heavy_01_F","Rangefinder"};
 
     magazines[] = {"60Rnd_5x23_m7_fmj","11Rnd_45ACP_Mag","60Rnd_5x23_m7_fmj","11Rnd_45ACP_Mag"};
     respawnMagazines[] = {"60Rnd_5x23_m7_fmj","11Rnd_45ACP_Mag","60Rnd_5x23_m7_fmj","11Rnd_45ACP_Mag"};
