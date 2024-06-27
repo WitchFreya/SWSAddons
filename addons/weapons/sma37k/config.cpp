@@ -1,6 +1,8 @@
 #include "script_component.hpp"
 
 class SWS_Pointers_Standard;
+class WeaponSlotsInfo;
+class PointerSlot;
 
 #include "CfgWeapons.inc"
 

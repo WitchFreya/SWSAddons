@@ -9,6 +9,8 @@ class MuzzleSlot;
 class PointerSlot;
 class CowsSlot;
 class SWS_Scopes_65mm;
+class CompatibleItems;
+
 #include "CfgWeapons.inc"
 
 class CfgPatches {
