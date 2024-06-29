@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
-#include "CfgFactionClasses.hpp"
-#include "CfgGroups.hpp"
+#include "CfgFactionClasses.inc"
+#include "CfgGroups.inc"
 
 class CargoTurret_01;
 class CargoTurret_02;
@@ -15,7 +15,7 @@ class TopTurret;
 class Turrets;
 class EventHandlers;
 
-#include "CfgVehicles.hpp"
+#include "CfgVehicles.inc"
 
 class CfgPatches {
   class SUBADDON {
