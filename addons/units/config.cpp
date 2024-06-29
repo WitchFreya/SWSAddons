@@ -1,17 +1,20 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class ADDON
-    {
-        name = COMPONENT_NAME;
-        units[] = { };
-        weapons[] = { };
-        magazines[] = { };
-        ammo[] = { };
-        requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { };
-        author = QUOTE(AUTHOR);
-        VERSION_CONFIG;
+#include "CfgEventHandlers.inc"
+
+class CfgPatches {
+  class ADDON {
+    name = COMPONENT_NAME;
+    author = QUOTE(AUTHOR);
+    units[] = { };
+    weapons[] = { };
+    magazines[] = { };
+    ammo[] = { };
+    requiredVersion = REQUIRED_VERSION;
+    requiredAddons[] = {
+      "sws_main"
+      , "sws_common"
     };
+    VERSION_CONFIG;
+  };
 };
