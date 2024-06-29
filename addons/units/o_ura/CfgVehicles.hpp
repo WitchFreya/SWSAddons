@@ -75,9 +75,7 @@ class CfgVehicles {
   class EMP_Recon_Marksman;
 
   class SWS_O_URArmy_Anti_Tank_Person_02_01 : EMP_Demolitions_Specialist {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Anti-Tank Person 02";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -110,9 +108,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Squad_Lead_01 : EMP_CBRN_Element_Lead {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Squad Lead";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -145,9 +141,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Team_Lead_01 : SWS_O_URArmy_Squad_Lead_01 {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Team Lead";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -180,9 +174,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Rifleperson_1_01 : SWS_O_URArmy_Team_Lead_01 {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Rifleperson 1";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -215,9 +207,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Rifleperson_2_01 : SWS_O_URArmy_Rifleperson_1_01 {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Rifleperson 2";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -250,9 +240,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Automatic_Rifle_01 : SWS_O_URArmy_Rifleperson_2_01 {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Automatic Rifle";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -285,9 +273,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Medic_01 : SWS_O_URArmy_Rifleperson_2_01 {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Medic";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -320,9 +306,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Marksman_01 : SWS_O_URArmy_Automatic_Rifle_01 {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Marksman";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -355,9 +339,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Crew_01 : SWS_O_URArmy_Rifleperson_1_01 {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Crew";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -390,9 +372,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Sniper_01 : SWS_O_URArmy_Marksman_01 {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Sniper";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -425,9 +405,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Spotter_01 : SWS_O_URArmy_Sniper_01 {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Spotter";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -460,9 +438,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Marine_1_01 : SWS_O_URArmy_Rifleperson_1_01 {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Marine 1";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -495,9 +471,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Marine_2_01 : SWS_O_URArmy_Marine_1_01 {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Marine 2";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -530,9 +504,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Marine_Team_Lead_01 : SWS_O_URArmy_Marine_1_01 {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Marine Team Lead";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -565,9 +537,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Marine_Medic_01 : SWS_O_URArmy_Marine_Team_Lead_01 {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Marine Medic";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -600,9 +570,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Warrior_01 : I_APC_Tracked_03_Cannon_F {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Warrior";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -625,9 +593,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_HMG_Dagger_01 : EMP_Polaris_DAGOR_HMG {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "HMG Dagger";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -653,9 +619,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_HMG_Jeep_01 : I_C_Offroad_02_LMG_F {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "HMG Jeep";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -679,9 +643,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Covered_Truck_01 : O_Truck_02_Covered_F {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Covered Truck";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -705,9 +667,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Anti_Tank_Person_01_01 : EMP_CBRN_Element_Lead {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Anti-Tank Person 01";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -740,9 +700,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Light_Marksmen_01 : EMP_CBRN_Element_Lead {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Light Marksmen";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -775,9 +733,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Anti_Air_Person_01 : EMP_CBRN_Element_Lead {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Anti Air Person";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -810,9 +766,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Marine_MG_01 : EMP_CBRN_LMG_Operator {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Marine MG";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -845,9 +799,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Stalker_01 : O_APC_Tracked_02_Cannon_F {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Stalker";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -870,9 +822,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Taru_Transport_01 : EMP_Mi290_Taru_Transport {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Taru Transport";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -898,9 +848,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Merlin_Transport_01 : I_Heli_Transport_02_F {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Merlin Transport";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -925,9 +873,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Wildcat_01 : I_Heli_Light_03_DynamicLoadout_F {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Wildcat";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -952,9 +898,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Kajman_01 : O_Heli_Attack_02_DynamicLoadout_F {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Kajman";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -977,9 +921,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_YAK_CAS_01 : O_Plane_CAS_02_DynamicLoadout_F {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "YAK CAS";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -996,9 +938,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_JAS_AIR_01 : I_Plane_Fighter_04_F {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "JAS AIR";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
@@ -1016,9 +956,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Ranger_01_01 : EMP_Recon_Marksman {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Ranger 01";
     side = SIDE_OPFOR;
     faction = "SWS_O_URArmy";
@@ -1051,9 +989,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Ranger_02_01 : SWS_O_URArmy_Ranger_01_01 {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Ranger 02";
     side = SIDE_OPFOR;
     faction = "SWS_O_URArmy";
@@ -1086,9 +1022,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Ranger_Team_Lead_01 : SWS_O_URArmy_Ranger_01_01 {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Ranger Team Lead";
     side = SIDE_OPFOR;
     faction = "SWS_O_URArmy";
@@ -1121,9 +1055,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Range_Autorifle_01 : SWS_O_URArmy_Ranger_01_01 {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Range Autorifle";
     side = SIDE_OPFOR;
     faction = "SWS_O_URArmy";
@@ -1156,9 +1088,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Ranger_Marksmen_01 : SWS_O_URArmy_Ranger_02_01 {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Ranger Marksmen";
     side = SIDE_OPFOR;
     faction = "SWS_O_URArmy";
@@ -1191,9 +1121,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Ranger_Medic_01 : SWS_O_URArmy_Range_Autorifle_01 {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Ranger Medic";
     side = SIDE_OPFOR;
     faction = "SWS_O_URArmy";
@@ -1226,9 +1154,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Black_Eagle_01 : O_MBT_02_Cannon_F {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Black Eagle";
     side = SIDE_OPFOR;
     faction = "SWS_O_URArmy";
@@ -1251,9 +1177,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Black_Crusader_01 : O_MBT_04_Cannon_F {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Black Crusader";
     side = SIDE_OPFOR;
     faction = "SWS_O_URArmy";
@@ -1276,9 +1200,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Black_Crusader_Lead_01 : O_MBT_04_Command_F {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Black Crusader Lead";
     side = SIDE_OPFOR;
     faction = "SWS_O_URArmy";
@@ -1300,9 +1222,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Rat_ATGM_01 : I_LT_01_AT_F {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Rat [ATGM]";
     side = SIDE_OPFOR;
     faction = "SWS_O_URArmy";
@@ -1325,9 +1245,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Rat_Light_01 : I_LT_01_Cannon_F {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Rat [Light]";
     side = SIDE_OPFOR;
     faction = "SWS_O_URArmy";
@@ -1349,9 +1267,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Red_Eagle_01 : B_MBT_01_Cannon_F {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Red Eagle";
     side = SIDE_OPFOR;
     faction = "SWS_O_URArmy";
@@ -1374,9 +1290,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Tiger_01 : O_APC_Tracked_02_AA_F {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Tiger";
     side = SIDE_OPFOR;
     faction = "SWS_O_URArmy";
@@ -1399,9 +1313,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Rat_AA_01 : I_LT_01_AA_F {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Rat [AA]";
     side = SIDE_OPFOR;
     faction = "SWS_O_URArmy";
@@ -1423,9 +1335,7 @@ class CfgVehicles {
   };
 
   class SWS_O_URArmy_Shadow_01 : O_MBT_02_Arty_F {
-    author = "Rabbit";
-    scope = 2;
-    scopeCurator = 2;
+    ITEM_META(2);
     displayName = "Shadow";
     side = SIDE_OPFOR;
     faction = "SWS_O_URArmy";
