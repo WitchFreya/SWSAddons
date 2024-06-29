@@ -102,7 +102,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -135,7 +135,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -168,7 +168,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -201,7 +201,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -234,7 +234,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -267,7 +267,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -300,7 +300,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -333,7 +333,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -366,7 +366,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -399,7 +399,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -432,7 +432,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -465,7 +465,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -498,7 +498,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -531,7 +531,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -564,7 +564,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -694,7 +694,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -727,7 +727,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -760,7 +760,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -793,7 +793,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -983,7 +983,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -1016,7 +1016,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -1049,7 +1049,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -1082,7 +1082,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -1115,7 +1115,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
@@ -1148,7 +1148,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+        init = QUOTE(_this call FUNC(aliveOnInit));
       };
     };
   };
