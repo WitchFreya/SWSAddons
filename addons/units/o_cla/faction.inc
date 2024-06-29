@@ -7,7 +7,7 @@
 class CfgFactionClasses {
     class O_CLA {
         displayName = "[SWS] CLA";
-        side = 0;
+        side = SIDE_OPFOR;
         flag = "\OPTRE_Core\Data\flag_Ins_ca.paa";
         icon = "\OPTRE_Core\Data\flag_Ins_ca.paa";
         priority = 0;
@@ -25,7 +25,7 @@ class CfgGroups {
 
                 class o_cla_infantry_fireteam {
                     name = "[SWS] Fireteam";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
@@ -33,38 +33,38 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Teamlead_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Rifleman_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Rifleperson_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Rifleperson_02";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Medic_01";
                     };
                 };
 
                 class o_cla_infantry_squad {
                     name = "[SWS] Squad";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
@@ -72,50 +72,50 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Teamlead_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Rifleman_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Medic_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Rifleperson_01";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Autorifle_01";
                     };
                     class Unit5 {
                         position[] = {15,-15,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Rifleperson_02";
                     };
                     class Unit6 {
                         position[] = {-15,-15,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Grenadier_01";
                     };
                 };
 
                 class o_cla_infantry_elite_fireteam {
                     name = "[SWS] Elite Fireteam";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
@@ -123,38 +123,38 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Elite_Teamlead_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Elite_Rifleperson_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Elite_Rifleperson_02";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Elite_Medic_01";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Elite_Autorifle_01";
                     };
                 };
 
                 class o_cla_infantry_elite_squad {
                     name = "[SWS] Elite Squad";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
@@ -162,56 +162,56 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "LIEUTENANT";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Elite_Teamlead_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Elite_Rifleperson_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Elite_Rifleperson_02";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Elite_AntiArmor_01";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Elite_Medic_01";
                     };
                     class Unit5 {
                         position[] = {15,-15,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Elite_Autorifle_01";
                     };
                     class Unit6 {
                         position[] = {-15,-15,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Elite_Rifleperson_01";
                     };
                     class Unit7 {
                         position[] = {20,-20,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Elite_Rifleperson_02";
                     };
                 };
 
                 class o_cla_infantry_mg_section {
                     name = "[SWS] MG Section";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
@@ -219,26 +219,26 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Teamlead_01";
                     };
                     class Unit1 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Autorifle_01";
                     };
                     class Unit2 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Autorifle_01";
                     };
                 };
 
                 class o_cla_infantry_elite_mg_section {
                     name = "[SWS] Elite MG Section";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
@@ -246,26 +246,26 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Elite_Teamlead_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Elite_Autorifle_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Elite_Autorifle_01";
                     };
                 };
 
                 class o_cla_infantry_sniper_team {
                     name = "[SWS] Sniper Team";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
@@ -273,20 +273,20 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Teamlead_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Sniper_01";
                     };
                 };
 
                 class o_cla_infantry_patrol {
                     name = "[SWS] Patrol";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
@@ -294,32 +294,32 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Teamlead_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Rifleman_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Rifleperson_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Rifleperson_02";
                     };
                 };
 
                 class o_cla_infantry_crew {
                     name = "[SWS] Crew";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
@@ -327,26 +327,26 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Crew_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Crew_02";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Crew_01";
                     };
                 };
 
                 class o_cla_infantry_elite_at_team {
                     name = "[SWS] Elite AT Team";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
@@ -354,19 +354,19 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Elite_Teamlead_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Elite_AntiArmor_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Elite_AntiArmor_01";
                     };
                 };
@@ -378,7 +378,7 @@ class CfgGroups {
 
                 class o_cla_specops_reaper_fireteam {
                     name = "[SWS] Reaper Fireteam";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
                     rarityGroup = 0.5;
@@ -386,38 +386,38 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_Teamlead_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_Autorifle_01";
                     };
                     class Unit3 {
                         position[] = {-10,-10,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_01";
                     };
                     class Unit4 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_AntiArmor_01";
                     };
                 };
 
                 class o_cla_specops_reaper_mg_team {
                     name = "[SWS] Reaper MG Team";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
                     rarityGroup = 0.5;
@@ -425,26 +425,26 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_Teamlead_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_Autorifle_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_Autorifle_01";
                     };
                 };
 
                 class o_cla_specops_reaper_aa_team {
                     name = "[SWS] Reaper AA Team";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
                     rarityGroup = 0.5;
@@ -452,26 +452,26 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_Teamlead_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_AntiAir_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_AntiAir_01";
                     };
                 };
 
                 class o_cla_specops_reaper_breachers {
                     name = "[SWS] Reaper Breachers";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
                     rarityGroup = 0.5;
@@ -479,44 +479,44 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "LIEUTENANT";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_Teamlead_01";
                     };
                     class Unit1 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_01";
                     };
                     class Unit2 {
                         position[] = {-10,-10,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_01";
                     };
                     class Unit3 {
                         position[] = {15,-15,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_Medic_01";
                     };
                     class Unit4 {
                         position[] = {-15,-15,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_Breacher_01";
                     };
                     class Unit5 {
                         position[] = {20,-20,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_Breacher_01";
                     };
                 };
 
                 class o_cla_specops_reaper_snipers {
                     name = "[SWS] Reaper Snipers";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
                     rarityGroup = 0.5;
@@ -524,20 +524,20 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "LIEUTENANT";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_Teamlead_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_Sniper_01";
                     };
                 };
 
                 class o_cla_specops_reaper_command {
                     name = "[SWS] Reaper Command";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "O_CLA";
                     icon = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
                     rarityGroup = 0.5;
@@ -545,38 +545,38 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "MAJOR";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_Officer_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_01";
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_Medic_01";
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_Autorifle_01";
                     };
                 };
 
                 class o_cla_specops_reaper_at_team {
                     name = "[SWS] Reaper AT Team";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "O_CLA";
                     icon = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
                     rarityGroup = 0.5;
@@ -584,19 +584,19 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_Teamlead_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_Missile_Specialist_01";
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Reaper_Autorifle_01";
                     };
                 };
@@ -608,7 +608,7 @@ class CfgGroups {
 
                 class o_cla_motorized_warthog_patrol {
                     name = "[SWS] Warthog Patrol";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
                     rarityGroup = 0.5;
@@ -616,26 +616,26 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Warthog_MG_01";
                     };
                     class Unit1 {
                         position[] = {-5,-10,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Warthog_FAV_01";
                     };
                     class Unit2 {
                         position[] = {5,-10,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Warthog_FAV_01";
                     };
                 };
 
                 class o_cla_motorized_puma_patrol {
                     name = "[SWS] Puma Patrol";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
                     rarityGroup = 0.5;
@@ -643,19 +643,19 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Minigun_01";
                     };
                     class Unit1 {
                         position[] = {5,-9,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Puma_01";
                     };
                     class Unit2 {
                         position[] = {-5,-9,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Puma_01";
                     };
                 };
@@ -677,7 +677,7 @@ class CfgGroups {
 
                 class o_cla_mechanized_ferret_platoon {
                     name = "[SWS] Ferret Platoon";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa";
                     rarityGroup = 0.5;
@@ -685,19 +685,19 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_SWS_Ferret_01";
                     };
                     class Unit1 {
                         position[] = {9,-15,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_SWS_Ferret_01";
                     };
                     class Unit2 {
                         position[] = {-9,-15,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_SWS_Ferret_01";
                     };
                 };
@@ -709,7 +709,7 @@ class CfgGroups {
 
                 class o_cla_armored_t14 {
                     name = "[SWS] T-14 Platoon";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_armor.paa";
                     rarityGroup = 0.5;
@@ -717,25 +717,25 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_T14k_01";
                     };
                     class Unit1 {
                         position[] = {11,-18,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_T14_MBT_01";
                     };
                     class Unit2 {
                         position[] = {-11,-18,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_T14_MBT_01";
                     };
                     class Unit3 {
                         position[] = {22,-29,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_T14_MBT_01";
                     };
                 };
@@ -747,7 +747,7 @@ class CfgGroups {
 
                 class o_cla_artillery_mortar_team {
                     name = "[SWS] Mortar Team";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_art.paa";
                     rarityGroup = 0.5;
@@ -755,20 +755,20 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {0,0,0};
                         rank = "SERGEANT";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Mortar_Bipod_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Mortar_Tube_01";
                     };
                 };
 
                 class o_ocla_infantry_static_hmg {
                     name = "[SWS] Static HMG Team";
-                    side = 0;
+                    side = SIDE_OPFOR;
                     faction = "o_cla";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     rarityGroup = 0.5;
@@ -776,13 +776,13 @@ class CfgGroups {
                     class Unit0 {
                         position[] = {-5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_Disassembeled_MG_01";
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "PRIVATE";
-                        side = 0;
+                        side = SIDE_OPFOR;
                         vehicle = "O_CLA_MG_Tripod_01";
                     };
                 };
@@ -1174,7 +1174,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] CLA Rifleman";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -1214,7 +1214,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] CLA Teamlead";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_TCGM_Girls_Asian","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -1254,7 +1254,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] CLA Medic";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -1294,7 +1294,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] CLA Breacher";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -1334,7 +1334,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] CLA Rifleperson";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"max_WS5","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -1374,7 +1374,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] CLA Autorifle";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_TK","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -1414,7 +1414,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] CLA Sniper";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_Enoch","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -1454,7 +1454,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] CLA Rifleperson 2";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"max_WS1","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -1494,7 +1494,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] CLA Grenadier";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"max_WS10","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -1534,7 +1534,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Elite Rifleperson";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -1574,7 +1574,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Elite Rifleperson 2";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"max_WS10","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -1614,7 +1614,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Elite Teamlead";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_TCGM_Girls_White","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -1654,7 +1654,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Elite Breacher";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -1694,7 +1694,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Elite AntiArmor";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -1734,7 +1734,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Elite Medic";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_TCGM_Girls_BlackCiv","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -1774,7 +1774,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Elite Autorifle";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_Tanoan","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -1814,7 +1814,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] CLA Crew";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -1854,7 +1854,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] CLA Crew 2";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_TCGM_Girls_AsianCiv","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -1894,7 +1894,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Reaper";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -1934,7 +1934,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Reaper Teamlead";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -1975,7 +1975,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Reaper Autorifle";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -2015,7 +2015,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Reaper AntiArmor";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -2055,7 +2055,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Puma";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "OPTRE_Ins_URF_Rifleman_AR";
 
@@ -2089,7 +2089,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Reaper Sniper";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -2129,7 +2129,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Reaper Breacher";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_TCGM_Girls_WhiteWarrior","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -2169,7 +2169,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Reaper AntiAir";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -2209,7 +2209,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Reaper Medic";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -2249,7 +2249,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] CLA Disassembled MG";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -2289,7 +2289,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Warthog (FAV)";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Rifleman_01";
 
@@ -2320,7 +2320,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Oryx IFV";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_01";
 
@@ -2349,7 +2349,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Truck";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_01";
 
@@ -2379,7 +2379,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Warthog APC";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Rifleman_01";
 
@@ -2409,7 +2409,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Ferret";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_01";
 
@@ -2438,7 +2438,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Warthog (MG)";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_01";
 
@@ -2469,7 +2469,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Recluse MBT";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_01";
 
@@ -2498,7 +2498,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Falcon (Unarmed)";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_02";
 
@@ -2535,7 +2535,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Falcon (Door Guns)";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_01";
 
@@ -2572,7 +2572,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Salamander  (AGL)";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_01";
 
@@ -2603,7 +2603,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Pelican";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_01";
 
@@ -2634,7 +2634,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] HMG (Raised)";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "I_Soldier_F";
 
@@ -2663,7 +2663,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Mortar";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "I_soldier_F";
 
@@ -2692,7 +2692,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Tarantula";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_02";
 
@@ -2721,7 +2721,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Wyvern (IT)";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_01";
 
@@ -2752,7 +2752,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Mortar Tube";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"max_WS1","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -2792,7 +2792,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Mortar Bipod";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Tanker","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -2832,7 +2832,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Rooikat";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_01";
 
@@ -2862,7 +2862,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Rooikat UP";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_02";
 
@@ -2892,7 +2892,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Sholef";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_01";
 
@@ -2922,7 +2922,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Seara";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_01";
 
@@ -2952,7 +2952,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Puma (Minigun)";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "LM_OPCAN_KOS_Rifleman";
 
@@ -2986,7 +2986,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Beetle MBT";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_01";
 
@@ -3015,7 +3015,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Reaper Demolitionist";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -3055,7 +3055,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Puma (AT)";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_02";
 
@@ -3089,7 +3089,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Wyvern (VT)";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_01";
 
@@ -3118,7 +3118,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] T-14 MBT";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_01";
 
@@ -3148,7 +3148,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] T-14k MBT";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_01";
 
@@ -3178,7 +3178,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] T-100X MBT";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_01";
 
@@ -3208,7 +3208,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Pelican (70mm)";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_01";
 
@@ -3239,7 +3239,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] MG Tripod";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
 
         identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
@@ -3279,7 +3279,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Assault Boat";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_01";
 
@@ -3311,7 +3311,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Otokar";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_cla";
         crew = "O_CLA_Crew_01";
 
@@ -3341,7 +3341,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Viper";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "O_CLA";
 
         identityTypes[] = {"Head_Asian","LanguageCHI_F","G_CIVIL_male"};
@@ -3381,7 +3381,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Reaper Officer";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "O_CLA";
 
         identityTypes[] = {"Head_Asian","LanguageCHI_F","G_CIVIL_male"};
@@ -3421,7 +3421,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "[SWS] Reaper Missile Specialist";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "O_CLA";
 
         identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};

@@ -211,7 +211,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Anti-Tank Person 02";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
@@ -251,7 +251,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Squad Lead";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
@@ -291,7 +291,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Team Lead";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
@@ -331,7 +331,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Rifleperson 1";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
@@ -371,7 +371,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Rifleperson 2";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
@@ -411,7 +411,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Automatic Rifle";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
@@ -451,7 +451,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Medic";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
@@ -491,7 +491,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Marksman";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
@@ -531,7 +531,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Crew";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
@@ -571,7 +571,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Sniper";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
@@ -611,7 +611,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Spotter";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
@@ -651,7 +651,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Marine 1";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
@@ -691,7 +691,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Marine 2";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
@@ -731,7 +731,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Marine Team Lead";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
@@ -771,7 +771,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Marine Medic";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
@@ -811,7 +811,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Warrior";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
         crew = "O_URArmy_Crew_01";
 
@@ -841,7 +841,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "HMG Dagger";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
         crew = "O_URArmy_Team_Lead_01";
 
@@ -874,7 +874,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "HMG Jeep";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
         crew = "O_URArmy_Team_Lead_01";
 
@@ -905,7 +905,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Covered Truck";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
         crew = "O_URArmy_Rifleperson_1_01";
 
@@ -936,7 +936,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Anti-Tank Person 01";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
@@ -976,7 +976,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Light Marksmen";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
@@ -1016,7 +1016,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Anti Air Person";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
@@ -1056,7 +1056,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Marine MG";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
 
         identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
@@ -1096,7 +1096,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Stalker";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
         crew = "O_URArmy_Crew_01";
 
@@ -1126,7 +1126,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Taru Transport";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
         crew = "O_URArmy_Crew_01";
 
@@ -1159,7 +1159,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Merlin Transport";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
         crew = "O_URArmy_Crew_01";
 
@@ -1191,7 +1191,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Wildcat";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
         crew = "O_URArmy_Crew_01";
 
@@ -1223,7 +1223,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Kajman";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
         crew = "O_URArmy_Crew_01";
 
@@ -1253,7 +1253,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "YAK CAS";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
         crew = "O_URArmy_Crew_01";
 
@@ -1277,7 +1277,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "JAS AIR";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "o_urarmy";
         crew = "O_URArmy_Crew_01";
 
@@ -1302,7 +1302,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Ranger 01";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "O_URArmy";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
@@ -1342,7 +1342,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Ranger 02";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "O_URArmy";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
@@ -1382,7 +1382,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Ranger Team Lead";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "O_URArmy";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
@@ -1422,7 +1422,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Range Autorifle";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "O_URArmy";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
@@ -1462,7 +1462,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Ranger Marksmen";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "O_URArmy";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
@@ -1502,7 +1502,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Ranger Medic";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "O_URArmy";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
@@ -1542,7 +1542,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Black Eagle";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "O_URArmy";
         crew = "O_URArmy_Crew_01";
 
@@ -1572,7 +1572,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Black Crusader";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "O_URArmy";
         crew = "O_URArmy_Crew_01";
 
@@ -1602,7 +1602,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Black Crusader Lead";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "O_URArmy";
         crew = "O_crew_F";
 
@@ -1631,7 +1631,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Rat [ATGM]";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "O_URArmy";
         crew = "O_URArmy_Crew_01";
 
@@ -1661,7 +1661,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Rat [Light]";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "O_URArmy";
         crew = "O_URArmy_Crew_01";
 
@@ -1690,7 +1690,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Red Eagle";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "O_URArmy";
         crew = "O_URArmy_Crew_01";
 
@@ -1720,7 +1720,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Tiger";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "O_URArmy";
         crew = "O_URArmy_Crew_01";
 
@@ -1750,7 +1750,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Rat [AA]";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "O_URArmy";
         crew = "O_URArmy_Crew_01";
 
@@ -1779,7 +1779,7 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         displayName = "Shadow";
-        side = 0;
+        side = SIDE_OPFOR;
         faction = "O_URArmy";
         crew = "O_URArmy_Crew_01";
 
