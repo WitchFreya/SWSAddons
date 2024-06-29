@@ -48,207 +48,33 @@
 class CBA_Extended_EventHandlers_base;
 
 class CfgVehicles {
+  class B_MBT_01_Cannon_F;
+  class I_C_Offroad_02_LMG_F;
+  class I_Heli_Light_03_DynamicLoadout_F;
+  class I_Heli_Transport_02_F;
+  class I_LT_01_AA_F;
+  class I_LT_01_AT_F;
+  class I_LT_01_Cannon_F;
+  class I_Plane_Fighter_04_F;
+  class O_APC_Tracked_02_AA_F;
+  class O_APC_Tracked_02_Cannon_F;
+  class O_Heli_Attack_02_DynamicLoadout_F;
+  class O_MBT_02_Arty_F;
+  class O_MBT_02_Cannon_F;
+  class O_MBT_04_Cannon_F;
+  class O_MBT_04_Command_F;
+  class O_Plane_CAS_02_DynamicLoadout_F;
+  class O_Truck_02_Covered_F;
+  class I_APC_Tracked_03_Cannon_F;
 
-    class EMP_Demolitions_Specialist;
-    class EMP_Demolitions_Specialist_OCimport_01 : EMP_Demolitions_Specialist { scope = 0; class EventHandlers; };
-    class EMP_Demolitions_Specialist_OCimport_02 : EMP_Demolitions_Specialist_OCimport_01 { class EventHandlers; };
+  class EMP_CBRN_LMG_Operator;
+  class EMP_Demolitions_Specialist;
+  class EMP_CBRN_Element_Lead;
+  class EMP_Polaris_DAGOR_HMG;
+  class EMP_Mi290_Taru_Transport;
+  class EMP_Recon_Marksman;
 
-    class EMP_CBRN_Element_Lead;
-    class EMP_CBRN_Element_Lead_OCimport_01 : EMP_CBRN_Element_Lead { scope = 0; class EventHandlers; };
-    class EMP_CBRN_Element_Lead_OCimport_02 : EMP_CBRN_Element_Lead_OCimport_01 { class EventHandlers; };
-
-    class I_APC_tracked_03_cannon_F;
-    class I_APC_tracked_03_cannon_F_OCimport_01 : I_APC_tracked_03_cannon_F { scope = 0; class EventHandlers; class Turrets; };
-    class I_APC_tracked_03_cannon_F_OCimport_02 : I_APC_tracked_03_cannon_F_OCimport_01 {
-        class EventHandlers;
-        class Turrets : Turrets {
-            class MainTurret;
-        };
-    };
-
-    class EMP_Polaris_DAGOR_HMG;
-    class EMP_Polaris_DAGOR_HMG_OCimport_01 : EMP_Polaris_DAGOR_HMG { scope = 0; class EventHandlers; class Turrets; };
-    class EMP_Polaris_DAGOR_HMG_OCimport_02 : EMP_Polaris_DAGOR_HMG_OCimport_01 {
-        class EventHandlers;
-        class Turrets : Turrets {
-            class TopTurret;
-            class CodRiverTurret;
-            class CargoTurret_02;
-            class CargoTurret_03;
-        };
-    };
-
-    class I_C_Offroad_02_LMG_F;
-    class I_C_Offroad_02_LMG_F_OCimport_01 : I_C_Offroad_02_LMG_F { scope = 0; class EventHandlers; class Turrets; };
-    class I_C_Offroad_02_LMG_F_OCimport_02 : I_C_Offroad_02_LMG_F_OCimport_01 {
-        class EventHandlers;
-        class Turrets : Turrets {
-            class LMG_Turret;
-            class CargoTurret_01;
-        };
-    };
-
-    class O_Truck_02_covered_F;
-    class O_Truck_02_covered_F_OCimport_01 : O_Truck_02_covered_F { scope = 0; class EventHandlers; class Turrets; };
-    class O_Truck_02_covered_F_OCimport_02 : O_Truck_02_covered_F_OCimport_01 {
-        class EventHandlers;
-        class Turrets : Turrets {
-            class CargoTurret_01;
-            class CargoTurret_02;
-        };
-    };
-
-    class EMP_CBRN_LMG_Operator;
-    class EMP_CBRN_LMG_Operator_OCimport_01 : EMP_CBRN_LMG_Operator { scope = 0; class EventHandlers; };
-    class EMP_CBRN_LMG_Operator_OCimport_02 : EMP_CBRN_LMG_Operator_OCimport_01 { class EventHandlers; };
-
-    class O_APC_Tracked_02_cannon_F;
-    class O_APC_Tracked_02_cannon_F_OCimport_01 : O_APC_Tracked_02_cannon_F { scope = 0; class EventHandlers; class Turrets; };
-    class O_APC_Tracked_02_cannon_F_OCimport_02 : O_APC_Tracked_02_cannon_F_OCimport_01 {
-        class EventHandlers;
-        class Turrets : Turrets {
-            class MainTurret;
-        };
-    };
-
-    class EMP_Mi290_Taru_Transport;
-    class EMP_Mi290_Taru_Transport_OCimport_01 : EMP_Mi290_Taru_Transport { scope = 0; class EventHandlers; class Turrets; };
-    class EMP_Mi290_Taru_Transport_OCimport_02 : EMP_Mi290_Taru_Transport_OCimport_01 {
-        class EventHandlers;
-        class Turrets : Turrets {
-            class CopilotTurret;
-            class LoadmasterTurret;
-            class CargoTurret_01;
-            class CargoTurret_02;
-        };
-    };
-
-    class I_Heli_Transport_02_F;
-    class I_Heli_Transport_02_F_OCimport_01 : I_Heli_Transport_02_F { scope = 0; class EventHandlers; class Turrets; };
-    class I_Heli_Transport_02_F_OCimport_02 : I_Heli_Transport_02_F_OCimport_01 {
-        class EventHandlers;
-        class Turrets : Turrets {
-            class CopilotTurret;
-            class CargoTurret_01;
-            class CargoTurret_02;
-        };
-    };
-
-    class I_Heli_light_03_dynamicLoadout_F;
-    class I_Heli_light_03_dynamicLoadout_F_OCimport_01 : I_Heli_light_03_dynamicLoadout_F { scope = 0; class EventHandlers; class Turrets; };
-    class I_Heli_light_03_dynamicLoadout_F_OCimport_02 : I_Heli_light_03_dynamicLoadout_F_OCimport_01 {
-        class EventHandlers;
-        class Turrets : Turrets {
-            class MainTurret;
-            class CargoTurret_01;
-            class CargoTurret_02;
-        };
-    };
-
-    class O_Heli_Attack_02_dynamicLoadout_F;
-    class O_Heli_Attack_02_dynamicLoadout_F_OCimport_01 : O_Heli_Attack_02_dynamicLoadout_F { scope = 0; class EventHandlers; class Turrets; };
-    class O_Heli_Attack_02_dynamicLoadout_F_OCimport_02 : O_Heli_Attack_02_dynamicLoadout_F_OCimport_01 {
-        class EventHandlers;
-        class Turrets : Turrets {
-            class MainTurret;
-        };
-    };
-
-    class O_Plane_CAS_02_dynamicLoadout_F;
-    class O_Plane_CAS_02_dynamicLoadout_F_OCimport_01 : O_Plane_CAS_02_dynamicLoadout_F { scope = 0; class EventHandlers; };
-    class O_Plane_CAS_02_dynamicLoadout_F_OCimport_02 : O_Plane_CAS_02_dynamicLoadout_F_OCimport_01 { scope = 0; class EventHandlers; };
-
-    class I_Plane_Fighter_04_F;
-    class I_Plane_Fighter_04_F_OCimport_01 : I_Plane_Fighter_04_F { scope = 0; class EventHandlers; };
-    class I_Plane_Fighter_04_F_OCimport_02 : I_Plane_Fighter_04_F_OCimport_01 { scope = 0; class EventHandlers; };
-
-    class EMP_Recon_Marksman;
-    class EMP_Recon_Marksman_OCimport_01 : EMP_Recon_Marksman { scope = 0; class EventHandlers; };
-    class EMP_Recon_Marksman_OCimport_02 : EMP_Recon_Marksman_OCimport_01 { class EventHandlers; };
-
-    class O_MBT_02_cannon_F;
-    class O_MBT_02_cannon_F_OCimport_01 : O_MBT_02_cannon_F { scope = 0; class EventHandlers; class Turrets; };
-    class O_MBT_02_cannon_F_OCimport_02 : O_MBT_02_cannon_F_OCimport_01 {
-        class EventHandlers;
-        class Turrets : Turrets {
-            class MainTurret;
-        };
-    };
-
-    class O_MBT_04_cannon_F;
-    class O_MBT_04_cannon_F_OCimport_01 : O_MBT_04_cannon_F { scope = 0; class EventHandlers; class Turrets; };
-    class O_MBT_04_cannon_F_OCimport_02 : O_MBT_04_cannon_F_OCimport_01 {
-        class EventHandlers;
-        class Turrets : Turrets {
-            class MainTurret;
-        };
-    };
-
-    class O_MBT_04_command_F;
-    class O_MBT_04_command_F_OCimport_01 : O_MBT_04_command_F { scope = 0; class EventHandlers; class Turrets; };
-    class O_MBT_04_command_F_OCimport_02 : O_MBT_04_command_F_OCimport_01 {
-        class EventHandlers;
-        class Turrets : Turrets {
-            class MainTurret;
-        };
-    };
-
-    class I_LT_01_AT_F;
-    class I_LT_01_AT_F_OCimport_01 : I_LT_01_AT_F { scope = 0; class EventHandlers; class Turrets; };
-    class I_LT_01_AT_F_OCimport_02 : I_LT_01_AT_F_OCimport_01 {
-        class EventHandlers;
-        class Turrets : Turrets {
-            class MainTurret;
-        };
-    };
-
-    class I_LT_01_cannon_F;
-    class I_LT_01_cannon_F_OCimport_01 : I_LT_01_cannon_F { scope = 0; class EventHandlers; class Turrets; };
-    class I_LT_01_cannon_F_OCimport_02 : I_LT_01_cannon_F_OCimport_01 {
-        class EventHandlers;
-        class Turrets : Turrets {
-            class MainTurret;
-        };
-    };
-
-    class B_MBT_01_cannon_F;
-    class B_MBT_01_cannon_F_OCimport_01 : B_MBT_01_cannon_F { scope = 0; class EventHandlers; class Turrets; };
-    class B_MBT_01_cannon_F_OCimport_02 : B_MBT_01_cannon_F_OCimport_01 {
-        class EventHandlers;
-        class Turrets : Turrets {
-            class MainTurret;
-        };
-    };
-
-    class O_APC_Tracked_02_AA_F;
-    class O_APC_Tracked_02_AA_F_OCimport_01 : O_APC_Tracked_02_AA_F { scope = 0; class EventHandlers; class Turrets; };
-    class O_APC_Tracked_02_AA_F_OCimport_02 : O_APC_Tracked_02_AA_F_OCimport_01 {
-        class EventHandlers;
-        class Turrets : Turrets {
-            class MainTurret;
-        };
-    };
-
-    class I_LT_01_AA_F;
-    class I_LT_01_AA_F_OCimport_01 : I_LT_01_AA_F { scope = 0; class EventHandlers; class Turrets; };
-    class I_LT_01_AA_F_OCimport_02 : I_LT_01_AA_F_OCimport_01 {
-        class EventHandlers;
-        class Turrets : Turrets {
-            class MainTurret;
-        };
-    };
-
-    class O_MBT_02_arty_F;
-    class O_MBT_02_arty_F_OCimport_01 : O_MBT_02_arty_F { scope = 0; class EventHandlers; class Turrets; };
-    class O_MBT_02_arty_F_OCimport_02 : O_MBT_02_arty_F_OCimport_01 {
-        class EventHandlers;
-        class Turrets : Turrets {
-            class MainTurret;
-        };
-    };
-
-
-    class SWS_O_URArmy_Anti_Tank_Person_02_01 : EMP_Demolitions_Specialist_OCimport_02 {
+    class SWS_O_URArmy_Anti_Tank_Person_02_01 : EMP_Demolitions_Specialist {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -288,7 +114,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Squad_Lead_01 : EMP_CBRN_Element_Lead_OCimport_02 {
+    class SWS_O_URArmy_Squad_Lead_01 : EMP_CBRN_Element_Lead {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -848,7 +674,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Warrior_01 : I_APC_tracked_03_cannon_F_OCimport_02 {
+    class SWS_O_URArmy_Warrior_01 : I_APC_Tracked_03_Cannon_F {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -878,7 +704,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_HMG_Dagger_01 : EMP_Polaris_DAGOR_HMG_OCimport_02 {
+    class SWS_O_URArmy_HMG_Dagger_01 : EMP_Polaris_DAGOR_HMG {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -911,7 +737,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_HMG_Jeep_01 : I_C_Offroad_02_LMG_F_OCimport_02 {
+    class SWS_O_URArmy_HMG_Jeep_01 : I_C_Offroad_02_LMG_F {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -942,7 +768,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Covered_Truck_01 : O_Truck_02_covered_F_OCimport_02 {
+    class SWS_O_URArmy_Covered_Truck_01 : O_Truck_02_Covered_F {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -973,7 +799,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Anti_Tank_Person_01_01 : EMP_CBRN_Element_Lead_OCimport_02 {
+    class SWS_O_URArmy_Anti_Tank_Person_01_01 : EMP_CBRN_Element_Lead {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -1013,7 +839,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Light_Marksmen_01 : EMP_CBRN_Element_Lead_OCimport_02 {
+    class SWS_O_URArmy_Light_Marksmen_01 : EMP_CBRN_Element_Lead {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -1053,7 +879,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Anti_Air_Person_01 : EMP_CBRN_Element_Lead_OCimport_02 {
+    class SWS_O_URArmy_Anti_Air_Person_01 : EMP_CBRN_Element_Lead {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -1093,7 +919,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Marine_MG_01 : EMP_CBRN_LMG_Operator_OCimport_02 {
+    class SWS_O_URArmy_Marine_MG_01 : EMP_CBRN_LMG_Operator {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -1133,7 +959,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Stalker_01 : O_APC_Tracked_02_cannon_F_OCimport_02 {
+    class SWS_O_URArmy_Stalker_01 : O_APC_Tracked_02_Cannon_F {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -1163,7 +989,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Taru_Transport_01 : EMP_Mi290_Taru_Transport_OCimport_02 {
+    class SWS_O_URArmy_Taru_Transport_01 : EMP_Mi290_Taru_Transport {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -1196,7 +1022,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Merlin_Transport_01 : I_Heli_Transport_02_F_OCimport_02 {
+    class SWS_O_URArmy_Merlin_Transport_01 : I_Heli_Transport_02_F {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -1228,7 +1054,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Wildcat_01 : I_Heli_light_03_dynamicLoadout_F_OCimport_02 {
+    class SWS_O_URArmy_Wildcat_01 : I_Heli_Light_03_DynamicLoadout_F {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -1260,7 +1086,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Kajman_01 : O_Heli_Attack_02_dynamicLoadout_F_OCimport_02 {
+    class SWS_O_URArmy_Kajman_01 : O_Heli_Attack_02_DynamicLoadout_F {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -1290,7 +1116,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_YAK_CAS_01 : O_Plane_CAS_02_dynamicLoadout_F_OCimport_02 {
+    class SWS_O_URArmy_YAK_CAS_01 : O_Plane_CAS_02_DynamicLoadout_F {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -1314,7 +1140,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_JAS_AIR_01 : I_Plane_Fighter_04_F_OCimport_02 {
+    class SWS_O_URArmy_JAS_AIR_01 : I_Plane_Fighter_04_F {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -1339,7 +1165,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Ranger_01_01 : EMP_Recon_Marksman_OCimport_02 {
+    class SWS_O_URArmy_Ranger_01_01 : EMP_Recon_Marksman {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -1579,7 +1405,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Black_Eagle_01 : O_MBT_02_cannon_F_OCimport_02 {
+    class SWS_O_URArmy_Black_Eagle_01 : O_MBT_02_Cannon_F {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -1609,7 +1435,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Black_Crusader_01 : O_MBT_04_cannon_F_OCimport_02 {
+    class SWS_O_URArmy_Black_Crusader_01 : O_MBT_04_Cannon_F {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -1639,7 +1465,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Black_Crusader_Lead_01 : O_MBT_04_command_F_OCimport_02 {
+    class SWS_O_URArmy_Black_Crusader_Lead_01 : O_MBT_04_Command_F {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -1668,7 +1494,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Rat_ATGM_01 : I_LT_01_AT_F_OCimport_02 {
+    class SWS_O_URArmy_Rat_ATGM_01 : I_LT_01_AT_F {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -1698,7 +1524,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Rat_Light_01 : I_LT_01_cannon_F_OCimport_02 {
+    class SWS_O_URArmy_Rat_Light_01 : I_LT_01_Cannon_F {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -1727,7 +1553,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Red_Eagle_01 : B_MBT_01_cannon_F_OCimport_02 {
+    class SWS_O_URArmy_Red_Eagle_01 : B_MBT_01_Cannon_F {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -1757,7 +1583,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Tiger_01 : O_APC_Tracked_02_AA_F_OCimport_02 {
+    class SWS_O_URArmy_Tiger_01 : O_APC_Tracked_02_AA_F {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -1787,7 +1613,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Rat_AA_01 : I_LT_01_AA_F_OCimport_02 {
+    class SWS_O_URArmy_Rat_AA_01 : I_LT_01_AA_F {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
@@ -1816,7 +1642,7 @@ class CfgVehicles {
 
     };
 
-    class SWS_O_URArmy_Shadow_01 : O_MBT_02_arty_F_OCimport_02 {
+    class SWS_O_URArmy_Shadow_01 : O_MBT_02_Arty_F {
         author = "Rabbit";
         scope = 2;
         scopeCurator = 2;
