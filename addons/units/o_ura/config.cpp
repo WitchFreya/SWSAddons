@@ -35,9 +35,8 @@ class CfgPatches {
     requiredAddons[] = {
       "EMP_Greystone_PMC" // TODO: Remove reliance on Fire Support+.
       , "ace_nouniformrestrictions"
-      , "OPTRE_Vehicles_Elephant"
-      , "OPTRE_Vehicles_M494"
-      , "OPTRE_Vehicles_M808B2"
+      , "OPTRE_Core"
+      , "OPTRE_Vehicles"
     };
   };
 };
