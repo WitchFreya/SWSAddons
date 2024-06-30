@@ -49,6 +49,10 @@ class CBA_Extended_EventHandlers_base;
 
 class CfgVehicles {
   class B_MBT_01_Cannon_F;
+  class B_Recon_M_F;
+  class B_Soldier_Exp_F;
+  class B_T_LSV_01_Armed_F;
+  class I_APC_Tracked_03_Cannon_F;
   class I_C_Offroad_02_LMG_F;
   class I_Heli_Light_03_DynamicLoadout_F;
   class I_Heli_Transport_02_F;
@@ -56,25 +60,20 @@ class CfgVehicles {
   class I_LT_01_AT_F;
   class I_LT_01_Cannon_F;
   class I_Plane_Fighter_04_F;
+  class I_Soldier_AR_F;
+  class I_Soldier_SL_F;
   class O_APC_Tracked_02_AA_F;
   class O_APC_Tracked_02_Cannon_F;
   class O_Heli_Attack_02_DynamicLoadout_F;
+  class O_Heli_Transport_04_Covered_F;
   class O_MBT_02_Arty_F;
   class O_MBT_02_Cannon_F;
   class O_MBT_04_Cannon_F;
   class O_MBT_04_Command_F;
   class O_Plane_CAS_02_DynamicLoadout_F;
   class O_Truck_02_Covered_F;
-  class I_APC_Tracked_03_Cannon_F;
 
-  class EMP_CBRN_LMG_Operator;
-  class EMP_Demolitions_Specialist;
-  class EMP_CBRN_Element_Lead;
-  class EMP_Polaris_DAGOR_HMG;
-  class EMP_Mi290_Taru_Transport;
-  class EMP_Recon_Marksman;
-
-  class SWS_O_URArmy_Anti_Tank_Person_02_01 : EMP_Demolitions_Specialist {
+  class SWS_O_URArmy_Anti_Tank_Person_02_01 : B_Soldier_Exp_F {
     ITEM_META(2);
     displayName = "Anti-Tank Person 02";
     side = SIDE_OPFOR;
@@ -89,6 +88,9 @@ class CfgVehicles {
 
     weapons[] = {"arifle_AK12_F","launch_MRAWS_sand_rail_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"arifle_AK12_F","launch_MRAWS_sand_rail_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+
+    items[] = {"FirstAidKit","FirstAidKit","FirstAidKit","ToolKit","MineDetector"};
+    respawnItems[] = {"FirstAidKit","FirstAidKit","FirstAidKit","ToolKit","MineDetector"};
 
     magazines[] = {"30Rnd_762x39_AK12_Mag_F","MRAWS_HEAT_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","MRAWS_HEAT_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -107,7 +109,7 @@ class CfgVehicles {
     };
   };
 
-  class SWS_O_URArmy_Squad_Lead_01 : EMP_CBRN_Element_Lead {
+  class SWS_O_URArmy_Squad_Lead_01 : I_Soldier_SL_F {
     ITEM_META(2);
     displayName = "Squad Lead";
     side = SIDE_OPFOR;
@@ -122,6 +124,9 @@ class CfgVehicles {
 
     weapons[] = {"arifle_AK12_GL_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"arifle_AK12_GL_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+
+    items[] = {"FirstAidKit","FirstAidKit","FirstAidKit"};
+    respawnItems[] = {"FirstAidKit","FirstAidKit","FirstAidKit"};
 
     magazines[] = {"30Rnd_762x39_AK12_Mag_F","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","1Rnd_HE_Grenade_shell","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -589,12 +594,13 @@ class CfgVehicles {
     ALiVE_orbatCreator_owned = TRUE;
   };
 
-  class SWS_O_URArmy_HMG_Dagger_01 : EMP_Polaris_DAGOR_HMG {
+  class SWS_O_URArmy_HMG_Dagger_01 : B_T_LSV_01_Armed_F {
     ITEM_META(2);
     displayName = "HMG Dagger";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
     crew = "SWS_O_URArmy_Team_Lead_01";
+    typicalCargo[] = {"SWS_O_URArmy_Crew_01"};
     hiddenSelectionsTextures[] = {
       "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_01_black_CO.paa"
       , "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_02_black_CO.paa"
@@ -607,8 +613,6 @@ class CfgVehicles {
     class Turrets : Turrets {
       class TopTurret : TopTurret { gunnerType = "SWS_O_URArmy_Rifleperson_1_01"; };
       class CodRiverTurret : CodRiverTurret { gunnerType = "SWS_O_URArmy_Rifleperson_2_01"; };
-      class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
-      class CargoTurret_03 : CargoTurret_03 { gunnerType = ""; };
     };
 
     ALiVE_orbatCreator_owned = TRUE;
@@ -656,7 +660,7 @@ class CfgVehicles {
     ALiVE_orbatCreator_owned = TRUE;
   };
 
-  class SWS_O_URArmy_Anti_Tank_Person_01_01 : EMP_CBRN_Element_Lead {
+  class SWS_O_URArmy_Anti_Tank_Person_01_01 : I_Soldier_SL_F {
     ITEM_META(2);
     displayName = "Anti-Tank Person 01";
     side = SIDE_OPFOR;
@@ -671,6 +675,9 @@ class CfgVehicles {
 
     weapons[] = {"arifle_AK12_F","launch_O_Vorona_brown_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"arifle_AK12_F","launch_O_Vorona_brown_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+
+    items[] = {"FirstAidKit","FirstAidKit","FirstAidKit"};
+    respawnItems[] = {"FirstAidKit","FirstAidKit","FirstAidKit"};
 
     magazines[] = {"30Rnd_762x39_AK12_Mag_F","Vorona_HEAT","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","Vorona_HEAT","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -689,7 +696,7 @@ class CfgVehicles {
     };
   };
 
-  class SWS_O_URArmy_Light_Marksmen_01 : EMP_CBRN_Element_Lead {
+  class SWS_O_URArmy_Light_Marksmen_01 : I_Soldier_SL_F {
     ITEM_META(2);
     displayName = "Light Marksmen";
     side = SIDE_OPFOR;
@@ -704,6 +711,9 @@ class CfgVehicles {
 
     weapons[] = {"srifle_EBR_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"srifle_EBR_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+
+    items[] = {"FirstAidKit","FirstAidKit","FirstAidKit"};
+    respawnItems[] = {"FirstAidKit","FirstAidKit","FirstAidKit"};
 
     magazines[] = {"20Rnd_762x51_Mag","11Rnd_45ACP_Mag","Laserbatteries","20Rnd_762x51_Mag","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"20Rnd_762x51_Mag","11Rnd_45ACP_Mag","Laserbatteries","20Rnd_762x51_Mag","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -722,7 +732,7 @@ class CfgVehicles {
     };
   };
 
-  class SWS_O_URArmy_Anti_Air_Person_01 : EMP_CBRN_Element_Lead {
+  class SWS_O_URArmy_Anti_Air_Person_01 : I_Soldier_SL_F {
     ITEM_META(2);
     displayName = "Anti Air Person";
     side = SIDE_OPFOR;
@@ -737,6 +747,9 @@ class CfgVehicles {
 
     weapons[] = {"arifle_AK12_F","launch_B_Titan_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"arifle_AK12_F","launch_B_Titan_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+
+    items[] = {"FirstAidKit","FirstAidKit","FirstAidKit"};
+    respawnItems[] = {"FirstAidKit","FirstAidKit","FirstAidKit"};
 
     magazines[] = {"30Rnd_762x39_AK12_Mag_F","Titan_AA","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","Titan_AA","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -755,7 +768,7 @@ class CfgVehicles {
     };
   };
 
-  class SWS_O_URArmy_Marine_MG_01 : EMP_CBRN_LMG_Operator {
+  class SWS_O_URArmy_Marine_MG_01 : I_Soldier_AR_F {
     ITEM_META(2);
     displayName = "Marine MG";
     side = SIDE_OPFOR;
@@ -770,6 +783,9 @@ class CfgVehicles {
 
     weapons[] = {"LMG_Mk200_black_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"LMG_Mk200_black_F","EMP_hgun_Pistol_heavy_01_F_acc_flashlight_pistol","Laserdesignator_01_khk_F"};
+
+    items[] = {"FirstAidKit","FirstAidKit","FirstAidKit"};
+    respawnItems[] = {"FirstAidKit","FirstAidKit","FirstAidKit"};
 
     magazines[] = {"200Rnd_65x39_cased_Box","11Rnd_45ACP_Mag","Laserbatteries","200Rnd_65x39_cased_Box","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {"200Rnd_65x39_cased_Box","11Rnd_45ACP_Mag","Laserbatteries","200Rnd_65x39_cased_Box","11Rnd_45ACP_Mag","Laserbatteries"};
@@ -809,12 +825,13 @@ class CfgVehicles {
     ALiVE_orbatCreator_owned = TRUE;
   };
 
-  class SWS_O_URArmy_Taru_Transport_01 : EMP_Mi290_Taru_Transport {
+  class SWS_O_URArmy_Taru_Transport_01 : O_Heli_Transport_04_Covered_F {
     ITEM_META(2);
     displayName = "Taru Transport";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
     crew = "SWS_O_URArmy_Crew_01";
+    typicalCargo[] = {"SWS_O_URArmy_Crew_01"};
     hiddenSelectionsTextures[] = {
       "\A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa"
       , "\A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa"
@@ -919,7 +936,7 @@ class CfgVehicles {
     ALiVE_orbatCreator_owned = TRUE;
   };
 
-  class SWS_O_URArmy_Ranger_01_01 : EMP_Recon_Marksman {
+  class SWS_O_URArmy_Ranger_01_01 : B_Recon_M_F {
     ITEM_META(2);
     displayName = "Ranger 01";
     side = SIDE_OPFOR;
@@ -934,6 +951,9 @@ class CfgVehicles {
 
     weapons[] = {"19_UNSC_MA5A","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
     respawnWeapons[] = {"19_UNSC_MA5A","EMP_hgun_Pistol_heavy_01_F_muzzle_snds_acpacc_flashlight_pistoloptic_MRD_black","Rangefinder"};
+
+    items[] = {"FirstAidKit","FirstAidKit","FirstAidKit"};
+    respawnItems[] = {"FirstAidKit","FirstAidKit","FirstAidKit"};
 
     magazines[] = {"32Rnd_762x51_MA5","11Rnd_45ACP_Mag","32Rnd_762x51_MA5","11Rnd_45ACP_Mag"};
     respawnMagazines[] = {"32Rnd_762x51_MA5","11Rnd_45ACP_Mag","32Rnd_762x51_MA5","11Rnd_45ACP_Mag"};
