@@ -1,5 +1,6 @@
 #include "script_component.hpp"
 
+#include "CfgWeapons.inc"
 #include "CfgFactionClasses.inc"
 #include "CfgGroups.inc"
 
@@ -24,11 +25,10 @@ class CfgPatches {
     authors[] = {AUTHORS};
     skipWhenMissingDependencies = TRUE;
     units[] = {CLASSES_VEHICLES};
-    weapons[] = {};
+    weapons[] = {CLASSES_WEAPONS};
     requiredVersion = 1.62;
     requiredAddons[] = {
-      "EMP_Greystone_PMC" // TODO: Remove reliance on Fire Support+.
-      , "ace_nouniformrestrictions"
+      "ace_nouniformrestrictions"
       , "OPTRE_Core"
       , "OPTRE_Vehicles"
     };

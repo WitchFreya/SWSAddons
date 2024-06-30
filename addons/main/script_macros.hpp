@@ -87,3 +87,6 @@
 #define SIDE_OPFOR 0
 #define SIDE_BLUFOR 1
 #define SIDE_CIV 3
+
+/** Use to provide a comment within the config that can be viewed in-game. */
+#define COMMENT(var) sws_comment = var
