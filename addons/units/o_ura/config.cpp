@@ -1,6 +1,8 @@
 #include "script_component.hpp"
 
-#include "CfgFactionClasses.hpp"
+#include "CfgWeapons.inc"
+#include "CfgFactionClasses.inc"
+#include "CfgGroups.inc"
 
 class CargoTurret_01;
 class CargoTurret_02;
@@ -12,9 +14,9 @@ class LMG_Turret;
 class LoadmasterTurret;
 class TopTurret;
 class Turrets;
+class EventHandlers;
 
-#include "CfgVehicles.hpp"
-#include "CfgGroups.hpp"
+#include "CfgVehicles.inc"
 
 class CfgPatches {
   class SUBADDON {
@@ -23,13 +25,13 @@ class CfgPatches {
     authors[] = {AUTHORS};
     skipWhenMissingDependencies = TRUE;
     units[] = {CLASSES_VEHICLES};
-    weapons[] = {};
+    weapons[] = {CLASSES_WEAPONS};
     requiredVersion = 1.62;
     requiredAddons[] = {
-      "OPTRE_core"
-      , "OPTRE_Vehicles_Elephant"
-      , "OPTRE_Vehicles_M494"
-      , "OPTRE_Vehicles_M808B2"
+      "ace_nouniformrestrictions"
+      , "OPTRE_Core"
+      , "OPTRE_Vehicles"
     };
+    VERSION_CONFIG;
   };
 };
