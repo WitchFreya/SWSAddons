@@ -575,21 +575,18 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
     crew = "SWS_O_URArmy_Crew_01";
+    hiddenSelectionsTextures[] = {
+      "\A3\Armor_F_Enoch\apc_tracked_03\data\apc_tracked_03_ext_eaf_co.paa"
+      , "\A3\Armor_F_Enoch\apc_tracked_03\data\apc_tracked_03_ext2_eaf_co.paa"
+      , "\A3\Armor_F_Enoch\apc_tracked_03\Data\camonet_EAF_green_CO.paa"
+      , "\A3\Armor_F_Enoch\apc_tracked_03\data\cage_EAF_CO.paa"
+    };
 
     class Turrets : Turrets {
       class MainTurret : MainTurret { gunnerType = "SWS_O_URArmy_Crew_01"; };
     };
 
     ALiVE_orbatCreator_owned = TRUE;
-
-    class EventHandlers : EventHandlers {
-      class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-      class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'A3\Armor_F_Enoch\apc_tracked_03\data\apc_tracked_03_ext_eaf_co.paa'];_unit setObjectTextureGlobal [1,'A3\Armor_F_Enoch\apc_tracked_03\data\apc_tracked_03_ext2_eaf_co.paa'];_unit setObjectTextureGlobal [2,'A3\Armor_F_Enoch\apc_tracked_03\Data\camonet_EAF_green_CO.paa'];_unit setObjectTextureGlobal [3,'A3\Armor_F_Enoch\apc_tracked_03\data\cage_EAF_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-      };
-    };
-
   };
 
   class SWS_O_URArmy_HMG_Dagger_01 : EMP_Polaris_DAGOR_HMG {
@@ -598,6 +595,14 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
     crew = "SWS_O_URArmy_Team_Lead_01";
+    hiddenSelectionsTextures[] = {
+      "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_01_black_CO.paa"
+      , "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_02_black_CO.paa"
+      , "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_black_CO.paa"
+      , "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_black_CO.paa"
+      , "\A3\Weapons_F_Beta\Launchers\Titan\data\launcher_INDP_co.paa"
+      , "\A3\Weapons_F_Beta\Launchers\Titan\data\tubem_INDP_co.paa"
+    };
 
     class Turrets : Turrets {
       class TopTurret : TopTurret { gunnerType = "SWS_O_URArmy_Rifleperson_1_01"; };
@@ -607,15 +612,6 @@ class CfgVehicles {
     };
 
     ALiVE_orbatCreator_owned = TRUE;
-
-    class EventHandlers : EventHandlers {
-      class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-      class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_01_black_CO.paa'];_unit setObjectTextureGlobal [1,'\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_02_black_CO.paa'];_unit setObjectTextureGlobal [2,'\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_black_CO.paa'];_unit setObjectTextureGlobal [3,'\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_black_CO.paa'];_unit setObjectTextureGlobal [4,'\A3\Weapons_F_Beta\Launchers\Titan\data\launcher_INDP_co.paa'];_unit setObjectTextureGlobal [5,'\A3\Weapons_F_Beta\Launchers\Titan\data\tubem_INDP_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-      };
-    };
-
   };
 
   class SWS_O_URArmy_HMG_Jeep_01 : I_C_Offroad_02_LMG_F {
@@ -624,6 +620,12 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
     crew = "SWS_O_URArmy_Team_Lead_01";
+    hiddenSelectionsTextures[] = {
+      "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa"
+      , "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa"
+      , "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa"
+      , "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa"
+    };
 
     class Turrets : Turrets {
       class LMG_Turret : LMG_Turret { gunnerType = "SWS_O_URArmy_Rifleperson_1_01"; };
@@ -631,15 +633,6 @@ class CfgVehicles {
     };
 
     ALiVE_orbatCreator_owned = TRUE;
-
-    class EventHandlers : EventHandlers {
-      class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-      class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa'];_unit setObjectTextureGlobal [1,'\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa'];_unit setObjectTextureGlobal [2,'\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa'];_unit setObjectTextureGlobal [3,'\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-      };
-    };
-
   };
 
   class SWS_O_URArmy_Covered_Truck_01 : O_Truck_02_Covered_F {
@@ -648,6 +641,12 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
     crew = "SWS_O_URArmy_Rifleperson_1_01";
+    hiddenSelectionsTextures[] = {
+      "\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kab_EAF_co.paa"
+      , "\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kuz_EAF_co.paa"
+      , "\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa"
+      , "\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa"
+    };
 
     class Turrets : Turrets {
       class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
@@ -655,15 +654,6 @@ class CfgVehicles {
     };
 
     ALiVE_orbatCreator_owned = TRUE;
-
-    class EventHandlers : EventHandlers {
-      class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-      class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kab_EAF_co.paa'];_unit setObjectTextureGlobal [1,'\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kuz_EAF_co.paa'];_unit setObjectTextureGlobal [2,'\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa'];_unit setObjectTextureGlobal [3,'\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-      };
-    };
-
   };
 
   class SWS_O_URArmy_Anti_Tank_Person_01_01 : EMP_CBRN_Element_Lead {
@@ -804,21 +794,19 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
     crew = "SWS_O_URArmy_Crew_01";
+    hiddenSelectionsTextures[] = {
+      "\A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_01_hexarid_co.paa"
+      , "\A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_02_hexarid_co.paa"
+      , "\A3\Armor_F_Beta\APC_Tracked_02\Data\rcws30_opfor_co.paa"
+      , "\A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa"
+      , "\A3\armor_f\data\cage_csat_co.paa"
+    };
 
     class Turrets : Turrets {
       class MainTurret : MainTurret { gunnerType = "SWS_O_URArmy_Crew_01"; };
     };
 
     ALiVE_orbatCreator_owned = TRUE;
-
-    class EventHandlers : EventHandlers {
-      class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-      class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_01_hexarid_co.paa'];_unit setObjectTextureGlobal [1,'A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_02_hexarid_co.paa'];_unit setObjectTextureGlobal [2,'A3\Armor_F_Beta\APC_Tracked_02\Data\rcws30_opfor_co.paa'];_unit setObjectTextureGlobal [3,'A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa'];_unit setObjectTextureGlobal [4,'A3\armor_f\data\cage_csat_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-      };
-    };
-
   };
 
   class SWS_O_URArmy_Taru_Transport_01 : EMP_Mi290_Taru_Transport {
@@ -827,6 +815,12 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
     crew = "SWS_O_URArmy_Crew_01";
+    hiddenSelectionsTextures[] = {
+      "\A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa"
+      , "\A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa"
+      , "\A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa"
+      , "\A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa"
+    };
 
     class Turrets : Turrets {
       class CopilotTurret : CopilotTurret { gunnerType = "SWS_O_URArmy_Crew_01"; };
@@ -836,15 +830,6 @@ class CfgVehicles {
     };
 
     ALiVE_orbatCreator_owned = TRUE;
-
-    class EventHandlers : EventHandlers {
-      class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-      class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_01_Black_co.paa'];_unit setObjectTextureGlobal [1,'A3\Air_F_Heli\Heli_Transport_04\Data\heli_transport_04_base_02_Black_co.paa'];_unit setObjectTextureGlobal [2,'A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext01_Black_CO.paa'];_unit setObjectTextureGlobal [3,'A3\Air_F_Heli\Heli_Transport_04\Data\Heli_Transport_04_Pod_Ext02_Black_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-      };
-    };
-
   };
 
   class SWS_O_URArmy_Merlin_Transport_01 : I_Heli_Transport_02_F {
@@ -853,6 +838,12 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
     crew = "SWS_O_URArmy_Crew_01";
+    hiddenSelectionsTextures[] = {
+      "\A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_1_INDP_CO.paa"
+      , "\A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_2_INDP_CO.paa"
+      , "\A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_3_INDP_CO.paa"
+      , "\A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_int_02_CO.paa"
+    };
 
     class Turrets : Turrets {
       class CopilotTurret : CopilotTurret { gunnerType = "SWS_O_URArmy_Crew_01"; };
@@ -861,15 +852,6 @@ class CfgVehicles {
     };
 
     ALiVE_orbatCreator_owned = TRUE;
-
-    class EventHandlers : EventHandlers {
-      class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-      class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_1_INDP_CO.paa'];_unit setObjectTextureGlobal [1,'A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_2_INDP_CO.paa'];_unit setObjectTextureGlobal [2,'A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_3_INDP_CO.paa'];_unit setObjectTextureGlobal [3,'A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_int_02_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-      };
-    };
-
   };
 
   class SWS_O_URArmy_Wildcat_01 : I_Heli_Light_03_DynamicLoadout_F {
@@ -878,6 +860,11 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
     crew = "SWS_O_URArmy_Crew_01";
+    hiddenSelectionsTextures[] = {
+      "\A3\Air_F_Enoch\Heli_Light_03\data\Heli_Light_03_base_EAF_CO.paa"
+      , "\a3\Supplies_F_Enoch\Ammoboxes\Data\AmmoBox_EAF_CO.paa"
+      , "\a3\Supplies_F_Enoch\Ammoboxes\Data\AmmoBox_signs_EAF_CA.paa"
+    };
 
     class Turrets : Turrets {
       class MainTurret : MainTurret { gunnerType = "SWS_O_URArmy_Crew_01"; };
@@ -886,15 +873,6 @@ class CfgVehicles {
     };
 
     ALiVE_orbatCreator_owned = TRUE;
-
-    class EventHandlers : EventHandlers {
-      class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-      class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'\A3\Air_F_Enoch\Heli_Light_03\data\Heli_Light_03_base_EAF_CO.paa'];_unit setObjectTextureGlobal [1,'\a3\Supplies_F_Enoch\Ammoboxes\Data\AmmoBox_EAF_CO.paa'];_unit setObjectTextureGlobal [2,'\a3\Supplies_F_Enoch\Ammoboxes\Data\AmmoBox_signs_EAF_CA.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-      };
-    };
-
   };
 
   class SWS_O_URArmy_Kajman_01 : O_Heli_Attack_02_DynamicLoadout_F {
@@ -903,21 +881,16 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
     crew = "SWS_O_URArmy_Crew_01";
+    hiddenSelectionsTextures[] = {
+      "\A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body1_black_CO.paa"
+      , "\A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body2_black_CO.paa"
+    };
 
     class Turrets : Turrets {
       class MainTurret : MainTurret { gunnerType = "SWS_O_URArmy_Crew_01"; };
     };
 
     ALiVE_orbatCreator_owned = TRUE;
-
-    class EventHandlers : EventHandlers {
-      class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-      class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body1_black_CO.paa'];_unit setObjectTextureGlobal [1,'A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body2_black_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-      };
-    };
-
   };
 
   class SWS_O_URArmy_YAK_CAS_01 : O_Plane_CAS_02_DynamicLoadout_F {
@@ -927,14 +900,6 @@ class CfgVehicles {
     faction = "sws_o_urarmy";
     crew = "SWS_O_URArmy_Crew_01";
     ALiVE_orbatCreator_owned = TRUE;
-
-    class EventHandlers : EventHandlers {
-      class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-      class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-      };
-    };
   };
 
   class SWS_O_URArmy_JAS_AIR_01 : I_Plane_Fighter_04_F {
@@ -943,16 +908,15 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
     crew = "SWS_O_URArmy_Crew_01";
-    ALiVE_orbatCreator_owned = TRUE;
-
-    class EventHandlers : EventHandlers {
-      class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-      class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'a3\air_f_jets\plane_fighter_04\data\Fighter_04_fuselage_01_green_co.paa'];_unit setObjectTextureGlobal [1,'a3\air_f_jets\plane_fighter_04\data\Fighter_04_fuselage_02_green_co.paa'];_unit setObjectTextureGlobal [2,'a3\air_f_jets\plane_fighter_04\data\fighter_04_misc_01_co.paa'];_unit setObjectTextureGlobal [3,'a3\air_f_jets\plane_fighter_04\data\Numbers\Fighter_04_number_04_ca.paa'];_unit setObjectTextureGlobal [4,'a3\air_f_jets\plane_fighter_04\data\Numbers\Fighter_04_number_04_ca.paa'];_unit setObjectTextureGlobal [5,'a3\air_f_jets\plane_fighter_04\data\Numbers\Fighter_04_number_08_ca.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-      };
+    hiddenSelectionsTextures[] = {
+      "\a3\air_f_jets\plane_fighter_04\data\Fighter_04_fuselage_01_green_co.paa"
+      , "\a3\air_f_jets\plane_fighter_04\data\Fighter_04_fuselage_02_green_co.paa"
+      , "\a3\air_f_jets\plane_fighter_04\data\fighter_04_misc_01_co.paa"
+      , "\a3\air_f_jets\plane_fighter_04\data\Numbers\Fighter_04_number_04_ca.paa"
+      , "\a3\air_f_jets\plane_fighter_04\data\Numbers\Fighter_04_number_04_ca.paa"
+      , "\a3\air_f_jets\plane_fighter_04\data\Numbers\Fighter_04_number_08_ca.paa"
     };
-
+    ALiVE_orbatCreator_owned = TRUE;
   };
 
   class SWS_O_URArmy_Ranger_01_01 : EMP_Recon_Marksman {
@@ -1159,21 +1123,18 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "SWS_O_URArmy";
     crew = "SWS_O_URArmy_Crew_01";
+    hiddenSelectionsTextures[] = {
+      "\a3\armor_f_gamma\mbt_02\data\mbt_02_body_co.paa"
+      , "\a3\armor_f_gamma\mbt_02\data\mbt_02_turret_co.paa"
+      , "\a3\armor_f_gamma\mbt_02\data\mbt_02_co.paa"
+      , "\A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa"
+    };
 
     class Turrets : Turrets {
       class MainTurret : MainTurret { gunnerType = "SWS_O_URArmy_Crew_01"; };
     };
 
     ALiVE_orbatCreator_owned = TRUE;
-
-    class EventHandlers : EventHandlers {
-      class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-      class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'a3\armor_f_gamma\mbt_02\data\mbt_02_body_co.paa'];_unit setObjectTextureGlobal [1,'a3\armor_f_gamma\mbt_02\data\mbt_02_turret_co.paa'];_unit setObjectTextureGlobal [2,'a3\armor_f_gamma\mbt_02\data\mbt_02_co.paa'];_unit setObjectTextureGlobal [3,'A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-      };
-    };
-
   };
 
   class SWS_O_URArmy_Black_Crusader_01 : O_MBT_04_Cannon_F {
@@ -1182,21 +1143,17 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "SWS_O_URArmy";
     crew = "SWS_O_URArmy_Crew_01";
+    hiddenSelectionsTextures[] = {
+      "\a3\Armor_F_Tank\MBT_04\Data\MBT_04_exterior_brown_hex_1_CO.paa"
+      , "\a3\Armor_F_Tank\MBT_04\Data\MBT_04_exterior_brown_hex_2_CO.paa"
+      , "\A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa"
+    };
 
     class Turrets : Turrets {
       class MainTurret : MainTurret { gunnerType = "SWS_O_URArmy_Crew_01"; };
     };
 
     ALiVE_orbatCreator_owned = TRUE;
-
-    class EventHandlers : EventHandlers {
-      class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-      class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'a3\Armor_F_Tank\MBT_04\Data\MBT_04_exterior_brown_hex_1_CO.paa'];_unit setObjectTextureGlobal [1,'a3\Armor_F_Tank\MBT_04\Data\MBT_04_exterior_brown_hex_2_CO.paa'];_unit setObjectTextureGlobal [2,'A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-      };
-    };
-
   };
 
   class SWS_O_URArmy_Black_Crusader_Lead_01 : O_MBT_04_Command_F {
@@ -1211,14 +1168,6 @@ class CfgVehicles {
     };
 
     ALiVE_orbatCreator_owned = TRUE;
-
-    class EventHandlers : EventHandlers {
-      class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-      class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-      };
-    };
   };
 
   class SWS_O_URArmy_Rat_ATGM_01 : I_LT_01_AT_F {
@@ -1227,21 +1176,18 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "SWS_O_URArmy";
     crew = "SWS_O_URArmy_Crew_01";
+    hiddenSelectionsTextures[] = {
+      "\A3\armor_f_tank\lt_01\data\lt_01_main_co.paa"
+      , "\A3\armor_f_tank\lt_01\data\lt_01_at_co.paa"
+      , "\A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa"
+      , "\A3\armor_f\data\cage_aaf_co.paa"
+    };
 
     class Turrets : Turrets {
       class MainTurret : MainTurret { gunnerType = "SWS_O_URArmy_Crew_01"; };
     };
 
     ALiVE_orbatCreator_owned = TRUE;
-
-    class EventHandlers : EventHandlers {
-      class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-      class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'A3\armor_f_tank\lt_01\data\lt_01_main_co.paa'];_unit setObjectTextureGlobal [1,'A3\armor_f_tank\lt_01\data\lt_01_at_co.paa'];_unit setObjectTextureGlobal [2,'A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa'];_unit setObjectTextureGlobal [3,'A3\armor_f\data\cage_aaf_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-      };
-    };
-
   };
 
   class SWS_O_URArmy_Rat_Light_01 : I_LT_01_Cannon_F {
@@ -1256,14 +1202,6 @@ class CfgVehicles {
     };
 
     ALiVE_orbatCreator_owned = TRUE;
-
-    class EventHandlers : EventHandlers {
-      class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-      class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-      };
-    };
   };
 
   class SWS_O_URArmy_Red_Eagle_01 : B_MBT_01_Cannon_F {
@@ -1272,21 +1210,17 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "SWS_O_URArmy";
     crew = "SWS_O_URArmy_Crew_01";
+    hiddenSelectionsTextures[] = {
+      "\A3\armor_f_gamma\MBT_01\Data\MBT_01_body_CO.paa"
+      , "\A3\armor_f_gamma\MBT_01\Data\MBT_01_tow_CO.paa"
+      , "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
+    };
 
     class Turrets : Turrets {
       class MainTurret : MainTurret { gunnerType = "SWS_O_URArmy_Crew_01"; };
     };
 
     ALiVE_orbatCreator_owned = TRUE;
-
-    class EventHandlers : EventHandlers {
-      class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-      class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'A3\armor_f_gamma\MBT_01\Data\MBT_01_body_CO.paa'];_unit setObjectTextureGlobal [1,'A3\armor_f_gamma\MBT_01\Data\MBT_01_tow_CO.paa'];_unit setObjectTextureGlobal [2,'A3\Armor_F\Data\camonet_NATO_Desert_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-      };
-    };
-
   };
 
   class SWS_O_URArmy_Tiger_01 : O_APC_Tracked_02_AA_F {
@@ -1295,21 +1229,19 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "SWS_O_URArmy";
     crew = "SWS_O_URArmy_Crew_01";
+    hiddenSelectionsTextures[] = {
+      "A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_01_aa_hexarid_co.paa"
+      , "A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_02_hexarid_co.paa"
+      , "A3\Armor_F_Beta\APC_Tracked_01\Data\apc_tracked_01_aa_tower_opfor_co.paa"
+      , "A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa"
+      , "A3\armor_f\data\cage_csat_co.paa"
+    };
 
     class Turrets : Turrets {
       class MainTurret : MainTurret { gunnerType = "SWS_O_URArmy_Crew_01"; };
     };
 
     ALiVE_orbatCreator_owned = TRUE;
-
-    class EventHandlers : EventHandlers {
-      class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-      class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_01_aa_hexarid_co.paa'];_unit setObjectTextureGlobal [1,'A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_02_hexarid_co.paa'];_unit setObjectTextureGlobal [2,'A3\Armor_F_Beta\APC_Tracked_01\Data\apc_tracked_01_aa_tower_opfor_co.paa'];_unit setObjectTextureGlobal [3,'A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa'];_unit setObjectTextureGlobal [4,'A3\armor_f\data\cage_csat_co.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-      };
-    };
-
   };
 
   class SWS_O_URArmy_Rat_AA_01 : I_LT_01_AA_F {
@@ -1324,14 +1256,6 @@ class CfgVehicles {
     };
 
     ALiVE_orbatCreator_owned = TRUE;
-
-    class EventHandlers : EventHandlers {
-      class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-      class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-      };
-    };
   };
 
   class SWS_O_URArmy_Shadow_01 : O_MBT_02_Arty_F {
@@ -1340,21 +1264,18 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "SWS_O_URArmy";
     crew = "SWS_O_URArmy_Crew_01";
+    hiddenSelectionsTextures[] = {
+      "\a3\armor_f_gamma\mbt_02\data\mbt_02_body_co.paa"
+      , "\a3\armor_f_gamma\mbt_01\data\mbt_01_scorcher_hexarid_co.paa"
+      , "\a3\armor_f_gamma\mbt_02\data\mbt_02_co.paa"
+      , "\a3\data_f\vehicles\turret_opfor_co.paa"
+      , "\A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa"
+    };
 
     class Turrets : Turrets {
       class MainTurret : MainTurret { gunnerType = "SWS_O_URArmy_Crew_01"; };
     };
 
     ALiVE_orbatCreator_owned = TRUE;
-
-    class EventHandlers : EventHandlers {
-      class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
-
-      class ALiVE_orbatCreator {
-        init = "if (local (_this select 0)) then {_onSpawn = {sleep 0.3; _unit = _this select 0;_unit setObjectTextureGlobal [0,'a3\armor_f_gamma\mbt_02\data\mbt_02_body_co.paa'];_unit setObjectTextureGlobal [1,'a3\armor_f_gamma\mbt_01\data\mbt_01_scorcher_hexarid_co.paa'];_unit setObjectTextureGlobal [2,'a3\armor_f_gamma\mbt_02\data\mbt_02_co.paa'];_unit setObjectTextureGlobal [3,'a3\data_f\vehicles\turret_opfor_co.paa'];_unit setObjectTextureGlobal [4,'A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa'];};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
-      };
-    };
-
   };
-
 };
