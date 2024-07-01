@@ -50,7 +50,6 @@ class CfgVehicles {
   class B_19thUNSC_Squad_Leader_Urban_01 : OPTRE_UNSC_ODST_Soldier {};
   class B_19thUNSC_Team_Leader_Urban_01 : OPTRE_UNSC_ODST_Soldier {};
   class B_19thUNSC_Rifleman_Urban_01 : OPTRE_UNSC_ODST_Soldier {};
-  class B_19thUNSC_Rifleman_Urban_01 : OPTRE_UNSC_ODST_Soldier {};
   class B_19thUNSC_Rifleman_AT_Urban_01 : OPTRE_UNSC_ODST_Soldier {};
   class B_19thUNSC_Corpsman_Urban_01 : OPTRE_UNSC_ODST_Soldier {};
   class B_19thUNSC_Autorifleman_Urban_01 : OPTRE_UNSC_ODST_Soldier {};

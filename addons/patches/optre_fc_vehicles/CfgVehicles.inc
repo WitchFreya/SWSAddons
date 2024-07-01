@@ -7,10 +7,6 @@ class CfgVehicles {
   class B_MBT_01_cannon_F;
   class B_Plane_CAS_01_F;
   class Helicopter_Base_F;
-  class OPTRE_FC_AA_Wraith;
-  class OPTRE_FC_Type26B_Banshee;
-  class OPTRE_FC_Type26N_Banshee;
-  class OPTRE_FC_Wraith;
 
   class OPTRE_FC_Type26B_Banshee : B_Plane_CAS_01_F { CBA_PATCH; };
   class OPTRE_FC_Type26N_Banshee : OPTRE_FC_Type26B_Banshee { CBA_PATCH; };

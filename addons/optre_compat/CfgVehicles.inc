@@ -5,7 +5,6 @@ class CfgVehicles {
   class StaticMGWeapon;
   class PlaneWreck;
   class Plane_Base_F;
-  class OPTRE_M12_CIV;
   class OPTRE_M808B2;
   class Helicopter_Base_H;
 

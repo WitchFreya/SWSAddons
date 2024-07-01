@@ -14,8 +14,6 @@ class CfgVehicles {
   class OPTRE_UNSC_falcon_armed;
   class OPTRE_UNSC_falcon_armed_s;
   class OPTRE_UNSC_falcon_s;
-  class VES_D77HTCI;
-  class VES_D77HTCI_A;
 
   class VES_M12_APC_Base : OPTRE_M12_FAV_APC { CBA_PATCH; };
   class VES_IFV76_A : B_APC_Wheeled_01_cannon_F { CBA_PATCH; };
