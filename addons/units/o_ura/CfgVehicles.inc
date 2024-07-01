@@ -92,8 +92,8 @@ class CfgVehicles {
     items[] = {"FirstAidKit","FirstAidKit","FirstAidKit","ToolKit","MineDetector"};
     respawnItems[] = {"FirstAidKit","FirstAidKit","FirstAidKit","ToolKit","MineDetector"};
 
-    magazines[] = {"30Rnd_762x39_AK12_Mag_F","MRAWS_HEAT_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
-    respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","MRAWS_HEAT_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
+    magazines[] = {"30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
+    respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
 
     backpack = "B_ViperLightHarness_blk_F";
 
@@ -679,8 +679,8 @@ class CfgVehicles {
     items[] = {"FirstAidKit","FirstAidKit","FirstAidKit"};
     respawnItems[] = {"FirstAidKit","FirstAidKit","FirstAidKit"};
 
-    magazines[] = {"30Rnd_762x39_AK12_Mag_F","Vorona_HEAT","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
-    respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","Vorona_HEAT","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
+    magazines[] = {"30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
+    respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
 
     backpack = "B_ViperLightHarness_blk_F";
 
@@ -751,8 +751,8 @@ class CfgVehicles {
     items[] = {"FirstAidKit","FirstAidKit","FirstAidKit"};
     respawnItems[] = {"FirstAidKit","FirstAidKit","FirstAidKit"};
 
-    magazines[] = {"30Rnd_762x39_AK12_Mag_F","Titan_AA","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
-    respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","Titan_AA","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
+    magazines[] = {"30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
+    respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
 
     backpack = "B_ViperLightHarness_blk_F";
 
