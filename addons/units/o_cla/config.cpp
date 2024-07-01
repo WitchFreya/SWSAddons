@@ -9,6 +9,8 @@ class MainTurret;
 class EventHandlers;
 class CBA_Extended_EventHandlers_base;
 
+#include "CfgGroups.inc"
+#include "CfgFactionClasses.inc"
 #include "faction.inc"
 
 class CfgPatches {
