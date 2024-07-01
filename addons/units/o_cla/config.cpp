@@ -4,10 +4,28 @@ class TextureSources;
 
 #include "CfgVehicles.inc"
 
+class EventHandlers;
 class Turrets;
 class MainTurret;
-class EventHandlers;
+class CargoTurret_01;
+class CargoTurret_02;
+class CargoTurret_03;
+class CargoTurret_04;
+class CargoTurret_05;
+class CargoTurret_06;
+class CargoTurret_07;
+class CargoTurret_08;
+class CargoTurret_09;
+class CargoGunner_1;
+class LeftDoorGun;
+class CommanderTurret;
+class RightDoorGun;
+class GunnerTurret;
+class CopilotTurret;
+class FrontTurret;
+class RearTurret;
 class CBA_Extended_EventHandlers_base;
+
 
 #include "CfgGroups.inc"
 #include "CfgFactionClasses.inc"
