@@ -1,12 +1,6 @@
 #include "script_component.hpp"
 
-class TextureSources;
-
-#include "CfgVehicles.inc"
-
-class EventHandlers;
-class Turrets;
-class MainTurret;
+class CargoGunner_1;
 class CargoTurret_01;
 class CargoTurret_02;
 class CargoTurret_03;
@@ -16,20 +10,22 @@ class CargoTurret_06;
 class CargoTurret_07;
 class CargoTurret_08;
 class CargoTurret_09;
-class CargoGunner_1;
-class LeftDoorGun;
-class CommanderTurret;
-class RightDoorGun;
-class GunnerTurret;
-class CopilotTurret;
-class FrontTurret;
-class RearTurret;
 class CBA_Extended_EventHandlers_base;
-
+class CommanderTurret;
+class CopilotTurret;
+class EventHandlers;
+class FrontTurret;
+class GunnerTurret;
+class LeftDoorGun;
+class MainTurret;
+class RearTurret;
+class RightDoorGun;
+class TextureSources;
+class Turrets;
+#include "CfgVehicles.inc"
 
 #include "CfgGroups.inc"
 #include "CfgFactionClasses.inc"
-#include "faction.inc"
 
 class CfgPatches {
   class SUBADDON {
