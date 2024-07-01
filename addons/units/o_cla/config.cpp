@@ -1,15 +1,31 @@
 #include "script_component.hpp"
 
+class CargoGunner_1;
+class CargoTurret_01;
+class CargoTurret_02;
+class CargoTurret_03;
+class CargoTurret_04;
+class CargoTurret_05;
+class CargoTurret_06;
+class CargoTurret_07;
+class CargoTurret_08;
+class CargoTurret_09;
+class CBA_Extended_EventHandlers_base;
+class CommanderTurret;
+class CopilotTurret;
+class EventHandlers;
+class FrontTurret;
+class GunnerTurret;
+class LeftDoorGun;
+class MainTurret;
+class RearTurret;
+class RightDoorGun;
 class TextureSources;
-
+class Turrets;
 #include "CfgVehicles.inc"
 
-class Turrets;
-class MainTurret;
-class EventHandlers;
-class CBA_Extended_EventHandlers_base;
-
-#include "faction.inc"
+#include "CfgGroups.inc"
+#include "CfgFactionClasses.inc"
 
 class CfgPatches {
   class SUBADDON {

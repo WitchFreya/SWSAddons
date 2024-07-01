@@ -101,7 +101,6 @@ class CfgVehicles {
   class O_V_Soldier_TL_ghex_F;
   class O_V_Soldier_TL_hex_F;
   class TCGM_f_Swimsuit_Maya_civil;
-  class TCGM_Survival_Bra_B_MTP_Soldier;
 
   class TCGM_f_underwear_soldier : B_Survivor_F { CBA_PATCH; };
   class TCGM_f_PantiesBlack_soldier : C_Man_casual_1_F { CBA_PATCH; };

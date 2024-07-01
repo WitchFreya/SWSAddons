@@ -141,7 +141,6 @@ class CfgVehicles {
   class TCGM_f_Lada_Flat_soldier : TCGM_f_Oshun_Flat_soldier { ADD_ACE_HITPOINTS; CBA_PATCH; };
   class TCGM_f_Cloaking_Flat_soldier : TCGM_f_Hecate_Flat_soldier { ADD_ACE_HITPOINTS; };
 
-  class TCGM_f_Oshun_Flat_soldier : B_Soldier_F { CBA_PATCH; };
   class TCGM_m_Midas_Flat_soldier : TCGM_f_Oshun_Flat_soldier { CBA_PATCH; };
   class TCGM_m_Argiron_Flat_soldier : TCGM_f_Selene_Flat_soldier { CBA_PATCH; };
   class TCGM_m_Hephaestus_Flat_soldier : TCGM_f_Gaia_Flat_soldier { CBA_PATCH; };

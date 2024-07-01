@@ -4,7 +4,6 @@
   }
 
 class CfgVehicles {
-  class Jbad_Lamps_base_powerline;
   class Land_Jbad_PowLines_Conc2L;
   class PowerLines_Small_base_F;
   class Tank_F;
