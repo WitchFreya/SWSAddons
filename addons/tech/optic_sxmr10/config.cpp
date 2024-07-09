@@ -1,15 +1,15 @@
 #include "script_component.hpp"
 
+class AMS;
+class Iron;
 class ItemInfo;
 class OpticsModes;
-class AMS;
 
 #include "CfgWeapons.inc"
 
-class CfgPatches
-{
-  class SUBADDON
-  {
+class CfgPatches {
+  class SUBADDON {
+    addonRootClass = QUOTE(ADDON);
     name = COMPONENT_NAME;
     units[] = { };
     weapons[] = { CLASSES_WEAPONS };
@@ -20,6 +20,5 @@ class CfgPatches
       "A3_Weapons_F_Mark_Acc"
     };
     VERSION_CONFIG;
-    addonRootClass = QUOTE(ADDON);
   };
 };

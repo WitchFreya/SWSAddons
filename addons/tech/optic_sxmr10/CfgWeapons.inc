@@ -1,7 +1,6 @@
 #define CLASSES_WEAPONS \
   "SWS_Optic_SxMR10"
 
-
 class CfgWeapons {
   class Optic_AMS;
   class SWS_Optic_SxMR10: Optic_AMS {
@@ -18,6 +17,7 @@ class CfgWeapons {
             , "NVG"
 					};
 				};
+        class Iron : Iron {};
       };
     };
   };
