@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 class LowROF;
-#include "CfgVehicles.inc"
+
 #include "CfgAmmo.inc"
 #include "CfgFunctions.inc"
 
