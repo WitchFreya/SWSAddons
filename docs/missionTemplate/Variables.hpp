@@ -5,6 +5,8 @@
 #define MISSION_DESCRIPTION Reinforce some UNSC Marines.
 #define MIN_PLAYERS 1
 #define MAX_PLAYERS 999 // IMPORTANT: Update this with the number of playable units you have in your mission!
+// get this by opening steam, clicking on your user in the top right, going to Account Details, and it'll be under [Your Name]'s Account in the top left.
+#define AUTHOR_STEAM_ID 76561198043258500
 
 //== Do not touch after this line unless you know what you're doing.
 
@@ -16,6 +18,7 @@
 #define QNAME QUOTE(MISSION_NAME)
 #define QLOCATION QUOTE(MISSION_LOCATION)
 #define QDESC QUOTE(MISSION_DESCRIPTION)
-#define DEBUG_STEAM_IDS \
-  QUOTE(STEAM_ID_HOLLY),\
+#define DEBUG_STEAM_IDS   \
+  QUOTE(AUTHOR_STEAM_ID), \
+  QUOTE(STEAM_ID_HOLLY),  \
   QUOTE(STEAM_ID_ASH)
