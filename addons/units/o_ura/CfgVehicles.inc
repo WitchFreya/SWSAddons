@@ -1,49 +1,50 @@
 #define CLASSES_VEHICLES                  \
-  "SWS_O_URArmy_Anti_Tank_Person_02_01"   \
-  , "SWS_O_URArmy_Squad_Lead_01"          \
-  , "SWS_O_URArmy_Team_Lead_01"           \
-  , "SWS_O_URArmy_Rifleperson_1_01"       \
-  , "SWS_O_URArmy_Rifleperson_2_01"       \
-  , "SWS_O_URArmy_Automatic_Rifle_01"     \
-  , "SWS_O_URArmy_Medic_01"               \
-  , "SWS_O_URArmy_Marksman_01"            \
-  , "SWS_O_URArmy_Crew_01"                \
-  , "SWS_O_URArmy_Sniper_01"              \
-  , "SWS_O_URArmy_Spotter_01"             \
-  , "SWS_O_URArmy_Marine_1_01"            \
-  , "SWS_O_URArmy_Marine_2_01"            \
-  , "SWS_O_URArmy_Marine_Team_Lead_01"    \
-  , "SWS_O_URArmy_Marine_Medic_01"        \
-  , "SWS_O_URArmy_Warrior_01"             \
-  , "SWS_O_URArmy_HMG_Dagger_01"          \
-  , "SWS_O_URArmy_HMG_Jeep_01"            \
-  , "SWS_O_URArmy_Covered_Truck_01"       \
+  "SWS_O_URArmy_Anti_Air_Person_01"       \
   , "SWS_O_URArmy_Anti_Tank_Person_01_01" \
-  , "SWS_O_URArmy_Light_Marksmen_01"      \
-  , "SWS_O_URArmy_Anti_Air_Person_01"     \
-  , "SWS_O_URArmy_Marine_MG_01"           \
-  , "SWS_O_URArmy_Stalker_01"             \
-  , "SWS_O_URArmy_Taru_Transport_01"      \
-  , "SWS_O_URArmy_Merlin_Transport_01"    \
-  , "SWS_O_URArmy_Wildcat_01"             \
-  , "SWS_O_URArmy_Kajman_01"              \
-  , "SWS_O_URArmy_YAK_CAS_01"             \
-  , "SWS_O_URArmy_JAS_AIR_01"             \
-  , "SWS_O_URArmy_Ranger_01_01"           \
-  , "SWS_O_URArmy_Ranger_02_01"           \
-  , "SWS_O_URArmy_Ranger_Team_Lead_01"    \
-  , "SWS_O_URArmy_Range_Autorifle_01"     \
-  , "SWS_O_URArmy_Ranger_Marksmen_01"     \
-  , "SWS_O_URArmy_Ranger_Medic_01"        \
-  , "SWS_O_URArmy_Black_Eagle_01"         \
+  , "SWS_O_URArmy_Automatic_Rifle_01"     \
   , "SWS_O_URArmy_Black_Crusader_01"      \
   , "SWS_O_URArmy_Black_Crusader_Lead_01" \
+  , "SWS_O_URArmy_Black_Eagle_01"         \
+  , "SWS_O_URArmy_Covered_Truck_01"       \
+  , "SWS_O_URArmy_Crew_01"                \
+  , "SWS_O_URArmy_HMG_Dagger_01"          \
+  , "SWS_O_URArmy_HMG_Jeep_01"            \
+  , "SWS_O_URArmy_JAS_AIR_01"             \
+  , "SWS_O_URArmy_Jeep_01"                \
+  , "SWS_O_URArmy_Kajman_01"              \
+  , "SWS_O_URArmy_Light_Marksmen_01"      \
+  , "SWS_O_URArmy_Marine_1_01"            \
+  , "SWS_O_URArmy_Marine_2_01"            \
+  , "SWS_O_URArmy_Marine_Medic_01"        \
+  , "SWS_O_URArmy_Marine_MG_01"           \
+  , "SWS_O_URArmy_Marine_Team_Lead_01"    \
+  , "SWS_O_URArmy_Marksman_01"            \
+  , "SWS_O_URArmy_Medic_01"               \
+  , "SWS_O_URArmy_Merlin_Transport_01"    \
+  , "SWS_O_URArmy_Range_Autorifle_01"     \
+  , "SWS_O_URArmy_Ranger_01_01"           \
+  , "SWS_O_URArmy_Ranger_02_01"           \
+  , "SWS_O_URArmy_Ranger_Marksmen_01"     \
+  , "SWS_O_URArmy_Ranger_Medic_01"        \
+  , "SWS_O_URArmy_Ranger_Team_Lead_01"    \
+  , "SWS_O_URArmy_Rat_AA_01"              \
   , "SWS_O_URArmy_Rat_ATGM_01"            \
   , "SWS_O_URArmy_Rat_Light_01"           \
   , "SWS_O_URArmy_Red_Eagle_01"           \
+  , "SWS_O_URArmy_Rifleperson_1_01"       \
+  , "SWS_O_URArmy_Rifleperson_2_01"       \
+  , "SWS_O_URArmy_Shadow_01"              \
+  , "SWS_O_URArmy_Sniper_01"              \
+  , "SWS_O_URArmy_Spotter_01"             \
+  , "SWS_O_URArmy_Squad_Lead_01"          \
+  , "SWS_O_URArmy_Stalker_01"             \
+  , "SWS_O_URArmy_Taru_Transport_01"      \
+  , "SWS_O_URArmy_Team_Lead_01"           \
   , "SWS_O_URArmy_Tiger_01"               \
-  , "SWS_O_URArmy_Rat_AA_01"              \
-  , "SWS_O_URArmy_Shadow_01"
+  , "SWS_O_URArmy_Warrior_01"             \
+  , "SWS_O_URArmy_Wildcat_01"             \
+  , "SWS_O_URArmy_YAK_CAS_01"             \
+  , "SWS_O_URArmy_Anti_Tank_Person_02_01"
 
 class CBA_Extended_EventHandlers_base;
 
@@ -72,6 +73,7 @@ class CfgVehicles {
   class O_MBT_04_Command_F;
   class O_Plane_CAS_02_DynamicLoadout_F;
   class O_Truck_02_Covered_F;
+  class C_Offroad_02_Unarmed_F;
 
   class SWS_O_URArmy_Anti_Tank_Person_02_01 : B_Soldier_Exp_F {
     ITEM_META(2);
@@ -89,22 +91,19 @@ class CfgVehicles {
     weapons[] = {"arifle_AK12_F","launch_MRAWS_sand_rail_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"arifle_AK12_F","launch_MRAWS_sand_rail_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
 
-    items[] = {"FirstAidKit","FirstAidKit","FirstAidKit","ToolKit","MineDetector"};
-    respawnItems[] = {"FirstAidKit","FirstAidKit","FirstAidKit","ToolKit","MineDetector"};
-
-    magazines[] = {"30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
-    respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
+    magazines[] = {"30Rnd_762x39_AK12_Mag_F","MRAWS_HEAT_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
+    respawnMagazines[] = {"30Rnd_762x39_AK12_Mag_F","MRAWS_HEAT_F","11Rnd_45ACP_Mag","Laserbatteries","30Rnd_762x39_AK12_Mag_F","11Rnd_45ACP_Mag","Laserbatteries"};
 
     backpack = "B_ViperLightHarness_blk_F";
 
-    ALiVE_orbatCreator_loadout[] = {{"arifle_AK12_F","","acc_flashlight","ACE_optic_Hamr_PIP",{"30Rnd_762x39_AK12_Mag_F",30},{},""},{"launch_MRAWS_sand_rail_F","","","",{"MRAWS_HEAT_F",1},{},""},{"SWS_HGun_Pistol_Heavy_01_F_Flashlight","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"V_PlateCarrier2_blk",{{"ACE_bloodIV_500",2},{"ACE_quikclot",10},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"30Rnd_762x39_AK12_Mag_F",4,30}}},{"B_ViperLightHarness_blk_F",{{"MRAWS_HEAT_F",3,1}}},"H_PASGT_basic_black_F","G_CBRN_M04_Hood",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"}};
+    ALiVE_orbatCreator_loadout[] = {{"arifle_AK12_F","","acc_flashlight","ACE_optic_Hamr_PIP",{"30Rnd_762x39_AK12_Mag_F",30},{},""},{"launch_MRAWS_sand_rail_F","","","",{"MRAWS_HEAT_F",1},{},""},{"SWS_HGun_Pistol_Heavy_01_F_Flashlight","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_C_CBRN_Suit_01_Blue_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"V_PlateCarrier2_blk",{{"ACE_bloodIV_500",2},{"ACE_quikclot",10},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"30Rnd_762x39_AK12_Mag_F",4,30}}},{"B_ViperLightHarness_blk_F",{{"MRAWS_HEAT_F",4,1}}},"H_PASGT_basic_black_F","G_CBRN_M04_Hood",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"}};
     ALiVE_orbatCreator_owned = TRUE;
 
     class EventHandlers : EventHandlers {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = QUOTE(_this call FUNC(aliveOnInit));
+          init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
       };
     };
   };
@@ -386,8 +385,8 @@ class CfgVehicles {
 
     uniformClass = "U_B_CBRN_Suit_01_MTP_F";
 
-    linkedItems[] = {"V_PlateCarrier2_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
-    respawnlinkedItems[] = {"V_PlateCarrier2_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
+    linkedItems[] = {"V_PlateCarrier1_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
+    respawnlinkedItems[] = {"V_PlateCarrier1_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
 
     weapons[] = {"srifle_GM6_ghex_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"srifle_GM6_ghex_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
@@ -397,14 +396,14 @@ class CfgVehicles {
 
     backpack = "B_RadioBag_01_digi_F";
 
-    ALiVE_orbatCreator_loadout[] = {{"srifle_GM6_ghex_F","","","optic_AMS_khk",{"5Rnd_127x108_Mag",5},{},""},{},{"SWS_HGun_Pistol_Heavy_01_F_Flashlight","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_B_CBRN_Suit_01_MTP_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"V_PlateCarrier2_rgr_noflag_F",{{"ACE_bloodIV_500",1},{"ACE_quikclot",5},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"5Rnd_127x108_APDS_Mag",6,5}}},{"B_RadioBag_01_digi_F",{}},"H_HelmetIA","G_Balaclava_TI_G_tna_F",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"}};
+    ALiVE_orbatCreator_loadout[] = {{"srifle_GM6_ghex_F","","","optic_AMS_khk",{"5Rnd_127x108_Mag",5},{},""},{},{"SWS_HGun_Pistol_Heavy_01_F_Flashlight","","acc_flashlight_pistol","",{"11Rnd_45ACP_Mag",15},{},""},{"U_B_CBRN_Suit_01_MTP_F",{{"FirstAidKit",3},{"HandGrenade",1,1}}},{"V_PlateCarrier1_rgr_noflag_F",{{"ACE_bloodIV_500",1},{"ACE_quikclot",5},{"11Rnd_45ACP_Mag",1,15},{"HandGrenade",2,1},{"5Rnd_127x108_APDS_Mag",6,5}}},{"B_RadioBag_01_digi_F",{}},"H_HelmetIA","G_Balaclava_TI_G_tna_F",{"Laserdesignator_01_khk_F","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"}};
     ALiVE_orbatCreator_owned = TRUE;
 
     class EventHandlers : EventHandlers {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = QUOTE(_this call FUNC(aliveOnInit));
+        init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
       };
     };
   };
@@ -437,7 +436,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = QUOTE(_this call FUNC(aliveOnInit));
+          init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
       };
     };
   };
@@ -641,6 +640,28 @@ class CfgVehicles {
     };
 
     ALiVE_orbatCreator_owned = TRUE;
+  };
+
+  class SWS_O_URArmy_Jeep_01 : C_Offroad_02_Unarmed_F {
+    ITEM_META(2);
+    displayName = "Jeep";
+    side = SIDE_OPFOR;
+    faction = "sws_o_urarmy";
+    crew = "SWS_O_URArmy_Crew_01";
+    hiddenSelectionsTextures[] = {
+      "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_black_co.paa"
+      , "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_black_co.paa"
+      , "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_black_co.paa"
+      , "\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_black_co.paa"
+    };
+
+    class Turrets : Turrets {
+      class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
+      class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
+      class CargoTurret_03 : CargoTurret_03 { gunnerType = ""; };
+    };
+
+    ALiVE_orbatCreator_owned = 1;
   };
 
   class SWS_O_URArmy_Covered_Truck_01 : O_Truck_02_Covered_F {
@@ -1070,7 +1091,7 @@ class CfgVehicles {
       class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
       class ALiVE_orbatCreator {
-        init = QUOTE(_this call FUNC(aliveOnInit));
+          init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
       };
     };
   };
