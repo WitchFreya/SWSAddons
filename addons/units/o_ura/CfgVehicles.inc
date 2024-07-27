@@ -613,6 +613,8 @@ class CfgVehicles {
     class Turrets : Turrets {
       class TopTurret : TopTurret { gunnerType = "SWS_O_URArmy_Rifleperson_1_01"; };
       class CodRiverTurret : CodRiverTurret { gunnerType = "SWS_O_URArmy_Rifleperson_2_01"; };
+      class CargoTurret_02 : CargoTurret_02 {};
+      class CargoTurret_03 : CargoTurret_03 {};
     };
 
     ALiVE_orbatCreator_owned = TRUE;
@@ -634,6 +636,8 @@ class CfgVehicles {
     class Turrets : Turrets {
       class LMG_Turret : LMG_Turret { gunnerType = "SWS_O_URArmy_Rifleperson_1_01"; };
       class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
+      class CargoTurret_02 : CargoTurret_02 {};
+      class CargoTurret_03 : CargoTurret_03 {};
     };
 
     ALiVE_orbatCreator_owned = TRUE;
