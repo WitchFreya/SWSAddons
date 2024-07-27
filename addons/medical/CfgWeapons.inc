@@ -4,8 +4,8 @@
 
 class CfgWeapons {
   class OPTRE_Biofoam;
-  class OPTRE_MedKit;
   class ACE_Morphine;
+  class ACE_ItemCore;
 
   class SWS_Biofoam : OPTRE_Biofoam {
     ITEM_META(2);
@@ -44,5 +44,11 @@ class CfgWeapons {
     model = "\z\ace\addons\medical_treatment\data\morphine.p3d";
     // TODO: Different picture
     picture = "\z\ace\addons\medical_treatment\ui\morphine_ca.paa";
+  };
+
+  class OPTRE_MedKit : ACE_ItemCore {
+    class ItemInfo : CBA_MiscItem_ItemInfo {
+      mass = 10;
+    };
   };
 };

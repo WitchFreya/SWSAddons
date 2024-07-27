@@ -1,5 +1,6 @@
 #include "script_component.hpp"
 
+class CBA_MiscItem_ItemInfo;
 class ItemInfo;
 
 #include "CfgWeapons.inc"
