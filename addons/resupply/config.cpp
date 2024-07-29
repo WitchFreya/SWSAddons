@@ -1,5 +1,6 @@
 #include "script_component.hpp"
 
+#include "Cfg3DEN.inc"
 #include "CfgEventHandlers.inc"
 #include "CfgVehicles.inc"
 #include "CfgEditorSubcategories.inc"

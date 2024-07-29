@@ -15,7 +15,7 @@
  * Public: No
 */
 
-TRACE_1(QGVAR(DOUBLES(fnc,onClickMigrate)),_this);
+TRACE_1(QFUNC(onClickMigrate),_this);
 
 params ["_display","_control"];
 

@@ -20,7 +20,7 @@ params [
   ["_target", objNull, [objNull]]
 ];
 
-TRACE_1(QGVAR(DOUBLES(fnc,addRestockAction)),_this);
+TRACE_1(QFUNC(addRestockAction),_this);
 
 private _fnc_onInteract = {
   params ["_target", "_caller"];

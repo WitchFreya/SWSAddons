@@ -16,7 +16,7 @@
  * Public: No
  */
 
-TRACE_1(QGVAR(DOUBLES(fnc,saveRadios)),_this);
+TRACE_1(QFUNC(saveRadios),_this);
 
 if !(local _target) exitWith {
   [QGVAR(saveRadios), [_target], _target] call CBA_fnc_targetEvent;

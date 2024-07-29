@@ -17,7 +17,7 @@
  * Public: No
  */
 
-TRACE_1(QGVAR(DOUBLES(fnc,confirmMigrate)),_this);
+TRACE_1(QFUNC(confirmMigrate),_this);
 
 if !(canSuspend) exitWith {
   _this spawn FUNC(confirmMigrate);
