@@ -1,9 +1,10 @@
 #include "script_component.hpp"
 
+#include "ACE_Arsenal_Stats.inc"
+#include "Cfg3DEN.inc"
+#include "CfgEditorCategories.inc"
 #include "CfgEventHandlers.inc"
 #include "CfgFactionClasses.inc"
-#include "CfgEditorCategories.inc"
-#include "ACE_Arsenal_Stats.inc"
 
 class CfgPatches {
   class ADDON {
@@ -11,7 +12,7 @@ class CfgPatches {
     units[] = { };
     weapons[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = {};
+    requiredAddons[] = {"a3_3den"};
     author = QUOTE(AUTHOR);
     VERSION_CONFIG;
   };

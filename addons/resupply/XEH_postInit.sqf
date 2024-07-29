@@ -5,6 +5,8 @@
 [QGVAR(resupplyPodHitGround), FUNC(onResupplyPodHitGround)] call CBA_fnc_addEventHandler;
 [QGVAR(setRestockAmount), FUNC(setRestockAmount)] call CBA_fnc_addEventHandler;
 [QGVAR(consumeRestock), FUNC(consumeRestock)] call CBA_fnc_addEventHandler;
+[QGVAR(setLimitPerPerson), FUNC(setLimitPerPerson)] call CBA_fnc_addEventHandler;
+[QGVAR(setLimitTotal), FUNC(setLimitTotal)] call CBA_fnc_addEventHandler;
 
 [QGVAR(restock), {
   TRACE_1(QGVAR(restock),_this);
