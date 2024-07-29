@@ -3,6 +3,8 @@
 #include "CfgVehicles.inc"
 #include "EventHandlers.inc"
 
+delete RscDisplayAttributesModuleOPAEX_Glassing;
+
 class CfgPatches {
   class SUBADDON {
     addonRootClass = QUOTE(ADDON);
@@ -12,7 +14,7 @@ class CfgPatches {
     magazines[] = { };
     ammo[] = { };
     requiredVersion = REQUIRED_VERSION;
-    requiredAddons[] = { "OPTRE_Vehicles_Air", "OPAEX_Hornet", "OPAEX_D20", "OPAEX_Functions" };
+    requiredAddons[] = { "OPTRE_Vehicles_Air", "OPAEX_Hornet", "OPAEX_D20", "OPAEX_Functions", "OPAEX_Glassing" };
     skipWhenMissingDependencies = TRUE;
     VERSION_CONFIG;
   };
