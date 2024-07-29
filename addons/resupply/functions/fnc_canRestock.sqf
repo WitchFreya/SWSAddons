@@ -17,7 +17,7 @@
  * Public: No
  */
 
-TRACE_1(QGVAR(DOUBLES(fnc,canRestock)),_this);
+TRACE_1(QFUNC(canRestock),_this);
 
 params [
   ["_target", objNull, [objNull]],

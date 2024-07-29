@@ -14,7 +14,7 @@
  * Public: No
 */
 
-TRACE_1(QGVAR(DOUBLES(fnc,onSelChangedLoadouts)),_this);
+TRACE_1(QFUNC(onSelChangedLoadouts),_this);
 
 params ["_contentPanelCtrl", "_curSel"];
 

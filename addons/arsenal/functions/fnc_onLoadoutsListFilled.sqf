@@ -15,7 +15,7 @@
  * Public: No
 */
 
-TRACE_1(QGVAR(DOUBLES(fnc,onLoadoutsListFilled)),_this);
+TRACE_1(QFUNC(onLoadoutsListFilled),_this);
 
 params ["_display", "_control"];
 
