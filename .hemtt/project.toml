@@ -29,7 +29,6 @@ workshop = [
   "463939057",  # ace
   "623475643",  # 3den Enhanced
   "769440155",  # OPTRE
-  "2018593688", # Zeus Enhanced - ACE3 Compatibilityr
   "583496184",  # CUP Terrains - Core
   "861133494",  # JSRS SOUNDMOD
   "2695649037", # Operation TREBUCHET JSRS Compat
@@ -91,7 +90,6 @@ workshop = [
   "1858075458", # LAMBS_Danger
   "1876589191", # JM's Structures
   "2016312756", # opcan
-  "2018593688", # Zeus Enhanced - ACE3 Compatibility
   "2034363662", # Enhanced Movement Rework
   "2041057379", # A3 Thermal Improvement
   "2198339170", # Alternative Running
@@ -262,7 +260,6 @@ workshop = [
   # Compats
   "2695649037", # Operation TREBUCHET JSRS Compat
   "3038826897", # UNSC Foundries ACE compat
-  "2018593688", # Zeus Enhanced - ACE3 Compatibility
   "2361950567", # Operation TREBUCHET Zephik Females Compat
 
   # removal candidates
