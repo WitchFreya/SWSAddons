@@ -1,8 +1,8 @@
-class LandVehicle;
-class StaticMGWeapon;
-class HMG_01_base_F;
-class GMG_01_base_F;
 class CfgVehicles {
+  class LandVehicle;
+  class StaticMGWeapon;
+  class HMG_01_base_F;
+  class GMG_01_base_F;
   class StaticWeapon: LandVehicle {
     armor=200;
     armorStructural=2;
