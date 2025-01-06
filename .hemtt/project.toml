@@ -14,6 +14,11 @@ exclude = ["*.inc"]
 [hemtt.launch.vr]
 mission = "Dev.VR"
 
+[lints.sqf.var_all_caps]
+options.ignore = [
+  "OPTRE_STICKYABLE_NADE_TYPES_MAP"
+]
+
 [hemtt.launch.default]
 workshop = [
   "1224892496", # gruppe adler trenches
