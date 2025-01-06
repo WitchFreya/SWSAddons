@@ -41,7 +41,7 @@ if (GVAR(restoreOnRespawn)) exitWith {
     FUNC(restoreRadios),
     [_unit],
     GVAR(restoreRadiosTimeout),
-    {WARNING_2("Timed out waiting for respawn to become acre_player on unit to initialize",_this,acre_player);}
+    {WARNING_2("Timed out waiting for respawn %1 to become acre_player (%2) on unit to initialize",_this,acre_player);}
   ] call CBA_fnc_waitUntilAndExecute;
 };
 

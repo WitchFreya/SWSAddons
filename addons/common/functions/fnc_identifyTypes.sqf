@@ -16,7 +16,7 @@
 
 private _isArray = typeName _this == "ARRAY";
 private _outputFormat = ["%1", "[%1]"] select _isArray;
-_this = [[_this], _this] select _isArray;
+private _args = [[_this], _this] select _isArray;
 
 private _fnc_identifyTypes = {
   _this apply {
@@ -65,5 +65,5 @@ private _fnc_identifyTypes = {
   };
 };
 
-private _identified = _this call _fnc_identifyTypes;
+private _identified = _args call _fnc_identifyTypes;
 format [_outputFormat, _identified joinString ", "];

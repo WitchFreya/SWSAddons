@@ -41,7 +41,7 @@ private _itemsToChange /* string[] */ = call {
   _unique apply {
     private _newValue = _migrations get _x;
     if (isNil {_newValue}) exitWith {
-      ERROR_WITH_TITLE_2("Failed migration precondition","Migration map should have contained value but did not",_x,_migrations);
+      ERROR_WITH_TITLE_1("Failed migration precondition","Migration map should have contained value %1 but did not",_x);
     };
     format ["• %1 → %2", _x, _newValue];
   };
@@ -81,7 +81,7 @@ if !(_doMigrate) exitWith {
 private _fnc_migrate = {
   params ["_current"];
   if !(typeName _current in ["SCALAR", "ARRAY", "STRING"]) exitWith {
-    ERROR_3("Unexpected type in loadout migration",_current,_loadoutName,_extendedLoadout);
+    ERROR_2("Unexpected type %1 in loadout migration for loadout %2",_current,_loadoutName);
     _current;
   };
   params [

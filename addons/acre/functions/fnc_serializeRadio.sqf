@@ -42,7 +42,7 @@ private _props = GVAR(radioProps) apply {
   };
 
   if (isNil {_fnc_getValue}) then {
-    ERROR_2("Attempted to serialize radio property with no getter",_radioId,_propName);
+    ERROR_2("Attempted to serialize radio %1 property with no getter for property %2",_radioId,_propName);
     continue;
   };
   private _value = [_radioId] call _fnc_getValue;

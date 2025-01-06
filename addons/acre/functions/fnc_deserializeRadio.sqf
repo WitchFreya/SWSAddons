@@ -34,13 +34,13 @@ private _valuesToRestore = keys _serializedRadioState arrayIntersect GVAR(radioP
   private _propName = _x;
   private _value = _y;
   if !(_propName in GVAR(radioProps)) then {
-    ERROR_3("Attempted to deserialize radio with unrecognized property",_radioId,_propName,_value);
+    ERROR_3("Attempted to deserialize radio %1 with unrecognized property %2 to value %3",_radioId,_propName,_value);
     continue;
   };
   private _fncName = format [ACRE_QFUNC(setRadio%1),_propName];
   private _fnc_setValue = currentNamespace getVariable _fncName;
   if (isNil {_fnc_setValue}) then {
-    ERROR_2("Attempted to deserialize radio with no property setter",_radioId,_propName);
+    ERROR_2("Attempted to deserialize radio %1 with no property setter for property %2",_radioId,_propName);
     continue;
   };
   [_radioId, _value] call _fnc_setValue;
