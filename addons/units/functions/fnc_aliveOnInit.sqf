@@ -26,7 +26,7 @@ if (local (_this select 0)) then {
   _onSpawn = {
     _unit = _this select 0;
     sleep 0.2;
-    _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack');
+    _backpack = getText(configFile >> 'cfgvehicles' >> (typeOf _this) >> 'backpack');
     waitUntil {
       sleep 0.2;
       backpack _unit == _backpack;

@@ -51,8 +51,8 @@ private _flatOffsets = +_trenchOffsets;
 _flatOffsets set [2, 0.0];
 
 // Get mission settings
-private _maxTilt = missionNameSpace getVariable [QGVAR(vehicleTrenchMaxTilt), 6];
-private _digTime = missionNameSpace getVariable [QGVAR(vehicleTrenchBuildSpeed), 5];
+private _maxTilt = missionNamespace getVariable [QGVAR(vehicleTrenchMaxTilt), 6];
+private _digTime = missionNamespace getVariable [QGVAR(vehicleTrenchBuildSpeed), 5];
 private _digDiff = 1 / (_digTime * 10);
 
 [
