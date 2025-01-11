@@ -24,18 +24,18 @@ params [
 
 if (local (_this select 0)) then {
   _onSpawn = {
-    _this = _this select 0;
+    _unit = _this select 0;
     sleep 0.2;
-    _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack');
+    _backpack = getText(configFile >> 'cfgvehicles' >> (typeOf _this) >> 'backpack');
     waitUntil {
       sleep 0.2;
-      backpack _this == _backpack;
+      backpack _unit == _backpack;
     };
 
-    if !(_this getVariable ['ALiVE_OverrideLoadout', false]) then {
-      _loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout');
-      _this setUnitLoadout _loadout;
-      reload _this;
+    if !(_unit getVariable ['ALiVE_OverrideLoadout', false]) then {
+      _loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _unit) >> 'ALiVE_orbatCreator_loadout');
+      _unit setUnitLoadout _loadout;
+      reload _unit;
     };
   };
   _this spawn _onSpawn;

@@ -25,10 +25,10 @@ params [
 ];
 
 if !([_radioId] call EFUNC(sys_data,isRadioInitialized)) exitWith {
-  ERROR_2("setRadioOnOffState called on uninitialized radio",_radioId,_onOffState);
+  ERROR_2("Cannot set radio state %1 on uninitialized radio %2",_onOffState,_radioId);
 };
 if (IS_NUMBER(_onOffState) && {!(_onOffState in [0, 1])}) exitWith {
-  ERROR_2("setRadioOnOffState called with invalid onOffState",_radioId,_onOffState);
+  ERROR_2("Cannot set invalid state %1 on radio %2",_onOffState,_radioId);
 };
 
 private _newOnOffState = [0, 1] select _onOffState;

@@ -85,7 +85,7 @@ private _fnc_updateMovedMarkers = {
 };
 
 waitUntil {
-  private _list = missionNamespace getvariable ["BIS_fnc_moduleRespawnPosition_list", []];
+  private _list = missionNamespace getVariable ["BIS_fnc_moduleRespawnPosition_list", []];
 
   //--- Decrease update rate based on how many entities there are to evaluate.
   { sleep 0.1; } forEach _list;

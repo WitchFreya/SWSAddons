@@ -27,7 +27,7 @@ params [
 ];
 
 if (_limitTotal == 0 || {_limitTotal < -1}) exitWith {
-  ERROR_WITH_TITLE_1(QFUNC(setLimitTotal),"Invalid limit for restocks; must be -1 or a positive value",_limitPerPerson);
+  ERROR_WITH_TITLE_1(QFUNC(setLimitTotal),"Invalid limit %1 for restocks; must be -1 or a positive value",_limitPerPerson);
 };
 
 if !(local _target) exitWith {

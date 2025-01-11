@@ -1,0 +1,4 @@
+[sqf.var_all_caps]
+options.ignore = [
+  "OPTRE_STICKYABLE_NADE_TYPES_MAP"
+]

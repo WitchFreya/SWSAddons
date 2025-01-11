@@ -30,7 +30,7 @@ private _type = (_config >> "type") call BIS_fnc_getCfgData;
 if (_type == "animate") then {
 	_vehicle animate [_animation, _plowRaised];
 } else {
-	_vehicle animatesource [_animation, _plowRaised];
+	_vehicle animateSource [_animation, _plowRaised];
 };
 
 _vehicle setCruiseControl [0, false];

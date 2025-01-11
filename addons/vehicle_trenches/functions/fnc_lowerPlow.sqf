@@ -31,7 +31,7 @@ private _type = (_config >> "type") call BIS_fnc_getCfgData;
 if (_type == "animate") then {
 	_vehicle animate [_animation, _plowLowered];
 } else {
-	_vehicle animatesource [_animation, _plowLowered];
+	_vehicle animateSource [_animation, _plowLowered];
 };
 _vehicle setCruiseControl [7, false];
 _vehicle setVariable [QGVAR(plowMode), PLOW_MOVING, true]; // animating state to prevent multi execution
