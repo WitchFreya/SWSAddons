@@ -94,7 +94,7 @@ _unit setVariable ["CBRN_isCurrentlyExposed", false];
 	//And push out our local events
 
 	//If we have become exposed, or stop becoming exposed
-	if !(_alreadyExposed isEqualTo _isExposed) then {["CBRN_unitExposureChanged", [_unit, _isExposed]] call CBA_fnc_localEvent};
+	if (_alreadyExposed isNotEqualTo _isExposed) then {["CBRN_unitExposureChanged", [_unit, _isExposed]] call CBA_fnc_localEvent};
 
 	//If our exposure level has changed
 	if (_additionalExposure > 0) then {["CBRN_unitExposureLevelChanged", [_unit, _additionalExposure + _priorExposure]] call CBA_fnc_localEvent};

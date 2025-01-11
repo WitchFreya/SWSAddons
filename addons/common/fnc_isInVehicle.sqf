@@ -15,4 +15,4 @@ params [
   ["_unit", player, [objNull]]
 ];
 
-!(vehicle _unit isEqualTo _unit);
+vehicle _unit isNotEqualTo _unit;

@@ -26,4 +26,4 @@ private _aceCanTreat = _this call ace_medical_treatment_fnc_canBandage;
 if !(_aceCanTreat) exitWith {false};
 
 private _effectiveWounds = [_patient, _treatment, toLower _part] call ace_medical_treatment_fnc_findMostEffectiveWounds;
-!(_effectiveWounds isEqualTo createHashMap);
+_effectiveWounds isNotEqualTo createHashMap;

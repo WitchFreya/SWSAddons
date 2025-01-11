@@ -47,7 +47,7 @@ private _aircraft = createVehicle [_airVicClassName, _spawnPosAGL, [], 0, "FLY"]
 ["ace_cargoUnloaded", {
   params ["_object", "_vehicle", "_unloadType"];
   _thisArgs params ["_cargo"];
-  if (_unloadType != "paradrop" || {!(_cargo isEqualTo _object)}) exitWith {};
+  if (_unloadType != "paradrop" || {_cargo isNotEqualTo _object}) exitWith {};
   _cargo setVelocity [0, 0, -30];
   ["ace_cargoUnloaded", _thisId] call CBA_fnc_removeEventHandler;
 }, [_cargo]] call CBA_fnc_addEventHandlerArgs;

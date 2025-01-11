@@ -57,7 +57,7 @@ private _side /* side */ = [
   },
   /* side -> side: Replace side with higher scoring side when appropriate */
   {
-    if !(_this isEqualTo sideEmpty) exitWith { _this; };
+    if (_this isNotEqualTo sideEmpty) exitWith { _this; };
     call FUNC(winningSide);
   }
 ] call FUNCMAIN(pipe);
