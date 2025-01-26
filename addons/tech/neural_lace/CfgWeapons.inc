@@ -38,7 +38,7 @@ class CfgWeapons {
 
     class ItemInfo : ItemInfo {
       mass = 2;
-      modelOff = "\OPTRE_UNSC_Units\Army\NVGs\Mixed\V_UAB_UL_CNM.paa";
+      modelOff = "\OPTRE_UNSC_Units\Army\NVGs\Mixed\V_UAB_UL_CNM.p3d";
       uniformModel = "\OPTRE_UNSC_Units\Army\NVGs\Mixed\V_UAB_UL_CNM.p3d";
     };
 
