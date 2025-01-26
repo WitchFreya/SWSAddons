@@ -12,7 +12,7 @@ class CfgMagazines
 		initSpeed = 0;
 		maxLeadSpeed = 300;
 		nameSound = "rockets";
-		sound[] = {"A3\sounds_f\weapons\rockets\explosion_missile_01",1.0,1,1200};
+		sound[] = {"A3\sounds_f\weapons\rockets\explosion_missile_01.wss",1.0,1,1200};
 		reloadSound[] = {"",0.00031622773,1};
 		muzzleImpulseFactor[] = {2,2};
 	};

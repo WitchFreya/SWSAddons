@@ -130,7 +130,7 @@ class CfgVehicles {
   class SWS_Bag_UAV_SMQ94_Base : DMNS_UAV_01_Backpack_F {
     ITEM_META(0);
     displayName = QNAME(SMQ-94 UAV Bag (Base));
-    picture = "\OPTRE_weapons\backpacks\icons\rucksack_black";
+    picture = "\OPTRE_weapons\backpacks\icons\rucksack_black.paa";
     model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
     hiddenSelections[] = { "camo1", "biofoam" };
     hiddenSelectionsMaterials[] = {};
