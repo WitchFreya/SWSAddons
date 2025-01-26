@@ -22,12 +22,12 @@ class ACE_Medical_Treatment {
       class Contusion : Abrasion {};
       class ContusionMinor : Contusion {};
       class ContusionMedium : Contusion {};
-      class ContusionMajor : Contusion {};
+      class ContusionLarge : Contusion {};
 
       class Crush : Abrasion {};
       class CrushMinor : Crush {};
       class CrushMedium : Crush {};
-      class CrushMajor : Crush {};
+      class CrushLarge : Crush {};
 
       class Avulsion {
         effectiveness = 10;
@@ -47,22 +47,22 @@ class ACE_Medical_Treatment {
       class Laceration : Avulsion {};
       class LacerationMinor : Laceration {};
       class LacerationMedium : Laceration {};
-      class LacerationMajor : Laceration {};
+      class LacerationLarge : Laceration {};
 
       class PunctureWound : Avulsion {};
       class PunctureWoundMinor : PunctureWound {};
       class PunctureWoundMedium : PunctureWound {};
-      class PunctureWoundMajor : PunctureWound {};
+      class PunctureWoundLarge : PunctureWound {};
 
       class VelocityWound : Avulsion {};
       class VelocityWoundMinor : VelocityWound {};
       class VelocityWoundMedium : VelocityWound {};
-      class VelocityWoundMajor : VelocityWound {};
+      class VelocityWoundLarge : VelocityWound {};
 
       class ThermalBurn : Avulsion {};
       class ThermalBurnMinor : ThermalBurn {};
       class ThermalBurnMedium : ThermalBurn {};
-      class ThermalBurnMajor : ThermalBurn {};
+      class ThermalBurnLarge : ThermalBurn {};
     };
 
     class SWS_Medigel : BasicBandage {
@@ -87,17 +87,17 @@ class ACE_Medical_Treatment {
       class Contusion : Abrasion {};
       class ContusionMinor : Contusion {};
       class ContusionMedium : Contusion {};
-      class ContusionMajor : Contusion {};
+      class ContusionLarge : Contusion {};
 
       class ThermalBurn : Abrasion {};
       class ThermalBurnMinor : ThermalBurn {};
       class ThermalBurnMedium : ThermalBurn {};
-      class ThermalBurnMajor : ThermalBurn {};
+      class ThermalBurnLarge : ThermalBurn {};
 
       class Crush : Abrasion {};
       class CrushMinor : Crush {};
       class CrushMedium : Crush {};
-      class CrushMajor : Crush {};
+      class CrushLarge : Crush {};
 
       class Avulsion {
         effectiveness = 0;
@@ -123,21 +123,21 @@ class ACE_Medical_Treatment {
         effectiveness = 5;
       };
       class LacerationMedium : Laceration {};
-      class LacerationMajor : Laceration {};
+      class LacerationLarge : Laceration {};
 
       class PunctureWound : Avulsion {};
       class PunctureWoundMinor : PunctureWound {
         effectiveness = 5;
       };
       class PunctureWoundMedium : PunctureWound {};
-      class PunctureWoundMajor : PunctureWound {};
+      class PunctureWoundLarge : PunctureWound {};
 
       class VelocityWound : Avulsion {};
       class VelocityWoundMinor : VelocityWound {
         effectiveness = 5;
       };
       class VelocityWoundMedium : VelocityWound {};
-      class VelocityWoundMajor : VelocityWound {};
+      class VelocityWoundLarge : VelocityWound {};
     };
   };
 
