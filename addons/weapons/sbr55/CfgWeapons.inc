@@ -11,7 +11,7 @@ class CfgWeapons {
     descriptionShort = "An elegant weapon for a more civilized SDM.";
     magazineWell[] = {"OPTRE_Magwell_BR55"};
     baseWeapon = "SWS_Weapon_SBR55";
-    model = "\OPTRE_Weapons\BR\BR";
+    model = "\optre_weapons\br\br.p3d";
     cursor = "SWS_Weapon_SmartLink";
 
     recoil = "recoil_dmr_05";

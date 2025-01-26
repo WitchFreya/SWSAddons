@@ -3,7 +3,7 @@ class CfgMagazines {
   class 150Rnd_762x51_Box;
 
   class 32Rnd_762x51_MA5 : 36Rnd_95x40_BR_55 {
-    modelSpecial = "a3\Weapons_F_Mark\MagazineProxies\mag_762x51_mk14_20rnd";
+    modelSpecial = "a3\Weapons_F_Mark\MagazineProxies\mag_762x51_mk14_20rnd.p3d";
     modelSpecialIsProxy = TRUE;
   };
 

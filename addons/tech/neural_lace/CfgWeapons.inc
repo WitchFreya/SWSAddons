@@ -33,13 +33,13 @@ class CfgWeapons {
   };
 
   class SWS_NVG_NeuralLace_UAB_UL_CNM_Base : SWS_NVG_NeuralLace_Base {
-    picture = "\OPTRE_UNSC_Units\Army\NVGs\Mixed\V_UAB_UL_CNM";
-    model = "\OPTRE_UNSC_Units\Army\NVGs\Mixed\V_UAB_UL_CNM";
+    picture = "\OPTRE_UNSC_Units\Army\NVGs\Mixed\V_UAB_UL_CNM.paa";
+    model = "\OPTRE_UNSC_Units\Army\NVGs\Mixed\V_UAB_UL_CNM.p3d";
 
     class ItemInfo : ItemInfo {
       mass = 2;
-      modelOff = "\OPTRE_UNSC_Units\Army\NVGs\Mixed\V_UAB_UL_CNM";
-      uniformModel = "\OPTRE_UNSC_Units\Army\NVGs\Mixed\V_UAB_UL_CNM";
+      modelOff = "\OPTRE_UNSC_Units\Army\NVGs\Mixed\V_UAB_UL_CNM.paa";
+      uniformModel = "\OPTRE_UNSC_Units\Army\NVGs\Mixed\V_UAB_UL_CNM.p3d";
     };
 
     class XtdGearInfo : XtdGearInfo { upArmor = "UpArmor_UpLink_CNM"; };

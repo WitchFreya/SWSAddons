@@ -66,8 +66,8 @@ class CfgVehicles {
         turretInfoType = "RscOptics_UGV_gunner";
         weapons[] = {"HMG_127_UGV","GMG_40mm"};
         magazines[] = {"200Rnd_127x99_mag_Tracer_Red","96Rnd_40mm_G_belt"};
-        soundServo[] = {"A3\Sounds_F\vehicles\soft\UGV_01\Servo_UGV_gunner",0.316228,1,30};
-        soundServoVertical[] = {"A3\Sounds_F\vehicles\soft\UGV_01\Servo_UGV_gunner_vertical",0.316228,1,30};
+        soundServo[] = {"A3\Sounds_F\vehicles\soft\UGV_01\Servo_UGV_gunner.wss",0.316228,1,30};
+        soundServoVertical[] = {"A3\Sounds_F\vehicles\soft\UGV_01\Servo_UGV_gunner_vertical.wss",0.316228,1,30};
         minElev = -10;
         maxElev = 60;
         forceHideGunner = 1;
