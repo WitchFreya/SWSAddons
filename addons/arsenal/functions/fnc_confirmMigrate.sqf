@@ -95,11 +95,11 @@ private _fnc_migrate = {
 };
 
 // backup the original
-[format ["%1 (Backup)", _loadoutName], _extendedLoadout] call FUNC(saveLoadoutWithName);
+[format ["%1 (Backup)", _loadoutName], _extendedLoadout, true] call ace_arsenal_fnc_saveLoadout;
 
 // save the new
 private _mut_newLoadout = [_loadout] call _fnc_migrate;
-[_loadoutName, [_mut_newLoadout, _cbaExtended]] call FUNC(saveLoadoutWithName);
+[_loadoutName, [_mut_newLoadout, _cbaExtended], true] call ace_arsenal_fnc_saveLoadout;
 
 // remove the cached data
 private _contentPanelCtrl = _display displayCtrl IDC_contentPanel;

@@ -6,8 +6,8 @@
   };
   private _target = currentNamespace getVariable ["ace_arsenal_center", player];
   private _isValidTarget = local _target && {_target isEqualTo player};
-  if (_isValidTarget) exitWith {
+  if !(_isValidTarget) exitWith {
     TRACE_1("Invalid loadout save target",_target);
   };
-  [GVAR(lastLoadoutName), player call CBA_fnc_getLoadout] call FUNC(saveLoadoutWithName);
+  [GVAR(lastLoadoutName), player call CBA_fnc_getLoadout, true] call ace_arsenal_fnc_saveLoadout;
 }] call CBA_fnc_addEventHandler;
