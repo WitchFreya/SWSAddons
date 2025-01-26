@@ -15,7 +15,7 @@ private _filteredBlacklist = _allItems arrayIntersect _blacklist;
 // log blacklist null objects
 if (count _filteredBlacklist < count _blacklist) then {
   private _missingItems = _blacklist - _filteredBlacklist;
-  WARNING_1("Some items in the blacklist no longer exist",_missingItems);
+  WARNING_1("Some items in the blacklist no longer exist: %1",_missingItems);
 };
 #endif
 
