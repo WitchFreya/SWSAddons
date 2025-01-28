@@ -8,11 +8,12 @@ class XtdGearModels {
       class Body {
         alwaysSelectable = TRUE;
         label = "Body Configuration";
-        values[] = {"0M37S", "MXS","MA5BSx","SMA37K"};
+        values[] = {"0M37S", "MXS","MA5BSx","SMA37K", "MA5ASx"};
 
         class 0M37S { description = "AR-0M37S"; };
         class MXS { description = "ARMXS"; };
-        class MA5BSx {};
+        class MA5ASx { label = "MA5A-Sx"; };
+        class MA5BSx { label = "MA5B-Sx"; };
         class XMA37K { description = "SMA-37k";};
       };
 
@@ -37,15 +38,20 @@ class XtdGearModels {
 
     class SWS_Weapon_PDW : SWS_BaseGearModel {
       label = QNAME(PDW);
-      options[] = {"Body"};
-      class Body {
+      options[] = {"Weapon"};
+      class Weapon {
         alwaysSelectable = TRUE;
-        label = "Body Configuration";
-        values[] = {"Sx90", "SxC90"};
+        label = "Weapon";
+        values[] = {"Sx90", "SxC90", "M7Sx"};
         class Sx90 { label = "Sx-90"; };
         class SxC90 {
           label = "SxC-90";
-          description = "A longer barrel providing additional accuracy.";
+          description = "A longer barrel variant of the Sx-90 providing additional accuracy.";
+        };
+
+        class M7Sx {
+          label = "M7-Sx";
+          description = "An SMG useful for close combat.";
         };
       };
     };
@@ -61,6 +67,17 @@ class XtdGearModels {
           label = "SxMR-397";
           description = "Longshot";
         };
+      };
+    };
+
+    class SWS_Weapon_MachineGuns : SWS_BaseGearModel {
+      label = QNAME(Machine Guns);
+      options[] = {"Variant"};
+
+      class Variant {
+        values[] = {"SM247", "SM73"};
+        class SM247 {};
+        class SM73 {};
       };
     };
   };

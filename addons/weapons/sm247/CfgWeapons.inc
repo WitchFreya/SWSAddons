@@ -48,5 +48,10 @@ class CfgWeapons {
         class CompatibleItems : SWS_Pointers_Standard {};
       };
     };
+
+    class XtdGearInfo {
+      model = "SWS_Weapon_MachineGuns";
+      variant = "SM247";
+    };
   };
 };
