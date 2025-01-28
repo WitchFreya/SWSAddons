@@ -69,5 +69,16 @@ class XtdGearModels {
         };
       };
     };
+
+    class SWS_Weapon_MachineGuns : SWS_BaseGearModel {
+      label = QNAME(Machine Guns);
+      options[] = {"Variant"};
+
+      class Variant {
+        values[] = {"SM247", "SM73"};
+        class SM247 {};
+        class SM73 {};
+      };
+    };
   };
 };
