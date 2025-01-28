@@ -8,11 +8,12 @@ class XtdGearModels {
       class Body {
         alwaysSelectable = TRUE;
         label = "Body Configuration";
-        values[] = {"0M37S", "MXS","MA5BSx","SMA37K"};
+        values[] = {"0M37S", "MXS","MA5BSx","SMA37K", "MA5ASx"};
 
         class 0M37S { description = "AR-0M37S"; };
         class MXS { description = "ARMXS"; };
-        class MA5BSx {};
+        class MA5ASx { label = "MA5A-Sx"; };
+        class MA5BSx { label = "MA5B-Sx"; };
         class XMA37K { description = "SMA-37k";};
       };
 
