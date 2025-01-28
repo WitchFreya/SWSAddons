@@ -10,5 +10,10 @@ class CfgWeapons {
     CLEARANCE(RESTRICTED/DECWHI);
     displayName = QNAME(M7-Sx SMG);
     baseWeapon = "SWS_M7Sx";
+
+    class XtdGearInfo {
+      model = "SWS_Weapon_PDW";
+      weapon = "M7Sx";
+    };
   };
 };

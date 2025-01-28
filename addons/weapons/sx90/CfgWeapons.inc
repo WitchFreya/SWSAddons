@@ -64,7 +64,7 @@ class CfgWeapons {
 
     class XtdGearInfo {
       model = "SWS_Weapon_PDW";
-      body = "Sx90";
+      weapon = "Sx90";
     };
   };
 
@@ -127,7 +127,7 @@ class CfgWeapons {
 
     class XtdGearInfo {
       model = "SWS_Weapon_PDW";
-      body = "SxC90";
+      weapon = "SxC90";
     };
   };
 };

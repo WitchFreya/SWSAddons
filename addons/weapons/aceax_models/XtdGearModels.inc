@@ -37,15 +37,20 @@ class XtdGearModels {
 
     class SWS_Weapon_PDW : SWS_BaseGearModel {
       label = QNAME(PDW);
-      options[] = {"Body"};
-      class Body {
+      options[] = {"Weapon"};
+      class Weapon {
         alwaysSelectable = TRUE;
-        label = "Body Configuration";
-        values[] = {"Sx90", "SxC90"};
+        label = "Weapon";
+        values[] = {"Sx90", "SxC90", "M7Sx"};
         class Sx90 { label = "Sx-90"; };
         class SxC90 {
           label = "SxC-90";
-          description = "A longer barrel providing additional accuracy.";
+          description = "A longer barrel variant of the Sx-90 providing additional accuracy.";
+        };
+
+        class M7Sx {
+          label = "M7-Sx";
+          description = "An SMG useful for close combat.";
         };
       };
     };
