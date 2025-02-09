@@ -30,12 +30,11 @@ workshop = [
   "623475643",  # 3den Enhanced
   "769440155",  # OPTRE
   "583496184",  # CUP Terrains - Core
-  "861133494",  # JSRS SOUNDMOD
-  "2695649037", # Operation TREBUCHET JSRS Compat
   "1763651451", # optre PLUS+
   "333310405",  # Enhanced Movement
   "2034363662", # Enhanced Movement Rework
   "561177050",  # Mission Enhanced Little Bird
+  "751965892", # acre
   # v9 mods
   "3038821437", # UNSC Foundries
   "3038826897", # UNSC Foundries ACE compat
@@ -54,7 +53,6 @@ workshop = [
   "2359395889", # TCGM_Divinities_2.0
   "2480118782", # Max Women Soldiers
   "2699465073", # Fire Support Plus
-  "2909265898", # OPTRE Ordnance Expansion
   "520618345",  # Jbad
   "2515887728", # Crow's EWAR
   "1910457930", # Fapovo Island
@@ -64,15 +62,6 @@ workshop = [
 
   # server mods
   "1768992669", # inidb2
-]
-
-[hemtt.launch.tfar]
-workshop = [
-  "894678801", # TFAR
-]
-[hemtt.launch.acre]
-workshop = [
-  "751965892", # acre
 ]
 
 [hemtt.launch.full]
@@ -99,7 +88,6 @@ workshop = [
   "2361950567", # Operation TREBUCHET Zephik Females Compat
   "2480118782", # Max Women Soldiers
   "2538444208", # Simple Grid Designators
-  "2695649037", # Operation TREBUCHET JSRS Compat
   "2699465073", # Fire Support Plus
   "2735613231", # Weather Plus
   "2794721649", # Advanced Vault System: Remastered
@@ -117,11 +105,9 @@ workshop = [
   "767380317",  # Blastcore Edited (standalone version)
   "769440155",  # optre
   "837729515",  # CH View Distance
-  "861133494",  # JSRS SOUNDMOD
   "925018569",  # WMO - Walkable Moving Objects
-  # mods I hate
   "1797512739", # operation arsenal expansion for OPTRE
-  "2909265898", # OPTRE Ordnance Expansion
+  "751965892", # acre
 
   # v2 mods
   "2617713656", # Halo Music Collection
@@ -227,7 +213,6 @@ workshop = [
   "1858075458", # LAMBS_Danger
   "767380317",  # Blastcore Edited (standalone version)
   "2617713656", # Halo Music Collection
-  "861133494",  # JSRS SOUNDMOD
   "1770265310", # No More Aircraft Bouncing
   "2853202785", # Freefall Fix
   "1767731032", # HEV patch
@@ -258,7 +243,6 @@ workshop = [
   "1623498241", # turret enhanced
 
   # Compats
-  "2695649037", # Operation TREBUCHET JSRS Compat
   "3038826897", # UNSC Foundries ACE compat
   "2361950567", # Operation TREBUCHET Zephik Females Compat
 
@@ -266,8 +250,20 @@ workshop = [
   # "2918542818", # Sci-fi Support Plus
   # "2699465073", # Fire Support Plus
   # "1797512739", # operation arsenal expansion for OPTRE
-  # "2909265898", # OPTRE Ordnance Expansion
   "2735613231", # Weather Plus
+]
+
+[hemtt.launch.jsrs]
+workshop = [
+  "861133494",  # JSRS SOUNDMOD
+  "2695649037", # Operation TREBUCHET JSRS Compat
+]
+
+[hemtt.launch.dynasound]
+workshop = [
+  "825179978", # enhanced soundscape
+  "825181638", # dynasound 2
+  "2874616322", # OPTRE dynasound 2 compat
 ]
 
 [hemtt.launch.alive]
