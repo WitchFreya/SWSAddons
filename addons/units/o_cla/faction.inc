@@ -536,7 +536,7 @@ class O_CLA_Reaper_Teamlead_01 : O_CLA_Reaper_01 {
   respawnWeapons[] = {"SWS_Weapon_MA5BSx_GL","Binocular","Throw","Put"};
 
   magazines[] = {"OPTRE_60Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","OPTRE_60Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_M2_Smoke","HandGrenade","HandGrenade","ACE_M84","ACE_M84"};
-  respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","OPTRE_60Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","OPTRE_60Rnd_762x51_Mag",,"OPTRE_60Rnd_762x51_Mag","OPTRE_M2_Smoke","HandGrenade","HandGrenade","ACE_M84","ACE_M84"};
+  respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","OPTRE_60Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_M2_Smoke","HandGrenade","HandGrenade","ACE_M84","ACE_M84"};
 
   backpack = "B_ViperLightHarness_blk_F";
 
