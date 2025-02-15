@@ -33,4 +33,4 @@ if (IS_NUMBER(_onOffState) && {!(_onOffState in [0, 1])}) exitWith {
 
 private _newOnOffState = [0, 1] select _onOffState;
 
-[_radioId, "getOnOffState", _newOnOffState] call EFUNC(sys_data,dataEvent);
+[_radioId, "setOnOffState", _newOnOffState] call EFUNC(sys_data,dataEvent);
