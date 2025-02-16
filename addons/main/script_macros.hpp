@@ -42,7 +42,10 @@
 
 
 #define MACRO_X2(var0) var0, var0
+#define MACRO_X3(var0) var0, var0, var0
+#define MACRO_X4(var0) var0, var0, var0, var0
 #define MACRO_X5(var0) var0, var0, var0, var0, var0
+#define MACRO_X6(var0) var0, var0, var0, var0, var0, var0
 #define MACRO_X10(var0) MACRO_X5(MACRO_X2(var0))
 
 #define MACRO_ADDWEAPON(WEAPON,COUNT) class _xx_##WEAPON { \
