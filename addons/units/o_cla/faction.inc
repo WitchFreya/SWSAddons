@@ -75,14 +75,14 @@ class O_CLA_Rifleman_01 : OPTRE_Ins_URF_TeamLead {
   linkedItems[] = {"V_PlateCarrier2_blk","H_Shemag_olive","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
   respawnlinkedItems[] = {"V_PlateCarrier2_blk","H_Shemag_olive","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
 
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"OPTRE_MA5A","Throw","Put"};
   respawnWeapons[] = {"OPTRE_MA5A","Throw","Put"};
 
-  magazines[] = {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
-  respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  magazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  respawnMagazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
 
   backpack = "B_AssaultPack_blk";
 };
@@ -99,13 +99,13 @@ class O_CLA_Teamlead_01 : OPTRE_Ins_URF_TeamLead {
 
   linkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","VES_CH252_WDL_Light","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
   respawnlinkedItems[] = {"V_CarrierRigKBT_01_light_Olive_F","VES_CH252_WDL_Light","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
   weapons[] = {"OPTRE_MA5AGL","Throw","Put"};
   respawnWeapons[] = {"OPTRE_MA5AGL","Throw","Put"};
 
-  magazines[] = {"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","1Rnd_HE_Grenade_shell","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","1Rnd_HE_Grenade_shell","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
-  respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","1Rnd_HE_Grenade_shell","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","1Rnd_HE_Grenade_shell","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  magazines[] = {"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","1Rnd_HE_Grenade_shell",MACRO_X2("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","1Rnd_HE_Grenade_shell","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","1Rnd_HE_Grenade_shell",MACRO_X2("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","1Rnd_HE_Grenade_shell","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
 
   backpack = "B_AssaultPack_blk";
 };
@@ -144,14 +144,14 @@ class O_CLA_Breacher_01 : OPTRE_Ins_URF_Breacher {
 
   linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_HelmetB_black","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG","G_Shades_Blue"};
   respawnlinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_HelmetB_black","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG","G_Shades_Blue"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"OPTRE_M45","OPTRE_M6G_SF","Binocular","Throw","Put"};
   respawnWeapons[] = {"OPTRE_M45","OPTRE_M6G_SF","Binocular","Throw","Put"};
 
-  magazines[] = {"OPTRE_12Rnd_8Gauge_Slugs","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_12Rnd_8Gauge_Slugs","OPTRE_12Rnd_8Gauge_Slugs","OPTRE_12Rnd_8Gauge_Slugs","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_12Rnd_8Gauge_Slugs","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
-  respawnMagazines[] = {"OPTRE_12Rnd_8Gauge_Slugs","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_12Rnd_8Gauge_Slugs","OPTRE_12Rnd_8Gauge_Slugs","OPTRE_12Rnd_8Gauge_Slugs","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_12Rnd_8Gauge_Slugs","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  magazines[] = {"OPTRE_12Rnd_8Gauge_Slugs","OPTRE_8Rnd_127x40_Mag_Tracer",MACRO_X3("OPTRE_12Rnd_8Gauge_Slugs"),"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_12Rnd_8Gauge_Slugs","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  respawnMagazines[] = {"OPTRE_12Rnd_8Gauge_Slugs","OPTRE_8Rnd_127x40_Mag_Tracer",MACRO_X3("OPTRE_12Rnd_8Gauge_Slugs"),"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_12Rnd_8Gauge_Slugs","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
 
   backpack = "B_AssaultPack_blk";
 };
@@ -168,8 +168,8 @@ class O_CLA_Rifleperson_01 : OPTRE_Ins_URF_Rifleman_BR {
 
   linkedItems[] = {"OPTRE_Vest_CMA_Light","H_MilCap_wdl","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
   respawnlinkedItems[] = {"OPTRE_Vest_CMA_Light","H_MilCap_wdl","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"OPTRE_BR55HB_ScopedRifle","Throw","Put"};
   respawnWeapons[] = {"OPTRE_BR55HB_ScopedRifle","Throw","Put"};
@@ -192,8 +192,8 @@ class O_CLA_Autorifle_01 : OPTRE_Ins_URF_Autorifleman {
 
   linkedItems[] = {"V_PlateCarrier2_blk","H_HelmetCrew_I","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
   respawnlinkedItems[] = {"V_PlateCarrier2_blk","H_HelmetCrew_I","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"OPTRE_M73","Throw","Put"};
   respawnWeapons[] = {"OPTRE_M73","Throw","Put"};
@@ -216,8 +216,8 @@ class O_CLA_Sniper_01 : OPTRE_Ins_URF_Sniper {
 
   linkedItems[] = {"V_PlateCarrier1_blk","LM_OPCAN_Cap_PD","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
   respawnlinkedItems[] = {"V_PlateCarrier1_blk","LM_OPCAN_Cap_PD","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Binocular","Throw","Put"};
   respawnWeapons[] = {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Binocular","Throw","Put"};
@@ -240,14 +240,14 @@ class O_CLA_Rifleperson_02 : OPTRE_Ins_URF_Rifleman_AT {
 
   linkedItems[] = {"V_PlateCarrier2_blk","OPTRE_h_PatrolCap_Brown","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
   respawnlinkedItems[] = {"V_PlateCarrier2_blk","OPTRE_h_PatrolCap_Brown","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"OPTRE_MA5A","OPTRE_M41_SSR","Throw","Put"};
   respawnWeapons[] = {"OPTRE_MA5A","OPTRE_M41_SSR","Throw","Put"};
 
-  magazines[] = {"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_M41_Twin_HEAT","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
-  respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_M41_Twin_HEAT","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  magazines[] = {"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_M41_Twin_HEAT",MACRO_X2("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_M41_Twin_HEAT",MACRO_X2("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
 
   backpack = "SWS_B_TacticalPack_blk_AT";
 };
@@ -264,14 +264,14 @@ class O_CLA_Grenadier_01 : OPTRE_Ins_URF_Grenadier {
 
   linkedItems[] = {"V_PlateCarrier2_blk","H_HelmetB_light_black","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
   respawnlinkedItems[] = {"V_PlateCarrier2_blk","H_HelmetB_light_black","ItemMap","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"OPTRE_MA5AGL","Throw","Put"};
   respawnWeapons[] = {"OPTRE_MA5AGL","Throw","Put"};
 
-  magazines[] = {"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","1Rnd_HE_Grenade_shell","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","1Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
-  respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","1Rnd_HE_Grenade_shell","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","1Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  magazines[] = {MACRO_X2("1Rnd_HE_Grenade_shell"),MACRO_X2("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),"3Rnd_UGL_FlareWhite_F","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  respawnMagazines[] = {MACRO_X2("1Rnd_HE_Grenade_shell"),MACRO_X2("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),"3Rnd_UGL_FlareWhite_F","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
 
   backpack = "B_AssaultPack_blk";
 };
@@ -288,14 +288,14 @@ class O_CLA_Elite_Rifleperson_01 : OPTRE_Ins_URF_Rifleman_AR_IND {
 
   linkedItems[] = {"OPTRE_UNSC_M52A_Armor_Soft","OPTRE_Ins_URF_Helmet1","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","ACE_NVG_Gen4_Green"};
   respawnlinkedItems[] = {"OPTRE_UNSC_M52A_Armor_Soft","OPTRE_Ins_URF_Helmet1","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","ACE_NVG_Gen4_Green"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"OPTRE_MA5A","Throw","Put"};
   respawnWeapons[] = {"OPTRE_MA5A","Throw","Put"};
 
-  magazines[] = {"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
-  respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  magazines[] = {MACRO_X5("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  respawnMagazines[] = {MACRO_X5("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
 
   backpack = "B_FieldPack_blk";
 };
@@ -312,14 +312,14 @@ class O_CLA_Elite_Rifleperson_02 : O_CLA_Elite_Rifleperson_01 {
 
   linkedItems[] = {"OPTRE_UNSC_M52A_Armor_Soft","OPTRE_Ins_URF_Helmet1","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","ACE_NVG_Gen4_Green"};
   respawnlinkedItems[] = {"OPTRE_UNSC_M52A_Armor_Soft","OPTRE_Ins_URF_Helmet1","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","ACE_NVG_Gen4_Green"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"OPTRE_MA5A","Throw","Put"};
   respawnWeapons[] = {"OPTRE_MA5A","Throw","Put"};
 
-  magazines[] = {"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
-  respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  magazines[] = {MACRO_X5("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  respawnMagazines[] = {MACRO_X5("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
 
   backpack = "B_FieldPack_blk";
 };
@@ -336,14 +336,14 @@ class O_CLA_Elite_Teamlead_01 : O_CLA_Elite_Rifleperson_01 {
 
   linkedItems[] = {"OPTRE_UNSC_M52A_Armor_Soft","OPTRE_Ins_URF_Helmet1","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","ACE_NVG_Gen4_Green"};
   respawnlinkedItems[] = {"OPTRE_UNSC_M52A_Armor_Soft","OPTRE_Ins_URF_Helmet1","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","ACE_NVG_Gen4_Green"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"OPTRE_MA5AGL","Binocular","Throw","Put"};
   respawnWeapons[] = {"OPTRE_MA5AGL","Binocular","Throw","Put"};
 
-  magazines[] = {"OPTRE_60Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","OPTRE_60Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag"};
-  respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","OPTRE_60Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag"};
+  magazines[] = {MACRO_X4("OPTRE_60Rnd_762x51_Mag"),MACRO_X2("1Rnd_HE_Grenade_shell")};
+  respawnMagazines[] = {MACRO_X4("OPTRE_60Rnd_762x51_Mag"),MACRO_X2("1Rnd_HE_Grenade_shell")};
 
   backpack = "B_FieldPack_blk";
 };
@@ -360,14 +360,14 @@ class O_CLA_Elite_Breacher_01 : O_CLA_Elite_Rifleperson_01 {
 
   linkedItems[] = {"OPTRE_UNSC_M52A_Armor_Soft","OPTRE_Ins_URF_Helmet2","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","ACE_NVG_Gen4_Green"};
   respawnlinkedItems[] = {"OPTRE_UNSC_M52A_Armor_Soft","OPTRE_Ins_URF_Helmet2","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","ACE_NVG_Gen4_Green"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"OPTRE_M45","Throw","Put"};
   respawnWeapons[] = {"OPTRE_M45","Throw","Put"};
 
-  magazines[] = {"OPTRE_12Rnd_8Gauge_Slugs","OPTRE_12Rnd_8Gauge_Slugs","OPTRE_12Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Pellets","ACE_M84","HandGrenade"};
-  respawnMagazines[] = {"OPTRE_12Rnd_8Gauge_Slugs","OPTRE_12Rnd_8Gauge_Slugs","OPTRE_12Rnd_8Gauge_Slugs","OPTRE_6Rnd_8Gauge_Pellets","OPTRE_6Rnd_8Gauge_Pellets","ACE_M84","HandGrenade"};
+  magazines[] = {MACRO_X3("OPTRE_12Rnd_8Gauge_Slugs"),MACRO_X2("OPTRE_6Rnd_8Gauge_Pellets"),"ACE_M84","HandGrenade"};
+  respawnMagazines[] = {MACRO_X3("OPTRE_12Rnd_8Gauge_Slugs"),MACRO_X2("OPTRE_6Rnd_8Gauge_Pellets"),"ACE_M84","HandGrenade"};
 
   backpack = "B_FieldPack_blk";
 };
@@ -384,14 +384,14 @@ class O_CLA_Elite_AntiArmor_01 : O_CLA_Elite_Rifleperson_01 {
 
   linkedItems[] = {"OPTRE_UNSC_M52A_Armor_Soft","OPTRE_Ins_URF_Helmet4","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","ACE_NVG_Gen4_Green"};
   respawnlinkedItems[] = {"OPTRE_UNSC_M52A_Armor_Soft","OPTRE_Ins_URF_Helmet4","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","ACE_NVG_Gen4_Green"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"OPTRE_MA5A","launch_RPG32_green_F","Throw","Put"};
   respawnWeapons[] = {"OPTRE_MA5A","launch_RPG32_green_F","Throw","Put"};
 
-  magazines[] = {"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","RPG32_F","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","RPG32_F","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","ACE_M84"};
-  respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","RPG32_F","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","RPG32_F","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","ACE_M84"};
+  magazines[] = {MACRO_X4("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),MACRO_X2("RPG32_F"),"ACE_M84"};
+  respawnMagazines[] = {MACRO_X4("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),MACRO_X2("RPG32_F"),"ACE_M84"};
 
   backpack = "SWS_B_FieldPack_blk_AT";
 };
@@ -408,14 +408,14 @@ class O_CLA_Elite_Medic_01 : O_CLA_Elite_Rifleperson_01 {
 
   linkedItems[] = {"OPTRE_UNSC_M52A_Armor_Soft","OPTRE_Ins_URF_Helmet1","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","ACE_NVG_Gen4_Green"};
   respawnlinkedItems[] = {"OPTRE_UNSC_M52A_Armor_Soft","OPTRE_Ins_URF_Helmet1","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","ACE_NVG_Gen4_Green"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_tourniquet","ACE_bloodIV","ACE_bloodIV"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_elasticBandage""ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_elasticBandage","ACE_tourniquet","ACE_bloodIV","ACE_bloodIV"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X6("ACE_elasticBandage"),"ACE_tourniquet",MACRO_X2("ACE_bloodIV")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X6("ACE_elasticBandage"),"ACE_tourniquet",MACRO_X2("ACE_bloodIV")};
 
   weapons[] = {"OPTRE_M7","Throw","Put"};
   respawnWeapons[] = {"OPTRE_M7","Throw","Put"};
 
-  magazines[] = {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_M2_Smoke","ACE_M84"};
-  respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_M2_Smoke","ACE_M84"};
+  magazines[] = {MACRO_X5("OPTRE_60Rnd_5x23mm_Mag"),"OPTRE_M2_Smoke","ACE_M84"};
+  respawnMagazines[] = {MACRO_X5("OPTRE_60Rnd_5x23mm_Mag"),"OPTRE_M2_Smoke","ACE_M84"};
 
   backpack = "B_FieldPack_blk";
 };
@@ -432,14 +432,14 @@ class O_CLA_Elite_Autorifle_01 : O_CLA_Elite_Rifleperson_01 {
 
   linkedItems[] = {"OPTRE_UNSC_M52A_Armor_Soft","OPTRE_Ins_URF_Helmet3","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","ACE_NVG_Gen4_Green"};
   respawnlinkedItems[] = {"OPTRE_UNSC_M52A_Armor_Soft","OPTRE_Ins_URF_Helmet3","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","ACE_NVG_Gen4_Green"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"OPTRE_M247","Throw","Put"};
   respawnWeapons[] = {"OPTRE_M247","Throw","Put"};
 
-  magazines[] = {"OPTRE_100Rnd_762x51_Box","OPTRE_100Rnd_762x51_Box","OPTRE_100Rnd_762x51_Box","OPTRE_100Rnd_762x51_Box","OPTRE_100Rnd_762x51_Box","OPTRE_100Rnd_762x51_Box"};
-  respawnMagazines[] = {"OPTRE_100Rnd_762x51_Box","OPTRE_100Rnd_762x51_Box","OPTRE_100Rnd_762x51_Box","OPTRE_100Rnd_762x51_Box","OPTRE_100Rnd_762x51_Box","OPTRE_100Rnd_762x51_Box"};
+  magazines[] = {MACRO_X6("OPTRE_100Rnd_762x51_Box")};
+  respawnMagazines[] = {MACRO_X6("OPTRE_100Rnd_762x51_Box")};
 
   backpack = "B_Kitbag_cbr";
 };
@@ -456,14 +456,14 @@ class O_CLA_Crew_01 : O_CLA_Rifleman_01 {
 
   linkedItems[] = {"V_PlateCarrier2_blk","H_HelmetSpecB","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
   respawnlinkedItems[] = {"V_PlateCarrier2_blk","H_HelmetSpecB","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"OPTRE_M7","Throw","Put"};
   respawnWeapons[] = {"OPTRE_M7","Throw","Put"};
 
-  magazines[] = {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag"};
-  respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag"};
+  magazines[] = {MACRO_X4("OPTRE_60Rnd_5x23mm_Mag")};
+  respawnMagazines[] = {MACRO_X4("OPTRE_60Rnd_5x23mm_Mag")};
 
   backpack = "B_AssaultPack_blk";
 };
@@ -480,14 +480,14 @@ class O_CLA_Crew_02 : O_CLA_Crew_01 {
 
   linkedItems[] = {"V_PlateCarrier2_blk","H_HelmetCrew_I_E","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
   respawnlinkedItems[] = {"V_PlateCarrier2_blk","H_HelmetCrew_I_E","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"OPTRE_M7","Throw","Put"};
   respawnWeapons[] = {"OPTRE_M7","Throw","Put"};
 
-  magazines[] = {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag"};
-  respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag"};
+  magazines[] = {MACRO_X4("OPTRE_60Rnd_5x23mm_Mag")};
+  respawnMagazines[] = {MACRO_X4("OPTRE_60Rnd_5x23mm_Mag")};
 
   backpack = "B_AssaultPack_blk";
 };
@@ -504,14 +504,14 @@ class O_CLA_Reaper_01 : O_CLA_Elite_Rifleperson_01 {
 
   linkedItems[] = {"OPTRE_UNSC_M52A_Armor_Rifleman_URB","OPTRE_UNSC_VX16_Helmet_MaskS","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
   respawnlinkedItems[] = {"OPTRE_UNSC_M52A_Armor_Rifleman_URB","OPTRE_UNSC_VX16_Helmet_MaskS","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"SWS_Weapon_MA5BSx","Throw","Put"};
   respawnWeapons[] = {"SWS_Weapon_MA5BSx","Throw","Put"};
 
-  magazines[] = {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_M2_Smoke","HandGrenade","HandGrenade","ACE_M84","ACE_M84"};
-  respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_M2_Smoke","HandGrenade","HandGrenade","ACE_M84","ACE_M84"};
+  magazines[] = {MACRO_X6("OPTRE_60Rnd_762x51_Mag"),"OPTRE_M2_Smoke",MACRO_X2("HandGrenade"),MACRO_X2("ACE_M84")};
+  respawnMagazines[] = {MACRO_X6("OPTRE_60Rnd_762x51_Mag"),"OPTRE_M2_Smoke",MACRO_X2("HandGrenade"),MACRO_X2("ACE_M84")};
 
   backpack = "B_ViperLightHarness_blk_F";
 };
@@ -528,14 +528,14 @@ class O_CLA_Reaper_Teamlead_01 : O_CLA_Reaper_01 {
 
   linkedItems[] = {"OPTRE_UNSC_M52A_Armor_Rifleman_URB","OPTRE_UNSC_VX16_Helmet_MaskS","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
   respawnlinkedItems[] = {"OPTRE_UNSC_M52A_Armor_Rifleman_URB","OPTRE_UNSC_VX16_Helmet_MaskS","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"SWS_Weapon_MA5BSx_GL","Binocular","Throw","Put"};
   respawnWeapons[] = {"SWS_Weapon_MA5BSx_GL","Binocular","Throw","Put"};
 
-  magazines[] = {"OPTRE_60Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","OPTRE_60Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_M2_Smoke","HandGrenade","HandGrenade","ACE_M84","ACE_M84"};
-  respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","OPTRE_60Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_M2_Smoke","HandGrenade","HandGrenade","ACE_M84","ACE_M84"};
+  magazines[] = {MACRO_X4("OPTRE_60Rnd_762x51_Mag"),MACRO_X2("1Rnd_HE_Grenade_shell"),"OPTRE_M2_Smoke",MACRO_X2("HandGrenade"),MACRO_X2("ACE_M84")};
+  respawnMagazines[] = {MACRO_X4("OPTRE_60Rnd_762x51_Mag"),MACRO_X2("1Rnd_HE_Grenade_shell"),"OPTRE_M2_Smoke",MACRO_X2("HandGrenade"),MACRO_X2("ACE_M84")};
 
   backpack = "B_ViperLightHarness_blk_F";
 };
@@ -552,14 +552,14 @@ class O_CLA_Reaper_Autorifle_01 : O_CLA_Reaper_01 {
 
   linkedItems[] = {"OPTRE_UNSC_M52A_Armor_Rifleman_URB","OPTRE_UNSC_VX16_HelmetV","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
   respawnlinkedItems[] = {"OPTRE_UNSC_M52A_Armor_Rifleman_URB","OPTRE_UNSC_VX16_HelmetV","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"Dmns_CM_12_Insurgent","Throw","Put"};
   respawnWeapons[] = {"Dmns_CM_12_Insurgent","Throw","Put"};
 
-  magazines[] = {"DMNS_150Rnd_30x06_Mag","DMNS_150Rnd_30x06_Mag","DMNS_150Rnd_30x06_Mag","DMNS_150Rnd_30x06_Mag","DMNS_150Rnd_30x06_Mag","OPTRE_M2_Smoke","HandGrenade","HandGrenade","ACE_M84","ACE_M84"};
-  respawnMagazines[] = {"DMNS_150Rnd_30x06_Mag","DMNS_150Rnd_30x06_Mag","DMNS_150Rnd_30x06_Mag","DMNS_150Rnd_30x06_Mag","DMNS_150Rnd_30x06_Mag","OPTRE_M2_Smoke","HandGrenade","HandGrenade","ACE_M84","ACE_M84"};
+  magazines[] = {MACRO_X5("DMNS_150Rnd_30x06_Mag"),"OPTRE_M2_Smoke",MACRO_X2("HandGrenade"),MACRO_X2("ACE_M84")};
+  respawnMagazines[] = {MACRO_X5("DMNS_150Rnd_30x06_Mag"),"OPTRE_M2_Smoke",MACRO_X2("HandGrenade"),MACRO_X2("ACE_M84")};
 
   backpack = "B_ViperLightHarness_blk_F";
 };
@@ -582,8 +582,8 @@ class O_CLA_Reaper_AntiArmor_01 : O_CLA_Reaper_01 {
   weapons[] = {"SWS_Weapon_MA5BSx","launch_RPG32_green_F","Throw","Put"};
   respawnWeapons[] = {"SWS_Weapon_MA5BSx","launch_RPG32_green_F","Throw","Put"};
 
-  magazines[] = {"OPTRE_60Rnd_762x51_Mag","RPG32_F","RPG32_F","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag""OPTRE_M2_Smoke","HandGrenade","ACE_M84"};
-  respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag","RPG32_F","RPG32_F","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_M2_Smoke","HandGrenade","ACE_M84"};
+  magazines[] = {MACRO_X4("OPTRE_60Rnd_762x51_Mag"),MACRO_X2("RPG32_F"),"OPTRE_M2_Smoke","HandGrenade","ACE_M84"};
+  respawnMagazines[] = {MACRO_X4("OPTRE_60Rnd_762x51_Mag"),MACRO_X2("RPG32_F"),"OPTRE_M2_Smoke","HandGrenade","ACE_M84"};
 
   backpack = "B_ViperLightHarness_blk_F";
 };
@@ -623,14 +623,14 @@ class O_CLA_Reaper_Sniper_01 : O_CLA_Reaper_01 {
 
   linkedItems[] = {"OPTRE_UNSC_M52A_Armor_Rifleman_URB","OPTRE_UNSC_VX16_Helmet_MaskS","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
   respawnlinkedItems[] = {"OPTRE_UNSC_M52A_Armor_Rifleman_URB","OPTRE_UNSC_VX16_Helmet_MaskS","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"OPTRE_SRS99D","Throw","Put"};
   respawnWeapons[] = {"OPTRE_SRS99D","Throw","Put"};
 
-  magazines[] = {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_M2_Smoke","HandGrenade","ACE_M84"};
-  respawnMagazines[] = {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_M2_Smoke","HandGrenade","ACE_M84"};
+  magazines[] = {MACRO_X6("OPTRE_4Rnd_145x114_APFSDS_Mag"),"OPTRE_M2_Smoke","HandGrenade","ACE_M84"};
+  respawnMagazines[] = {MACRO_X6("OPTRE_4Rnd_145x114_APFSDS_Mag"),"OPTRE_M2_Smoke","HandGrenade","ACE_M84"};
 
   backpack = "B_ViperLightHarness_blk_F";
 };
@@ -647,14 +647,14 @@ class O_CLA_Reaper_Breacher_01 : O_CLA_Reaper_01 {
 
   linkedItems[] = {"OPTRE_UNSC_M52A_Armor_Rifleman_URB","OPTRE_UNSC_VX16_Helmet_MaskSV","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
   respawnlinkedItems[] = {"OPTRE_UNSC_M52A_Armor_Rifleman_URB","OPTRE_UNSC_VX16_Helmet_MaskSV","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"OPTRE_M45ATAC","Throw","Put"};
   respawnWeapons[] = {"OPTRE_M45ATAC","Throw","Put"};
 
-  magazines[] = {"SWS_Magazine_12_Rnd_Shotgun_Incendiary","SWS_Magazine_12_Rnd_Shotgun_Incendiary","SWS_Magazine_12_Rnd_Shotgun_Incendiary","SWS_Magazine_12_Rnd_Shotgun_Incendiary"};
-  respawnMagazines[] = {"SWS_Magazine_12_Rnd_Shotgun_Incendiary","SWS_Magazine_12_Rnd_Shotgun_Incendiary","SWS_Magazine_12_Rnd_Shotgun_Incendiary","SWS_Magazine_12_Rnd_Shotgun_Incendiary"};
+  magazines[] = {MACRO_X4("SWS_Magazine_12_Rnd_Shotgun_Incendiary")};
+  respawnMagazines[] = {MACRO_X4("SWS_Magazine_12_Rnd_Shotgun_Incendiary")};
 
   backpack = "B_ViperLightHarness_blk_F";
 };
@@ -671,14 +671,14 @@ class O_CLA_Reaper_AntiAir_01 : O_CLA_Reaper_01 {
 
   linkedItems[] = {"OPTRE_UNSC_M52A_Armor_Rifleman_URB","OPTRE_UNSC_VX16_Helmet_MaskS","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
   respawnlinkedItems[] = {"OPTRE_UNSC_M52A_Armor_Rifleman_URB","OPTRE_UNSC_VX16_Helmet_MaskS","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"SWS_Weapon_MA5BSx","launch_B_Titan_olive_F","Throw","Put"};
   respawnWeapons[] = {"SWS_Weapon_MA5BSx","launch_B_Titan_olive_F","Throw","Put"};
 
-  magazines[] = {"OPTRE_60Rnd_762x51_Mag","Titan_AA","Titan_AA","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","HandGrenade","HandGrenade","ACE_M84"};
-  respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag","Titan_AA","Titan_AA","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","HandGrenade","HandGrenade","ACE_M84"};
+  magazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),MACRO_X2("Titan_AA"),MACRO_X2("HandGrenade"),"ACE_M84"};
+  respawnMagazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),MACRO_X2("Titan_AA"),MACRO_X2("HandGrenade"),"ACE_M84"};
 
   backpack = "B_ViperLightHarness_blk_F";
 };
@@ -695,14 +695,14 @@ class O_CLA_Reaper_Medic_01 : O_CLA_Reaper_01 {
 
   linkedItems[] = {"OPTRE_UNSC_M52A_Armor_Rifleman_URB","OPTRE_UNSC_VX16_Helmet_MaskS","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
   respawnlinkedItems[] = {"OPTRE_UNSC_M52A_Armor_Rifleman_URB","OPTRE_UNSC_VX16_Helmet_MaskS","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"SWS_Weapon_MA5BSx","Throw","Put"};
   respawnWeapons[] = {"SWS_Weapon_MA5BSx","Throw","Put"};
 
-  magazines[] = {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_M2_Smoke","HandGrenade","ACE_M84"};
-  respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_M2_Smoke","HandGrenade","ACE_M84"};
+  magazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),"OPTRE_M2_Smoke","HandGrenade","ACE_M84"};
+  respawnMagazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),"OPTRE_M2_Smoke","HandGrenade","ACE_M84"};
 
   backpack = "B_ViperLightHarness_blk_F";
 };
@@ -725,8 +725,8 @@ class O_CLA_Disassembeled_MG_01 : O_CLA_Rifleman_01 {
   weapons[] = {"OPTRE_MA5A","Throw","Put"};
   respawnWeapons[] = {"OPTRE_MA5A","Throw","Put"};
 
-  magazines[] = {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","ACE_M84","HandGrenade"};
-  respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","ACE_M84","HandGrenade"};
+  magazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),"ACE_M84","HandGrenade"};
+  respawnMagazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),"ACE_M84","HandGrenade"};
 
   backpack = "I_HMG_02_high_weapon_F";
 };
@@ -1053,8 +1053,8 @@ class O_CLA_Mortar_Tube_01 : O_CLA_Rifleperson_02 {
   weapons[] = {"OPTRE_MA5A","Throw","Put"};
   respawnWeapons[] = {"OPTRE_MA5A","Throw","Put"};
 
-  magazines[] = {"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"};
-  respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"};
+  magazines[] = {MACRO_X2("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),MACRO_X2("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow")};
+  respawnMagazines[] = {MACRO_X2("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),MACRO_X2("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow")};
 
   backpack = "I_Mortar_01_weapon_F";
 };
@@ -1071,14 +1071,14 @@ class O_CLA_Mortar_Bipod_01 : O_CLA_Mortar_Tube_01 {
 
   linkedItems[] = {"V_PlateCarrier2_blk","OPTRE_h_PatrolCap_Brown","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
   respawnlinkedItems[] = {"V_PlateCarrier2_blk","OPTRE_h_PatrolCap_Brown","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
   weapons[] = {"OPTRE_MA5A","Throw","Put"};
   respawnWeapons[] = {"OPTRE_MA5A","Throw","Put"};
 
-  magazines[] = {"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"};
-  respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow","OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"};
+  magazines[] = {MACRO_X2("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),MACRO_X2("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow")};
+  respawnMagazines[] = {MACRO_X2("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),MACRO_X2("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow")};
 
   backpack = "I_Mortar_01_support_F";
 };
@@ -1215,14 +1215,14 @@ class O_CLA_Reaper_Demolitionist_01 : O_CLA_Reaper_01 {
 
   linkedItems[] = {"OPTRE_UNSC_M52A_Armor_Rifleman_URB","OPTRE_UNSC_VX16_Helmet_MaskS","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
   respawnlinkedItems[] = {"OPTRE_UNSC_M52A_Armor_Rifleman_URB","OPTRE_UNSC_VX16_Helmet_MaskS","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG"};
-  items[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_M26_Clacker","ACE_DefusalKit","ToolKit"};
-  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_quikclot","ACE_M26_Clacker","ACE_DefusalKit","ToolKit"};
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot"),"ACE_M26_Clacker","ACE_DefusalKit","ToolKit"};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot"),"ACE_M26_Clacker","ACE_DefusalKit","ToolKit"};
 
   weapons[] = {"SWS_Weapon_MA5BSx","Throw","Put"};
   respawnWeapons[] = {"SWS_Weapon_MA5BSx","Throw","Put"};
 
-  magazines[] = {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_M2_Smoke","HandGrenade","SWS_Magazine_C7Sx_Sticky"};
-  respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_M2_Smoke","HandGrenade","SWS_Magazine_C7Sx_Sticky"};
+  magazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),"OPTRE_M2_Smoke","HandGrenade","SWS_Magazine_C7Sx_Sticky"};
+  respawnMagazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),"OPTRE_M2_Smoke","HandGrenade","SWS_Magazine_C7Sx_Sticky"};
 
   backpack = "B_ViperLightHarness_blk_F";
 };
@@ -1363,8 +1363,8 @@ class O_CLA_MG_Tripod_01 : O_CLA_Disassembeled_MG_01 {
   weapons[] = {"OPTRE_MA5A","Throw","Put"};
   respawnWeapons[] = {"OPTRE_MA5A","Throw","Put"};
 
-  magazines[] = {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
-  respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  magazines[] = {MACRO_X4("OPTRE_60Rnd_762x51_Mag"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  respawnMagazines[] = {MACRO_X4("OPTRE_60Rnd_762x51_Mag"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
 
   backpack = "I_HMG_02_support_high_F";
 };
@@ -1427,8 +1427,8 @@ class O_CLA_Viper_01 : O_V_Soldier_hex_F {
   weapons[] = {"SWS_Weapon_AR0M37","Throw","Put"};
   respawnWeapons[] = {"SWS_Weapon_AR0M37","Throw","Put"};
 
-  magazines[] = {"SWS_Magazine_60Rnd_65x39_Caseless_msbs","SWS_Magazine_60Rnd_65x39_Caseless_msbs","SWS_Magazine_60Rnd_65x39_Caseless_msbs","SmokeShell","ACE_M84","SWS_Magazine_Grenade_M3Sx"};
-  respawnMagazines[] = {"SWS_Magazine_60Rnd_65x39_Caseless_msbs","SWS_Magazine_60Rnd_65x39_Caseless_msbs","SWS_Magazine_60Rnd_65x39_Caseless_msbs","SmokeShell","ACE_M84","SWS_Magazine_Grenade_M3Sx"};
+  magazines[] = {MACRO_X3("SWS_Magazine_60Rnd_65x39_Caseless_msbs"),"SmokeShell","ACE_M84","SWS_Magazine_Grenade_M3Sx"};
+  respawnMagazines[] = {MACRO_X3("SWS_Magazine_60Rnd_65x39_Caseless_msbs"),"SmokeShell","ACE_M84","SWS_Magazine_Grenade_M3Sx"};
 
   backpack = "B_ViperHarness_hex_M_F";
 };
@@ -1451,8 +1451,8 @@ class O_CLA_Reaper_Officer_01 : O_V_Soldier_TL_hex_F {
   weapons[] = {"SWS_Weapon_AR0M37","Rangefinder","Throw","Put"};
   respawnWeapons[] = {"SWS_Weapon_AR0M37","Rangefinder","Throw","Put"};
 
-  magazines[] = {"SWS_Magazine_60Rnd_65x39_Caseless_msbs","SWS_Magazine_60Rnd_65x39_Caseless_msbs","SWS_Magazine_60Rnd_65x39_Caseless_msbs","SmokeShell","ACE_M84","SWS_Magazine_Grenade_M3Sx"};
-  respawnMagazines[] = {"SWS_Magazine_60Rnd_65x39_Caseless_msbs","SWS_Magazine_60Rnd_65x39_Caseless_msbs","SWS_Magazine_60Rnd_65x39_Caseless_msbs","SmokeShell","ACE_M84","SWS_Magazine_Grenade_M3Sx"};
+  magazines[] = {MACRO_X3("SWS_Magazine_60Rnd_65x39_Caseless_msbs"),"SmokeShell","ACE_M84","SWS_Magazine_Grenade_M3Sx"};
+  respawnMagazines[] = {MACRO_X3("SWS_Magazine_60Rnd_65x39_Caseless_msbs"),"SmokeShell","ACE_M84","SWS_Magazine_Grenade_M3Sx"};
 
   backpack = "B_ViperLightHarness_blk_F";
 };
@@ -1475,8 +1475,8 @@ class O_CLA_Reaper_Missile_Specialist_01 : O_CLA_Reaper_AntiAir_01 {
   weapons[] = {"SWS_Weapon_MA5BSx","launch_O_Titan_short_F","Throw","Put"};
   respawnWeapons[] = {"SWS_Weapon_MA5BSx","launch_O_Titan_short_F","Throw","Put"};
 
-  magazines[] = {"OPTRE_60Rnd_762x51_Mag","Titan_AT","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag"};
-  respawnMagazines[] = {"OPTRE_60Rnd_762x51_Mag","Titan_AT","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag","OPTRE_60Rnd_762x51_Mag"};
+  magazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),"Titan_AT"};
+  respawnMagazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),"Titan_AT"};
 
   backpack = "B_ViperLightHarness_blk_F";
 };
