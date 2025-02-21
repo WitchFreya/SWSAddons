@@ -21,6 +21,7 @@ class SWS_B_TacticalPack_blk_Med : B_TacticalPack_blk {
     MACRO_ADDITEM(ACE_tourniquet,4);
   };
 };
+
 class SWS_B_TacticalPack_blk_AR : B_TacticalPack_blk {
   ITEM_META(1);
 	class TransportMagazines
@@ -219,8 +220,8 @@ class O_CLA_Teamlead_01 : OPTRE_Ins_URF_TeamLead {
   weapons[] = {"OPTRE_MA5AGL","Throw","Put"};
   respawnWeapons[] = {"OPTRE_MA5AGL","Throw","Put"};
 
-  magazines[] = {MACRO_X2("1Rnd_HE_Grenade_shell"),MACRO_X4("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
-  respawnMagazines[] = {MACRO_X2("1Rnd_HE_Grenade_shell"),MACRO_X4("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  magazines[] = {MACRO_X2("1Rnd_HE_Grenade_shell"),MACRO_X5("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  respawnMagazines[] = {MACRO_X2("1Rnd_HE_Grenade_shell"),MACRO_X5("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
 
   backpack = "B_AssaultPack_blk";
 };
@@ -457,8 +458,8 @@ class O_CLA_Elite_Teamlead_01 : O_CLA_Elite_Rifleperson_01 {
   weapons[] = {"OPTRE_MA5AGL","Binocular","Throw","Put"};
   respawnWeapons[] = {"OPTRE_MA5AGL","Binocular","Throw","Put"};
 
-  magazines[] = {MACRO_X4("OPTRE_60Rnd_762x51_Mag"),MACRO_X2("1Rnd_HE_Grenade_shell")};
-  respawnMagazines[] = {MACRO_X4("OPTRE_60Rnd_762x51_Mag"),MACRO_X2("1Rnd_HE_Grenade_shell")};
+  magazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),MACRO_X2("1Rnd_HE_Grenade_shell")};
+  respawnMagazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),MACRO_X2("1Rnd_HE_Grenade_shell")};
 
   backpack = "B_FieldPack_blk";
 };
@@ -481,8 +482,8 @@ class O_CLA_Elite_Breacher_01 : O_CLA_Elite_Rifleperson_01 {
   weapons[] = {"OPTRE_M45","Throw","Put"};
   respawnWeapons[] = {"OPTRE_M45","Throw","Put"};
 
-  magazines[] = {MACRO_X3("OPTRE_12Rnd_8Gauge_Slugs"),MACRO_X2("OPTRE_6Rnd_8Gauge_Pellets"),"ACE_M84","HandGrenade"};
-  respawnMagazines[] = {MACRO_X3("OPTRE_12Rnd_8Gauge_Slugs"),MACRO_X2("OPTRE_6Rnd_8Gauge_Pellets"),"ACE_M84","HandGrenade"};
+  magazines[] = {MACRO_X4("OPTRE_12Rnd_8Gauge_Slugs"),MACRO_X2("OPTRE_6Rnd_8Gauge_Pellets"),"ACE_M84","HandGrenade"};
+  respawnMagazines[] = {MACRO_X4("OPTRE_12Rnd_8Gauge_Slugs"),MACRO_X2("OPTRE_6Rnd_8Gauge_Pellets"),"ACE_M84","HandGrenade"};
 
   backpack = "B_FieldPack_blk";
 };
@@ -649,8 +650,8 @@ class O_CLA_Reaper_Teamlead_01 : O_CLA_Reaper_01 {
   weapons[] = {"SWS_Weapon_MA5BSx_GL","Binocular","Throw","Put"};
   respawnWeapons[] = {"SWS_Weapon_MA5BSx_GL","Binocular","Throw","Put"};
 
-  magazines[] = {MACRO_X4("OPTRE_60Rnd_762x51_Mag"),MACRO_X2("1Rnd_HE_Grenade_shell"),"OPTRE_M2_Smoke",MACRO_X2("HandGrenade"),MACRO_X2("ACE_M84")};
-  respawnMagazines[] = {MACRO_X4("OPTRE_60Rnd_762x51_Mag"),MACRO_X2("1Rnd_HE_Grenade_shell"),"OPTRE_M2_Smoke",MACRO_X2("HandGrenade"),MACRO_X2("ACE_M84")};
+  magazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),MACRO_X2("1Rnd_HE_Grenade_shell"),"OPTRE_M2_Smoke",MACRO_X2("HandGrenade"),MACRO_X2("ACE_M84")};
+  respawnMagazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),MACRO_X2("1Rnd_HE_Grenade_shell"),"OPTRE_M2_Smoke",MACRO_X2("HandGrenade"),MACRO_X2("ACE_M84")};
 
   backpack = "B_ViperLightHarness_blk_F";
 };
@@ -768,8 +769,8 @@ class O_CLA_Reaper_Breacher_01 : O_CLA_Reaper_01 {
   weapons[] = {"OPTRE_M45ATAC","Throw","Put"};
   respawnWeapons[] = {"OPTRE_M45ATAC","Throw","Put"};
 
-  magazines[] = {MACRO_X4("SWS_Magazine_12_Rnd_Shotgun_Incendiary")};
-  respawnMagazines[] = {MACRO_X4("SWS_Magazine_12_Rnd_Shotgun_Incendiary")};
+  magazines[] = {MACRO_X5("SWS_Magazine_12_Rnd_Shotgun_Incendiary")};
+  respawnMagazines[] = {MACRO_X5("SWS_Magazine_12_Rnd_Shotgun_Incendiary")};
 
   backpack = "B_ViperLightHarness_blk_F";
 };
