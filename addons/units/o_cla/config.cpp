@@ -36,6 +36,14 @@ class CfgPatches {
     units[] = {
       CLASSES_VEHICLES
       , "O_CLA_Rifleman_01"
+      , "O_CLA_LightRifle_01"
+      , "O_CLA_LightRifle_02"
+      , "O_CLA_LightRifle_03"
+      , "O_CLA_LightRifle_04"
+      , "O_CLA_LightRifle_05"
+      , "O_CLA_LightMG_01"
+      , "O_CLA_LightSniper_01"
+      , "O_CLA_LightAT_01"
       , "O_CLA_Teamlead_01"
       , "O_CLA_Medic_01"
       , "O_CLA_Breacher_01"
@@ -48,7 +56,7 @@ class CfgPatches {
       , "O_CLA_Elite_Rifleperson_02"
       , "O_CLA_Elite_Teamlead_01"
       , "O_CLA_Elite_Breacher_01"
-      , "O_CLA_Elite_AnitArmor_01"
+      , "O_CLA_Elite_AntiArmor_01"
       , "O_CLA_Elite_Medic_01"
       , "O_CLA_Elite_Autorifle_01"
       , "O_CLA_Crew_01"

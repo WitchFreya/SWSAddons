@@ -46,6 +46,108 @@ class CfgGroups {
                     };
                 };
 
+                class o_cla_lightInfantry_fireteam {
+                    name = "Ragtag Fireteam";
+                    side = SIDE_OPFOR;
+                    faction = "o_cla";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = SIDE_OPFOR;
+                        vehicle = "O_CLA_LightRifle_01";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = SIDE_OPFOR;
+                        vehicle = "O_CLA_LightRifle_02";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = SIDE_OPFOR;
+                        vehicle = "O_CLA_LightRifle_03";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = SIDE_OPFOR;
+                        vehicle = "O_CLA_LightRifle_04";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = SIDE_OPFOR;
+                        vehicle = "O_CLA_LightRifle_05";
+                    };
+                };
+
+                class o_cla_lightmg_team {
+                    name = "Ragtag MG Team";
+                    side = SIDE_OPFOR;
+                    faction = "o_cla";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = SIDE_OPFOR;
+                        vehicle = "O_CLA_LightRifle_05";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = SIDE_OPFOR;
+                        vehicle = "O_CLA_LightMG_01";
+                    };
+                };
+
+                class o_cla_lightSniper_team {
+                    name = "Ragtag Sniper Team";
+                    side = SIDE_OPFOR;
+                    faction = "o_cla";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = SIDE_OPFOR;
+                        vehicle = "O_CLA_LightRifle_04";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = SIDE_OPFOR;
+                        vehicle = "O_CLA_LightSniper_01";
+                    };
+                };
+
+                class o_cla_lightAT_team {
+                    name = "Ragtag RPG Team";
+                    side = SIDE_OPFOR;
+                    faction = "o_cla";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = SIDE_OPFOR;
+                        vehicle = "O_CLA_LightRifle_04";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = SIDE_OPFOR;
+                        vehicle = "O_CLA_LightAT_01";
+                    };
+                };
+
                 class o_cla_infantry_squad {
                     name = "[SWS] Squad";
                     side = SIDE_OPFOR;

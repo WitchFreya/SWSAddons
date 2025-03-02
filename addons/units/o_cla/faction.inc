@@ -178,6 +178,193 @@ class SWS_B_ViperLightHarness_blk_F_Demo : B_ViperLightHarness_blk_F {
   };
 };
 
+class O_CLA_LightRifle_01 : OPTRE_Ins_URF_TeamLead {
+  ITEM_META(2);
+  displayName = "Guerilla";
+  side = SIDE_OPFOR;
+  faction = "o_cla";
+
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+
+  uniformClass = "U_C_Mechanic_01_F";
+
+  linkedItems[] = {"V_TacChestrig_cbr_F","H_MilCap_blue","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+  respawnlinkedItems[] = {"V_TacChestrig_cbr_F","H_MilCap_blue","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+
+  weapons[] = {"OPTRE_MA32B","Throw","Put"};
+  respawnWeapons[] = {"OPTRE_MA32B","Throw","Put"};
+
+  magazines[] = {MACRO_X5("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  respawnMagazines[] = {MACRO_X5("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+};
+
+class O_CLA_LightRifle_02 : OPTRE_Ins_URF_TeamLead {
+  ITEM_META(2);
+  displayName = "Shotgunner";
+  side = SIDE_OPFOR;
+  faction = "o_cla";
+
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+
+
+  uniformClass = "U_I_C_Soldier_Para_4_F";
+
+  linkedItems[] = {"V_BandollierB_khk","H_Bandanna_khk_hs","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+  respawnlinkedItems[] = {"V_BandollierB_khk","H_Bandanna_khk_hs","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+
+  weapons[] = {"OPTRE_M45E","Throw","Put"};
+  respawnWeapons[] = {"OPTRE_M45E","Throw","Put"};
+
+  magazines[] = {MACRO_X4("OPTRE_6Rnd_8Gauge_Slugs"),MACRO_X2("OPTRE_6Rnd_8Gauge_Pellets"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  respawnMagazines[] = {MACRO_X4("OPTRE_6Rnd_8Gauge_Slugs"),MACRO_X2("OPTRE_6Rnd_8Gauge_Pellets"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+
+  backpack = "";
+};
+
+class O_CLA_LightRifle_03 : OPTRE_Ins_URF_TeamLead {
+  ITEM_META(2);
+  displayName = "Sharpshooter";
+  side = SIDE_OPFOR;
+  faction = "o_cla";
+
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+
+  uniformClass = "U_C_Poor_1";
+
+  linkedItems[] = {"V_TacVest_brn","H_Watchcap_khk","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+  respawnlinkedItems[] = {"V_TacVest_brn","H_Watchcap_khk","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+
+  weapons[] = {"OPTRE_M393S_DMR","Throw","Put"};
+  respawnWeapons[] = {"OPTRE_M393S_DMR","Throw","Put"};
+
+  magazines[] = {MACRO_X5("OPTRE_15Rnd_762x51_Mag_Tracer"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  respawnMagazines[] = {MACRO_X5("OPTRE_15Rnd_762x51_Mag_Tracer"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+};
+
+class O_CLA_LightRifle_04 : OPTRE_Ins_URF_TeamLead {
+  ITEM_META(2);
+  displayName = "Partisan";
+  side = SIDE_OPFOR;
+  faction = "o_cla";
+
+  identityTypes[] = {"Head_TCGM_Girls_Asian","LanguageGRE_F","G_IRAN_default"};
+
+  uniformClass = "TCGM_F_SoldierParamilitary_RollUp";
+
+  linkedItems[] = {"V_HarnessOGL_ghex_F","H_Headset_black_F","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+  respawnlinkedItems[] = {"V_HarnessOGL_ghex_F","H_Headset_black_F","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+
+  weapons[] = {"OPTRE_M6D_Carbine_F","Throw","Put"};
+  respawnWeapons[] = {"OPTRE_M6D_Carbine_F","Throw","Put"};
+
+  magazines[] = {MACRO_X5("OPTRE_26Rnd_127x40_Mag_Tracer"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  respawnMagazines[] = {MACRO_X5("OPTRE_26Rnd_127x40_Mag_Tracer"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+};
+
+class O_CLA_LightRifle_05 : OPTRE_Ins_URF_TeamLead {
+  ITEM_META(2);
+  displayName = "Radio Operator";
+  side = SIDE_OPFOR;
+  faction = "o_cla";
+
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+
+  uniformClass = "U_BG_Guerilla2_2";
+
+  linkedItems[] = {"V_SmershVest_01_radio_F","H_Cap_red","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+  respawnlinkedItems[] = {"V_SmershVest_01_radio_F","H_Cap_red","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+
+  weapons[] = {"SWS_Weapon_ARMXS","Throw","Put"};
+  respawnWeapons[] = {"SWS_Weapon_ARMXS","Throw","Put"};
+
+  magazines[] = {MACRO_X3("100Rnd_65x39_caseless_black_mag_tracer"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  respawnMagazines[] = {MACRO_X3("100Rnd_65x39_caseless_black_mag_tracer"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+};
+
+class O_CLA_LightMG_01 : OPTRE_Ins_URF_TeamLead {
+  ITEM_META(2);
+  displayName = "Machine Gunner";
+  side = SIDE_OPFOR;
+  faction = "o_cla";
+
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+
+  uniformClass = "U_B_CTRG_Soldier_urb_2_F";
+
+  linkedItems[] = {"V_SmershVest_01_radio_F","H_Cap_red","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+  respawnlinkedItems[] = {"V_SmershVest_01_radio_F","H_Cap_red","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+
+  weapons[] = {"LMG_03_F","Throw","Put"};
+  respawnWeapons[] = {"LMG_03_F","Throw","Put"};
+
+  magazines[] = {MACRO_X3("200Rnd_556x45_Box_Tracer_F"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  respawnMagazines[] = {MACRO_X3("200Rnd_556x45_Box_Tracer_F"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+};
+
+class O_CLA_LightSniper_01 : OPTRE_Ins_URF_TeamLead {
+  ITEM_META(2);
+  displayName = "Sniper";
+  side = SIDE_OPFOR;
+  faction = "o_cla";
+
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+
+  uniformClass = "U_I_L_Uniform_01_deserter_F";
+
+  linkedItems[] = {"V_BandollierB_cbr","H_ShemagOpen_tan","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+  respawnlinkedItems[] = {"V_BandollierB_cbr","H_ShemagOpen_tan","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+
+  weapons[] = {"srifle_LRR_F","Throw","Put"};
+  respawnWeapons[] = {"srifle_LRR_F","Throw","Put"};
+
+  magazines[] = {MACRO_X5("7Rnd_408_Mag"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  respawnMagazines[] = {MACRO_X5("7Rnd_408_Mag"),"OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+};
+
+class O_CLA_LightAT_01 : OPTRE_Ins_URF_TeamLead {
+  ITEM_META(2);
+  displayName = "Rocketeer";
+  side = SIDE_OPFOR;
+  faction = "o_cla";
+
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+
+  uniformClass = "U_I_C_Soldier_Camo_F";
+
+  linkedItems[] = {"V_Chestrig_khk","H_HelmetB_sand","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+  respawnlinkedItems[] = {"V_Chestrig_khk","H_HelmetB_sand","ItemMap","ItemRadio","ItemCompass","ItemWatch"};
+
+  items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+  respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
+
+  weapons[] = {"OPTRE_M7","launch_RPG7_F","Throw","Put"};
+  respawnWeapons[] = {"OPTRE_M7","launch_RPG7_F","Throw","Put"};
+
+  magazines[] = {MACRO_X5("OPTRE_60Rnd_5x23mm_Mag"),"RPG7_F","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+  respawnMagazines[] = {MACRO_X5("OPTRE_60Rnd_5x23mm_Mag"),"RPG7_F","OPTRE_M2_Smoke","ACE_M84","HandGrenade"};
+};
+
 class O_CLA_Rifleman_01 : OPTRE_Ins_URF_TeamLead {
   ITEM_META(2);
   displayName = "[SWS] CLA Rifleman";
@@ -494,7 +681,7 @@ class O_CLA_Elite_AntiArmor_01 : O_CLA_Elite_Rifleperson_01 {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_FC_Marines_Uniform_WDL";
 
@@ -506,8 +693,8 @@ class O_CLA_Elite_AntiArmor_01 : O_CLA_Elite_Rifleperson_01 {
   weapons[] = {"OPTRE_MA5A","launch_RPG32_green_F","Throw","Put"};
   respawnWeapons[] = {"OPTRE_MA5A","launch_RPG32_green_F","Throw","Put"};
 
-  magazines[] = {MACRO_X5("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),"ACE_M84"};
-  respawnMagazines[] = {MACRO_X5("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),"ACE_M84"};
+  magazines[] = {MACRO_X5("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),"RPG32_F","ACE_M84"};
+  respawnMagazines[] = {MACRO_X5("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),"RPG32_F","ACE_M84"};
 
   backpack = "SWS_B_FieldPack_blk_AT";
 };
@@ -638,7 +825,7 @@ class O_CLA_Reaper_Teamlead_01 : O_CLA_Reaper_01 {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_FC_Marines_Uniform_WDL";
 
@@ -698,8 +885,8 @@ class O_CLA_Reaper_AntiArmor_01 : O_CLA_Reaper_01 {
   weapons[] = {"SWS_Weapon_MA5BSx","launch_RPG32_green_F","Throw","Put"};
   respawnWeapons[] = {"SWS_Weapon_MA5BSx","launch_RPG32_green_F","Throw","Put"};
 
-  magazines[] = {MACRO_X4("OPTRE_60Rnd_762x51_Mag"),"OPTRE_M2_Smoke","HandGrenade","ACE_M84"};
-  respawnMagazines[] = {MACRO_X4("OPTRE_60Rnd_762x51_Mag"),"OPTRE_M2_Smoke","HandGrenade","ACE_M84"};
+  magazines[] = {MACRO_X4("OPTRE_60Rnd_762x51_Mag"),"RPG32_F","OPTRE_M2_Smoke","HandGrenade","ACE_M84"};
+  respawnMagazines[] = {MACRO_X4("OPTRE_60Rnd_762x51_Mag"),"RPG32_F","OPTRE_M2_Smoke","HandGrenade","ACE_M84"};
 
   backpack = "SWS_B_ViperLightHarness_blk_F_Light_AT";
 };
@@ -793,8 +980,8 @@ class O_CLA_Reaper_AntiAir_01 : O_CLA_Reaper_01 {
   weapons[] = {"SWS_Weapon_MA5BSx","launch_B_Titan_olive_F","Throw","Put"};
   respawnWeapons[] = {"SWS_Weapon_MA5BSx","launch_B_Titan_olive_F","Throw","Put"};
 
-  magazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),MACRO_X2("HandGrenade"),"ACE_M84"};
-  respawnMagazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),MACRO_X2("HandGrenade"),"ACE_M84"};
+  magazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),"Titan_AA",MACRO_X2("HandGrenade"),"ACE_M84"};
+  respawnMagazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),"Titan_AA",MACRO_X2("HandGrenade"),"ACE_M84"};
 
   backpack = "SWS_B_ViperLightHarness_blk_F_AA";
 };
@@ -1591,8 +1778,8 @@ class O_CLA_Reaper_Missile_Specialist_01 : O_CLA_Reaper_AntiAir_01 {
   weapons[] = {"SWS_Weapon_MA5BSx","launch_O_Titan_short_F","Throw","Put"};
   respawnWeapons[] = {"SWS_Weapon_MA5BSx","launch_O_Titan_short_F","Throw","Put"};
 
-  magazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag")};
-  respawnMagazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag")};
+  magazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),"Titan_AT"};
+  respawnMagazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),"Titan_AT"};
 
   backpack = "SWS_B_ViperLightHarness_blk_F_AT";
 };
