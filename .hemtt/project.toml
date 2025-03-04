@@ -10,6 +10,9 @@ url = "https://github.com/WitchFreya/SWSAddons"
 [files]
 exclude = ["*.inc"]
 
+[hemtt.release]
+archive = false
+
 # To use this profile, copy .hemtt/missions/Dev.VR.Template to .hemtt/missions/Dev.VR and edit that to your heart's content
 [hemtt.launch.vr]
 mission = "Dev.VR"
