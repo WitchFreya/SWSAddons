@@ -1,7 +1,7 @@
 class CfgGroups {
   class EAST {
     class SWS_O_URArmy {
-      name = "United Rebel Alliance";
+      name = "[SWS] United Rebel Alliance";
 
       class Infantry {
         name = "Infantry";
