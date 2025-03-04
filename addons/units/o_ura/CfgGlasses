@@ -1,0 +1,23 @@
+class CfgGlasses
+{
+	class None;
+	class SWS_G_URAmask : None
+	{
+		author = "Rabbit";
+		displayname = "[SWS] Gas Mask";
+    model = "
+		identityTypes[] =
+		{
+			"NoGlasses",0, "G_NATO_default",0, "G_NATO_casual",0, "G_NATO_pilot",0, "G_NATO_recon",0, "G_NATO_SF",0, "G_NATO_sniper",0,
+			"G_NATO_diver",0, "G_IRAN_default",0, "G_IRAN_diver",0, "G_GUERIL_default",0, "G_HAF_default",0, "G_CIVIL_female",0, "G_CIVIL_male",0, "SWS_G_URA",1
+		};
+		mass = 2;
+
+		mode = 2;	// Facewear mode:
+					// 0 = None - not supported
+					// 1 = Diving - diving goggles, only appear while swimming
+					// 2 = Goggles - normal goggles, they show overwater but disappear while swimming
+					// 3 = NVG - not supported
+					// 4 = DivingAndOverwater - goggles always show, over and underwater - added in Arma 3 v2.08
+	};
+};
