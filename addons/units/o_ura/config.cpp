@@ -26,7 +26,7 @@ class CfgPatches {
         skipWhenMissingDependencies = TRUE;
         units[] = {CLASSES_VEHICLES};
         weapons[] = {CLASSES_WEAPONS};
-        requiredVersion = 1.62;
+        requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "ace_nouniformrestrictions"
             , "OPTRE_Core"
