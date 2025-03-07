@@ -1,50 +1,57 @@
-#define CLASSES_VEHICLES                  \
-  "SWS_O_URArmy_Anti_Air_Person_01"       \
-  , "SWS_O_URArmy_Anti_Tank_Person_01_01" \
-  , "SWS_O_URArmy_Automatic_Rifle_01"     \
-  , "SWS_O_URArmy_Black_Crusader_01"      \
-  , "SWS_O_URArmy_Black_Crusader_Lead_01" \
-  , "SWS_O_URArmy_Black_Eagle_01"         \
-  , "SWS_O_URArmy_Covered_Truck_01"       \
-  , "SWS_O_URArmy_Crew_01"                \
-  , "SWS_O_URArmy_HMG_Dagger_01"          \
-  , "SWS_O_URArmy_HMG_Jeep_01"            \
-  , "SWS_O_URArmy_JAS_AIR_01"             \
-  , "SWS_O_URArmy_Jeep_01"                \
-  , "SWS_O_URArmy_Kajman_01"              \
-  , "SWS_O_URArmy_Light_Marksmen_01"      \
-  , "SWS_O_URArmy_Marine_1_01"            \
-  , "SWS_O_URArmy_Marine_2_01"            \
-  , "SWS_O_URArmy_Marine_Medic_01"        \
-  , "SWS_O_URArmy_Marine_MG_01"           \
-  , "SWS_O_URArmy_Marine_Team_Lead_01"    \
-  , "SWS_O_URArmy_Marksman_01"            \
-  , "SWS_O_URArmy_Medic_01"               \
-  , "SWS_O_URArmy_Merlin_Transport_01"    \
-  , "SWS_O_URArmy_Range_Autorifle_01"     \
-  , "SWS_O_URArmy_Ranger_01_01"           \
-  , "SWS_O_URArmy_Ranger_02_01"           \
-  , "SWS_O_URArmy_Ranger_Marksmen_01"     \
-  , "SWS_O_URArmy_Ranger_Medic_01"        \
-  , "SWS_O_URArmy_Ranger_Team_Lead_01"    \
-  , "SWS_O_URArmy_Rat_AA_01"              \
-  , "SWS_O_URArmy_Rat_ATGM_01"            \
-  , "SWS_O_URArmy_Rat_Light_01"           \
-  , "SWS_O_URArmy_Red_Eagle_01"           \
-  , "SWS_O_URArmy_Rifleperson_1_01"       \
-  , "SWS_O_URArmy_Rifleperson_2_01"       \
-  , "SWS_O_URArmy_Shadow_01"              \
-  , "SWS_O_URArmy_Sniper_01"              \
-  , "SWS_O_URArmy_Spotter_01"             \
-  , "SWS_O_URArmy_Squad_Lead_01"          \
-  , "SWS_O_URArmy_Stalker_01"             \
-  , "SWS_O_URArmy_Taru_Transport_01"      \
-  , "SWS_O_URArmy_Team_Lead_01"           \
-  , "SWS_O_URArmy_Tiger_01"               \
-  , "SWS_O_URArmy_Warrior_01"             \
-  , "SWS_O_URArmy_Wildcat_01"             \
-  , "SWS_O_URArmy_YAK_CAS_01"             \
-  , "SWS_O_URArmy_Anti_Tank_Person_02_01"
+#define CLASSES_VEHICLES                                \
+  "SWS_O_URArmy_Anti_Air_Person_01"                     \
+  , "SWS_O_URArmy_Anti_Tank_Person_01_01"               \
+  , "SWS_O_URArmy_Automatic_Rifle_01"                   \
+  , "SWS_O_URArmy_Black_Crusader_01"                    \
+  , "SWS_O_URArmy_Black_Crusader_Lead_01"               \
+  , "SWS_O_URArmy_Black_Eagle_01"                       \
+  , "SWS_O_URArmy_Covered_Truck_01"                     \
+  , "SWS_O_URArmy_Crew_01"                              \
+  , "SWS_O_URArmy_HMG_Dagger_01"                        \
+  , "SWS_O_URArmy_HMG_Jeep_01"                          \
+  , "SWS_O_URArmy_JAS_AIR_01"                           \
+  , "SWS_O_URArmy_Jeep_01"                              \
+  , "SWS_O_URArmy_Kajman_01"                            \
+  , "SWS_O_URArmy_Light_Marksmen_01"                    \
+  , "SWS_O_URArmy_Marine_1_01"                          \
+  , "SWS_O_URArmy_Marine_2_01"                          \
+  , "SWS_O_URArmy_Marine_Medic_01"                      \
+  , "SWS_O_URArmy_Marine_MG_01"                         \
+  , "SWS_O_URArmy_Marine_Team_Lead_01"                  \
+  , "SWS_O_URArmy_Marksman_01"                          \
+  , "SWS_O_URArmy_Medic_01"                             \
+  , "SWS_O_URArmy_Merlin_Transport_01"                  \
+  , "SWS_O_URArmy_Range_Autorifle_01"                   \
+  , "SWS_O_URArmy_Ranger_01_01"                         \
+  , "SWS_O_URArmy_Ranger_02_01"                         \
+  , "SWS_O_URArmy_Ranger_Marksmen_01"                   \
+  , "SWS_O_URArmy_Ranger_Medic_01"                      \
+  , "SWS_O_URArmy_Ranger_Team_Lead_01"                  \
+  , "SWS_O_URArmy_Rat_AA_01"                            \
+  , "SWS_O_URArmy_Rat_ATGM_01"                          \
+  , "SWS_O_URArmy_Rat_Light_01"                         \
+  , "SWS_O_URArmy_Red_Eagle_01"                         \
+  , "SWS_O_URArmy_Rifleperson_1_01"                     \
+  , "SWS_O_URArmy_Rifleperson_2_01"                     \
+  , "SWS_O_URArmy_Shadow_01"                            \
+  , "SWS_O_URArmy_Sniper_01"                            \
+  , "SWS_O_URArmy_Spotter_01"                           \
+  , "SWS_O_URArmy_Squad_Lead_01"                        \
+  , "SWS_O_URArmy_Stalker_01"                           \
+  , "SWS_O_URArmy_Taru_Transport_01"                    \
+  , "SWS_O_URArmy_Team_Lead_01"                         \
+  , "SWS_O_URArmy_Tiger_01"                             \
+  , "SWS_O_URArmy_Warrior_01"                           \
+  , "SWS_O_URArmy_Wildcat_01"                           \
+  , "SWS_O_URArmy_YAK_CAS_01"                           \
+  , "SWS_O_URArmy_Anti_Tank_Person_02_01"               \
+  , "SWS_O_URArmy_B_RangerAutoRifle_ViperHarness_hex_F" \
+  , "SWS_O_URArmy_B_Medic_ViperHarness_hex_F"           \
+  , "SWS_O_URArmy_B_Antitank1_ViperLightHarness_blk_F"  \
+  , "SWS_O_URArmy_B_RadioBag_01_black_F"                \
+  , "SWS_O_URArmy_B_CombinationUnitRespirator_01_F"     \
+  , "SWS_O_URArmy_B_Autorifle_Carryall_blk"             \
+  , "SWS_O_URArmy_B_Marksmen_Carryall_blk"
 
 class CfgVehicles {
   class B_MBT_01_Cannon_F;
@@ -80,7 +87,7 @@ class CfgVehicles {
   class B_ViperHarness_hex_F;
 
   #pragma region Bags
-  class SWS_B_RangerAutoRifle_ViperHarness_hex_F : B_ViperHarness_hex_F {
+  class SWS_O_URArmy_B_RangerAutoRifle_ViperHarness_hex_F : B_ViperHarness_hex_F {
     ITEM_META(1);
     class TransportMagazines {
       MACRO_ADDMAGAZINE(DMNS_100Rnd_762x51_Mag,2);
@@ -96,7 +103,7 @@ class CfgVehicles {
     };
   };
 
-  class SWS_B_Medic_ViperHarness_hex_F : B_ViperHarness_hex_F {
+  class SWS_O_URArmy_B_Medic_ViperHarness_hex_F : B_ViperHarness_hex_F {
     ITEM_META(1);
 
     class TransportMagazines {};
@@ -110,7 +117,7 @@ class CfgVehicles {
     };
   };
 
-  class SWS_B_Antitank2_ViperLightHarness_blk_F : B_ViperLightHarness_blk_F {
+  class SWS_O_URArmy_B_Antitank2_ViperLightHarness_blk_F : B_ViperLightHarness_blk_F {
     ITEM_META(1);
     class TransportMagazines {
       MACRO_ADDMAGAZINE(MRAWS_HEAT_F,2);
@@ -125,7 +132,7 @@ class CfgVehicles {
     };
   };
 
-  class SWS_B_Antitank1_ViperLightHarness_blk_F : B_ViperLightHarness_blk_F {
+  class SWS_O_URArmy_B_Antitank1_ViperLightHarness_blk_F : B_ViperLightHarness_blk_F {
     ITEM_META(1);
     class TransportMagazines { MACRO_ADDMAGAZINE(Vorona_HEAT,3); };
 
@@ -138,7 +145,7 @@ class CfgVehicles {
     };
   };
 
-  class SWS_B_AntiAir_ViperLightHarness_blk_F : B_ViperLightHarness_blk_F {
+  class SWS_O_URArmy_B_AntiAir_ViperLightHarness_blk_F : B_ViperLightHarness_blk_F {
     ITEM_META(1);
     class TransportMagazines {
       MACRO_ADDMAGAZINE(Titan_AA,2);
@@ -153,7 +160,7 @@ class CfgVehicles {
     };
   };
 
-  class SWS_B_RadioBag_01_black_F : B_RadioBag_01_black_F {
+  class SWS_O_URArmy_B_RadioBag_01_black_F : B_RadioBag_01_black_F {
     ITEM_META(1);
     class TransportMagazines { };
 
@@ -167,7 +174,7 @@ class CfgVehicles {
     };
   };
 
-  class SWS_B_CombinationUnitRespirator_01_F : B_CombinationUnitRespirator_01_F {
+  class SWS_O_URArmy_B_CombinationUnitRespirator_01_F : B_CombinationUnitRespirator_01_F {
     ITEM_META(1);
     class TransportMagazines { };
 
@@ -180,7 +187,7 @@ class CfgVehicles {
     };
   };
 
-  class SWS_B_Autorifle_Carryall_blk : B_Carryall_blk {
+  class SWS_O_URArmy_B_Autorifle_Carryall_blk : B_Carryall_blk {
     ITEM_META(1);
     class TransportMagazines {
       MACRO_ADDMAGAZINE(130Rnd_338_Mag,1);
@@ -195,7 +202,7 @@ class CfgVehicles {
     };
   };
 
-  class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
+  class SWS_O_URArmy_B_Marksmen_Carryall_blk : B_Carryall_blk {
     ITEM_META(1);
     class TransportMagazines {
       MACRO_ADDMAGAZINE(10Rnd_338_Mag,4);
@@ -232,7 +239,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X3("30Rnd_762x39_AK12_Mag_F"),"MRAWS_HEAT_F","11Rnd_45ACP_Mag","Laserbatteries"};
     respawnMagazines[] = {MACRO_X3("30Rnd_762x39_AK12_Mag_F"),"MRAWS_HEAT_F","11Rnd_45ACP_Mag","Laserbatteries"};
 
-    backpack = "SWS_B_Antitank2_ViperLightHarness_blk_F";
+    backpack = "SWS_O_URArmy_B_Antitank2_ViperLightHarness_blk_F";
   };
 
   class SWS_O_URArmy_Squad_Lead_01 : I_Soldier_SL_F {
@@ -257,7 +264,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X4("30Rnd_762x39_AK12_Mag_F"),MACRO_X3("1Rnd_HE_Grenade_shell"),MACRO_X2("11Rnd_45ACP_Mag"),"Laserbatteries"};
     respawnMagazines[] = {MACRO_X4("30Rnd_762x39_AK12_Mag_F"),MACRO_X3("1Rnd_HE_Grenade_shell"),MACRO_X2("11Rnd_45ACP_Mag"),"Laserbatteries"};
 
-    backpack = "SWS_B_RadioBag_01_black_F";
+    backpack = "SWS_O_URArmy_B_RadioBag_01_black_F";
   };
 
 
@@ -280,7 +287,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X4("30Rnd_762x39_AK12_Mag_F"),MACRO_X3("11Rnd_45ACP_Mag"),"Laserbatteries"};
     respawnMagazines[] = {MACRO_X4("30Rnd_762x39_AK12_Mag_F"),MACRO_X3("11Rnd_45ACP_Mag"),"Laserbatteries"};
 
-    backpack = "SWS_B_RadioBag_01_black_F";
+    backpack = "SWS_O_URArmy_B_RadioBag_01_black_F";
   };
 
   class SWS_O_URArmy_Rifleperson_1_01 : SWS_O_URArmy_Team_Lead_01 {
@@ -302,7 +309,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X5("30Rnd_762x39_AK12_Mag_F"),MACRO_X3("11Rnd_45ACP_Mag")};
     respawnMagazines[] = {MACRO_X5("30Rnd_762x39_AK12_Mag_F"),MACRO_X3("11Rnd_45ACP_Mag")};
 
-    backpack = "SWS_B_CombinationUnitRespirator_01_F";
+    backpack = "SWS_O_URArmy_B_CombinationUnitRespirator_01_F";
   };
 
   class SWS_O_URArmy_Rifleperson_2_01 : SWS_O_URArmy_Rifleperson_1_01 {
@@ -324,7 +331,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X5("OPTRE_32Rnd_762x51_Mag"),MACRO_X3("11Rnd_45ACP_Mag")};
     respawnMagazines[] = {MACRO_X5("OPTRE_32Rnd_762x51_Mag"),MACRO_X3("11Rnd_45ACP_Mag")};
 
-    backpack = "SWS_B_CombinationUnitRespirator_01_F";
+    backpack = "SWS_O_URArmy_B_CombinationUnitRespirator_01_F";
   };
 
   class SWS_O_URArmy_Automatic_Rifle_01 : SWS_O_URArmy_Rifleperson_2_01 {
@@ -346,7 +353,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X3("130Rnd_338_Mag"),MACRO_X3("11Rnd_45ACP_Mag")};
     respawnMagazines[] = {MACRO_X3("130Rnd_338_Mag"),MACRO_X3("11Rnd_45ACP_Mag")};
 
-    backpack = "SWS_B_Autorifle_Carryall_blk";
+    backpack = "SWS_O_URArmy_B_Autorifle_Carryall_blk";
   };
 
   class SWS_O_URArmy_Medic_01 : SWS_O_URArmy_Rifleperson_2_01 {
@@ -368,7 +375,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X3("OPTRE_32Rnd_762x51_Mag"),MACRO_X3("11Rnd_45ACP_Mag")};
     respawnMagazines[] = {MACRO_X3("OPTRE_32Rnd_762x51_Mag"),MACRO_X3("11Rnd_45ACP_Mag")};
 
-    backpack = "SWS_B_CombinationUnitRespirator_01_F";
+    backpack = "SWS_O_URArmy_B_CombinationUnitRespirator_01_F";
   };
 
   class SWS_O_URArmy_Marksman_01 : SWS_O_URArmy_Automatic_Rifle_01 {
@@ -390,7 +397,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X5("10Rnd_338_Mag"),MACRO_X3("11Rnd_45ACP_Mag"),"Laserbatteries"};
     respawnMagazines[] = {MACRO_X5("10Rnd_338_Mag"),MACRO_X3("11Rnd_45ACP_Mag"),"Laserbatteries"};
 
-    backpack = "SWS_B_Marksmen_Carryall_blk";
+    backpack = "SWS_O_URArmy_B_Marksmen_Carryall_blk";
   };
 
   class SWS_O_URArmy_Crew_01 : SWS_O_URArmy_Rifleperson_1_01 {
@@ -412,7 +419,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X5("30Rnd_9x21_Mag"),"11Rnd_45ACP_Mag"};
     respawnMagazines[] = {MACRO_X5("30Rnd_9x21_Mag"),"11Rnd_45ACP_Mag"};
 
-    backpack = "SWS_B_CombinationUnitRespirator_01_F";
+    backpack = "SWS_O_URArmy_B_CombinationUnitRespirator_01_F";
   };
 
   class SWS_O_URArmy_Sniper_01 : SWS_O_URArmy_Marksman_01 {
@@ -434,7 +441,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X5("5Rnd_127x108_Mag"),MACRO_X4("11Rnd_45ACP_Mag"),"Laserbatteries"};
     respawnMagazines[] = {MACRO_X5("5Rnd_127x108_Mag"),MACRO_X4("11Rnd_45ACP_Mag"),"Laserbatteries"};
 
-    backpack = "SWS_B_RadioBag_01_black_F";
+    backpack = "SWS_O_URArmy_B_RadioBag_01_black_F";
   };
 
   class SWS_O_URArmy_Spotter_01 : SWS_O_URArmy_Sniper_01 {
@@ -456,7 +463,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X5("30rnd_762x39_AK12_Lush_Mag_F"),MACRO_X4("11Rnd_45ACP_Mag"),"Laserbatteries"};
     respawnMagazines[] = {MACRO_X5("30rnd_762x39_AK12_Lush_Mag_F"),MACRO_X4("11Rnd_45ACP_Mag"),"Laserbatteries"};
 
-    backpack = "SWS_B_Marksmen_Carryall_blk";
+    backpack = "SWS_O_URArmy_B_Marksmen_Carryall_blk";
   };
 
   class SWS_O_URArmy_Marine_1_01 : SWS_O_URArmy_Rifleperson_1_01 {
@@ -478,7 +485,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X5("30Rnd_762x39_AK12_Mag_F"),MACRO_X3("11Rnd_45ACP_Mag")};
     respawnMagazines[] = {MACRO_X5("30Rnd_762x39_AK12_Mag_F"),MACRO_X3("11Rnd_45ACP_Mag")};
 
-    backpack = "SWS_B_CombinationUnitRespirator_01_F";
+    backpack = "SWS_O_URArmy_B_CombinationUnitRespirator_01_F";
   };
 
   class SWS_O_URArmy_Marine_2_01 : SWS_O_URArmy_Marine_1_01 {
@@ -500,7 +507,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X5("SWS_Magazine_12_Rnd_Shotgun_Incendiary"),MACRO_X5("11Rnd_45ACP_Mag")};
     respawnMagazines[] = {MACRO_X5("SWS_Magazine_12_Rnd_Shotgun_Incendiary"),MACRO_X5("11Rnd_45ACP_Mag")};
 
-    backpack = "SWS_B_CombinationUnitRespirator_01_F";
+    backpack = "SWS_O_URArmy_B_CombinationUnitRespirator_01_F";
   };
 
   class SWS_O_URArmy_Marine_Team_Lead_01 : SWS_O_URArmy_Marine_1_01 {
@@ -522,7 +529,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X5("60Rnd_5x23_m7_fmj"),MACRO_X4("11Rnd_45ACP_Mag"),"Laserbatteries"};
     respawnMagazines[] = {MACRO_X5("60Rnd_5x23_m7_fmj"),MACRO_X4("11Rnd_45ACP_Mag"),"Laserbatteries"};
 
-    backpack = "SWS_B_RadioBag_01_black_F";
+    backpack = "SWS_O_URArmy_B_RadioBag_01_black_F";
   };
 
   class SWS_O_URArmy_Marine_Medic_01 : SWS_O_URArmy_Marine_Team_Lead_01 {
@@ -544,7 +551,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X5("60Rnd_5x23_m7_fmj"),MACRO_X3("11Rnd_45ACP_Mag")};
     respawnMagazines[] = {MACRO_X5("60Rnd_5x23_m7_fmj"),MACRO_X3("11Rnd_45ACP_Mag")};
 
-    backpack = "SWS_B_CombinationUnitRespirator_01_F";
+    backpack = "SWS_O_URArmy_B_CombinationUnitRespirator_01_F";
   };
 
   class SWS_O_URArmy_Warrior_01 : I_APC_Tracked_03_Cannon_F {
@@ -671,7 +678,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X4("OPTRE_32Rnd_762x51_Mag"),MACRO_X3("11Rnd_45ACP_Mag")};
     respawnMagazines[] = {MACRO_X4("OPTRE_32Rnd_762x51_Mag"),MACRO_X3("11Rnd_45ACP_Mag")};
 
-    backpack = "SWS_B_Antitank1_ViperLightHarness_blk_F";
+    backpack = "SWS_O_URArmy_B_Antitank1_ViperLightHarness_blk_F";
   };
 
   class SWS_O_URArmy_Light_Marksmen_01 : I_Soldier_SL_F {
@@ -696,7 +703,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X5("20Rnd_762x51_Mag"),MACRO_X3("11Rnd_45ACP_Mag"),"Laserbatteries"};
     respawnMagazines[] = {MACRO_X5("20Rnd_762x51_Mag"),MACRO_X3("11Rnd_45ACP_Mag"),"Laserbatteries"};
 
-    backpack = "SWS_B_CombinationUnitRespirator_01_F";
+    backpack = "SWS_O_URArmy_B_CombinationUnitRespirator_01_F";
   };
 
   class SWS_O_URArmy_Anti_Air_Person_01 : I_Soldier_SL_F {
@@ -721,7 +728,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X4("30Rnd_762x39_AK12_Mag_F"),MACRO_X3("11Rnd_45ACP_Mag"),"Laserbatteries","Titan_AA"};
     respawnMagazines[] = {MACRO_X4("30Rnd_762x39_AK12_Mag_F"),MACRO_X3("11Rnd_45ACP_Mag"),"Laserbatteries"};
 
-    backpack = "SWS_B_AntiAir_ViperLightHarness_blk_F";
+    backpack = "SWS_O_URArmy_B_AntiAir_ViperLightHarness_blk_F";
   };
 
   class SWS_O_URArmy_Marine_MG_01 : I_Soldier_AR_F {
@@ -746,7 +753,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X3("200Rnd_65x39_cased_Box"),MACRO_X3("11Rnd_45ACP_Mag")};
     respawnMagazines[] = {MACRO_X3("200Rnd_65x39_cased_Box"),MACRO_X3("11Rnd_45ACP_Mag")};
 
-    backpack = "SWS_B_CombinationUnitRespirator_01_F";
+    backpack = "SWS_O_URArmy_B_CombinationUnitRespirator_01_F";
   };
 
   class SWS_O_URArmy_Stalker_01 : O_APC_Tracked_02_Cannon_F {
@@ -891,7 +898,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X5("32Rnd_762x51_MA5"),MACRO_X3("11Rnd_45ACP_Mag")};
     respawnMagazines[] = {MACRO_X5("32Rnd_762x51_MA5"),MACRO_X3("11Rnd_45ACP_Mag")};
 
-    backpack = "SWS_B_CombinationUnitRespirator_01_F";
+    backpack = "SWS_O_URArmy_B_CombinationUnitRespirator_01_F";
   };
 
   class SWS_O_URArmy_Ranger_02_01 : SWS_O_URArmy_Ranger_01_01 {
@@ -913,7 +920,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X5("OPTRE_32Rnd_762x51_Mag"),MACRO_X2("11Rnd_45ACP_Mag")};
     respawnMagazines[] = {MACRO_X5("OPTRE_32Rnd_762x51_Mag"),MACRO_X2("11Rnd_45ACP_Mag")};
 
-    backpack = "SWS_B_CombinationUnitRespirator_01_F";
+    backpack = "SWS_O_URArmy_B_CombinationUnitRespirator_01_F";
   };
 
   class SWS_O_URArmy_Ranger_Team_Lead_01 : SWS_O_URArmy_Ranger_01_01 {
@@ -935,7 +942,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X5("32Rnd_762x51_MA5"),MACRO_X3("1Rnd_HE_Grenade_shell"),MACRO_X2("11Rnd_45ACP_Mag")};
     respawnMagazines[] = {MACRO_X5("32Rnd_762x51_MA5"),MACRO_X3("1Rnd_HE_Grenade_shell"),MACRO_X2("11Rnd_45ACP_Mag")};
 
-    backpack = "SWS_B_RadioBag_01_black_F";
+    backpack = "SWS_O_URArmy_B_RadioBag_01_black_F";
   };
 
   class SWS_O_URArmy_Range_Autorifle_01 : SWS_O_URArmy_Ranger_01_01 {
@@ -957,7 +964,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X3("DMNS_100Rnd_762x51_Mag"),MACRO_X3("11Rnd_45ACP_Mag")};
     respawnMagazines[] = {MACRO_X3("DMNS_100Rnd_762x51_Mag"),MACRO_X3("11Rnd_45ACP_Mag")};
 
-    backpack = "SWS_B_RangerAutoRifle_ViperHarness_hex_F";
+    backpack = "SWS_O_URArmy_B_RangerAutoRifle_ViperHarness_hex_F";
   };
 
   class SWS_O_URArmy_Ranger_Marksmen_01 : SWS_O_URArmy_Ranger_02_01 {
@@ -979,7 +986,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X5("10Rnd_93x64_DMR_05_Mag"),MACRO_X3("11Rnd_45ACP_Mag")};
     respawnMagazines[] = {MACRO_X5("10Rnd_93x64_DMR_05_Mag"),MACRO_X3("11Rnd_45ACP_Mag")};
 
-    backpack = "SWS_B_CombinationUnitRespirator_01_F";
+    backpack = "SWS_O_URArmy_B_CombinationUnitRespirator_01_F";
   };
 
   class SWS_O_URArmy_Ranger_Medic_01 : SWS_O_URArmy_Range_Autorifle_01 {
@@ -1001,7 +1008,7 @@ class CfgVehicles {
     magazines[] = {MACRO_X5("60Rnd_5x23_m7_fmj"),MACRO_X3("11Rnd_45ACP_Mag")};
     respawnMagazines[] = {MACRO_X5("60Rnd_5x23_m7_fmj"),MACRO_X3("11Rnd_45ACP_Mag")};
 
-    backpack = "SWS_B_Medic_ViperHarness_hex_F";
+    backpack = "SWS_O_URArmy_B_Medic_ViperHarness_hex_F";
   };
 
   class SWS_O_URArmy_Black_Eagle_01 : O_MBT_02_Cannon_F {
