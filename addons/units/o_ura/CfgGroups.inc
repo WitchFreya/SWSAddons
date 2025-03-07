@@ -1,12 +1,12 @@
 class CfgGroups {
-  class EAST {
+  class East {
     class SWS_O_URArmy {
       name = "[SWS] United Rebel Alliance";
 
       class Infantry {
         name = "Infantry";
 
-        class sws_o_urarmy_infantry_squad {
+        class SWS_O_URArmy_Infantry_Squad {
           name = "Squad";
           side = SIDE_OPFOR;
           faction = "sws_o_urarmy";
@@ -75,7 +75,7 @@ class CfgGroups {
           };
         };
 
-        class sws_o_urarmy_infantry_team {
+        class SWS_O_URArmy_Infantry_Team {
           name = "Team";
           side = SIDE_OPFOR;
           faction = "sws_o_urarmy";
@@ -111,7 +111,7 @@ class CfgGroups {
           };
         };
 
-        class sws_o_urarmy_infantry_patrol {
+        class SWS_O_URArmy_Infantry_Patrol {
           name = "Patrol";
           side = SIDE_OPFOR;
           faction = "sws_o_urarmy";
@@ -132,7 +132,7 @@ class CfgGroups {
           };
         };
 
-        class sws_o_urarmy_infantry_sniper_team {
+        class SWS_O_URArmy_Infantry_Sniper_Team {
           name = "Sniper Team";
           side = SIDE_OPFOR;
           faction = "sws_o_urarmy";
@@ -153,7 +153,7 @@ class CfgGroups {
           };
         };
 
-        class sws_o_urarmy_infantry_mg_team {
+        class SWS_O_URArmy_Infantry_MG_Team {
           name = "MG Team";
           side = SIDE_OPFOR;
           faction = "sws_o_urarmy";
@@ -186,7 +186,7 @@ class CfgGroups {
           };
         };
 
-        class sws_o_urarmy_infantry_marksmen_team {
+        class SWS_O_URArmy_Infantry_Marksmen_Team {
           name = "Marksmen Team";
           side = SIDE_OPFOR;
           faction = "sws_o_urarmy";
@@ -219,7 +219,7 @@ class CfgGroups {
           };
         };
 
-        class sws_o_urarmy_infantry_at_team {
+        class SWS_O_URArmy_Infantry_AT_Team {
           name = "AT Team";
           side = SIDE_OPFOR;
           faction = "sws_o_urarmy";
@@ -252,7 +252,7 @@ class CfgGroups {
           };
         };
 
-        class sws_o_urarmy_infantry_aa_team {
+        class SWS_O_URArmy_Infantry_AA_Team {
           name = "AA Team";
           side = SIDE_OPFOR;
           faction = "sws_o_urarmy";
@@ -289,7 +289,7 @@ class CfgGroups {
       class SpecOps {
         name = "SpecOps";
 
-        class sws_o_urarmy_infantry_marine_team {
+        class SWS_O_URArmy_Infantry_Marine_Team {
           name = "Marine Team";
           side = SIDE_OPFOR;
           faction = "sws_o_urarmy";
@@ -322,7 +322,7 @@ class CfgGroups {
           };
         };
 
-        class sws_o_urarmy_infantry_marine_squad {
+        class SWS_O_URArmy_Infantry_Marine_Squad {
           name = "Marine Squad";
           side = SIDE_OPFOR;
           faction = "sws_o_urarmy";
@@ -367,7 +367,7 @@ class CfgGroups {
           };
         };
 
-        class sws_o_urarmy_specops_ranger_team {
+        class SWS_O_URArmy_SpecOps_Ranger_Team {
           name = "Ranger Team";
           side = SIDE_OPFOR;
           faction = "SWS_O_URArmy";
@@ -416,7 +416,7 @@ class CfgGroups {
       class Mechanized {
         name = "Mechanized";
 
-        class sws_o_urarmy_mechanized_apc_squad {
+        class SWS_O_URArmy_Mechanized_APC_Squad {
           name = "APC Squad";
           side = SIDE_OPFOR;
           faction = "sws_o_urarmy";
@@ -447,7 +447,7 @@ class CfgGroups {
       class Armored {
         name = "Armored";
 
-        class sws_o_urarmy_armored_tank_squadron {
+        class SWS_O_URArmy_Armored_Tank_Squadron {
           name = "Tank Squad";
           side = SIDE_OPFOR;
           faction = "SWS_O_URArmy";
@@ -480,7 +480,7 @@ class CfgGroups {
           };
         };
 
-        class sws_o_urarmy_armored_light_tank_squad {
+        class SWS_O_URArmy_Armored_Light_Tank_Squad {
           name = "Light Tank Squad";
           side = SIDE_OPFOR;
           faction = "SWS_O_URArmy";
