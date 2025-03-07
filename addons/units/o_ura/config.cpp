@@ -19,19 +19,22 @@ class EventHandlers;
 #include "CfgVehicles.inc"
 
 class CfgPatches {
-    class SUBADDON {
-        addonRootClass = QUOTE(ADDON);
-        author = QUOTE(AUTHOR);
-        authors[] = {AUTHORS};
-        skipWhenMissingDependencies = TRUE;
-        units[] = {CLASSES_VEHICLES};
-        weapons[] = {CLASSES_WEAPONS};
-        requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {
-            "ace_nouniformrestrictions"
-            , "OPTRE_Core"
-            , "OPTRE_Vehicles"
-        };
-        VERSION_CONFIG;
+  class SUBADDON {
+    addonRootClass = QUOTE(ADDON);
+    author = QUOTE(AUTHOR);
+    authors[] = {AUTHORS};
+    skipWhenMissingDependencies = TRUE;
+    units[] = {CLASSES_VEHICLES};
+    weapons[] = {CLASSES_WEAPONS};
+    requiredVersion = REQUIRED_VERSION;
+    requiredAddons[] = {
+      "ace_nouniformrestrictions"
+      , "OPTRE_Core"
+      , "OPTRE_Vehicles"
+      , "OPTRE_Weapons_MA37K"
+      , "19_UNSC_Weapons"
+      , "Dmns_Weapons_F_MachineGuns"
     };
+    VERSION_CONFIG;
+  };
 };
