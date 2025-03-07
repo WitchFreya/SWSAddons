@@ -1,20 +1,21 @@
 #define CLASSES_WEAPONS \
   "SWS_HGun_Pistol_Heavy_01_F_Flashlight"
-class H_PASGT_basic_black_F;
-class arifle_AK12_F;
-class arifle_AK12_GL_F;
-class OPTRE_MA37K;
-class MMG_02_black_F;
-class srifle_DMR_02_F;
-class srifle_GM6_ghex_F;
-class 19_UNSC_M7;
-class srifle_EBR_F;
-class LMG_Mk200_black_F;
-class Dmns_M33_T;
-class srifle_DMR_05_tan_f;
 
 class CfgWeapons {
+  class H_PASGT_basic_black_F;
+  class arifle_AK12_F;
+  class arifle_AK12_GL_F;
+  class OPTRE_MA37K;
+  class MMG_02_black_F;
+  class srifle_DMR_02_F;
+  class srifle_GM6_ghex_F;
+  class 19_UNSC_M7;
+  class srifle_EBR_F;
+  class LMG_Mk200_black_F;
+  class Dmns_M33_T;
   class HGun_Pistol_Heavy_01_F;
+  class SRifle_DMR_05_Tan_F;
+
   class SWS_HGun_Pistol_Heavy_01_F_Flashlight : HGun_Pistol_Heavy_01_F {
     ITEM_META(1);
     COMMENT("Provides a flashlight to the .45 for use with the URA.");
@@ -183,7 +184,7 @@ class CfgWeapons {
   };
 
 
-class SWS_srifle_DMR_05_tan_f : srifle_DMR_05_tan_f {
+class SWS_SRifle_DMR_05_Tan_F : SRifle_DMR_05_Tan_F {
     scope = 1;
     class LinkedItems {
       class LinkedItemsMuzzle {

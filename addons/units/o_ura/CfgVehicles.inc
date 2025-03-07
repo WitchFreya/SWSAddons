@@ -46,8 +46,6 @@
   , "SWS_O_URArmy_YAK_CAS_01"             \
   , "SWS_O_URArmy_Anti_Tank_Person_02_01"
 
-class CBA_Extended_EventHandlers_base;
-
 class CfgVehicles {
   class B_MBT_01_Cannon_F;
   class B_Recon_M_F;
@@ -75,168 +73,146 @@ class CfgVehicles {
   class O_Truck_02_Covered_F;
   class C_Offroad_02_Unarmed_F;
 
-class B_RadioBag_01_black_F;
-class B_CombinationUnitRespirator_01_F;
-class B_Carryall_blk;
-class B_ViperLightHarness_blk_F;
-class B_ViperHarness_hex_F;
+  class B_RadioBag_01_black_F;
+  class B_CombinationUnitRespirator_01_F;
+  class B_Carryall_blk;
+  class B_ViperLightHarness_blk_F;
+  class B_ViperHarness_hex_F;
 
-class SWS_B_RangerAutoRifle_ViperHarness_hex_F : B_ViperHarness_hex_F{
+  #pragma region Bags
+  class SWS_B_RangerAutoRifle_ViperHarness_hex_F : B_ViperHarness_hex_F {
     ITEM_META(1);
-  class TransportMagazines
-  {
-    MACRO_ADDMAGAZINE(DMNS_100Rnd_762x51_Mag,2);
+    class TransportMagazines {
+      MACRO_ADDMAGAZINE(DMNS_100Rnd_762x51_Mag,2);
+    };
+
+    class TransportItems {
+      MACRO_ADDITEM(SWS_Biofoam,2);
+      MACRO_ADDITEM(ACE_bloodIV,3);
+      MACRO_ADDITEM(ACE_elasticBandage,10);
+      MACRO_ADDITEM(ACE_tourniquet,2);
+      MACRO_ADDITEM(OPTRE_M2_Smoke,1);
+      MACRO_ADDITEM(HandGrenade,4);
+    };
   };
 
-  class TransportItems
-  {
-    MACRO_ADDITEM(SWS_Biofoam,2);
-    MACRO_ADDITEM(ACE_bloodIV,3);
-    MACRO_ADDITEM(ACE_elasticBandage,10);
-    MACRO_ADDITEM(ACE_tourniquet,2);
-    MACRO_ADDITEM(OPTRE_M2_Smoke,1);
-    MACRO_ADDITEM(HandGrenade,4);
-  };
-};
-
-class SWS_B_Medic_ViperHarness_hex_F : B_ViperHarness_hex_F{
+  class SWS_B_Medic_ViperHarness_hex_F : B_ViperHarness_hex_F {
     ITEM_META(1);
-  class TransportMagazines
-  {
 
+    class TransportMagazines {};
+    class TransportItems {
+      MACRO_ADDITEM(SWS_Biofoam,2);
+      MACRO_ADDITEM(ACE_bloodIV,3);
+      MACRO_ADDITEM(ACE_elasticBandage,10);
+      MACRO_ADDITEM(ACE_tourniquet,4);
+      MACRO_ADDITEM(OPTRE_M2_Smoke,3);
+      MACRO_ADDITEM(HandGrenade,4);
+    };
   };
 
-  class TransportItems
-  {
-    MACRO_ADDITEM(SWS_Biofoam,2);
-    MACRO_ADDITEM(ACE_bloodIV,3);
-    MACRO_ADDITEM(ACE_elasticBandage,10);
-    MACRO_ADDITEM(ACE_tourniquet,4);
-    MACRO_ADDITEM(OPTRE_M2_Smoke,3);
-    MACRO_ADDITEM(HandGrenade,4);
-  };
-};
+  class SWS_B_Antitank2_ViperLightHarness_blk_F : B_ViperLightHarness_blk_F {
+    ITEM_META(1);
+    class TransportMagazines {
+      MACRO_ADDMAGAZINE(MRAWS_HEAT_F,2);
+    };
 
-class SWS_B_Antitank2_ViperLightHarness_blk_F : B_ViperLightHarness_blk_F {
-  ITEM_META(1);
-  class TransportMagazines
-  {
-    MACRO_ADDMAGAZINE(MRAWS_HEAT_F,2);
+    class TransportItems {
+      MACRO_ADDITEM(SWS_Biofoam,2);
+      MACRO_ADDITEM(ACE_bloodIV,3);
+      MACRO_ADDITEM(ACE_elasticBandage,10);
+      MACRO_ADDITEM(ACE_tourniquet,2);
+      MACRO_ADDITEM(HandGrenade,1);
+    };
   };
 
-  class TransportItems
-  {
-    MACRO_ADDITEM(SWS_Biofoam,2);
-    MACRO_ADDITEM(ACE_bloodIV,3);
-    MACRO_ADDITEM(ACE_elasticBandage,10);
-    MACRO_ADDITEM(ACE_tourniquet,2);
-    MACRO_ADDITEM(HandGrenade,1);
-  };
-};
+  class SWS_B_Antitank1_ViperLightHarness_blk_F : B_ViperLightHarness_blk_F {
+    ITEM_META(1);
+    class TransportMagazines { MACRO_ADDMAGAZINE(Vorona_HEAT,3); };
 
-class SWS_B_Antitank1_ViperLightHarness_blk_F : B_ViperLightHarness_blk_F {
-  ITEM_META(1);
-  class TransportMagazines
-  {
-    MACRO_ADDMAGAZINE(Vorona_HEAT,3);
+    class TransportItems {
+      MACRO_ADDITEM(SWS_Biofoam,2);
+      MACRO_ADDITEM(ACE_bloodIV,3);
+      MACRO_ADDITEM(ACE_elasticBandage,10);
+      MACRO_ADDITEM(ACE_tourniquet,2);
+      MACRO_ADDITEM(HandGrenade,1);
+    };
   };
 
-  class TransportItems
-  {
-    MACRO_ADDITEM(SWS_Biofoam,2);
-    MACRO_ADDITEM(ACE_bloodIV,3);
-    MACRO_ADDITEM(ACE_elasticBandage,10);
-    MACRO_ADDITEM(ACE_tourniquet,2);
-    MACRO_ADDITEM(HandGrenade,1);
-  };
-};
+  class SWS_B_AntiAir_ViperLightHarness_blk_F : B_ViperLightHarness_blk_F {
+    ITEM_META(1);
+    class TransportMagazines {
+      MACRO_ADDMAGAZINE(Titan_AA,2);
+    };
 
-class SWS_B_AntiAir_ViperLightHarness_blk_F : B_ViperLightHarness_blk_F {
-  ITEM_META(1);
-  class TransportMagazines
-  {
-    MACRO_ADDMAGAZINE(Titan_AA,2);
+    class TransportItems {
+      MACRO_ADDITEM(SWS_Biofoam,2);
+      MACRO_ADDITEM(ACE_bloodIV,3);
+      MACRO_ADDITEM(ACE_elasticBandage,10);
+      MACRO_ADDITEM(ACE_tourniquet,2);
+      MACRO_ADDITEM(HandGrenade,1);
+    };
   };
 
-  class TransportItems
-  {
-    MACRO_ADDITEM(SWS_Biofoam,2);
-    MACRO_ADDITEM(ACE_bloodIV,3);
-    MACRO_ADDITEM(ACE_elasticBandage,10);
-    MACRO_ADDITEM(ACE_tourniquet,2);
-    MACRO_ADDITEM(HandGrenade,1);
-  };
-};
+  class SWS_B_RadioBag_01_black_F : B_RadioBag_01_black_F {
+    ITEM_META(1);
+    class TransportMagazines { };
 
-class SWS_B_RadioBag_01_black_F : B_RadioBag_01_black_F {
-  ITEM_META(1);
-  class TransportMagazines
-  {
-
+    class TransportItems {
+      MACRO_ADDITEM(SWS_Biofoam,2);
+      MACRO_ADDITEM(ACE_bloodIV,3);
+      MACRO_ADDITEM(ACE_elasticBandage,10);
+      MACRO_ADDITEM(ACE_tourniquet,4);
+      MACRO_ADDITEM(OPTRE_M2_Smoke,3);
+      MACRO_ADDITEM(HandGrenade,4);
+    };
   };
 
-  class TransportItems
-  {
-    MACRO_ADDITEM(SWS_Biofoam,2);
-    MACRO_ADDITEM(ACE_bloodIV,3);
-    MACRO_ADDITEM(ACE_elasticBandage,10);
-    MACRO_ADDITEM(ACE_tourniquet,4);
-    MACRO_ADDITEM(OPTRE_M2_Smoke,3);
-    MACRO_ADDITEM(HandGrenade,4);
-  };
-};
+  class SWS_B_CombinationUnitRespirator_01_F : B_CombinationUnitRespirator_01_F {
+    ITEM_META(1);
+    class TransportMagazines { };
 
-class SWS_B_CombinationUnitRespirator_01_F : B_CombinationUnitRespirator_01_F {
-  ITEM_META(1);
-  class TransportMagazines
-  {
-
+    class TransportItems {
+      MACRO_ADDITEM(SWS_Biofoam,1);
+      MACRO_ADDITEM(ACE_bloodIV,2);
+      MACRO_ADDITEM(ACE_elasticBandage,10);
+      MACRO_ADDITEM(ACE_tourniquet,2);
+      MACRO_ADDITEM(HandGrenade,2);
+    };
   };
 
-  class TransportItems
-  {
-    MACRO_ADDITEM(SWS_Biofoam,1);
-    MACRO_ADDITEM(ACE_bloodIV,2);
-    MACRO_ADDITEM(ACE_elasticBandage,10);
-    MACRO_ADDITEM(ACE_tourniquet,2);
-    MACRO_ADDITEM(HandGrenade,2);
-  };
-};
+  class SWS_B_Autorifle_Carryall_blk : B_Carryall_blk {
+    ITEM_META(1);
+    class TransportMagazines {
+      MACRO_ADDMAGAZINE(130Rnd_338_Mag,1);
+    };
 
-class SWS_B_Autorifle_Carryall_blk : B_Carryall_blk {
-   ITEM_META(1);
-  class TransportMagazines
-  {
-    MACRO_ADDMAGAZINE(130Rnd_338_Mag,1);
+    class TransportItems {
+      MACRO_ADDITEM(SWS_Biofoam,2);
+      MACRO_ADDITEM(ACE_bloodIV,2);
+      MACRO_ADDITEM(ACE_elasticBandage,10);
+      MACRO_ADDITEM(ACE_tourniquet,4);
+      MACRO_ADDITEM(HandGrenade,2);
+    };
   };
 
-  class TransportItems
-  {
-    MACRO_ADDITEM(SWS_Biofoam,2);
-    MACRO_ADDITEM(ACE_bloodIV,2);
-    MACRO_ADDITEM(ACE_elasticBandage,10);
-    MACRO_ADDITEM(ACE_tourniquet,4);
-    MACRO_ADDITEM(HandGrenade,2);
-  };
-};
+  class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
+    ITEM_META(1);
+    class TransportMagazines {
+      MACRO_ADDMAGAZINE(10Rnd_338_Mag,4);
+    };
 
-class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
-     ITEM_META(1);
-  class TransportMagazines
-  {
-    MACRO_ADDMAGAZINE(10Rnd_338_Mag,4);
+    class TransportItems {
+      MACRO_ADDITEM(SWS_Biofoam,2);
+      MACRO_ADDITEM(ACE_bloodIV,2);
+      MACRO_ADDITEM(ACE_elasticBandage,10);
+      MACRO_ADDITEM(ACE_tourniquet,4);
+      MACRO_ADDITEM(HandGrenade,2);
+      MACRO_ADDITEM(OPTRE_M2_Smoke,3);
+    };
   };
 
-  class TransportItems
-  {
-    MACRO_ADDITEM(SWS_Biofoam,2);
-    MACRO_ADDITEM(ACE_bloodIV,2);
-    MACRO_ADDITEM(ACE_elasticBandage,10);
-    MACRO_ADDITEM(ACE_tourniquet,4);
-    MACRO_ADDITEM(HandGrenade,2);
-    MACRO_ADDITEM(OPTRE_M2_Smoke,3);
-  };
-};
+  #pragma endregion
+
   class SWS_O_URArmy_Anti_Tank_Person_02_01 : B_Soldier_Exp_F {
     ITEM_META(2);
     displayName = "[SWS] URA Anti-Tank Person 02";
@@ -248,7 +224,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
     linkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnlinkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+    respawnLinkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
     weapons[] = {"SWS_AK_Rifle","launch_MRAWS_sand_rail_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"SWS_AK_Rifle","launch_MRAWS_sand_rail_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
@@ -270,7 +246,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
     linkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"};
-    respawnlinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"};
+    respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"};
 
     weapons[] = {"SWS_AK_Rifle_GL","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"SWS_AK_Rifle_GL","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
@@ -282,7 +258,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     respawnMagazines[] = {MACRO_X4("30Rnd_762x39_AK12_Mag_F"),MACRO_X3("1Rnd_HE_Grenade_shell"),MACRO_X2("11Rnd_45ACP_Mag"),"Laserbatteries"};
 
     backpack = "SWS_B_RadioBag_01_black_F";
-    };
+  };
 
 
   class SWS_O_URArmy_Team_Lead_01 : SWS_O_URArmy_Squad_Lead_01 {
@@ -296,7 +272,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
     linkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"};
-    respawnlinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"};
+    respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"};
 
     weapons[] = {"SWS_AK_Rifle","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"SWS_AK_Rifle","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
@@ -312,16 +288,13 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     displayName = "[SWS] URA Rifleperson 1";
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
-    class EventHandlers : EventHandlers 	{
-			// The function must be triggered to benefit from the randomisation, its usage is documented in its header (see link above)
-			init = "if (local (_this select 0)) then { [(_this select 0), [], []] call BIS_fnc_unitHeadgear; };";
-		};
+
     identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
     linkedItems[] = {"V_PlateCarrier2_blk","SWS_H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnlinkedItems[] = {"V_PlateCarrier2_blk","SWS_H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+    respawnLinkedItems[] = {"V_PlateCarrier2_blk","SWS_H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
     weapons[] = {"SWS_AK_Rifle","SWS_HGun_Pistol_Heavy_01_F_Flashlight"};
     respawnWeapons[] = {"SWS_AK_Rifle","SWS_HGun_Pistol_Heavy_01_F_Flashlight"};
@@ -343,7 +316,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
     linkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnlinkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+    respawnLinkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
     weapons[] = {"SWS_MA37K_Rifle","SWS_HGun_Pistol_Heavy_01_F_Flashlight"};
     respawnWeapons[] = {"SWS_MA37K_Rifle","SWS_HGun_Pistol_Heavy_01_F_Flashlight"};
@@ -352,9 +325,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     respawnMagazines[] = {MACRO_X5("OPTRE_32Rnd_762x51_Mag"),MACRO_X3("11Rnd_45ACP_Mag")};
 
     backpack = "SWS_B_CombinationUnitRespirator_01_F";
-
-
-    };
+  };
 
   class SWS_O_URArmy_Automatic_Rifle_01 : SWS_O_URArmy_Rifleperson_2_01 {
     ITEM_META(2);
@@ -367,7 +338,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
     linkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
-    respawnlinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
+    respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
 
     weapons[] = {"SWS_MMG_02_black_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight"};
     respawnWeapons[] = {"SWS_MMG_02_black_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight"};
@@ -389,7 +360,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
     linkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
-    respawnlinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
+    respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
 
     weapons[] = {"SWS_MA37K_Rifle","SWS_HGun_Pistol_Heavy_01_F_Flashlight"};
     respawnWeapons[] = {"SWS_MA37K_Rifle","SWS_HGun_Pistol_Heavy_01_F_Flashlight"};
@@ -411,7 +382,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
     linkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
-    respawnlinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
+    respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
 
     weapons[] = {"SWS_srifle_DMR_02_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"SWS_srifle_DMR_02_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
@@ -433,7 +404,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
     linkedItems[] = {"V_PlateCarrier1_blk","H_PilotHelmetFighter_B","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
-    respawnlinkedItems[] = {"V_PlateCarrier1_blk","H_PilotHelmetFighter_B","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
+    respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_PilotHelmetFighter_B","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
 
     weapons[] = {"hgun_PDW2000_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight"};
     respawnWeapons[] = {"hgun_PDW2000_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight"};
@@ -455,7 +426,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_B_CBRN_Suit_01_MTP_F";
 
     linkedItems[] = {"V_PlateCarrier1_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
-    respawnlinkedItems[] = {"V_PlateCarrier1_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
+    respawnLinkedItems[] = {"V_PlateCarrier1_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
 
     weapons[] = {"SWS_srifle_GM6_ghex_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"SWS_srifle_GM6_ghex_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
@@ -477,7 +448,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_B_CBRN_Suit_01_MTP_F";
 
     linkedItems[] = {"V_PlateCarrier2_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
-    respawnlinkedItems[] = {"V_PlateCarrier2_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
+    respawnLinkedItems[] = {"V_PlateCarrier2_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
 
     weapons[] = {"SWS_AK_Rifle","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"SWS_AK_Rifle","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
@@ -499,7 +470,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_C_CBRN_Suit_01_White_F";
 
     linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnlinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+    respawnLinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
     weapons[] = {"SWS_AK_Rifle","SWS_HGun_Pistol_Heavy_01_F_Flashlight"};
     respawnWeapons[] = {"SWS_AK_Rifle","SWS_HGun_Pistol_Heavy_01_F_Flashlight"};
@@ -521,7 +492,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_C_CBRN_Suit_01_White_F";
 
     linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnlinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+    respawnLinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
     weapons[] = {"OPTRE_M45ATAC","SWS_HGun_Pistol_Heavy_01_F_Flashlight"};
     respawnWeapons[] = {"OPTRE_M45ATAC","SWS_HGun_Pistol_Heavy_01_F_Flashlight"};
@@ -543,7 +514,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_C_CBRN_Suit_01_White_F";
 
     linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnlinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+    respawnLinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
     weapons[] = {"SWS_19_UNSC_M7","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"SWS_19_UNSC_M7","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
@@ -565,7 +536,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_C_CBRN_Suit_01_White_F";
 
     linkedItems[] = {"OPTRE_Vest_CMA_Light","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnlinkedItems[] = {"OPTRE_Vest_CMA_Light","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+    respawnLinkedItems[] = {"OPTRE_Vest_CMA_Light","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
     weapons[] = {"SWS_19_UNSC_M7","SWS_HGun_Pistol_Heavy_01_F_Flashlight"};
     respawnWeapons[] = {"SWS_19_UNSC_M7","SWS_HGun_Pistol_Heavy_01_F_Flashlight"};
@@ -689,7 +660,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
     linkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnlinkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+    respawnLinkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
     weapons[] = {"SWS_MA37K_Rifle","launch_O_Vorona_brown_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight"};
     respawnWeapons[] = {"SWS_MA37K_Rifle","launch_O_Vorona_brown_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight"};
@@ -714,7 +685,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
     linkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnlinkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+    respawnLinkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
     weapons[] = {"SWS_srifle_EBR_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"SWS_srifle_EBR_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
@@ -739,7 +710,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
     linkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnlinkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+    respawnLinkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
     weapons[] = {"SWS_AK_Rifle","launch_B_Titan_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"SWS_AK_Rifle","launch_B_Titan_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
@@ -764,7 +735,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_C_CBRN_Suit_01_White_F";
 
     linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnlinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+    respawnLinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
 
     weapons[] = {"SWS_LMG_Mk200_black_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight"};
     respawnWeapons[] = {"SWS_LMG_Mk200_black_F","SWS_HGun_Pistol_Heavy_01_F_Flashlight"};
@@ -817,7 +788,6 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
       class CargoTurret_01 : CargoTurret_01 { gunnerType = ""; };
       class CargoTurret_02 : CargoTurret_02 { gunnerType = ""; };
     };
-
   };
 
   class SWS_O_URArmy_Merlin_Transport_01 : I_Heli_Transport_02_F {
@@ -873,7 +843,6 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     class Turrets : Turrets {
       class MainTurret : MainTurret { gunnerType = "SWS_O_URArmy_Crew_01"; };
     };
-
   };
 
   class SWS_O_URArmy_YAK_CAS_01 : O_Plane_CAS_02_DynamicLoadout_F {
@@ -882,7 +851,6 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
     crew = "SWS_O_URArmy_Crew_01";
-
   };
 
   class SWS_O_URArmy_JAS_AIR_01 : I_Plane_Fighter_04_F {
@@ -912,7 +880,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_O_CombatUniform_oucamo";
 
     linkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
-    respawnlinkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
+    respawnLinkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
 
     weapons[] = {"19_UNSC_MA5A","SWS_HGun_Pistol_Heavy_01_F_Full","Rangefinder"};
     respawnWeapons[] = {"19_UNSC_MA5A","SWS_HGun_Pistol_Heavy_01_F_Full","Rangefinder"};
@@ -937,7 +905,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_O_CombatUniform_oucamo";
 
     linkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
-    respawnlinkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
+    respawnLinkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
 
     weapons[] = {"SWS_MA37K_Rifle","SWS_HGun_Pistol_Heavy_01_F_Full","Rangefinder"};
     respawnWeapons[] = {"SWS_MA37K_Rifle","SWS_HGun_Pistol_Heavy_01_F_Full","Rangefinder"};
@@ -959,7 +927,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_O_CombatUniform_oucamo";
 
     linkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
-    respawnlinkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
+    respawnLinkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
 
     weapons[] = {"19_UNSC_MA5A_gl","SWS_HGun_Pistol_Heavy_01_F_Full","Rangefinder"};
     respawnWeapons[] = {"19_UNSC_MA5A_gl","SWS_HGun_Pistol_Heavy_01_F_Full","Rangefinder"};
@@ -981,7 +949,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_O_CombatUniform_oucamo";
 
     linkedItems[] = {"OPTRE_UNSC_M52A_Armor4_MAR","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
-    respawnlinkedItems[] = {"OPTRE_UNSC_M52A_Armor4_MAR","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
+    respawnLinkedItems[] = {"OPTRE_UNSC_M52A_Armor4_MAR","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
 
     weapons[] = {"SWS_Dmns_M33_T","SWS_HGun_Pistol_Heavy_01_F_Full","Rangefinder"};
     respawnWeapons[] = {"SWS_Dmns_M33_T","SWS_HGun_Pistol_Heavy_01_F_Full","Rangefinder"};
@@ -1003,7 +971,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_O_CombatUniform_oucamo";
 
     linkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
-    respawnlinkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
+    respawnLinkedItems[] = {"OPTRE_FC_M52B_Armor_Vest_URB","OPTRE_FC_VX19_Helmet_Desert","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
 
     weapons[] = {"SWS_srifle_DMR_05_tan_f","SWS_HGun_Pistol_Heavy_01_F_Full","Rangefinder"};
     respawnWeapons[] = {"SWS_srifle_DMR_05_tan_f","SWS_HGun_Pistol_Heavy_01_F_Full","Rangefinder"};
@@ -1025,7 +993,7 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     uniformClass = "U_O_CombatUniform_oucamo";
 
     linkedItems[] = {"OPTRE_UNSC_M52A_Armor4_MAR","OPTRE_FC_VX19_Helmet_Snow","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
-    respawnlinkedItems[] = {"OPTRE_UNSC_M52A_Armor4_MAR","OPTRE_FC_VX19_Helmet_Snow","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
+    respawnLinkedItems[] = {"OPTRE_UNSC_M52A_Armor4_MAR","OPTRE_FC_VX19_Helmet_Snow","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_HUL"};
 
     weapons[] = {"SWS_19_UNSC_M7","SWS_HGun_Pistol_Heavy_01_F_Full","Rangefinder"};
     respawnWeapons[] = {"SWS_19_UNSC_M7","SWS_HGun_Pistol_Heavy_01_F_Full","Rangefinder"};
@@ -1069,7 +1037,6 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     class Turrets : Turrets {
       class MainTurret : MainTurret { gunnerType = "SWS_O_URArmy_Crew_01"; };
     };
-
   };
 
   class SWS_O_URArmy_Black_Crusader_Lead_01 : O_MBT_04_Command_F {
@@ -1082,7 +1049,6 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     class Turrets : Turrets {
       class MainTurret : MainTurret { gunnerType = ""; };
     };
-
   };
 
   class SWS_O_URArmy_Rat_ATGM_01 : I_LT_01_AT_F {
@@ -1113,7 +1079,6 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     class Turrets : Turrets {
       class MainTurret : MainTurret { gunnerType = "SWS_O_URArmy_Crew_01"; };
     };
-
   };
 
   class SWS_O_URArmy_Red_Eagle_01 : B_MBT_01_Cannon_F {
@@ -1123,9 +1088,9 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     faction = "SWS_O_URArmy";
     crew = "SWS_O_URArmy_Crew_01";
     hiddenSelectionsTextures[] = {
-      "\A3\armor_f_gamma\MBT_01\Data\MBT_01_body_CO.paa"
-      , "\A3\armor_f_gamma\MBT_01\Data\MBT_01_tow_CO.paa"
-      , "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
+    "\A3\armor_f_gamma\MBT_01\Data\MBT_01_body_CO.paa"
+    , "\A3\armor_f_gamma\MBT_01\Data\MBT_01_tow_CO.paa"
+    , "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
     };
 
     class Turrets : Turrets {
@@ -1140,11 +1105,11 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     faction = "SWS_O_URArmy";
     crew = "SWS_O_URArmy_Crew_01";
     hiddenSelectionsTextures[] = {
-      "A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_01_aa_hexarid_co.paa"
-      , "A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_02_hexarid_co.paa"
-      , "A3\Armor_F_Beta\APC_Tracked_01\Data\apc_tracked_01_aa_tower_opfor_co.paa"
-      , "A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa"
-      , "A3\armor_f\data\cage_csat_co.paa"
+    "A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_01_aa_hexarid_co.paa"
+    , "A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_02_hexarid_co.paa"
+    , "A3\Armor_F_Beta\APC_Tracked_01\Data\apc_tracked_01_aa_tower_opfor_co.paa"
+    , "A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa"
+    , "A3\armor_f\data\cage_csat_co.paa"
     };
 
     class Turrets : Turrets {
@@ -1162,7 +1127,6 @@ class SWS_B_Marksmen_Carryall_blk : B_Carryall_blk {
     class Turrets : Turrets {
       class MainTurret : MainTurret { gunnerType = "SWS_O_URArmy_Crew_01"; };
     };
-
   };
 
   class SWS_O_URArmy_Shadow_01 : O_MBT_02_Arty_F {
