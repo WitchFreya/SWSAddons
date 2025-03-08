@@ -226,12 +226,12 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
 
-    identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
+    identityTypes[] = {"Head_NATO","LanguageENG_F"};
 
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
-    linkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnLinkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+    linkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM","G_Balaclava_TI_G_blk_F"};
+    respawnLinkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM","G_Balaclava_TI_G_blk_F"};
 
     weapons[] = {"SWS_O_URArmy_AK_Rifle","launch_MRAWS_sand_rail_F","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"SWS_O_URArmy_AK_Rifle","launch_MRAWS_sand_rail_F","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
@@ -248,12 +248,12 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
 
-    identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
+    identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
-    linkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"};
-    respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"};
+    linkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM","G_Balaclava_TI_G_blk_F"};
+    respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM","G_Balaclava_TI_G_blk_F"};
 
     weapons[] = {"SWS_O_URArmy_AK_Rifle_GL","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"SWS_O_URArmy_AK_Rifle_GL","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
@@ -265,6 +265,7 @@ class CfgVehicles {
     respawnMagazines[] = {MACRO_X4("30Rnd_762x39_AK12_Mag_F"),MACRO_X3("1Rnd_HE_Grenade_shell"),MACRO_X2("11Rnd_45ACP_Mag"),"Laserbatteries"};
 
     backpack = "SWS_O_URArmy_B_RadioBag_01_black_F";
+
   };
 
 
@@ -274,12 +275,12 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
 
-    identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
+    identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
-    linkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"};
-    respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM"};
+    linkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM","G_Balaclava_TI_G_blk_F"};
+    respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_HURS_CNM","G_Balaclava_TI_G_blk_F"};
 
     weapons[] = {"SWS_O_URArmy_AK_Rifle","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"SWS_O_URArmy_AK_Rifle","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
@@ -300,9 +301,8 @@ class CfgVehicles {
 
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
-    linkedItems[] = {"V_PlateCarrier2_blk","SWS_O_URArmy_H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnLinkedItems[] = {"V_PlateCarrier2_blk","SWS_O_URArmy_H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-
+    linkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM","G_Balaclava_TI_G_blk_F"};
+    respawnLinkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
     weapons[] = {"SWS_O_URArmy_AK_Rifle","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight"};
     respawnWeapons[] = {"SWS_O_URArmy_AK_Rifle","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight"};
 
@@ -318,12 +318,12 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
 
-    identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
+    identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
-    linkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnLinkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+    linkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM","G_Balaclava_TI_G_blk_F"};
+    respawnLinkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM","G_Balaclava_TI_G_blk_F"};
 
     weapons[] = {"SWS_O_URArmy_MA37K_Rifle","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight"};
     respawnWeapons[] = {"SWS_O_URArmy_MA37K_Rifle","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight"};
@@ -340,12 +340,12 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
 
-    identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
+    identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
-    linkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
-    respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
+    linkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM","G_Balaclava_TI_G_blk_F"};
+    respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM","G_Balaclava_TI_G_blk_F"};
 
     weapons[] = {"SWS_O_URArmy_MMG_02_black_F","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight"};
     respawnWeapons[] = {"SWS_O_URArmy_MMG_02_black_F","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight"};
@@ -366,8 +366,8 @@ class CfgVehicles {
 
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
-    linkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
-    respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
+    linkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM","G_Balaclava_TI_G_blk_F"};
+    respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM","G_Balaclava_TI_G_blk_F"};
 
     weapons[] = {"SWS_O_URArmy_MA37K_Rifle","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight"};
     respawnWeapons[] = {"SWS_O_URArmy_MA37K_Rifle","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight"};
@@ -384,12 +384,12 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
 
-    identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
+    identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
-    linkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
-    respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
+    linkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM","G_Balaclava_TI_G_blk_F"};
+    respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM","G_Balaclava_TI_G_blk_F"};
 
     weapons[] = {"SWS_O_URArmy_srifle_DMR_02_F","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"SWS_O_URArmy_srifle_DMR_02_F","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
@@ -406,12 +406,12 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
 
-    identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
+    identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
-    linkedItems[] = {"V_PlateCarrier1_blk","H_PilotHelmetFighter_B","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
-    respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_PilotHelmetFighter_B","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
+    linkedItems[] = {"V_PlateCarrier1_blk","H_PilotHelmetFighter_B","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","G_Balaclava_TI_G_blk_F"};
+    respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_PilotHelmetFighter_B","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","G_Balaclava_TI_G_blk_F"};
 
     weapons[] = {"hgun_PDW2000_F","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight"};
     respawnWeapons[] = {"hgun_PDW2000_F","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight"};
@@ -428,12 +428,12 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
 
-    identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
+    identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
     uniformClass = "U_B_CBRN_Suit_01_MTP_F";
 
-    linkedItems[] = {"V_PlateCarrier1_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
-    respawnLinkedItems[] = {"V_PlateCarrier1_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
+    linkedItems[] = {"V_PlateCarrier1_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM","G_Balaclava_TI_G_blk_F"};
+    respawnLinkedItems[] = {"V_PlateCarrier1_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM","G_Balaclava_TI_G_blk_F"};
 
     weapons[] = {"SWS_O_URArmy_srifle_GM6_ghex_F","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"SWS_O_URArmy_srifle_GM6_ghex_F","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
@@ -450,12 +450,12 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
 
-    identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
+    identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
     uniformClass = "U_B_CBRN_Suit_01_MTP_F";
 
-    linkedItems[] = {"V_PlateCarrier2_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
-    respawnLinkedItems[] = {"V_PlateCarrier2_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM"};
+    linkedItems[] = {"V_PlateCarrier2_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM","G_Balaclava_TI_G_blk_F"};
+    respawnLinkedItems[] = {"V_PlateCarrier2_rgr_noflag_F","H_HelmetIA","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UA_UL_CNM","G_Balaclava_TI_G_blk_F"};
 
     weapons[] = {"SWS_O_URArmy_AK_Rifle","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"SWS_O_URArmy_AK_Rifle","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
@@ -472,12 +472,12 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
 
-    identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
+    identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
     uniformClass = "U_C_CBRN_Suit_01_White_F";
 
-    linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnLinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+    linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM","VES_HUD_Balaclava_G_White"};
+    respawnLinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM","VES_HUD_Balaclava_G_White"};
 
     weapons[] = {"SWS_O_URArmy_AK_Rifle","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight"};
     respawnWeapons[] = {"SWS_O_URArmy_AK_Rifle","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight"};
@@ -494,12 +494,12 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
 
-    identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
+    identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
     uniformClass = "U_C_CBRN_Suit_01_White_F";
 
-    linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnLinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+    linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM","VES_HUD_Balaclava_G_White"};
+    respawnLinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM","VES_HUD_Balaclava_G_White"};
 
     weapons[] = {"OPTRE_M45ATAC","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight"};
     respawnWeapons[] = {"OPTRE_M45ATAC","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight"};
@@ -516,12 +516,12 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
 
-    identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
+    identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
     uniformClass = "U_C_CBRN_Suit_01_White_F";
 
-    linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnLinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+    linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM","VES_HUD_Balaclava_G_White"};
+    respawnLinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM","VES_HUD_Balaclava_G_White"};
 
     weapons[] = {"SWS_O_URArmy_19_UNSC_M7","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"SWS_O_URArmy_19_UNSC_M7","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
@@ -538,12 +538,12 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
 
-    identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
+    identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
     uniformClass = "U_C_CBRN_Suit_01_White_F";
 
-    linkedItems[] = {"OPTRE_Vest_CMA_Light","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnLinkedItems[] = {"OPTRE_Vest_CMA_Light","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+    linkedItems[] = {"OPTRE_Vest_CMA_Light","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM","VES_HUD_Balaclava_G_White"};
+    respawnLinkedItems[] = {"OPTRE_Vest_CMA_Light","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM","VES_HUD_Balaclava_G_White"};
 
     weapons[] = {"SWS_O_URArmy_19_UNSC_M7","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight"};
     respawnWeapons[] = {"SWS_O_URArmy_19_UNSC_M7","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight"};
@@ -662,12 +662,12 @@ class CfgVehicles {
     side = SIDE_OPFOR;
     faction = "sws_o_urarmy";
 
-    identityTypes[] = {"Head_Greek","LanguageGRE_F","G_HAF_default"};
+    identityTypes[] = {"Head_Greek","LanguageGRE_F"};
 
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
-    linkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnLinkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+    linkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM","G_Balaclava_TI_G_blk_F"};
+    respawnLinkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM","G_Balaclava_TI_G_blk_F"};
 
     weapons[] = {"SWS_O_URArmy_MA37K_Rifle","launch_O_Vorona_brown_F","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight"};
     respawnWeapons[] = {"SWS_O_URArmy_MA37K_Rifle","launch_O_Vorona_brown_F","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight"};
@@ -691,8 +691,8 @@ class CfgVehicles {
 
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
-    linkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnLinkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+    linkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM","G_Balaclava_TI_G_blk_F"};
+    respawnLinkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM","G_Balaclava_TI_G_blk_F"};
 
     weapons[] = {"SWS_O_URArmy_srifle_EBR_F","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"SWS_O_URArmy_srifle_EBR_F","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
@@ -716,8 +716,8 @@ class CfgVehicles {
 
     uniformClass = "U_C_CBRN_Suit_01_Blue_F";
 
-    linkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnLinkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+    linkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM","G_Balaclava_TI_G_blk_F"};
+    respawnLinkedItems[] = {"V_PlateCarrier2_blk","H_PASGT_basic_black_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM","G_Balaclava_TI_G_blk_F"};
 
     weapons[] = {"SWS_O_URArmy_AK_Rifle","launch_B_Titan_F","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
     respawnWeapons[] = {"SWS_O_URArmy_AK_Rifle","launch_B_Titan_F","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight","Laserdesignator_01_khk_F"};
@@ -741,8 +741,8 @@ class CfgVehicles {
 
     uniformClass = "U_C_CBRN_Suit_01_White_F";
 
-    linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
-    respawnLinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM"};
+    linkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM","VES_HUD_Balaclava_G_White"};
+    respawnLinkedItems[] = {"OPTRE_Vest_CMA_Heavy","H_PASGT_basic_white_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch","OPTRE_NVG_UAB_UL_CNM","VES_HUD_Balaclava_G_White"};
 
     weapons[] = {"SWS_O_URArmy_LMG_Mk200_black_F","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight"};
     respawnWeapons[] = {"SWS_O_URArmy_LMG_Mk200_black_F","SWS_O_URArmy_HGun_Pistol_Heavy_01_F_Flashlight"};
