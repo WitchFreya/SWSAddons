@@ -1,16 +1,8 @@
-#define HELMET_SELECTIONS_BASE  \
-  "camo"                        \
-  , "camo2"                     \
-  , "camo3"                     \
-  , "camo4"
+#define HELMET_SELECTIONS_BASE "camo", "camo2", "camo3", "camo4"
 
-#define HELMET_SELECTIONS_BASE_DP \
-  "camo"                          \
-  , "camo2"
+#define HELMET_SELECTIONS_BASE_DP "camo", "camo2"
 
-#define HELMET_SELECTIONS_COLLAR \
-  "H_VacCollar"                  \
-  , "H_Neck"
+#define HELMET_SELECTIONS_COLLAR "H_VacCollar", "H_Neck"
 
 #define C_HELMET_BASE(varName,texHelmet,texRest)                                        \
   class DOUBLES(SWS_Helmet,varName): SWS_Helmet_Legacy_Base {                           \
