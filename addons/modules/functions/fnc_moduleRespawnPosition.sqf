@@ -69,7 +69,7 @@ if (_side isEqualTo sideEmpty) exitWith {
 };
 private _showMarkerTo /* string */ = _logic getVariable "Marker";
 private _showNotification /* boolean */ = _logic getVariable "ShowNotification";
-private _pos = getPosATL _logic;
+private _pos = if (surfaceIsWater position _logic) then {getPosASL _logic} else {getPosATL _logic};
 private _respawnObjs /* Map<[side,number],instanceof AllVehicles> */ = createHashMap;
 
 //--- Start creating respawns
@@ -123,7 +123,7 @@ if !(_showNotification) exitWith {
   true;
 };
 
-/* Calculate a name from the position and potentiall synchronized entity. */
+/* Calculate a name from the position and potential synchronized entity. */
 private _fnc_respawnNotificationName /* object -> string */ = {
   params [
     ["_respawnObj", objNull, [objNull]]
