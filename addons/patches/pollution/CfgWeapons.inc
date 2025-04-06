@@ -11,4 +11,5 @@ class CfgWeapons {
   };
   class ItemInfo: PollutedItem { };
   class WeaponSlotsInfo: PollutedItem { };
+  class HitpointsProtectionInfo : PollutedItem {};
 };
