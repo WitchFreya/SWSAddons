@@ -1754,8 +1754,8 @@ class O_CLA_Reaper_Officer_01 : O_V_Soldier_TL_hex_F {
   weapons[] = {"SWS_Weapon_AR0M37","Rangefinder","Throw","Put"};
   respawnWeapons[] = {"SWS_Weapon_AR0M37","Rangefinder","Throw","Put"};
 
-  magazines[] = {MACRO_X3("SWS_Magazine_60Rnd_65x39_Caseless_msbs"),"SmokeShell","ACE_M84","SWS_Magazine_Grenade_M3Sx"};
-  respawnMagazines[] = {MACRO_X3("SWS_Magazine_60Rnd_65x39_Caseless_msbs"),"SmokeShell","ACE_M84","SWS_Magazine_Grenade_M3Sx"};
+  magazines[] = {MACRO_X4("SWS_Magazine_60Rnd_65x39_Caseless_msbs"),"SmokeShell","ACE_M84","SWS_Magazine_Grenade_M3Sx"};
+  respawnMagazines[] = {MACRO_X4("SWS_Magazine_60Rnd_65x39_Caseless_msbs"),"SmokeShell","ACE_M84","SWS_Magazine_Grenade_M3Sx"};
 
   backpack = "B_ViperLightHarness_blk_F";
 };
