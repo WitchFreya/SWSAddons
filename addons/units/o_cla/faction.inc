@@ -184,7 +184,7 @@ class O_CLA_LightRifle_01 : OPTRE_Ins_URF_TeamLead {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "U_C_Mechanic_01_F";
 
@@ -207,7 +207,7 @@ class O_CLA_LightRifle_02 : OPTRE_Ins_URF_TeamLead {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
 
   uniformClass = "U_I_C_Soldier_Para_4_F";
@@ -233,7 +233,7 @@ class O_CLA_LightRifle_03 : OPTRE_Ins_URF_TeamLead {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "U_C_Poor_1";
 
@@ -279,7 +279,7 @@ class O_CLA_LightRifle_05 : OPTRE_Ins_URF_TeamLead {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "U_BG_Guerilla2_2";
 
@@ -325,7 +325,7 @@ class O_CLA_LightSniper_01 : OPTRE_Ins_URF_TeamLead {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "U_I_L_Uniform_01_deserter_F";
 
@@ -348,7 +348,7 @@ class O_CLA_LightAT_01 : OPTRE_Ins_URF_TeamLead {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "U_I_C_Soldier_Camo_F";
 
@@ -371,7 +371,7 @@ class O_CLA_Rifleman_01 : OPTRE_Ins_URF_TeamLead {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_Ins_ER_rolled_OD_blknred";
 
@@ -396,7 +396,7 @@ class O_CLA_Teamlead_01 : OPTRE_Ins_URF_TeamLead {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_TCGM_Girls_Asian","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_TCGM_Girls_Asian","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "U_I_G_Story_Protagonist_F";
 
@@ -419,7 +419,7 @@ class O_CLA_Medic_01 : OPTRE_Ins_URF_Medic_IND {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_Ins_ER_jacket_surplus_brown";
   backpack = "SWS_B_TacticalPack_blk_Med";
@@ -441,7 +441,7 @@ class O_CLA_Breacher_01 : OPTRE_Ins_URF_Breacher {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_Greek","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_Greek","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "U_I_G_resistanceLeader_F";
 
@@ -465,7 +465,7 @@ class O_CLA_Rifleperson_01 : OPTRE_Ins_URF_Rifleman_BR {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"max_WS5","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"max_WS5","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "U_I_C_Soldier_Para_4_F";
 
@@ -489,7 +489,7 @@ class O_CLA_Autorifle_01 : OPTRE_Ins_URF_Autorifleman {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_TK","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_TK","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "U_C_Mechanic_01_F";
 
@@ -513,7 +513,7 @@ class O_CLA_Sniper_01 : OPTRE_Ins_URF_Sniper {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_Enoch","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_Enoch","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_Ins_ER_rolled_OD_crimson";
 
@@ -537,7 +537,7 @@ class O_CLA_Rifleperson_02 : OPTRE_Ins_URF_Rifleman_AT {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"max_WS1","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"max_WS1","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "U_BG_Guerilla1_2_F";
 
@@ -561,7 +561,7 @@ class O_CLA_Grenadier_01 : OPTRE_Ins_URF_Grenadier {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"max_WS10","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"max_WS10","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "TCGM_F_SoldierParamilitary2";
 
@@ -585,7 +585,7 @@ class O_CLA_Elite_Rifleperson_01 : OPTRE_Ins_URF_Rifleman_AR_IND {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_FC_Marines_Uniform_WDL";
 
@@ -609,7 +609,7 @@ class O_CLA_Elite_Rifleperson_02 : O_CLA_Elite_Rifleperson_01 {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"max_WS10","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"max_WS10","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_FC_Marines_Uniform_WDL";
 
@@ -633,7 +633,7 @@ class O_CLA_Elite_Teamlead_01 : O_CLA_Elite_Rifleperson_01 {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_TCGM_Girls_White","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_TCGM_Girls_White","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_FC_Marines_Uniform_WDL";
 
@@ -645,8 +645,8 @@ class O_CLA_Elite_Teamlead_01 : O_CLA_Elite_Rifleperson_01 {
   weapons[] = {"OPTRE_MA5AGL","Binocular","Throw","Put"};
   respawnWeapons[] = {"OPTRE_MA5AGL","Binocular","Throw","Put"};
 
-  magazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),MACRO_X2("1Rnd_HE_Grenade_shell")};
-  respawnMagazines[] = {MACRO_X5("OPTRE_60Rnd_762x51_Mag"),MACRO_X2("1Rnd_HE_Grenade_shell")};
+  magazines[] = {MACRO_X6("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),MACRO_X2("1Rnd_HE_Grenade_shell")};
+  respawnMagazines[] = {MACRO_X6("OPTRE_32Rnd_762x51_Mag_Tracer_Yellow"),MACRO_X2("1Rnd_HE_Grenade_shell")};
 
   backpack = "B_FieldPack_blk";
 };
@@ -657,7 +657,7 @@ class O_CLA_Elite_Breacher_01 : O_CLA_Elite_Rifleperson_01 {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_FC_Marines_Uniform_WDL";
 
@@ -705,7 +705,7 @@ class O_CLA_Elite_Medic_01 : O_CLA_Elite_Rifleperson_01 {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_TCGM_Girls_BlackCiv","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_TCGM_Girls_BlackCiv","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_FC_Marines_Uniform_WDL";
 
@@ -729,7 +729,7 @@ class O_CLA_Elite_Autorifle_01 : O_CLA_Elite_Rifleperson_01 {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_Tanoan","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_Tanoan","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_FC_Marines_Uniform_WDL";
 
@@ -753,7 +753,7 @@ class O_CLA_Crew_01 : O_CLA_Rifleman_01 {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_Ins_ER_uniform_GGod";
 
@@ -777,7 +777,7 @@ class O_CLA_Crew_02 : O_CLA_Crew_01 {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_TCGM_Girls_AsianCiv","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_TCGM_Girls_AsianCiv","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_Ins_ER_uniform_GAgreen";
 
@@ -801,7 +801,7 @@ class O_CLA_Reaper_01 : O_CLA_Elite_Rifleperson_01 {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_FC_Marines_Uniform_WDL";
 
@@ -849,7 +849,7 @@ class O_CLA_Reaper_Autorifle_01 : O_CLA_Reaper_01 {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_FC_Marines_Uniform_WDL";
 
@@ -873,7 +873,7 @@ class O_CLA_Reaper_AntiArmor_01 : O_CLA_Reaper_01 {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_FC_Marines_Uniform_WDL";
 
@@ -920,7 +920,7 @@ class O_CLA_Reaper_Sniper_01 : O_CLA_Reaper_01 {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_FC_Marines_Uniform_WDL";
 
@@ -944,7 +944,7 @@ class O_CLA_Reaper_Breacher_01 : O_CLA_Reaper_01 {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_TCGM_Girls_WhiteWarrior","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_TCGM_Girls_WhiteWarrior","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_FC_Marines_Uniform_WDL";
 
@@ -968,7 +968,7 @@ class O_CLA_Reaper_AntiAir_01 : O_CLA_Reaper_01 {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_FC_Marines_Uniform_WDL";
 
@@ -992,7 +992,7 @@ class O_CLA_Reaper_Medic_01 : O_CLA_Reaper_01 {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_FC_Marines_Uniform_WDL";
 
@@ -1016,7 +1016,7 @@ class O_CLA_Disassembeled_MG_01 : O_CLA_Rifleman_01 {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_Ins_ER_rolled_OD_blknred";
 
@@ -1344,7 +1344,7 @@ class O_CLA_Mortar_Tube_01 : O_CLA_Rifleperson_02 {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"max_WS1","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"max_WS1","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "U_BG_Guerilla1_2_F";
 
@@ -1368,7 +1368,7 @@ class O_CLA_Mortar_Bipod_01 : O_CLA_Mortar_Tube_01 {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Tanker","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Tanker","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "U_BG_Guerilla1_1";
 
@@ -1512,7 +1512,7 @@ class O_CLA_Reaper_Demolitionist_01 : O_CLA_Reaper_01 {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_FC_Marines_Uniform_WDL";
 
@@ -1654,7 +1654,7 @@ class O_CLA_MG_Tripod_01 : O_CLA_Disassembeled_MG_01 {
   side = SIDE_OPFOR;
   faction = "o_cla";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_Ins_ER_rolled_surplus_black";
 
@@ -1754,8 +1754,8 @@ class O_CLA_Reaper_Officer_01 : O_V_Soldier_TL_hex_F {
   weapons[] = {"SWS_Weapon_AR0M37","Rangefinder","Throw","Put"};
   respawnWeapons[] = {"SWS_Weapon_AR0M37","Rangefinder","Throw","Put"};
 
-  magazines[] = {MACRO_X3("SWS_Magazine_60Rnd_65x39_Caseless_msbs"),"SmokeShell","ACE_M84","SWS_Magazine_Grenade_M3Sx"};
-  respawnMagazines[] = {MACRO_X3("SWS_Magazine_60Rnd_65x39_Caseless_msbs"),"SmokeShell","ACE_M84","SWS_Magazine_Grenade_M3Sx"};
+  magazines[] = {MACRO_X4("SWS_Magazine_60Rnd_65x39_Caseless_msbs"),"SmokeShell","ACE_M84","SWS_Magazine_Grenade_M3Sx"};
+  respawnMagazines[] = {MACRO_X4("SWS_Magazine_60Rnd_65x39_Caseless_msbs"),"SmokeShell","ACE_M84","SWS_Magazine_Grenade_M3Sx"};
 
   backpack = "B_ViperLightHarness_blk_F";
 };
@@ -1766,7 +1766,7 @@ class O_CLA_Reaper_Missile_Specialist_01 : O_CLA_Reaper_AntiAir_01 {
   side = SIDE_OPFOR;
   faction = "O_CLA";
 
-  identityTypes[] = {"Head_NATO","LanguageGRE_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
+  identityTypes[] = {"Head_NATO","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_IRAN_default"};
 
   uniformClass = "OPTRE_FC_Marines_Uniform_WDL";
 
