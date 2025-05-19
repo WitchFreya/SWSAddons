@@ -11,7 +11,7 @@ class CfgMagazines {
     ammo = "SWS_338_Abyssal";
     displayName = QNAME(20Rnd .338 Magazine);
     displayNameShort = QUOTE(.338 Abyssal);
-    descriptionShort = QUOTE(.338 DMR rounds hand-loaded by Demon.<br/>Tipped with an alloy derived from Forerunner materials.);
+    descriptionShort = QUOTE(.338 DMR rounds hand-loaded by Legion.<br/>Tipped with an alloy derived from Forerunner materials.);
     lastRoundsTracer = 3;
     count = 20;
     mass = 15;

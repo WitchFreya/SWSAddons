@@ -10,7 +10,7 @@ class XtdGearModels {
       , "Butler"
       , "Carver"
       , "Chrome"
-      , "Demon"
+      , "Legion"
       , "Egg"
       , "Hound"
       , "Hurricane"
@@ -33,7 +33,7 @@ class XtdGearModels {
     class Butler {};
     class Carver {};
     class Chrome {};
-    class Demon {};
+    class Legion {};
     class Egg {};
     class Hound {};
     class Hurricane {};
