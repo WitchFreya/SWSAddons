@@ -15,6 +15,10 @@ class CfgWeapons {
     class Single : Single {
       reloadTime = 0.2;
     };
+		hiddenSelectionsTextures[] = {
+      QPATHTOF(data\ar0m37s\dmr_body_1_co.paa),
+      "optre_weapons\dmr\data\mainbody2_co.paa",
+      "optre_weapons\dmr\data\muzzle_co.paa"};
 
     class WeaponSlotsInfo : WeaponSlotsInfo {
       class CowsSlot : CowsSlot {
