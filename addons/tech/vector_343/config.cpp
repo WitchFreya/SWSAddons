@@ -1,7 +1,5 @@
 #include "script_component.hpp"
 
-class CBA_ScriptedOptic;
-
 #include "CfgWeapons.inc"
 
 class CfgPatches {

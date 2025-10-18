@@ -27,7 +27,7 @@ class CfgAmmo {
 		indirectHitRange = 20;
 		indirectHit = 50;
 		ace_frag_gurney_c = 3000;
-		ace_frag_gurney_k = "1/2";
+		ace_frag_gurney_k = 0.5;
 		ace_frag_classes[] = {"ACE_frag_medium"};
 		ace_frag_metal = 230;
 		ace_frag_charge = 300;

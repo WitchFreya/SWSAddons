@@ -1,7 +1,5 @@
 #include "script_component.hpp"
 
-class UserActions;
-
 #include "CfgVehicles.inc"
 
 class CfgPatches {

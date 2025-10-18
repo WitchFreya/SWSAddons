@@ -1,7 +1,6 @@
 #include "script_component.hpp"
 
 class CBA_Extended_EventHandlers_Base;
-class EventHandlers;
 class ItemInfo;
 
 #include "CfgWeapons.inc"

@@ -119,7 +119,6 @@ class CfgVehicles {
   class TCGM_f_Sita_Flat_I_soldier;
   class TCGM_f_Sita_Flat_O_soldier;
   class TCGM_f_Sita_Flat_soldier;
-  class TCGM_f_Swimsuit_Maya_civil;
   class TCGM_f_Tanit_Flat_C_soldier;
   class TCGM_f_Tanit_Flat_I_soldier;
   class TCGM_f_Tanit_Flat_O_soldier;
