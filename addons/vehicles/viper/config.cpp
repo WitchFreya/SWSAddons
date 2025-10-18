@@ -7,7 +7,6 @@ class CommanderOptics;
 class HitPoints;
 class HitComTurret;
 class HitComGun;
-class EventHandlers;
 class TextureSources;
 class SWS_SensorTargetTemplate;
 class SWS_SensorDisplayTemplate;

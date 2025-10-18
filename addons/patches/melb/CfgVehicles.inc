@@ -33,9 +33,9 @@ class CfgVehicles {
 					initAngleY = 0;
 					minAngleY = 0;
 					maxAngleY = 0;
-					initFov = "(60 / 120)";
-					minFov = "(30 / 120)";
-					maxFov = "(60 / 120)";
+					initFov = 0.5;
+					minFov = 0.25;
+					maxFov = 0.5;
 					directionStabilized = TRUE;
 					visionMode[] = {
 						"Normal",
@@ -48,16 +48,16 @@ class CfgVehicles {
 
 				class Medium : Wide {
 					opticsDisplayName = "MFOV";
-					initFov = "(6 / 120)";
-					minFov = "(6 / 120)";
-					maxFov = "(6 / 120)";
+					initFov = 0.5;
+					minFov = 0.5;
+					maxFov = 0.5;
 					gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Generic_medium_F.p3d";
 				};
 				class Narrow: Wide {
 					opticsDisplayName = "NFOV";
-					initFov = "(2 / 120)";
-					minFov = "(2 / 120)";
-					maxFov = "(2 / 120)";
+					initFov = (2 / 120);
+					minFov = (2 / 120);
+					maxFov = (2 / 120);
 					gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Generic_narrow_F.p3d";
 				};
 			};

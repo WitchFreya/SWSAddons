@@ -3,7 +3,6 @@
 class B_TacticalPack_blk;
 class B_FieldPack_blk;
 class B_ViperLightHarness_blk_F;
-class B_Kitbag_cbr;
 
 class SWS_B_TacticalPack_blk_Med : B_TacticalPack_blk {
   ITEM_META(1);

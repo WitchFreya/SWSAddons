@@ -15,13 +15,13 @@ class CfgWeapons {
   class SWS_Cannon_120mm_Viper : Cannon_120mm_Long {
     displayName = QNAME(XM552);
     description = "Experimental 120mm smoothbore cannon designed for the M700 with advanced ballistics targeting.";
-    ballisticsComputer = QUOTE(BC_ZEROING_AUTO + BC_ZEROING + BC_FCS);
+    ballisticsComputer = BC_ZEROING_AUTO + BC_ZEROING + BC_FCS;
     magazineWell[] = {"SWS_MBT_Cannon_120mm"};
   };
 
   class SWS_HMG_127_Viper : HMG_127_APC {
     canLock = 2;
-    ballisticsComputer = QUOTE(BC_ZEROING + BC_TARGET_LEAD + BC_FCS);
+    ballisticsComputer = BC_ZEROING + BC_TARGET_LEAD + BC_FCS;
   };
 };
 

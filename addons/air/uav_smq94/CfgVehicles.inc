@@ -5,25 +5,20 @@
   , "SWS_Bag_UAV_SMQ94"       \
 
 class CfgVehicles {
-  class B_UAV_01_F;
   class DMNS_UAV_01_Backpack_F;
+  class DMNS_UAV_01_F;
 
-  class SWS_V_UAV_SMQ94_Base : B_UAV_01_F {
+  class SWS_V_UAV_SMQ94_Base : DMNS_UAV_01_F {
     ITEM_META(0);
     displayName = QNAME(SMQ-94 Recon (Base));
     faction = "SWS_UNSC";
     fuelCapacity = 100;
-    side = SIDE_BLUFOR;
-    model = "dmns\dmns_air\mq_94\MQ_94.p3d";
     editorPreview = QPATHTOF(data\uav_smq94\editor.jpg);
-    crew = "B_UAV_AI";
     hiddenSelections[] = {"camo"};
     hiddenSelectionsMaterials[] = {QPATHTOF(data\uav_smq94\basic.rvmat)};
     hiddenSelectionsTextures[] = {QPATHTOF(data\uav_smq94\basic_co.paa)};
-    typicalCargo[] = {"B_UAV_AI"};
     weapons[] = { "SWS_Weapon_LaserDesignator" };
     magazines[] = { "LaserBatteries" };
-    armor = 3;
 
     class AssembleInfo : AssembleInfo {
       dissasembleTo[] = {};

@@ -1,7 +1,6 @@
 #include "script_component.hpp"
 
 class CargoGunner_1;
-class CargoTurret_01;
 class CargoTurret_02;
 class CargoTurret_03;
 class CargoTurret_04;
