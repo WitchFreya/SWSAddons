@@ -12,7 +12,7 @@ class CfgWeapons {
     displayName = QNAME(Biofoam-Sx);
     displayNameShort = "Biofoam-Sx";
     picture = "\DMNS\Weapons\Items\icons\biofoam.paa";
-    model = "DMNS\Weapons\Items\Biofoam.p3d";
+    model = "Foundries\Weapons\Items\Biofoam.p3d ";
     descriptionShort = "Self-sealing emergency coagulant and antimicrobial polymer.<br />This experimental version of biofoam is everything a bandage wishes it was.";
     ace_isMedicalItem = TRUE;
 
