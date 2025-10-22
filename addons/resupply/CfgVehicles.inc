@@ -8,7 +8,6 @@
   , "SWS_Box_TeamSupplies"
 
 class CfgVehicles {
-  class NATO_Box_Base;
   class OPTRE_Ammo_SupplyPod_Empty;
   class B_SupplyCrate_F;
 

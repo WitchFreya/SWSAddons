@@ -75,7 +75,7 @@ class XtdGearInfos
     C_GEAR_INFO_OP(Butler);
     C_GEAR_INFO_OP(Carver);
     C_GEAR_INFO_OP(Chrome);
-    C_GEAR_INFO_OP(Demon);
+    C_GEAR_INFO_OP(Legion);
     C_GEAR_INFO_OP(Egg);
     C_GEAR_INFO_OP(Hound);
     C_GEAR_INFO_OP(Hurricane);
