@@ -17,18 +17,18 @@ class CfgMagazines {
   class SWS_Magazine_100Rnd_762x51_Mag : 150Rnd_762x51_Box {
     CLEARANCE(RESTRICTED/DECWHI);
     ITEM_META(2);
-    model = "\OPTRE_Weapons\MG\M247_Mag_Proxy.p3d";
-    modelSpecial = "\OPTRE_Weapons\MG\M247_Mag_Proxy.p3d";
+    model = "\OPTRE_Weapons_MG\m247\M247_Mag_Proxy.p3d";
+    modelSpecial = "\OPTRE_Weapons_MG\m247\M247_Mag_Proxy.p3d";
     modelSpecialIsProxy = 1;
     hiddenSelections[] = {"camo1"};
-    hiddenSelectionsTextures[] = {"\optre_weapons\mg\data\m247_magazine_co.paa"};
+    hiddenSelectionsTextures[] = {"\OPTRE_Weapons_MG\m247\data\m247_magazine_co.paa"};
 
     displayName = QNAME_762x51(100);
     displayNameShort = "7.62x51";
     ammo = "SWS_B_762x51_Ball";
     count = 100;
     initSpeed = 950;
-    picture = "\DMNS\Weapons\Ammo\Data\CM12_AMMO_Icon.paa";
+    picture = "\Foundries\Weapons\Ammo\Data\CM12_AMMO_Icon.paa";
     descriptionShort = "100 Round Magazine<SM247>7.62x51 Carbine<SM247>";
     mass = 40;
     tracersEvery = 0;
