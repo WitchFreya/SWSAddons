@@ -857,11 +857,11 @@ class O_CLA_Reaper_Autorifle_01 : O_CLA_Reaper_01 {
   items[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
   respawnItems[] = {"SWS_Medigel","ACE_EarPlugs",MACRO_X5("ACE_quikclot")};
 
-  weapons[] = {"Dmns_CM_12_Insurgent","Throw","Put"};
-  respawnWeapons[] = {"Dmns_CM_12_Insurgent","Throw","Put"};
+  weapons[] = {"SWS_Weapon_SM73","Throw","Put"};
+  respawnWeapons[] = {"SWS_Weapon_SM73","Throw","Put"};
 
-  magazines[] = {MACRO_X3("DMNS_150Rnd_30x06_Mag"),"OPTRE_M2_Smoke",MACRO_X2("HandGrenade"),MACRO_X2("ACE_M84")};
-  respawnMagazines[] = {MACRO_X3("DMNS_150Rnd_30x06_Mag"),"OPTRE_M2_Smoke",MACRO_X2("HandGrenade"),MACRO_X2("ACE_M84")};
+  magazines[] = {MACRO_X4("OPTRE_200Rnd_95x40_Box"),"OPTRE_M2_Smoke",MACRO_X2("HandGrenade"),MACRO_X2("ACE_M84")};
+  respawnMagazines[] = {MACRO_X4("OPTRE_200Rnd_95x40_Box"),"OPTRE_M2_Smoke",MACRO_X2("HandGrenade"),MACRO_X2("ACE_M84")};
 
   backpack = "SWS_B_ViperLightHarness_blk_F_AR";
 };
