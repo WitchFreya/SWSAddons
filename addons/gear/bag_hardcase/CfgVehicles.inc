@@ -40,6 +40,7 @@ class CfgVehicles {
   C_HARDCASE(Carver,Carver);
   C_HARDCASE(Chrome,chrome);
   C_HARDCASE(Egg,egg);
+  C_HARDCASE(Falke,falke);
   C_HARDCASE(Sawbones,sawbones);
   C_HARDCASE(Snare,snare);
   C_HARDCASE(Spritz,spritz);
