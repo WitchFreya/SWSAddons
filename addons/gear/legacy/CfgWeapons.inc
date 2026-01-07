@@ -100,7 +100,7 @@ class CfgWeapons {
   C_GEAR(Carver,carver);
   C_GEAR(Chrome,defiant);
   C_GEAR(Egg,egg);
-  C_GEAR(Falke,falke);
+  C_GEAR(Falke,gold);
   C_GEAR(Hound,hound);
   C_GEAR(Hurricane,purple);
   C_GEAR(Legion,purple);
