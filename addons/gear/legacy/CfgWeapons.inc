@@ -99,10 +99,11 @@ class CfgWeapons {
   C_GEAR(Butler,purple);
   C_GEAR(Carver,carver);
   C_GEAR(Chrome,defiant);
-  C_GEAR(Legion,purple);
   C_GEAR(Egg,egg);
+  C_GEAR(Falke,gold);
   C_GEAR(Hound,hound);
   C_GEAR(Hurricane,purple);
+  C_GEAR(Legion,purple);
   C_GEAR(Maid,sepia);
   C_GEAR(Manny,manny);
   C_GEAR(Polaris,pink);
