@@ -4,6 +4,8 @@
   , "SWS_V_Bag_Hardcase_Carver"   \
   , "SWS_V_Bag_Hardcase_Chrome"   \
   , "SWS_V_Bag_Hardcase_Medical"  \
+  , "SWS_V_Bag_Hardcase_Egg"  \
+  , "SWS_V_Bag_Hardcase_Falke"  \
   , "SWS_V_Bag_Hardcase_Polaris"  \
   , "SWS_V_Bag_Hardcase_Pyre"  \
   , "SWS_V_Bag_Hardcase_Sawbones" \
