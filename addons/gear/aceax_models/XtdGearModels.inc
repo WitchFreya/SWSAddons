@@ -13,6 +13,7 @@ class XtdGearModels {
       , "Egg"
       , "Falke"
       , "Hound"
+      , "Hoof"
       , "Hurricane"
       , "Legion"
       , "Maid"
@@ -36,6 +37,7 @@ class XtdGearModels {
     class Chrome {};
     class Egg {};
     class Falke {};
+    class Hoof {};
     class Hound {};
     class Hurricane {};
     class Legion {};
@@ -192,6 +194,7 @@ class XtdGearModels {
           , "Chrome"
           , "Egg"
           , "Falke"
+          , "Hoof"
           , "Pyre"
           , "Polaris"
           , "Sawbones"
@@ -207,6 +210,7 @@ class XtdGearModels {
         C_VALUE(Chrome);
         C_VALUE(Egg);
         C_VALUE(Falke);
+        C_VALUE(Hoof);
         C_VALUE(Sawbones);
         C_VALUE(Snare);
         C_VALUE(Vertigo);

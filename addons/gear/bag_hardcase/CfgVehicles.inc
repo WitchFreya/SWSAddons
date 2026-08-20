@@ -4,10 +4,11 @@
   , "SWS_V_Bag_Hardcase_Carver"   \
   , "SWS_V_Bag_Hardcase_Chrome"   \
   , "SWS_V_Bag_Hardcase_Medical"  \
-  , "SWS_V_Bag_Hardcase_Egg"  \
-  , "SWS_V_Bag_Hardcase_Falke"  \
+  , "SWS_V_Bag_Hardcase_Egg"      \
+  , "SWS_V_Bag_Hardcase_Hoof"     \
+  , "SWS_V_Bag_Hardcase_Falke"    \
   , "SWS_V_Bag_Hardcase_Polaris"  \
-  , "SWS_V_Bag_Hardcase_Pyre"  \
+  , "SWS_V_Bag_Hardcase_Pyre"     \
   , "SWS_V_Bag_Hardcase_Sawbones" \
   , "SWS_V_Bag_Hardcase_Snare"    \
   , "SWS_V_Bag_Hardcase_Spritz"   \
@@ -44,6 +45,7 @@ class CfgVehicles {
   C_HARDCASE(Chrome,chrome);
   C_HARDCASE(Egg,egg);
   C_HARDCASE(Falke,falke);
+  C_HARDCASE(Hoof,hoof);
   C_HARDCASE(Sawbones,sawbones);
   C_HARDCASE(Snare,snare);
   C_HARDCASE(Spritz,spritz);
