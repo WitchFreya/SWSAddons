@@ -34,6 +34,7 @@ tools/ndocs-project/Data/*
 ArmaScriptCompiler.exe
 *.sqfc
 .hemttout
+.hemttprivatekey
 scratch
 unpacked-mods/*
 !unpacked-mods/.gitkeep
