@@ -78,6 +78,7 @@ class XtdGearInfos
     C_GEAR_INFO_OP(Egg);
     C_GEAR_INFO_OP(Falke);
     C_GEAR_INFO_OP(Hound);
+    C_GEAR_INFO_OP(Hoof);
     C_GEAR_INFO_OP(Hurricane);
     C_GEAR_INFO_OP(Legion);
     C_GEAR_INFO_OP(Maid);
