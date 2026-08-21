@@ -8,8 +8,10 @@
   QWEAPONS_FN(CLS),         \
   QWEAPONS_FN(Legion),       \
   QWEAPONS_FN(Egg),         \
+  QWEAPONS_FN(Falke),        \
   QWEAPONS_FN(Gold),        \
   QWEAPONS_FN(Green),       \
+  QWEAPONS_FN(Hoof),       \
   QWEAPONS_FN(Hound),       \
   QWEAPONS_FN(Hurricane),   \
   QWEAPONS_FN(Maid),        \
@@ -24,6 +26,7 @@
   QWEAPONS_FN(Sawbones),    \
   QWEAPONS_FN(Snare),       \
   QWEAPONS_FN(Sonic),       \
+  QWEAPONS_FN(Spritz),       \
   QWEAPONS_FN(Sula),        \
   QWEAPONS_FN(Tiger),       \
   QWEAPONS_FN(Vertigo)
@@ -101,6 +104,7 @@ class CfgWeapons {
   C_GEAR(Chrome,defiant);
   C_GEAR(Egg,egg);
   C_GEAR(Falke,gold);
+  C_GEAR(Hoof,hoof);
   C_GEAR(Hound,hound);
   C_GEAR(Hurricane,purple);
   C_GEAR(Legion,purple);
