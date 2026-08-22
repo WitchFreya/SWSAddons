@@ -26,14 +26,14 @@ if (local (_this select 0)) then {
   _onSpawn = {
     _unit = _this select 0;
     sleep 0.2;
-    _backpack = getText(configFile >> 'cfgvehicles' >> (typeOf _this) >> 'backpack');
+    _backpack = getText((configOf _this) >> 'backpack');
     waitUntil {
       sleep 0.2;
       backpack _unit == _backpack;
     };
 
     if !(_unit getVariable ['ALiVE_OverrideLoadout', false]) then {
-      _loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _unit) >> 'ALiVE_orbatCreator_loadout');
+      _loadout = getArray((configOf _unit) >> 'ALiVE_orbatCreator_loadout');
       _unit setUnitLoadout _loadout;
       reload _unit;
     };
