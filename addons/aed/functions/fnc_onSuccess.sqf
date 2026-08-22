@@ -29,7 +29,7 @@ playSound3D [QPATHTO_R(sounds\bump.ogg), objNull, false, getPosASL _patient, 5, 
 _patient setVariable ["ace_medical_CPR_provider", objNull, true];
 
 // patient is not in a vehicle
-if !([_patient] call EFUNC(common,isInVehicle)) then {
+if !([_patient] call FUNCMAIN(isInVehicle)) then {
   private _bystanders = nearestObjects [_patient, ["CAManBase"], 1.7] - [_medic, _patient];
   {
     [_x] call FUNC(punishHubris);
