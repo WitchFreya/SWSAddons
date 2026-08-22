@@ -1,6 +1,7 @@
 #define CLASSES_WEAPONS \
   "SWS_Biofoam"         \
-  , "SWS_Medigel"
+  , "SWS_Medigel"       \
+  , "SWS_NeuroStim"
 
 class CfgWeapons {
   class OPTRE_Biofoam;
