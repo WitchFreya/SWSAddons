@@ -25,6 +25,7 @@ private _markersCache /* string[] (marker keys) */ = missionNamespace getVariabl
   _x getVariable ["marker", ""];
 };
 
+#pragma hemtt ignore_variables ["_thisScript"] // magic variable -- https://community.bistudio.com/wiki/Magic_Variables
 GVAR(ModuleRespawnPosition_loop) = _thisScript;
 
 /*
