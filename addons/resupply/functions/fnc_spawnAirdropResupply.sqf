@@ -66,7 +66,7 @@ private _waypointEnd = _group addWaypoint [_spawnPosAGL, -1];
 _waypointEnd setWaypointType "MOVE";
 _waypointEnd setWaypointBehaviour "CARELESS";
 _waypointEnd setWaypointCombatMode "BLUE";
-_waypointEnd setWaypointSpeed _speed;
+_waypointEnd setWaypointSpeed "FULL";
 
 _waypointEnd setWaypointStatements ["true", toString {
   private _units = units group this;
