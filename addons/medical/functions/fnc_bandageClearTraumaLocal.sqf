@@ -18,6 +18,7 @@
  * Public: No
  */
 
+params ["_patient", "_bodyPart", "_bandage"];
 TRACE_1("bandageLocalClearTrauma",_this);
 
 if !(local _patient) exitWith {
