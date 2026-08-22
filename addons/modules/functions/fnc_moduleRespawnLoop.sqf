@@ -40,7 +40,7 @@ private _fnc_removeDeletedMarkers = {
   private _mut_deletedMarkers = _markersCache - _remainingMarkers;
   if (_mut_deletedMarkers isEqualTo []) exitWith {};
   TRACE_1("Removing deleted markers",_mut_deletedMarkers);
-  private _lastDeleted = _deletedMarkersMUT call BIS_fnc_arrayPop;
+  private _lastDeleted = _mut_deletedMarkers call BIS_fnc_arrayPop;
   {
     deleteMarkerLocal _x;
   } forEach _mut_deletedMarkers;
