@@ -34,10 +34,10 @@ private _fnc_removeDeletedMarkers = {
   params [
     ["_modules", [], [[]]]
   ];
-  if (count _markersCache == 0) exitWith {};
+  if (_markersCache isEqualTo []) exitWith {};
   private _remainingMarkers = _modules apply { _x getVariable ["marker", ""]; };
   private _mut_deletedMarkers = _markersCache - _remainingMarkers;
-  if (count _mut_deletedMarkers == 0) exitWith {};
+  if (_mut_deletedMarkers isEqualTo []) exitWith {};
   TRACE_1("Removing deleted markers",_mut_deletedMarkers);
   private _lastDeleted = _deletedMarkersMUT call BIS_fnc_arrayPop;
   {
@@ -54,7 +54,7 @@ private _fnc_updateMovedMarkers = {
     ["_modules", [], [[]]]
   ];
 
-  if (count _modules == 0) exitWith {};
+  if ( _modules isEqualTo []) exitWith {};
   //--- Get the moved markers and update their stored position.
   private _mut_movedMarkers = _modules select {
     private _prevPos = _x getVariable ["BIS_fnc_position_forced", [0, 0, 0]];
@@ -68,7 +68,7 @@ private _fnc_updateMovedMarkers = {
   };
 
   //--- No markers need to be moved, we're done.
-  if (count _mut_movedMarkers == 0) exitWith {};
+  if (_mut_movedMarkers isEqualTo []) exitWith {};
   TRACE_1("Updating moved markers",_mut_movedMarkers);
   //--- Do local ops first.
   private _lastMoved = _mut_movedMarkers call BIS_fnc_arrayPop;
@@ -99,7 +99,7 @@ waitUntil {
   [_cleanedList] call _fnc_updateMovedMarkers;
 
   sleep 5;
-  count _cleanedList == 0;
+  _cleanedList isEqualTo [];
 };
 
 GVAR(ModuleRespawnPosition_loop) = nil;
