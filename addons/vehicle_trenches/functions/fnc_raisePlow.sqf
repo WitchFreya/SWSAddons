@@ -18,7 +18,7 @@
 params ["_vehicle"];
 
 // Grab config for the vehicle's plow
-private _config = configFile >> "CfgVehicles" >> typeOf _vehicle >> "PlowConfig";
+private _config =  (configOf _vehicle) >> "PlowConfig";
 if (!(isClass _config)) exitWith {
 	ERROR_1("Attempted to lowerPlow on invalid vehicle: %1",_vehicle);
 };
