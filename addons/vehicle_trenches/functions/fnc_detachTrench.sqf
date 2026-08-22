@@ -22,4 +22,4 @@ detach _trench;
 _vehicle setVariable [QGVAR(trenchDigged), objNull, true];
 _vehicle setVariable [QGVAR(isDigging), false, true];
 _trench setVariable ["ace_trenches_placeData", [getPos _trench, [vectorDir _trench, vectorUp _trench]], true];
-["grad_trenches_functions_fnc_continueDiggingTrench", [_trench, _unit, false], _unit] call CBA_fnc_targetEvent;
+["grad_trenches_functions_fnc_continueDiggingTrench", [_trench, _vehicle, false], _vehicle] call CBA_fnc_targetEvent;
