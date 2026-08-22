@@ -18,13 +18,13 @@
 
 TRACE_1(QFUNC(saveRadios),_this);
 
-if !(local _target) exitWith {
-  [QGVAR(saveRadios), [_target], _target] call CBA_fnc_targetEvent;
-};
-
 params [
   ["_target", objNull, [objNull]]
 ];
+
+if !(local _target) exitWith {
+  [QGVAR(saveRadios), [_target], _target] call CBA_fnc_targetEvent;
+};
 
 switch (GVAR(restoreRadios)) do {
   case "sr_only": {
