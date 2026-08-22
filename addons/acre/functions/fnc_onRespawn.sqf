@@ -33,7 +33,7 @@ if (GVAR(restoreOnRespawn)) exitWith {
   };
 
   _unit setVariable [QGVAR(savedRadiosPTT), _savedPTTRadios];
-  _unit setVariable [QGVAR(savedRadiosOther), _savedRadiosOther];
+  _unit setVariable [QGVAR(savedRadiosOther), _savedOtherRadios];
 
   // we need to wait until acre_player is bound to the respawned unit so it restores radios properly
   [
