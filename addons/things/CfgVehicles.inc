@@ -1,3 +1,6 @@
+#define CLASSES_VEHICLES \
+  "SWS_Corvette_Door_Frame"
+
 class CfgVehicles
 {
   class Wall_F;

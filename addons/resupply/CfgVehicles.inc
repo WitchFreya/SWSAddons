@@ -1,10 +1,13 @@
-#define CLASSES_VEHICLES          \
-  "SWS_Ammo_SupplyPod"            \
-  , "SWS_Ammo_SupplyPod_Basic"    \
-  , "SWS_Ammo_SupplyPod_Medical"  \
-  , "SWS_Ammo_SupplyPod_Howdy"    \
-  , "SWS_Ammo_SupplyPod_Spnkr"    \
-  , "SWS_Ammo_SupplyPod_SM247"    \
+#define CLASSES_VEHICLES              \
+  "SWS_Ammo_SupplyPod"                \
+  , "SWS_Ammo_SupplyPod_Basic"        \
+  , "SWS_Ammo_SupplyPod_Eng_Demo"     \
+  , "SWS_Ammo_SupplyPod_Eng_Mines"    \
+  , "SWS_Ammo_SupplyPod_Eng_Support"  \
+  , "SWS_Ammo_SupplyPod_Howdy"        \
+  , "SWS_Ammo_SupplyPod_Medical"      \
+  , "SWS_Ammo_SupplyPod_SM247"        \
+  , "SWS_Ammo_SupplyPod_Spnkr"        \
   , "SWS_Box_TeamSupplies"
 
 class CfgVehicles {
