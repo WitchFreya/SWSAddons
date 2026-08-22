@@ -18,6 +18,12 @@ archive = false
 mission = "Dev.VR"
 
 [hemtt.launch.default]
+presets = [
+  "current",
+]
+mission = "Dev.VR"
+
+[hemtt.launch.minimal]
 workshop = [
   "1224892496", # gruppe adler trenches
   "1572627279", # optre first contact
