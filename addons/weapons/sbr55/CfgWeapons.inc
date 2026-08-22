@@ -60,5 +60,3 @@ class CfgWeapons {
     };
   };
 };
-
-#undef HUD_SETUP
