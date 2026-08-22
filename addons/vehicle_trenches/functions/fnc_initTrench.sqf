@@ -37,9 +37,6 @@ if (_vehicle getVariable [QGVAR(PlowMode), PLOW_MOVING] != _initMode) exitWith {
 // can dig vehicle on this position
 if (!([_vehicle modelToWorld _flatOffsets] call grad_trenches_functions_fnc_canDig)) exitWith {};
 
-// only work when vehicle is not tilted
-if (_ifTiltAboveMax) exitWith {};
-
 private _speed = speed _vehicle;
 if (_speed > 1) then {
 	_vehicle setVariable [QGVAR(isDigging), true, true];
