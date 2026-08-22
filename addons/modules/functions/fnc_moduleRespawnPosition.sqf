@@ -76,7 +76,7 @@ private _respawnObjs /* Map<[side,number],instanceof AllVehicles> */ = createHas
 private _isInfantryRespawn = _markerType == "respawn_inf";
 private _respawns /* ([side, number]|string)[] */ = if _isInfantryRespawn then {
   private _vehicleTargets = _targets select { _x isKindOf "AllVehicles"; };
-  if (count _vehicleTargets == 0) exitWith {
+  if ( _vehicleTargets isEqualTo [) exitWith {
     private _respawn = [_side, _pos, _name] call BIS_fnc_addRespawnPosition;
     [_respawn];
   };
